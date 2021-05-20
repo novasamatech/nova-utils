@@ -1,7 +1,7 @@
 # Fearless Utils
 
 ## About 
-This repo contains static information (logos, links, descriptions) to support client apps in Polkadot & Kusama ecosystem (e.g. [Fearless Wallet]) to map it to the keys/ids from the network itself.
+This repo contains static information (logos, links, etc) to support client apps in Polkadot & Kusama ecosystem (e.g. [Fearless Wallet]) to map it to the keys/ids from the network itself.
 
 ### Crowdloan
 Crowdloans can be saturated with the following information:
