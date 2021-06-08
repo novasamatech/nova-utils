@@ -17,5 +17,31 @@
     "website": "https://shiden.plasmnet.io/",
     "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/crowdloan/icons/shiden.svg",
     "rewardRate": 25
+  },
+  {
+    "paraid": "2001",
+    "name": "Bifrost",
+    "token": "BNC",
+    "description": "A parachain designed for staking's liquidity",
+    "website": "https://bifrost.finance/",
+    "icon": "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/ui/logos/nodes/bifrost.svg",
+    "rewardRate": 10
+  },
+  {
+    "paraid": "2013",
+    "name": "SherpaX",
+    "token": "KSX",
+    "description": "Crypto Asset Gateway for Kusama Ecosystem",
+    "website": "https://chainx-org.medium.com/chainx-kusama-parachain-sherpax-light-paper-5341ff855c9c",
+    "icon": "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/ui/logos/nodes/chainx.svg",
+    "rewardRate": 15
+  },
+  {
+    "paraid": "2012",
+    "name": "Crust Shadow",
+    "token": "CRU",
+    "description": "Crust Shadow incentives decentralized storage & cloud ecosystem on Kusama",
+    "website": "https://crust.network/",
+    "icon": "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/ui/logos/nodes/shadow.svg"
   }
 ]
