@@ -7,8 +7,7 @@
         "name": "DOT",
         "symbol": "DOT",
         "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/chains/icons/polkadot.svg",
-        "precision": 10,
-        "isUtility": true
+        "precision": 10
       }
     ],
     "nodes": [
@@ -18,7 +17,7 @@
       }
     ],
     "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/chains/icons/polkadot.svg",
-    "prefix": 0,
+    "addressPrefix": 0,
     "types": "https://raw.githubusercontent.com/polkascan/py-scale-codec/master/scalecodec/type_registry/polkadot.json",
     "isEthereumBased": false
   },
@@ -29,8 +28,7 @@
         "assetId": 0,
         "name": "Kusama",
         "symbol": "KSM",
-        "precision": 12,
-        "isUtility": true
+        "precision": 12
       }
     ],
     "nodes": [
@@ -40,7 +38,7 @@
       }
     ],
     "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/chains/icons/kusama.svg",
-    "prefix": 2,
+    "addressPrefix": 2,
     "types": "https://raw.githubusercontent.com/polkascan/py-scale-codec/master/scalecodec/type_registry/kusama.json",
     "isEthereumBased": false
   }
