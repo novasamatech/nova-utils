@@ -1,19 +1,21 @@
 [
   {
     "chainId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+    "name": "Polkadot",
     "assets": [
       {
         "assetId": 0,
-        "name": "Polkadot",
         "symbol": "DOT",
         "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/chains/icons/polkadot.svg",
-        "precision": 10
+        "precision": 10,
+        "priceId": "polkadot",
+        "defaultEnabled": true
       }
     ],
     "nodes": [
       {
         "url": "wss://polkadot.api.onfinality.io/ws",
-        "name": "Polkadot, OnFinality Node"
+        "name": "OnFinality Node"
       }
     ],
     "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/chains/icons/polkadot.svg",
@@ -26,24 +28,51 @@
   },
   {
     "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+    "name": "Kusama",
     "assets": [
       {
         "assetId": 0,
-        "name": "Kusama",
         "symbol": "KSM",
-        "precision": 12
+        "precision": 12,
+        "priceId": "kusama",
+        "defaultEnabled": true
       }
     ],
     "nodes": [
       {
         "url": "wss://kusama.api.onfinality.io/ws",
-        "name": "Kusama, OnFinality Node"
+        "name": "OnFinality Node"
       }
     ],
     "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/chains/icons/kusama.svg",
     "addressPrefix": 2,
     "types": {
       "url": "https://raw.githubusercontent.com/polkascan/py-scale-codec/master/scalecodec/type_registry/kusama.json",
+      "overridesCommon": false
+    },
+    "isEthereumBased": false
+  },
+  {
+    "chainId": "e143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e",
+    "name": "Westend",
+    "assets": [
+      {
+        "assetId": 0,
+        "symbol": "WND",
+        "precision": 12,
+        "defaultEnabled": false
+      }
+    ],
+    "nodes": [
+      {
+        "url": "wss://westend.api.onfinality.io/public-ws",
+        "name": "OnFinality Node"
+      }
+    ],
+    "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/chains/icons/westend.svg",
+    "addressPrefix": 42,
+    "types": {
+      "url": "https://raw.githubusercontent.com/polkascan/py-scale-codec/master/scalecodec/type_registry/westend.json",
       "overridesCommon": false
     },
     "isEthereumBased": false
