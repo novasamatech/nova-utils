@@ -18,7 +18,10 @@
     ],
     "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/chains/icons/polkadot.svg",
     "addressPrefix": 0,
-    "types": "https://raw.githubusercontent.com/polkascan/py-scale-codec/master/scalecodec/type_registry/polkadot.json",
+    "types": {
+      "url": "https://raw.githubusercontent.com/polkascan/py-scale-codec/master/scalecodec/type_registry/polkadot.json",
+      "overridesCommon": false
+    },
     "isEthereumBased": false
   },
   {
@@ -39,7 +42,10 @@
     ],
     "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/chains/icons/kusama.svg",
     "addressPrefix": 2,
-    "types": "https://raw.githubusercontent.com/polkascan/py-scale-codec/master/scalecodec/type_registry/kusama.json",
+    "types": {
+      "url": "https://raw.githubusercontent.com/polkascan/py-scale-codec/master/scalecodec/type_registry/kusama.json",
+      "overridesCommon": false
+    },
     "isEthereumBased": false
   }
 ]
