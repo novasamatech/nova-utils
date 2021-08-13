@@ -8,8 +8,7 @@
         "symbol": "DOT",
         "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/chains/icons/polkadot.svg",
         "precision": 10,
-        "priceId": "polkadot",
-        "defaultEnabled": true
+        "priceId": "polkadot"
       }
     ],
     "nodes": [
@@ -24,7 +23,8 @@
       "url": "https://raw.githubusercontent.com/polkascan/py-scale-codec/master/scalecodec/type_registry/polkadot.json",
       "overridesCommon": false
     },
-    "isEthereumBased": false
+    "isEthereumBased": false,
+    "isTestnet": false
   },
   {
     "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
@@ -34,8 +34,7 @@
         "assetId": 0,
         "symbol": "KSM",
         "precision": 12,
-        "priceId": "kusama",
-        "defaultEnabled": true
+        "priceId": "kusama"
       }
     ],
     "nodes": [
@@ -50,7 +49,8 @@
       "url": "https://raw.githubusercontent.com/polkascan/py-scale-codec/master/scalecodec/type_registry/kusama.json",
       "overridesCommon": false
     },
-    "isEthereumBased": false
+    "isEthereumBased": false,
+    "isTestnet": false
   },
   {
     "chainId": "e143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e",
@@ -59,8 +59,7 @@
       {
         "assetId": 0,
         "symbol": "WND",
-        "precision": 12,
-        "defaultEnabled": false
+        "precision": 12
       }
     ],
     "nodes": [
@@ -75,6 +74,30 @@
       "url": "https://raw.githubusercontent.com/polkascan/py-scale-codec/master/scalecodec/type_registry/westend.json",
       "overridesCommon": false
     },
-    "isEthereumBased": false
+    "isEthereumBased": false,
+    "isTestnet": true
+  },
+  {
+    "chainId": "e143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e",
+    "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+    "name": "Karura",
+    "assets": [
+      {
+        "assetId": 0,
+        "symbol": "KAR",
+        "precision": 12,
+        "priceId": "karura"
+      }
+    ],
+    "nodes": [
+      {
+        "url": "wss://karura-rpc-3.aca-api.network/ws",
+        "name": "Acala3"
+      }
+    ],
+    "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/chains/icons/karura.svg",
+    "addressPrefix": 8,
+    "isEthereumBased": false,
+    "isTestnet": false
   }
 ]
