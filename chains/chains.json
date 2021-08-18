@@ -118,5 +118,27 @@
     "options": [
       "ethereumBased"
     ]
+  },
+  {
+    "chainId": "0xf25c85c4ffc4863b599a443e5301f7f4120c9a21042d35942b9e844346060db1",
+    "name": "KILT Pelegrine",
+    "assets": [
+      {
+        "assetId": 0,
+        "symbol": "PILT",
+        "precision": 15
+      }
+    ],
+    "nodes": [
+      {
+        "url": "wss://kilt-peregrine-k8s.kilt.io",
+        "name": "KILT Node"
+      }
+    ],
+    "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/chains/icons/moonriver.svg",
+    "addressPrefix": 38,
+    "options": [
+      "testnet"
+    ]
   }
 ]
