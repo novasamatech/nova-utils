@@ -1,6 +1,6 @@
- [
-     {
-    "paraid": "2000", 
+[
+  {
+    "paraid": "2000",
     "name": "Karura",
     "token": "KAR",
     "description": "All-in-one DeFi hub of Kusama",
@@ -181,7 +181,7 @@
     "icon": "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/ui/logos/nodes/integritee.svg",
     "rewardRate": 10
   },
-   {
+  {
     "paraid": "2100",
     "name": "Kintsugi BTC",
     "token": "KINT",
@@ -198,5 +198,23 @@
     "website": "https://www.calamari.network/",
     "icon": "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/ui/logos/nodes/calamari.png",
     "rewardRate": 10000
+  },
+  {
+    "paraid": "2087",
+    "name": "Picasso",
+    "token": "PICA",
+    "description": "Cross-chain interoperable infrastructure",
+    "website": "https://www.composable.finance/",
+    "icon": "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/ui/logos/nodes/picasso.png",
+    "rewardRate": 20
+  },
+  {
+    "paraid": "2085",
+    "name": "Parallel Heiko",
+    "token": "HKO",
+    "description": "Decentralized money market protocol that offers lending, staking, and borrowing",
+    "website": "https://parallel.fi/index.html",
+    "icon": "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/ui/logos/nodes/parallelheiko.png",
+    "rewardRate": 2.5
   }
 ]
