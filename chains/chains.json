@@ -1,144 +1,403 @@
 [
-  {
-    "chainId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-    "name": "Polkadot",
-    "assets": [
-      {
-        "assetId": 0,
-        "name": "DOT",
-        "symbol": "DOT",
+    {
+        "chainId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Polkadot",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "DOT",
+                "precision": 10,
+                "priceId": "polkadot"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://polkadot.api.onfinality.io/ws?apikey=767ba403-66b9-402b-8018-640799c48793",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://rpc.polkadot.io",
+                "name": "Parity node"
+            },
+            {
+                "url": "wss://pub.elara.patract.io/polkadot",
+                "name": "Patract node"
+            }
+        ],
         "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/chains/icons/polkadot.svg",
-        "precision": 10,
-        "priceId": "polkadot"
-      }
-    ],
-    "nodes": [
-      {
-        "url": "wss://polkadot.api.onfinality.io/ws?apikey=767ba403-66b9-402b-8018-640799c48793",
-        "name": "OnFinality Node"
-      }
-    ],
-    "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/chains/icons/polkadot.svg",
-    "addressPrefix": 0,
-    "types": {
-      "url": "https://raw.githubusercontent.com/polkascan/py-scale-codec/master/scalecodec/type_registry/polkadot.json",
-      "overridesCommon": false
-    }
-  },
-  {
-    "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-    "name": "Kusama",
-    "assets": [
-      {
-        "assetId": 0,
-        "symbol": "KSM",
-        "precision": 12,
-        "priceId": "kusama"
-      }
-    ],
-    "nodes": [
-      {
-        "url": "wss://kusama.api.onfinality.io/ws?apikey=767ba403-66b9-402b-8018-640799c48793",
-        "name": "OnFinality Node"
-      }
-    ],
-    "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/chains/icons/kusama.svg",
-    "addressPrefix": 2,
-    "types": {
-      "url": "https://raw.githubusercontent.com/polkascan/py-scale-codec/master/scalecodec/type_registry/kusama.json",
-      "overridesCommon": false
-    }
-  },
-  {
-    "chainId": "e143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e",
-    "name": "Westend",
-    "assets": [
-      {
-        "assetId": 0,
-        "symbol": "WND",
-        "precision": 12
-      }
-    ],
-    "nodes": [
-      {
-        "url": "wss://westend.api.onfinality.io/public-ws",
-        "name": "OnFinality Node"
-      }
-    ],
-    "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/chains/icons/westend.svg",
-    "addressPrefix": 42,
-    "types": {
-      "url": "https://raw.githubusercontent.com/polkascan/py-scale-codec/master/scalecodec/type_registry/westend.json",
-      "overridesCommon": false
+        "addressPrefix": 0,
+        "types": {
+            "url": "https://raw.githubusercontent.com/polkascan/py-scale-codec/master/scalecodec/type_registry/polkadot.json",
+            "overridesCommon": false
+        }
     },
-    "options": [
-      "testnet"
-    ]
-  },
-  {
-    "chainId": "baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b",
-    "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-    "name": "Karura",
-    "assets": [
-      {
-        "assetId": 0,
-        "symbol": "KAR",
-        "precision": 12,
-        "priceId": "karura"
-      }
-    ],
-    "nodes": [
-      {
-        "url": "wss://karura-rpc-3.aca-api.network/ws",
-        "name": "Acala3"
-      }
-    ],
-    "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/chains/icons/karura.svg",
-    "addressPrefix": 8
-  },
-  {
-    "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
-    "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-    "name": "Moonriver",
-    "assets": [
-      {
-        "assetId": 0,
-        "symbol": "MOVR",
-        "precision": 18
-      }
-    ],
-    "nodes": [
-      {
-        "url": "wss://moonriver.api.onfinality.io/public-ws",
-        "name": "OnFinality"
-      }
-    ],
-    "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/chains/icons/moonriver.svg",
-    "addressPrefix": 1285,
-    "options": [
-      "ethereumBased"
-    ]
-  },
-  {
-    "chainId": "0xf25c85c4ffc4863b599a443e5301f7f4120c9a21042d35942b9e844346060db1",
-    "name": "KILT Pelegrine",
-    "assets": [
-      {
-        "assetId": 0,
-        "symbol": "PILT",
-        "precision": 15
-      }
-    ],
-    "nodes": [
-      {
-        "url": "wss://kilt-peregrine-k8s.kilt.io",
-        "name": "KILT Node"
-      }
-    ],
-    "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/chains/icons/moonriver.svg",
-    "addressPrefix": 38,
-    "options": [
-      "testnet"
-    ]
-  }
+    {
+        "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Kusama",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "KSM",
+                "precision": 12,
+                "priceId": "kusama"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://kusama.api.onfinality.io/ws?apikey=767ba403-66b9-402b-8018-640799c48793",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://kusama-rpc.polkadot.io",
+                "name": "Parity node"
+            },
+            {
+                "url": "wss://pub.elara.patract.io/kusama",
+                "name": "Patract node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/chains/icons/kusama.svg",
+        "addressPrefix": 2,
+        "types": {
+            "url": "https://raw.githubusercontent.com/polkascan/py-scale-codec/master/scalecodec/type_registry/kusama.json",
+            "overridesCommon": false
+        }
+    },
+    {
+        "chainId": "e143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e",
+        "name": "Westend",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "WND",
+                "precision": 12
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://westend.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://westend-rpc.polkadot.io",
+                "name": "Parity node"
+            },
+            {
+                "url": "wss://pub.elara.patract.io/westend",
+                "name": "Patract node"
+            },
+            {
+                "url": "wss://rpc.pinknode.io/westend/explorer",
+                "name": "Pinknode node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/chains/icons/westend.svg",
+        "addressPrefix": 42,
+        "types": {
+            "url": "https://raw.githubusercontent.com/polkascan/py-scale-codec/master/scalecodec/type_registry/westend.json",
+            "overridesCommon": false
+        },
+        "options": [
+            "testnet"
+        ]
+    },
+    {
+        "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Statemine",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "KSM",
+                "precision": 12,
+                "priceId": "kusama"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://statemine.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://kusama-statemine-rpc.paritytech.net",
+                "name": "Parity node"
+            },
+            {
+                "url": "wss://pub.elara.patract.io/statemine",
+                "name": "Patract node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/ui/logos/nodes/statemine.svg",
+        "addressPrefix": 2
+    },
+    {
+        "chainId": "baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Karura",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "KAR",
+                "precision": 12,
+                "priceId": "karura"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://karura.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://karura-rpc-0.aca-api.network",
+                "name": "Acala Foundation node 0"
+            },
+            {
+                "url": "wss://karura-rpc-1.aca-api.network",
+                "name": "Acala Foundation node 1"
+            },
+            {
+                "url": "wss://karura-rpc-2.aca-api.network/ws",
+                "name": "Acala Foundation node 2"
+            },
+            {
+                "url": "wss://karura-rpc-3.aca-api.network/ws",
+                "name": "Acala Foundation node 3"
+            },
+            {
+                "url": "wss://pub.elara.patract.io/karura",
+                "name": "Patract node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/chains/icons/karura.svg",
+        "addressPrefix": 8
+    },
+    {
+        "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Moonriver",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "MOVR",
+                "precision": 18,
+                "priceId": "moonriver"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://moonriver.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://wss.moonriver.moonbeam.network",
+                "name": "PureStake node"
+            },
+            {
+                "url": "wss://pub.elara.patract.io/moonriver",
+                "name": "Patract node"
+            },
+            {
+                "url": "wss://rpc.pinknode.io/moonriver/explorer",
+                "name": "Pinknode node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/chains/icons/moonriver.svg",
+        "addressPrefix": 1285,
+        "options": [
+            "ethereumBased"
+        ]
+    },
+    {
+        "chainId": "f1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Shiden",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "SDN",
+                "precision": 18,
+                "priceId": "shiden"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://shiden.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://rpc.shiden.astar.network",
+                "name": "StakeTechnologies node"
+            },
+            {
+                "url": "wss://rpc.pinknode.io/shiden/explorer",
+                "name": "Pinknode node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/crowdloan/icons/shiden.svg",
+        "addressPrefix": 5
+    },
+    {
+        "chainId": "9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Bifrost",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "BNC",
+                "precision": 12
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://bifrost-parachain.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://bifrost-rpc.liebi.com/ws",
+                "name": "Liebi node"
+            },
+            {
+                "url": "wss://pub.elara.patract.io/bifrost",
+                "name": "Patract node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/ui/logos/nodes/bifrost.svg",
+        "addressPrefix": 6
+    },
+    {
+        "chainId": "7e4e32d0feafd4f9c9414b0be86373f9a1efa904809b683453a9af6856d38ad5",
+        "name": "SORA",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "XOR",
+                "precision": 18,
+                "priceId": "sora"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://ws.mof.sora.org",
+                "name": "SORA Parliament Ministry of Finance 1"
+            },
+            {
+                "url": "wss://mof2.sora.org",
+                "name": "SORA Parliament Ministry of Finance 2"
+            },
+            {
+                "url": "wss://mof3.sora.org",
+                "name": "SORA Parliament Ministry of Finance 3"
+            },
+            {
+                "url": "wss://ws.alb.sora.org",
+                "name": "SORAMITSU node"
+            },
+            {
+                "url": "wss://sora.lux8.net",
+                "name": "SORA Community (Lux8)"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/ui/logos/nodes/sora-substrate.svg",
+        "addressPrefix": 69
+    },
+    {
+        "chainId": "d43540ba6d3eb4897c28a77d48cb5b729fea37603cbbfc7a86a73b72adb3be8d",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Khala",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "PHA",
+                "precision": 12,
+                "priceId": "pha"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://khala.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://khala-api.phala.network/ws",
+                "name": "Phala node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/ui/logos/nodes/khala.svg",
+        "addressPrefix": 30
+    },
+    {
+        "chainId": "742a2ca70c2fda6cee4f8df98d64c4c670a052d9568058982dad9d5a7a135c5b",
+        "name": "Edgeware",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "EDG",
+                "precision": 18,
+                "priceId": "edgeware"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://edgeware.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://mainnet.edgewa.re",
+                "name": "Commonwealth Labs node"
+            },
+            {
+                "url": "wss://pub.elara.patract.io/edgeware",
+                "name": "Patract node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/ui/logos/nodes/edgeware-circle.svg",
+        "addressPrefix": 7
+    },
+    {
+        "chainId": "0bd72c1c305172e1275278aaeb3f161e02eccb7a819e63f62d47bd53a28189f8",
+        "name": "Subsocial",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "SUB",
+                "precision": 11
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc.subsocial.network",
+                "name": "DappForce node"
+            },
+            {
+                "url": "wss://pub.elara.patract.io/subsocial",
+                "name": "Patract node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/ui/logos/nodes/subsocial.svg",
+        "addressPrefix": 28
+    },
+    {
+        "chainId": "f7a99d3cb92853d00d5275c971c132c074636256583fee53b3bbe60d7b8769ba",
+        "name": "Kulupu",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "KLP",
+                "precision": 12,
+                "priceId": "kulupu"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc.kulupu.corepaper.org/ws",
+                "name": "Kulupu node"
+            },
+            {
+                "url": "wss://pub.elara.patract.io/kulupu",
+                "name": "Patract node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/ui/logos/nodes/kulupu.svg",
+        "addressPrefix": 16
+    }
 ]
