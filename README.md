@@ -18,6 +18,12 @@ Crowdloans can be saturated with the following information:
 * Website
 * Reward rate (KSM multiplier)
 
+#### Chains
+Contains JSON file with networks info: its token (ticker, precision), types, available nodes, account prefix, set of options (is testnet, has crowdloans)
+
+#### Icons
+Group of icons to saturate Fearless Wallet
+
 Note: Icons should be used from trusted sources, however currently icons are not available on the participants' websites, so for convenience, there is /icons folder.
 
 [Fearless Wallet]: https://fearlesswallet.io
