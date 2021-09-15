@@ -7,13 +7,18 @@
                 "assetId": 0,
                 "symbol": "DOT",
                 "precision": 10,
-                "priceId": "polkadot"
+                "priceId": "polkadot",
+                "staking": "relaychain"
             }
         ],
         "nodes": [
             {
-                "url": "wss://polkadot.api.onfinality.io/ws?apikey=767ba403-66b9-402b-8018-640799c48793",
-                "name": "OnFinality node"
+                "url": "wss://polkadot.api.onfinality.io/ws",
+                "name": "OnFinality node",
+                "apikey": {
+                    "queryName": "apikey",
+                    "keyName": "ONFINALITY"
+                }
             },
             {
                 "url": "wss://rpc.polkadot.io",
@@ -29,7 +34,10 @@
         "types": {
             "url": "https://raw.githubusercontent.com/polkascan/py-scale-codec/master/scalecodec/type_registry/polkadot.json",
             "overridesCommon": false
-        }
+        },
+        "options": [
+            "crowdloans"
+        ]
     },
     {
         "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
@@ -39,13 +47,18 @@
                 "assetId": 0,
                 "symbol": "KSM",
                 "precision": 12,
-                "priceId": "kusama"
+                "priceId": "kusama",
+                "staking": "relaychain"
             }
         ],
         "nodes": [
             {
-                "url": "wss://kusama.api.onfinality.io/ws?apikey=767ba403-66b9-402b-8018-640799c48793",
-                "name": "OnFinality node"
+                "url": "wss://kusama.api.onfinality.io/ws",
+                "name": "OnFinality node",
+                "apikey": {
+                    "queryName": "apikey",
+                    "keyName": "ONFINALITY"
+                }
             },
             {
                 "url": "wss://kusama-rpc.polkadot.io",
@@ -61,7 +74,10 @@
         "types": {
             "url": "https://raw.githubusercontent.com/polkascan/py-scale-codec/master/scalecodec/type_registry/kusama.json",
             "overridesCommon": false
-        }
+        },
+        "options": [
+            "crowdloans"
+        ]
     },
     {
         "chainId": "e143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e",
@@ -70,7 +86,8 @@
             {
                 "assetId": 0,
                 "symbol": "WND",
-                "precision": 12
+                "precision": 12,
+                "staking": "relaychain"
             }
         ],
         "nodes": [
@@ -98,7 +115,8 @@
             "overridesCommon": false
         },
         "options": [
-            "testnet"
+            "testnet",
+            "crowdloans"
         ]
     },
     {
@@ -115,8 +133,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://statemine.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
+                "url": "wss://statemine.api.onfinality.io/ws",
+                "name": "OnFinality node",
+                "apikey": {
+                    "queryName": "apikey",
+                    "keyName": "ONFINALITY"
+                }
             },
             {
                 "url": "wss://kusama-statemine-rpc.paritytech.net",
@@ -144,8 +166,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://karura.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
+                "url": "wss://karura.api.onfinality.io/ws",
+                "name": "OnFinality node",
+                "apikey": {
+                    "queryName": "apikey",
+                    "keyName": "ONFINALITY"
+                }
             },
             {
                 "url": "wss://karura-rpc-0.aca-api.network",
@@ -185,8 +211,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://moonriver.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
+                "url": "wss://moonriver.api.onfinality.io/ws",
+                "name": "OnFinality node",
+                "apikey": {
+                    "queryName": "apikey",
+                    "keyName": "ONFINALITY"
+                }
             },
             {
                 "url": "wss://wss.moonriver.moonbeam.network",
@@ -221,8 +251,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://shiden.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
+                "url": "wss://shiden.api.onfinality.io/ws",
+                "name": "OnFinality node",
+                "apikey": {
+                    "queryName": "apikey",
+                    "keyName": "ONFINALITY"
+                }
             },
             {
                 "url": "wss://rpc.shiden.astar.network",
@@ -249,8 +283,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://bifrost-parachain.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
+                "url": "wss://bifrost-parachain.api.onfinality.io/ws",
+                "name": "OnFinality node",
+                "apikey": {
+                    "queryName": "apikey",
+                    "keyName": "ONFINALITY"
+                }
             },
             {
                 "url": "wss://bifrost-rpc.liebi.com/ws",
@@ -314,8 +352,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://khala.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
+                "url": "wss://khala.api.onfinality.io/ws",
+                "name": "OnFinality node",
+                "apikey": {
+                    "queryName": "apikey",
+                    "keyName": "ONFINALITY"
+                }
             },
             {
                 "url": "wss://khala-api.phala.network/ws",
@@ -338,8 +380,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://edgeware.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
+                "url": "wss://edgeware.api.onfinality.io/ws",
+                "name": "OnFinality node",
+                "apikey": {
+                    "queryName": "apikey",
+                    "keyName": "ONFINALITY"
+                }
             },
             {
                 "url": "wss://mainnet.edgewa.re",
@@ -399,5 +445,32 @@
         ],
         "icon": "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/ui/logos/nodes/kulupu.svg",
         "addressPrefix": 16
+    },
+    {
+        "chainId": "411f057b9107718c9624d6aa4a3f23c1653898297f3d4d529d9bb6511a39dd21",
+        "name": "KILT Spiritnet",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "KILT",
+                "precision": 15
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://spiritnet.api.onfinality.io/ws",
+                "name": "OnFinality node",
+                "apikey": {
+                    "queryName": "apikey",
+                    "keyName": "ONFINALITY"
+                }
+            },
+            {
+                "url": "wss://spiritnet.kilt.io/",
+                "name": "KILT Protocol node"
+            }
+        ],
+        "icon": "",
+        "addressPrefix": 38
     }
 ]
