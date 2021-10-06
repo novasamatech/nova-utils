@@ -264,6 +264,41 @@
         ]
     },
     {
+        "chainId": "91bc6e169807aaa54802737e1c504b2577d4fafedd5a02c10293b1cd60e39527",
+        "name": "Moonbase Alpha",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "UNIT",
+                "precision": 18,
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://moonbeam-alpha.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://rpc.pinknode.io/alphanet/explorer",
+                "name": "Pinknode"
+            },
+            {
+                "url": "wss://wss.testnet.moonbeam.network",
+                "name": "Moonbeam Network node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/valentunn/py-scale-codec/fearless_stable/scalecodec/type_registry/moonriver.json",
+            "overridesCommon": false
+        },
+        "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Moonriver.svg",
+        "addressPrefix": 1287,
+        "options": [
+            "ethereumBased",
+            "testnet"
+        ]
+    },
+    {
         "chainId": "f1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Shiden",
