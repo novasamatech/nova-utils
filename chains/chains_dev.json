@@ -154,6 +154,39 @@
         ]
     },
     {
+        "chainId": "52f04247aeababaab46c262a94819b174b847dd403400145c0522c7f17844c68",
+        "name": "Rococo (Acala)",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "DEV",
+                "precision": 10
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://karura-test-node.laminar.codes/relaychain",
+                "name": "Laminar Test Node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Rococo.svg",
+        "addressPrefix": 42,
+        "types": {
+            "url": "https://raw.githubusercontent.com/valentunn/py-scale-codec/fearless_stable/scalecodec/type_registry/rococo.json",
+            "overridesCommon": false
+        },
+        "externalApi": {
+            "crowdloans": {
+                "type": "github",
+                "url": "https://raw.githubusercontent.com/fearlesswallet/fearless-utils/master/crowdloan/rococo.json"
+            }
+        },
+        "options": [
+            "testnet",
+            "crowdloans"
+        ]
+    },
+    {
         "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Statemine",
