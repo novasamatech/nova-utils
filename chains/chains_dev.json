@@ -320,6 +320,14 @@
                 "name": "Moonbeam Network node"
             }
         ],
+        "explorers": [
+        	{
+        		"name": "Subscan",
+        		"extrinsic": "https://moonbase.subscan.io/extrinsic/{hash}",
+        		"account": "https://moonbase.subscan.io/account/{address}",
+        		"event": null
+        	}
+        ],
         "types": {
             "url": "https://raw.githubusercontent.com/valentunn/py-scale-codec/fearless_stable/scalecodec/type_registry/moonriver.json",
             "overridesCommon": false
