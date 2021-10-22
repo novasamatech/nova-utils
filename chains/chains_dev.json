@@ -208,8 +208,8 @@
         "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Rococo.svg",
         "addressPrefix": 42,
         "types": {
-            "url": "https://raw.githubusercontent.com/valentunn/py-scale-codec/fearless_stable/scalecodec/type_registry/rococo.json",
-            "overridesCommon": false
+            "url": "https://raw.githubusercontent.com/valentunn/py-scale-codec/fearless_stable/scalecodec/type_registry/common-v14.json",
+            "overridesCommon": true
         },
         "externalApi": {
             "crowdloans": {
