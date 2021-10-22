@@ -42,8 +42,8 @@
         "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Polkadot.svg",
         "addressPrefix": 0,
         "types": {
-            "url": "https://raw.githubusercontent.com/valentunn/py-scale-codec/fearless_stable/scalecodec/type_registry/polkadot.json",
-            "overridesCommon": false
+            "url": "https://raw.githubusercontent.com/valentunn/py-scale-codec/fearless_stable/scalecodec/type_registry/common-v14.json",
+            "overridesCommon": true
         },
         "externalApi": {
             "staking": {
@@ -106,8 +106,8 @@
         "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Kusama.svg",
         "addressPrefix": 2,
         "types": {
-            "url": "https://raw.githubusercontent.com/valentunn/py-scale-codec/fearless_stable/scalecodec/type_registry/kusama.json",
-            "overridesCommon": false
+            "url": "https://raw.githubusercontent.com/valentunn/py-scale-codec/fearless_stable/scalecodec/type_registry/common-v14.json",
+            "overridesCommon": true
         },
         "externalApi": {
             "staking": {
@@ -167,8 +167,8 @@
         "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Westend.svg",
         "addressPrefix": 42,
         "types": {
-            "url": "https://raw.githubusercontent.com/valentunn/py-scale-codec/fearless_stable/scalecodec/type_registry/westend.json",
-            "overridesCommon": false
+            "url": "https://raw.githubusercontent.com/valentunn/py-scale-codec/fearless_stable/scalecodec/type_registry/common-v14.json",
+            "overridesCommon": true
         },
         "externalApi": {
             "staking": {
