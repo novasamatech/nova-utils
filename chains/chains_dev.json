@@ -419,9 +419,16 @@
             "url": "https://raw.githubusercontent.com/valentunn/py-scale-codec/fearless_stable/scalecodec/type_registry/polkatrain-v14.json",
             "overridesCommon": true
         },
+         "externalApi": {
+            "crowdloans": {
+                "type": "github",
+                "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/crowdloan/polkatrain.json"
+            }
+        },
         "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Moonriver.svg",
         "addressPrefix": 0,
         "options": [
+            "crowdloans",
             "testnet"
         ]
     },
