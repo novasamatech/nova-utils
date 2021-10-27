@@ -2,16 +2,6 @@
     {
         "chainId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
         "name": "Polkadot",
-        "externalApi": {
-          "staking": {
-            "type": "subquery",
-            "url": "api.subquery.network/sq/ef1rspb/fearless-wallet"
-          },
-          "history": {
-             "type": "subquery",
-             "url": "api.subquery.network/sq/ef1rspb/fearless-wallet"
-          }
-        },
         "assets": [
             {
                 "assetId": 0,
@@ -23,12 +13,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://polkadot.api.onfinality.io/ws",
-                "name": "OnFinality node",
-                "apikey": {
-                    "queryName": "apikey",
-                    "keyName": "ONFINALITY"
-                }
+                "url": "wss://polkadot.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             },
             {
                 "url": "wss://rpc.polkadot.io",
@@ -39,11 +25,39 @@
                 "name": "Patract node"
             }
         ],
+        "explorers": [
+        	{
+        		"name": "Subscan",
+        		"extrinsic": "https://polkadot.subscan.io/extrinsic/{hash}",
+        		"account": "https://polkadot.subscan.io/account/{address}",
+        		"event": null
+        	},
+            {
+        		"name": "Polkascan",
+        		"extrinsic": "https://polkascan.io/polkadot/extrinsic/{hash}",
+        		"account": "https://polkascan.io/polkadot/account/{address}",
+        		"event": "https://polkascan.io/polkadot/event/{event}"
+        	}
+        ],
         "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Polkadot.svg",
         "addressPrefix": 0,
         "types": {
-            "url": "https://raw.githubusercontent.com/polkascan/py-scale-codec/master/scalecodec/type_registry/polkadot.json",
-            "overridesCommon": false
+            "url": "https://raw.githubusercontent.com/valentunn/py-scale-codec/fearless_stable/scalecodec/type_registry/polkadot-v14.json",
+            "overridesCommon": true
+        },
+        "externalApi": {
+            "staking": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/ef1rspb/fearless-wallet"
+            },
+            "history": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/ef1rspb/fearless-wallet"
+            },
+            "crowdloans": {
+                "type": "github",
+                "url": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/crowdloan/polkadot.json"
+            }
         },
         "options": [
             "crowdloans"
@@ -52,16 +66,6 @@
     {
         "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Kusama",
-        "externalApi": {
-          "staking": {
-            "type": "subquery",
-            "url": "api.subquery.network/sq/ef1rspb/fearless-wallet-ksm"
-          },
-          "history": {
-            "type": "subquery",
-            "url": "api.subquery.network/sq/ef1rspb/fearless-wallet-ksm"
-          }
-        },
         "assets": [
             {
                 "assetId": 0,
@@ -73,12 +77,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://kusama.api.onfinality.io/ws",
-                "name": "OnFinality node",
-                "apikey": {
-                    "queryName": "apikey",
-                    "keyName": "ONFINALITY"
-                }
+                "url": "wss://kusama.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             },
             {
                 "url": "wss://kusama-rpc.polkadot.io",
@@ -89,11 +89,39 @@
                 "name": "Patract node"
             }
         ],
+        "explorers": [
+        	{
+        		"name": "Subscan",
+        		"extrinsic": "https://kusama.subscan.io/extrinsic/{hash}",
+        		"account": "https://kusama.subscan.io/account/{address}",
+        		"event": null
+        	},
+            {
+        		"name": "Polkascan",
+        		"extrinsic": "https://polkascan.io/kusama/extrinsic/{hash}",
+        		"account": "https://polkascan.io/kusama/account/{address}",
+        		"event": "https://polkascan.io/kusama/event/{event}"
+        	}
+        ],
         "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Kusama.svg",
         "addressPrefix": 2,
         "types": {
-            "url": "https://raw.githubusercontent.com/polkascan/py-scale-codec/master/scalecodec/type_registry/kusama.json",
-            "overridesCommon": false
+            "url": "https://raw.githubusercontent.com/valentunn/py-scale-codec/fearless_stable/scalecodec/type_registry/kusama-v14.json",
+            "overridesCommon": true
+        },
+        "externalApi": {
+            "staking": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/ef1rspb/fearless-wallet-ksm"
+            },
+            "history": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/ef1rspb/fearless-wallet-ksm"
+            },
+            "crowdloans": {
+                "type": "github",
+                "url": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/crowdloan/kusama.json"
+            }
         },
         "options": [
             "crowdloans"
@@ -102,16 +130,6 @@
     {
         "chainId": "e143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e",
         "name": "Westend",
-        "externalApi": {
-          "staking": {
-            "type": "subquery",
-            "url": "api.subquery.network/sq/ef1rspb/fearless-wallet-westend"
-          },
-          "history": {
-            "type": "subquery",
-            "url": "api.subquery.network/sq/ef1rspb/fearless-wallet-westend"
-          }
-        },
         "assets": [
             {
                 "assetId": 0,
@@ -138,11 +156,33 @@
                 "name": "Pinknode node"
             }
         ],
+        "explorers": [
+        	{
+        		"name": "Subscan",
+        		"extrinsic": "https://westend.subscan.io/extrinsic/{hash}",
+        		"account": "https://westend.subscan.io/account/{address}",
+        		"event": null
+        	}
+        ],
         "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Westend.svg",
         "addressPrefix": 42,
         "types": {
-            "url": "https://raw.githubusercontent.com/polkascan/py-scale-codec/master/scalecodec/type_registry/westend.json",
-            "overridesCommon": false
+            "url": "https://raw.githubusercontent.com/valentunn/py-scale-codec/fearless_stable/scalecodec/type_registry/westend-v14.json",
+            "overridesCommon": true
+        },
+        "externalApi": {
+            "staking": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/ef1rspb/fearless-wallet-westend"
+            },
+            "history": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/ef1rspb/fearless-wallet-westend"
+            },
+            "crowdloans": {
+                "type": "github",
+                "url": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/crowdloan/westend.json"
+            }
         },
         "options": [
             "testnet",
@@ -163,12 +203,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://statemine.api.onfinality.io/ws",
-                "name": "OnFinality node",
-                "apikey": {
-                    "queryName": "apikey",
-                    "keyName": "ONFINALITY"
-                }
+                "url": "wss://statemine.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             },
             {
                 "url": "wss://kusama-statemine-rpc.paritytech.net",
@@ -178,6 +214,14 @@
                 "url": "wss://pub.elara.patract.io/statemine",
                 "name": "Patract node"
             }
+        ],
+        "explorers": [
+        	{
+        		"name": "Subscan",
+        		"extrinsic": "https://statemine.subscan.io/extrinsic/{hash}",
+        		"account": "https://statemine.subscan.io/account/{address}",
+        		"event": null
+        	}
         ],
         "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Statemine.svg",
         "addressPrefix": 2
@@ -196,12 +240,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://karura.api.onfinality.io/ws",
-                "name": "OnFinality node",
-                "apikey": {
-                    "queryName": "apikey",
-                    "keyName": "ONFINALITY"
-                }
+                "url": "wss://karura.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             },
             {
                 "url": "wss://karura-rpc-0.aca-api.network",
@@ -224,6 +264,14 @@
                 "name": "Patract node"
             }
         ],
+        "explorers": [
+        	{
+        		"name": "Subscan",
+        		"extrinsic": "https://karura.subscan.io/extrinsic/{hash}",
+        		"account": "https://karura.subscan.io/account/{address}",
+        		"event": null
+        	}
+        ],
         "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Karura.svg",
         "addressPrefix": 8
     },
@@ -241,12 +289,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://moonriver.api.onfinality.io/ws",
-                "name": "OnFinality node",
-                "apikey": {
-                    "queryName": "apikey",
-                    "keyName": "ONFINALITY"
-                }
+                "url": "wss://moonriver.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             },
             {
                 "url": "wss://wss.moonriver.moonbeam.network",
@@ -261,6 +305,18 @@
                 "name": "Pinknode node"
             }
         ],
+        "explorers": [
+        	{
+        		"name": "Subscan",
+        		"extrinsic": "https://moonriver.subscan.io/extrinsic/{hash}",
+        		"account": "https://moonriver.subscan.io/account/{address}",
+        		"event": null
+        	}
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/valentunn/py-scale-codec/fearless_stable/scalecodec/type_registry/moonriver.json",
+            "overridesCommon": false
+        },
         "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Moonriver.svg",
         "addressPrefix": 1285,
         "options": [
@@ -281,12 +337,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://shiden.api.onfinality.io/ws",
-                "name": "OnFinality node",
-                "apikey": {
-                    "queryName": "apikey",
-                    "keyName": "ONFINALITY"
-                }
+                "url": "wss://shiden.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             },
             {
                 "url": "wss://rpc.shiden.astar.network",
@@ -296,6 +348,14 @@
                 "url": "wss://rpc.pinknode.io/shiden/explorer",
                 "name": "Pinknode node"
             }
+        ],
+        "explorers": [
+        	{
+        		"name": "Subscan",
+        		"extrinsic": "https://shiden.subscan.io/extrinsic/{hash}",
+        		"account": "https://shiden.subscan.io/account/{address}",
+        		"event": null
+        	}
         ],
         "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Shiden.svg",
         "addressPrefix": 5
@@ -313,12 +373,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://bifrost-parachain.api.onfinality.io/ws",
-                "name": "OnFinality node",
-                "apikey": {
-                    "queryName": "apikey",
-                    "keyName": "ONFINALITY"
-                }
+                "url": "wss://bifrost-parachain.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             },
             {
                 "url": "wss://bifrost-rpc.liebi.com/ws",
@@ -329,8 +385,81 @@
                 "name": "Patract node"
             }
         ],
+        "explorers": [
+        	{
+        		"name": "Subscan",
+        		"extrinsic": "https://bifrost.subscan.io/extrinsic/{hash}",
+        		"account": "https://bifrost.subscan.io/account/{address}",
+        		"event": null
+        	}
+        ],
         "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Bifrost.svg",
         "addressPrefix": 6
+    },
+    {
+        "chainId": "d43540ba6d3eb4897c28a77d48cb5b729fea37603cbbfc7a86a73b72adb3be8d",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Khala",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "PHA",
+                "precision": 12,
+                "priceId": "pha"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://khala.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://khala-api.phala.network/ws",
+                "name": "Phala node"
+            }
+        ],
+        "explorers": [
+        	{
+        		"name": "Subscan",
+        		"extrinsic": "https://khala.subscan.io/extrinsic/{hash}",
+        		"account": "https://khala.subscan.io/account/{address}",
+        		"event": null
+        	}
+        ],
+        "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Khala.svg",
+        "addressPrefix": 30
+    },
+    {
+        "chainId": "411f057b9107718c9624d6aa4a3f23c1653898297f3d4d529d9bb6511a39dd21",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "KILT Spiritnet",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "KILT",
+                "precision": 15
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://spiritnet.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://spiritnet.kilt.io/",
+                "name": "KILT Protocol node"
+            }
+        ],
+        "explorers": [
+        	{
+        		"name": "Subscan",
+        		"extrinsic": "https://spiritnet.subscan.io/extrinsic/{hash}",
+        		"account": "https://spiritnet.subscan.io/account/{address}",
+        		"event": null
+        	}
+        ],
+        "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/KILT%20Spiritnet.svg",
+        "addressPrefix": 38
     },
     {
         "chainId": "7e4e32d0feafd4f9c9414b0be86373f9a1efa904809b683453a9af6856d38ad5",
@@ -369,35 +498,6 @@
         "addressPrefix": 69
     },
     {
-        "chainId": "d43540ba6d3eb4897c28a77d48cb5b729fea37603cbbfc7a86a73b72adb3be8d",
-        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Khala",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "PHA",
-                "precision": 12,
-                "priceId": "pha"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://khala.api.onfinality.io/ws",
-                "name": "OnFinality node",
-                "apikey": {
-                    "queryName": "apikey",
-                    "keyName": "ONFINALITY"
-                }
-            },
-            {
-                "url": "wss://khala-api.phala.network/ws",
-                "name": "Phala node"
-            }
-        ],
-        "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Khala.svg",
-        "addressPrefix": 30
-    },
-    {
         "chainId": "742a2ca70c2fda6cee4f8df98d64c4c670a052d9568058982dad9d5a7a135c5b",
         "name": "Edgeware",
         "assets": [
@@ -410,12 +510,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://edgeware.api.onfinality.io/ws",
-                "name": "OnFinality node",
-                "apikey": {
-                    "queryName": "apikey",
-                    "keyName": "ONFINALITY"
-                }
+                "url": "wss://edgeware.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             },
             {
                 "url": "wss://mainnet.edgewa.re",
@@ -477,34 +573,6 @@
         "addressPrefix": 16
     },
     {
-        "chainId": "411f057b9107718c9624d6aa4a3f23c1653898297f3d4d529d9bb6511a39dd21",
-        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "KILT Spiritnet",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "KILT",
-                "precision": 15
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://spiritnet.api.onfinality.io/ws",
-                "name": "OnFinality node",
-                "apikey": {
-                    "queryName": "apikey",
-                    "keyName": "ONFINALITY"
-                }
-            },
-            {
-                "url": "wss://spiritnet.kilt.io/",
-                "name": "KILT Protocol node"
-            }
-        ],
-        "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/KILT%20Spiritnet.svg",
-        "addressPrefix": 38
-    },
-    {
         "chainId": "4ac80c99289841dd946ef92765bf659a307d39189b3ce374a92b5f0415ee17a1",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Calamari",
@@ -517,12 +585,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://calamari.api.onfinality.io/ws",
-                "name": "OnFinality node",
-                "apikey": {
-                    "queryName": "apikey",
-                    "keyName": "ONFINALITY"
-                }
+                "url": "wss://calamari.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             },
             {
                 "url": "wss://falafel.calamari.systems/",
@@ -536,6 +600,14 @@
                 "url": "wss://smoothie.calamari.systems/",
                 "name": "Manta Network node 2"
             }
+        ],
+        "explorers": [
+        	{
+        		"name": "Subscan",
+        		"extrinsic": "https://calamari.subscan.io/extrinsic/{hash}",
+        		"account": "https://calamari.subscan.io/account/{address}",
+        		"event": null
+        	}
         ],
         "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Calamari.svg",
         "addressPrefix": 78
