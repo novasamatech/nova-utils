@@ -357,32 +357,6 @@
         ]
     },
     {
-        "chainId": "1111111111111111111111111111111111111111111111111111111111111111",
-        "name": "Moonbeam",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "GLMR",
-                "precision": 18
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://xx.yy.zz",
-                "name": "Fake node"
-            }
-        ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/valentunn/py-scale-codec/fearless_stable/scalecodec/type_registry/moonriver.json",
-            "overridesCommon": false
-        },
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonbeam.svg",
-        "addressPrefix": 1284,
-        "options": [
-            "ethereumBased"
-        ]
-    },
-    {
         "chainId": "91bc6e169807aaa54802737e1c504b2577d4fafedd5a02c10293b1cd60e39527",
         "name": "Moonbase Alpha",
         "assets": [
