@@ -39,7 +39,7 @@
         		"event": "https://polkascan.io/polkadot/event/{event}"
         	}
         ],
-        "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Polkadot.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
         "addressPrefix": 0,
         "types": {
             "url": "https://raw.githubusercontent.com/valentunn/py-scale-codec/fearless_stable/scalecodec/type_registry/polkadot-v14.json",
@@ -56,7 +56,7 @@
             },
             "crowdloans": {
                 "type": "github",
-                "url": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/crowdloan/polkadot.json"
+                "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/crowdloan/polkadot.json"
             }
         },
         "options": [
@@ -103,7 +103,7 @@
         		"event": "https://polkascan.io/kusama/event/{event}"
         	}
         ],
-        "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Kusama.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg",
         "addressPrefix": 2,
         "types": {
             "url": "https://raw.githubusercontent.com/valentunn/py-scale-codec/fearless_stable/scalecodec/type_registry/kusama-v14.json",
@@ -120,7 +120,7 @@
             },
             "crowdloans": {
                 "type": "github",
-                "url": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/crowdloan/kusama.json"
+                "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/crowdloan/kusama.json"
             }
         },
         "options": [
@@ -164,7 +164,7 @@
         		"event": null
         	}
         ],
-        "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Westend.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Westend.svg",
         "addressPrefix": 42,
         "types": {
             "url": "https://raw.githubusercontent.com/valentunn/py-scale-codec/fearless_stable/scalecodec/type_registry/westend-v14.json",
@@ -181,7 +181,7 @@
             },
             "crowdloans": {
                 "type": "github",
-                "url": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/crowdloan/westend.json"
+                "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/crowdloan/westend.json"
             }
         },
         "options": [
@@ -223,7 +223,7 @@
         		"event": null
         	}
         ],
-        "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Statemine.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Statemine.svg",
         "addressPrefix": 2
     },
     {
@@ -272,7 +272,7 @@
         		"event": null
         	}
         ],
-        "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Karura.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Karura.svg",
         "addressPrefix": 8
     },
     {
@@ -317,7 +317,7 @@
             "url": "https://raw.githubusercontent.com/valentunn/py-scale-codec/fearless_stable/scalecodec/type_registry/moonriver.json",
             "overridesCommon": false
         },
-        "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Moonriver.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonriver.svg",
         "addressPrefix": 1285,
         "options": [
             "ethereumBased"
@@ -357,7 +357,7 @@
         		"event": null
         	}
         ],
-        "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Shiden.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Shiden.svg",
         "addressPrefix": 5
     },
     {
@@ -393,7 +393,7 @@
         		"event": null
         	}
         ],
-        "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Bifrost.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bifrost.svg",
         "addressPrefix": 6
     },
     {
@@ -426,7 +426,7 @@
         		"event": null
         	}
         ],
-        "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Khala.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Khala.svg",
         "addressPrefix": 30
     },
     {
@@ -458,7 +458,7 @@
         		"event": null
         	}
         ],
-        "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/KILT%20Spiritnet.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/KILT%20Spiritnet.svg",
         "addressPrefix": 38
     },
     {
@@ -494,7 +494,7 @@
                 "name": "SORA Community (Lux8)"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/SORA.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/SORA.svg",
         "addressPrefix": 69
     },
     {
@@ -522,7 +522,7 @@
                 "name": "Patract node"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Edgeware.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Edgeware.svg",
         "addressPrefix": 7
     },
     {
@@ -545,7 +545,7 @@
                 "name": "Patract node"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Subsocial.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Subsocial.svg",
         "addressPrefix": 28
     },
     {
@@ -569,7 +569,7 @@
                 "name": "Patract node"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Kulupu.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kulupu.svg",
         "addressPrefix": 16
     },
     {
@@ -609,7 +609,7 @@
         		"event": null
         	}
         ],
-        "icon": "https://raw.githubusercontent.com/soramitsu/fearless-utils/master/icons/chains/white/Calamari.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Calamari.svg",
         "addressPrefix": 78
     }
 ]
