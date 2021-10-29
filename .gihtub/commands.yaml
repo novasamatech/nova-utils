@@ -1,0 +1,25 @@
+name: pull request commands
+on:
+  issue_comment:
+    types: [created, edited, deleted]
+
+jobs:
+  apply dev chains to prod:
+    if: contains(github.event.comment.html_url, '/pull/') &&
+        contains(github.event.comment.body, '/apply_dev')
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: run script
+        run: |
+          cd chains
+          python apply_dev_to_prod.py
+      - uses: EndBug/add-and-commit@v7
+
+        with:
+          default_author: github_actions
+          message: 'Apply changes from chains_dev.json to chains.json'
+
