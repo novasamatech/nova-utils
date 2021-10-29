@@ -1,0 +1,26 @@
+{
+  "runtime_id": 1,
+  "types": {
+    "EthereumSignature": {
+      "type": "struct",
+      "type_mapping": [
+        [
+          "r",
+          "H256"
+        ],
+        [
+          "s",
+          "H256"
+        ],
+        [
+          "v",
+          "u8"
+        ]
+      ]
+    },
+    "AccountId": "[u8; 20]",
+    "ExtrinsicSignature": "EthereumSignature",
+    "Address": "AccountId"
+  },
+  "versioning": []
+}
