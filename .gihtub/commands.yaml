@@ -5,8 +5,8 @@ on:
 
 jobs:
   apply dev chains to prod:
-    if: contains(github.event.comment.html_url, '/pull/') &&
-        contains(github.event.comment.body, '/apply_dev')
+#    if: contains(github.event.comment.html_url, '/pull/') &&
+#        contains(github.event.comment.body, '/apply_dev')
 
     runs-on: ubuntu-latest
 
