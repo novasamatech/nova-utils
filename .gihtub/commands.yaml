@@ -4,7 +4,7 @@ on:
     types: [created, edited, deleted]
 
 jobs:
-  apply dev chains to prod:
+  apply_dev_chains_to_prod:
 #    if: contains(github.event.comment.html_url, '/pull/') &&
 #        contains(github.event.comment.body, '/apply_dev')
 
