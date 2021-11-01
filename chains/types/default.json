@@ -11228,5 +11228,48 @@
     "MultiAssetFilter": "MultiAssetFilterV1",
     "MultiAsset": "MultiAssetV1",
     "WildMultiAsset": "WildMultiAssetV1"
+  },
+  "EvmAccount": {
+    "type": "struct",
+    "type_mapping": [
+      [
+        "nonce",
+        "u256"
+      ],
+      [
+        "balance",
+        "u256"
+      ]
+    ]
+  },
+  "EvmLog": {
+    "type": "struct",
+    "type_mapping": [
+      [
+        "address",
+        "H160"
+      ],
+      [
+        "topics",
+        "Vec<H256>"
+      ],
+      [
+        "data",
+        "Bytes"
+      ]
+    ]
+  },
+  "EvmVicinity": {
+    "type": "struct",
+    "type_mapping": [
+      [
+        "gasPrice",
+        "u256"
+      ],
+      [
+        "origin",
+        "H160"
+      ]
+    ]
   }
 }
