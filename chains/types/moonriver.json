@@ -20,7 +20,8 @@
     },
     "AccountId": "[u8; 20]",
     "ExtrinsicSignature": "EthereumSignature",
-    "Address": "AccountId"
+    "Address": "AccountId",
+    "Log": "EvmLog"
   },
   "versioning": []
 }
