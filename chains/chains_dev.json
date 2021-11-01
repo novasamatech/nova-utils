@@ -580,6 +580,10 @@
         		"event": null
         	}
         ],
+         "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/types/kilt.json",
+            "overridesCommon": true
+        },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/KILT%20Spiritnet.svg",
         "addressPrefix": 38
     },
@@ -609,7 +613,7 @@
         ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/types/kilt.json",
-            "overridesCommon": false
+            "overridesCommon": true
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/KILT%20Spiritnet.svg",
         "addressPrefix": 38,
