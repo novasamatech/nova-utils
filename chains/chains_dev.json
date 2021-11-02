@@ -277,12 +277,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://karura.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://karura-rpc-0.aca-api.network",
                 "name": "Acala Foundation node 0"
+            },
+            {
+                "url": "wss://karura.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             },
             {
                 "url": "wss://karura-rpc-1.aca-api.network",
