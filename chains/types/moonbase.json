@@ -1,0 +1,32 @@
+{
+  "runtime_id": 900,
+  "types": {
+    "Balance": "u128",
+    "Index": "u32",
+    "Phase": "127",
+    "0": "[u8; 20]",
+    "Address": "0",
+    "EthereumSignature": {
+      "type": "struct",
+      "type_mapping": [
+        [
+          "r",
+          "H256"
+        ],
+        [
+          "s",
+          "H256"
+        ],
+        [
+          "v",
+          "u8"
+        ]
+      ]
+    },
+    "ExtrinsicSignature": "EthereumSignature",
+    "ParaId": "160",
+    "21": "GenericEvent",
+    "148": "GenericCall"
+  },
+  "versioning": []
+}
