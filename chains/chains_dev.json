@@ -13,12 +13,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://polkadot.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://rpc.polkadot.io",
                 "name": "Parity node"
+            },
+            {
+                "url": "wss://polkadot.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             },
             {
                 "url": "wss://pub.elara.patract.io/polkadot",
@@ -77,12 +77,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://kusama.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://kusama-rpc.polkadot.io",
                 "name": "Parity node"
+            },
+            {
+                "url": "wss://kusama.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             },
             {
                 "url": "wss://pub.elara.patract.io/kusama",
@@ -139,13 +139,13 @@
             }
         ],
         "nodes": [
+             {
+                "url": "wss://westend-rpc.polkadot.io",
+                "name": "Parity node"
+            },
             {
                 "url": "wss://westend.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
-            },
-            {
-                "url": "wss://westend-rpc.polkadot.io",
-                "name": "Parity node"
             },
             {
                 "url": "wss://pub.elara.patract.io/westend",
@@ -236,12 +236,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://statemine.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://kusama-statemine-rpc.paritytech.net",
                 "name": "Parity node"
+            },
+            {
+                "url": "wss://statemine.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             },
             {
                 "url": "wss://pub.elara.patract.io/statemine",
@@ -330,12 +330,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://moonriver.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://wss.moonriver.moonbeam.network",
                 "name": "PureStake node"
+            },
+            {
+                "url": "wss://moonriver.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             },
             {
                 "url": "wss://pub.elara.patract.io/moonriver",
@@ -376,12 +376,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://moonbeam-alpha.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://rpc.pinknode.io/alphanet/explorer",
                 "name": "Pinknode"
+            },
+            {
+                "url": "wss://moonbeam-alpha.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             },
             {
                 "url": "wss://wss.testnet.moonbeam.network",
@@ -454,12 +454,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://shiden.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://rpc.shiden.astar.network",
                 "name": "StakeTechnologies node"
+            },
+            {
+                "url": "wss://shiden.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             },
             {
                 "url": "wss://rpc.pinknode.io/shiden/explorer",
@@ -491,12 +491,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://bifrost-parachain.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://bifrost-rpc.liebi.com/ws",
                 "name": "Liebi node"
+            },
+            {
+                "url": "wss://bifrost-parachain.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             },
             {
                 "url": "wss://pub.elara.patract.io/bifrost",
@@ -532,12 +532,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://khala.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://khala-api.phala.network/ws",
                 "name": "Phala node"
+            },
+            {
+                "url": "wss://khala.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -564,12 +564,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://spiritnet.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://spiritnet.kilt.io/",
                 "name": "KILT Protocol node"
+            },
+            {
+                "url": "wss://spiritnet.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -634,12 +634,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://calamari.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://falafel.calamari.systems/",
                 "name": "Manta Network node 0"
+            },
+            {
+                "url": "wss://calamari.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             },
             {
                 "url": "wss://fritti.calamari.systems/",
