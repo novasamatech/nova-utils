@@ -6,7 +6,23 @@
     "description": "All-in-one DeFi hub of Polkadot",
     "website": "https://acala.network/",
     "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Acala.svg",
-    "rewardRate": 15,
+    "rewardRate": 150,
     "customFlow": "Acala"
+  },
+  {
+    "paraid": "2004",
+    "name": "Moonbeam",
+    "token": "GLMR",
+    "description": "Ethereum-compatible smart contract parachain on Polkadot",
+    "website": "https://moonbeam.network/",
+    "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonriver.svg",
+    "customFlow": "Moonbeam",
+    "extras": {
+      // TODO
+      "paraId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
+      "apiLink": "yy9252r9jh.api.purestake.io",
+      "apiTokenName": "MOONBEAM_PROD_AUTH_TOKEN"
+    },
+    "rewardRate": 100
   }
 ]
