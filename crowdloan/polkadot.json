@@ -23,5 +23,22 @@
       "apiTokenName": "MOONBEAM_PROD_AUTH_TOKEN"
     },
     "rewardRate": 100
+  },
+  {
+    "paraid": "2006",
+    "name": "Astar",
+    "token": "ASTR",
+    "description": "Astar is the Polkadot-native dApp hub supporting Ethereum, WebAssembly, dApp Staking, and Layer2 solutions",
+    "website": "https://astar.network/",
+    "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Astar.svg"
+  },
+  {
+    "paraid": "2013",
+    "name": "Litentry",
+    "token": "LIT",
+    "description": "The Litentry Network provides privacy-first, decentralized identity aggregation computing services",
+    "website": "https://www.litentry.com/",
+    "icon": "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/ui/logos/nodes/litentry.png",
+    "rewardRate": 2.5
   }
 ]
