@@ -38,7 +38,34 @@
     "token": "LIT",
     "description": "The Litentry Network provides privacy-first, decentralized identity aggregation computing services",
     "website": "https://www.litentry.com/",
-    "icon": "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/ui/logos/nodes/litentry.png",
+    "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Litentry.svg",
     "rewardRate": 2.5
+  },
+  {
+    "paraid": "2002",
+    "name": "Clover",
+    "token": "CLV",
+    "description": "Clover is a substrate based smart contract platform built for Polkadot, with added support for Ethereum developers to participate in the Polkadot ecosystem",
+    "website": "https://clover.finance/",
+    "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Clover.svg",
+    "rewardRate": 4
+  },
+  {
+    "paraid": "2012",
+    "name": "Parallel",
+    "token": "PARA",
+    "description": "Parallel enables token holders and projects to flexibly and borderlessly put their idle capital to earn interests",
+    "website": "https://parallel.fi/",
+    "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Parallel.svg",
+    "rewardRate": 25
+  },
+  {
+    "paraid": "2008",
+    "name": "Crust",
+    "token": "CRU",
+    "description": "Crust implements the incentive layer protocol for decentralized storage",
+    "website": "https://crust.network/",
+    "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Crust.svg",
+    "rewardRate": 0.2
   }
 ]
