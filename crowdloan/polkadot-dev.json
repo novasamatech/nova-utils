@@ -6,7 +6,7 @@
     "description": "All-in-one DeFi hub of Polkadot",
     "website": "https://acala.network/",
     "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Acala.svg",
-    "rewardRate": 150,
+    "rewardRate": 15,
     "customFlow": "Acala"
   },
   {
@@ -15,7 +15,7 @@
     "token": "GLMR",
     "description": "Ethereum-compatible smart contract parachain on Polkadot",
     "website": "https://moonbeam.network/",
-    "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonriver.svg",
+    "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonbeam.svg",
     "customFlow": "Moonbeam",
     "extras": {
       "paraId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
@@ -23,5 +23,49 @@
       "apiTokenName": "MOONBEAM_PROD_AUTH_TOKEN"
     },
     "rewardRate": 100
+  },
+  {
+    "paraid": "2006",
+    "name": "Astar",
+    "token": "ASTR",
+    "description": "Astar is the Polkadot-native dApp hub supporting Ethereum, WebAssembly, dApp Staking, and Layer2 solutions",
+    "website": "https://astar.network/",
+    "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Astar.svg"
+  },
+  {
+    "paraid": "2013",
+    "name": "Litentry",
+    "token": "LIT",
+    "description": "The Litentry Network provides privacy-first, decentralized identity aggregation computing services",
+    "website": "https://www.litentry.com/",
+    "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Litentry.svg",
+    "rewardRate": 2.5
+  },
+  {
+    "paraid": "2002",
+    "name": "Clover",
+    "token": "CLV",
+    "description": "Clover is a substrate based smart contract platform built for Polkadot, with added support for Ethereum developers to participate in the Polkadot ecosystem",
+    "website": "https://clover.finance/",
+    "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Clover.svg",
+    "rewardRate": 4
+  },
+  {
+    "paraid": "2012",
+    "name": "Parallel",
+    "token": "PARA",
+    "description": "Parallel enables token holders and projects to flexibly and borderlessly put their idle capital to earn interests",
+    "website": "https://parallel.fi/",
+    "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Parallel.svg",
+    "rewardRate": 25
+  },
+  {
+    "paraid": "2008",
+    "name": "Crust",
+    "token": "CRU",
+    "description": "Crust implements the incentive layer protocol for decentralized storage",
+    "website": "https://crust.network/",
+    "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Crust.svg",
+    "rewardRate": 0.2
   }
 ]
