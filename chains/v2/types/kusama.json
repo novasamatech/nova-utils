@@ -1,0 +1,14 @@
+{
+  "runtime_id": 9122,
+  "types": {
+      "Balance": "u128",
+      "Index": "u32",
+      "Phase": "frame_system.Phase",
+      "Address": "sp_runtime.multiaddress.MultiAddress",
+      "ExtrinsicSignature": "sp_runtime.MultiSignature",
+      "ParaId": "polkadot_parachain.primitives.Id",
+      "kusama_runtime.Event": "GenericEvent",
+      "kusama_runtime.Call": "GenericCall"
+  },
+  "versioning": []
+}

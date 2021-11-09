@@ -1,0 +1,14 @@
+{
+  "runtime_id": 1019,
+  "types": {
+      "Balance": "u128",
+      "Index": "u32",
+      "Phase": "frame_system.Phase",
+      "Address": "sp_runtime.multiaddress.MultiAddress",
+      "ExtrinsicSignature": "sp_runtime.MultiSignature",
+      "ParaId": "polkadot_parachain.primitives.Id",
+      "karura_runtime.Event": "GenericEvent",
+      "karura_runtime.Call": "GenericCall"
+  },
+  "versioning": []
+}

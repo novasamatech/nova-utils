@@ -1,0 +1,14 @@
+{
+  "runtime_id": 504,
+  "types": {
+      "Balance": "u128",
+      "Index": "u32",
+      "Phase": "frame_system.Phase",
+      "Address": "sp_runtime.multiaddress.MultiAddress",
+      "ExtrinsicSignature": "sp_runtime.MultiSignature",
+      "ParaId": "polkadot_parachain.primitives.Id",
+      "statemine_runtime.Event": "GenericEvent",
+      "statemine_runtime.Call": "GenericCall"
+  },
+  "versioning": []
+}
