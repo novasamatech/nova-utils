@@ -27,7 +27,9 @@
     "ExtrinsicSignature": "EthereumSignature",
     "ParaId": "polkadot_parachain.primitives.Id",
     "moonbase_runtime.Event": "GenericEvent",
-    "moonbase_runtime.Call": "GenericCall"
+    "moonbase_runtime.Call": "GenericCall",
+    "sp_core.crypto.AccountId32": "GenericAccountId",
+    "pallet_identity.types.Data": "Data"
   },
   "versioning": []
 }

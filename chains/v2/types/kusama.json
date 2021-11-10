@@ -8,7 +8,9 @@
       "ExtrinsicSignature": "sp_runtime.MultiSignature",
       "ParaId": "polkadot_parachain.primitives.Id",
       "kusama_runtime.Event": "GenericEvent",
-      "kusama_runtime.Call": "GenericCall"
+      "kusama_runtime.Call": "GenericCall",
+      "sp_core.crypto.AccountId32": "GenericAccountId",
+      "pallet_identity.types.Data": "Data"
   },
   "versioning": []
 }
