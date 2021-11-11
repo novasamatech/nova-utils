@@ -580,7 +580,7 @@
             {
                 "assetId": 0,
                 "symbol": "EDG",
-                "precision": 7
+                "precision": 18
             }
         ],
         "nodes": [
@@ -594,8 +594,8 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/types/edgeware.json",
-            "overridesCommon": true
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/feature/edgeware/chains/types/edgeware.json",
+            "overridesCommon": false
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Edgeware.svg",
         "addressPrefix": 7
