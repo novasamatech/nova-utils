@@ -574,6 +574,33 @@
         "addressPrefix": 7
     },
     {
+        "chainId": "0bd72c1c305172e1275278aaeb3f161e02eccb7a819e63f62d47bd53a28189f8",
+        "name": "Subsocial",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "SUB",
+                "precision": 11
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc.subsocial.network",
+                "name": "DappForce"
+            },
+            {
+                "url": "wss://subsocial.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/feature/subsocial/chains/types/subsocial.json",
+            "overridesCommon": false
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Subsocial.svg",
+        "addressPrefix": 28
+    },
+    {
         "chainId": "9d3ea49f13d993d093f209c42f97a6b723b84d3b9aa8461be9bb19ee13e7b4fd",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Parallel Heiko",
