@@ -546,6 +546,29 @@
         "addressPrefix": 6
     },
     {
+        "chainId": "9cfeb3c381454b84d2aae4125e96011c00d57ff647c3766a24d6dc302299ba39",
+        "name": "Subsocial",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "SUB",
+                "precision": 11
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc.subsocial.network",
+                "name": "DappForce"
+            },
+            {
+                "url": "wss://subsocial.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Khala.svg",
+        "addressPrefix": 28
+    },
+    {
         "chainId": "d43540ba6d3eb4897c28a77d48cb5b729fea37603cbbfc7a86a73b72adb3be8d",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Khala",
