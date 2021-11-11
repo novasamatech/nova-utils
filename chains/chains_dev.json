@@ -565,6 +565,10 @@
                 "name": "OnFinality node"
             }
         ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/feature/subsocial/chains/types/subsocial.json",
+            "overridesCommon": false
+        },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Khala.svg",
         "addressPrefix": 28
     },
