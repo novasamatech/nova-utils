@@ -546,7 +546,7 @@
         "addressPrefix": 6
     },
     {
-        "chainId": "9cfeb3c381454b84d2aae4125e96011c00d57ff647c3766a24d6dc302299ba39",
+        "chainId": "0bd72c1c305172e1275278aaeb3f161e02eccb7a819e63f62d47bd53a28189f8",
         "name": "Subsocial",
         "assets": [
             {
@@ -566,11 +566,118 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/types/subsocial.json",
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/feature/subsocial/chains/types/subsocial.json",
             "overridesCommon": false
         },
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Khala.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Subsocial.svg",
         "addressPrefix": 28
+    },
+    {
+        "chainId": "9d3ea49f13d993d093f209c42f97a6b723b84d3b9aa8461be9bb19ee13e7b4fd",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Parallel Heiko",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "HKO",
+                "precision": 12
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://heiko-rpc.parallel.fi",
+                "name": "Parallel"
+            },
+            {
+                "url": "wss://parallel-heiko.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/types/parallel.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Parallel.svg",
+        "addressPrefix": 110
+    },
+    {
+        "chainId": "742a2ca70c2fda6cee4f8df98d64c4c670a052d9568058982dad9d5a7a135c5b",
+        "name": "Edgeware",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "EDG",
+                "precision": 18
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://mainnet.edgewa.re",
+                "name": "Commonwealth Labs"
+            },
+            {
+                "url": "wss://edgeware.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/types/edgeware.json",
+            "overridesCommon": false
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Edgeware.svg",
+        "addressPrefix": 7
+    },
+    {
+        "chainId": "8bf43860c54d5520fd0ec7afa15c2912a1d3b0e4cf132a5838a83b171dad4c70",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Basilisk",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "BSX",
+                "precision": 12
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc-01.basilisk.hydradx.io",
+                "name": "Hydradx"
+            },
+            {
+                "url": "wss://basilisk.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Basilisk.svg",
+        "addressPrefix": 42
+    },
+    {
+        "chainId": "4d812836a05a7ea37767325acadff956ce472474dd44dd2e7f15d16fbfc68cdb",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Altair",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "AIR",
+                "precision": 18
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://fullnode.altair.centrifuge.io",
+                "name": "Centrifuge"
+            },
+            {
+                "url": "wss://altair.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/types/altair.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Altair.svg",
+        "addressPrefix": 136
     },
     {
         "chainId": "d43540ba6d3eb4897c28a77d48cb5b729fea37603cbbfc7a86a73b72adb3be8d",
