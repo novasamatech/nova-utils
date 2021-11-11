@@ -546,6 +546,34 @@
         "addressPrefix": 6
     },
     {
+        "chainId": "9d3ea49f13d993d093f209c42f97a6b723b84d3b9aa8461be9bb19ee13e7b4fd",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Parallel Heiko",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "HKO",
+                "precision": 12
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://heiko-rpc.parallel.fi",
+                "name": "Parallel"
+            },
+            {
+                "url": "wss://parallel-heiko.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/parallel.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Parallel.svg",
+        "addressPrefix": 110
+    }
+    {
         "chainId": "8bf43860c54d5520fd0ec7afa15c2912a1d3b0e4cf132a5838a83b171dad4c70",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Basilisk",
