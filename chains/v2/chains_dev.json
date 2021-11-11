@@ -546,6 +546,58 @@
         "addressPrefix": 6
     },
     {
+        "chainId": "8bf43860c54d5520fd0ec7afa15c2912a1d3b0e4cf132a5838a83b171dad4c70",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Basilisk",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "BSX",
+                "precision": 12
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc-01.basilisk.hydradx.io",
+                "name": "Hydradx"
+            },
+            {
+                "url": "wss://basilisk.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Basilisk.svg",
+        "addressPrefix": 10041
+    },
+    {
+        "chainId": "4d812836a05a7ea37767325acadff956ce472474dd44dd2e7f15d16fbfc68cdb",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Altair",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "AIR",
+                "precision": 18
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://fullnode.altair.centrifuge.io",
+                "name": "Centrifuge"
+            },
+            {
+                "url": "wss://altair.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/altair.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Altair.svg",
+        "addressPrefix": 136
+    },
+    {
         "chainId": "d43540ba6d3eb4897c28a77d48cb5b729fea37603cbbfc7a86a73b72adb3be8d",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Khala",
