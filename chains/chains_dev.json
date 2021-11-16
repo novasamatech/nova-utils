@@ -101,7 +101,11 @@
         		"extrinsic": "https://polkascan.io/kusama/extrinsic/{hash}",
         		"account": "https://polkascan.io/kusama/account/{address}",
         		"event": "https://polkascan.io/kusama/event/{event}"
-        	}
+        	},
+            {
+                "name": "Sub.id",
+        		"account": "https://sub.id/#/{address}"
+            }
         ],
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg",
         "addressPrefix": 2,
