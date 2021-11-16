@@ -5,7 +5,7 @@
       "Index": "u32",
       "Phase": "frame_system.Phase",
       "Address": "sp_runtime.multiaddress.MultiAddress",
-      "ExtrinsicSignature": "sp_runtime.MultiSignature",
+      "ExtrinsicSignature": "acala_primitives.signature.AcalaMultiSignature",
       "ParaId": "polkadot_parachain.primitives.Id",
       "karura_runtime.Event": "GenericEvent",
       "karura_runtime.Call": "GenericCall",
