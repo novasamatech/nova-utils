@@ -1,0 +1,612 @@
+[
+    {
+        "chainId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Polkadot",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "DOT",
+                "precision": 10,
+                "priceId": "polkadot",
+                "staking": "relaychain"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc.polkadot.io",
+                "name": "Parity node"
+            },
+            {
+                "url": "wss://polkadot.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://pub.elara.patract.io/polkadot",
+                "name": "Patract node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://polkadot.subscan.io/extrinsic/{hash}",
+                "account": "https://polkadot.subscan.io/account/{address}",
+                "event": null
+            },
+            {
+                "name": "Polkascan",
+                "extrinsic": "https://polkascan.io/polkadot/extrinsic/{hash}",
+                "account": "https://polkascan.io/polkadot/account/{address}",
+                "event": "https://polkascan.io/polkadot/event/{event}"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
+        "addressPrefix": 0,
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/polkadot.json",
+            "overridesCommon": true
+        },
+        "externalApi": {
+            "staking": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/ef1rspb/fearless-wallet"
+            },
+            "history": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/ef1rspb/fearless-wallet"
+            },
+            "crowdloans": {
+                "type": "github",
+                "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/crowdloan/polkadot.json"
+            }
+        },
+        "options": [
+            "crowdloans"
+        ]
+    },
+    {
+        "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Kusama",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "KSM",
+                "precision": 12,
+                "priceId": "kusama",
+                "staking": "relaychain"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://kusama-rpc.polkadot.io",
+                "name": "Parity node"
+            },
+            {
+                "url": "wss://kusama.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://pub.elara.patract.io/kusama",
+                "name": "Patract node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://kusama.subscan.io/extrinsic/{hash}",
+                "account": "https://kusama.subscan.io/account/{address}",
+                "event": null
+            },
+            {
+                "name": "Polkascan",
+                "extrinsic": "https://polkascan.io/kusama/extrinsic/{hash}",
+                "account": "https://polkascan.io/kusama/account/{address}",
+                "event": "https://polkascan.io/kusama/event/{event}"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg",
+        "addressPrefix": 2,
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/kusama.json",
+            "overridesCommon": true
+        },
+        "externalApi": {
+            "staking": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-kusama"
+            },
+            "history": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-kusama"
+            },
+            "crowdloans": {
+                "type": "github",
+                "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/crowdloan/kusama.json"
+            }
+        },
+        "options": [
+            "crowdloans"
+        ]
+    },
+    {
+        "chainId": "e143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e",
+        "name": "Westend",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "WND",
+                "precision": 12,
+                "staking": "relaychain"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://westend-rpc.polkadot.io",
+                "name": "Parity node"
+            },
+            {
+                "url": "wss://westend.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://pub.elara.patract.io/westend",
+                "name": "Patract node"
+            },
+            {
+                "url": "wss://rpc.pinknode.io/westend/explorer",
+                "name": "Pinknode node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://westend.subscan.io/extrinsic/{hash}",
+                "account": "https://westend.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Westend.svg",
+        "addressPrefix": 42,
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/westend.json",
+            "overridesCommon": true
+        },
+        "externalApi": {
+            "staking": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-westend"
+            },
+            "history": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-westend"
+            },
+            "crowdloans": {
+                "type": "github",
+                "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/crowdloan/westend.json"
+            }
+        },
+        "options": [
+            "testnet",
+            "crowdloans"
+        ]
+    },
+    {
+        "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Statemine",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "KSM",
+                "precision": 12,
+                "priceId": "kusama"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://kusama-statemine-rpc.paritytech.net",
+                "name": "Parity node"
+            },
+            {
+                "url": "wss://statemine.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://pub.elara.patract.io/statemine",
+                "name": "Patract node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://statemine.subscan.io/extrinsic/{hash}",
+                "account": "https://statemine.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/statemine.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Statemine-Statemint.svg",
+        "addressPrefix": 2
+    },
+    {
+        "chainId": "baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Karura",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "KAR",
+                "precision": 12,
+                "priceId": "karura"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://karura-rpc-0.aca-api.network",
+                "name": "Acala Foundation node 0"
+            },
+            {
+                "url": "wss://karura.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://karura-rpc-1.aca-api.network",
+                "name": "Acala Foundation node 1"
+            },
+            {
+                "url": "wss://karura-rpc-2.aca-api.network/ws",
+                "name": "Acala Foundation node 2"
+            },
+            {
+                "url": "wss://karura-rpc-3.aca-api.network/ws",
+                "name": "Acala Foundation node 3"
+            },
+            {
+                "url": "wss://pub.elara.patract.io/karura",
+                "name": "Patract node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/karura.json",
+            "overridesCommon": true
+        },
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://karura.subscan.io/extrinsic/{hash}",
+                "account": "https://karura.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Karura.svg",
+        "addressPrefix": 8
+    },
+    {
+        "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Moonbeam",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "GLMR",
+                "precision": 18
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://todo.putmoonriver.here",
+                "name": "Moonbeam Fake node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/moonriver.json",
+            "overridesCommon": false
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonbeam.svg",
+        "addressPrefix": 1284,
+        "options": [
+            "ethereumBased"
+        ]
+    },
+    {
+        "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Moonriver",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "MOVR",
+                "precision": 18,
+                "priceId": "moonriver"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://wss.moonriver.moonbeam.network",
+                "name": "PureStake node"
+            },
+            {
+                "url": "wss://moonriver.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://pub.elara.patract.io/moonriver",
+                "name": "Patract node"
+            },
+            {
+                "url": "wss://rpc.pinknode.io/moonriver/explorer",
+                "name": "Pinknode node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://moonriver.subscan.io/extrinsic/{hash}",
+                "account": "https://moonriver.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/moonriver.json",
+            "overridesCommon": false
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonriver.svg",
+        "addressPrefix": 1285,
+        "options": [
+            "ethereumBased"
+        ]
+    },
+    {
+        "chainId": "f1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Shiden",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "SDN",
+                "precision": 18,
+                "priceId": "shiden"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc.shiden.astar.network",
+                "name": "StakeTechnologies node"
+            },
+            {
+                "url": "wss://shiden.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://rpc.pinknode.io/shiden/explorer",
+                "name": "Pinknode node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://shiden.subscan.io/extrinsic/{hash}",
+                "account": "https://shiden.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Shiden.svg",
+        "addressPrefix": 5
+    },
+    {
+        "chainId": "9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Bifrost",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "BNC",
+                "priceId": "bifrost-native-coin",
+                "precision": 12
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://bifrost-rpc.liebi.com/ws",
+                "name": "Liebi node"
+            },
+            {
+                "url": "wss://bifrost-parachain.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://pub.elara.patract.io/bifrost",
+                "name": "Patract node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/bifrost.json",
+            "overridesCommon": true
+        },
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://bifrost.subscan.io/extrinsic/{hash}",
+                "account": "https://bifrost.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bifrost.svg",
+        "addressPrefix": 6
+    },
+    {
+        "chainId": "64a1c658a48b2e70a7fb1ad4c39eea35022568c20fc44a6e2e3d0a57aee6053b",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Parallel Heiko",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "HKO",
+                "precision": 12
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://heiko-rpc.parallel.fi",
+                "name": "Parallel"
+            },
+            {
+                "url": "wss://parallel-heiko.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/parallel.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Parallel-Heiko.svg",
+        "addressPrefix": 110
+    },
+    {
+        "chainId": "742a2ca70c2fda6cee4f8df98d64c4c670a052d9568058982dad9d5a7a135c5b",
+        "name": "Edgeware",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "EDG",
+                "precision": 18,
+                "priceId": "edgeware"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://mainnet.edgewa.re",
+                "name": "Commonwealth Labs"
+            },
+            {
+                "url": "wss://edgeware.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://pub.elara.patract.io/edgeware",
+                "name": "Patract node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/types/edgeware.json",
+            "overridesCommon": false
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Edgeware.svg",
+        "addressPrefix": 7
+    },
+    {
+        "chainId": "d43540ba6d3eb4897c28a77d48cb5b729fea37603cbbfc7a86a73b72adb3be8d",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Khala",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "PHA",
+                "precision": 12,
+                "priceId": "pha"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://khala-api.phala.network/ws",
+                "name": "Phala node"
+            },
+            {
+                "url": "wss://khala.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://khala.subscan.io/extrinsic/{hash}",
+                "account": "https://khala.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Khala.svg",
+        "addressPrefix": 30
+    },
+    {
+        "chainId": "411f057b9107718c9624d6aa4a3f23c1653898297f3d4d529d9bb6511a39dd21",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "KILT Spiritnet",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "KILT",
+                "precision": 15
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://spiritnet.kilt.io/",
+                "name": "KILT Protocol node"
+            },
+            {
+                "url": "wss://spiritnet.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://spiritnet.subscan.io/extrinsic/{hash}",
+                "account": "https://spiritnet.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/kilt_spiritnet.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/KILT.svg",
+        "addressPrefix": 38
+    },
+    {
+        "chainId": "4ac80c99289841dd946ef92765bf659a307d39189b3ce374a92b5f0415ee17a1",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Calamari",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "KMA",
+                "precision": 12
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://falafel.calamari.systems/",
+                "name": "Manta Network node 0"
+            },
+            {
+                "url": "wss://calamari.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://fritti.calamari.systems/",
+                "name": "Manta Network node 1"
+            },
+            {
+                "url": "wss://smoothie.calamari.systems/",
+                "name": "Manta Network node 2"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://calamari.subscan.io/extrinsic/{hash}",
+                "account": "https://calamari.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/calamari.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Calamari.svg",
+        "addressPrefix": 78
+    }
+]
