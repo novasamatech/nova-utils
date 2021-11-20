@@ -26,18 +26,18 @@
             }
         ],
         "explorers": [
-        	{
-        		"name": "Subscan",
-        		"extrinsic": "https://polkadot.subscan.io/extrinsic/{hash}",
-        		"account": "https://polkadot.subscan.io/account/{address}",
-        		"event": null
-        	},
             {
-        		"name": "Polkascan",
-        		"extrinsic": "https://polkascan.io/polkadot/extrinsic/{hash}",
-        		"account": "https://polkascan.io/polkadot/account/{address}",
-        		"event": "https://polkascan.io/polkadot/event/{event}"
-        	},
+                "name": "Subscan",
+                "extrinsic": "https://polkadot.subscan.io/extrinsic/{hash}",
+                "account": "https://polkadot.subscan.io/account/{address}",
+                "event": null
+            },
+            {
+                "name": "Polkascan",
+                "extrinsic": "https://polkascan.io/polkadot/extrinsic/{hash}",
+                "account": "https://polkascan.io/polkadot/account/{address}",
+                "event": "https://polkascan.io/polkadot/event/{event}"
+            },
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/#/{address}"
@@ -94,18 +94,18 @@
             }
         ],
         "explorers": [
-        	{
-        		"name": "Subscan",
-        		"extrinsic": "https://kusama.subscan.io/extrinsic/{hash}",
-        		"account": "https://kusama.subscan.io/account/{address}",
-        		"event": null
-        	},
             {
-        		"name": "Polkascan",
-        		"extrinsic": "https://polkascan.io/kusama/extrinsic/{hash}",
-        		"account": "https://polkascan.io/kusama/account/{address}",
-        		"event": "https://polkascan.io/kusama/event/{event}"
-        	},
+                "name": "Subscan",
+                "extrinsic": "https://kusama.subscan.io/extrinsic/{hash}",
+                "account": "https://kusama.subscan.io/account/{address}",
+                "event": null
+            },
+            {
+                "name": "Polkascan",
+                "extrinsic": "https://polkascan.io/kusama/extrinsic/{hash}",
+                "account": "https://polkascan.io/kusama/account/{address}",
+                "event": "https://polkascan.io/kusama/event/{event}"
+            },
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/#/{address}"
@@ -147,7 +147,7 @@
             }
         ],
         "nodes": [
-             {
+            {
                 "url": "wss://westend-rpc.polkadot.io",
                 "name": "Parity node"
             },
@@ -165,12 +165,12 @@
             }
         ],
         "explorers": [
-        	{
-        		"name": "Subscan",
-        		"extrinsic": "https://westend.subscan.io/extrinsic/{hash}",
-        		"account": "https://westend.subscan.io/account/{address}",
-        		"event": null
-        	}
+            {
+                "name": "Subscan",
+                "extrinsic": "https://westend.subscan.io/extrinsic/{hash}",
+                "account": "https://westend.subscan.io/account/{address}",
+                "event": null
+            }
         ],
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Westend.svg",
         "addressPrefix": 42,
@@ -257,12 +257,18 @@
             }
         ],
         "explorers": [
-        	{
-        		"name": "Subscan",
-        		"extrinsic": "https://statemine.subscan.io/extrinsic/{hash}",
-        		"account": "https://statemine.subscan.io/account/{address}",
-        		"event": null
-        	},
+            {
+                "name": "Subscan",
+                "extrinsic": "https://statemine.subscan.io/extrinsic/{hash}",
+                "account": "https://statemine.subscan.io/account/{address}",
+                "event": null
+            },
+            {
+                "name": "Statescan",
+                "extrinsic": "https://statemine.statescan.io/extrinsic/{hash}",
+                "account": "https://statemine.statescan.io/account/{address}",
+                "event": "https://statemine.statescan.io/event/{event}"
+            },
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/#/{address}"
@@ -318,12 +324,12 @@
             "overridesCommon": true
         },
         "explorers": [
-        	{
-        		"name": "Subscan",
-        		"extrinsic": "https://karura.subscan.io/extrinsic/{hash}",
-        		"account": "https://karura.subscan.io/account/{address}",
-        		"event": null
-        	},
+            {
+                "name": "Subscan",
+                "extrinsic": "https://karura.subscan.io/extrinsic/{hash}",
+                "account": "https://karura.subscan.io/account/{address}",
+                "event": null
+            },
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/#/{address}"
@@ -390,12 +396,12 @@
             }
         ],
         "explorers": [
-        	{
-        		"name": "Subscan",
-        		"extrinsic": "https://moonriver.subscan.io/extrinsic/{hash}",
-        		"account": "https://moonriver.subscan.io/account/{address}",
-        		"event": null
-        	},
+            {
+                "name": "Subscan",
+                "extrinsic": "https://moonriver.subscan.io/extrinsic/{hash}",
+                "account": "https://moonriver.subscan.io/account/{address}",
+                "event": null
+            },
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/#/{address}"
@@ -436,12 +442,12 @@
             }
         ],
         "explorers": [
-        	{
-        		"name": "Subscan",
-        		"extrinsic": "https://moonbase.subscan.io/extrinsic/{hash}",
-        		"account": "https://moonbase.subscan.io/account/{address}",
-        		"event": null
-        	}
+            {
+                "name": "Subscan",
+                "extrinsic": "https://moonbase.subscan.io/extrinsic/{hash}",
+                "account": "https://moonbase.subscan.io/account/{address}",
+                "event": null
+            }
         ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/moonbase.json",
@@ -474,7 +480,7 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/polkatrain.json",
             "overridesCommon": true
         },
-         "externalApi": {
+        "externalApi": {
             "crowdloans": {
                 "type": "github",
                 "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/crowdloan/polkatrain.json"
@@ -514,12 +520,12 @@
             }
         ],
         "explorers": [
-        	{
-        		"name": "Subscan",
-        		"extrinsic": "https://shiden.subscan.io/extrinsic/{hash}",
-        		"account": "https://shiden.subscan.io/account/{address}",
-        		"event": null
-        	},
+            {
+                "name": "Subscan",
+                "extrinsic": "https://shiden.subscan.io/extrinsic/{hash}",
+                "account": "https://shiden.subscan.io/account/{address}",
+                "event": null
+            },
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/#/{address}"
@@ -559,12 +565,12 @@
             "overridesCommon": true
         },
         "explorers": [
-        	{
-        		"name": "Subscan",
-        		"extrinsic": "https://bifrost.subscan.io/extrinsic/{hash}",
-        		"account": "https://bifrost.subscan.io/account/{address}",
-        		"event": null
-        	},
+            {
+                "name": "Subscan",
+                "extrinsic": "https://bifrost.subscan.io/extrinsic/{hash}",
+                "account": "https://bifrost.subscan.io/account/{address}",
+                "event": null
+            },
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/#/{address}"
@@ -731,12 +737,12 @@
             }
         ],
         "explorers": [
-        	{
-        		"name": "Subscan",
-        		"extrinsic": "https://khala.subscan.io/extrinsic/{hash}",
-        		"account": "https://khala.subscan.io/account/{address}",
-        		"event": null
-        	},
+            {
+                "name": "Subscan",
+                "extrinsic": "https://khala.subscan.io/extrinsic/{hash}",
+                "account": "https://khala.subscan.io/account/{address}",
+                "event": null
+            },
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/#/{address}"
@@ -767,18 +773,18 @@
             }
         ],
         "explorers": [
-        	{
-        		"name": "Subscan",
-        		"extrinsic": "https://spiritnet.subscan.io/extrinsic/{hash}",
-        		"account": "https://spiritnet.subscan.io/account/{address}",
-        		"event": null
-        	},
+            {
+                "name": "Subscan",
+                "extrinsic": "https://spiritnet.subscan.io/extrinsic/{hash}",
+                "account": "https://spiritnet.subscan.io/account/{address}",
+                "event": null
+            },
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/#/{address}"
             }
         ],
-         "types": {
+        "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/kilt_spiritnet.json",
             "overridesCommon": true
         },
@@ -802,12 +808,12 @@
             }
         ],
         "explorers": [
-        	{
-        		"name": "Subscan",
-        		"extrinsic": "https://kilt-testnet.subscan.io/extrinsic/{hash}",
-        		"account": "https://kilt-testnet.subscan.io/account/{address}",
-        		"event": null
-        	}
+            {
+                "name": "Subscan",
+                "extrinsic": "https://kilt-testnet.subscan.io/extrinsic/{hash}",
+                "account": "https://kilt-testnet.subscan.io/account/{address}",
+                "event": null
+            }
         ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/kilt_peregrine.json",
@@ -849,12 +855,12 @@
             }
         ],
         "explorers": [
-        	{
-        		"name": "Subscan",
-        		"extrinsic": "https://calamari.subscan.io/extrinsic/{hash}",
-        		"account": "https://calamari.subscan.io/account/{address}",
-        		"event": null
-        	},
+            {
+                "name": "Subscan",
+                "extrinsic": "https://calamari.subscan.io/extrinsic/{hash}",
+                "account": "https://calamari.subscan.io/account/{address}",
+                "event": null
+            },
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/#/{address}"
