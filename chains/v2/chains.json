@@ -393,7 +393,11 @@
             }
         ],
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Shiden.svg",
-        "addressPrefix": 5
+        "addressPrefix": 5,
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/shiden.json",
+            "overridesCommon": true
+        }
     },
     {
         "chainId": "9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed",
