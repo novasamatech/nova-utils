@@ -521,6 +521,14 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/parallel.json",
             "overridesCommon": true
         },
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://parallel-heiko.subscan.io/extrinsic/{hash}",
+                "account": "https://parallel-heiko.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Parallel-Heiko.svg",
         "addressPrefix": 110
     },
@@ -553,6 +561,14 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/types/edgeware.json",
             "overridesCommon": false
         },
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://edgeware.subscan.io/extrinsic/{hash}",
+                "account": "https://edgeware.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Edgeware.svg",
         "addressPrefix": 7
     },
