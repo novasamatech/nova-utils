@@ -898,5 +898,37 @@
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Calamari.svg",
         "addressPrefix": 78
+    },
+    {
+        "chainId": "cd4d732201ebe5d6b014edda071c4203e16867305332301dc8d092044b28e554",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Quartz",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "QTZ",
+                "precision": 18
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://quartz.unique.network",
+                "name": "Unic node"
+            },
+            {
+                "url": "wss://eu-ws-quartz.unique.network",
+                "name": "Unic europe node"
+            },
+            {
+                "url": "wss://us-ws-quartz.unique.network",
+                "name": "Unic US node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/quartz.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Quartz.svg",
+        "addressPrefix": 255
     }
 ]
