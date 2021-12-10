@@ -912,30 +912,6 @@
         "addressPrefix": 255
     },
     {
-        "chainId": "e8e7f0f4c4f5a00720b4821dbfddefea7490bcf0b19009961cc46957984e2c1c",
-        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Picasso",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "PICA",
-                "precision": 12
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://picasso-rpc.composable.finance/",
-                "name": "Composable node"
-            }
-        ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/picasso.json",
-            "overridesCommon": true
-        },
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Picasso.svg",
-        "addressPrefix": 49
-    },
-    {
         "chainId": "f22b7850cdd5a7657bbfd90ac86441275bbc57ace3d2698a740c7b0ec4de5ec3",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Bit.Country Pioneer",
@@ -948,7 +924,7 @@
         ],
         "nodes": [
             {
-                "url": "wss://pioneer-1-rpc.bit.country/",
+                "url": "wss://pioneer-1-rpc.bit.country",
                 "name": "Bit.Country node"
             },
             {
