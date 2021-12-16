@@ -59,7 +59,7 @@ def get_properties(substrate: SubstrateInterface) -> Properties:
     return data_prop
 
 
-def get_metada_param(substrate: SubstrateInterface) -> JsonObject:
+def get_metadata_param(substrate: SubstrateInterface) -> JsonObject:
     metadata = substrate.get_block_metadata()
     metadata_is_v14(metadata)
     account_do_not_need_updates(substrate)
@@ -239,7 +239,7 @@ def main():
 
     substrate = create_connection_by_url(url)
 
-    json_metadata = get_metada_param(substrate)
+    json_metadata = get_metadata_param(substrate)
     json_property = get_properties(substrate)
 
     write_data_to_file(

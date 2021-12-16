@@ -1,5 +1,5 @@
 import pytest
-from scripts.create_type_file import get_properties, create_connection_by_url, get_metada_param
+from scripts.create_type_file import get_properties, create_connection_by_url, get_metadata_param
 
 test_data = [
     ["wss://rpc.polkadot.io", "Polkadot"],
@@ -27,5 +27,5 @@ def test_properties(url, expected):
 
 @pytest.mark.parametrize("url, expected", test_data)
 def test_type_building(url, expected):
-    network_types = get_metada_param(create_connection_by_url(url))
+    network_types = get_metadata_param(create_connection_by_url(url))
     assert isinstance(network_types.runtime_id, int)
