@@ -1,0 +1,35 @@
+{
+  "runtime_id": 900,
+  "types": {
+    "Balance": "u128",
+    "Index": "u32",
+    "Phase": "frame_system.Phase",
+    "primitive_types.H160": "[u8; 20]",
+    "AccountId": "primitive_types.H160",
+    "Address": "AccountId",
+    "EthereumSignature": {
+      "type": "struct",
+      "type_mapping": [
+        [
+          "r",
+          "H256"
+        ],
+        [
+          "s",
+          "H256"
+        ],
+        [
+          "v",
+          "u8"
+        ]
+      ]
+    },
+    "ExtrinsicSignature": "EthereumSignature",
+    "ParaId": "polkadot_parachain.primitives.Id",
+    "moonbeam_runtime.Event": "GenericEvent",
+    "moonbeam_runtime.Call": "GenericCall",
+    "sp_core.crypto.AccountId32": "GenericAccountId",
+    "pallet_identity.types.Data": "Data"
+  },
+  "versioning": []
+}
