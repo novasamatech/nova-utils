@@ -369,7 +369,7 @@
         ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/moonbeam.json",
-            "overridesCommon": false
+            "overridesCommon": true
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonbeam.svg",
         "addressPrefix": 1284,
@@ -1072,19 +1072,19 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc.astar.network",
-                "name": "Astar node"
+                "url": "wss://rpc.parallel.fi",
+                "name": "Parallel node"
             },
             {
-                "url": "wss://astar.api.onfinality.io/public-ws",
+                "url": "wss://parallel.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
             }
         ],
         "explorers": [
             {
                 "name": "Subscan",
-                "extrinsic": "https://astar.subscan.io/extrinsic/{hash}",
-                "account": "https://astar.subscan.io/account/{address}",
+                "extrinsic": "https://parallel.subscan.io/extrinsic/{hash}",
+                "account": "https://parallel.subscan.io/account/{address}",
                 "event": null
             }
         ],
