@@ -5,8 +5,8 @@
     "Index": "u32",
     "Phase": "frame_system.Phase",
     "primitive_types.H160": "[u8; 20]",
-    "AccountId": "primitive_types.H160",
-    "Address": "AccountId",
+    "account.AccountId20": "primitive_types.H160",
+    "Address": "account.AccountId20",
     "EthereumSignature": {
       "type": "struct",
       "type_mapping": [
