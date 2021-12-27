@@ -1,27 +1,39 @@
-[
-  {
-    "category": "DeFi",
-    "dapps": [
-      {
-        "name": "Polkadot.js",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/Polkadot.js.svg",
-        "url": "https://polkadot.js.org/apps/#"
-      },
-      {
-        "name": "Bifrost",
-        "url": "https://bifrost.app/",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/Bifrost.svg"
-      }
-    ]
-  },
-  {
-    "category": "NFT",
-    "dapps": [
-      {
-        "name": "Singular",
-        "url": "https://singular.rmrk.app/",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/Singular.svg"
-      }
-    ]
-  }
-]
+{
+  "categories": [
+    {
+      "name": "DeFi",
+      "id": "defi"
+    },
+    {
+      "name": "NFT",
+      "id": "nft"
+    }
+  ],
+  "dapps": [
+    {
+      "name": "Polkadot.js",
+      "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/Polkadot.js.svg",
+      "url": "https://polkadot.js.org/apps/#",
+      "categories": [
+        "defi",
+        "nft"
+      ]
+    },
+    {
+      "name": "Bifrost",
+      "url": "https://bifrost.app/",
+      "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/Bifrost.svg",
+      "categories": [
+        "defi"
+      ]
+    },
+    {
+      "name": "Singular",
+      "url": "https://singular.rmrk.app/",
+      "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/Singular.svg",
+      "categories": [
+        "nft"
+      ]
+    }
+  ]
+}
