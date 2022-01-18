@@ -958,5 +958,32 @@
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Statemine-Statemint.svg",
         "addressPrefix": 0
+    },
+    {
+        "chainId": "0bd72c1c305172e1275278aaeb3f161e02eccb7a819e63f62d47bd53a28189f8",
+        "name": "Subsocial Standalone",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "SUB",
+                "precision": 11
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc.subsocial.network",
+                "name": "DappForce"
+            },
+            {
+                "url": "wss://subsocial.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/types/subsocial.json",
+            "overridesCommon": false
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Subsocial.svg",
+        "addressPrefix": 28
     }
 ]
