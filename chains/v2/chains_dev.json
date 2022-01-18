@@ -240,6 +240,16 @@
                 "symbol": "KSM",
                 "precision": 12,
                 "priceId": "kusama"
+            },
+            {
+                "assetId": 1,
+                "symbol": "RMRK",
+                "precision": 10,
+                "priceId": "rmrk",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": 8
+                }
             }
         ],
         "nodes": [
