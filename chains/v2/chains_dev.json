@@ -1030,8 +1030,8 @@
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
                 "typeExtras": {
-                    "currencyVariant": "Token",
-                    "tokenSymbol": "LDOT"
+                    "currencyIdScale": "0x040d000000",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId"
                 }
             }
         ],
