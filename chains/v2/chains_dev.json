@@ -337,6 +337,17 @@
                 "symbol": "KAR",
                 "precision": 12,
                 "priceId": "karura"
+            },
+            {
+                "assetId": 1,
+                "symbol": "LDOT",
+                "precision": 10,
+                "priceId": "polkadot",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyVariant": "Token",
+                    "tokenSymbol": "LDOT"
+                }
             }
         ],
         "nodes": [
