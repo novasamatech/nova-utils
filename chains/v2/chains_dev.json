@@ -1031,7 +1031,8 @@
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x040d000000",
-                    "currencyIdType": "acala_primitives.currency.CurrencyId"
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "100000000"
                 }
             }
         ],
