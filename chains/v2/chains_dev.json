@@ -1085,6 +1085,42 @@
         "addressPrefix": 10
     },
     {
+        "chainId": "5c562e6300954998233c9a40b6b86f3028977e6d32d0da1af207738d19f98c1b",
+        "name": "Acala Mandala",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "ACA",
+                "precision": 12
+            },
+            {
+                "assetId": 1,
+                "symbol": "DOT",
+                "precision": 10,
+                "priceId": "polkadot",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0002",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "100000000"
+                }
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://mandala.polkawallet.io",
+                "name": "Polkawallet"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/acala_mandala.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Acala.svg",
+        "addressPrefix": 42
+    },
+    {
         "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
         "name": "Moonbeam",
