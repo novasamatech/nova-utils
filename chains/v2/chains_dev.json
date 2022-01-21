@@ -1021,6 +1021,18 @@
                 "assetId": 0,
                 "symbol": "ACA",
                 "precision": 12
+            },
+            {
+                "assetId": 1,
+                "symbol": "LDOT",
+                "precision": 10,
+                "priceId": "polkadot",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x040d000000",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId"
+                }
             }
         ],
         "nodes": [
