@@ -343,6 +343,46 @@
                 "symbol": "KAR",
                 "precision": 12,
                 "priceId": "karura"
+            },
+            {
+                "assetId": 1,
+                "symbol": "KUSD",
+                "precision": 12,
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x0081",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "10000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 2,
+                "symbol": "KSM",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg",
+                "priceId": "kusama",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x0082",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "100000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 3,
+                "symbol": "RMRK",
+                "precision": 10,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/RMRK.svg",
+                "priceId": "rmrk",
+                "typeExtras": {
+                    "currencyIdScale": "0x050000",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "100000000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
