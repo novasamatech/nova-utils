@@ -383,6 +383,20 @@
                     "existentialDeposit": "100000000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 4,
+                "symbol": "BNC",
+                "precision": 12,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bifrost.svg",
+                "priceId": "bifrost-native-coin",
+                "typeExtras": {
+                    "currencyIdScale": "0x00a8",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "8000000000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
