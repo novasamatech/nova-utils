@@ -1508,7 +1508,8 @@
             {
                 "assetId": 0,
                 "symbol": "XRT",
-                "precision": 9
+                "precision": 9,
+                "priceId": "robonomics-network"
             }
         ],
         "nodes": [
@@ -1545,7 +1546,7 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/encointer.json",
             "overridesCommon": true
         },
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Encointer.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/KUSD.svg",
         "addressPrefix": 42
     }
 ]
