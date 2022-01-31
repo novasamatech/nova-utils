@@ -43,6 +43,7 @@
                 "account": "https://sub.id/#/{address}"
             }
         ],
+        "color": "linear-gradient(315deg, #D43079 0%, #F93C90 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
         "addressPrefix": 0,
         "types": {
@@ -111,6 +112,7 @@
                 "account": "https://sub.id/#/{address}"
             }
         ],
+        "color": "linear-gradient(315deg, #000000 0%, #3F3F3F 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg",
         "addressPrefix": 2,
         "types": {
@@ -172,6 +174,7 @@
                 "event": null
             }
         ],
+        "color": "linear-gradient(315deg, #434852 0%, #787F92 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Westend.svg",
         "addressPrefix": 42,
         "types": {
@@ -222,6 +225,7 @@
                 "name": "Parity node"
             }
         ],
+        "color": "linear-gradient(315deg, #434852 0%, #787F92 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Statemine-Statemint.svg",
         "addressPrefix": 42,
         "types": {
@@ -248,6 +252,7 @@
                 "name": "Laminar Test Node"
             }
         ],
+        "color": "linear-gradient(315deg, #434852 0%, #787F92 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Rococo.svg",
         "addressPrefix": 42,
         "types": {
@@ -330,6 +335,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-statemine"
             }
         },
+        "color": "linear-gradient(315deg, #1C3816 0%, #4F6B49 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Statemine-Statemint.svg",
         "addressPrefix": 2
     },
@@ -448,6 +454,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-karura"
             }
         },
+        "color": "linear-gradient(315.17deg, #E40C5B 0%, #FF4C3B 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Karura.svg",
         "addressPrefix": 8
     },
@@ -525,6 +532,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonriver"
             }
         },
+        "color": "linear-gradient(135deg, #F2A007 19.29%, #A56B00 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonriver.svg",
         "addressPrefix": 1285,
         "options": [
@@ -567,6 +575,7 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/moonbase.json",
             "overridesCommon": true
         },
+        "color": "linear-gradient(315deg, #434852 0%, #787F92 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonriver.svg",
         "addressPrefix": 1287,
         "options": [
@@ -600,6 +609,7 @@
                 "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/crowdloan/polkatrain.json"
             }
         },
+        "color": "linear-gradient(315deg, #434852 0%, #787F92 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonriver.svg",
         "addressPrefix": 0,
         "options": [
@@ -645,6 +655,7 @@
                 "account": "https://sub.id/#/{address}"
             }
         ],
+        "color": "linear-gradient(135deg, #987ED9 0%, #5132AA 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Shiden.svg",
         "addressPrefix": 5,
         "types": {
@@ -728,6 +739,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bifrost"
             }
         },
+        "color": "linear-gradient(135deg, #12D5D5 0%, #4584F5 40.32%, #AC57C0 60.21%, #E65659 80.19%, #FFBF12 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bifrost.svg",
         "addressPrefix": 6
     },
@@ -760,6 +772,7 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/kintsugi.json",
             "overridesCommon": true
         },
+        "color": "linear-gradient(315deg, #180C2B 0%, #1E3258 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kintsugi.svg",
         "addressPrefix": 2092
     },
@@ -796,6 +809,7 @@
                 "event": null
             }
         ],
+        "color": "linear-gradient(315deg, #000000 0%, #3F3F3F 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Edgeware.svg",
         "addressPrefix": 7
     },
@@ -823,6 +837,7 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/types/subsocial.json",
             "overridesCommon": false
         },
+        "color": "linear-gradient(315deg, #720497 0%, #F50083 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Subsocial.svg",
         "addressPrefix": 28
     },
@@ -865,6 +880,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-parallel-heiko"
             }
         },
+        "color": "linear-gradient(315deg, #5314F1 0%, #04E2FF 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Parallel-Heiko.svg",
         "addressPrefix": 110
     },
@@ -893,6 +909,7 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/basilisk.json",
             "overridesCommon": true
         },
+        "color": "linear-gradient(315deg, #5B892B 0%, #97D92D 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Basilisk.svg",
         "addressPrefix": 42
     },
@@ -927,6 +944,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-altair"
             }
         },
+        "color": "linear-gradient(315deg, #A37539 0%, #F5B840 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Altair.svg",
         "addressPrefix": 136
     },
@@ -974,6 +992,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-khala"
             }
         },
+        "color": "linear-gradient(315deg, #0B8789 0%, #36F7FA 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Khala.svg",
         "addressPrefix": 30
     },
@@ -1015,6 +1034,7 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/kilt_spiritnet.json",
             "overridesCommon": true
         },
+        "color": "linear-gradient(135deg, #F86842 0%, #8C175B 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/KILT.svg",
         "addressPrefix": 38
     },
@@ -1046,6 +1066,7 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/kilt_peregrine.json",
             "overridesCommon": true
         },
+        "color": "linear-gradient(315deg, #434852 0%, #787F92 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/KILT.svg",
         "addressPrefix": 38,
         "options": [
@@ -1104,6 +1125,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-calamari"
             }
         },
+        "color": "linear-gradient(315deg, #5C09BA 0%, #C72F9E 58.33%, #FCA027 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Calamari.svg",
         "addressPrefix": 78
     },
@@ -1142,6 +1164,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-quartz"
             }
         },
+        "color": "linear-gradient(315deg, #CB2E41 0%, #ED5B6D 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Quartz.svg",
         "addressPrefix": 255
     },
@@ -1176,6 +1199,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bit-country"
             }
         },
+        "color": "linear-gradient(315deg, #391BB5 0%, #DB3795 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bit.Country.svg",
         "addressPrefix": 268
     },
@@ -1249,6 +1273,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-acala"
             }
         },
+        "color": "linear-gradient(97.21deg, #E40C5B 0%, #645AFD 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Acala.svg",
         "addressPrefix": 10
     },
@@ -1281,10 +1306,14 @@
                 "name": "Polkawallet"
             }
         ],
+        "options": [
+            "testnet"
+        ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/acala_mandala.json",
             "overridesCommon": true
         },
+        "color": "linear-gradient(315deg, #434852 0%, #787F92 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Acala.svg",
         "addressPrefix": 42
     },
@@ -1328,6 +1357,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonbeam"
             }
         },
+        "color": "linear-gradient(135deg, #53CBC8 0%, #11807D 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonbeam.svg",
         "addressPrefix": 1284,
         "options": [
@@ -1374,6 +1404,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-astar"
             }
         },
+        "color": "linear-gradient(315deg, #DD037D 0%, #00B1FF 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Astar.svg",
         "addressPrefix": 5
     },
@@ -1416,6 +1447,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-parallel"
             }
         },
+        "color": "linear-gradient(315deg, #5314F1 0%, #04E2FF 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Parallel-Heiko.svg",
         "addressPrefix": 172
     },
@@ -1459,6 +1491,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-clover"
             }
         },
+        "color": "linear-gradient(315deg, #247A4F 0%, #6CAC7A 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Clover.svg",
         "addressPrefix": 128
     },
@@ -1498,6 +1531,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-statemint"
             }
         },
+        "color": "linear-gradient(315deg, #5B892B 0%, #97D92D 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Statemine-Statemint.svg",
         "addressPrefix": 0
     },
@@ -1523,6 +1557,7 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/robonomics.json",
             "overridesCommon": true
         },
+        "color": "linear-gradient(315deg, #2A4ECB 0%, #4CABEC 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Robonomics.svg",
         "addressPrefix": 32
     },
@@ -1547,6 +1582,7 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/encointer.json",
             "overridesCommon": true
         },
+        "color": "linear-gradient(315deg, #001BC4 0%, #3F59FF 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Encointer.svg",
         "addressPrefix": 42
     }
