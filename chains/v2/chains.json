@@ -329,6 +329,12 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/moonbeam.json",
             "overridesCommon": true
         },
+        "externalApi": {
+            "history": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonbeam"
+            }
+        },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonbeam.svg",
         "addressPrefix": 1284,
         "options": [
@@ -423,6 +429,12 @@
                 "event": null
             }
         ],
+        "externalApi": {
+            "history": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-shiden"
+            }
+        },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Shiden.svg",
         "addressPrefix": 5,
         "types": {
@@ -526,6 +538,12 @@
                 "name": "OnFinality node"
             }
         ],
+        "externalApi": {
+            "history": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-altair"
+            }
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/altair.json",
             "overridesCommon": true
