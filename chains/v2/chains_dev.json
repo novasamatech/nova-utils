@@ -909,7 +909,7 @@
         "name": "Kintsugi",
         "assets": [
             {
-                "assetId": 1,
+                "assetId": 0,
                 "symbol": "KINT",
                 "precision": 12,
                 "type": "orml",
@@ -923,7 +923,7 @@
                 }
             },
             {
-                "assetId": 2,
+                "assetId": 1,
                 "symbol": "kBTC",
                 "precision": 8,
                 "type": "orml",
@@ -937,14 +937,14 @@
                 }
             },
             {
-                "assetId": 3,
+                "assetId": 2,
                 "symbol": "KSM",
                 "precision": 12,
                 "priceId": "kusama",
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg",
                 "typeExtras": {
-                    "currencyIdScale": "0x000c",
+                    "currencyIdScale": "0x000a",
                     "currencyIdType": "interbtc_primitives.CurrencyId",
                     "existentialDeposit": "0",
                     "transfersEnabled": true
