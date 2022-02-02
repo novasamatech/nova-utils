@@ -444,6 +444,71 @@
                     "existentialDeposit": "8000000000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 5,
+                "symbol": "LKSM",
+                "precision": "?",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/LKSM.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0083",
+                    "currencyIdType": "?",
+                    "existentialDeposit": "?",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 6,
+                "symbol": "PHA",
+                "precision": "?",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/PHA.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x00aa",
+                    "currencyIdType": "?",
+                    "existentialDeposit": "?",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 7,
+                "symbol": "KINT",
+                "precision": "?",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/PHA.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x00ab",
+                    "currencyIdType": "?",
+                    "existentialDeposit": "?",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 7,
+                "symbol": "kBTC",
+                "precision": "?",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/PHA.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x000ac",
+                    "currencyIdType": "?",
+                    "existentialDeposit": "?",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 8,
+                "symbol": "TAI",
+                "precision": "?",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/PHA.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0084",
+                    "currencyIdType": "?",
+                    "existentialDeposit": "?",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
