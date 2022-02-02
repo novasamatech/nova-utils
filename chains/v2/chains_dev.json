@@ -472,6 +472,7 @@
                 "assetId": 6,
                 "symbol": "PHA",
                 "precision": 12,
+                "priceId": "pha",
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Phala.svg",
                 "typeExtras": {
@@ -486,7 +487,8 @@
                 "symbol": "KINT",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Default.svg",
+                "priceId": "kintsugi",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kintsugi.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x00ab",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -499,6 +501,7 @@
                 "symbol": "kBTC",
                 "precision": 8,
                 "type": "orml",
+                "priceId": "bitcoin",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/KBTC.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x000ac",
@@ -822,6 +825,7 @@
                 "symbol": "ZLK",
                 "precision": 18,
                 "type": "orml",
+                "priceId": "zenlink-network-token",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/ZLK.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0207",
@@ -848,7 +852,8 @@
                 "symbol": "kUSD",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/altKUSD.svg",
+                "priceId": "tether",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/KUSD.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0202",
                     "currencyIdType": "node_primitives.currency.CurrencyId",
@@ -905,7 +910,8 @@
             {
                 "assetId": 0,
                 "symbol": "KSM",
-                "precision": 12
+                "precision": 12,
+                "priceId": "kusama"
             },
             {
                 "assetId": 1,
@@ -913,7 +919,7 @@
                 "precision": 12,
                 "type": "orml",
                 "priceId": "kintsugi",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Default.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kintsugi.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x000c",
                     "currencyIdType": "interbtc_primitives.CurrencyId",
@@ -1407,6 +1413,7 @@
                 "symbol": "aUSD",
                 "precision": 12,
                 "type": "orml",
+                "priceId": "tether",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Default.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0001",
@@ -1756,7 +1763,8 @@
             {
                 "assetId": 0,
                 "symbol": "KSM",
-                "precision": 12
+                "precision": 12,
+                "priceId": "kusama"
             }
         ],
         "nodes": [
