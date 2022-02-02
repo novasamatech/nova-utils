@@ -806,6 +806,45 @@
                     "existentialDeposit": "10000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 3,
+                "symbol": "ZLK",
+                "precision": "?",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/RMRK.svg",
+                "typeExtras": {
+                    "currencyIdScale": "?",
+                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "existentialDeposit": "?",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 4,
+                "symbol": "KAR",
+                "precision": "?",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/RMRK.svg",
+                "typeExtras": {
+                    "currencyIdScale": "?",
+                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "existentialDeposit": "?",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 5,
+                "symbol": "kUSD",
+                "precision": "?",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/RMRK.svg",
+                "typeExtras": {
+                    "currencyIdScale": "?",
+                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "existentialDeposit": "?",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
