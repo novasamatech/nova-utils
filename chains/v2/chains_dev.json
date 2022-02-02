@@ -1332,6 +1332,19 @@
                     "existentialDeposit": "100000000",
                     "transfersEnabled": false
                 }
+            },
+            {
+                "assetId": 2,
+                "symbol": "aUSD",
+                "precision": "?",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
+                "typeExtras": {
+                    "currencyIdScale": "?",
+                    "currencyIdType": "?",
+                    "existentialDeposit": "?",
+                    "transfersEnabled": false
+                }
             }
         ],
         "nodes": [
