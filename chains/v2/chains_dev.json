@@ -913,13 +913,13 @@
             {
                 "assetId": 2,
                 "symbol": "kBTC",
-                "precision": "?",
+                "precision": 8,
                 "type": "orml",
                 "priceId": "bitcoin",
                 "typeExtras": {
-                    "currencyIdScale": "?",
+                    "currencyIdScale": "0x000b",
                     "currencyIdType": "interbtc_primitives.CurrencyId",
-                    "existentialDeposit": "?",
+                    "existentialDeposit": "0",
                     "transfersEnabled": true
                 }
             }
@@ -1393,13 +1393,13 @@
             {
                 "assetId": 2,
                 "symbol": "aUSD",
-                "precision": "?",
+                "precision": 12,
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
                 "typeExtras": {
-                    "currencyIdScale": "?",
-                    "currencyIdType": "?",
-                    "existentialDeposit": "?",
+                    "currencyIdScale": "0x0001",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "100000000000",
                     "transfersEnabled": false
                 }
             }
