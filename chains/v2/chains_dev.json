@@ -892,8 +892,13 @@
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Kintsugi",
         "assets": [
-             {
+            {
                 "assetId": 0,
+                "symbol": "KSM",
+                "precision": 12
+            },
+            {
+                "assetId": 1,
                 "symbol": "KINT",
                 "precision": 12,
                 "type": "orml",
@@ -902,6 +907,19 @@
                     "currencyIdScale": "0x000c",
                     "currencyIdType": "interbtc_primitives.CurrencyId",
                     "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 2,
+                "symbol": "kBTC",
+                "precision": "?",
+                "type": "orml",
+                "priceId": "bitcoin",
+                "typeExtras": {
+                    "currencyIdScale": "?",
+                    "currencyIdType": "interbtc_primitives.CurrencyId",
+                    "existentialDeposit": "?",
                     "transfersEnabled": true
                 }
             }
