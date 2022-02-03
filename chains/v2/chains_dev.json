@@ -207,7 +207,8 @@
             {
                 "assetId": 0,
                 "symbol": "WND",
-                "precision": 12
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Westend.svg"
             },
              {
                 "assetId": 1,
@@ -1410,7 +1411,7 @@
                 "precision": 10,
                 "priceId": "polkadot",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Default.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x040d000000",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -1708,7 +1709,8 @@
                 "assetId": 0,
                 "symbol": "DOT",
                 "precision": 10,
-                "priceId": "polkadot"
+                "priceId": "polkadot",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg"
             }
         ],
         "nodes": [
@@ -1774,7 +1776,8 @@
                 "assetId": 0,
                 "symbol": "KSM",
                 "precision": 12,
-                "priceId": "kusama"
+                "priceId": "kusama",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg"
             }
         ],
         "nodes": [
