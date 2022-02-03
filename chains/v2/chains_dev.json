@@ -523,6 +523,19 @@
                     "existentialDeposit": "1000000000000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 10,
+                "symbol": "vsKSM",
+                "precision": 12,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Default.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x00a9",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "100000000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
@@ -858,6 +871,19 @@
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/KUSD.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0302",
+                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "existentialDeposit": "100000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 6,
+                "symbol": "vsKSM",
+                "precision": 12,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Default.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0404",
                     "currencyIdType": "node_primitives.currency.CurrencyId",
                     "existentialDeposit": "100000000",
                     "transfersEnabled": true
@@ -1406,7 +1432,7 @@
             },
             {
                 "assetId": 1,
-                "symbol": "LDOT",
+                "symbol": "LСDOT",
                 "precision": 10,
                 "priceId": "polkadot",
                 "type": "orml",
@@ -1414,7 +1440,7 @@
                 "typeExtras": {
                     "currencyIdScale": "0x040d000000",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
-                    "existentialDeposit": "100000000",
+                    "existentialDeposit": "10000000000",
                     "transfersEnabled": false
                 }
             },
@@ -1428,7 +1454,21 @@
                 "typeExtras": {
                     "currencyIdScale": "0x0001",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
-                    "existentialDeposit": "100000000000",
+                    "existentialDeposit": "10000000000",
+                    "transfersEnabled": false
+                }
+            },
+            {
+                "assetId": 3,
+                "symbol": "DOT",
+                "precision": 10,
+                "priceId": "tether",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Default.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0002",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "10000000000",
                     "transfersEnabled": false
                 }
             }
