@@ -1139,7 +1139,8 @@
             {
                 "assetId": 0,
                 "symbol": "AIR",
-                "precision": 18
+                "precision": 18,
+                "priceId": "altair"
             }
         ],
         "nodes": [
@@ -1876,7 +1877,7 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/picasso.json",
             "overridesCommon": true
         },
-        "color": "linear-gradient(315deg, #001BC4 0%, #3F59FF 100%)",
+        "color": "linear-gradient(315deg, #D57923 0%, #F8A65A 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Picasso.svg",
         "addressPrefix": 49
     },
@@ -1902,7 +1903,7 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/zeitgeist.json",
             "overridesCommon": true
         },
-        "color": "linear-gradient(315deg, #001BC4 0%, #3F59FF 100%)",
+        "color": "linear-gradient(315deg, #132849 0%, #2C5AA6 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Zeitgeist.svg",
         "addressPrefix": 73
     }
