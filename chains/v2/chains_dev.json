@@ -1853,5 +1853,57 @@
         "color": "linear-gradient(315deg, #001BC4 0%, #3F59FF 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Encointer.svg",
         "addressPrefix": 42
+    },
+    {
+        "chainId": "6811a339673c9daa897944dcdac99c6e2939cc88245ed21951a0a3c9a2be75bc",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Picasso",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "PICA",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Picasso.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://picasso-rpc.composable.finance",
+                "name": "Composable node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/picasso.json",
+            "overridesCommon": true
+        },
+        "color": "linear-gradient(315deg, #001BC4 0%, #3F59FF 100%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Picasso.svg",
+        "addressPrefix": 49
+    },
+    {
+        "chainId": "1bf2a2ecb4a868de66ea8610f2ce7c8c43706561b6476031315f6640fe38e060",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Zeitgeist",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "ZTG",
+                "precision": 10,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Zeitgeist.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc-0.zeitgeist.pm",
+                "name": "ZeitgeistPM node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/zeitgeist.json",
+            "overridesCommon": true
+        },
+        "color": "linear-gradient(315deg, #001BC4 0%, #3F59FF 100%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Zeitgeist.svg",
+        "addressPrefix": 73
     }
 ]
