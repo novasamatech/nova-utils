@@ -1002,7 +1002,8 @@
                 "assetId": 0,
                 "symbol": "EDG",
                 "precision": 18,
-                "priceId": "edgeware"
+                "priceId": "edgeware",
+                "staking": "relaychain"
             }
         ],
         "nodes": [
@@ -1027,6 +1028,16 @@
                 "event": null
             }
         ],
+        "externalApi": {
+            "history": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-edgeware__bm92Y"
+            },
+            "staking": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-edgeware__bm92Y"
+            }
+        },
         "color": "linear-gradient(315deg, #000000 0%, #3F3F3F 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Edgeware.svg",
         "addressPrefix": 7
