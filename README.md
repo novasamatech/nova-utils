@@ -27,4 +27,4 @@ Group of icons to saturate Nova Wallet
 
 Note: Icons should be used from trusted sources, however currently icons are not available on the participants' websites, so for convenience, there is /icons folder.
 
-### [Our networks list](https://github.com/stepanLav/nova-utils/tree/master/chains/README.md)
+### [Our networks list](https://github.com/nova-wallet/nova-utils/tree/master/chains#list-of-support-networks)
