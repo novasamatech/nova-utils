@@ -8,6 +8,8 @@ Note: For better UX in your app its recommended to
 1. prepare UI states & logic when this information cannot be fetched due to github unavailability
 2. cache the data to cover part of the issue of 1.
 
+### [List of support networks](https://github.com/nova-wallet/nova-utils/tree/master/chains#list-of-support-networks)
+
 ## Modules
 #### Crowdloan
 Crowdloans can be saturated with the following information:
@@ -27,4 +29,3 @@ Group of icons to saturate Nova Wallet
 
 Note: Icons should be used from trusted sources, however currently icons are not available on the participants' websites, so for convenience, there is /icons folder.
 
-### [Our networks list](https://github.com/nova-wallet/nova-utils/tree/master/chains#list-of-support-networks)

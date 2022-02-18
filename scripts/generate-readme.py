@@ -14,7 +14,7 @@ readme = Template("""
 
 def generate_networks_table():
     writer = MarkdownTableWriter(
-        table_name="Our list of networks",
+        table_name="List of support networks",
         headers=["Network", "Assets", "Explorers", "History", "Staking"],
         value_matrix=generate_value_matrix(),
         margin=1
