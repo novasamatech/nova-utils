@@ -39,6 +39,7 @@ Note: Icons should be used from trusted sources, however currently icons are not
 {{networks_table}}
 """)
 
+
 def generate_networks_table():
     writer = MarkdownTableWriter(
         table_name="Our list of networks",
@@ -57,25 +58,32 @@ def generate_value_matrix():
     for network in data:
         network_data_array = []
         network_data_array.append(network["name"])
-        network_data_array.append(parse_parameters("symbol", network.get("assets")))
-        network_data_array.append(parse_parameters("name", network.get("explorers")))
-        network_data_array.append(parse_parameters("history", network.get("externalApi")))
-        network_data_array.append(parse_parameters("staking", network.get("externalApi")))
+        network_data_array.append(parse_parameters(
+            "symbol", network.get("assets")))
+        network_data_array.append(parse_parameters(
+            "name", network.get("explorers")))
+        network_data_array.append(parse_parameters(
+            "history", network.get("externalApi")))
+        network_data_array.append(parse_parameters(
+            "staking", network.get("externalApi")))
         returning_array.append(network_data_array)
     return returning_array
 
+
 def parse_parameters(key_param, object):
-    if object is None: return " - "
+    if object is None:
+        return " - "
 
     if type(object) is dict:
         data = object.get(key_param, " - ")
-        if type(data) is str: return data
+        if type(data) is str:
+            return data
         return "[{name}]({link})".format(name=data.get("type"), link=data.get("url"))
 
-    return_data ='<br />'.join(str(x.get(key_param)) for x in object)
-    if return_data is None: return " - "
+    return_data = '<br />'.join(str(x.get(key_param)) for x in object)
+    if return_data is None:
+        return " - "
     return return_data
-
 
 
 if __name__ == '__main__':
