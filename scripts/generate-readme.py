@@ -79,7 +79,7 @@ def parse_parameters(key_param, object):
         if type(data) is str: return data
         return "[{name}]({link})".format(name=data.get("type"), link=data.get("url"))
 
-    return_data =','.join(str(x.get(key_param)) for x in object)
+    return_data ='<br />'.join(str(x.get(key_param)) for x in object)
     if return_data is None: return " - "
     return return_data
 
