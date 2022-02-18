@@ -1,4 +1,3 @@
-[![Telegram Group](https://img.shields.io/endpoint?color=neon&style=flat-square&url=https%3A%2F%2Ftg.sumanjay.workers.dev%2Fsumanbots)](https://t.me/novawallet)
 # Nova Utils
 
 ## About
@@ -28,3 +27,5 @@ Contains JSON file with networks info: its token (ticker, precision), types, ava
 Group of icons to saturate Nova Wallet
 
 Note: Icons should be used from trusted sources, however currently icons are not available on the participants' websites, so for convenience, there is /icons folder.
+
+- [Nova Wallet]: https://t.me/novawallet
