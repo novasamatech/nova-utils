@@ -48,7 +48,7 @@ Note: Icons should be used from trusted sources, however currently icons are not
 
 def generate_networks_table():
     writer = MarkdownTableWriter(
-        table_name="Our networks list",
+        table_name="Our list of networks",
         headers=["Network", "Assets", "Explorers", "History", "Staking"],
         value_matrix=generate_value_matrix(),
         margin=1
