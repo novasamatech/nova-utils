@@ -1168,6 +1168,14 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/altair.json",
             "overridesCommon": true
         },
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://altair.subscan.io/extrinsic/{hash}",
+                "account": "https://altair.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
         "externalApi": {
             "history": {
                 "type": "subquery",
@@ -1394,6 +1402,14 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/quartz.json",
             "overridesCommon": true
         },
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://quartz.subscan.io/extrinsic/{hash}",
+                "account": "https://quartz.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
         "externalApi": {
             "history": {
                 "type": "subquery",
@@ -1831,6 +1847,14 @@
                 "name": "Airalab node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://robonomics.subscan.io/extrinsic/{hash}",
+                "account": "https://robonomics.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/robonomics.json",
             "overridesCommon": true
@@ -1882,6 +1906,14 @@
             {
                 "url": "wss://picasso-rpc.composable.finance",
                 "name": "Composable node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://picasso.subscan.io/extrinsic/{hash}",
+                "account": "https://picasso.subscan.io/account/{address}",
+                "event": null
             }
         ],
         "types": {
