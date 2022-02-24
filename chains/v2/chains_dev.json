@@ -2006,5 +2006,31 @@
         "color": "linear-gradient(315deg, #4A22E1 0%, #7657EF 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Litmus.svg",
         "addressPrefix": 31
+    },
+    {
+        "chainId": "0xeac895d7768b17837a9c3a9f0280c01502c3ef40193df923490a0fa9c60ea076",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Crab Parachain",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "CRAB",
+                "precision": 9,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Crab.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://crab-parachain-rpc.darwinia.network/",
+                "name": "Crab node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/crab.json",
+            "overridesCommon": true
+        },
+        "color": "linear-gradient(315deg, #D57923 0%, #F8A65A 100%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Crab.svg",
+        "addressPrefix": 42
     }
 ]
