@@ -1950,5 +1950,35 @@
         "color": "linear-gradient(315deg, #132849 0%, #2C5AA6 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Zeitgeist.svg",
         "addressPrefix": 73
+    },
+    {
+        "chainId": "0x52149c30c1eb11460dce6c08b73df8d53bb93b4a15d0a2e7fd5dafe86a73c0da",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "KICO",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "KICO",
+                "precision": 14,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/KICO.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc.api.kico.dico.io",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://rpc.kico.dico.io",
+                "name": "DICO FOUNDATION node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/kico.json",
+            "overridesCommon": true
+        },
+        "color": "linear-gradient(315deg, #248A63 0%, #58B18F 100%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/KICO.svg",
+        "addressPrefix": 42
     }
 ]
