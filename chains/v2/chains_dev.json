@@ -1980,5 +1980,31 @@
         "color": "linear-gradient(315deg, #248A63 0%, #58B18F 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/KICO.svg",
         "addressPrefix": 42
+    },
+    {
+        "chainId": "0xda5831fbc8570e3c6336d0d72b8c08f8738beefec812df21ef2afc2982ede09c",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Litmus",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "LIT",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Litmus.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc.litmus-parachain.litentry.io",
+                "name": "Litenry node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/litmus.json",
+            "overridesCommon": true
+        },
+        "color": "linear-gradient(315deg, #4A22E1 0%, #7657EF 100%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Litmus.svg",
+        "addressPrefix": 31
     }
 ]
