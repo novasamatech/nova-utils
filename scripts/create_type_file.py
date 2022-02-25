@@ -50,11 +50,13 @@ class Properties:
 
 def get_properties(substrate: SubstrateInterface) -> Properties:
     data_prop = Properties(
-        chain_id=substrate.get_block(block_number=0)["header"]["hash"],
         chain_name=substrate.chain,
         chain_symbol=substrate.properties["tokenSymbol"],
         chain_prefix=substrate.ss58_format,
         chain_precision=substrate.properties["tokenDecimals"],
+
+        # The genesis hash should be obtained last, because the main object "substrate" may change after the genesis is obtained
+        chain_id=substrate.get_block(block_number=0)["header"]["hash"]
     )
     return data_prop
 
