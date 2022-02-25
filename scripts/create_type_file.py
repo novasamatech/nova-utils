@@ -55,7 +55,7 @@ def get_properties(substrate: SubstrateInterface) -> Properties:
         chain_prefix=substrate.ss58_format,
         chain_precision=substrate.properties["tokenDecimals"],
 
-        # The genesis hash should be obtained last, because the main object "substrate" may change after the genesis is obtained
+        # The genesis hash should be obtained last, because the main object "substrate" may change after the genesis was obtained
         chain_id=substrate.get_block(block_number=0)["header"]["hash"]
     )
     return data_prop
