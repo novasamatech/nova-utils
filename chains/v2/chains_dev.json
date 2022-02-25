@@ -2025,6 +2025,14 @@
                 "name": "Crab node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://crab.subscan.io/extrinsic/{hash}",
+                "account": "https://crab.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/crab.json",
             "overridesCommon": true
