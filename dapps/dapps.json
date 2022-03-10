@@ -9,6 +9,10 @@
       "id": "nft"
     },
     {
+      "name": "EVM",
+      "id": "evm"
+    },
+    {
       "name": "Community",
       "id": "community"
     },
@@ -172,6 +176,93 @@
       "categories": [
         "crowdloans",
         "utilities"
+      ]
+    },
+    {
+      "name": "Moonbeam",
+      "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/Moonbeam.svg",
+      "url": "https://apps.moonbeam.network/moonbeam",
+      "categories": [
+        "staking",
+        "crowdloans",
+        "utilities",
+        "evm"
+      ]
+    },
+    {
+      "name": "Moonriver",
+      "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/Moonriver.svg",
+      "url": "https://apps.moonbeam.network/moonriver",
+      "categories": [
+        "staking",
+        "crowdloans",
+        "utilities",
+        "evm"
+      ]
+    },
+    {
+      "name": "Solarflare",
+      "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/Solarflare.png",
+      "url": "https://app.solarflare.io/exchange/swap",
+      "categories": [
+        "defi",
+        "staking",
+        "utilities",
+        "evm"
+      ]
+    },
+    {
+      "name": "Solarbeam",
+      "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/Solarbeam.png",
+      "url": "https://app.solarbeam.io/exchange/swap",
+      "categories": [
+        "defi",
+        "staking",
+        "utilities",
+        "evm"
+      ]
+    },
+    {
+      "name": "Beamswap",
+      "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/Beamswap.svg",
+      "url": "https://app.beamswap.io/exchange/swap",
+      "categories": [
+        "defi",
+        "staking",
+        "utilities",
+        "evm"
+      ]
+    },
+    {
+      "name": "Stellaswap",
+      "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/StellaSwap.svg",
+      "url": "https://app.stellaswap.com/exchange/swap",
+      "categories": [
+        "defi",
+        "staking",
+        "utilities",
+        "evm"
+      ]
+    },
+    {
+      "name": "Impossible Finance",
+      "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/ImpossibleFinance.svg",
+      "url": "https://invest.impossible.finance/launchpad",
+      "categories": [
+        "defi",
+        "utilities",
+        "evm"
+      ]
+    },
+    {
+      "name": "Huckleberry Finance",
+      "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/Huckleberry.svg",
+      "url": "https://www.huckleberry.finance/#/swap",
+      "categories": [
+        "defi",
+        "staking",
+        "utilities",
+        "evm"
       ]
     }
   ]
