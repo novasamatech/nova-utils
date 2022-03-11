@@ -1829,5 +1829,39 @@
         "color": "linear-gradient(315deg, #D57923 0%, #F8A65A 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Crust.svg",
         "addressPrefix": 66
+    },
+    {
+        "chainId": "724c168d8e86b78b831c641e2cc822b8d1bf99fa0b4b28fe59985cd6fd580215",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Integritee Shell",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "TEER",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Integritee.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://kusama.api.integritee.network",
+                "name": "Integritee node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://integritee.subscan.io/extrinsic/{hash}",
+                "account": "https://integritee.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/Integritee.json",
+            "overridesCommon": true
+        },
+        "color": "linear-gradient(315deg, #101F89 0%, #6D8DA6 100%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Integritee.svg",
+        "addressPrefix": 13
     }
 ]
