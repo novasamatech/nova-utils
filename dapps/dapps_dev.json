@@ -27,6 +27,10 @@
     {
       "name": "Staking",
       "id": "staking"
+    },
+    {
+      "name": "Test",
+      "id": "test"
     }
   ],
   "dapps": [
@@ -325,6 +329,14 @@
         "staking",
         "utilities",
         "evm"
+      ]
+    },
+    {
+      "name": "Kintsugi TESTNET",
+      "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/color/Kintsugi.svg",
+      "url": "https://bridge.interlay.io/bridge?tab=issue",
+      "categories": [
+        "test"
       ]
     }
   ]
