@@ -2194,5 +2194,31 @@
         "color": "linear-gradient(315.17deg, #4E6FD4 0%, #7B99F5 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Efinity.svg",
         "addressPrefix": 1110
+    },
+    {
+        "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "HydraDX",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "HDX",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/HydraDX.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc.efinity.io",
+                "name": "Efinity node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/hydra_dx.json",
+            "overridesCommon": true
+        },
+        "color": "linear-gradient(315.17deg, #4E6FD4 0%, #7B99F5 100%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/HydraDX.svg",
+        "addressPrefix": 63
     }
 ]
