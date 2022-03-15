@@ -2134,5 +2134,65 @@
         "color": "linear-gradient(315deg, #101F89 0%, #6D8DA6 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Integritee.svg",
         "addressPrefix": 13
+    },
+    {
+        "chainId": "b3db41421702df9a7fcac62b53ffeac85f7853cc4e689e0b93aeb3db18c09d82",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Centrifuge",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "CFG",
+                "precision": 18,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Centrifuge.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://fullnode.parachain.centrifuge.io",
+                "name": "Centrifuge node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://centrifuge-parachain.subscan.io/extrinsic/{hash}",
+                "account": "https://centrifuge-parachain.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/centrifuge.json",
+            "overridesCommon": true
+        },
+        "color": "linear-gradient(315.17deg, #000000 0%, #3F3F3F 100%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Centrifuge.svg",
+        "addressPrefix": 36
+    },
+    {
+        "chainId": "335369975fced3fc22e23498da306a712f4fd964c957364d53c49cea9db8bc2f",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Efinity",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "EFI",
+                "precision": 18,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Efinity.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc.efinity.io",
+                "name": "Efinity node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/efinity.json",
+            "overridesCommon": true
+        },
+        "color": "linear-gradient(315.17deg, #4E6FD4 0%, #7B99F5 100%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Efinity.svg",
+        "addressPrefix": 1110
     }
 ]
