@@ -2195,14 +2195,6 @@
                 "name": "Integritee node"
             }
         ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://integritee.subscan.io/extrinsic/{hash}",
-                "account": "https://integritee.subscan.io/account/{address}",
-                "event": null
-            }
-        ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/Integritee.json",
             "overridesCommon": true
@@ -2399,5 +2391,38 @@
         "color": "linear-gradient(315.17deg, #000000 0%, #3F3F3F 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Interlay.svg",
         "addressPrefix": 42
+    },
+    {
+        "chainId": "f195ef30c646663a24a3164b307521174a86f437c586397a43183c736a8383c1",
+        "name": "Integritee Solo",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "TEER",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Integritee.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://api.solo.integritee.io",
+                "name": "Integritee node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://integritee.subscan.io/extrinsic/{hash}",
+                "account": "https://integritee.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/Integritee_solo.json",
+            "overridesCommon": true
+        },
+        "color": "linear-gradient(315deg, #000C5F 41.07%, #91E3DA 100%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Integritee.svg",
+        "addressPrefix": 13
     }
 ]
