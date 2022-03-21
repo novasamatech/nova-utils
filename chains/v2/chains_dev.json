@@ -40,7 +40,7 @@
             },
             {
                 "name": "Sub.ID",
-                "account": "https://sub.id/#/{address}"
+                "account": "https://sub.id/{address}"
             }
         ],
         "color": "linear-gradient(315deg, #D43079 0%, #F93C90 100%)",
@@ -109,7 +109,7 @@
             },
             {
                 "name": "Sub.ID",
-                "account": "https://sub.id/#/{address}"
+                "account": "https://sub.id/{address}"
             }
         ],
         "color": "linear-gradient(315deg, #000000 0%, #3F3F3F 100%)",
@@ -226,6 +226,14 @@
                 "name": "Parity node"
             }
         ],
+        "explorers": [
+        {
+            "name": "Statescan",
+            "account": "https://westmint.statescan.io/account/{address}",
+            "extrinsic": "https://westmint.statescan.io/extrinsic/{hash}",
+            "event": "https://westmint.statescan.io/event/{event}"
+        }
+    ],
         "color": "linear-gradient(315deg, #434852 0%, #787F92 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Statemine-Statemint.svg",
         "addressPrefix": 42,
@@ -374,7 +382,7 @@
             },
             {
                 "name": "Sub.ID",
-                "account": "https://sub.id/#/{address}"
+                "account": "https://sub.id/{address}"
             }
         ],
         "types": {
@@ -726,10 +734,6 @@
                 "extrinsic": "https://moonriver.subscan.io/extrinsic/{hash}",
                 "account": "https://moonriver.subscan.io/account/{address}",
                 "event": null
-            },
-            {
-                "name": "Sub.ID",
-                "account": "https://sub.id/#/{address}"
             }
         ],
         "types": {
@@ -862,7 +866,7 @@
             },
             {
                 "name": "Sub.ID",
-                "account": "https://sub.id/#/{address}"
+                "account": "https://sub.id/{address}"
             }
         ],
         "color": "linear-gradient(135deg, #987ED9 0%, #5132AA 100%)",
@@ -995,7 +999,7 @@
             },
             {
                 "name": "Sub.ID",
-                "account": "https://sub.id/#/{address}"
+                "account": "https://sub.id/{address}"
             }
         ],
         "externalApi": {
@@ -1060,6 +1064,14 @@
             {
                 "url": "wss://api-kusama.interlay.io/parachain",
                 "name": "Kintsugi Labs"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://kintsugi.subscan.io/extrinsic/{hash}",
+                "account": "https://kintsugi.subscan.io/account/{address}",
+                "event": null
             }
         ],
         "types": {
@@ -1138,6 +1150,12 @@
                 "name": "OnFinality node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Sub.ID",
+                "account": "https://sub.id/{address}"
+            }
+        ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/types/subsocial.json",
             "overridesCommon": false
@@ -1210,6 +1228,12 @@
                 "name": "Hydradx"
             }
         ],
+        "explorers": [
+            {
+                "name": "Sub.ID",
+                "account": "https://sub.id/{address}"
+            }
+        ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/basilisk.json",
             "overridesCommon": true
@@ -1250,6 +1274,10 @@
                 "extrinsic": "https://altair.subscan.io/extrinsic/{hash}",
                 "account": "https://altair.subscan.io/account/{address}",
                 "event": null
+            },
+            {
+                "name": "Sub.ID",
+                "account": "https://sub.id/{address}"
             }
         ],
         "externalApi": {
@@ -1293,7 +1321,7 @@
             },
             {
                 "name": "Sub.ID",
-                "account": "https://sub.id/#/{address}"
+                "account": "https://sub.id/{address}"
             }
         ],
         "types": {
@@ -1341,7 +1369,7 @@
             },
             {
                 "name": "Sub.ID",
-                "account": "https://sub.id/#/{address}"
+                "account": "https://sub.id/{address}"
             }
         ],
         "types": {
@@ -1432,7 +1460,7 @@
             },
             {
                 "name": "Sub.ID",
-                "account": "https://sub.id/#/{address}"
+                "account": "https://sub.id/{address}"
             }
         ],
         "types": {
@@ -1485,6 +1513,10 @@
                 "extrinsic": "https://quartz.subscan.io/extrinsic/{hash}",
                 "account": "https://quartz.subscan.io/account/{address}",
                 "event": null
+            },
+            {
+                "name": "Sub.ID",
+                "account": "https://sub.id/{address}"
             }
         ],
         "externalApi": {
@@ -1631,6 +1663,10 @@
                 "extrinsic": "https://acala.subscan.io/extrinsic/{hash}",
                 "account": "https://acala.subscan.io/account/{address}",
                 "event": null
+            },
+            {
+                "name": "Sub.ID",
+                "account": "https://sub.id/{address}"
             }
         ],
         "types": {
@@ -1805,6 +1841,10 @@
                 "extrinsic": "https://parallel.subscan.io/extrinsic/{hash}",
                 "account": "https://parallel.subscan.io/account/{address}",
                 "event": null
+            },
+            {
+                "name": "Sub.ID",
+                "account": "https://sub.id/{address}"
             }
         ],
         "types": {
@@ -1892,6 +1932,14 @@
                 "name": "Patract node"
             }
         ],
+        "explorers": [
+        {
+            "name": "Statescan",
+            "account": "https://statemint.statescan.io/account/{address}",
+            "extrinsic": "https://statemint.statescan.io/extrinsic/{hash}",
+            "event": "https://statemint.statescan.io/event/{event}"
+        }
+    ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/statemine.json",
             "overridesCommon": true
@@ -1930,6 +1978,10 @@
                 "extrinsic": "https://robonomics.subscan.io/extrinsic/{hash}",
                 "account": "https://robonomics.subscan.io/account/{address}",
                 "event": null
+            },
+            {
+                "name": "Sub.ID",
+                "account": "https://sub.id/{address}"
             }
         ],
         "types": {
@@ -2107,6 +2159,10 @@
                 "extrinsic": "https://crab.subscan.io/extrinsic/{hash}",
                 "account": "https://crab.subscan.io/account/{address}",
                 "event": null
+            },
+            {
+                "name": "Sub.ID",
+                "account": "https://sub.id/{address}"
             }
         ],
         "types": {
@@ -2133,6 +2189,12 @@
             {
                 "url": "wss://para.subsocial.network",
                 "name": "Dappforce node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Sub.ID",
+                "account": "https://sub.id/{address}"
             }
         ],
         "types": {
@@ -2196,6 +2258,12 @@
                 "name": "Integritee node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Sub.ID",
+                "account": "https://sub.id/{address}"
+            }
+        ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/Integritee.json",
             "overridesCommon": true
@@ -2228,6 +2296,10 @@
                 "extrinsic": "https://centrifuge-parachain.subscan.io/extrinsic/{hash}",
                 "account": "https://centrifuge-parachain.subscan.io/account/{address}",
                 "event": null
+            },
+            {
+                "name": "Sub.ID",
+                "account": "https://sub.id/{address}"
             }
         ],
         "types": {
