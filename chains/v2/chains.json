@@ -449,6 +449,60 @@
                     "existentialDeposit": "100000000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 11,
+                "symbol": "taiKSM",
+                "precision": 12,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Default.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0300000000",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "100000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 12,
+                "symbol": "QTZ",
+                "precision": 18,
+                "priceId": "quartz",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Quartz.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x050200",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "1000000000000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 13,
+                "symbol": "ARIS",
+                "precision": 8,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/ARIS.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x050100",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "10000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 14,
+                "symbol": "MOVR",
+                "precision": 18,
+                "priceId": "moonriver",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonriver.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x050300",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "1000000000000000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
@@ -1861,12 +1915,39 @@
                 "assetId": 0,
                 "symbol": "TEER",
                 "precision": 12,
+                "priceId": "integritee",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Integritee.svg"
             }
         ],
         "nodes": [
             {
                 "url": "wss://kusama.api.integritee.network",
+                "name": "Integritee node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/Integritee.json",
+            "overridesCommon": true
+        },
+        "color": "linear-gradient(315deg, #000C5F 41.07%, #91E3DA 100%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Integritee.svg",
+        "addressPrefix": 13
+    },
+    {
+        "chainId": "f195ef30c646663a24a3164b307521174a86f437c586397a43183c736a8383c1",
+        "name": "Integritee Soloсhain",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "TEER",
+                "precision": 12,
+                "priceId": "integritee",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Integritee.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://api.solo.integritee.io",
                 "name": "Integritee node"
             }
         ],
@@ -1879,10 +1960,10 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/Integritee.json",
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/Integritee_solo.json",
             "overridesCommon": true
         },
-        "color": "linear-gradient(315deg, #000C5F 41.07%, #91E3DA 100%)",
+        "color": "linear-gradient(315deg, #007568 31.86%, #91E3DA 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Integritee.svg",
         "addressPrefix": 13
     },
