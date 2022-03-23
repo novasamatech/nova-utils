@@ -1072,6 +1072,10 @@
                 "extrinsic": "https://kintsugi.subscan.io/extrinsic/{hash}",
                 "account": "https://kintsugi.subscan.io/account/{address}",
                 "event": null
+            },
+            {
+                "name": "Sub.ID",
+                "account": "https://sub.id/{address}"
             }
         ],
         "types": {
@@ -1114,6 +1118,10 @@
                 "extrinsic": "https://edgeware.subscan.io/extrinsic/{hash}",
                 "account": "https://edgeware.subscan.io/account/{address}",
                 "event": null
+            },
+            {
+                "name": "Sub.ID",
+                "account": "https://sub.id/{address}"
             }
         ],
         "externalApi": {
