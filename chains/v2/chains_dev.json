@@ -1072,10 +1072,6 @@
                 "extrinsic": "https://kintsugi.subscan.io/extrinsic/{hash}",
                 "account": "https://kintsugi.subscan.io/account/{address}",
                 "event": null
-            },
-            {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
             }
         ],
         "types": {
@@ -2137,6 +2133,14 @@
             {
                 "url": "wss://rpc.litmus-parachain.litentry.io",
                 "name": "Litenry node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://litmus.subscan.io/extrinsic/{hash}",
+                "account": "https://litmus.subscan.io/account/{address}",
+                "event": null
             }
         ],
         "types": {

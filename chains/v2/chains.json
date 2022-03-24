@@ -1762,6 +1762,14 @@
                 "name": "Kintsugi Labs"
             }
         ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://kintsugi.subscan.io/extrinsic/{hash}",
+                "account": "https://kintsugi.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/kintsugi.json",
             "overridesCommon": true
@@ -1876,6 +1884,14 @@
             {
                 "url": "wss://rpc.litmus-parachain.litentry.io",
                 "name": "Litenry node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://litmus.subscan.io/extrinsic/{hash}",
+                "account": "https://litmus.subscan.io/account/{address}",
+                "event": null
             }
         ],
         "types": {
