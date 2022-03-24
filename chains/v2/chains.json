@@ -2139,12 +2139,6 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/hydra_dx.json",
             "overridesCommon": true
         },
-        "explorers": [
-            {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
-            }
-        ],
         "color": "linear-gradient(315.17deg, #081152 19.76%, #F569AD 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/HydraDX.svg",
         "addressPrefix": 63
