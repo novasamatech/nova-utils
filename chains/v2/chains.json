@@ -1589,14 +1589,6 @@
                 "name": "Patract node"
             }
         ],
-        "explorers": [
-            {
-                "name": "Statescan",
-                "account": "https://statemint.statescan.io/account/{address}",
-                "extrinsic": "https://statemint.statescan.io/extrinsic/{hash}",
-                "event": null
-            }
-        ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/statemine.json",
             "overridesCommon": true
@@ -2043,6 +2035,10 @@
                 "extrinsic": "https://integritee.subscan.io/extrinsic/{hash}",
                 "account": "https://integritee.subscan.io/account/{address}",
                 "event": null
+            },
+            {
+                "name": "Sub.ID",
+                "account": "https://sub.id/{address}"
             }
         ],
         "types": {
