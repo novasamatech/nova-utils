@@ -559,6 +559,10 @@
                 "extrinsic": "https://karura.subscan.io/extrinsic/{hash}",
                 "account": "https://karura.subscan.io/account/{address}",
                 "event": null
+            },
+            {
+                "name": "Sub.ID",
+                "account": "https://sub.id/{address}"
             }
         ],
         "externalApi": {
@@ -749,10 +753,6 @@
                 "extrinsic": "https://shiden.subscan.io/extrinsic/{hash}",
                 "account": "https://shiden.subscan.io/account/{address}",
                 "event": null
-            },
-            {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
             }
         ],
         "externalApi": {
