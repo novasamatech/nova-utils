@@ -395,7 +395,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-statemine"
             }
         },
-        "color": "linear-gradient(315deg, #23371A 0%, #89C62D 80%, #3F3F3F 80.01%)",
+        "color": "linear-gradient(315deg, #1C3816 0%, #4F6B49 75%, #3F3F3F 75.01%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Statemine-Statemint.svg",
         "addressPrefix": 2
     },
@@ -1207,7 +1207,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-parallel-heiko"
             }
         },
-        "color": "linear-gradient(315deg, #3A55F5 8%, #04E2FF 80%, #3F3F3F 80.01%)",
+        "color": "linear-gradient(315deg, #3A55F5 8%, #04E2FF 75%, #3F3F3F 75.01%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Parallel-Heiko.svg",
         "addressPrefix": 110
     },
@@ -1290,7 +1290,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-altair"
             }
         },
-        "color": "linear-gradient(315deg, #A37539 0%, #F5B840 100%)",
+        "color": "linear-gradient(315.17deg, #000000 0%, #3F3F3F 75%, #D43079 75.01%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Altair.svg",
         "addressPrefix": 136
     },
@@ -1865,14 +1865,14 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-parallel"
             }
         },
-        "color": "linear-gradient(315deg, #5314F1 8%, #04E2FF 80%, #D43079 80.01%)",
+        "color": "linear-gradient(315deg, #5314F1 8%, #04E2FF 75%, #D43079 75.01%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Parallel-Heiko.svg",
         "addressPrefix": 172
     },
     {
         "chainId": "5c7bd13edf349b33eb175ffae85210299e324d852916336027391536e686f267",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "Clover",
+        "name": "Clover Parachain",
         "assets": [
             {
                 "assetId": 0,
@@ -1909,7 +1909,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-clover"
             }
         },
-        "color": "linear-gradient(315deg, #247A4F 0%, #6CAC7A 100%)",
+        "color": "linear-gradient(315deg, #4AA7CA 0%, #56D5A7 75%, #D43079 75.01%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Clover.svg",
         "addressPrefix": 128
     },
@@ -1958,7 +1958,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-statemint"
             }
         },
-        "color": "linear-gradient(315deg, #23371A 0%, #89C62D 80%, #D43079 80.01%)",
+        "color": "linear-gradient(315deg, #23371A 0%, #89C62D 75%, #D43079 75.01%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Statemine-Statemint.svg",
         "addressPrefix": 0
     },
@@ -2217,7 +2217,7 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/subsocial.json",
             "overridesCommon": true
         },
-        "color": "linear-gradient(315deg, #720497 0%, #F50083 80%, #3F3F3F 80.01%)",
+        "color": "linear-gradient(315deg, #0C0011 0%, #681391 75%, #3F3F3F 75.01%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Subsocial.svg",
         "addressPrefix": 28
     },
@@ -2251,7 +2251,7 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/crust_shadow.json",
             "overridesCommon": true
         },
-        "color": "linear-gradient(315deg, #D57923 0%, #F8A65A 100%)",
+        "color": "linear-gradient(315deg, #D57923 0%, #F8A65A 75%, #3F3F3F 75.01%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Crust.svg",
         "addressPrefix": 66
     },
@@ -2284,14 +2284,14 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/Integritee.json",
             "overridesCommon": true
         },
-        "color": "linear-gradient(315deg, #000C5F 50%, #5A92AB 80%, #3F3F3F 80.01%)",
+        "color": "linear-gradient(315deg, #000C5F 50%, #5A92AB 75%, #3F3F3F 75.01%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Integritee.svg",
         "addressPrefix": 13
     },
     {
         "chainId": "b3db41421702df9a7fcac62b53ffeac85f7853cc4e689e0b93aeb3db18c09d82",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "Centrifuge",
+        "name": "Centrifuge Parachain",
         "assets": [
             {
                 "assetId": 0,
@@ -2322,7 +2322,7 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/centrifuge.json",
             "overridesCommon": true
         },
-        "color": "linear-gradient(315.17deg, #000000 0%, #3F3F3F 100%)",
+        "color": "linear-gradient(315.17deg, #000000 0%, #3F3F3F 75%, #D43079 75.01%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Centrifuge.svg",
         "addressPrefix": 36
     },
@@ -2547,7 +2547,7 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/nodle.json",
             "overridesCommon": true
         },
-        "color": "linear-gradient(315.17deg, #50AA85 8%, #57C799 80%, #D43079 80.01%)",
+        "color": "linear-gradient(315.17deg, #50AA85 8%, #57C799 75%, #D43079 75.01%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Nodle.svg",
         "addressPrefix": 37
     },
