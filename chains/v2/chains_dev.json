@@ -395,7 +395,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-statemine"
             }
         },
-        "color": "linear-gradient(315deg, #1C3816 0%, #4F6B49 100%)",
+        "color": "linear-gradient(315deg, #23371A 0%, #89C62D 80%, #3F3F3F 80.01%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Statemine-Statemint.svg",
         "addressPrefix": 2
     },
@@ -1207,7 +1207,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-parallel-heiko"
             }
         },
-        "color": "linear-gradient(315deg, #5314F1 0%, #04E2FF 100%)",
+        "color": "linear-gradient(315deg, #3A55F5 8%, #04E2FF 80%, #3F3F3F 80.01%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Parallel-Heiko.svg",
         "addressPrefix": 110
     },
@@ -1865,7 +1865,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-parallel"
             }
         },
-        "color": "linear-gradient(315deg, #5314F1 0%, #04E2FF 100%)",
+        "color": "linear-gradient(315deg, #5314F1 8%, #04E2FF 80%, #D43079 80.01%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Parallel-Heiko.svg",
         "addressPrefix": 172
     },
@@ -1958,7 +1958,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-statemint"
             }
         },
-        "color": "linear-gradient(315deg, #5B892B 0%, #97D92D 100%)",
+        "color": "linear-gradient(315deg, #23371A 0%, #89C62D 80%, #D43079 80.01%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Statemine-Statemint.svg",
         "addressPrefix": 0
     },
@@ -2217,7 +2217,7 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/subsocial.json",
             "overridesCommon": true
         },
-        "color": "linear-gradient(315deg, #4A066B 0%, #681391 100%)",
+        "color": "linear-gradient(315deg, #720497 0%, #F50083 80%, #3F3F3F 80.01%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Subsocial.svg",
         "addressPrefix": 28
     },
@@ -2258,7 +2258,7 @@
     {
         "chainId": "724c168d8e86b78b831c641e2cc822b8d1bf99fa0b4b28fe59985cd6fd580215",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Integritee Shell",
+        "name": "Integritee Parachain",
         "assets": [
             {
                 "assetId": 0,
@@ -2284,7 +2284,7 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/Integritee.json",
             "overridesCommon": true
         },
-        "color": "linear-gradient(315deg, #000C5F 41.07%, #91E3DA 100%)",
+        "color": "linear-gradient(315deg, #000C5F 50%, #5A92AB 80%, #3F3F3F 80.01%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Integritee.svg",
         "addressPrefix": 13
     },
@@ -2483,7 +2483,7 @@
     },
     {
         "chainId": "f195ef30c646663a24a3164b307521174a86f437c586397a43183c736a8383c1",
-        "name": "Integritee Soloсhain",
+        "name": "Integritee Solochain",
         "assets": [
             {
                 "assetId": 0,
@@ -2511,14 +2511,14 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/Integritee_solo.json",
             "overridesCommon": true
         },
-        "color": "linear-gradient(315deg, #007568 31.86%, #91E3DA 100%)",
+        "color": "linear-gradient(315deg, #000C5F 50%, #91E3DA 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Integritee.svg",
         "addressPrefix": 13
     },
     {
         "chainId": "97da7ede98d7bad4e36b4d734b6055425a3be036da2a332ea5a7037656427a21",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "Nodle",
+        "name": "Nodle Parachain",
         "assets": [
             {
                 "assetId": 0,
@@ -2545,6 +2545,41 @@
         ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/nodle.json",
+            "overridesCommon": true
+        },
+        "color": "linear-gradient(315.17deg, #50AA85 8%, #57C799 80%, #D43079 80.01%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Nodle.svg",
+        "addressPrefix": 37
+    },
+    {
+        "chainId": "a3d114c2b8d0627c1aa9b134eafcf7d05ca561fdc19fb388bb9457f81809fb23",
+        "name": "Nodle Solochain",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "NODL",
+                "precision": 11,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Nodle.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://main3.nodleprotocol.io",
+                "name": "Nodle node"
+            },
+            {
+                "url": "wss://nodle.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Sub.ID",
+                "account": "https://sub.id/{address}"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/nodle_solo.json",
             "overridesCommon": true
         },
         "color": "linear-gradient(315.17deg, #50AA85 0%, #57C799 100%)",
