@@ -1176,7 +1176,60 @@
             {
                 "assetId": 0,
                 "symbol": "HKO",
-                "precision": 12
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Parallel-Heiko.svg"
+            },
+            {
+                "assetId": 1,
+                "symbol": "KSM",
+                "precision": 12,
+                "priceId": "kusama",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg",
+                "typeExtras": {
+                    "assetId": "100"
+                }
+            },
+            {
+                "assetId": 2,
+                "symbol": "KUSD",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/KUSD.svg",
+                "typeExtras": {
+                    "assetId": "103"
+                }
+            },
+            {
+                "assetId": 3,
+                "symbol": "LKSM",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Default.svg",
+                "typeExtras": {
+                    "assetId": "109"
+                }
+            },
+            {
+                "assetId": 4,
+                "symbol": "sKSM",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Default.svg",
+                "typeExtras": {
+                    "assetId": "1000"
+                }
+            },
+            {
+                "assetId": 5,
+                "symbol": "KAR",
+                "precision": 12,
+                "priceId": "karura",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Karura.svg",
+                "typeExtras": {
+                    "assetId": "107"
+                }
             }
         ],
         "nodes": [
