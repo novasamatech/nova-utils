@@ -8,7 +8,13 @@
                 "symbol": "DOT",
                 "precision": 10,
                 "priceId": "polkadot",
-                "buyProviders": ["ramp", "moonpay"],
+                 "buyProviders": {
+                     "ramp": {},
+                     "moonpay": {},
+                     "transak": {
+                        "network": "MAINNET"
+                    }
+                },
                 "staking": "relaychain"
             }
         ],
@@ -77,7 +83,12 @@
                 "assetId": 0,
                 "symbol": "KSM",
                 "precision": 12,
-                "buyProviders": ["ramp"],
+                "buyProviders": {
+                    "ramp": {},
+                    "transak": {
+                        "network": "MAINNET"
+                    }
+                },
                 "priceId": "kusama",
                 "staking": "relaychain"
             }
