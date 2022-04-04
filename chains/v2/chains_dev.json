@@ -682,7 +682,12 @@
                 "assetId": 0,
                 "symbol": "MOVR",
                 "precision": 18,
-                "priceId": "moonriver"
+                "priceId": "moonriver",
+                "buyProviders": {
+                     "transak": {
+                        "network": "MOONRIVER"
+                    }
+                }
             },
             {
                 "assetId": 1,
