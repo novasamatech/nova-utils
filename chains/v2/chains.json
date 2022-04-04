@@ -8,6 +8,7 @@
                 "symbol": "DOT",
                 "precision": 10,
                 "priceId": "polkadot",
+                "buyProviders": ["ramp", "moonpay"],
                 "staking": "relaychain"
             }
         ],
@@ -76,6 +77,7 @@
                 "assetId": 0,
                 "symbol": "KSM",
                 "precision": 12,
+                "buyProviders": ["ramp"],
                 "priceId": "kusama",
                 "staking": "relaychain"
             }
