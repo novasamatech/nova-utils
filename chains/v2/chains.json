@@ -14,7 +14,7 @@
                     "moonpay": {},
                     "transak": {
                        "network": "MAINNET"
-                   }
+                    }
                 }
             }
         ],
@@ -597,7 +597,12 @@
                 "assetId": 0,
                 "symbol": "GLMR",
                 "precision": 18,
-                "priceId": "moonbeam"
+                "priceId": "moonbeam",
+                "buyProviders": {
+                    "transak": {
+                       "network": "MOONRIVER"
+                    }
+                }
             }
         ],
         "nodes": [
@@ -648,7 +653,7 @@
                 "buyProviders": {
                     "transak": {
                        "network": "MOONRIVER"
-                   }
+                    }
                 }
             },
             {
