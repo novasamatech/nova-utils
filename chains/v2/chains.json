@@ -8,7 +8,14 @@
                 "symbol": "DOT",
                 "precision": 10,
                 "priceId": "polkadot",
-                "staking": "relaychain"
+                "staking": "relaychain",
+                "buyProviders": {
+                    "ramp": {},
+                    "moonpay": {},
+                    "transak": {
+                       "network": "MAINNET"
+                    }
+                }
             }
         ],
         "nodes": [
@@ -77,7 +84,13 @@
                 "symbol": "KSM",
                 "precision": 12,
                 "priceId": "kusama",
-                "staking": "relaychain"
+                "staking": "relaychain",
+                "buyProviders": {
+                    "ramp": {},
+                    "transak": {
+                        "network": "MAINNET"
+                    }
+                }
             }
         ],
         "nodes": [
@@ -584,7 +597,12 @@
                 "assetId": 0,
                 "symbol": "GLMR",
                 "precision": 18,
-                "priceId": "moonbeam"
+                "priceId": "moonbeam",
+                "buyProviders": {
+                    "transak": {
+                       "network": "MOONRIVER"
+                    }
+                }
             }
         ],
         "nodes": [
@@ -631,7 +649,12 @@
                 "assetId": 0,
                 "symbol": "MOVR",
                 "precision": 18,
-                "priceId": "moonriver"
+                "priceId": "moonriver",
+                "buyProviders": {
+                    "transak": {
+                       "network": "MOONRIVER"
+                    }
+                }
             },
             {
                 "assetId": 1,
