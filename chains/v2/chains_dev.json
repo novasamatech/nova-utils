@@ -2794,5 +2794,30 @@
         "color": "linear-gradient(315.17deg, #50AA85 0%, #57C799 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Nodle.svg",
         "addressPrefix": 37
+    },
+    {
+        "chainId": "55b88a59dded27563391d619d805572dd6b6b89d302b0dd792d01b3c41cfe5b1",
+        "name": "Singular testnet",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "KSM",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://staging.node.rmrk.app",
+                "name": "Singular DEV node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/singular_testnet.json",
+            "overridesCommon": true
+        },
+        "color": "linear-gradient(315deg, #000C5F 50%, #91E3DA 100%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Testnet.svg",
+        "addressPrefix": 0
     }
 ]
