@@ -11,6 +11,7 @@ readme = Template("""
 {{networks_table}}
 """)
 
+CHAINS_VERSION = "v3"
 
 def generate_networks_table():
     writer = MarkdownTableWriter(
@@ -25,7 +26,7 @@ def generate_networks_table():
 
 def generate_value_matrix():
     returning_array = []
-    with open(os.getcwd()+"/chains/v2/chains.json", 'r') as json_file:
+    with open(os.getcwd()+f"/chains/{CHAINS_VERSION}/chains.json", 'r') as json_file:
         data = json.load(json_file)
     for network in data:
         network_data_array = []
