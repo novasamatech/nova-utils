@@ -2845,5 +2845,35 @@
         "color": "linear-gradient(315deg, #78930F 0%, #D1F068 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Phala.svg",
         "addressPrefix": 30
+    },
+    {
+        "chainId": "0f62b701fb12d02237a33b84818c11f621653d2b1614c777973babf4652b535d",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Turing",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "TUR",
+                "precision": 10,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Turing.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://turing.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://rpc.turing.oak.tech",
+                "name": "Turing node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/turing.json",
+            "overridesCommon": true
+        },
+        "color": "linear-gradient(315deg, #B533B3 14.94%, #38EDF1 100%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Turing.svg",
+        "addressPrefix": 51
     }
 ]
