@@ -2819,5 +2819,31 @@
         "color": "linear-gradient(315deg, #000C5F 50%, #91E3DA 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Testnet.svg",
         "addressPrefix": 0
+    },
+    {
+        "chainId": "1bb969d85965e4bb5a651abbedf21a54b6b31a21f66b5401cc3f1e286268d736",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Phala",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "PHA",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Phala.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://api.phala.network/ws",
+                "name": "Phala node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/nodle.json",
+            "overridesCommon": true
+        },
+        "color": "linear-gradient(315deg, #78930F 0%, #D1F068 100%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Phala.svg",
+        "addressPrefix": 30
     }
 ]
