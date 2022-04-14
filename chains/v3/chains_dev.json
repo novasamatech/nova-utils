@@ -431,9 +431,9 @@
             },
             {
                 "assetId": 1,
-                "symbol": "kUSD",
+                "symbol": "aUSD",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/KUSD.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/AUSD.svg",
                 "priceId": "tether",
                 "type": "orml",
                 "typeExtras": {
@@ -976,11 +976,11 @@
             },
             {
                 "assetId": 5,
-                "symbol": "kUSD",
+                "symbol": "aUSD",
                 "precision": 12,
                 "priceId": "tether",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/KUSD.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/AUSD.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0302",
                     "currencyIdType": "node_primitives.currency.CurrencyId",
@@ -1234,10 +1234,10 @@
             },
             {
                 "assetId": 2,
-                "symbol": "kUSD",
+                "symbol": "aUSD",
                 "precision": 12,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/KUSD.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/AUSD.svg",
                 "typeExtras": {
                     "assetId": "103"
                 }
@@ -2671,46 +2671,6 @@
         "color": "linear-gradient(315.17deg, #000000 0%, #3F3F3F 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Interlay.svg",
         "addressPrefix": 42
-    },
-    {
-        "chainId": "f195ef30c646663a24a3164b307521174a86f437c586397a43183c736a8383c1",
-        "name": "Integritee Solochain",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "TEER",
-                "precision": 12,
-                "priceId": "integritee",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Integritee.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://api.solo.integritee.io",
-                "name": "Integritee node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://integritee.subscan.io/extrinsic/{hash}",
-                "account": "https://integritee.subscan.io/account/{address}",
-                "event": null
-            }
-        ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/Integritee_solo.json",
-            "overridesCommon": true
-        },
-        "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-integritee-solochain__bm92Y"
-            }
-        },
-        "color": "linear-gradient(315deg, #000C5F 50%, #91E3DA 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Integritee.svg",
-        "addressPrefix": 13
     },
     {
         "chainId": "97da7ede98d7bad4e36b4d734b6055425a3be036da2a332ea5a7037656427a21",
