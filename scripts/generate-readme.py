@@ -15,7 +15,7 @@ CHAINS_VERSION = "v3"
 
 def generate_networks_table():
     writer = MarkdownTableWriter(
-        table_name="List of support networks",
+        table_name="List of supported networks",
         headers=["Network", "Assets", "Explorers", "History", "Staking"],
         value_matrix=generate_value_matrix(),
         margin=1
