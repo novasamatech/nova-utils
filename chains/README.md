@@ -1,5 +1,5 @@
 
-# List of support networks
+# List of supported networks
 |       Network        |                                                                    Assets                                                                     |             Explorers              |                                      History                                       |                         Staking                         |
 | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------- |
 | Polkadot             | DOT                                                                                                                                           | Subscan<br />Polkascan<br />Sub.ID | [subquery](https://nova-polkadot.gapi.subquery.network)                            | [subquery](https://nova-polkadot.gapi.subquery.network) |
