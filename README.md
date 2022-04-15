@@ -8,7 +8,7 @@ Note: For better UX in your app its recommended to
 2. cache the data to cover part of the issue of 1.
 
 ### [List of supported networks](https://github.com/nova-wallet/nova-utils/tree/master/chains#list-of-supported-networks)
-### [List of supported dapps](https://github.com/nova-wallet/nova-utils/tree/master/dapps#list-of-supported-networks)
+### [List of supported dapps](https://github.com/nova-wallet/nova-utils/tree/master/dapps#list-of-supported-dapps)
 
 ## Modules
 #### Crowdloan
