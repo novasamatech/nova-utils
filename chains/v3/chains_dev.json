@@ -648,8 +648,9 @@
                 "assetId": 16,
                 "symbol": "CSM",
                 "precision": 12,
+                "priceId": "crust-storage-market",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/icons/chains/white/Crust.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Crust.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050500",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -2452,6 +2453,7 @@
                 "assetId": 0,
                 "symbol": "CSM",
                 "precision": 12,
+                "priceId": "crust-storage-market",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Crust.svg"
             }
         ],
