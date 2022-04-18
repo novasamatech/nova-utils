@@ -32,7 +32,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Generate README file
-        run: python ./scripts/generate-readme.py
+        run: python ./scripts/generate_network_list.py
 
       - name: Commit files
         run: |
