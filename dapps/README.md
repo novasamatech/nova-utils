@@ -28,3 +28,4 @@
 | Impossible Finance                | https://invest.impossible.finance/launchpad      | defi,evm                |
 | Huckleberry Finance               | https://www.huckleberry.finance/#/swap           | defi,staking,evm        |
 | MyTrade                           | https://mytrade.org/                             | defi,evm                |
+| Centrifuge Rewards Claim          | https://centrifuge.io/parachain/crowdloan/       | crowdloans              |
