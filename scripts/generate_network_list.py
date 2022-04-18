@@ -39,6 +39,7 @@ def generate_value_matrix():
         network_data_array.append(parse_parameters(
             "history", network.get("externalApi")))
         returning_array.append(network_data_array)
+    returning_array.sort()
     return returning_array
 
 

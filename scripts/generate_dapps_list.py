@@ -32,6 +32,7 @@ def generate_value_matrix():
         network_data_array.append(dapp["url"])
         network_data_array.append(",".join(dapp["categories"]))
         returning_array.append(network_data_array)
+    returning_array.sort()
     return returning_array
 
 
