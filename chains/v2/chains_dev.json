@@ -265,40 +265,6 @@
         ]
     },
     {
-        "chainId": "a84b46a3e602245284bb9a72c4abd58ee979aa7a5d7f8c4dfdddfaaf0665a4ae",
-        "name": "Rococo (Acala)",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "ADEV",
-                "precision": 10
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://karura-test-node.laminar.codes/polkadot",
-                "name": "Laminar Test Node"
-            }
-        ],
-        "color": "linear-gradient(315deg, #434852 0%, #787F92 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Rococo.svg",
-        "addressPrefix": 42,
-        "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/polkadot.json",
-            "overridesCommon": true
-        },
-        "externalApi": {
-            "crowdloans": {
-                "type": "github",
-                "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/crowdloan/rococo.json"
-            }
-        },
-        "options": [
-            "testnet",
-            "crowdloans"
-        ]
-    },
-    {
         "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Statemine",
@@ -896,40 +862,6 @@
         ]
     },
     {
-        "chainId": "eb378889b09d38c320918980997bdc579f430fbb0308f6eafde900b1c027627b",
-        "name": "Polkatrain",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "MDEV",
-                "precision": 10
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://wss.polkatrain.moonbeam.network",
-                "name": "Polkatrain node"
-            }
-        ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/polkatrain.json",
-            "overridesCommon": true
-        },
-        "externalApi": {
-            "crowdloans": {
-                "type": "github",
-                "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/crowdloan/polkatrain.json"
-            }
-        },
-        "color": "linear-gradient(315deg, #434852 0%, #787F92 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonriver.svg",
-        "addressPrefix": 0,
-        "options": [
-            "crowdloans",
-            "testnet"
-        ]
-    },
-    {
         "chainId": "f1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Shiden",
@@ -1381,7 +1313,7 @@
         "addressPrefix": 110
     },
     {
-        "chainId": "8bf43860c54d5520fd0ec7afa15c2912a1d3b0e4cf132a5838a83b171dad4c70",
+        "chainId": "a85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Basilisk (Wrong Genesis)",
         "assets": [
@@ -1577,7 +1509,7 @@
         ],
         "nodes": [
             {
-                "url": "wss://kilt-peregrine-k8s.kilt.io",
+                "url": "wss://peregrine.kilt.io/parachain-public-ws/",
                 "name": "PILT Node"
             }
         ],
