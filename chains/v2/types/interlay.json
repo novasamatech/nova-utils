@@ -4,7 +4,7 @@
         "Balance": "u128",
         "Index": "u32",
         "Phase": "frame_system.Phase",
-        "Address": "sp_core.crypto_AccountId32",
+        "Address": "sp_core.crypto.AccountId32",
         "ExtrinsicSignature": "sp_runtime.MultiSignature",
         "ParaId": "polkadot_parachain.primitives.Id",
         "interlay_runtime_parachain.Event": "GenericEvent",
