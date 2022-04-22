@@ -2917,6 +2917,12 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/nodle.json",
             "overridesCommon": true
         },
+        "externalApi": {
+            "history": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-phala__bm92Y"
+            }
+        },
         "color": "linear-gradient(315deg, #78930F 0%, #D1F068 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Phala.svg",
         "addressPrefix": 30
@@ -2946,6 +2952,12 @@
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/turing.json",
             "overridesCommon": true
+        },
+        "externalApi": {
+            "history": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-turing__bm92Y"
+            }
         },
         "color": "linear-gradient(315deg, #B533B3 14.94%, #38EDF1 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Turing.svg",
