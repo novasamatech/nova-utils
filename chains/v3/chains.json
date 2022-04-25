@@ -2255,50 +2255,6 @@
         "addressPrefix": 13
     },
     {
-        "chainId": "f195ef30c646663a24a3164b307521174a86f437c586397a43183c736a8383c1",
-        "name": "Integritee Soloсhain",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "TEER",
-                "precision": 12,
-                "priceId": "integritee",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Integritee.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://api.solo.integritee.io",
-                "name": "Integritee node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://integritee.subscan.io/extrinsic/{hash}",
-                "account": "https://integritee.subscan.io/account/{address}",
-                "event": null
-            },
-            {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
-            }
-        ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/Integritee_solo.json",
-            "overridesCommon": true
-        },
-        "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-integritee-solochain"
-            }
-        },
-        "color": "linear-gradient(315deg, #000C5F 50%, #91E3DA 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Integritee.svg",
-        "addressPrefix": 13
-    },
-    {
         "chainId": "b3db41421702df9a7fcac62b53ffeac85f7853cc4e689e0b93aeb3db18c09d82",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
         "name": "Centrifuge Parachain",
