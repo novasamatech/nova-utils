@@ -122,7 +122,7 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r requirements.txt
-      - name: Generate new Dapps list file
+      - name: Generate new Test data file
         run: python ./scripts/update_test_data.py
 
       - name: Commit files
@@ -130,22 +130,22 @@ jobs:
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add ./tests/chains_for_testBalance.json
-          git commit -m "Update dapps list"
+          git commit -m "Update test data file"
 
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: refs/heads/update-dapps-${{github.run_number}}
+          branch: refs/heads/update-tests-${{github.run_number}}
 
       - uses: repo-sync/pull-request@v2
         name: pull-request
         with:
-          source_branch: "update-dapps-${{github.run_number}}"
+          source_branch: "update-tests-${{github.run_number}}"
           destination_branch: "master"
-          pr_title: "Update Dapps list"
+          pr_title: "Update Test data File"
           pr_body: |
-              Update dapps list in https://github.com/nova-wallet/nova-utils/tree/master/dapps
+              Update test data file
           pr_reviewer: "stepanLav"
           pr_draft: false
           github_token: ${{ secrets.GITHUB_TOKEN }}
