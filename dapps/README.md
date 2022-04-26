@@ -3,7 +3,7 @@
 |               DApp                |                       Url                        |          Tags           |
 | --------------------------------- | ------------------------------------------------ | ----------------------- |
 | Acala Rewards Claim               | https://distribution.acala.network/claim/acala   | crowdloans              |
-| Astar DApp Hub                    | https://portal.astar.network/                    | defi,staking            |
+| Astar DApp Hub                    | https://portal.astar.network/                    | defi,staking,evm        |
 | Beamswap                          | https://app.beamswap.io/exchange/swap            | defi,staking,evm        |
 | Bifrost App                       | https://bifrost.app/                             | defi,crowdloans         |
 | Bit.Country Pioneer Rewards Claim | https://ksmcrowdloan.bit.country/reward          | crowdloans              |
