@@ -9,22 +9,38 @@ jobs:
   check:
     runs-on: ubuntu-latest
     outputs:
-      changed: ${{ steps.changed-files.outputs.any_changed }}
+      v3chains: ${{ steps.v3chains.outputs.any_changed }}
+      dapps: ${{ steps.dapps.outputs.any_changed }}
+      v3chains_dev: ${{ steps.changed-files.outputs.any_changed }}
     steps:
       - name: Checkout current repository to Master branch
         uses: actions/checkout@v1
 
-      - name: Get changed files
-        id: changed-files
+      - name: Was v3/chains.json changed?
+        id: v3chains
         uses: tj-actions/changed-files@v18.2
         with:
           files: |
             chains/v3/chains.json
 
-  build:
+      - name: Was dapps.json changed?
+        id: dapps
+        uses: tj-actions/changed-files@v18.2
+        with:
+          files: |
+            dapps/dapps.json
+
+      - name: Was chains_dev changed?
+        id: v3chains_dev
+        uses: tj-actions/changed-files@v18.2
+        with:
+          files: |
+            chains/v3/chains_dev.json
+
+  chains_update:
     runs-on: ubuntu-latest
     needs: check
-    if: always() && (needs.check.outputs.changed == 'true')
+    if: always() && (needs.check.outputs.v3chains == 'true')
     steps:
       - name: Checkout current repository to Master branch
         uses: actions/checkout@v1
@@ -54,6 +70,82 @@ jobs:
           pr_title: "Update network list"
           pr_body: |
               Update networks list in https://github.com/nova-wallet/nova-utils/tree/master/chains
+          pr_reviewer: "stepanLav"
+          pr_draft: false
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+  dapps_update:
+    runs-on: ubuntu-latest
+    needs: check
+    if: always() && (needs.check.outputs.dapps == 'true')
+    steps:
+      - name: Checkout current repository to Master branch
+        uses: actions/checkout@v1
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Generate new Dapps list file
+        run: python ./scripts/generate_dapps_list.py
+
+      - name: Commit files
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add ./dapps/README.md
+          git commit -m "Update dapps list"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: refs/heads/update-dapps-${{github.run_number}}
+
+      - uses: repo-sync/pull-request@v2
+        name: pull-request
+        with:
+          source_branch: "update-dapps-${{github.run_number}}"
+          destination_branch: "master"
+          pr_title: "Update Dapps list"
+          pr_body: |
+              Update dapps list in https://github.com/nova-wallet/nova-utils/tree/master/dapps
+          pr_reviewer: "stepanLav"
+          pr_draft: false
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+  test_json_update:
+    runs-on: ubuntu-latest
+    needs: check
+    if: always() && (needs.check.outputs.v3chains_dev == 'true')
+    steps:
+      - name: Checkout current repository to Master branch
+        uses: actions/checkout@v1
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Generate new Dapps list file
+        run: python ./scripts/update_test_data.py
+
+      - name: Commit files
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add ./tests/chains_for_testBalance.json
+          git commit -m "Update dapps list"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: refs/heads/update-dapps-${{github.run_number}}
+
+      - uses: repo-sync/pull-request@v2
+        name: pull-request
+        with:
+          source_branch: "update-dapps-${{github.run_number}}"
+          destination_branch: "master"
+          pr_title: "Update Dapps list"
+          pr_body: |
+              Update dapps list in https://github.com/nova-wallet/nova-utils/tree/master/dapps
           pr_reviewer: "stepanLav"
           pr_draft: false
           github_token: ${{ secrets.GITHUB_TOKEN }}
