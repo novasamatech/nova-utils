@@ -28,8 +28,8 @@
                 "name": "OnFinality node"
             },
             {
-                "url": "wss://pub.elara.patract.io/polkadot",
-                "name": "Patract node"
+                "url": "wss://polkadot-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -103,8 +103,12 @@
                 "name": "OnFinality node"
             },
             {
-                "url": "wss://pub.elara.patract.io/kusama",
-                "name": "Patract node"
+                "url": "wss://kusama-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://kusama.public.curie.radiumblock.co/ws",
+                "name": "Radium block node"
             }
         ],
         "explorers": [
@@ -171,8 +175,8 @@
                 "name": "OnFinality node"
             },
             {
-                "url": "wss://pub.elara.patract.io/westend",
-                "name": "Patract node"
+                "url": "wss://westend-rpc.dwellir.com",
+                "name": "Dwellir node"
             },
             {
                 "url": "wss://rpc.pinknode.io/westend/explorer",
@@ -661,8 +665,8 @@
                 "name": "Acala Foundation node 3"
             },
             {
-                "url": "wss://pub.elara.patract.io/karura",
-                "name": "Patract node"
+                "url": "wss://karura-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "types": {
@@ -807,8 +811,8 @@
                 "name": "OnFinality node"
             },
             {
-                "url": "wss://pub.elara.patract.io/moonriver",
-                "name": "Patract node"
+                "url": "wss://moonriver-rpc.dwellir.com",
+                "name": "Dwellir node"
             },
             {
                 "url": "wss://rpc.pinknode.io/moonriver/explorer",
@@ -1041,8 +1045,8 @@
                 "name": "OnFinality node"
             },
             {
-                "url": "wss://pub.elara.patract.io/bifrost",
-                "name": "Patract node"
+                "url": "wss://bifrost-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "types": {
@@ -1354,6 +1358,10 @@
             {
                 "url": "wss://rpc-01.basilisk.hydradx.io",
                 "name": "Hydradx"
+            },
+            {
+                "url": "wss://basilisk-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -1569,20 +1577,16 @@
         ],
         "nodes": [
             {
-                "url": "wss://falafel.calamari.systems/",
-                "name": "Manta Network node 0"
+                "url": "wss://ws.calamari.systems/",
+                "name": "Manta Network"
             },
             {
                 "url": "wss://calamari.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
             },
             {
-                "url": "wss://fritti.calamari.systems/",
-                "name": "Manta Network node 1"
-            },
-            {
-                "url": "wss://smoothie.calamari.systems/",
-                "name": "Manta Network node 2"
+                "url": "wss://calamari-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -2067,8 +2071,8 @@
                 "name": "OnFinality node"
             },
             {
-                "url": "wss://pub.elara.patract.io/statemint",
-                "name": "Patract node"
+                "url": "wss://statemint-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "explorers": [
