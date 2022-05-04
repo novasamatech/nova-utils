@@ -1357,7 +1357,7 @@
             },
             {
                 "url": "wss://rpc-01.basilisk.hydradx.io",
-                "name": "Hydradx"
+                "name": "Hydradx node"
             },
             {
                 "url": "wss://basilisk-rpc.dwellir.com",
@@ -1871,7 +1871,12 @@
                 "symbol": "GLMR",
                 "precision": 18,
                 "priceId": "moonbeam",
-                "staking": "parachain"
+                "staking": "parachain",
+                "buyProviders": {
+                    "transak": {
+                       "network": "MOONRIVER"
+                    }
+                }
             }
         ],
         "nodes": [

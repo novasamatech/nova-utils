@@ -28,8 +28,8 @@
                 "name": "OnFinality node"
             },
             {
-                "url": "wss://pub.elara.patract.io/polkadot",
-                "name": "Patract node"
+                "url": "wss://polkadot-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -103,8 +103,12 @@
                 "name": "OnFinality node"
             },
             {
-                "url": "wss://pub.elara.patract.io/kusama",
-                "name": "Patract node"
+                "url": "wss://kusama-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://kusama.public.curie.radiumblock.co/ws",
+                "name": "Radium block node"
             }
         ],
         "explorers": [
@@ -171,8 +175,8 @@
                 "name": "OnFinality node"
             },
             {
-                "url": "wss://pub.elara.patract.io/westend",
-                "name": "Patract node"
+                "url": "wss://westend-rpc.dwellir.com",
+                "name": "Dwellir node"
             },
             {
                 "url": "wss://rpc.pinknode.io/westend/explorer",
@@ -323,7 +327,7 @@
                 "name": "Statescan",
                 "extrinsic": "https://statemine.statescan.io/extrinsic/{hash}",
                 "account": "https://statemine.statescan.io/account/{address}",
-                "event": null
+                "event": "https://statemine.statescan.io/event/{event}"
             },
             {
                 "name": "Sub.ID",
@@ -610,8 +614,8 @@
                 "name": "Acala Foundation node 3"
             },
             {
-                "url": "wss://pub.elara.patract.io/karura",
-                "name": "Patract node"
+                "url": "wss://karura-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "types": {
@@ -807,8 +811,8 @@
                 "name": "OnFinality node"
             },
             {
-                "url": "wss://pub.elara.patract.io/moonriver",
-                "name": "Patract node"
+                "url": "wss://moonriver-rpc.dwellir.com",
+                "name": "Dwellir node"
             },
             {
                 "url": "wss://rpc.pinknode.io/moonriver/explorer",
@@ -872,6 +876,10 @@
                 "extrinsic": "https://shiden.subscan.io/extrinsic/{hash}",
                 "account": "https://shiden.subscan.io/account/{address}",
                 "event": null
+            },
+            {
+                "name": "Sub.ID",
+                "account": "https://sub.id/{address}"
             }
         ],
         "externalApi": {
@@ -993,8 +1001,8 @@
                 "name": "OnFinality node"
             },
             {
-                "url": "wss://pub.elara.patract.io/bifrost",
-                "name": "Patract node"
+                "url": "wss://bifrost-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "types": {
@@ -1042,6 +1050,10 @@
             {
                 "url": "wss://rpc-01.basilisk.hydradx.io",
                 "name": "Hydradx node"
+            },
+            {
+                "url": "wss://basilisk-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -1227,10 +1239,6 @@
             {
                 "url": "wss://edgeware.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
-            },
-            {
-                "url": "wss://pub.elara.patract.io/edgeware",
-                "name": "Patract node"
             }
         ],
         "types": {
@@ -1363,20 +1371,16 @@
         ],
         "nodes": [
             {
-                "url": "wss://falafel.calamari.systems/",
-                "name": "Manta Network node 0"
+                "url": "wss://ws.calamari.systems/",
+                "name": "Manta Network"
             },
             {
                 "url": "wss://calamari.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
             },
             {
-                "url": "wss://fritti.calamari.systems/",
-                "name": "Manta Network node 1"
-            },
-            {
-                "url": "wss://smoothie.calamari.systems/",
-                "name": "Manta Network node 2"
+                "url": "wss://calamari-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -1686,6 +1690,10 @@
                 "extrinsic": "https://parallel.subscan.io/extrinsic/{hash}",
                 "account": "https://parallel.subscan.io/account/{address}",
                 "event": null
+            },
+            {
+                "name": "Sub.ID",
+                "account": "https://sub.id/{address}"
             }
         ],
         "types": {
@@ -1769,8 +1777,16 @@
                 "name": "OnFinality node"
             },
             {
-                "url": "wss://pub.elara.patract.io/statemint",
-                "name": "Patract node"
+                "url": "wss://statemint-rpc.dwellir.com",
+                "name": "Dwellir node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Statescan",
+                "account": "https://statemint.statescan.io/account/{address}",
+                "extrinsic": "https://statemint.statescan.io/extrinsic/{hash}",
+                "event": "https://statemint.statescan.io/event/{event}"
             }
         ],
         "types": {
@@ -1854,6 +1870,12 @@
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/robonomics.json",
             "overridesCommon": true
+        },
+        "externalApi": {
+            "history": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-robonomics"
+            }
         },
         "color": "linear-gradient(315deg, #2A4ECB 0%, #4CABEC 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Robonomics.svg",
@@ -2262,6 +2284,12 @@
                 "name": "Integritee node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Sub.ID",
+                "account": "https://sub.id/{address}"
+            }
+        ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/Integritee.json",
             "overridesCommon": true
@@ -2623,6 +2651,12 @@
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/turing.json",
             "overridesCommon": true
+        },
+        "externalApi": {
+            "history": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-turing"
+            }
         },
         "color": "linear-gradient(315deg, #B533B3 14.94%, #38EDF1 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Turing.svg",
