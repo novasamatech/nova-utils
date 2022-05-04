@@ -655,6 +655,17 @@
                        "network": "MOONRIVER"
                     }
                 }
+            },
+            {
+                "assetId": 1,
+                "symbol": "xcDOT",
+                "precision": 10,
+                "type": "statemine",
+                "priceId": "polkadot",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
+                "typeExtras": {
+                    "assetId": "42259045809535163221576417993425387648"
+                }
             }
         ],
         "nodes": [
