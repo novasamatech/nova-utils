@@ -11,6 +11,7 @@
 | Dotmarketcap                      | https://dotmarketcap.com/                        | utilities               |
 | Huckleberry Finance               | https://www.huckleberry.finance/#/swap           | defi,staking,evm        |
 | Impossible Finance                | https://invest.impossible.finance/launchpad      | defi,evm                |
+| Interlay Rewards Claim            | https://crowdloan.interlay.io/                   | crowdloans              |
 | Kanaria                           | https://kanaria.rmrk.app/                        | nft                     |
 | Kintsugi Hub                      | https://kintsugi.interlay.io/                    | staking,defi,crowdloans |
 | KodaDot                           | https://kodadot.xyz/rmrk/gallery                 | nft                     |
