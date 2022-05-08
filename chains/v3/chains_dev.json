@@ -2906,8 +2906,10 @@
             {
                 "assetId": 0,
                 "symbol": "AZERO",
+                "staking": "relaychain",
+                "priceId": "aleph-zero",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Default.svg"
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/color/Aleph-Zero.svg"
             }
         ],
         "nodes": [
@@ -2921,7 +2923,7 @@
             "overridesCommon": true
         },
         "color": "linear-gradient(315deg, #B533B3 14.94%, #38EDF1 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Default.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/color/Aleph-Zero.svg",
         "addressPrefix": 42
     }
 ]
