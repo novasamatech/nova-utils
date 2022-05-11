@@ -2694,5 +2694,39 @@
         "color": "linear-gradient(315deg, #B533B3 14.94%, #38EDF1 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Turing.svg",
         "addressPrefix": 51
+    },
+    {
+        "chainId": "70255b4d28de0fc4e1a193d7e175ad1ccef431598211c55538f1018651a0344e",
+        "name": "Aleph Zero",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "AZERO",
+                "priceId": "aleph-zero",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Aleph_zero.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://ws.azero.dev",
+                "name": "Aleph Zero node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://alephzero.subscan.io/extrinsic/{hash}",
+                "account": "https://alephzero.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/aleph_zero.json",
+            "overridesCommon": true
+        },
+        "color": "linear-gradient(315deg, #008464 20%, #69E6C8 100%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Aleph_zero.svg",
+        "addressPrefix": 42
     }
 ]
