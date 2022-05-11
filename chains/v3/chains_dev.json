@@ -2931,7 +2931,7 @@
                 "staking": "relaychain",
                 "priceId": "aleph-zero",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/color/Aleph-Zero.svg"
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Aleph_zero.svg"
             }
         ],
         "nodes": [
@@ -2940,12 +2940,26 @@
                 "name": "Aleph Zero node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://alephzero.subscan.io/extrinsic/{hash}",
+                "account": "https://alephzero.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/aleph_zero.json",
             "overridesCommon": true
         },
+        "externalApi": {
+            "history": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-turing__bm92Y"
+            }
+        },
         "color": "linear-gradient(315deg, #213F40 20%, #69E6C8 100%)",
-        "icon": "https://raw.githubusercontent.com/stepanLav/nova-utils/feature/add_aleph_zero/icons/chains/color/Aleph-Zero.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Aleph_zero.svg",
         "addressPrefix": 42
     }
 ]
