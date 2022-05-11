@@ -1982,6 +1982,28 @@
                 "assetId": 0,
                 "symbol": "PARA",
                 "precision": 12
+            },
+            {
+                "assetId": 1,
+                "symbol": "DOT",
+                "precision": 10,
+                "priceId": "polkadot",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
+                "typeExtras": {
+                    "assetId": "101"
+                }
+            },
+            {
+                "assetId": 2,
+                "symbol": "sDOT",
+                "precision": 10,
+                "priceId": "polkadot",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
+                "typeExtras": {
+                    "assetId": "1001"
+                }
             }
         ],
         "nodes": [
