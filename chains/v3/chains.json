@@ -590,6 +590,87 @@
                     "existentialDeposit": "10000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 18,
+                "symbol": "KMA",
+                "precision": 12,
+                "priceId": "calamari-network",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Calamari.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x050a00",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "100000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 19,
+                "symbol": "TEER",
+                "precision": 12,
+                "priceId": "integritee",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Integritee.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x050800",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "100000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 20,
+                "symbol": "KICO",
+                "precision": 14,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/KICO.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x050600",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "100000000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 21,
+                "symbol": "NEER",
+                "precision": 18,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bit.Country.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x050900",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "100000000000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 22,
+                "symbol": "BSX",
+                "precision": 12,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Basilisk.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x050b00",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "1000000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 23,
+                "symbol": "AIR",
+                "precision": 18,
+                "priceId": "altair",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Altair.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x050c00",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "100000000000000000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
@@ -1570,6 +1651,20 @@
                     "currencyIdScale": "0x040d000000",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
                     "existentialDeposit": "100000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 5,
+                "symbol": "GLMR",
+                "precision": 18,
+                "priceId": "moonbeam",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonbeam.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x050000",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "100000000000000000",
                     "transfersEnabled": true
                 }
             }
