@@ -420,7 +420,7 @@
                 "symbol": "LKSM",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Default.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/LKSM.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0083",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -488,7 +488,7 @@
                 "symbol": "vsKSM",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Default.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/vsKSM.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x00a9",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -501,7 +501,7 @@
                 "symbol": "taiKSM",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Default.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/taiKSM.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0300000000",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -555,7 +555,7 @@
                 "symbol": "HKO",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Parallel-Heiko.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/HKO.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050400",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -993,7 +993,7 @@
                 "symbol": "vsKSM",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Default.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/vsKSM.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0404",
                     "currencyIdType": "node_primitives.currency.CurrencyId",
@@ -1144,7 +1144,7 @@
                 "assetId": 0,
                 "symbol": "HKO",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Parallel-Heiko.svg"
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/HKO.svg"
             },
             {
                 "assetId": 1,
@@ -1172,7 +1172,7 @@
                 "symbol": "LKSM",
                 "precision": 12,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Default.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/LKSM.svg",
                 "typeExtras": {
                     "assetId": "109"
                 }
@@ -1182,7 +1182,7 @@
                 "symbol": "sKSM",
                 "precision": 12,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Default.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/sKSM.svg",
                 "typeExtras": {
                     "assetId": "1000"
                 }
@@ -1524,7 +1524,7 @@
                 "precision": 10,
                 "priceId": "polkadot",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Default.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/LDOT.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0003",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -1562,10 +1562,10 @@
             },
             {
                 "assetId": 4,
-                "symbol": "LCDOT",
+                "symbol": "lcDOT",
                 "precision": 10,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Default.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/lcDOT.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x040d000000",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -1682,7 +1682,8 @@
             {
                 "assetId": 0,
                 "symbol": "PARA",
-                "precision": 12
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/PARA.svg"
             },
             {
                 "assetId": 1,
