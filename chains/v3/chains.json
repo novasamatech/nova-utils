@@ -2850,5 +2850,35 @@
         "color": "linear-gradient(315deg, #008464 20%, #69E6C8 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Aleph_zero.svg",
         "addressPrefix": 42
+    },
+    {
+        "chainId": "daab8df776eb52ec604a5df5d388bb62a050a0aaec4556a64265b9d42755552d",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Composable Finance",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "LAYR",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Composable.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc.composable.finance",
+                "name": "Composable node"
+            },
+            {
+                "url": "wss://composable-rpc.dwellir.com",
+                "name": "Dwellir node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/composable.json",
+            "overridesCommon": true
+        },
+        "color": "linear-gradient(315.17deg, #7A0354 13.48%, #8E0076 46.85%, #F139FE 100%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Composable.svg",
+        "addressPrefix": 49
     }
 ]
