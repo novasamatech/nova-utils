@@ -920,6 +920,10 @@
             "history": {
                 "type": "subquery",
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonriver__bm92Y"
+            },
+            "staking": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonriver__bm92Y"
             }
         },
         "color": "linear-gradient(135deg, #F2A007 19.29%, #A56B00 100%)",
@@ -2060,6 +2064,10 @@
         },
         "externalApi": {
             "history": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonbeam__bm92Y"
+            },
+            "staking": {
                 "type": "subquery",
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonbeam__bm92Y"
             }
