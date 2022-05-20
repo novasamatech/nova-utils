@@ -2101,7 +2101,18 @@
                 "symbol": "ASTR",
                 "priceId": "astar",
                 "precision": 18
-            }
+            },
+            {
+                "assetId": 1,
+                "symbol": "DOT",
+                "precision": 10,
+                "type": "statemine",
+                "priceId": "polkadot",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
+                 "typeExtras": {
+                     "assetId": "340282366920938463463374607431768211455"
+                 }
+             }
         ],
         "nodes": [
             {
