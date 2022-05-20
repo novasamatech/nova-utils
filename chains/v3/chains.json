@@ -671,6 +671,47 @@
                     "existentialDeposit": "100000000000000000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 24,
+                "symbol": "GENS",
+                "precision": 9,
+                "type": "orml",
+                "priceId": "genshiro",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Genshiro.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x050e00",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "1000000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 25,
+                "symbol": "EQD",
+                "precision": 9,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/EQD.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x050f00",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "10000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 26,
+                "symbol": "CRAB",
+                "precision": 18,
+                "type": "orml",
+                "priceId": "darwinia-crab-network",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Crab.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x050d00",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "1000000000000000000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
@@ -1103,6 +1144,61 @@
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/vsKSM.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0404",
+                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "existentialDeposit": "100000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 7,
+                "symbol": "USDT",
+                "precision": 6,
+                "priceId": "tether",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/USDT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0700000000",
+                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 8,
+                "symbol": "MOVR",
+                "precision": 18,
+                "type": "orml",
+                "priceId": "moonriver",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonriver.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x020a",
+                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "existentialDeposit": "1000000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 9,
+                "symbol": "PHA",
+                "precision": 12,
+                "type": "orml",
+                "priceId": "pha",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Phala.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0208",
+                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "existentialDeposit": "40000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 10,
+                "symbol": "vKSM",
+                "precision": 12,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/vKSM.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0104",
                     "currencyIdType": "node_primitives.currency.CurrencyId",
                     "existentialDeposit": "100000000",
                     "transfersEnabled": true
@@ -1629,7 +1725,6 @@
                 "assetId": 1,
                 "symbol": "LDOT",
                 "precision": 10,
-                "priceId": "polkadot",
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/LDOT.svg",
                 "typeExtras": {
@@ -1691,6 +1786,19 @@
                     "currencyIdScale": "0x050000",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
                     "existentialDeposit": "100000000000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 6,
+                "symbol": "PARA",
+                "precision": 12,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/PARA.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x050100",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "100000000000",
                     "transfersEnabled": true
                 }
             }
@@ -1757,7 +1865,18 @@
                 "symbol": "ASTR",
                 "priceId": "astar",
                 "precision": 18
-            }
+            },
+            {
+                "assetId": 1,
+                "symbol": "DOT",
+                "precision": 10,
+                "type": "statemine",
+                "priceId": "polkadot",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
+                 "typeExtras": {
+                     "assetId": "340282366920938463463374607431768211455"
+                 }
+             }
         ],
         "nodes": [
             {
@@ -2302,6 +2421,7 @@
                 "assetId": 0,
                 "symbol": "CRAB",
                 "precision": 18,
+                "priceId": "darwinia-crab-network",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Crab.svg"
             }
         ],
@@ -2764,6 +2884,7 @@
                 "assetId": 0,
                 "symbol": "PHA",
                 "precision": 12,
+                "priceId": "pha",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Phala.svg"
             }
         ],
