@@ -1823,7 +1823,6 @@
                 "assetId": 1,
                 "symbol": "LDOT",
                 "precision": 10,
-                "priceId": "polkadot",
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/LDOT.svg",
                 "typeExtras": {
@@ -1885,6 +1884,19 @@
                     "currencyIdScale": "0x050000",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
                     "existentialDeposit": "100000000000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 6,
+                "symbol": "PARA",
+                "precision": 12,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/PARA.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x050100",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "100000000000",
                     "transfersEnabled": true
                 }
             }
