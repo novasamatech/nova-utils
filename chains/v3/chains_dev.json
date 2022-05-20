@@ -732,6 +732,7 @@
                 "symbol": "GENS",
                 "precision": 9,
                 "type": "orml",
+                "priceId": "genshiro",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Genshiro.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050e00",
@@ -758,6 +759,7 @@
                 "symbol": "CRAB",
                 "precision": 18,
                 "type": "orml",
+                "priceId": "darwinia-crab-network",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Crab.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050d00",
@@ -1186,6 +1188,7 @@
                 "symbol": "MOVR",
                 "precision": 18,
                 "type": "orml",
+                "priceId": "moonriver",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonriver.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x020a",
@@ -1199,6 +1202,7 @@
                 "symbol": "PHA",
                 "precision": 12,
                 "type": "orml",
+                "priceId": "pha",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Phala.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0208",
@@ -2655,6 +2659,7 @@
                 "assetId": 0,
                 "symbol": "CRAB",
                 "precision": 18,
+                "priceId": "darwinia-crab-network",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Crab.svg"
             }
         ],
@@ -3152,6 +3157,7 @@
                 "assetId": 0,
                 "symbol": "PHA",
                 "precision": 12,
+                "priceId": "pha",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Phala.svg"
             }
         ],
