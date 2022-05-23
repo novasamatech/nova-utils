@@ -745,6 +745,7 @@
                 "assetId": 25,
                 "symbol": "EQD",
                 "precision": 9,
+                "priceId": "tether",
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/EQD.svg",
                 "typeExtras": {
@@ -1459,6 +1460,7 @@
                 "assetId": 2,
                 "symbol": "aUSD",
                 "precision": 12,
+                "priceId": "tether",
                 "type": "statemine",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/AUSD.svg",
                 "typeExtras": {
@@ -1494,6 +1496,39 @@
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Karura.svg",
                 "typeExtras": {
                     "assetId": "107"
+                }
+            },
+            {
+                "assetId": 6,
+                "symbol": "MOVR",
+                "precision": 18,
+                "priceId": "moonriver",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonriver.svg",
+                "typeExtras": {
+                    "assetId": "113"
+                }
+            },
+            {
+                "assetId": 7,
+                "symbol": "PHA",
+                "precision": 12,
+                "priceId": "pha",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Phala.svg",
+                "typeExtras": {
+                    "assetId": "115"
+                }
+            },
+            {
+                "assetId": 8,
+                "symbol": "GENS",
+                "precision": 9,
+                "priceId": "genshiro",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Genshiro.svg",
+                "typeExtras": {
+                    "assetId": "123"
                 }
             }
         ],
@@ -1639,7 +1674,8 @@
                 "assetId": 0,
                 "symbol": "PHA",
                 "precision": 12,
-                "priceId": "pha"
+                "priceId": "pha",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Phala.svg"
             }
         ],
         "nodes": [
@@ -2281,6 +2317,38 @@
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/sDOT.svg",
                 "typeExtras": {
                     "assetId": "1001"
+                }
+            },
+            {
+                "assetId": 3,
+                "symbol": "ACA",
+                "precision": 12,
+                "priceId": "acala",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Acala.svg",
+                "typeExtras": {
+                    "assetId": "108"
+                }
+            },
+            {
+                "assetId": 4,
+                "symbol": "aUSD",
+                "precision": 12,
+                "priceId": "tether",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/AUSD.svg",
+                "typeExtras": {
+                    "assetId": "104"
+                }
+            },
+            {
+                "assetId": 5,
+                "symbol": "LDOT",
+                "precision": 10,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/LDOT.svg",
+                "typeExtras": {
+                    "assetId": "110"
                 }
             }
         ],
