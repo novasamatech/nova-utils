@@ -745,6 +745,7 @@
                 "assetId": 25,
                 "symbol": "EQD",
                 "precision": 9,
+                "priceId": "tether",
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/EQD.svg",
                 "typeExtras": {
@@ -1673,7 +1674,8 @@
                 "assetId": 0,
                 "symbol": "PHA",
                 "precision": 12,
-                "priceId": "pha"
+                "priceId": "pha",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Phala.svg"
             }
         ],
         "nodes": [
