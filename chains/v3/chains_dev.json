@@ -3287,5 +3287,57 @@
         "color": "linear-gradient(315.17deg, #7A0354 13.48%, #8E0076 46.85%, #F139FE 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Composable.svg",
         "addressPrefix": 49
+    },
+    {
+        "chainId": "3920bcb4960a1eef5580cd5367ff3f430eef052774f78468852f7b9cb39f8a3c",
+        "name": "Polkadex Solochain",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "PDEX",
+                "priceId": "polkadex",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadex.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://polkadex.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://mainnet.polkadex.trade",
+                "name": "Polkadex team node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://polkadex.subscan.io/extrinsic/{hash}",
+                "account": "https://polkadex.subscan.io/account/{address}",
+                "event": null
+            },
+            {
+                "name": "Sub.ID",
+                "account": "https://sub.id/{address}"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/polkadex.json",
+            "overridesCommon": true
+        },
+        "externalApi": {
+            "staking": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-efinity__bm92Y"
+            },
+            "history": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-efinity__bm92Y"
+            }
+        },
+        "color": "linear-gradient(315deg, #2B2D36 23.96%, #606169 100%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadex.svg",
+        "addressPrefix": 88
     }
 ]
