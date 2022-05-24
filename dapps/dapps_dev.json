@@ -104,7 +104,7 @@
     {
       "name": "KodaDot",
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/KodaDot.png",
-      "url": "https://kodadot.xyz/rmrk/gallery",
+      "url": "https://kodadot.xyz/",
       "categories": [
         "nft"
       ]
@@ -120,10 +120,9 @@
     {
       "name": "Parallel Finance App",
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/color/Parallel-Heiko.svg",
-      "url": "https://crowdloan.parallel.fi/",
+      "url": "https://app.parallel.fi/",
       "categories": [
-        "defi",
-        "crowdloans"
+        "defi"
       ]
     },
     {
@@ -429,6 +428,23 @@
       "url": "https://app.sirius.finance/#/swap",
       "categories": [
         "defi",
+        "staking",
+        "evm"
+      ]
+    },
+    {
+      "name": "Interlay Rewards Claim",
+      "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Interlay.svg",
+      "url": "https://crowdloan.interlay.io/",
+      "categories": [
+        "crowdloans"
+      ]
+    },
+    {
+      "name": "Lido",
+      "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/LIDO.svg",
+      "url": "https://kusama.lido.fi/",
+      "categories": [
         "staking",
         "evm"
       ]

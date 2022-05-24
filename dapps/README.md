@@ -11,12 +11,14 @@
 | Dotmarketcap                      | https://dotmarketcap.com/                        | utilities               |
 | Huckleberry Finance               | https://www.huckleberry.finance/#/swap           | defi,staking,evm        |
 | Impossible Finance                | https://invest.impossible.finance/launchpad      | defi,evm                |
+| Interlay Rewards Claim            | https://crowdloan.interlay.io/                   | crowdloans              |
 | Kanaria                           | https://kanaria.rmrk.app/                        | nft                     |
 | Kintsugi Hub                      | https://kintsugi.interlay.io/                    | staking,defi,crowdloans |
-| KodaDot                           | https://kodadot.xyz/rmrk/gallery                 | nft                     |
+| KodaDot                           | https://kodadot.xyz/                             | nft                     |
 | Moonbeam                          | https://apps.moonbeam.network/moonbeam           | staking,crowdloans,evm  |
 | Moonriver                         | https://apps.moonbeam.network/moonriver          | staking,crowdloans,evm  |
 | MyTrade                           | https://mytrade.org/                             | defi,evm                |
+| Parallel Finance App              | https://app.parallel.fi/                         | defi                    |
 | Parallel Rewards Claim            | https://crowdloan.parallel.fi/#/auction/rewards/ | crowdloans              |
 | Phala App                         | https://app.phala.network/                       | defi,staking            |
 | Polkadot.js                       | https://polkadot.js.org/apps/#                   | utilities               |

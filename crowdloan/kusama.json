@@ -43,7 +43,7 @@
     "token": "CSM",
     "description": "Incentives decentralized storage & cloud ecosystem on Kusama",
     "website": "https://crust.network/",
-    "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Crust.svg",
+    "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/CrustShadow.svg",
     "rewardRate": 300
   },
   {
@@ -313,11 +313,11 @@
   },
   {
     "paraid": "2110",
-    "name": "Mangata",
+    "name": "Mangata X",
     "token": "MGX",
     "description": "Mangata is a community-owned exchange for experienced traders & experimental tokens.",
     "website": "https://crowdloan.mangata.finance/",
-    "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Mangata.svg"
+    "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/MangataX.svg"
   },
   {
     "paraid": "2114",
@@ -375,5 +375,24 @@
     "description": "The Bajun Network is Canary Network for Ajuna and will host games. It will be mainly used for testing and introducing new Ajuna features, services and functionalities",
     "website": "https://ajuna.io",
     "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bajun.svg"
+  },
+  {
+    "paraid": "2003",
+    "name": "Karura",
+    "token": "KAR",
+    "description": "All-in-one DeFi hub of Kusama",
+    "website": "https://acala.network/karura",
+    "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Karura.svg",
+    "rewardRate": 12,
+    "customFlow": "Karura"
+  },
+  {
+    "paraid": "2112",
+    "name": "Moonriver",
+    "token": "MOVR",
+    "description": "Please use Moonriver DApp for contribution",
+    "website": "https://moonbeam.network/networks/moonriver/",
+    "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonriver.svg",
+    "rewardRate": 4.5
   }
 ]
