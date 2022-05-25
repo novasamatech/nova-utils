@@ -2284,7 +2284,10 @@
         },
         "color": "linear-gradient(315deg, #DD037D 0%, #00B1FF 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Astar.svg",
-        "addressPrefix": 5
+        "addressPrefix": 5,
+        "additional": {
+            "defaultTip": "1000000"
+        }
     },
     {
         "chainId": "e61a41c53f5dcd0beb09df93b34402aada44cb05117b71059cce40a2723a4e97",
