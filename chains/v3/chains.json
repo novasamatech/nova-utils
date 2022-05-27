@@ -2907,41 +2907,6 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-nodle"
             }
         },
-        "color": "linear-gradient(315.17deg, #50AA85 8%, #57C799 75%, #D43079 75.01%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Nodle.svg",
-        "addressPrefix": 37
-    },
-    {
-        "chainId": "a3d114c2b8d0627c1aa9b134eafcf7d05ca561fdc19fb388bb9457f81809fb23",
-        "name": "Nodle Solochain",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "NODL",
-                "precision": 11,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Nodle.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://main3.nodleprotocol.io",
-                "name": "Nodle node"
-            },
-            {
-                "url": "wss://nodle.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
-            }
-        ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/nodle_solo.json",
-            "overridesCommon": true
-        },
         "color": "linear-gradient(315.17deg, #50AA85 0%, #57C799 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Nodle.svg",
         "addressPrefix": 37
