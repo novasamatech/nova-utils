@@ -11,7 +11,7 @@ jobs:
     outputs:
       v3chains: ${{ steps.v3chains.outputs.any_changed }}
       dapps: ${{ steps.dapps.outputs.any_changed }}
-      v3chains_dev: ${{ steps.changed-files.outputs.any_changed }}
+      v3chains_dev: ${{ steps.v3chains_dev.outputs.any_changed }}
     steps:
       - name: Checkout current repository to Master branch
         uses: actions/checkout@v1
