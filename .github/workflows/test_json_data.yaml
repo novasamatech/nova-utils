@@ -1,6 +1,7 @@
 name: Compare JSON data with blockchain
 
 on:
+  pull_request:
   schedule:
     - cron: '0 0/4 * * *'
   workflow_dispatch:
@@ -22,7 +23,7 @@ jobs:
       - name: Checkout current repository to Master branch
         uses: actions/checkout@v1
 
-      - name: Check tested file file_path
+      - name: Check file_path reassignment
         if: ${{ github.event.inputs.file_path }}
         run: echo "::set-env name=JSON_PATH::${{ github.event.inputs.file_path }}"
 

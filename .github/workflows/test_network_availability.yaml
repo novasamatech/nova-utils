@@ -1,6 +1,7 @@
 name: Check nodes availability
 
 on:
+  pull_request:
   workflow_dispatch:
     inputs:
       file_path:
@@ -10,7 +11,7 @@ on:
         default: "/chains/v3/chains.json"
 
 env:
-  JSON_PATH: ${{ github.event.inputs.file_path }}
+  JSON_PATH: "/chains/v3/chains.json"
 
 jobs:
   test:
@@ -18,6 +19,10 @@ jobs:
     steps:
       - name: Checkout current repository to Master branch
         uses: actions/checkout@v1
+
+      - name: Check file_path reassignment
+        if: ${{ github.event.inputs.file_path }}
+        run: echo "::set-env name=JSON_PATH::${{ github.event.inputs.file_path }}"
 
       - name: Install dependencies
         run: pip install -r requirements.txt
