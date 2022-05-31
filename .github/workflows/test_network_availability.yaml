@@ -1,7 +1,6 @@
 name: Check nodes availability
 
 on:
-  pull_request:
   workflow_dispatch:
     inputs:
       file_path:

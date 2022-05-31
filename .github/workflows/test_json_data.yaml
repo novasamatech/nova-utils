@@ -1,9 +1,8 @@
 name: Compare JSON data with blockchain
 
 on:
-  pull_request:
   schedule:
-    - cron: '0 0/4 * * *'
+    - cron: '0 23 * * *'
   workflow_dispatch:
     inputs:
       file_path:
