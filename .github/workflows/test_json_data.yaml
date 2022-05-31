@@ -1,0 +1,19 @@
+name: Compare JSON data with blockchain
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current repository to Master branch
+        uses: actions/checkout@v1
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run test
+        run: python -m pytest --rootdir . --override-ini junit_family=xunit1 -n auto "./tests/test_network_parameters.py"

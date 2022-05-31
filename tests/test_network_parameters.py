@@ -1,25 +1,41 @@
-import json
 import pytest
-from scripts.create_type_file import get_properties, create_connection_by_url, get_metadata_param
+from tests.utils.getting_data import get_network_list
+from tests.utils.chain_model import Chain
 
-with open("../chains/v3/chains.json") as fin:
-    chains_data = json.load(fin)
 
-test_data = []
-for chain in chains_data:
-    data = (chain['nodes'][0]['url'], chain['assets'][0]['precision'], chain['addressPrefix'], chain['chainId'])
-    test_data.append(data)
+def collect_data_from_dev():
+    chains = []
+    for network in get_network_list("/chains/v3/chains.json"):
+        current_network = Chain(network)
+        chains.append(current_network)
 
-@pytest.mark.parametrize("url, expected_precision, expected_address_format, expected_genesis", test_data)
-def test_properties(url, expected_precision, expected_address_format, expected_genesis):
-    substrate = create_connection_by_url(url)
-    network_property = get_properties(substrate)
-    if isinstance(network_property.precision, list):
-        assert network_property.precision[0] == expected_precision
-    else:
-        assert network_property.precision == expected_precision
-    if network_property.ss58Format is None:
-        assert substrate.ss58_format == expected_address_format
-    else:
-        assert network_property.ss58Format == expected_address_format
-    assert network_property.chainId[2:] == expected_genesis
+    return chains
+
+
+chains = (
+    collect_data_from_dev()
+)
+
+task_ids = [
+    f'Test for {task.name}'
+    for task in chains
+]
+
+
+@pytest.mark.parametrize("chain", chains, ids=task_ids)
+class TestChainJson:
+
+    def test_address_prefix(self, chain: Chain):
+        chain.create_connection()
+        chain.init_properties()
+        assert chain.properties.ss58Format == chain.addressPrefix
+
+    def test_chainId(self, chain: Chain):
+        chain.create_connection()
+        chain.init_properties()
+        assert chain.properties.chainId == '0x'+chain.chainId
+
+    def test_precision(self, chain: Chain):
+        chain.create_connection()
+        chain.init_properties()
+        assert chain.properties.precision == chain.assets[0].get('precision')
