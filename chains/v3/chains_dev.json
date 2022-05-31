@@ -2114,6 +2114,14 @@
         ],
         "nodes": [
             {
+                "url": "wss://rpc.pinknode.io/mandala/explorer",
+                "name": "Pinknode node"
+            },
+            {
+                "url": "wss://acala-mandala.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
                 "url": "wss://mandala.polkawallet.io",
                 "name": "Polkawallet"
             }
