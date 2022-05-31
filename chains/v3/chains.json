@@ -2237,6 +2237,10 @@
         ],
         "nodes": [
             {
+                "url": "wss://encointer.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
                 "url": "wss://api.kusama.encointer.org",
                 "name": "Encointer association node"
             }
