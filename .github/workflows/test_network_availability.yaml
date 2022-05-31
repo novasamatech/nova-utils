@@ -21,7 +21,7 @@ jobs:
 
       - name: Check file_path reassignment
         if: ${{ github.event.inputs.file_path }}
-        run: echo "::set-env name=JSON_PATH::${{ github.event.inputs.file_path }}"
+        run: echo "JSON_PATH=${{ github.event.inputs.file_path }}" >> $GITHUB_ENV
 
       - name: Install dependencies
         run: pip install -r requirements.txt

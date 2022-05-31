@@ -1,6 +1,7 @@
 name: Compare JSON data with blockchain
 
 on:
+  pull_request:
   schedule:
     - cron: '0 23 * * *'
   workflow_dispatch:
@@ -23,8 +24,8 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Check file_path reassignment
-        if: ${{ github.event.inputs.file_path }}
-        run: echo "::set-env name=JSON_PATH::${{ github.event.inputs.file_path }}"
+        # if: ${{ github.event.inputs.file_path }}
+        run: echo "JSON_PATH=${{ github.event.inputs.file_path }}" >> $GITHUB_ENV
 
       - name: Install dependencies
         run: pip install -r requirements.txt
