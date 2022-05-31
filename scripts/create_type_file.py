@@ -49,14 +49,24 @@ class Properties:
 
 
 def get_properties(substrate: SubstrateInterface) -> Properties:
+    substrate.get_constant('system', 'ss58Prefix')
+    symbol = substrate.properties["tokenSymbol"]
+
+    if (isinstance(symbol, list)):
+        symbol = substrate.properties["tokenSymbol"][0]
+
+    precision = substrate.properties["tokenDecimals"]
+    if (isinstance(precision, list)):
+        precision = substrate.properties["tokenDecimals"][0]
+
     data_prop = Properties(
         chain_name=substrate.chain,
-        chain_symbol=substrate.properties["tokenSymbol"],
-        chain_prefix=substrate.ss58_format,
-        chain_precision=substrate.properties["tokenDecimals"],
+        chain_symbol=symbol,
+        chain_prefix= substrate.ss58_format,
+        chain_precision=precision,
 
         # The genesis hash should be obtained last, because the main object "substrate" may change after the genesis was obtained
-        chain_id=substrate.get_block(block_number=0)["header"]["hash"]
+        chain_id=substrate.get_block_hash(0)
     )
     return data_prop
 
@@ -218,10 +228,10 @@ def find_in_obj(obj, condition, path=None):
 
 def create_connection_by_url(url):
     try:
-        substrate = SubstrateInterface(url=url)
-    except ConnectionRefusedError:
+        substrate = SubstrateInterface(url=url, use_remote_preset=True)
+    except ConnectionRefusedError and TimeoutError:
         print("⚠️ Can't connect by %s, check it is available?" % (url))
-        exit()
+        raise
 
     return substrate
 

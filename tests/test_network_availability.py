@@ -1,32 +1,24 @@
-from distutils.log import error
-import json
+import os
+import pytest
+from scripts.create_type_file import create_connection_by_url
+from tests.test_network_parameters import get_network_list
+from tests.utils.chain_model import Chain
 from substrateinterface import SubstrateInterface
 
-def create_connection(url):
-    try:
-        substrate = SubstrateInterface(
-            url=url
-        )
-        return substrate
-    except:
-        print(f"Found {error=}, {type(error)=}")
-        print (url)
-        return False
 
+def collect_nodes_from_dev():
+    networks = []
+    for network in get_network_list(network_file_path):
+        current_network = Chain(network)
+        for node in current_network.nodes:
+            networks.append(node.get("url"))
 
-with open("chains/v3/chains_dev.json") as fin:
-    dev_chains = json.load(fin)
+    return networks
 
+network_file_path=os.environ['JSON_PATH']
 
-for chain in dev_chains:
-    for node in chain['nodes']:
-        sub_object = create_connection(node['url'])
-        if (sub_object):
-            print('My url is: \n' + sub_object.url)
-            print('Network is: \n' + sub_object.chain)
-            print('\n')
-            sub_object.close()
+@pytest.mark.parametrize("url", collect_nodes_from_dev())
+def test_can_create_connection(url):
 
-
-
-
+    connectin = create_connection_by_url(url)
+    assert isinstance(connectin, SubstrateInterface)
