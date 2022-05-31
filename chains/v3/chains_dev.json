@@ -1408,10 +1408,6 @@
             {
                 "url": "wss://rpc.subsocial.network",
                 "name": "DappForce"
-            },
-            {
-                "url": "wss://subsocial.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -1581,12 +1577,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://basilisk.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://rpc-01.basilisk.hydradx.io",
                 "name": "Hydradx node"
+            },
+            {
+                "url": "wss://basilisk.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             },
             {
                 "url": "wss://basilisk-rpc.dwellir.com",
@@ -2114,6 +2110,14 @@
         ],
         "nodes": [
             {
+                "url": "wss://rpc.pinknode.io/mandala/explorer",
+                "name": "Pinknode node"
+            },
+            {
+                "url": "wss://acala-mandala.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
                 "url": "wss://mandala.polkawallet.io",
                 "name": "Polkawallet"
             }
@@ -2563,7 +2567,7 @@
         },
         "color": "linear-gradient(315deg, #001BC4 0%, #3F59FF 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Encointer.svg",
-        "addressPrefix": 42
+        "addressPrefix": 2
     },
     {
         "chainId": "6811a339673c9daa897944dcdac99c6e2939cc88245ed21951a0a3c9a2be75bc",
@@ -2623,12 +2627,16 @@
         ],
         "nodes": [
             {
+                "url": "wss://zeitgeist-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
                 "url": "wss://rpc-0.zeitgeist.pm",
                 "name": "ZeitgeistPM node"
             },
             {
-                "url": "wss://zeitgeist-rpc.dwellir.com",
-                "name": "Dwellir node"
+                "url": "wss://zeitgeist.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "types": {
@@ -2659,12 +2667,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc.api.kico.dico.io",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://rpc.kico.dico.io",
                 "name": "DICO FOUNDATION node"
+            },
+            {
+                "url": "wss://rpc.api.kico.dico.io",
+                "name": "OnFinality node"
             }
         ],
         "types": {
@@ -2850,7 +2858,7 @@
         "addressPrefix": 66
     },
     {
-        "chainId": "724c168d8e86b78b831c641e2cc822b8d1bf99fa0b4b28fe59985cd6fd580215",
+        "chainId": "cdedc8eadbfa209d3f207bba541e57c3c58a667b05a2e1d1e86353c9000758da",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Integritee Parachain",
         "assets": [
@@ -3095,6 +3103,10 @@
             {
                 "url": "wss://api.interlay.io/parachain",
                 "name": "Kintsugi Labs node"
+            },
+            {
+                "url": "wss://interlay.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "types": {
@@ -3109,7 +3121,7 @@
         },
         "color": "linear-gradient(315.17deg, #000000 0%, #3F3F3F 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Interlay.svg",
-        "addressPrefix": 42
+        "addressPrefix": 2032
     },
     {
         "chainId": "97da7ede98d7bad4e36b4d734b6055425a3be036da2a332ea5a7037656427a21",
