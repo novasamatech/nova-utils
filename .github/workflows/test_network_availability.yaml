@@ -1,9 +1,16 @@
 name: Check nodes availability
 
 on:
-  push:
-    branches:
-      - master
+  workflow_dispatch:
+    inputs:
+      file_path:
+        description: 'Which file will test?'
+        required: true
+        type: string
+        default: "/chains/v3/chains.json"
+
+env:
+  JSON_PATH: ${{ github.event.inputs.file_path }}
 
 jobs:
   test:

@@ -21,9 +21,12 @@ class Chain():
                 return self.substrate
             try:
                 self.substrate = create_connection_by_url(node.get('url'))
+                return self.substrate
             except:
                 print("Can't connect to that node")
                 continue
+
+        raise TimeoutError("Can't connect to all nodes of network")
 
 
     def init_properties(self):

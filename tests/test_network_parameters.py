@@ -1,3 +1,4 @@
+import os
 import pytest
 from tests.utils.getting_data import get_network_list
 from tests.utils.chain_model import Chain
@@ -5,12 +6,13 @@ from tests.utils.chain_model import Chain
 
 def collect_data_from_dev():
     chains = []
-    for network in get_network_list("/chains/v3/chains.json"):
+    for network in get_network_list(network_file_path):
         current_network = Chain(network)
         chains.append(current_network)
 
     return chains
 
+network_file_path=os.environ['JSON_PATH']
 
 chains = (
     collect_data_from_dev()
