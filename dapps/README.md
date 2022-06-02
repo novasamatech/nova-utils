@@ -18,8 +18,10 @@
 | Kintsugi Hub                      | https://kintsugi.interlay.io/                    | staking,defi,crowdloans |
 | KodaDot                           | https://kodadot.xyz/                             | nft                     |
 | Kusama Lido                       | https://kusama.lido.fi/                          | staking,evm             |
+| Litmus App                        | https://apps.litentry.com/                       | crowdloans,evm          |
 | Moonbeam                          | https://apps.moonbeam.network/moonbeam           | staking,crowdloans,evm  |
 | Moonriver                         | https://apps.moonbeam.network/moonriver          | staking,crowdloans,evm  |
+| Moonwell Apollo                   | https://moonwell.fi/apollo/MOVR                  | defi,evm                |
 | MyTrade                           | https://mytrade.org/                             | defi,evm                |
 | Parallel Finance App              | https://app.parallel.fi/                         | defi                    |
 | Parallel Rewards Claim            | https://crowdloan.parallel.fi/#/auction/rewards/ | crowdloans              |
