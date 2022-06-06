@@ -1274,7 +1274,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bifrost"
             }
         },
-        "color": "linear-gradient(135deg, #12D5D5 0%, #4584F5 40.32%, #AC57C0 60.21%, #E65659 80.19%, #FFBF12 100%)",
+        "color": "linear-gradient(135deg, #3F3F3F 26.21%, #2EA9E7 26.42%, #4584F5 40.32%, #AC57C0 60.21%, #E65659 80.19%, #FFBF12 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bifrost.svg",
         "addressPrefix": 6
     },
@@ -2492,6 +2492,7 @@
                 "assetId": 0,
                 "symbol": "LIT",
                 "precision": 12,
+                "priceId": "litentry",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Litmus.svg"
             }
         ],
@@ -3144,5 +3145,141 @@
         "color": "linear-gradient(315deg, #2B2D36 23.96%, #606169 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadex.svg",
         "addressPrefix": 88
+    },
+    {
+        "chainId": "e7e0962324a3b86c83404dbea483f25fb5dab4c224791c81b756cfc948006174",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "OriginTrail Parachain",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "OTP",
+                "precision": 12
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://parachain-rpc.origin-trail.network",
+                "name": "TraceLabs node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/origintrail.json",
+            "overridesCommon": true
+        },
+        "color": "linear-gradient(315deg, #B62EB1 0%, #E96CE5 100%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/OriginTrail.svg",
+        "addressPrefix": 101
+    },
+    {
+        "chainId": "262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Bifrost Polkadot",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "BNC",
+                "precision": 12,
+                "priceId": "bifrost-native-coin"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://hk.p.bifrost-rpc.liebi.com/ws",
+                "name": "Liebi node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/bifrost_polkadot.json",
+            "overridesCommon": true
+        },
+        "color": "linear-gradient(135deg, #D43079 26.21%, #2EA9E7 26.42%, #4584F5 40.32%, #AC57C0 60.21%, #E65659 80.19%, #FFBF12 100%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bifrost.svg",
+        "addressPrefix": 6
+    },
+    {
+        "chainId": "2fc8bb6ed7c0051bdcf4866c322ed32b6276572713607e3297ccf411b8f14aa9",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Litentry",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "LIT",
+                "precision": 12,
+                "priceId": "litentry"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc.litentry-parachain.litentry.io",
+                "name": "Litentry node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/litentry.json",
+            "overridesCommon": true
+        },
+        "color": "linear-gradient(315deg, #0E7227 0%, #5CC774 100%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Litentry.svg",
+        "addressPrefix": 31
+    },
+    {
+        "chainId": "84322d9cddbf35088f1e54e9a85c967a41a56a4f43445768125e61af166c7d31",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "UNIQUE",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "UNQ",
+                "precision": 18
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://eu-ws.unique.network/",
+                "name": "Unique Europe node"
+            },
+            {
+                "url": "wss://us-ws.unique.network/",
+                "name": "Unique America node"
+            },
+            {
+                "url": "wss://asia-ws.unique.network/",
+                "name": "Unique Asia node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/unique.json",
+            "overridesCommon": true
+        },
+        "color": "linear-gradient(315deg, #267DEE 0%, #5FC2F9 100%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Unique.svg",
+        "addressPrefix": 7391
+    },
+    {
+        "chainId": "577d331ca43646f547cdaa07ad0aa387a383a93416764480665103081f3eaf14",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Dora Factory",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "DORA",
+                "precision": 12,
+                "priceId": "dora-factory"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://kusama.dorafactory.org",
+                "name": "Dora node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/dorafactory.json",
+            "overridesCommon": true
+        },
+        "color": "linear-gradient(315deg, #E04E02 0%, #FCB350 100%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/DoraFactory.svg",
+        "addressPrefix": 128
     }
 ]
