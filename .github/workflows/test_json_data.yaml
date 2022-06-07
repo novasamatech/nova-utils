@@ -9,11 +9,11 @@ on:
         description: 'Which file will test?'
         required: true
         type: string
-        default: "/chains/v3/chains.json"
+        default: "/chains/v4/chains.json"
 
 
 env:
-  JSON_PATH: "/chains/v3/chains.json"
+  JSON_PATH: "/chains/v4/chains.json"
 
 jobs:
   test:
