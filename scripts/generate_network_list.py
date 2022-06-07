@@ -11,7 +11,7 @@ readme = Template("""
 {{networks_table}}
 """)
 
-CHAINS_VERSION = "v3"
+CHAINS_VERSION = "v4"
 
 
 def generate_networks_table():

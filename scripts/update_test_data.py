@@ -1,6 +1,6 @@
 import json
 
-with open("chains/v3/chains_dev.json") as fin:
+with open("chains/v4/chains_dev.json") as fin:
     dev_chains = json.load(fin)
 
 with open("tests/chains_for_testBalance.json") as fin:
