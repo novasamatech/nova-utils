@@ -82,7 +82,7 @@ def get_metadata_param(substrate: SubstrateInterface) -> JsonObject:
         types_balance=get_primitive_from_metadata("Balance", metadata_types),
         types_index=get_primitive_for_index("AccountInfo", metadata_types),
         types_phase=get_path_from_metadata("Phase", metadata_types),
-        types_address=get_path_from_metadata("Address", metadata_types),
+        types_address=get_address_path_from_metadata("Address", metadata_types),
         types_extrinsicSignature=get_crypto_path_from_metadata(
             "Sr25519", metadata_types
         ),
@@ -161,6 +161,27 @@ def get_path_from_metadata(name, metadata_types):
     returned_path = ".".join(str(x) for x in type_with_primitive["type"]["path"])
     return returned_path
 
+def get_address_path_from_metadata(name, metadata_types):
+    data_lake = find_type_in_metadata(name, metadata_types)
+    value = metadata_types
+    value_variants = []
+    for data in data_lake:
+        value = metadata_types
+        for path in data:
+            if path in ("typeName", "name"):
+                continue
+            value = value[path]
+        value_variants.append(value)
+
+    for variant in value_variants:
+        if (variant.get('name') == name):
+            try:
+                type_with_primitive = metadata_types[variant["type"]]
+            except:
+                print("can't find that value %s" % variant)
+    returned_path = ".".join(str(x) for x in type_with_primitive["type"]["path"])
+    return returned_path
+
 
 def get_current_path_from_metadata(name, metadata_types):
     data = find_type_in_metadata(name, metadata_types)
@@ -182,7 +203,7 @@ def get_crypto_path_from_metadata(name, metadata_types):
         for path in variants:
             if path == "def":
                 for list_val in value["path"]:
-                    if list_val == "did":
+                    if list_val in ("did", "MultiSigner"):
                         wrong_path = True
                         break
                 if wrong_path:
