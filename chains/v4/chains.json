@@ -3299,5 +3299,78 @@
         "color": "linear-gradient(315deg, #E04E02 0%, #FCB350 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/DoraFactory.svg",
         "addressPrefix": 128
+    },
+    {
+        "chainId": "d611f22d291c5b7b69f1e105cca03352984c344c4421977efaa4cbdd1834e2aa",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Mangata X",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "MGX",
+                "precision": 18,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/MangataX.svg",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x00000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 1,
+                "symbol": "KSM",
+                "precision": 12,
+                "priceId": "kusama",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x04000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 2,
+                "symbol": "ETH",
+                "precision": 12,
+                "priceId": "ethereum",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/ETH.svg",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x01000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://prod-kusama-collator-01.mangatafinance.cloud",
+                "name": "Mangata node"
+            },
+            {
+                "url": "wss://mangata-x.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://mangatax.subscan.io/extrinsic/{hash}",
+                "account": "https://mangatax.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/mangatax.json",
+            "overridesCommon": true
+        },
+        "color": "linear-gradient(315deg, #009F80 24.99%, #95E7D7 100%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/MangataX.svg",
+        "addressPrefix": 42
     }
 ]
