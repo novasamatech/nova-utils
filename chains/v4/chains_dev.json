@@ -3711,7 +3711,15 @@
             {
                 "assetId": 0,
                 "symbol": "MGX",
-                "precision": 18
+                "precision": 18,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/MangataX.svg",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x00000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "",
+                    "transfersEnabled": true
+                }
             },
             {
                 "assetId": 1,
