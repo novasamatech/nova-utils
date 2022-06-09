@@ -3706,7 +3706,7 @@
     {
         "chainId": "d611f22d291c5b7b69f1e105cca03352984c344c4421977efaa4cbdd1834e2aa",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Mangata ",
+        "name": "Mangata X",
         "assets": [
             {
                 "assetId": 0,
@@ -3750,6 +3750,14 @@
             {
                 "url": "wss://mangata-x.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://mangatax.subscan.io/extrinsic/{hash}",
+                "account": "https://mangatax.subscan.io/account/{address}",
+                "event": null
             }
         ],
         "types": {
