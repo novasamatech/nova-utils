@@ -3722,7 +3722,7 @@
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x04000000",
-                    "currencyIdType": "interbtc_primitives.CurrencyId",
+                    "currencyIdType": "u32",
                     "existentialDeposit": "",
                     "transfersEnabled": true
                 }
@@ -3736,7 +3736,7 @@
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x01000000",
-                    "currencyIdType": "interbtc_primitives.CurrencyId",
+                    "currencyIdType": "u32",
                     "existentialDeposit": "",
                     "transfersEnabled": true
                 }
