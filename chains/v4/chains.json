@@ -3144,6 +3144,7 @@
                 "assetId": 0,
                 "symbol": "AZERO",
                 "priceId": "aleph-zero",
+                "staking": "aleph-zero",
                 "precision": 12,
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Aleph_zero.svg"
             }
@@ -3168,6 +3169,10 @@
         },
         "externalApi": {
             "history": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-aleph-zero"
+            },
+            "staking": {
                 "type": "subquery",
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-aleph-zero"
             }
