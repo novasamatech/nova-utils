@@ -1,17 +1,29 @@
 {
   "assetsLocation": {
     "KAR": {
-      "parachainId": 2000,
-      "generalKey": "0x0080"
+      "chainId": "baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b",
+      "multiLocation": {
+        "parachainId": 2000,
+        "generalKey": "0x0080"
+      }
     },
-    "KSM": {},
+    "KSM": {
+      "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+      "multiLocation": {}
+    },
     "MOVR": {
-      "parachainId": 2023,
-      "palletInstance": 10
+      "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
+      "multiLocation": {
+        "parachainId": 2023,
+        "palletInstance": 10
+      }
     },
     "BNC": {
-      "parachainId": 2001,
-      "generalKey": "0x0001"
+      "chainId": "9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed",
+      "multiLocation": {
+        "parachainId": 2001,
+        "generalKey": "0x0001"
+      }
     }
   },
   "instructions": {
