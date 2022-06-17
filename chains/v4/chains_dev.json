@@ -3817,7 +3817,6 @@
         "name": "Moonbase Relay Testnet",
         "assets": [
             {
-                "staking": "relaychain",
                 "assetId": 0,
                 "symbol": "UNIT",
                 "precision": 12
@@ -3830,14 +3829,13 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/moonbase.json",
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/moonbase_relay.json",
             "overridesCommon": true
         },
         "color": "linear-gradient(315deg, #434852 0%, #787F92 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonriver.svg",
         "addressPrefix": 42,
         "options": [
-            "ethereumBased",
             "testnet"
         ]
     }
