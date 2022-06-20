@@ -62,7 +62,8 @@
                 "assetId": 0,
                 "fee": {
                   "mode": {
-                    "type": "standard"
+                    "type": "proportional",
+                    "value": "8000000000000"
                   },
                   "instructions": "xtokensDest"
                 }
