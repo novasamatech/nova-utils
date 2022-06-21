@@ -1017,7 +1017,7 @@
     },
     {
         "chainId": "91bc6e169807aaa54802737e1c504b2577d4fafedd5a02c10293b1cd60e39527",
-            "parentId": "e1ea3ab1d46ba8f4898b6b4b9c54ffc05282d299f89e84bd0fd08067758c9443",
+        "parentId": "e1ea3ab1d46ba8f4898b6b4b9c54ffc05282d299f89e84bd0fd08067758c9443",
         "name": "Moonbase Alpha",
         "assets": [
             {
@@ -1025,6 +1025,15 @@
                 "assetId": 0,
                 "symbol": "DEV",
                 "precision": 18
+            },
+            {
+                "assetId": 1,
+                "symbol": "xcUNIT",
+                "precision": 12,
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "42259045809535163221576417993425387648"
+                }
             }
         ],
         "nodes": [
