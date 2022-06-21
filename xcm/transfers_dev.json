@@ -23,7 +23,14 @@
       "multiLocation": {
         "parachainId": 2001,
         "generalKey": "0x0001"
-      }
+      },
+     "reserveFee": {
+       "mode": {
+         "type": "proportional",
+         "value": "6400000000000"
+       },
+       "instructions": "xtokensReserve"
+     }
     }
   },
   "instructions": {
@@ -159,6 +166,7 @@
         {
           "assetId": 4,
           "assetLocation": "BNC",
+          "hasReserveFee": true,
           "assetLocationPath": {
             "type": "concrete",
             "path": {
@@ -183,13 +191,6 @@
               "type": "xtokens"
             }
           ],
-          "reserveFee": {
-            "mode": {
-              "type": "proportional",
-              "value": "1"
-            },
-            "instructions": "xtokensReserve"
-          }
         }
       ]
     }
