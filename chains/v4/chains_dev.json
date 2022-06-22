@@ -3878,5 +3878,30 @@
         "options": [
             "testnet"
         ]
+    },
+    {
+        "chainId": "0e06260459b4f9034aba0a75108c08ed73ea51d2763562749b1d3600986c4ea5",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Pichiu",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "PCHU",
+                "precision": 18
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://kusama.kylin-node.co.uk",
+                "name": "Kylin node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/pichiu.json",
+            "overridesCommon": true
+        },
+        "color": "linear-gradient(315deg, #A91056 0%, #F34594 100%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Pichiu.svg",
+        "addressPrefix": 42
     }
 ]
