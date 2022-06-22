@@ -12,7 +12,7 @@ Note: For better UX in your app its recommended to
 
 ## Modules
 #### Crowdloan
-Crowdloans can be saturated with the following information:
+Crowdloan JSON objects can contain the following information:
 * id (to map the static data)
 * Parachain name
 * Description
@@ -30,7 +30,7 @@ Contains JSON file with featured DApps
 Note: To submit a DApp make sure it's not already in [DApps list](https://github.com/nova-wallet/nova-utils/tree/master/dapps#list-of-supported-networks) and if not submit a PR to repository.
 
 #### Icons
-Group of icons to saturate Nova Wallet
+Contains the iconography for the different parachains and DApp's.
 
 Note: Icons should be used from trusted sources, however currently icons are not available on the participants' websites, so for convenience, there is /icons folder.
 
