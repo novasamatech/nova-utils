@@ -22,6 +22,7 @@
 | Moonbeam                          | https://apps.moonbeam.network/moonbeam           | staking,crowdloans,evm  |
 | Moonriver                         | https://apps.moonbeam.network/moonriver          | staking,crowdloans,evm  |
 | Moonwell Apollo                   | https://moonwell.fi/apollo/MOVR                  | defi,evm                |
+| Moonwell Artemis                  | https://moonwell.fi/artemis/GLMR                 | defi,evm                |
 | MyTrade                           | https://mytrade.org/                             | defi,evm                |
 | Parallel Finance App              | https://app.parallel.fi/                         | defi                    |
 | Parallel Rewards Claim            | https://crowdloan.parallel.fi/#/auction/rewards/ | crowdloans              |
@@ -32,10 +33,12 @@
 | RomeDAO                           | https://romedao.finance/                         | defi,staking,evm        |
 | Singular                          | https://singular.rmrk.app/                       | nft                     |
 | Singular 2.0                      | https://singular.app/                            | nft                     |
+| Skybreach                         | https://skybreach.app/                           | nft,evm                 |
 | Solarbeam                         | https://app.solarbeam.io/exchange/swap           | defi,staking,evm        |
 | Solarflare                        | https://app.solarflare.io/exchange/swap          | defi,staking,evm        |
 | Stellaswap                        | https://app.stellaswap.com/exchange/swap         | defi,staking,evm        |
 | Sub.ID                            | https://sub.id/#/                                | utilities               |
+| SubBridge                         | https://subbridge.io/                            | defi,evm                |
 | Subsocial App                     | https://app.subsocial.network/                   | community               |
 | Subsquare. Khala network          | https://khala.subsquare.io/                      | community               |
 | Talisman App                      | https://app.talisman.xyz/portfolio               | defi,crowdloans         |
