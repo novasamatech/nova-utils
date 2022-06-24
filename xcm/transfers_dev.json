@@ -54,14 +54,14 @@
         "palletInstance": 10
       }
     },
-    "KSM": {
+    "RMRK": {
       "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
       "multiLocation": {
         "parachainId": 1000,
-        "palletInstance": 10
+        "palletInstance": 50,
+        "generalKey": "8"
       }
-    }
-  },
+    },
   "instructions": {
     "xtokensDest": [
       "ReserveAssetDeposited",
@@ -171,34 +171,6 @@
                   "mode": {
                     "type": "proportional",
                     "value": "1"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            }
-          ]
-        },
-        {
-          "assetId": 1,
-          "assetLocation": "RMRK",
-          "assetLocationPath": {
-            "type": "concrete",
-            "path": {
-              "parents": 1,
-              "parachainId": 1000,
-              "generalKey": "8"
-            }
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
-                "assetId": 0,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": ??
                   },
                   "instructions": "xtokensDest"
                 }
@@ -342,7 +314,7 @@
                 "fee": {
                   "mode": {
                     "type": "proportional",
-                    "value": ??
+                    "value": 1
                   },
                   "instructions": "xtokensDest"
                 }
@@ -410,7 +382,7 @@
           "assetId": 0,
           "assetLocation": "ACA",
           "assetLocationPath": {
-            "type": "relative"
+            "type": "absolute"
           },
           "xcmTransfers": [
             {
@@ -461,12 +433,7 @@
           "assetId": 1,
           "assetLocation": "RMRK",
           "assetLocationPath": {
-            "type": "concrete",
-            "path": {
-              "parents": 1,
-              "parachainId": 1000,
-              "generalKey": "8"
-            }
+            "type": "absolute"
           },
           "xcmTransfers": [
             {
