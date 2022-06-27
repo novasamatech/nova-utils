@@ -24,13 +24,13 @@
         "parachainId": 2001,
         "generalKey": "0x0001"
       },
-     "reserveFee": {
-       "mode": {
-         "type": "proportional",
-         "value": "6400000000000"
-       },
-       "instructions": "xtokensReserve"
-     }
+      "reserveFee": {
+        "mode": {
+          "type": "proportional",
+          "value": "6400000000000"
+        },
+        "instructions": "xtokensReserve"
+      }
     },
     "UNIT": {
       "chainId": "e1ea3ab1d46ba8f4898b6b4b9c54ffc05282d299f89e84bd0fd08067758c9443",
@@ -264,7 +264,6 @@
             }
           ]
         }
-
       ]
     },
     {
@@ -339,7 +338,7 @@
                 "fee": {
                   "mode": {
                     "type": "proportional",
-                    "value": 1
+                    "value": "1"
                   },
                   "instructions": "xtokensDest"
                 }
