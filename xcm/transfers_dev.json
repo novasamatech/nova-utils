@@ -9,7 +9,13 @@
     },
     "KSM": {
       "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-      "multiLocation": {}
+      "multiLocation": {},
+      "reserveFee": {
+        "mode": {
+          "type": "standard"
+        },
+        "instructions": "xtokensReserve"
+      }
     },
     "MOVR": {
       "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
