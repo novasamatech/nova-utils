@@ -9,13 +9,11 @@
     },
     "KSM": {
       "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-      "multiLocation": {},
-      "reserveFee": {
-        "mode": {
-          "type": "standard"
-        },
-        "instructions": "xtokensReserve"
-      }
+      "multiLocation": {}
+    },
+    "KSM-Statemine": {
+      "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
+      "multiLocation": {}
     },
     "MOVR": {
       "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
@@ -152,6 +150,7 @@
               "destination": {
                 "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
                 "assetId": 0,
+                "assetLocation": "KSM-Statemine",
                 "fee": {
                   "mode": {
                     "type": "standard"
