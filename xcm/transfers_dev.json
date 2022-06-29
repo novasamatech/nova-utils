@@ -188,16 +188,22 @@
           "assetId": 5,
           "assetLocation": "BNC",
           "assetLocationPath": {
-            "type": "absolute"
+            "type": "concrete",
+            "path": {
+              "parents": 1,
+              "parachainId": 2001,
+              "generalKey": "0x0001"
+            }
           },
           "xcmTransfers": [
             {
               "destination": {
-                "chainId": "9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed",
-                "assetId": 0,
+                "chainId": "baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b",
+                "assetId": 4,
                 "fee": {
                   "mode": {
-                    "type": "standard"
+                    "type": "proportional",
+                    "value": "1"
                   },
                   "instructions": "xtokensDest"
                 }
