@@ -188,12 +188,7 @@
           "assetId": 5,
           "assetLocation": "BNC",
           "assetLocationPath": {
-            "type": "concrete",
-            "path": {
-              "parents": 1,
-              "parachainId": 2001,
-              "generalKey": "0x0001"
-            }
+            "type": "absolute"
           },
           "xcmTransfers": [
             {
@@ -516,7 +511,7 @@
           "assetId": 8,
           "assetLocation": "MOVR",
           "assetLocationPath": {
-            "type": "absolut"
+            "type": "absolute"
           },
           "xcmTransfers": [
             {
