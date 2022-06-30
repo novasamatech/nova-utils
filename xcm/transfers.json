@@ -274,33 +274,6 @@
       ]
     },
     {
-      "chainId": "91bc6e169807aaa54802737e1c504b2577d4fafedd5a02c10293b1cd60e39527",
-      "assets": [
-        {
-          "assetId": 1,
-          "assetLocation": "UNIT",
-          "assetLocationPath": {
-            "type": "absolute"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "e1ea3ab1d46ba8f4898b6b4b9c54ffc05282d299f89e84bd0fd08067758c9443",
-                "assetId": 0,
-                "fee": {
-                  "mode": {
-                    "type": "standard"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
       "assets": [
         {
