@@ -139,20 +139,6 @@
                 }
               },
               "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
-                "assetId": 0,
-                "assetLocation": "KSM-Statemine",
-                "fee": {
-                  "mode": {
-                    "type": "standard"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
             }
           ]
         },
@@ -395,29 +381,6 @@
     {
       "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
       "assets": [
-        {
-          "assetId": 0,
-          "assetLocation": "KSM-Statemine",
-          "assetLocationPath": {
-            "type": "relative"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "130000000000"
-                  },
-                  "instructions": "xcmPalletDest"
-                }
-              },
-              "type": "xcmpallet"
-            }
-          ]
-        },
         {
           "assetId": 1,
           "assetLocation": "RMRK",
