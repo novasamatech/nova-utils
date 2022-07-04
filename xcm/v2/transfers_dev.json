@@ -85,6 +85,12 @@
       "ClearOrigin",
       "BuyExecution",
       "DepositAsset"
+    ],
+    "xcmPalletTeleportDest": [
+      "ReceiveTeleportedAsset",
+      "ClearOrigin",
+      "BuyExecution",
+      "DepositAsset"
     ]
   },
   "networkBaseWeight": {
@@ -233,6 +239,19 @@
                 }
               },
               "type": "xcmpallet"
+            },
+            {
+              "destination": {
+                "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
+                "assetId": 0,
+                "fee": {
+                  "mode": {
+                    "type": "standard"
+                  },
+                  "instructions": "xcmPalletTeleportDest"
+                }
+              },
+              "type": "xcmpallet-teleport"
             }
           ]
         }
