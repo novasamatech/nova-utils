@@ -3914,5 +3914,135 @@
         "color": "linear-gradient(315deg, #A91056 0%, #F34594 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Pichiu.svg",
         "addressPrefix": 42
+    },
+    {
+        "chainId": "feb426ca713f0f46c96465b8f039890370cf6bfd687c9076ea2843f58a6ae8a7",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Kabocha",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "KAB",
+                "precision": 12
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://kabocha.jelliedowl.com",
+                "name": "JelliedOwl node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/kabocha.json",
+            "overridesCommon": true
+        },
+        "color": "linear-gradient(315deg, #C9B904 0%, #D3CD4A 66.15%, #FDF775 100%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kabocha.svg",
+        "addressPrefix": 27
+    },
+    {
+        "chainId": "48eb7f3fff34e702aa2b504674df8f8afbf9889f804e3088c0cb662e433552a0",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Listen",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "LT",
+                "precision": 12
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc.mainnet.listen.io",
+                "name": "Listen Foundation 1 node"
+            },
+            {
+                "url": "wss://wss.mainnet.listen.io",
+                "name": "Listen Foundation 2 node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/listen.json",
+            "overridesCommon": true
+        },
+        "color": "linear-gradient(315deg, #DE8405 0%, #FFBB49 100%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Listen.svg",
+        "addressPrefix": 42
+    },
+    {
+        "chainId": "eacdd2d5b42de9769ccbb6e8d9013ab0d90ab105bf601d4aac53e874c145ec21",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Tanganika",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "DHX",
+                "precision": 18,
+                "priceId": "datahighway"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://tanganika.datahighway.com",
+                "name": "DataHighway node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/tanganika.json",
+            "overridesCommon": true
+        },
+        "color": "linear-gradient(315deg, #7D20BF 15.1%, #584DDB 57.81%, #51BEF9 94.27%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/DataHighway.svg",
+        "addressPrefix": 33
+    },
+    {
+        "chainId": "35a06bfec2edf0ff4be89a6428ccd9ff5bd0167d618c5a0d4341f9600a458d14",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Bajun",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "BAJU",
+                "precision": 12
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc-parachain.bajun.network",
+                "name": "AjunaNetwork node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/bajun.json",
+            "overridesCommon": true
+        },
+        "color": "linear-gradient(315deg, #DF5262 16.15%, #EC725D 53.13%, #F38861 75.32%, #3F3F3F 75.41%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bajun.svg",
+        "addressPrefix": 1337
+    },
+    {
+        "chainId": "ca93a37c913a25fa8fdb33c7f738afc39379cb71d37874a16d4c091a5aef9f89",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Imbue",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "IMBU",
+                "precision": 12
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://kusama.kylin-node.co.uk",
+                "name": "Kylin node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/imbue.json",
+            "overridesCommon": true
+        },
+        "color": "linear-gradient(315.17deg, #7CB00B 12.5%, #B5FF14 100%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Imbue.svg",
+        "addressPrefix": 42
     }
 ]
