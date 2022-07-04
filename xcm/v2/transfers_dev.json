@@ -65,6 +65,13 @@
         "palletInstance": 50,
         "generalIndex": "8"
       }
+    },
+    "KINT": {
+      "chainId": "9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
+      "multiLocation": {
+        "parachainId": 2092,
+        "generalKey": "0x000c"
+      }
     }
   },
   "instructions": {
@@ -103,7 +110,8 @@
     "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3": "1000000000",
     "fc41b9bd8ef8fe53d58c7ea67c794c7ec9a73daf05e6d54b14ff6342c99ba64c": "200000000",
     "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d": "200000000",
-    "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a": "1000000000"
+    "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a": "1000000000",
+    "9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b": "200000000"
   },
   "chains": [
     {
@@ -542,6 +550,34 @@
                 "fee": {
                   "mode": {
                     "type": "standard"
+                  },
+                  "instructions": "xtokensDest"
+                }
+              },
+              "type": "xtokens"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chainId": "9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
+      "assets": [
+        {
+          "assetId": 0,
+          "assetLocation": "KINT",
+          "assetLocationPath": {
+            "type": "absolute"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b",
+                "assetId": 7,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "965646171792"
                   },
                   "instructions": "xtokensDest"
                 }
