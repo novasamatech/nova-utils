@@ -3941,35 +3941,6 @@
         "addressPrefix": 27
     },
     {
-        "chainId": "48eb7f3fff34e702aa2b504674df8f8afbf9889f804e3088c0cb662e433552a0",
-        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Listen",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "LT",
-                "precision": 12
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://rpc.mainnet.listen.io",
-                "name": "Listen Foundation 1 node"
-            },
-            {
-                "url": "wss://wss.mainnet.listen.io",
-                "name": "Listen Foundation 2 node"
-            }
-        ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/listen.json",
-            "overridesCommon": true
-        },
-        "color": "linear-gradient(315deg, #DE8405 0%, #FFBB49 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Listen.svg",
-        "addressPrefix": 42
-    },
-    {
         "chainId": "eacdd2d5b42de9769ccbb6e8d9013ab0d90ab105bf601d4aac53e874c145ec21",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Tanganika",
