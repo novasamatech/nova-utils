@@ -254,7 +254,8 @@
                 "assetId": 0,
                 "fee": {
                   "mode": {
-                    "type": "standard"
+                    "type": "proportional",
+                    "value": "3959149500"
                   },
                   "instructions": "xcmPalletTeleportDest"
                 }
