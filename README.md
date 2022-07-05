@@ -19,7 +19,7 @@ Crowdloan JSON objects can contain the following information:
 * Logo
 * Token
 * Website
-* Reward rate (KSM multiplier)
+* Reward rate (DOT/KSM multiplier)
 
 #### Chains
 Contains JSON file with networks info: its token (ticker, precision), types, available nodes, account prefix, set of options (is testnet, has crowdloans)
