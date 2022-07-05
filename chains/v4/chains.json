@@ -2372,6 +2372,10 @@
                 "extrinsic": "https://kintsugi.subscan.io/extrinsic/{hash}",
                 "account": "https://kintsugi.subscan.io/account/{address}",
                 "event": null
+            },
+            {
+                "name": "Sub.ID",
+                "account": "https://sub.id/{address}"
             }
         ],
         "types": {
@@ -2455,6 +2459,18 @@
                 "name": "OnFinality node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://zeitgeist.subscan.io/extrinsic/{hash}",
+                "account": "https://zeitgeist.subscan.io/account/{address}",
+                "event": null
+            },
+            {
+                "name": "Sub.ID",
+                "account": "https://sub.id/{address}"
+            }
+        ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/zeitgeist.json",
             "overridesCommon": true
@@ -2530,6 +2546,10 @@
                 "extrinsic": "https://litmus.subscan.io/extrinsic/{hash}",
                 "account": "https://litmus.subscan.io/account/{address}",
                 "event": null
+            },
+            {
+                "name": "Sub.ID",
+                "account": "https://sub.id/{address}"
             }
         ],
         "types": {
@@ -2698,6 +2718,12 @@
             }
         ],
         "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://integritee.subscan.io/extrinsic/{hash}",
+                "account": "https://integritee.subscan.io/account/{address}",
+                "event": null
+            },
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
@@ -2925,6 +2951,14 @@
             {
                 "url": "wss://interlay.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://interlay.subscan.io/extrinsic/{hash}",
+                "account": "https://interlay.subscan.io/account/{address}",
+                "event": null
             }
         ],
         "types": {
