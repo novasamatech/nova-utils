@@ -11,6 +11,14 @@
       "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
       "multiLocation": {}
     },
+    "KSM-Statemine": {
+      "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
+      "multiLocation": {}
+    },
+    "DOT-Statemint": {
+      "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+      "multiLocation": {}
+    },
     "MOVR": {
       "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
       "multiLocation": {
@@ -508,7 +516,7 @@
       "assets": [
         {
           "assetId": 0,
-          "assetLocation": "KSM",
+          "assetLocation": "KSM-Statemine",
           "assetLocationPath": {
             "type": "absolute"
           },
@@ -627,7 +635,7 @@
       "assets": [
         {
           "assetId": 0,
-          "assetLocation": "DOT",
+          "assetLocation": "DOT-Statemint",
           "assetLocationPath": {
             "type": "absolute"
           },
