@@ -2722,7 +2722,11 @@
         "externalApi": {
             "history": {
                 "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-zeitgeist"
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-zeitgeist__bm92Y"
+            },
+            "staking": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-zeitgeist__bm92Y"
             }
         },
         "color": "linear-gradient(315deg, #132849 0%, #2C5AA6 100%)",
