@@ -2617,6 +2617,14 @@
                 "name": "Encointer association node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://encointer.subscan.io/extrinsic/{hash}",
+                "account": "https://encointer.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/encointer.json",
             "overridesCommon": true
@@ -3059,6 +3067,14 @@
                 "name": "Efinity node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://efinity.subscan.io/extrinsic/{hash}",
+                "account": "https://efinity.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/efinity.json",
             "overridesCommon": true
@@ -3251,6 +3267,12 @@
         ],
         "explorers": [
             {
+                "name": "Subscan",
+                "extrinsic": "https://nodle.subscan.io/extrinsic/{hash}",
+                "account": "https://nodle.subscan.io/account/{address}",
+                "event": null
+            },
+            {
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
             }
@@ -3311,6 +3333,14 @@
             {
                 "url": "wss://api.phala.network/ws",
                 "name": "Phala node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://phala.subscan.io/extrinsic/{hash}",
+                "account": "https://phala.subscan.io/account/{address}",
+                "event": null
             }
         ],
         "types": {
@@ -3530,6 +3560,14 @@
                 "name": "Dwellir node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://composable.subscan.io/extrinsic/{hash}",
+                "account": "https://composable.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/composable.json",
             "overridesCommon": true
@@ -3709,6 +3747,14 @@
             {
                 "url": "wss://asia-ws.unique.network/",
                 "name": "Unique Asia node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://unique.subscan.io/extrinsic/{hash}",
+                "account": "https://unique.subscan.io/account/{address}",
+                "event": null
             }
         ],
         "types": {
