@@ -962,12 +962,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://moonriver-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
                 "url": "wss://moonriver.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
+            },
+            {
+                "url": "wss://moonriver-rpc.dwellir.com",
+                "name": "Dwellir node"
             },
             {
                 "url": "wss://wss.moonriver.moonbeam.network",
