@@ -11,7 +11,7 @@ def get_ids(chains):
     return list(map(lambda x: x["chainId"], chains))
 
 
-exludeChains = ['Kintsugi', 'Statemint', 'Singular testnet', 'Interlay', 'Mangata X']
+exludeChains = ['Kintsugi', 'Statemint', 'Singular testnet', 'Interlay', 'Mangata X', 'Arctic Relay Testnet']
 
 dev_ids = get_ids(dev_chains)
 test_ids = get_ids(test_chains)
