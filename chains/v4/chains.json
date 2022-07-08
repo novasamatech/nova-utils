@@ -3003,6 +3003,12 @@
         ],
         "explorers": [
             {
+                "name": "Subscan",
+                "extrinsic": "https://nodle.subscan.io/extrinsic/{hash}",
+                "account": "https://nodle.subscan.io/account/{address}",
+                "event": null
+            },
+            {
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
             }
@@ -3040,8 +3046,16 @@
                 "name": "Phala node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://phala.subscan.io/extrinsic/{hash}",
+                "account": "https://phala.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/nodle.json",
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/phala.json",
             "overridesCommon": true
         },
         "color": "linear-gradient(315deg, #78930F 0%, #D1F068 100%)",
@@ -3246,6 +3260,14 @@
                 "name": "Dwellir node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://composable.subscan.io/extrinsic/{hash}",
+                "account": "https://composable.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/composable.json",
             "overridesCommon": true
@@ -3425,6 +3447,14 @@
             {
                 "url": "wss://asia-ws.unique.network/",
                 "name": "Unique Asia node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://unique.subscan.io/extrinsic/{hash}",
+                "account": "https://unique.subscan.io/account/{address}",
+                "event": null
             }
         ],
         "types": {
