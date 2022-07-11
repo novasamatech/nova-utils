@@ -212,6 +212,33 @@
               "type": "xtokens"
             }
           ]
+        },
+        {
+          "assetId": 1,
+          "assetLocation": "RMRK",
+          "assetLocationPath": {
+            "type": "absolute"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
+                "assetId": 1,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "3959149500"
+                  },
+                  "instructions": "xtokensDest",
+                  "asset": {
+                    "location": "KSM-Statemine",
+                    "locationPath": "absolute"
+                  }
+                }
+              },
+              "type": "xtokens"
+            }
+          ]
         }
       ]
     },
