@@ -3184,6 +3184,14 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/turing.json",
             "overridesCommon": true
         },
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://turing.subscan.io/extrinsic/{hash}",
+                "account": "https://turing.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
         "externalApi": {
             "history": {
                 "type": "subquery",
