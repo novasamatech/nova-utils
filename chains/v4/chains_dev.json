@@ -1723,6 +1723,92 @@
                 "precision": 12,
                 "priceId": "pha",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Phala.svg"
+            },
+            {
+                "assetId": 1,
+                "symbol": "KSM",
+                "precision": 12,
+                "type": "statemine",
+                "priceId": "kusama",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg",
+                "typeExtras": {
+                    "assetId": "0"
+                }
+            },
+            {
+                "assetId": 2,
+                "symbol": "KAR",
+                "precision": 12,
+                "type": "statemine",
+                "priceId": "karura",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Karura.svg",
+                "typeExtras": {
+                    "assetId": "1"
+                }
+            },
+            {
+                "assetId": 3,
+                "symbol": "BNC",
+                "precision": 12,
+                "type": "statemine",
+                "priceId": "bifrost-native-coin",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bifrost.svg",
+                "typeExtras": {
+                    "assetId": "2"
+                }
+            },
+            {
+                "assetId": 4,
+                "symbol": "ZLK",
+                "precision": 18,
+                "priceId": "zenlink-network-token",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/ZLK.svg",
+                "typeExtras": {
+                    "assetId": "3"
+                }
+            },
+            {
+                "assetId": 5,
+                "symbol": "aUSD",
+                "precision": 12,
+                "priceId": "tether",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/AUSD.svg",
+                "typeExtras": {
+                    "assetId": "4"
+                }
+            },
+            {
+                "assetId": 6,
+                "symbol": "BSX",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Basilisk.svg",
+                "typeExtras": {
+                    "assetId": "5"
+                }
+            },
+            {
+                "assetId": 7,
+                "symbol": "MOVR",
+                "precision": 18,
+                "priceId": "moonriver",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonriver.svg",
+                "typeExtras": {
+                    "assetId": "6"
+                }
+            },
+            {
+                "assetId": 8,
+                "symbol": "HKO",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/HKO.svg",
+                "typeExtras": {
+                    "assetId": "7"
+                }
             }
         ],
         "nodes": [
