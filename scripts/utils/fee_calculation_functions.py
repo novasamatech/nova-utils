@@ -1,4 +1,4 @@
-from .model.chain_json_model import Chain
+from utils.data_model.chain_json_model import Chain
 from utils.useful_functions import create_connection_by_url, deep_search_in_object
 
 WEIGHT_PER_SECOND = 1_000_000_000_000

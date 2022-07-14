@@ -4,7 +4,7 @@ from typing import List
 from .base_model import BaseObject
 from .chain_json_model import Chain
 from PyInquirer import prompt
-from utils.fee_calculator import biforst_base_fee, heiko_base_fee, kintsugi_base_fee, karura_base_fee, turing_base_fee, moonriver_fee_calculation
+from utils.fee_calculation_functions import biforst_base_fee, heiko_base_fee, kintsugi_base_fee, karura_base_fee, turing_base_fee, moonriver_fee_calculation
 
 from utils.questions import coefficient_question
 

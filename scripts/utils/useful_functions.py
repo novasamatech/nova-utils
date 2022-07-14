@@ -1,7 +1,7 @@
 import json
 
 from substrateinterface import SubstrateInterface
-from .model.chain_json_model import Chain, ChainAsset
+from utils.data_model.chain_json_model import Chain, ChainAsset
 
 
 def parse_json_file(path):

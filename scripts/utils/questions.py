@@ -1,9 +1,5 @@
-from utils.useful_functions import parse_json_file
 
-
-def build_initial_questions():
-    xcm_json = parse_json_file('./xcm/v2/transfers_dev.json')
-    chains_json = parse_json_file('./chains/v4/chains_dev.json')
+def build_initial_questions(xcm_json, chains_json):
     assets = []
     chains = []
     for asset in xcm_json.get('assetsLocation'):
@@ -36,8 +32,7 @@ def build_initial_questions():
     return questions
 
 
-def destination_questions():
-    xcm_json = parse_json_file('./xcm/v2/transfers_dev.json')
+def destination_questions(xcm_json):
     instructions = []
     for instruction in xcm_json.get('instructions'):
         instructions.append(instruction)
@@ -82,7 +77,7 @@ def new_network_questions():
     return questions
 
 
-def update_network_questions():
+def asset_location_question():
     question = {
         'type': 'list',
         'name': 'assetLocationPath',
