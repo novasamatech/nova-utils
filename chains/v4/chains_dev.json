@@ -4021,7 +4021,10 @@
         },
         "color": "linear-gradient(315deg, #434852 0%, #787F92 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Aleph_zero.svg",
-        "addressPrefix": 42
+        "addressPrefix": 42,
+        "options": [
+            "testnet"
+        ]
     },
     {
         "chainId": "e1ea3ab1d46ba8f4898b6b4b9c54ffc05282d299f89e84bd0fd08067758c9443",
