@@ -3440,7 +3440,7 @@
         "externalApi": {
             "history": {
                 "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-phala__bm92Y"
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-phala"
             }
         },
         "color": "linear-gradient(315deg, #78930F 0%, #D1F068 100%)",
@@ -3669,6 +3669,12 @@
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/composable.json",
             "overridesCommon": true
+        },
+        "externalApi": {
+            "history": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-composable"
+            }
         },
         "color": "linear-gradient(315.17deg, #7A0354 13.48%, #8E0076 46.85%, #F139FE 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Composable.svg",
@@ -4089,7 +4095,7 @@
         "externalApi": {
             "history": {
                 "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-pichiu__bm92Y"
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-pichiu"
             }
         },
         "color": "linear-gradient(315deg, #A91056 0%, #F34594 100%)",
@@ -4120,7 +4126,7 @@
         "externalApi": {
             "history": {
                 "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kabocha__bm92Y"
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kabocha"
             }
         },
         "color": "linear-gradient(315deg, #C9B904 0%, #D3CD4A 66.15%, #FDF775 100%)",
@@ -4152,7 +4158,7 @@
         "externalApi": {
             "history": {
                 "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-tanganika__bm92Y"
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-tanganika"
             }
         },
         "color": "linear-gradient(315deg, #7D20BF 15.1%, #584DDB 57.81%, #51BEF9 94.27%)",
@@ -4214,7 +4220,7 @@
         "externalApi": {
             "history": {
                 "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-imbue__bm92Y"
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-imbue"
             }
         },
         "color": "linear-gradient(315.17deg, #7CB00B 12.5%, #B5FF14 100%)",
