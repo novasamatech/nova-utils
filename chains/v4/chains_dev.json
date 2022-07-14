@@ -1786,7 +1786,7 @@
                 "type": "statemine",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Basilisk.svg",
                 "typeExtras": {
-                    "assetId": "5"
+                    "assetId": "9"
                 }
             },
             {
@@ -1808,6 +1808,27 @@
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/HKO.svg",
                 "typeExtras": {
                     "assetId": "7"
+                }
+            },
+            {
+                "assetId": 9,
+                "symbol": "KMA",
+                "precision": 12,
+                "priceId": "calamari-network",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Calamari.svg",
+                "typeExtras": {
+                    "assetId": "8"
+                }
+            },
+            {
+                "assetId": 10,
+                "symbol": "TUR",
+                "precision": 10,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Turing.svg",
+                "typeExtras": {
+                    "assetId": "10"
                 }
             }
         ],
@@ -3999,7 +4020,10 @@
         },
         "color": "linear-gradient(315deg, #434852 0%, #787F92 100%)",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Aleph_zero.svg",
-        "addressPrefix": 42
+        "addressPrefix": 42,
+        "options": [
+            "testnet"
+        ]
     },
     {
         "chainId": "e1ea3ab1d46ba8f4898b6b4b9c54ffc05282d299f89e84bd0fd08067758c9443",
