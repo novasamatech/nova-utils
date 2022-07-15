@@ -8,7 +8,7 @@ WEIGHT_PER_NANOS = WEIGHT_PER_MICROS / 1000  # 1_000
 
 
 def base_tx_per_second(base_weight):
-    fee_per_second = WEIGHT_PER_SECOND / base_weight
+    fee_per_second = WEIGHT_PER_SECOND // base_weight
     return fee_per_second
 
 
@@ -51,9 +51,9 @@ def heiko_base_fee(chain) -> float:
 
     base_weight = get_base_weight_from_chain(chain)
 
-    hko_per_second = base_tx_per_second(base_weight) * 10_000_000_000 / 10
+    hko_per_second = base_tx_per_second(base_weight) * 10_000_000_000 // 10
 
-    base_fee_in_ksm = hko_per_second / 50
+    base_fee_in_ksm = hko_per_second // 50
 
     return base_fee_in_ksm
 
@@ -62,7 +62,7 @@ def kintsugi_base_fee(chain):
 
     def base_tx_in_ksm():
         ksm = 1*10**12
-        return ksm / 50_000
+        return ksm // 50_000
 
     base_weight = get_base_weight_from_chain(chain)
 
@@ -86,10 +86,12 @@ def turing_base_fee(chain):
 
     def ksm_per_second():
         '''
+        https://github.com/OAK-Foundation/OAK-blockchain/blob/319ab13b79181e402d5a2ce53d7202a73b0bced3/runtime/turing/src/lib.rs#L176
+
         https://github.com/OAK-Foundation/OAK-blockchain/blob/master/runtime/turing/src/xcm_config.rs#L182
         '''
         # CurrencyId::KSM.cent() * 16
-        ksm = 1*10**12 / 10
+        ksm = 1*10**12 // 100
         return ksm * 16
 
     base_fee_in_ksm = ksm_per_second()
