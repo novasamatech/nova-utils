@@ -7,12 +7,9 @@ WEIGHT_PER_MICROS = WEIGHT_PER_MILLIS / 1000  # 1_000_000
 WEIGHT_PER_NANOS = WEIGHT_PER_MICROS / 1000  # 1_000
 
 
-def base_fee_per_second(ExtrinsicBaseWeight):
-    base_weight = ((ExtrinsicBaseWeight / WEIGHT_PER_NANOS)
-                   * WEIGHT_PER_SECOND) / WEIGHT_PER_MILLIS
-
-    base_tx_per_second = WEIGHT_PER_SECOND / base_weight
-    return base_tx_per_second
+def base_tx_per_second(base_weight):
+    fee_per_second = WEIGHT_PER_SECOND / base_weight
+    return fee_per_second
 
 
 def connect_to_node(chain: Chain):
@@ -25,30 +22,40 @@ def connect_to_node(chain: Chain):
 def get_base_weight_from_chain(chain: Chain):
     connection = connect_to_node(chain)
     weight = connection.get_constant('System', 'BlockWeights').value
-    print(weight)
+
     return weight.get('per_class').get('normal').get('base_extrinsic')
 
 
 def biforst_base_fee(chain: Chain) -> float:
 
-    ExtrinsicBaseWeight = get_base_weight_from_chain(chain)
+    base_weight = get_base_weight_from_chain(chain)
 
-    base_tx_per_second = base_fee_per_second(ExtrinsicBaseWeight)
+    base_fee_in_ksm = base_tx_per_second(base_weight) * WEIGHT_PER_MILLIS
 
-    fee_per_second = base_tx_per_second * WEIGHT_PER_MILLIS
-
-    return fee_per_second
+    return base_fee_in_ksm
 
 
 def heiko_base_fee(chain) -> float:
+    '''
+    https://github.com/parallel-finance/parallel/blob/b72d6afd263086d89d5256b571e522113ebde59f/runtime/heiko/src/constants.rs#L86
+    let base_weight = Balance::from(base_weight::get());
+        let base_tx_per_second = (WEIGHT_PER_SECOND as u128) / base_weight;
+        let hko_per_second = base_tx_per_second * super::currency::CENTS / 10;
+        hko_per_second / 50 //almost 250_000_000_000~=1/4 WEIGHT_PER_SECOND in polkadot-v0.9.24
+    }
 
-    ExtrinsicBaseWeight = get_base_weight_from_chain(chain)
+    https://github.com/parallel-finance/parallel/blob/b72d6afd263086d89d5256b571e522113ebde59f/runtime/heiko/src/constants.rs#L19
+    pub const MILLICENTS: Balance = 10_000_000;
+    pub const CENTS: Balance = 1_000 * MILLICENTS
+    '''
 
-    base_tx_per_second = base_fee_per_second(ExtrinsicBaseWeight)
+    base_weight = get_base_weight_from_chain(chain)
 
-    fee_per_second = base_tx_per_second * WEIGHT_PER_MILLIS
+    hko_per_second = base_tx_per_second(base_weight) * 10_000_000_000 / 10
 
-    return fee_per_second
+    base_fee_in_ksm = hko_per_second / 50
+
+    return base_fee_in_ksm
 
 
 def kintsugi_base_fee(chain):
@@ -57,37 +64,37 @@ def kintsugi_base_fee(chain):
         ksm = 1*10**12
         return ksm / 50_000
 
-    ExtrinsicBaseWeight = get_base_weight_from_chain(chain)
+    base_weight = get_base_weight_from_chain(chain)
 
-    base_tx_per_second = base_fee_per_second(ExtrinsicBaseWeight)
+    base_fee_in_ksm = base_tx_per_second(base_weight) * base_tx_in_ksm()
 
-    return base_tx_per_second * base_tx_in_ksm()
+    return base_fee_in_ksm
 
 
 def karura_base_fee(chain):
 
-    ExtrinsicBaseWeight = get_base_weight_from_chain(chain)
+    base_weight = get_base_weight_from_chain(chain)
 
-    def base_tx_in_kar():
-        return WEIGHT_PER_MILLIS
+    base_fee_in_kar = base_tx_per_second(base_weight) * WEIGHT_PER_MILLIS
 
-    base_tx_per_second = base_fee_per_second(ExtrinsicBaseWeight)
-
-    return base_tx_per_second * base_tx_in_kar()
+    return base_fee_in_kar
 
 
 def turing_base_fee(chain):
 
-    ExtrinsicBaseWeight = get_base_weight_from_chain(chain)
+    base_weight = get_base_weight_from_chain(chain)
 
     def ksm_per_second():
+        '''
+        https://github.com/OAK-Foundation/OAK-blockchain/blob/master/runtime/turing/src/xcm_config.rs#L182
+        '''
         # CurrencyId::KSM.cent() * 16
         ksm = 1*10**12 / 10
         return ksm * 16
 
-    base_tx_per_second = base_fee_per_second(ExtrinsicBaseWeight)
+    base_fee_in_ksm = ksm_per_second()
 
-    return base_tx_per_second * ksm_per_second()
+    return base_fee_in_ksm
 
 
 def moonriver_fee_calculation(chain, xcm_asset):
