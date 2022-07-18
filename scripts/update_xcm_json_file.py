@@ -74,11 +74,13 @@ def build_xcm_transfer(base_parameters: BaseParameters) -> XcmTransfer:
             instructions=destination_params.get('instructions')
         )
 
-        print('Fee was calculated as: ' + fee.calculate_fee(
+        fee.calculate_fee(
             network=chain,
             xcm_asset=find_assetsLocation(
                 base_parameters, xcm_object=xcm_object)
-        ))
+        )
+
+        print('Fee was calculated as: ' + str(fee.mode.value))
 
         destination = Destination(
             chainId=chain.chainId,
