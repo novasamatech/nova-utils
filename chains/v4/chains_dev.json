@@ -4338,5 +4338,33 @@
             "testnet",
             "crowdloans"
         ]
+    },
+    {
+        "chainId": "6408de7737c59c238890533af25896a2c20608d8b380bb01029acb392781063e",
+        "name": "Rococo Testnet",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "ROC",
+                "precision": 12
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rococo-rpc.polkadot.io/",
+                "name": "Rococo node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/rococo.json",
+            "overridesCommon": true
+        },
+        "color": "linear-gradient(315deg, #434852 0%, #787F92 100%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Rococo.svg",
+        "addressPrefix": 42,
+        "options": [
+            "testnet",
+            "crowdloans"
+        ]
     }
 ]
