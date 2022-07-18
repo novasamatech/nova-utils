@@ -349,6 +349,20 @@
                 }
               },
               "type": "xcmpallet"
+            },
+            {
+              "destination": {
+                "chainId": "9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
+                "assetId": 2,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": 233100000000
+                  },
+                  "instructions": "xcmPalletDest"
+                }
+              },
+              "type": "xcmpallet"
             }
           ]
         }
@@ -791,6 +805,28 @@
                   "mode": {
                     "type": "proportional",
                     "value": "965646171792"
+                  },
+                  "instructions": "xtokensDest"
+                }
+              },
+              "type": "xtokens"
+            }
+          ]
+        },
+        {
+          "assetId": 2,
+          "assetLocation": "KSM",
+          "assetLocationPath": {
+            "type": "relative"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+                "assetId": 0,
+                "fee": {
+                  "mode": {
+                    "type": "standard"
                   },
                   "instructions": "xtokensDest"
                 }
