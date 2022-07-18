@@ -1,5 +1,5 @@
 import math
-from typing import List
+from typing import List, Optional
 
 from .base_model import BaseObject
 from .chain_json_model import Chain
@@ -9,26 +9,32 @@ from utils.fee_calculation_functions import biforst_base_fee, heiko_base_fee, ki
 from utils.questions import coefficient_question
 
 
+class FeeMode(BaseObject):
+    type: str
+    value: str
+
+    def __init__(self, type, value: Optional[str] = None):
+        self.type = type
+        if value is not None:
+            self.value = value
+
 
 class Fee(BaseObject):
-    mode: dict
+    mode: FeeMode
     instructions: str
+    asset: dict
 
-    def __init__(self, fee_type, instructions, network: Chain, xcm_asset):
+    def __init__(self, mode: FeeMode, instructions, asset=None):
 
-        if (fee_type == 'standard'):
-            self.mode = {
-                "type": fee_type
-            }
-        elif (fee_type == 'proportional'):
-            self.mode = {
-                "type": fee_type,
-                "value": str(self.calculate_fee(network, xcm_asset))
-            }
+        if (isinstance(mode, FeeMode)):
+            self.mode = mode
         else:
-            raise Exception('Wrong fee type')
+            self.mode = FeeMode(**mode)
 
         self.instructions = instructions
+
+        if asset is not None:
+            self.asset = asset
 
     def calculate_fee(self, network: Chain, xcm_asset):
 
@@ -54,7 +60,8 @@ class Fee(BaseObject):
             raise Exception(
                 'Fee function is not available for network %s' % network.name)
 
-        return base_fee_and_multiplier(base_fee)
+        self.mode.value = base_fee_and_multiplier(base_fee)
+        return self.mode.value
 
 
 class Destination(BaseObject):
@@ -66,7 +73,10 @@ class Destination(BaseObject):
     def __init__(self, chainId, assetId, fee: Fee):
         self.chainId = chainId
         self.assetId = assetId
-        self.fee = fee.__dict__
+        if (isinstance(fee, Fee)):
+            self.fee = fee
+        else:
+            self.fee = Fee(**fee)
 
 
 class XcmTransfer(BaseObject):
@@ -75,7 +85,10 @@ class XcmTransfer(BaseObject):
     type: str
 
     def __init__(self, destination: Destination, type):
-        self.destination = destination.__dict__
+        if (isinstance(destination, Destination)):
+            self.destination = destination
+        else:
+            self.destination = Destination(**destination)
         self.type = type
 
 
@@ -95,7 +108,10 @@ class Asset(BaseObject):
             self.assetLocationPath = {'type': assetLocationPath}
         self.xcmTransfers = []
         for transfer in xcmTransfers:
-            self.xcmTransfers.append(transfer)
+            if (isinstance(transfer, XcmTransfer)):
+                self.xcmTransfers.append(transfer)
+            else:
+                self.xcmTransfers.append(XcmTransfer(**transfer))
 
 
 class Network(BaseObject):
