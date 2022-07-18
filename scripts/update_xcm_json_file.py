@@ -3,7 +3,7 @@ from generate_xcm_table import build_data_from_jsons
 from utils.data_model.base_model import BaseParameters
 from utils.data_model.xcm_json_model import XcmTransfer, Destination, Fee, Asset, XcmJson, Network
 from utils.useful_functions import *
-from utils.questions import build_initial_questions, destination_questions, new_network_questions, asset_location_question
+from utils.questions import network_questions, destination_questions, new_network_questions, asset_location_question, asset_question
 
 chains_json_path = './chains/v4/chains_dev.json'
 xcm_json_path = './xcm/v2/transfers_dev.json'
@@ -176,9 +176,12 @@ def main():
     In the end will be calculated base_fee for destination network by functions from utils/fee_calculation_functions.py and for getting final fee you should add the coefficient which will multiplier:
     (base_fee * coefficient) = final_fee
     '''
-    first_input = prompt(build_initial_questions(xcm_json, chains_json))
+    adding_asset = prompt(asset_question(xcm_json))
 
-    base_parameters = BaseParameters(**first_input)
+    network_answers = prompt(network_questions(adding_asset.get('asset'), chains_json))
+    network_answers['asset'] = adding_asset.get('asset') # Merge asset with network data to create base_parameter object
+
+    base_parameters = BaseParameters(**network_answers)
 
     if (network_already_added(base_parameters.source_network)):
         updated_xcm_json = update_destinations(base_parameters)

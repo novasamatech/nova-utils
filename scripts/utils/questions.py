@@ -1,21 +1,29 @@
 
-def build_initial_questions(xcm_json, chains_json):
+from .data_model.chain_json_model import Chain
+from .useful_functions import deep_search_in_object, find_asset_in_chain
+
+
+def asset_question(xcm_json):
     assets = []
-    chains = []
     for asset in xcm_json.get('assetsLocation'):
         assets.append(asset)
+    question = {
+        'type': 'list',
+        'name': 'asset',
+        'message': 'Please select the asset you want to add:',
+        'choices': assets
+    }
+    return question
+
+
+def network_questions(asset, chains_json):
+    chains = []
     for chain in chains_json:
-        chains.append(chain.get('name'))
-    assets.sort()
+        chain_object = Chain(**chain)
+        if (find_asset_in_chain(chain_object, asset)):
+            chains.append(chain_object.name)
     chains.sort()
     questions = [
-        {
-            'type': 'list',
-            'name': 'asset',
-            'message': 'Please select the asset you want to add:',
-            'choices': assets
-        },
-
         {
             'type': 'list',
             'name': 'source_network',
