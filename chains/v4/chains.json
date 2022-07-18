@@ -1001,6 +1001,39 @@
                 "typeExtras": {
                     "assetId": "76100021443485661246318545281171740067"
                 }
+            },
+            {
+                "assetId": 12,
+                "symbol": "xcKMA",
+                "precision": 12,
+                "priceId": "calamari-network",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Calamari.svg",
+                "typeExtras": {
+                    "assetId": "213357169630950964874127107356898319277"
+                }
+            },
+            {
+                "assetId": 13,
+                "symbol": "xcCRAB",
+                "precision": 18,
+                "priceId": "darwinia-crab-network",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Crab.svg",
+                "typeExtras": {
+                    "assetId": "173481220575862801646329923366065693029"
+                }
+            },
+            {
+                "assetId": 14,
+                "symbol": "xcTEER",
+                "precision": 12,
+                "priceId": "integritee",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Integritee.svg",
+                "typeExtras": {
+                    "assetId": "105075627293246237499203909093923548958"
+                }
             }
         ],
         "nodes": [
@@ -1977,6 +2010,32 @@
                     "currencyIdScale": "0x050100",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
                     "existentialDeposit": "100000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 7,
+                "symbol": "TAP",
+                "precision": 12,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/TAP.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0004",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "1000000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 8,
+                "symbol": "tDOT",
+                "precision": 10,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/tDOT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0300000000",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "100000000",
                     "transfersEnabled": true
                 }
             }
