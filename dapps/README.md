@@ -34,7 +34,6 @@
 | Polkadot.js                       | https://polkadot.js.org/apps/#                       | utilities               |
 | Polkassembly                      | https://polkadot.polkassembly.io/                    | community               |
 | Polkawatch                        | https://polkawatch.app/                              | staking                 |
-| RomeDAO                           | https://romedao.finance/                             | defi,staking,evm        |
 | Singular                          | https://singular.rmrk.app/                           | nft                     |
 | Singular 2.0                      | https://singular.app/                                | nft                     |
 | Skybreach                         | https://skybreach.app/                               | nft,evm                 |
