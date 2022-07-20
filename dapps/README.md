@@ -11,7 +11,11 @@
 | Centrifuge Rewards Claim          | https://centrifuge.io/parachain/crowdloan/           | crowdloans              |
 | Damned Pirates Society            | https://damnedpiratessociety.io/                     | nft,evm                 |
 | DappRadar                         | https://dappradar.com/                               | utilities               |
+| Darwinia App                      | https://apps.darwinia.network/                       | staking                 |
 | Dotmarketcap                      | https://dotmarketcap.com/                            | utilities               |
+| Downtown Moonbeam                 | https://dtmb.xyz                                     | evm,utilities           |
+| EVRLOOT                           | https://game.evrloot.com/game                        | nft                     |
+| Evolution Land. Columbus          | https://www.evolution.land/land/3                    | nft,evm                 |
 | Huckleberry Finance               | https://www.huckleberry.finance/#/swap               | defi,staking,evm        |
 | Impossible Finance                | https://invest.impossible.finance/launchpad          | defi,evm                |
 | Interlay Rewards Claim            | https://crowdloan.interlay.io/                       | crowdloans              |
