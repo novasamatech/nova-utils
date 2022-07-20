@@ -47,4 +47,3 @@
 | Talisman App                      | https://app.talisman.xyz/portfolio                   | defi,crowdloans         |
 | TofuNFT                           | https://tofunft.com/                                 | nft,evm                 |
 | cBRIDGE                           | https://cbridge.celer.network/#/transfer             | defi,evm                |
-| Downtown Moonbeam                 | https://dtmb.xyz                                     | evm, utilities          |
