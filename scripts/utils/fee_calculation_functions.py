@@ -38,15 +38,8 @@ def biforst_base_fee(chain: Chain) -> float:
 def heiko_base_fee(chain) -> float:
     '''
     https://github.com/parallel-finance/parallel/blob/b72d6afd263086d89d5256b571e522113ebde59f/runtime/heiko/src/constants.rs#L86
-    let base_weight = Balance::from(base_weight::get());
-        let base_tx_per_second = (WEIGHT_PER_SECOND as u128) / base_weight;
-        let hko_per_second = base_tx_per_second * super::currency::CENTS / 10;
-        hko_per_second / 50 //almost 250_000_000_000~=1/4 WEIGHT_PER_SECOND in polkadot-v0.9.24
-    }
 
     https://github.com/parallel-finance/parallel/blob/b72d6afd263086d89d5256b571e522113ebde59f/runtime/heiko/src/constants.rs#L19
-    pub const MILLICENTS: Balance = 10_000_000;
-    pub const CENTS: Balance = 1_000 * MILLICENTS
     '''
 
     base_weight = get_base_weight_from_chain(chain)
