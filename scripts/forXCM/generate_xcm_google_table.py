@@ -17,6 +17,7 @@ SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 # The ID and range of a sample spreadsheet.
 SPREADSHEET_ID = '1ymlOS8TL6Ka4Qk4nZAM1KXThH1UM2TRSzUaYfbRdc_A'
 RANGE_NAME = 'Лист1'
+
 CREDENTIALS_FILE = './scripts/forXCM/credentials.json'
 SPREADSHEET_TITLE = "Cross-chain transfers"
 xcm_json_path = './xcm/v2/transfers_dev.json'
@@ -65,13 +66,20 @@ def generate_value_matrix():
     xcm_data = build_data_from_jsons()
     for xcm in xcm_data:
         current_xcm = []
-        current_xcm.append(xcm.chainName)
-        destinations = []
+        destinations = generate_headers()
         for asset in xcm.assets:
-            destinations.append(asset.get('asset') + ' -> ' +
-                                ','.join(asset.get('destination')))
-        current_xcm.append('<br/>'.join(destinations))
-        returning_array.append(current_xcm)
+            current_xcm.append(xcm.chainName)
+            current_xcm.append(asset.get('asset'))
+            asset_destinations = asset.get('destination')
+            for asset_destination in asset_destinations:
+                # TODO fix one asset with more destinations
+                for destination_id in range(3, len(destinations)):
+                    if destinations[destination_id] == asset_destination:
+                        current_xcm.append("->")
+                    else:
+                        current_xcm.append("")
+            returning_array.append(current_xcm)
+            current_xcm = []
     returning_array.sort()
     increment = iter(range(1, len(returning_array) + 1))
     [network.insert(0, next(increment)) for network in returning_array]
@@ -87,17 +95,25 @@ def build_data_from_jsons():
     return processed_xcm_chains
 
 
-def update_values(creds, spreadsheet_id, range_name, value_input_option,
-                  _values):
-    try:
+def generate_headers():
+    returning_array = []
+    xcm_data = build_data_from_jsons()
+    for i in range(3):
+        returning_array.append("")
+    for xcm in xcm_data:
+        for asset in xcm.assets:
+            destinations = asset.get('destination')
+            for destination in destinations:
+                if destination not in returning_array:
+                    returning_array.append(destination)
+    returning_array.sort()
+    return returning_array
 
+
+def update_values(creds, spreadsheet_id, range_name, value_input_option,
+                  values):
+    try:
         service = build('sheets', 'v4', credentials=creds)
-        values = [
-            [
-                # Cell values ...
-            ],
-            # Additional rows ...
-        ]
         body = {
             'values': values
         }
@@ -113,7 +129,9 @@ def update_values(creds, spreadsheet_id, range_name, value_input_option,
 
 if __name__ == '__main__':
     creds = set_credentials()
-    # create_spreadsheet(creds)
-    data = generate_value_matrix()
+    # create_spreadsheet(creds) TODO create if present in directory
+    headers = generate_headers()
+    body = generate_value_matrix()
+    body.insert(0, headers)
     update_values(creds, SPREADSHEET_ID,
-                  RANGE_NAME, "USER_ENTERED", data)
+                  RANGE_NAME, "USER_ENTERED", body)
