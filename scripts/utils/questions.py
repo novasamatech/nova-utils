@@ -61,7 +61,7 @@ def destination_questions(xcm_json):
             'type': 'list',
             'name': 'fee_type',
             'message': 'Please select the Fee type for that destination',
-            'choices': ['standard', 'proportional']
+            'choices': ['proportional', 'standard']
         }
     ]
     return questions
@@ -91,7 +91,7 @@ def asset_location_question():
         'name': 'assetLocationPath',
         'message': 'Choose location path for the asset:',
         'choices': ['relative', 'absolute', 'concrete']
-    }
+    } # TODO need to add case for relative location path
     return question
 
 

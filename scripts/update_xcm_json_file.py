@@ -1,17 +1,18 @@
 from typing import Optional
 from PyInquirer import prompt
-from generate_xcm_table import build_data_from_jsons
 from utils.data_model.base_model import BaseParameters
 from utils.data_model.xcm_json_model import XcmTransfer, Destination, Fee, FeeMode, Asset, XcmJson, Network
 from utils.useful_functions import *
 from utils.questions import network_questions, destination_questions, new_network_questions, asset_location_question, asset_question
 
-chains_json_path = './chains/v4/chains_dev.json'
-xcm_json_path = './xcm/v2/transfers_dev.json'
+chains_json_version = 'v4'
+xcm_json_version = 'v2'
+
+chains_json_path = f"./chains/{chains_json_version}/chains_dev.json"
+xcm_json_path = f"./xcm/{xcm_json_version}/transfers_dev.json"
 
 chains_json = parse_json_file(chains_json_path)
 xcm_json = parse_json_file(xcm_json_path)
-xcm_list = build_data_from_jsons()
 
 
 def network_already_added(chain_name) -> bool:
@@ -27,13 +28,14 @@ def network_already_added(chain_name) -> bool:
 
 
 def should_create_new_destination(
-        base_parameters: BaseParameters,
-    ) -> bool:
+    base_parameters: BaseParameters,
+) -> bool:
 
     xcm_object = XcmJson(**xcm_json)
 
     source_chain = find_chain(chains_json, base_parameters.source_network)
-    destination_chain = find_chain(chains_json, base_parameters.destination_network)
+    destination_chain = find_chain(
+        chains_json, base_parameters.destination_network)
 
     source_xcm_network = [xcm for xcm in xcm_object.chains if xcm.chainId ==
                           source_chain.chainId]
@@ -51,8 +53,8 @@ def should_create_new_destination(
 
 
 def token_already_added(
-        base_parameters: BaseParameters,
-    ) -> bool:
+    base_parameters: BaseParameters,
+) -> bool:
 
     xcm_object = XcmJson(**xcm_json)
     source_chain = find_chain(chains_json, base_parameters.source_network)
@@ -68,11 +70,12 @@ def token_already_added(
 
 
 def such_destination_was_already_added(
-        base_parameters: BaseParameters,
-    ) -> XcmTransfer:
+    base_parameters: BaseParameters,
+) -> XcmTransfer:
 
     xcm_object = XcmJson(**xcm_json)
-    destination_chain = find_chain(chains_json, base_parameters.destination_network)
+    destination_chain = find_chain(
+        chains_json, base_parameters.destination_network)
 
     for chain in xcm_object.chains:
         for asset in chain.assets:
@@ -97,9 +100,9 @@ def such_destination_was_already_added(base_parameters: BaseParameters) -> XcmTr
 
 
 def build_xcm_transfer(
-        base_parameters: BaseParameters,
-        already_added_destination: XcmTransfer
-    ) -> XcmTransfer:
+    base_parameters: BaseParameters,
+    already_added_destination: XcmTransfer
+) -> XcmTransfer:
     if (should_create_new_destination(base_parameters)):
         xcm_object = XcmJson(**xcm_json)
 
@@ -108,21 +111,24 @@ def build_xcm_transfer(
         asset = find_asset_in_chain(chain, base_parameters.asset)
         destination_params = prompt(destination_questions(xcm_json))
 
+        if (already_added_destination):
+            fee_mode = FeeMode(already_added_destination.destination.fee.mode)
+        else:
+            fee_mode = FeeMode(
+                type=destination_params.get('fee_type')
+            )
+
         fee = Fee(
-            FeeMode(
-                type=destination_params.get('fee_type'),
-                value=None if already_added_destination is None else already_added_destination.destination.fee.mode.value),
+            mode=fee_mode,
             instructions=destination_params.get('instructions')
         )
 
-        if (already_added_destination is None):
+        if (already_added_destination is None and destination_params.get('fee_type') != 'standard'):
             fee.calculate_fee(
                 network=chain,
                 xcm_asset=find_assetsLocation(
                     base_parameters, xcm_object=xcm_object)
             )
-
-        print('Fee was calculated as: ' + str(fee.mode.value))
 
         destination = Destination(
             chainId=chain.chainId,
@@ -147,7 +153,8 @@ def create_new_asset(
     already_added_destination: Optional[XcmTransfer] = None
 ) -> Asset:
 
-    destination = build_xcm_transfer(base_parameters, already_added_destination)
+    destination = build_xcm_transfer(
+        base_parameters, already_added_destination)
 
     new_asset = Asset(
         assetId=asset.assetId,
@@ -160,9 +167,9 @@ def create_new_asset(
 
 
 def create_new_network(
-        base_parameters: BaseParameters,
-        already_added_destination: Optional[XcmTransfer] = None
-    ) -> XcmJson:
+    base_parameters: BaseParameters,
+    already_added_destination: Optional[XcmTransfer] = None
+) -> XcmJson:
     xcm_object = XcmJson(**xcm_json)
 
     network_param = prompt(new_network_questions())
@@ -203,12 +210,13 @@ def push_new_destination(base_parameters: BaseParameters, xcm_transfer: XcmTrans
 
 
 def update_destinations(
-        base_parameters: BaseParameters,
-        already_added_destination: Optional[XcmTransfer] = None
-    ) -> XcmJson:
+    base_parameters: BaseParameters,
+    already_added_destination: Optional[XcmTransfer] = None
+) -> XcmJson:
 
     if (token_already_added(base_parameters)):
-        destination = build_xcm_transfer(base_parameters, already_added_destination)
+        destination = build_xcm_transfer(
+            base_parameters, already_added_destination)
         return push_new_destination(base_parameters, destination)
     else:
         xcm_object = XcmJson(**xcm_json)
@@ -255,6 +263,7 @@ def main():
     (base_fee * coefficient) = final_fee
     '''
     adding_asset = prompt(asset_question(xcm_json))
+    # TODO add case with adding new token to the xcm list
 
     network_answers = prompt(network_questions(
         adding_asset.get('asset'), chains_json))
@@ -263,12 +272,15 @@ def main():
 
     base_parameters = BaseParameters(**network_answers)
 
-    already_added_destination = such_destination_was_already_added(base_parameters)
+    already_added_destination = such_destination_was_already_added(
+        base_parameters)
 
     if (network_already_added(base_parameters.source_network)):
-        updated_xcm_json = update_destinations(base_parameters, already_added_destination)
+        updated_xcm_json = update_destinations(
+            base_parameters, already_added_destination)
     else:
-        updated_xcm_json = create_new_network(base_parameters, already_added_destination)
+        updated_xcm_json = create_new_network(
+            base_parameters, already_added_destination)
 
     return write_new_file(updated_xcm_json.toJSON(), xcm_json_path)
 
