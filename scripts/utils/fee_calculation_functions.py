@@ -28,9 +28,14 @@ def get_base_weight_from_chain(chain: Chain):
 
 def biforst_base_fee(chain: Chain) -> float:
 
+    bnc_in_plank = 10**12
+
     base_weight = get_base_weight_from_chain(chain)
 
-    base_fee_in_ksm = base_tx_per_second(base_weight) * WEIGHT_PER_MILLIS
+    def xcm_base_tx_fee():
+        return bnc_in_plank // 100 // 10
+
+    base_fee_in_ksm = base_tx_per_second(base_weight) * xcm_base_tx_fee()
 
     return base_fee_in_ksm
 
@@ -66,9 +71,14 @@ def kintsugi_base_fee(chain):
 
 def karura_base_fee(chain):
 
+    kar_in_plank = 10**12
+
+    def base_tx_in_kar():
+        return kar_in_plank // 10
+
     base_weight = get_base_weight_from_chain(chain)
 
-    base_fee_in_kar = base_tx_per_second(base_weight) * WEIGHT_PER_MILLIS
+    base_fee_in_kar = base_tx_per_second(base_weight) * base_tx_in_kar()
 
     return base_fee_in_kar
 
