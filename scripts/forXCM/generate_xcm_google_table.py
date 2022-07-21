@@ -8,14 +8,19 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 
+from utils.xcm_сhain import XcmChain
+from utils.useful_functions import parse_json_file
+
 # If modifying these scopes, delete the file token.json.
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 
 # The ID and range of a sample spreadsheet.
-SAMPLE_SPREADSHEET_ID = '1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms'
-SAMPLE_RANGE_NAME = 'Class Data!A2:E'
-CREDENTIALS_FILE = 'credentials.json'
+SPREADSHEET_ID = '1ymlOS8TL6Ka4Qk4nZAM1KXThH1UM2TRSzUaYfbRdc_A'
+RANGE_NAME = 'Лист1'
+CREDENTIALS_FILE = './scripts/forXCM/credentials.json'
 SPREADSHEET_TITLE = "Cross-chain transfers"
+xcm_json_path = './xcm/v2/transfers_dev.json'
+chains_json_path = './chains/v4/chains_dev.json'
 
 
 def set_credentials():
@@ -55,6 +60,60 @@ def create_spreadsheet(creds):
         return error
 
 
+def generate_value_matrix():
+    returning_array = []
+    xcm_data = build_data_from_jsons()
+    for xcm in xcm_data:
+        current_xcm = []
+        current_xcm.append(xcm.chainName)
+        destinations = []
+        for asset in xcm.assets:
+            destinations.append(asset.get('asset') + ' -> ' +
+                                ','.join(asset.get('destination')))
+        current_xcm.append('<br/>'.join(destinations))
+        returning_array.append(current_xcm)
+    returning_array.sort()
+    increment = iter(range(1, len(returning_array) + 1))
+    [network.insert(0, next(increment)) for network in returning_array]
+    return returning_array
+
+
+def build_data_from_jsons():
+    xcm_json_data = parse_json_file(xcm_json_path)
+    chains_json_data = parse_json_file(chains_json_path)
+    processed_xcm_chains = []
+    for xcm in xcm_json_data.get('chains'):
+        processed_xcm_chains.append(XcmChain(xcm, chains_json_data))
+    return processed_xcm_chains
+
+
+def update_values(creds, spreadsheet_id, range_name, value_input_option,
+                  _values):
+    try:
+
+        service = build('sheets', 'v4', credentials=creds)
+        values = [
+            [
+                # Cell values ...
+            ],
+            # Additional rows ...
+        ]
+        body = {
+            'values': values
+        }
+        result = service.spreadsheets().values().update(
+            spreadsheetId=spreadsheet_id, range=range_name,
+            valueInputOption=value_input_option, body=body).execute()
+        print(f"{result.get('updatedCells')} cells updated.")
+        return result
+    except HttpError as error:
+        print(f"An error occurred: {error}")
+        return error
+
+
 if __name__ == '__main__':
     creds = set_credentials()
-    create_spreadsheet(creds)
+    # create_spreadsheet(creds)
+    data = generate_value_matrix()
+    update_values(creds, SPREADSHEET_ID,
+                  RANGE_NAME, "USER_ENTERED", data)
