@@ -235,7 +235,7 @@ def update_destinations(
             base_parameters=base_parameters,
             asset=asset,
             assetLocationPath=asset_location.get('assetLocationPath'),
-            destination=destination
+            already_added_destination=already_added_destination
         )
 
         for chain in xcm_object.chains:
