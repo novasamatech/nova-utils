@@ -112,7 +112,10 @@ def build_xcm_transfer(
         destination_params = prompt(destination_questions(xcm_json))
 
         if (already_added_destination):
-            fee_mode = FeeMode(already_added_destination.destination.fee.mode)
+            fee_mode = FeeMode(
+                type=destination_params.get('fee_type'),
+                value=already_added_destination.destination.fee.mode.value
+            )
         else:
             fee_mode = FeeMode(
                 type=destination_params.get('fee_type')
