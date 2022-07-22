@@ -114,7 +114,7 @@ def build_xcm_transfer(
         if (already_added_destination):
             fee_mode = FeeMode(
                 type=destination_params.get('fee_type'),
-                value=already_added_destination.destination.fee.mode.value
+                value=str(already_added_destination.destination.fee.mode.value)
             )
         else:
             fee_mode = FeeMode(
