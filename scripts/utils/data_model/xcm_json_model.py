@@ -60,8 +60,8 @@ class Fee(BaseObject):
             raise Exception(
                 'Fee function is not available for network %s' % network.name)
 
-        self.mode.value = base_fee_and_multiplier(base_fee)
-        return self.mode.value
+        self.mode.value = str(base_fee_and_multiplier(base_fee))
+        return str(self.mode.value)
 
 
 class Destination(BaseObject):
