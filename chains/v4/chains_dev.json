@@ -989,6 +989,10 @@
         ],
         "nodes": [
             {
+                "url": "wss://moonriver.api.onfinality.io/ws?apikey=41935d3d-3d6c-4a90-a0e1-33c065401d05",
+                "name": "OnFinality node"
+            },
+            {
                 "url": "wss://moonriver.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
             },
@@ -1145,7 +1149,7 @@
         "externalApi": {
             "history": {
                 "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-shiden__bm92Y"
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-shiden"
             }
         }
     },
@@ -2504,7 +2508,7 @@
         "externalApi": {
             "history": {
                 "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-astar__bm92Y"
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-astar"
             }
         },
         "color": "linear-gradient(315deg, #DD037D 0%, #00B1FF 100%)",
@@ -3654,11 +3658,11 @@
         "externalApi": {
             "history": {
                 "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-turing__bm92Y"
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-turing"
             },
             "staking": {
                 "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-turing__bm92Y"
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-turing"
             }
         },
         "color": "linear-gradient(315deg, #B533B3 14.94%, #38EDF1 100%)",
@@ -3796,11 +3800,11 @@
         "externalApi": {
             "staking": {
                 "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadex__bm92Y"
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadex"
             },
             "history": {
                 "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadex__bm92Y"
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadex"
             }
         },
         "color": "linear-gradient(315deg, #2B2D36 23.96%, #606169 100%)",
