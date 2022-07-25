@@ -33,6 +33,7 @@ class Chain(BaseObject):
     options: List[object]
 
     def __init__(self, **kwargs):
+        self.options = []
         for k in kwargs.keys():
             if (k == 'assets'):
                 self.assets = []

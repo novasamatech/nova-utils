@@ -9,6 +9,8 @@ from utils.useful_functions import parse_json_file
 from utils.data_model.xcm_json_model import XcmJson
 from utils.data_model.chain_json_model import Chain
 from utils.useful_functions import find_chain
+from gspread_formatting import *
+
 
 # If modifying these scopes, delete the file token.json.
 SCOPES = ["https://spreadsheets.google.com/feeds", 'https://www.googleapis.com/auth/spreadsheets',
@@ -162,6 +164,8 @@ def create_csv_data_representation(xcm_object: XcmJson, csv_file_path: str):
     csv_rows = prepare_csv_data_array(
         chains, dev_chains_json, xcm_destinations)
 
+    csv_rows.sort()
+
     with open(csv_file_path, 'w') as f:
         writer = csv.writer(f)
 
@@ -187,11 +191,49 @@ def push_sheet_to_google(csv_data, spreadsheet_title):
 
     client.import_csv(spreadsheet.id, data=csv_data)
 
+    format_google_sheet(spreadsheet)
+
+    spreadsheet.get_worksheet(0).insert_row(['added to prod', 'added to dev'])
+    spreadsheet.get_worksheet(0).insert_row(['', 'possible to add'])
+
+
+def format_google_sheet(spreadsheet):
+    worksheet = spreadsheet.get_worksheet(0)
+
+    worksheet.format(["1:1", "A:A"], {'textFormat': {'bold': True}})
+    worksheet.freeze(1,2)
+    worksheet.format(["1:180"], {"horizontalAlignment": "CENTER"})
+    worksheet.set_basic_filter()
+
+    def create_conditional_rule(range, sheet, condition, color):
+        rule = ConditionalFormatRule(
+            ranges=[GridRange.from_a1_range(range, sheet)],
+            booleanRule=BooleanRule(
+                condition=BooleanCondition('TEXT_CONTAINS', condition),
+                format=CellFormat(backgroundColor=color)
+            )
+        )
+        return rule
+
+    rules = get_conditional_format_rules(worksheet)
+    rules.clear()
+    rules.append(create_conditional_rule(
+        range='1:180', sheet=worksheet, condition=['dev'], color=Color.fromHex("#fff2cc")))
+    rules.append(create_conditional_rule(
+        range='1:180', sheet=worksheet, condition=['prod'], color=Color.fromHex("#d9ead3")))
+    rules.append(create_conditional_rule(
+        range='1:180', sheet=worksheet, condition=['possible'], color=Color.fromHex("#c9daf8")))
+    rules.save()
+
 
 def create_xcm_destinations_object_array(chains_json_data):
     xcm_destinations_array = []
     for chain in chains_json_data:
         current_chain = Chain(**chain)
+
+        if 'testnet' in current_chain.options:
+            continue
+
         xcm_destinations_array.append(
             XcmDestinations(
                 chain_id=current_chain.chainId,
