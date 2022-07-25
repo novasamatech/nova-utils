@@ -36,6 +36,14 @@ def find_chain(chains_json, chain_name) -> Chain:
     return None
 
 
+def find_chain_by_id(chains_json, chain_id) -> Chain:
+    for chain_json in chains_json:
+        searched_chain = Chain(**chain_json)
+        if (searched_chain.chainId == chain_id):
+            return searched_chain
+    return None
+
+
 def create_connection_by_url(url):
     try:
         substrate = SubstrateInterface(url=url, use_remote_preset=True)
