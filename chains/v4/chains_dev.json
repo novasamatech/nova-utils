@@ -4364,5 +4364,30 @@
             "testnet",
             "crowdloans"
         ]
+    },
+    {
+        "chainId": "d42e9606a995dfe433dc7955dc2a70f495f350f373daa200098ae84437816ad2",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Tinkernet",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "TNKR",
+                "precision": 12
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://tinker.invarch.network",
+                "name": "InvArch node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/tinkernet.json",
+            "overridesCommon": true
+        },
+        "color": "linear-gradient(315.17deg, #CA28CC 15.89%, #30BCD0 85.66%)",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Tinkernet.svg",
+        "addressPrefix": 117
     }
 ]
