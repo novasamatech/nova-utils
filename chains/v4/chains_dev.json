@@ -1106,7 +1106,12 @@
                 "assetId": 0,
                 "symbol": "SDN",
                 "precision": 18,
-                "priceId": "shiden"
+                "priceId": "shiden",
+                "buyProviders": {
+                     "transak": {
+                        "network": "SHIDEN"
+                    }
+                }
             }
         ],
         "nodes": [
@@ -2461,7 +2466,12 @@
                 "assetId": 0,
                 "symbol": "ASTR",
                 "priceId": "astar",
-                "precision": 18
+                "precision": 18,
+                "buyProviders": {
+                     "transak": {
+                        "network": "ASTAR"
+                    }
+                }
             },
             {
                 "assetId": 1,
