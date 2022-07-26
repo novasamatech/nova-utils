@@ -10,9 +10,9 @@
                 "priceId": "polkadot",
                 "staking": "relaychain",
                 "buyProviders": {
-                     "ramp": {},
-                     "moonpay": {},
-                     "transak": {
+                    "ramp": {},
+                    "moonpay": {},
+                    "transak": {
                         "network": "MAINNET"
                     }
                 }
@@ -828,7 +828,7 @@
                 "priceId": "moonriver",
                 "staking": "parachain",
                 "buyProviders": {
-                     "transak": {
+                    "transak": {
                         "network": "MOONRIVER"
                     }
                 }
@@ -1106,7 +1106,12 @@
                 "assetId": 0,
                 "symbol": "SDN",
                 "precision": 18,
-                "priceId": "shiden"
+                "priceId": "shiden",
+                "buyProviders": {
+                    "transak": {
+                        "network": "SHIDEN"
+                    }
+                }
             }
         ],
         "nodes": [
@@ -2367,7 +2372,7 @@
                 "staking": "parachain",
                 "buyProviders": {
                     "transak": {
-                       "network": "MAINNET"
+                        "network": "MAINNET"
                     }
                 }
             },
@@ -2461,7 +2466,12 @@
                 "assetId": 0,
                 "symbol": "ASTR",
                 "priceId": "astar",
-                "precision": 18
+                "precision": 18,
+                "buyProviders": {
+                    "transak": {
+                        "network": "ASTAR"
+                    }
+                }
             },
             {
                 "assetId": 1,

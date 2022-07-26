@@ -11,9 +11,9 @@
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
                 "staking": "relaychain",
                 "buyProviders": {
-                     "ramp": {},
-                     "moonpay": {},
-                     "transak": {
+                    "ramp": {},
+                    "moonpay": {},
+                    "transak": {
                         "network": "MAINNET"
                     }
                 }
@@ -827,7 +827,7 @@
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonriver.svg",
                 "staking": "parachain",
                 "buyProviders": {
-                     "transak": {
+                    "transak": {
                         "network": "MOONRIVER"
                     }
                 }
@@ -1106,7 +1106,12 @@
                 "symbol": "SDN",
                 "precision": 18,
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Shiden.svg",
-                "priceId": "shiden"
+                "priceId": "shiden",
+                "buyProviders": {
+                    "transak": {
+                        "network": "SHIDEN"
+                    }
+                }
             }
         ],
         "nodes": [
@@ -2364,7 +2369,7 @@
                 "staking": "parachain",
                 "buyProviders": {
                     "transak": {
-                       "network": "MAINNET"
+                        "network": "MAINNET"
                     }
                 }
             },
@@ -2458,7 +2463,12 @@
                 "symbol": "ASTR",
                 "priceId": "astar",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Astar.svg",
-                "precision": 18
+                "precision": 18,
+                "buyProviders": {
+                    "transak": {
+                        "network": "ASTAR"
+                    }
+                }
             },
             {
                 "assetId": 1,
