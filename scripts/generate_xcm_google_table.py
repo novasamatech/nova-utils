@@ -55,10 +55,11 @@ class XcmDestinations:
                 continue
             for asset in self.assets:
                 for chain_asset in chain.get('assets'):
-                    if asset.symbol == chain_asset.get('symbol'):
+                    asset_symbol = re.findall('[A-Z]', asset.symbol)
+                    chain_asset = re.findall('[A-Z]', chain_asset.get('symbol'))
+                    if ''.join(asset_symbol) == ''.join(chain_asset):
                         asset.possible_destinations.append(
                             chain.get('chainId'))
-
 
     def collect_dev_destinations(self, dev_xcm_obj: XcmJson):
         for xcm_chain_source in dev_xcm_obj.chains:
@@ -68,7 +69,6 @@ class XcmDestinations:
                         if asset.asset_id == xcm_asset.assetId:
                             asset.dev_destinations = [
                                 chain_id.destination.chainId for chain_id in xcm_asset.xcmTransfers]
-
 
     def collect_prod_destinations(self, prod_xcm_obj: XcmJson):
         for xcm_chain_source in prod_xcm_obj.chains:
@@ -89,6 +89,11 @@ def prepare_csv_data_array(headers, chain_json, xcm_destinations: List[XcmDestin
             "name": network,
             "chainId": find_chain(chain_json, network).chainId
         })
+
+    for xcm in xcm_destinations:
+        for asset in xcm.assets:
+            if not asset.possible_destinations:
+                xcm.assets.remove(asset)
 
     for xcm in xcm_destinations:
         current_csv_row = []
@@ -201,7 +206,7 @@ def format_google_sheet(spreadsheet):
     worksheet = spreadsheet.get_worksheet(0)
 
     worksheet.format(["1:1", "A:A"], {'textFormat': {'bold': True}})
-    worksheet.freeze(1,2)
+    worksheet.freeze(1, 2)
     worksheet.format(["1:180"], {"horizontalAlignment": "CENTER"})
     worksheet.set_basic_filter()
 
@@ -226,7 +231,7 @@ def format_google_sheet(spreadsheet):
     rules.save()
 
 
-def create_xcm_destinations_object_array(chains_json_data):
+def create_xcm_destinations_object_array(chains_json_data) -> List[XcmDestinations]:
     xcm_destinations_array = []
     for chain in chains_json_data:
         current_chain = Chain(**chain)
