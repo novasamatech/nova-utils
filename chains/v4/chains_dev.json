@@ -10,9 +10,9 @@
                 "priceId": "polkadot",
                 "staking": "relaychain",
                 "buyProviders": {
-                     "ramp": {},
-                     "moonpay": {},
-                     "transak": {
+                    "ramp": {},
+                    "moonpay": {},
+                    "transak": {
                         "network": "MAINNET"
                     }
                 }
@@ -828,7 +828,7 @@
                 "priceId": "moonriver",
                 "staking": "parachain",
                 "buyProviders": {
-                     "transak": {
+                    "transak": {
                         "network": "MOONRIVER"
                     }
                 }
@@ -1108,7 +1108,7 @@
                 "precision": 18,
                 "priceId": "shiden",
                 "buyProviders": {
-                     "transak": {
+                    "transak": {
                         "network": "SHIDEN"
                     }
                 }
@@ -2372,7 +2372,7 @@
                 "staking": "parachain",
                 "buyProviders": {
                     "transak": {
-                       "network": "MAINNET"
+                        "network": "MAINNET"
                     }
                 }
             },
@@ -2468,7 +2468,7 @@
                 "priceId": "astar",
                 "precision": 18,
                 "buyProviders": {
-                     "transak": {
+                    "transak": {
                         "network": "ASTAR"
                     }
                 }

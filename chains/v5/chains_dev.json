@@ -11,9 +11,9 @@
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
                 "staking": "relaychain",
                 "buyProviders": {
-                     "ramp": {},
-                     "moonpay": {},
-                     "transak": {
+                    "ramp": {},
+                    "moonpay": {},
+                    "transak": {
                         "network": "MAINNET"
                     }
                 }
@@ -827,7 +827,7 @@
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonriver.svg",
                 "staking": "parachain",
                 "buyProviders": {
-                     "transak": {
+                    "transak": {
                         "network": "MOONRIVER"
                     }
                 }
@@ -1108,7 +1108,7 @@
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Shiden.svg",
                 "priceId": "shiden",
                 "buyProviders": {
-                     "transak": {
+                    "transak": {
                         "network": "SHIDEN"
                     }
                 }
@@ -2369,7 +2369,7 @@
                 "staking": "parachain",
                 "buyProviders": {
                     "transak": {
-                       "network": "MAINNET"
+                        "network": "MAINNET"
                     }
                 }
             },
@@ -2465,7 +2465,7 @@
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Astar.svg",
                 "precision": 18,
                 "buyProviders": {
-                     "transak": {
+                    "transak": {
                         "network": "ASTAR"
                     }
                 }
