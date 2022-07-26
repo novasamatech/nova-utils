@@ -140,11 +140,10 @@ def collect_data_from_all_sorces(
     return xcm_data_array
 
 
-def create_csv_data_representation(xcm_object: XcmJson, csv_file_path: str):
+def create_csv_data_representation(csv_file_path: str):
     """That function create csv file with data from prod and dev available xcm transfers
 
     Args:
-        xcm_object (XcmJson): Object created from xcm/transfers.json
         csv_file_path (str): path to the file to be created
     """
 
@@ -257,11 +256,10 @@ def main():
     1. Create a xcm object
     2. Generate csv data file
     3. Push csv to google sheet
+    4. Format google sheet
     """
 
-    xcm_object = XcmJson(
-        **parse_json_file(f'./xcm/{xcm_version}/transfers_dev.json'))
-    create_csv_data_representation(xcm_object, csv_file_path)
+    create_csv_data_representation(csv_file_path)
 
     with open(csv_file_path, 'r') as f:
         csv_data_file = f.read()
