@@ -34,6 +34,7 @@ class Chain(BaseObject):
 
     def __init__(self, **kwargs):
         self.options = []
+        self.parentId = None
         for k in kwargs.keys():
             if (k == 'assets'):
                 self.assets = []

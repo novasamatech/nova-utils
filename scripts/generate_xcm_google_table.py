@@ -41,18 +41,37 @@ class XcmAsset:
 
 class XcmDestinations:
     chain_id: str
+    parrent_id: str
     chain_name: str
     assets: List[XcmAsset]
 
-    def __init__(self, chain_id, chain_name, assets):
+    def __init__(self, chain_id, parrent_id, chain_name, assets):
         self.chain_id = chain_id
+        self.parrent_id = parrent_id
         self.chain_name = chain_name
         self.assets = assets
 
     def collect_possible_destinations(self, chain_json):
         for chain in chain_json:
-            if (chain.get('chainId') == self.chain_id):
+
+            if (chain.get('chainId') == self.chain_id): # Skip itself from counting
                 continue
+
+            if self.parrent_id is None: # Relaychain
+                if chain.get('parentId') is None: # Skip relaychain to relaychain direction
+                    continue
+
+                if chain.get('parentId') != self.chain_id: # Skip if parachain from another relaychain
+                    continue
+
+            else:   # Parachain
+                if chain.get('parentId'):
+                    if self.parrent_id != chain.get('parentId'): # Skip if parachains have different relaychain
+                        continue
+                else:
+                    if chain.get('chainId') != self.parrent_id: # Skip if current parachain form another relaychain
+                        continue
+
             for asset in self.assets:
                 for chain_asset in chain.get('assets'):
                     asset_symbol = re.findall('[A-Z]', asset.symbol)
@@ -241,6 +260,7 @@ def create_xcm_destinations_object_array(chains_json_data) -> List[XcmDestinatio
         xcm_destinations_array.append(
             XcmDestinations(
                 chain_id=current_chain.chainId,
+                parrent_id=current_chain.parentId,
                 chain_name=current_chain.name,
                 assets=[XcmAsset(symbol=asset.symbol, asset_id=asset.assetId)
                         for asset in current_chain.assets]
