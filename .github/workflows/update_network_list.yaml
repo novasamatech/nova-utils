@@ -37,29 +37,29 @@ jobs:
         uses: tj-actions/changed-files@v18.2
         with:
           files: |
-            $CHAINS_JSON_PATH
+            ${{ env.CHAINS_JSON_PATH }}
 
       - name: Was dapps.json changed?
         id: dapps
         uses: tj-actions/changed-files@v18.2
         with:
           files: |
-            $DAPPS_JSON_PATH
+            dapps/dapps.json
 
       - name: Was chains_dev changed?
         id: chains_dev
         uses: tj-actions/changed-files@v18.2
         with:
           files: |
-            $DEV_CHAINS_JSON_PATH
+            ${{ env.DEV_CHAINS_JSON_PATH }}
 
       - name: Was xcm list changed?
         id: xcm_chains
         uses: tj-actions/changed-files@v18.2
         with:
           files: |
-            $DEV_XCM_JSON_PATH
-            $XCM_JSON_PATH
+            ${{ env.XCM_JSON_PATH }}
+            ${{ env.DEV_XCM_JSON_PATH }}
 
   chains_update:
     runs-on: ubuntu-latest
