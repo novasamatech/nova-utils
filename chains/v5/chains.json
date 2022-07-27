@@ -14,7 +14,7 @@
                     "ramp": {},
                     "moonpay": {},
                     "transak": {
-                       "network": "MAINNET"
+                        "network": "MAINNET"
                     }
                 }
             }
@@ -780,7 +780,7 @@
                 "staking": "parachain",
                 "buyProviders": {
                     "transak": {
-                       "network": "MAINNET"
+                        "network": "MAINNET"
                     }
                 }
             },
@@ -878,7 +878,7 @@
                 "staking": "parachain",
                 "buyProviders": {
                     "transak": {
-                       "network": "MOONRIVER"
+                        "network": "MOONRIVER"
                     }
                 }
             },
@@ -1096,7 +1096,12 @@
                 "symbol": "SDN",
                 "precision": 18,
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Shiden.svg",
-                "priceId": "shiden"
+                "priceId": "shiden",
+                "buyProviders": {
+                    "transak": {
+                        "network": "SHIDEN"
+                    }
+                }
             }
         ],
         "nodes": [
@@ -2099,7 +2104,12 @@
                 "symbol": "ASTR",
                 "priceId": "astar",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Astar.svg",
-                "precision": 18
+                "precision": 18,
+                "buyProviders": {
+                    "transak": {
+                        "network": "ASTAR"
+                    }
+                }
             },
             {
                 "assetId": 1,
