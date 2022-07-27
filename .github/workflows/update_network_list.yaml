@@ -20,11 +20,13 @@ jobs:
       - name: Checkout current repository to Master branch
         uses: actions/checkout@v1
 
-      - name: Setup variables
+      - name: Setup version to variables
         run: |
           echo "CHAINS_VERSION=$(bash .github/get_actual_json_path.sh chains)" >> "$GITHUB_ENV"
           echo "XCM_VERSION=$(bash .github/get_actual_json_path.sh xcm)" >> "$GITHUB_ENV"
 
+      - name: Setup json paths
+        run: |
           echo "DEV_CHAINS_JSON_PATH=chains/${{ env.CHAINS_VERSION }}/chains_dev.json" >> "$GITHUB_ENV"
           echo "CHAINS_JSON_PATH=chains/${{ env.CHAINS_VERSION }}/chains.json" >> "$GITHUB_ENV"
           echo "DEV_XCM_JSON_PATH=xcm/${{ env.XCM_VERSION }}/transfers_dev.json" >> "$GITHUB_ENV"
