@@ -330,16 +330,6 @@
                 }
             },
             {
-                "assetId": 6,
-                "symbol": "ARIS",
-                "precision": 8,
-                "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/ARIS.svg",
-                "typeExtras": {
-                    "assetId": "16"
-                }
-            },
-            {
                 "assetId": 7,
                 "symbol": "USDT",
                 "precision": 4,
@@ -569,19 +559,6 @@
                     "currencyIdScale": "0x050200",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
                     "existentialDeposit": "1000000000000000000",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "assetId": 13,
-                "symbol": "ARIS",
-                "precision": 8,
-                "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/ARIS.svg",
-                "typeExtras": {
-                    "currencyIdScale": "0x050100",
-                    "currencyIdType": "acala_primitives.currency.CurrencyId",
-                    "existentialDeposit": "10000000",
                     "transfersEnabled": true
                 }
             },
