@@ -1,6 +1,9 @@
 import json
+import os
 
-with open("chains/v4/chains_dev.json") as fin:
+CHAINS_VERISON = os.getenv('CHAINS_VERSION', default = "v4")
+
+with open(f"chains/{CHAINS_VERISON}/chains_dev.json") as fin:
     dev_chains = json.load(fin)
 
 with open("tests/chains_for_testBalance.json") as fin:
