@@ -41,6 +41,7 @@
 | Singular                          | https://singular.rmrk.app/                           | nft                     |
 | Singular 2.0                      | https://singular.app/                                | nft                     |
 | Skybreach                         | https://skybreach.app/                               | nft,evm                 |
+| Snek Swap                         | https://app.basilisk.cloud/#/trade                   | defi                    |
 | Solarbeam                         | https://app.solarbeam.io/exchange/swap               | defi,staking,evm        |
 | Solarflare                        | https://app.solarflare.io/exchange/swap              | defi,staking,evm        |
 | Stellaswap                        | https://app.stellaswap.com/exchange/swap             | defi,staking,evm        |
