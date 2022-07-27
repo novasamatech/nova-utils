@@ -25,10 +25,10 @@ jobs:
           echo "CHAINS_VERSION=$(bash .github/get_actual_json_path.sh chains)" >> "$GITHUB_ENV"
           echo "XCM_VERSION=$(bash .github/get_actual_json_path.sh xcm)" >> "$GITHUB_ENV"
 
-          echo "DEV_CHAINS_JSON_PATH=chains/$CHAINS_VERSION/chains_dev.json" >> "$GITHUB_ENV"
-          echo "CHAINS_JSON_PATH=chains/$CHAINS_VERSION/chains.json" >> "$GITHUB_ENV"
-          echo "DEV_XCM_JSON_PATH=xcm/XCM_VERSION/transfers_dev.json" >> "$GITHUB_ENV"
-          echo "XCM_JSON_PATH=xcm/XCM_VERSION/transfers_dev.json" >> "$GITHUB_ENV"
+          echo "DEV_CHAINS_JSON_PATH=chains/${{ env.CHAINS_VERSION }}/chains_dev.json" >> "$GITHUB_ENV"
+          echo "CHAINS_JSON_PATH=chains/${{ env.CHAINS_VERSION }}/chains.json" >> "$GITHUB_ENV"
+          echo "DEV_XCM_JSON_PATH=xcm/${{ env.XCM_VERSION }}/transfers_dev.json" >> "$GITHUB_ENV"
+          echo "XCM_JSON_PATH=xcm/${{ env.XCM_VERSION }}/transfers_dev.json" >> "$GITHUB_ENV"
 
       - name: Was chains.json changed?
         id: chains
