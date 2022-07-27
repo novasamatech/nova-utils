@@ -8,12 +8,13 @@
                 "symbol": "DOT",
                 "precision": 10,
                 "priceId": "polkadot",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
                 "staking": "relaychain",
                 "buyProviders": {
                     "ramp": {},
                     "moonpay": {},
                     "transak": {
-                        "network": "MAINNET"
+                       "network": "MAINNET"
                     }
                 }
             }
@@ -50,8 +51,7 @@
                 "account": "https://sub.id/{address}"
             }
         ],
-        "color": "linear-gradient(315deg, #D43079 0%, #F93C90 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Polkadot.svg",
         "addressPrefix": 0,
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/polkadot.json",
@@ -60,15 +60,15 @@
         "externalApi": {
             "staking": {
                 "type": "subquery",
-                "url": "https://nova-wallet-polkadot.gapi.subquery.network"
+                "url": "https://nova-polkadot.gapi.subquery.network"
             },
             "history": {
                 "type": "subquery",
-                "url": "https://nova-wallet-polkadot.gapi.subquery.network"
+                "url": "https://nova-polkadot.gapi.subquery.network"
             },
             "crowdloans": {
                 "type": "github",
-                "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/crowdloan/polkadot-dev.json"
+                "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/crowdloan/polkadot.json"
             }
         },
         "options": [
@@ -84,6 +84,7 @@
                 "symbol": "KSM",
                 "precision": 12,
                 "priceId": "kusama",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg",
                 "staking": "relaychain",
                 "buyProviders": {
                     "ramp": {},
@@ -129,8 +130,7 @@
                 "account": "https://sub.id/{address}"
             }
         ],
-        "color": "linear-gradient(315deg, #000000 0%, #3F3F3F 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Kusama.svg",
         "addressPrefix": 2,
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/kusama.json",
@@ -139,11 +139,11 @@
         "externalApi": {
             "staking": {
                 "type": "subquery",
-                "url": "https://nova-wallet-kusama.gapi.subquery.network"
+                "url": "https://nova-kusama.gapi.subquery.network"
             },
             "history": {
                 "type": "subquery",
-                "url": "https://nova-wallet-kusama.gapi.subquery.network"
+                "url": "https://nova-kusama.gapi.subquery.network"
             },
             "crowdloans": {
                 "type": "github",
@@ -162,6 +162,7 @@
                 "assetId": 0,
                 "symbol": "WND",
                 "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Westend.svg",
                 "staking": "relaychain"
             }
         ],
@@ -191,8 +192,7 @@
                 "event": null
             }
         ],
-        "color": "linear-gradient(315deg, #434852 0%, #787F92 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Westend.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
         "addressPrefix": 42,
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/westend.json",
@@ -201,11 +201,11 @@
         "externalApi": {
             "staking": {
                 "type": "subquery",
-                "url": "https://nova-wallet-westend.gapi.subquery.network"
+                "url": "https://nova-westend.gapi.subquery.network"
             },
             "history": {
                 "type": "subquery",
-                "url": "https://nova-wallet-westend.gapi.subquery.network"
+                "url": "https://nova-westend.gapi.subquery.network"
             },
             "crowdloans": {
                 "type": "github",
@@ -215,55 +215,6 @@
         "options": [
             "testnet",
             "crowdloans"
-        ]
-    },
-    {
-        "chainId": "67f9723393ef76214df0118c34bbbd3dbebc8ed46a10973a8c969d48fe7598c9",
-        "name": "Westmint",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "WND",
-                "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Westend.svg"
-            },
-             {
-                "assetId": 1,
-                "symbol": "SIRI",
-                "precision": 10,
-                 "type": "statemine",
-                 "typeExtras": {
-                     "assetId": "81"
-                 }
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://westmint-rpc.polkadot.io",
-                "name": "Parity node"
-            },
-            {
-                "url": "wss://westmint-rpc.dwellir.com",
-                "name": "Dwellir node"
-            }
-        ],
-        "explorers": [
-        {
-            "name": "Statescan",
-            "account": "https://westmint.statescan.io/account/{address}",
-            "extrinsic": "https://westmint.statescan.io/extrinsic/{hash}",
-            "event": "https://westmint.statescan.io/event/{event}"
-        }
-    ],
-        "color": "linear-gradient(315deg, #434852 0%, #787F92 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Statemine-Statemint.svg",
-        "addressPrefix": 42,
-        "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/westmint.json",
-            "overridesCommon": true
-        },
-        "options": [
-            "testnet"
         ]
     },
     {
@@ -362,7 +313,7 @@
             },
             {
                 "url": "wss://statemine-rpc.dwellir.com",
-                "name": "Dwellir node"
+                "name": "Patract node"
             }
         ],
         "explorers": [
@@ -393,8 +344,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-statemine"
             }
         },
-        "color": "linear-gradient(315deg, #1C3816 0%, #4F6B49 75%, #3F3F3F 75.01%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Statemine-Statemint.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Statemine.svg",
         "addressPrefix": 2
     },
     {
@@ -406,6 +356,7 @@
                 "assetId": 0,
                 "symbol": "KAR",
                 "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Karura.svg",
                 "priceId": "karura"
             },
             {
@@ -809,12 +760,109 @@
         "externalApi": {
             "history": {
                 "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-karura__bm92Y"
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-karura"
             }
         },
-        "color": "linear-gradient(315.17deg, #E40C5B 0%, #FF4C3B 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Karura.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Karura.svg",
         "addressPrefix": 8
+    },
+    {
+        "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Moonbeam",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "GLMR",
+                "precision": 18,
+                "priceId": "moonbeam",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonbeam.svg",
+                "staking": "parachain",
+                "buyProviders": {
+                    "transak": {
+                       "network": "MAINNET"
+                    }
+                }
+            },
+            {
+                "assetId": 1,
+                "symbol": "xcDOT",
+                "precision": 10,
+                "type": "statemine",
+                "priceId": "polkadot",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
+                "typeExtras": {
+                    "assetId": "42259045809535163221576417993425387648"
+                }
+            },
+            {
+                "assetId": 2,
+                "symbol": "xcaUSD",
+                "precision": 12,
+                "type": "statemine",
+                "priceId": "tether",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/AUSD.svg",
+                "typeExtras": {
+                    "assetId": "110021739665376159354538090254163045594"
+                }
+            },
+            {
+                "assetId": 3,
+                "symbol": "xcACA",
+                "precision": 12,
+                "type": "statemine",
+                "priceId": "acala",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Acala.svg",
+                "typeExtras": {
+                    "assetId": "224821240862170613278369189818311486111"
+                }
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://moonbeam-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://moonbeam.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://moonbeam.public.blastapi.io",
+                "name": "Blast node"
+            },
+            {
+                "url": "wss://wss.api.moonbeam.network",
+                "name": "Moonbeam Foundation node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://moonbeam.subscan.io/extrinsic/{hash}",
+                "account": "https://moonbeam.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/moonbeam.json",
+            "overridesCommon": true
+        },
+        "externalApi": {
+            "history": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonbeam"
+            },
+            "staking": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonbeam"
+            }
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Moonbeam.svg",
+        "addressPrefix": 1284,
+        "options": [
+            "ethereumBased"
+        ]
     },
     {
         "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
@@ -826,10 +874,11 @@
                 "symbol": "MOVR",
                 "precision": 18,
                 "priceId": "moonriver",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonriver.svg",
                 "staking": "parachain",
                 "buyProviders": {
                     "transak": {
-                        "network": "MOONRIVER"
+                       "network": "MOONRIVER"
                     }
                 }
             },
@@ -989,20 +1038,16 @@
         ],
         "nodes": [
             {
-                "url": "wss://moonriver.api.onfinality.io/ws?apikey=41935d3d-3d6c-4a90-a0e1-33c065401d05",
-                "name": "OnFinality node"
-            },
-            {
-                "url": "wss://moonriver.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://moonriver-rpc.dwellir.com",
                 "name": "Dwellir node"
             },
             {
                 "url": "wss://wss.moonriver.moonbeam.network",
                 "name": "PureStake node"
+            },
+            {
+                "url": "wss://moonriver.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             },
             {
                 "url": "wss://moonriver.public.blastapi.io",
@@ -1035,66 +1080,10 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonriver"
             }
         },
-        "color": "linear-gradient(135deg, #F2A007 19.29%, #A56B00 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonriver.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Moonriver.svg",
         "addressPrefix": 1285,
         "options": [
             "ethereumBased"
-        ]
-    },
-    {
-        "chainId": "91bc6e169807aaa54802737e1c504b2577d4fafedd5a02c10293b1cd60e39527",
-        "parentId": "e1ea3ab1d46ba8f4898b6b4b9c54ffc05282d299f89e84bd0fd08067758c9443",
-        "name": "Moonbase Alpha",
-        "assets": [
-            {
-                "staking": "parachain",
-                "assetId": 0,
-                "symbol": "DEV",
-                "precision": 18
-            },
-            {
-                "assetId": 1,
-                "symbol": "xcUNIT",
-                "precision": 12,
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "42259045809535163221576417993425387648"
-                }
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://rpc.pinknode.io/alphanet/explorer",
-                "name": "Pinknode"
-            },
-            {
-                "url": "wss://moonbeam-alpha.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
-                "url": "wss://wss.testnet.moonbeam.network",
-                "name": "Moonbeam Network node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://moonbase.subscan.io/extrinsic/{hash}",
-                "account": "https://moonbase.subscan.io/account/{address}",
-                "event": null
-            }
-        ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/moonbase.json",
-            "overridesCommon": true
-        },
-        "color": "linear-gradient(315deg, #434852 0%, #787F92 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonriver.svg",
-        "addressPrefix": 1287,
-        "options": [
-            "ethereumBased",
-            "testnet"
         ]
     },
     {
@@ -1106,12 +1095,8 @@
                 "assetId": 0,
                 "symbol": "SDN",
                 "precision": 18,
-                "priceId": "shiden",
-                "buyProviders": {
-                    "transak": {
-                        "network": "SHIDEN"
-                    }
-                }
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Shiden.svg",
+                "priceId": "shiden"
             }
         ],
         "nodes": [
@@ -1126,10 +1111,6 @@
             {
                 "url": "wss://rpc.pinknode.io/shiden/explorer",
                 "name": "Pinknode node"
-            },
-            {
-                "url": "wss://shiden-rpc.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -1144,18 +1125,17 @@
                 "account": "https://sub.id/{address}"
             }
         ],
-        "color": "linear-gradient(135deg, #987ED9 0%, #5132AA 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Shiden.svg",
-        "addressPrefix": 5,
-        "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/shiden.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": {
                 "type": "subquery",
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-shiden"
             }
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Shiden.svg",
+        "addressPrefix": 5,
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/shiden.json",
+            "overridesCommon": true
         }
     },
     {
@@ -1167,8 +1147,8 @@
                 "assetId": 0,
                 "symbol": "BNC",
                 "priceId": "bifrost-native-coin",
-                "staking": "parachain",
-                "precision": 12
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bifrost.svg"
             },
             {
                 "assetId": 1,
@@ -1345,121 +1325,82 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bifrost"
             }
         },
-        "color": "linear-gradient(135deg, #3F3F3F 26.21%, #2EA9E7 26.42%, #4584F5 40.32%, #AC57C0 60.21%, #E65659 80.19%, #FFBF12 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bifrost.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Bifrost_Kusama.svg",
         "addressPrefix": 6
     },
     {
-        "chainId": "9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
+        "chainId": "a85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Kintsugi",
+        "name": "Basilisk",
         "assets": [
             {
                 "assetId": 0,
-                "symbol": "KINT",
+                "symbol": "BSX",
                 "precision": 12,
-                "type": "orml",
-                "priceId": "kintsugi",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kintsugi.svg",
-                "typeExtras": {
-                    "currencyIdScale": "0x000c",
-                    "currencyIdType": "interbtc_primitives.CurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "assetId": 1,
-                "symbol": "kBTC",
-                "precision": 8,
-                "type": "orml",
-                "priceId": "bitcoin",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/KBTC.svg",
-                "typeExtras": {
-                    "currencyIdScale": "0x000b",
-                    "currencyIdType": "interbtc_primitives.CurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "assetId": 2,
-                "symbol": "KSM",
-                "precision": 12,
-                "priceId": "kusama",
-                "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg",
-                "typeExtras": {
-                    "currencyIdScale": "0x000a",
-                    "currencyIdType": "interbtc_primitives.CurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                }
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Basilisk.svg"
             }
         ],
         "nodes": [
             {
-                "url": "wss://api-kusama.interlay.io/parachain",
-                "name": "Kintsugi Labs"
+                "url": "wss://rpc-01.basilisk.hydradx.io",
+                "name": "Hydradx node"
+            },
+            {
+                "url": "wss://basilisk.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://basilisk-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://kintsugi.subscan.io/extrinsic/{hash}",
-                "account": "https://kintsugi.subscan.io/account/{address}",
-                "event": null
-            },
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/kintsugi.json",
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/basilisk.json",
             "overridesCommon": true
         },
         "externalApi": {
             "history": {
                 "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kintsugi"
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-basilisk"
             }
         },
-        "color": "linear-gradient(315deg, #180C2B 0%, #1E3258 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kintsugi.svg",
-        "addressPrefix": 2092
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Basilisk.svg",
+        "addressPrefix": 10041
     },
     {
-        "chainId": "742a2ca70c2fda6cee4f8df98d64c4c670a052d9568058982dad9d5a7a135c5b",
-        "name": "Edgeware",
+        "chainId": "aa3876c1dc8a1afcc2e9a685a49ff7704cfd36ad8c90bf2702b9d1b00cc40011",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Altair",
         "assets": [
             {
                 "assetId": 0,
-                "symbol": "EDG",
+                "symbol": "AIR",
                 "precision": 18,
-                "priceId": "edgeware",
-                "staking": "aura-relaychain"
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Altair.svg",
+                "priceId": "altair"
             }
         ],
         "nodes": [
             {
-                "url": "wss://mainnet.edgewa.re",
-                "name": "Commonwealth Labs"
+                "url": "wss://fullnode.altair.centrifuge.io",
+                "name": "Centrifuge node"
             },
             {
-                "url": "wss://edgeware.api.onfinality.io/public-ws",
+                "url": "wss://altair.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/types/edgeware.json",
-            "overridesCommon": false
-        },
         "explorers": [
             {
                 "name": "Subscan",
-                "extrinsic": "https://edgeware.subscan.io/extrinsic/{hash}",
-                "account": "https://edgeware.subscan.io/account/{address}",
+                "extrinsic": "https://altair.subscan.io/extrinsic/{hash}",
+                "account": "https://altair.subscan.io/account/{address}",
                 "event": null
             },
             {
@@ -1470,52 +1411,15 @@
         "externalApi": {
             "history": {
                 "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-edgeware__bm92Y"
-            },
-            "staking": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-edgeware__bm92Y"
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-altair"
             }
         },
-        "color": "linear-gradient(315deg, #000000 0%, #3F3F3F 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Edgeware.svg",
-        "addressPrefix": 7
-    },
-    {
-        "chainId": "0bd72c1c305172e1275278aaeb3f161e02eccb7a819e63f62d47bd53a28189f8",
-        "name": "Subsocial Solochain",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "SUB",
-                "precision": 10
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://arch.subsocial.network",
-                "name": "Arch node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
-            }
-        ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/subsocial_solo.json",
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/altair.json",
             "overridesCommon": true
         },
-        "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-subsocial-solochain__bm92Y"
-            }
-        },
-        "color": "linear-gradient(315deg, #720497 0%, #F50083 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Subsocial.svg",
-        "addressPrefix": 28
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Altair.svg",
+        "addressPrefix": 136
     },
     {
         "chainId": "64a1c658a48b2e70a7fb1ad4c39eea35022568c20fc44a6e2e3d0a57aee6053b",
@@ -1623,10 +1527,6 @@
             {
                 "url": "wss://parallel-heiko.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
-            },
-            {
-                "url": "wss://heiko-rpc.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "types": {
@@ -1647,90 +1547,40 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-parallel-heiko"
             }
         },
-        "color": "linear-gradient(315deg, #3A55F5 8%, #04E2FF 75%, #3F3F3F 75.01%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Parallel-Heiko.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/ParallelHeiko.svg",
         "addressPrefix": 110
     },
     {
-        "chainId": "a85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755",
-        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Basilisk",
+        "chainId": "742a2ca70c2fda6cee4f8df98d64c4c670a052d9568058982dad9d5a7a135c5b",
+        "name": "Edgeware",
         "assets": [
             {
                 "assetId": 0,
-                "symbol": "BSX",
-                "precision": 12
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://rpc-01.basilisk.hydradx.io",
-                "name": "Hydradx node"
-            },
-            {
-                "url": "wss://basilisk.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
-                "url": "wss://basilisk-rpc.dwellir.com",
-                "name": "Dwellir node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
-            }
-        ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/basilisk.json",
-            "overridesCommon": true
-        },
-        "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-basilisk"
-            }
-        },
-        "color": "linear-gradient(315deg, #5B892B 0%, #97D92D 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Basilisk.svg",
-        "addressPrefix": 10041
-    },
-    {
-        "chainId": "aa3876c1dc8a1afcc2e9a685a49ff7704cfd36ad8c90bf2702b9d1b00cc40011",
-        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Altair",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "AIR",
+                "symbol": "EDG",
                 "precision": 18,
-                "priceId": "altair"
+                "priceId": "edgeware",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Edgeware.svg"
             }
         ],
         "nodes": [
             {
-                "url": "wss://fullnode.altair.centrifuge.io",
-                "name": "Centrifuge"
+                "url": "wss://mainnet.edgewa.re",
+                "name": "Commonwealth Labs"
             },
             {
-                "url": "wss://altair.api.onfinality.io/public-ws",
+                "url": "wss://edgeware.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
-            },
-            {
-                "url": "wss://altair-rpc.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/altair.json",
-            "overridesCommon": true
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/types/edgeware.json",
+            "overridesCommon": false
         },
         "explorers": [
             {
                 "name": "Subscan",
-                "extrinsic": "https://altair.subscan.io/extrinsic/{hash}",
-                "account": "https://altair.subscan.io/account/{address}",
+                "extrinsic": "https://edgeware.subscan.io/extrinsic/{hash}",
+                "account": "https://edgeware.subscan.io/account/{address}",
                 "event": null
             },
             {
@@ -1738,15 +1588,8 @@
                 "account": "https://sub.id/{address}"
             }
         ],
-        "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-altair"
-            }
-        },
-        "color": "linear-gradient(315deg, #A37539 0%, #F5B840 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Altair.svg",
-        "addressPrefix": 136
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Edgeware.svg",
+        "addressPrefix": 7
     },
     {
         "chainId": "d43540ba6d3eb4897c28a77d48cb5b729fea37603cbbfc7a86a73b72adb3be8d",
@@ -1822,7 +1665,7 @@
                 "type": "statemine",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Basilisk.svg",
                 "typeExtras": {
-                    "assetId": "9"
+                    "assetId": "5"
                 }
             },
             {
@@ -1845,27 +1688,6 @@
                 "typeExtras": {
                     "assetId": "7"
                 }
-            },
-            {
-                "assetId": 9,
-                "symbol": "KMA",
-                "precision": 12,
-                "priceId": "calamari-network",
-                "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Calamari.svg",
-                "typeExtras": {
-                    "assetId": "8"
-                }
-            },
-            {
-                "assetId": 10,
-                "symbol": "TUR",
-                "precision": 10,
-                "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Turing.svg",
-                "typeExtras": {
-                    "assetId": "10"
-                }
             }
         ],
         "nodes": [
@@ -1876,10 +1698,6 @@
             {
                 "url": "wss://khala.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
-            },
-            {
-                "url": "wss://khala-rpc.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -1904,8 +1722,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-khala"
             }
         },
-        "color": "linear-gradient(315deg, #0B8789 0%, #36F7FA 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Khala.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Khala.svg",
         "addressPrefix": 30
     },
     {
@@ -1917,6 +1734,7 @@
                 "assetId": 0,
                 "symbol": "KILT",
                 "priceId": "kilt-protocol",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/KILT.svg",
                 "precision": 15
             }
         ],
@@ -1952,44 +1770,8 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kilt"
             }
         },
-        "color": "linear-gradient(135deg, #F86842 0%, #8C175B 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/KILT.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/KILT_Spiritnet.svg",
         "addressPrefix": 38
-    },
-    {
-        "chainId": "a0c6e3bac382b316a68bca7141af1fba507207594c761076847ce358aeedcc21",
-        "name": "KILT Peregrine",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "PILT",
-                "precision": 15
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://peregrine.kilt.io/parachain-public-ws/",
-                "name": "KILT Protocol Node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://kilt-testnet.subscan.io/extrinsic/{hash}",
-                "account": "https://kilt-testnet.subscan.io/account/{address}",
-                "event": null
-            }
-        ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/kilt_peregrine.json",
-            "overridesCommon": true
-        },
-        "color": "linear-gradient(315deg, #434852 0%, #787F92 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/KILT.svg",
-        "addressPrefix": 38,
-        "options": [
-            "testnet"
-        ]
     },
     {
         "chainId": "4ac80c99289841dd946ef92765bf659a307d39189b3ce374a92b5f0415ee17a1",
@@ -2000,6 +1782,7 @@
                 "assetId": 0,
                 "symbol": "KMA",
                 "priceId": "calamari-network",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Calamari.svg",
                 "precision": 12
             }
         ],
@@ -2039,8 +1822,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-calamari"
             }
         },
-        "color": "linear-gradient(315deg, #5C09BA 0%, #C72F9E 58.33%, #FCA027 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Calamari.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Calamari.svg",
         "addressPrefix": 78
     },
     {
@@ -2052,6 +1834,7 @@
                 "assetId": 0,
                 "symbol": "QTZ",
                 "priceId": "quartz",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Quartz.svg",
                 "precision": 18
             }
         ],
@@ -2095,8 +1878,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-quartz"
             }
         },
-        "color": "linear-gradient(315deg, #CB2E41 0%, #ED5B6D 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Quartz.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Quartz.svg",
         "addressPrefix": 255
     },
     {
@@ -2107,7 +1889,8 @@
             {
                 "assetId": 0,
                 "symbol": "NEER",
-                "precision": 18
+                "precision": 18,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bit.Country.svg"
             }
         ],
         "nodes": [
@@ -2130,8 +1913,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bit-country"
             }
         },
-        "color": "linear-gradient(315deg, #391BB5 0%, #DB3795 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bit.Country.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Bit.Country_Pioneer.svg",
         "addressPrefix": 268
     },
     {
@@ -2143,7 +1925,8 @@
                 "assetId": 0,
                 "symbol": "ACA",
                 "priceId": "acala",
-                "precision": 12
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Acala.svg"
             },
             {
                 "assetId": 1,
@@ -2279,10 +2062,6 @@
             {
                 "url": "wss://acala-polkadot.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
-            },
-            {
-                "url": "wss://acala-rpc.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -2304,158 +2083,11 @@
         "externalApi": {
             "history": {
                 "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-acala__bm92Y"
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-acala"
             }
         },
-        "color": "linear-gradient(97.21deg, #E40C5B 0%, #645AFD 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Acala.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Acala.svg",
         "addressPrefix": 10
-    },
-    {
-        "chainId": "5c562e6300954998233c9a40b6b86f3028977e6d32d0da1af207738d19f98c1b",
-        "name": "Acala Mandala",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "ACA",
-                "precision": 12
-            },
-            {
-                "assetId": 1,
-                "symbol": "DOT",
-                "precision": 10,
-                "priceId": "polkadot",
-                "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
-                "typeExtras": {
-                    "currencyIdScale": "0x0002",
-                    "currencyIdType": "acala_primitives.currency.CurrencyId",
-                    "existentialDeposit": "1000000"
-                }
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://acala-mandala.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
-                "url": "wss://mandala.polkawallet.io",
-                "name": "Polkawallet"
-            },
-            {
-                "url": "wss://rpc.pinknode.io/mandala/explorer",
-                "name": "Pinknode node"
-            }
-        ],
-        "options": [
-            "testnet"
-        ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/acala_mandala.json",
-            "overridesCommon": true
-        },
-        "color": "linear-gradient(315deg, #434852 0%, #787F92 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Acala.svg",
-        "addressPrefix": 42
-    },
-    {
-        "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
-        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "Moonbeam",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "GLMR",
-                "precision": 18,
-                "priceId": "moonbeam",
-                "staking": "parachain",
-                "buyProviders": {
-                    "transak": {
-                        "network": "MAINNET"
-                    }
-                }
-            },
-            {
-                "assetId": 1,
-                "symbol": "xcDOT",
-                "precision": 10,
-                "type": "statemine",
-                "priceId": "polkadot",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
-                "typeExtras": {
-                    "assetId": "42259045809535163221576417993425387648"
-                }
-            },
-            {
-                "assetId": 2,
-                "symbol": "xcaUSD",
-                "precision": 12,
-                "type": "statemine",
-                "priceId": "tether",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/AUSD.svg",
-                "typeExtras": {
-                    "assetId": "110021739665376159354538090254163045594"
-                }
-            },
-            {
-                "assetId": 3,
-                "symbol": "xcACA",
-                "precision": 12,
-                "type": "statemine",
-                "priceId": "acala",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Acala.svg",
-                "typeExtras": {
-                    "assetId": "224821240862170613278369189818311486111"
-                }
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://moonbeam-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
-                "url": "wss://moonbeam.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
-                "url": "wss://moonbeam.public.blastapi.io",
-                "name": "Blast node"
-            },
-            {
-                "url": "wss://wss.api.moonbeam.network",
-                "name": "Moonbeam Foundation node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://moonbeam.subscan.io/extrinsic/{hash}",
-                "account": "https://moonbeam.subscan.io/account/{address}",
-                "event": null
-            }
-        ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/moonbeam.json",
-            "overridesCommon": true
-        },
-        "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonbeam"
-            },
-            "staking": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonbeam"
-            }
-        },
-        "color": "linear-gradient(135deg, #53CBC8 0%, #11807D 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonbeam.svg",
-        "addressPrefix": 1284,
-        "options": [
-            "ethereumBased"
-        ]
     },
     {
         "chainId": "9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6",
@@ -2466,12 +2098,8 @@
                 "assetId": 0,
                 "symbol": "ASTR",
                 "priceId": "astar",
-                "precision": 18,
-                "buyProviders": {
-                    "transak": {
-                        "network": "ASTAR"
-                    }
-                }
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Astar.svg",
+                "precision": 18
             },
             {
                 "assetId": 1,
@@ -2493,10 +2121,6 @@
             {
                 "url": "wss://astar.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
-            },
-            {
-                "url": "wss://astar-rpc.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -2521,8 +2145,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-astar"
             }
         },
-        "color": "linear-gradient(315deg, #DD037D 0%, #00B1FF 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Astar.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Astar.svg",
         "addressPrefix": 5,
         "additional": {
             "defaultTip": "1000000"
@@ -2556,7 +2179,7 @@
                 "precision": 10,
                 "priceId": "polkadot",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/sDOT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
                 "typeExtras": {
                     "assetId": "1001"
                 }
@@ -2603,10 +2226,6 @@
             {
                 "url": "wss://parallel.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
-            },
-            {
-                "url": "wss://parallel-rpc.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -2631,8 +2250,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-parallel"
             }
         },
-        "color": "linear-gradient(315deg, #5314F1 8%, #04E2FF 75%, #D43079 75.01%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Parallel-Heiko.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Parallel.svg",
         "addressPrefix": 172
     },
     {
@@ -2644,6 +2262,7 @@
                 "assetId": 0,
                 "symbol": "CLV",
                 "precision": 18,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Clover.svg",
                 "priceId": "clover-finance"
             }
         ],
@@ -2675,8 +2294,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-clover"
             }
         },
-        "color": "linear-gradient(315deg, #4AA7CA 0%, #56D5A7 75%, #D43079 75.01%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Clover.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/CLV_Parachain.svg",
         "addressPrefix": 128
     },
     {
@@ -2707,13 +2325,13 @@
             }
         ],
         "explorers": [
-        {
-            "name": "Statescan",
-            "account": "https://statemint.statescan.io/account/{address}",
-            "extrinsic": "https://statemint.statescan.io/extrinsic/{hash}",
-            "event": "https://statemint.statescan.io/event/{event}"
-        }
-    ],
+            {
+                "name": "Statescan",
+                "account": "https://statemint.statescan.io/account/{address}",
+                "extrinsic": "https://statemint.statescan.io/extrinsic/{hash}",
+                "event": "https://statemint.statescan.io/event/{event}"
+            }
+        ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/statemint.json",
             "overridesCommon": true
@@ -2724,9 +2342,38 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-statemint"
             }
         },
-        "color": "linear-gradient(315deg, #23371A 0%, #89C62D 75%, #D43079 75.01%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Statemine-Statemint.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Statemint.svg",
         "addressPrefix": 0
+    },
+    {
+        "chainId": "0bd72c1c305172e1275278aaeb3f161e02eccb7a819e63f62d47bd53a28189f8",
+        "name": "Subsocial Solochain",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "SUB",
+                "precision": 10,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Subsocial.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://arch.subsocial.network",
+                "name": "Arch node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Sub.ID",
+                "account": "https://sub.id/{address}"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/subsocial_solo.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Subsocial_Solochain.svg",
+        "addressPrefix": 28
     },
     {
         "chainId": "631ccc82a078481584041656af292834e1ae6daab61d2875b4dd0c14bb9b17bc",
@@ -2737,6 +2384,7 @@
                 "assetId": 0,
                 "symbol": "XRT",
                 "precision": 9,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Robonomics.svg",
                 "priceId": "robonomics-network"
             }
         ],
@@ -2768,8 +2416,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-robonomics"
             }
         },
-        "color": "linear-gradient(315deg, #2A4ECB 0%, #4CABEC 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Robonomics.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Robonomics.svg",
         "addressPrefix": 32
     },
     {
@@ -2795,14 +2442,6 @@
                 "name": "Encointer association node"
             }
         ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://encointer.subscan.io/extrinsic/{hash}",
-                "account": "https://encointer.subscan.io/account/{address}",
-                "event": null
-            }
-        ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/encointer.json",
             "overridesCommon": true
@@ -2813,9 +2452,87 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-encointer"
             }
         },
-        "color": "linear-gradient(315deg, #001BC4 0%, #3F59FF 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Encointer.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Encointer.svg",
         "addressPrefix": 2
+    },
+    {
+        "chainId": "9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Kintsugi",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "KINT",
+                "precision": 12,
+                "type": "orml",
+                "priceId": "kintsugi",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kintsugi.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x000c",
+                    "currencyIdType": "interbtc_primitives.CurrencyId",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 1,
+                "symbol": "kBTC",
+                "precision": 8,
+                "type": "orml",
+                "priceId": "bitcoin",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/KBTC.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x000b",
+                    "currencyIdType": "interbtc_primitives.CurrencyId",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 2,
+                "symbol": "KSM",
+                "precision": 12,
+                "priceId": "kusama",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x000a",
+                    "currencyIdType": "interbtc_primitives.CurrencyId",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://api-kusama.interlay.io/parachain",
+                "name": "Kintsugi Labs"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://kintsugi.subscan.io/extrinsic/{hash}",
+                "account": "https://kintsugi.subscan.io/account/{address}",
+                "event": null
+            },
+            {
+                "name": "Sub.ID",
+                "account": "https://sub.id/{address}"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/kintsugi.json",
+            "overridesCommon": true
+        },
+        "externalApi": {
+            "history": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kintsugi"
+            }
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Kintsugi.svg",
+        "addressPrefix": 2092
     },
     {
         "chainId": "6811a339673c9daa897944dcdac99c6e2939cc88245ed21951a0a3c9a2be75bc",
@@ -2833,10 +2550,6 @@
             {
                 "url": "wss://picasso-rpc.composable.finance",
                 "name": "Composable node"
-            },
-            {
-                "url": "wss://picasso-rpc.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -2857,8 +2570,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-picasso"
             }
         },
-        "color": "linear-gradient(315deg, #D57923 0%, #F8A65A 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Picasso.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Picasso.svg",
         "addressPrefix": 49
     },
     {
@@ -2869,7 +2581,6 @@
             {
                 "assetId": 0,
                 "symbol": "ZTG",
-                "staking": "parachain",
                 "precision": 10,
                 "priceId": "zeitgeist",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Zeitgeist.svg"
@@ -2889,10 +2600,6 @@
                 "name": "OnFinality node"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/zeitgeist.json",
-            "overridesCommon": true
-        },
         "explorers": [
             {
                 "name": "Subscan",
@@ -2905,18 +2612,17 @@
                 "account": "https://sub.id/{address}"
             }
         ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/zeitgeist.json",
+            "overridesCommon": true
+        },
         "externalApi": {
             "history": {
                 "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-zeitgeist__bm92Y"
-            },
-            "staking": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-zeitgeist__bm92Y"
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-zeitgeist"
             }
         },
-        "color": "linear-gradient(315deg, #132849 0%, #2C5AA6 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Zeitgeist.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Zeitgeist.svg",
         "addressPrefix": 73
     },
     {
@@ -2951,8 +2657,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kico"
             }
         },
-        "color": "linear-gradient(315deg, #248A63 0%, #58B18F 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/KICO.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/KICO.svg",
         "addressPrefix": 42
     },
     {
@@ -2996,8 +2701,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-litmus"
             }
         },
-        "color": "linear-gradient(315deg, #4A22E1 0%, #7657EF 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Litmus.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Litmus.svg",
         "addressPrefix": 131
     },
     {
@@ -3041,8 +2745,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-crab"
             }
         },
-        "color": "linear-gradient(315deg, #E6335B 0%, #0036F5 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Crab.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Crab.svg",
         "addressPrefix": 42
     },
     {
@@ -3079,8 +2782,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-subsocial"
             }
         },
-        "color": "linear-gradient(315deg, #0C0011 0%, #681391 75%, #3F3F3F 75.01%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Subsocial.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Subsocial_Parachain.svg",
         "addressPrefix": 28
     },
     {
@@ -3124,8 +2826,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-shadow"
             }
         },
-        "color": "linear-gradient(315deg, #D57923 0%, #F8A65A 75%, #3F3F3F 75.01%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/CrustShadow.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Crust_Shadow.svg",
         "addressPrefix": 66
     },
     {
@@ -3173,8 +2874,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-integritee"
             }
         },
-        "color": "linear-gradient(315deg, #000C5F 47.14%, #91E3DA 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Integritee.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Integritee.svg",
         "addressPrefix": 13
     },
     {
@@ -3194,10 +2894,6 @@
             {
                 "url": "wss://fullnode.parachain.centrifuge.io",
                 "name": "Centrifuge node"
-            },
-            {
-                "url": "wss://centrifuge-rpc.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -3222,8 +2918,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-centrifuge"
             }
         },
-        "color": "linear-gradient(315.17deg, #000000 0%, #3F3F3F 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Centrifuge.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Centrifuge.svg",
         "addressPrefix": 36
     },
     {
@@ -3245,14 +2940,6 @@
                 "name": "Efinity node"
             }
         ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://efinity.subscan.io/extrinsic/{hash}",
-                "account": "https://efinity.subscan.io/account/{address}",
-                "event": null
-            }
-        ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/efinity.json",
             "overridesCommon": true
@@ -3263,8 +2950,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-efinity"
             }
         },
-        "color": "linear-gradient(315.17deg, #4E6FD4 0%, #7B99F5 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Efinity.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Efinity.svg",
         "addressPrefix": 1110
     },
     {
@@ -3295,8 +2981,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-hydra"
             }
         },
-        "color": "linear-gradient(315.17deg, #081152 19.76%, #F569AD 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/HydraDX.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/HydraDX.svg",
         "addressPrefix": 63
     },
     {
@@ -3417,8 +3102,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-interlay"
             }
         },
-        "color": "linear-gradient(315.17deg, #000000 0%, #3F3F3F 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Interlay.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Interlay.svg",
         "addressPrefix": 2032
     },
     {
@@ -3465,34 +3149,8 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-nodle"
             }
         },
-        "color": "linear-gradient(315.17deg, #50AA85 0%, #57C799 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Nodle.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Nodle.svg",
         "addressPrefix": 37
-    },
-    {
-        "chainId": "55b88a59dded27563391d619d805572dd6b6b89d302b0dd792d01b3c41cfe5b1",
-        "name": "Singular testnet",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "KSM",
-                "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://staging.node.rmrk.app",
-                "name": "Singular DEV node"
-            }
-        ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/singular_testnet.json",
-            "overridesCommon": true
-        },
-        "color": "linear-gradient(315deg, #434852 0%, #787F92 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Testnet.svg",
-        "addressPrefix": 0
     },
     {
         "chainId": "1bb969d85965e4bb5a651abbedf21a54b6b31a21f66b5401cc3f1e286268d736",
@@ -3531,8 +3189,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-phala"
             }
         },
-        "color": "linear-gradient(315deg, #78930F 0%, #D1F068 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Phala.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Phala.svg",
         "addressPrefix": 30
     },
     {
@@ -3675,8 +3332,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-turing"
             }
         },
-        "color": "linear-gradient(315deg, #B533B3 14.94%, #38EDF1 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Turing.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Turing.svg",
         "addressPrefix": 51
     },
     {
@@ -3686,8 +3342,8 @@
             {
                 "assetId": 0,
                 "symbol": "AZERO",
-                "staking": "aleph-zero",
                 "priceId": "aleph-zero",
+                "staking": "aleph-zero",
                 "precision": 12,
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Aleph_zero.svg"
             }
@@ -3715,13 +3371,12 @@
                 "type": "subquery",
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-aleph-zero"
             },
-             "staking": {
+            "staking": {
                 "type": "subquery",
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-aleph-zero"
             }
         },
-        "color": "linear-gradient(315deg, #008464 20%, #69E6C8 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Aleph_zero.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/AlephZero.svg",
         "addressPrefix": 42
     },
     {
@@ -3764,8 +3419,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-composable"
             }
         },
-        "color": "linear-gradient(315.17deg, #7A0354 13.48%, #8E0076 46.85%, #F139FE 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Composable.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Composable.svg",
         "addressPrefix": 49
     },
     {
@@ -3817,8 +3471,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadex"
             }
         },
-        "color": "linear-gradient(315deg, #2B2D36 23.96%, #606169 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadex.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Polkadex.svg",
         "addressPrefix": 88
     },
     {
@@ -3829,7 +3482,8 @@
             {
                 "assetId": 0,
                 "symbol": "OTP",
-                "precision": 12
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/OriginTrail.svg"
             }
         ],
         "nodes": [
@@ -3848,8 +3502,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-origin-trail"
             }
         },
-        "color": "linear-gradient(315deg, #B62EB1 0%, #E96CE5 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/OriginTrail.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/OriginTrail.svg",
         "addressPrefix": 101
     },
     {
@@ -3861,7 +3514,8 @@
                 "assetId": 0,
                 "symbol": "BNC",
                 "precision": 12,
-                "priceId": "bifrost-native-coin"
+                "priceId": "bifrost-native-coin",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bifrost.svg"
             }
         ],
         "nodes": [
@@ -3880,8 +3534,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bifrost-polkadot"
             }
         },
-        "color": "linear-gradient(135deg, #D43079 26.21%, #2EA9E7 26.42%, #4584F5 40.32%, #AC57C0 60.21%, #E65659 80.19%, #FFBF12 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bifrost.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Bifrost_Polkadot.svg",
         "addressPrefix": 6
     },
     {
@@ -3893,6 +3546,7 @@
                 "assetId": 0,
                 "symbol": "LIT",
                 "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Litentry.svg",
                 "priceId": "litentry"
             }
         ],
@@ -3912,8 +3566,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-litentry"
             }
         },
-        "color": "linear-gradient(315deg, #0E7227 0%, #5CC774 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Litentry.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Litentry.svg",
         "addressPrefix": 31
     },
     {
@@ -3924,7 +3577,8 @@
             {
                 "assetId": 0,
                 "symbol": "UNQ",
-                "precision": 18
+                "precision": 18,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Unique.svg"
             }
         ],
         "nodes": [
@@ -3959,8 +3613,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-unique"
             }
         },
-        "color": "linear-gradient(315deg, #267DEE 0%, #5FC2F9 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Unique.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Unique.svg",
         "addressPrefix": 7391
     },
     {
@@ -3972,6 +3625,7 @@
                 "assetId": 0,
                 "symbol": "DORA",
                 "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/DoraFactory.svg",
                 "priceId": "dora-factory"
             }
         ],
@@ -3991,8 +3645,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-dora"
             }
         },
-        "color": "linear-gradient(315deg, #E04E02 0%, #FCB350 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/DoraFactory.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/DoraFactory.svg",
         "addressPrefix": 128
     },
     {
@@ -4064,103 +3717,8 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/mangatax.json",
             "overridesCommon": true
         },
-        "color": "linear-gradient(315deg, #009F80 24.99%, #95E7D7 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/MangataX.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/MangataX.svg",
         "addressPrefix": 42
-    },
-    {
-        "chainId": "05d5279c52c484cc80396535a316add7d47b1c5b9e0398dd1f584149341460c5",
-        "name": "Aleph Zero Testnet",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "TZERO",
-                "staking": "aleph-zero",
-                "priceId": "aleph-zero",
-                "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Aleph_zero.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://ws.test.azero.dev",
-                "name": "Aleph Zero node"
-            }
-        ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/aleph_zero_testnet.json",
-            "overridesCommon": true
-        },
-        "color": "linear-gradient(315deg, #434852 0%, #787F92 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Aleph_zero.svg",
-        "addressPrefix": 42,
-        "options": [
-            "testnet"
-        ]
-    },
-    {
-        "chainId": "e1ea3ab1d46ba8f4898b6b4b9c54ffc05282d299f89e84bd0fd08067758c9443",
-        "name": "Moonbase Relay Testnet",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "UNIT",
-                "precision": 12
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://frag-moonbase-relay-rpc-ws.g.moonbase.moonbeam.network",
-                "name": "PureStake node"
-            }
-        ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/moonbase_relay.json",
-            "overridesCommon": true
-        },
-        "color": "linear-gradient(315deg, #434852 0%, #787F92 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonriver.svg",
-        "addressPrefix": 42,
-        "options": [
-            "testnet"
-        ]
-    },
-    {
-        "chainId": "3c3183f6d701500766ff7d147b79c4f10014a095eaaa98e960dcef6b3ead50ee",
-        "name": "Polymesh Testnet",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "POLYX",
-                "precision": 6,
-                "priceId": "polymesh",
-                "staking": "relaychain"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://staging-rpc.polymesh.live",
-                "name": "Polymath node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://polymesh.subscan.io/extrinsic/{hash}",
-                "account": "https://polymesh.subscan.io/account/{address}",
-                "event": null
-            }
-        ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/polymesh.json",
-            "overridesCommon": true
-        },
-        "color": "linear-gradient(315deg, #434852 0%, #787F92 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polymesh.svg",
-        "addressPrefix": 42,
-        "options": [
-            "testnet"
-        ]
     },
     {
         "chainId": "0e06260459b4f9034aba0a75108c08ed73ea51d2763562749b1d3600986c4ea5",
@@ -4170,7 +3728,8 @@
             {
                 "assetId": 0,
                 "symbol": "PCHU",
-                "precision": 18
+                "precision": 18,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Pichiu.svg"
             }
         ],
         "nodes": [
@@ -4189,8 +3748,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-pichiu"
             }
         },
-        "color": "linear-gradient(315deg, #A91056 0%, #F34594 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Pichiu.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Pichiu.svg",
         "addressPrefix": 42
     },
     {
@@ -4201,7 +3759,8 @@
             {
                 "assetId": 0,
                 "symbol": "KAB",
-                "precision": 12
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kabocha.svg"
             }
         ],
         "nodes": [
@@ -4220,8 +3779,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kabocha"
             }
         },
-        "color": "linear-gradient(315deg, #C9B904 0%, #D3CD4A 66.15%, #FDF775 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kabocha.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Kabocha.svg",
         "addressPrefix": 27
     },
     {
@@ -4233,6 +3791,7 @@
                 "assetId": 0,
                 "symbol": "DHX",
                 "precision": 18,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/DataHighway.svg",
                 "priceId": "datahighway"
             }
         ],
@@ -4252,8 +3811,7 @@
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-tanganika"
             }
         },
-        "color": "linear-gradient(315deg, #7D20BF 15.1%, #584DDB 57.81%, #51BEF9 94.27%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/DataHighway.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Tanganika_DataHighway.svg",
         "addressPrefix": 33
     },
     {
@@ -4264,7 +3822,8 @@
             {
                 "assetId": 0,
                 "symbol": "BAJU",
-                "precision": 12
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bajun.svg"
             }
         ],
         "nodes": [
@@ -4277,14 +3836,7 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/bajun.json",
             "overridesCommon": true
         },
-        "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bajun__bm92Y"
-            }
-        },
-        "color": "linear-gradient(315deg, #DF5262 16.15%, #EC725D 53.13%, #F38861 75.32%, #3F3F3F 75.41%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bajun.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Bajun.svg",
         "addressPrefix": 1337
     },
     {
@@ -4295,7 +3847,8 @@
             {
                 "assetId": 0,
                 "symbol": "IMBU",
-                "precision": 12
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Imbue.svg"
             }
         ],
         "nodes": [
@@ -4308,96 +3861,7 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/imbue.json",
             "overridesCommon": true
         },
-        "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-imbue__bm92Y"
-            }
-        },
-        "color": "linear-gradient(315.17deg, #7CB00B 12.5%, #B5FF14 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Imbue.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Imbue.svg",
         "addressPrefix": 42
-    },
-    {
-        "chainId": "a834e4bd816a126565e6a06a7582ceb88b4419e1f926e573ca0f323cf778cd5f",
-        "name": "Arctic Relay Testnet",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "Unit",
-                "precision": 12,
-                "staking": "relaychain"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://arctic-relaychain.web3labs.com:9949/",
-                "name": "Arctic node"
-            }
-        ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/arctic_relay_testnet.json",
-            "overridesCommon": true
-        },
-        "color": "linear-gradient(315deg, #434852 0%, #787F92 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Rococo.svg",
-        "addressPrefix": 42,
-        "options": [
-            "testnet",
-            "crowdloans"
-        ]
-    },
-    {
-        "chainId": "6408de7737c59c238890533af25896a2c20608d8b380bb01029acb392781063e",
-        "name": "Rococo Testnet",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "ROC",
-                "precision": 12
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://rococo-rpc.polkadot.io/",
-                "name": "Rococo node"
-            }
-        ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/rococo.json",
-            "overridesCommon": true
-        },
-        "color": "linear-gradient(315deg, #434852 0%, #787F92 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Rococo.svg",
-        "addressPrefix": 42,
-        "options": [
-            "testnet",
-            "crowdloans"
-        ]
-    },
-    {
-        "chainId": "d42e9606a995dfe433dc7955dc2a70f495f350f373daa200098ae84437816ad2",
-        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Tinkernet",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "TNKR",
-                "precision": 12
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://tinker.invarch.network",
-                "name": "InvArch node"
-            }
-        ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/tinkernet.json",
-            "overridesCommon": true
-        },
-        "color": "linear-gradient(315.17deg, #CA28CC 15.89%, #30BCD0 85.66%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Tinkernet.svg",
-        "addressPrefix": 117
     }
 ]
