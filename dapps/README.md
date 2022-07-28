@@ -5,6 +5,7 @@
 | Acala Rewards Claim               | https://distribution.acala.network/claim/acala       | crowdloans              |
 | ArthSwap                          | https://app.arthswap.org/#/swap                      | defi,staking,evm        |
 | Astar DApp Hub                    | https://portal.astar.network/                        | defi,staking,evm        |
+| Basilisk Snek Swap                | https://app.basilisk.cloud/#/trade                   | defi                    |
 | Beamswap                          | https://app.beamswap.io/exchange/swap                | defi,staking,evm        |
 | Bifrost App                       | https://bifrost.app/                                 | defi,crowdloans         |
 | Bit.Country Pioneer Rewards Claim | https://ksmcrowdloan.bit.country/reward              | crowdloans              |
@@ -41,7 +42,6 @@
 | Singular                          | https://singular.rmrk.app/                           | nft                     |
 | Singular 2.0                      | https://singular.app/                                | nft                     |
 | Skybreach                         | https://skybreach.app/                               | nft,evm                 |
-| Snek Swap                         | https://app.basilisk.cloud/#/trade                   | defi                    |
 | Solarbeam                         | https://app.solarbeam.io/exchange/swap               | defi,staking,evm        |
 | Solarflare                        | https://app.solarflare.io/exchange/swap              | defi,staking,evm        |
 | Stellaswap                        | https://app.stellaswap.com/exchange/swap             | defi,staking,evm        |
