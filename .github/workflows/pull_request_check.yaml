@@ -32,7 +32,7 @@ jobs:
       - name: Setup json paths
         run: |
           echo "DEV_XCM_JSON_PATH=xcm/${{ env.XCM_VERSION }}/transfers_dev.json" >> "$GITHUB_ENV"
-          echo "XCM_JSON_PATH=xcm/${{ env.XCM_VERSION }}/transfers_dev.json" >> "$GITHUB_ENV"
+          echo "XCM_JSON_PATH=xcm/${{ env.XCM_VERSION }}/transfers.json" >> "$GITHUB_ENV"
 
       - name: Was xcm file changed?
         id: xcm
