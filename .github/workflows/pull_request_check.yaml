@@ -4,7 +4,7 @@ on:
   pull_request:
 
 env:
-  PAT_TOKEN: ${{ secrets.PAT }}
+  PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
 
 jobs:
   linter-check:
