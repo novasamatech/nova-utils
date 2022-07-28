@@ -1,4 +1,4 @@
-name: README build
+name: Update project metadata
 
 on:
   push:
@@ -9,19 +9,32 @@ jobs:
   check:
     runs-on: ubuntu-latest
     outputs:
-      v4chains: ${{ steps.v4chains.outputs.any_changed }}
+      chains: ${{ steps.chains.outputs.any_changed }}
       dapps: ${{ steps.dapps.outputs.any_changed }}
-      v4chains_dev: ${{ steps.v4chains_dev.outputs.any_changed }}
+      chains_dev: ${{ steps.chains_dev.outputs.any_changed }}
+      xcm: ${{ steps.xcm_chains.outputs.any_changed }}
     steps:
       - name: Checkout current repository to Master branch
         uses: actions/checkout@v1
 
-      - name: Was v4/chains.json changed?
-        id: v4chains
+      - name: Setup version to variables
+        run: |
+          echo "CHAINS_VERSION=$(bash .github/get_actual_json_path.sh chains)" >> "$GITHUB_ENV"
+          echo "XCM_VERSION=$(bash .github/get_actual_json_path.sh xcm)" >> "$GITHUB_ENV"
+
+      - name: Setup json paths
+        run: |
+          echo "DEV_CHAINS_JSON_PATH=chains/${{ env.CHAINS_VERSION }}/chains_dev.json" >> "$GITHUB_ENV"
+          echo "CHAINS_JSON_PATH=chains/${{ env.CHAINS_VERSION }}/chains.json" >> "$GITHUB_ENV"
+          echo "DEV_XCM_JSON_PATH=xcm/${{ env.XCM_VERSION }}/transfers_dev.json" >> "$GITHUB_ENV"
+          echo "XCM_JSON_PATH=xcm/${{ env.XCM_VERSION }}/transfers_dev.json" >> "$GITHUB_ENV"
+
+      - name: Was chains.json changed?
+        id: chains
         uses: tj-actions/changed-files@v18.2
         with:
           files: |
-            chains/v4/chains.json
+            ${{ env.CHAINS_JSON_PATH }}
 
       - name: Was dapps.json changed?
         id: dapps
@@ -31,19 +44,32 @@ jobs:
             dapps/dapps.json
 
       - name: Was chains_dev changed?
-        id: v4chains_dev
+        id: chains_dev
         uses: tj-actions/changed-files@v18.2
         with:
           files: |
-            chains/v4/chains_dev.json
+            ${{ env.DEV_CHAINS_JSON_PATH }}
+
+      - name: Was xcm list changed?
+        id: xcm_chains
+        uses: tj-actions/changed-files@v18.2
+        with:
+          files: |
+            ${{ env.XCM_JSON_PATH }}
+            ${{ env.DEV_XCM_JSON_PATH }}
 
   chains_update:
     runs-on: ubuntu-latest
     needs: check
-    if: always() && (needs.check.outputs.v4chains == 'true')
+    if: always() && (needs.check.outputs.chains == 'true')
     steps:
       - name: Checkout current repository to Master branch
         uses: actions/checkout@v1
+
+      - name: Setup version to variables
+        run: |
+          echo "CHAINS_VERSION=$(bash .github/get_actual_json_path.sh chains)" >> "$GITHUB_ENV"
+          echo "XCM_VERSION=$(bash .github/get_actual_json_path.sh xcm)" >> "$GITHUB_ENV"
 
       - name: Install dependencies
         run: pip install -r requirements.txt
@@ -51,18 +77,23 @@ jobs:
         run: python ./scripts/generate_network_list.py
 
       - name: Commit files
+        id: commit
+        continue-on-error: true
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add ./chains/README.md
           git commit -m "Update networks"
+
       - name: Push changes
+        if: steps.commit.outcome == 'success'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: refs/heads/update-networks-${{github.run_number}}
 
       - uses: repo-sync/pull-request@v2
+        if: steps.commit.outcome == 'success'
         name: pull-request
         with:
           source_branch: "update-networks-${{github.run_number}}"
@@ -82,12 +113,19 @@ jobs:
       - name: Checkout current repository to Master branch
         uses: actions/checkout@v1
 
+      - name: Setup version to variables
+        run: |
+          echo "CHAINS_VERSION=$(bash .github/get_actual_json_path.sh chains)" >> "$GITHUB_ENV"
+          echo "XCM_VERSION=$(bash .github/get_actual_json_path.sh xcm)" >> "$GITHUB_ENV"
+
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Generate new Dapps list file
         run: python ./scripts/generate_dapps_list.py
 
       - name: Commit files
+        id: commit
+        continue-on-error: true
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
@@ -95,12 +133,14 @@ jobs:
           git commit -m "Update dapps list"
 
       - name: Push changes
+        if: steps.commit.outcome == 'success'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: refs/heads/update-dapps-${{github.run_number}}
 
       - uses: repo-sync/pull-request@v2
+        if: steps.commit.outcome == 'success'
         name: pull-request
         with:
           source_branch: "update-dapps-${{github.run_number}}"
@@ -115,10 +155,15 @@ jobs:
   test_json_update:
     runs-on: ubuntu-latest
     needs: check
-    if: always() && (needs.check.outputs.v4chains_dev == 'true')
+    if: always() && (needs.check.outputs.chains_dev == 'true')
     steps:
       - name: Checkout current repository to Master branch
         uses: actions/checkout@v1
+
+      - name: Setup version to variables
+        run: |
+          echo "CHAINS_VERSION=$(bash .github/get_actual_json_path.sh chains)" >> "$GITHUB_ENV"
+          echo "XCM_VERSION=$(bash .github/get_actual_json_path.sh xcm)" >> "$GITHUB_ENV"
 
       - name: Install dependencies
         run: pip install -r requirements.txt
@@ -126,6 +171,8 @@ jobs:
         run: python ./scripts/update_test_data.py
 
       - name: Commit files
+        id: commit
+        continue-on-error: true
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
@@ -133,12 +180,14 @@ jobs:
           git commit -m "Update test data file"
 
       - name: Push changes
+        if: steps.commit.outcome == 'success'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: refs/heads/update-tests-${{github.run_number}}
 
       - uses: repo-sync/pull-request@v2
+        if: steps.commit.outcome == 'success'
         name: pull-request
         with:
           source_branch: "update-tests-${{github.run_number}}"
@@ -149,3 +198,25 @@ jobs:
           pr_reviewer: "stepanLav"
           pr_draft: false
           github_token: ${{ secrets.GITHUB_TOKEN }}
+
+
+  xcm_table_update:
+    runs-on: ubuntu-latest
+    needs: check
+    if: always() && (needs.check.outputs.xcm == 'true')
+    steps:
+      - name: Checkout current repository to Master branch
+        uses: actions/checkout@v1
+        with:
+          repository: nova-wallet/support-utils
+
+      - name: Setup version to variables
+        run: |
+          echo "CHAINS_VERSION=$(bash .github/get_actual_json_path.sh chains)" >> "$GITHUB_ENV"
+          echo "XCM_VERSION=$(bash .github/get_actual_json_path.sh xcm)" >> "$GITHUB_ENV"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate new xcm list
+        run: python ./nova-utils/update_xcm_json_file.py
