@@ -64,7 +64,7 @@ jobs:
         with:
           repository: nova-wallet/support-utils
           ref: main
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT }}
 
       - name: Install dependencies
         run: pip install -r requirements.txt
