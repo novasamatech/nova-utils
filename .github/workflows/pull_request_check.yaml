@@ -1,0 +1,62 @@
+name: Check pull requests
+
+on:
+  pull_request:
+
+env:
+  DEV_XCM_JSON_PATH: ${{ secrets.DEV_XCM_JSON_PATH }} # xcm/v2/transfers_dev.json
+  XCM_JSON_PATH: ${{ secrets.XCM_JSON_PATH }} # xcm/v2/transfers.json
+
+
+jobs:
+  linter-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: json-syntax-check
+        uses: limitusus/json-syntax-check@v1
+        with:
+          pattern: "\\.json$"
+
+
+  check-changed-files:
+    needs: linter-check
+    runs-on: ubuntu-latest
+    outputs:
+      xcm: ${{ steps.xcm.outputs.any_changed }}
+    steps:
+      - name: Checkout current repository to Master branch
+        uses: actions/checkout@v1
+
+      - name: Was xcm file changed?
+        id: xcm
+        uses: tj-actions/changed-files@v18.2
+        with:
+          files: |
+            $DEV_XCM_JSON_PATH
+            $XCM_JSON_PATH
+
+
+  create-comment-with-changes:
+    runs-on: ubuntu-latest
+    if: always() && (needs.check.outputs.xcm == 'true')
+    name: Create a comment with xcm changed data
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Build comment message
+        id: message
+        run: >-
+          echo "::set-output name=CHANGED_MESSAGE::$(
+            cat .tool-versions |
+            grep nodejs |
+            sed 's/nodejs \(.*\)$/\1/'
+          )"
+
+      - name: Comment PR
+        uses: thollander/actions-comment-pull-request@v1
+        with:
+          message: |
+            ${{ steps.message.outputs.CHANGED_MESSAGE }} :wave:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
