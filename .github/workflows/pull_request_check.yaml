@@ -58,6 +58,8 @@ jobs:
         run: |
           echo ${{ github.repository }}
           echo ${GITHUB_REF#refs/heads/}
+          echo $(git rev-parse --abbrev-ref HEAD)
+          echo $(git rev-parse --show-toplevel)
 
       - name: Checkout script
         uses: actions/checkout@v3
