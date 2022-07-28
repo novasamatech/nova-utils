@@ -3,10 +3,6 @@ name: Check pull requests
 on:
   pull_request:
 
-env:
-  DEV_XCM_JSON_PATH: ${{ secrets.DEV_XCM_JSON_PATH }} # xcm/v2/transfers_dev.json
-  XCM_JSON_PATH: ${{ secrets.XCM_JSON_PATH }} # xcm/v2/transfers.json
-
 
 jobs:
   linter-check:
@@ -28,6 +24,16 @@ jobs:
       - name: Checkout current repository to Master branch
         uses: actions/checkout@v1
 
+      - name: Setup version to variables
+        run: |
+          echo "CHAINS_VERSION=$(bash .github/get_actual_json_path.sh chains)" >> "$GITHUB_ENV"
+          echo "XCM_VERSION=$(bash .github/get_actual_json_path.sh xcm)" >> "$GITHUB_ENV"
+
+      - name: Setup json paths
+        run: |
+          echo "DEV_XCM_JSON_PATH=xcm/${{ env.XCM_VERSION }}/transfers_dev.json" >> "$GITHUB_ENV"
+          echo "XCM_JSON_PATH=xcm/${{ env.XCM_VERSION }}/transfers_dev.json" >> "$GITHUB_ENV"
+
       - name: Was xcm file changed?
         id: xcm
         uses: tj-actions/changed-files@v18.2
@@ -40,19 +46,31 @@ jobs:
   create-comment-with-changes:
     runs-on: ubuntu-latest
     if: always() && (needs.check.outputs.xcm == 'true')
+    needs: check-changed-files
     name: Create a comment with xcm changed data
+
     steps:
+
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Get variables
+        run: |
+          echo ${{ github.repository }}
+          echo ${GITHUB_REF#refs/heads/}
+
+      - name: Checkout script
+        uses: actions/checkout@v3
+        with:
+          repository: nova-wallet/support-utils
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
       - name: Build comment message
         id: message
-        run: >-
-          echo "::set-output name=CHANGED_MESSAGE::$(
-            cat .tool-versions |
-            grep nodejs |
-            sed 's/nodejs \(.*\)$/\1/'
-          )"
+        run: |
+          echo "CHANGED_MESSAGE=$(python nova-utils/compare_xcm_json.py)" >> "$GITHUB_ENV"
 
       - name: Comment PR
         uses: thollander/actions-comment-pull-request@v1
