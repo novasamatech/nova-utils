@@ -39,8 +39,8 @@ jobs:
         uses: tj-actions/changed-files@v18.2
         with:
           files: |
-            $DEV_XCM_JSON_PATH
-            $XCM_JSON_PATH
+            ${{ env.DEV_XCM_JSON_PATH }}
+            ${{ env.XCM_JSON_PATH }}
 
 
   create-comment-with-changes:
