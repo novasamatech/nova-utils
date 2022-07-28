@@ -45,7 +45,7 @@ jobs:
 
   create-comment-with-changes:
     runs-on: ubuntu-latest
-    if: always() && (needs.check.outputs.xcm == 'true')
+    if: always() && (needs.check-changed-files.outputs.xcm == 'true')
     needs: check-changed-files
     name: Create a comment with xcm changed data
 
