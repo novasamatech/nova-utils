@@ -3459,7 +3459,10 @@
             "overridesCommon": true
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Singular_Testnet.svg",
-        "addressPrefix": 0
+        "addressPrefix": 0,
+        "options": [
+            "testnet"
+        ]
     },
     {
         "chainId": "1bb969d85965e4bb5a651abbedf21a54b6b31a21f66b5401cc3f1e286268d736",
