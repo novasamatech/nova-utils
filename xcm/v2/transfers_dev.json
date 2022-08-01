@@ -890,6 +890,20 @@
                 }
               },
               "type": "xcmpallet-teleport"
+            },
+            {
+              "destination": {
+                "chainId": "e61a41c53f5dcd0beb09df93b34402aada44cb05117b71059cce40a2723a4e97",
+                "assetId": 1,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "233100000000"
+                  },
+                  "instructions": "xcmPalletDest"
+                }
+              },
+              "type": "xcmpallet"
             }
           ]
         }
