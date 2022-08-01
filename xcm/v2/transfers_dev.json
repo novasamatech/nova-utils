@@ -60,7 +60,14 @@
     },
     "DOT": {
       "chainId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-      "multiLocation": {}
+      "multiLocation": {},
+      "reserveFee": {
+        "mode": {
+          "type": "proportional",
+          "value": "117354363236"
+        },
+        "instructions": "xtokensReserve"
+      }
     },
     "GLMR": {
       "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
@@ -89,6 +96,13 @@
       "multiLocation": {
         "parachainId": 2085,
         "generalKey": "0x484b4f"
+      }
+    },
+    "PARA": {
+      "chainId": "64a1c658a48b2e70a7fb1ad4c39eea35022568c20fc44a6e2e3d0a57aee6053b",
+      "multiLocation": {
+        "parachainId": 2012,
+        "generalKey": "0x50415241"
       }
     }
   },
@@ -813,6 +827,29 @@
               "type": "xtokens"
             }
           ]
+        },
+        {
+          "assetId": 4,
+          "assetLocation": "PARA",
+          "assetLocationPath": {
+            "type": "absolute"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "e61a41c53f5dcd0beb09df93b34402aada44cb05117b71059cce40a2723a4e97",
+                "assetId": 0,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "23310000000000"
+                  },
+                  "instructions": "xtokensDest"
+                }
+              },
+              "type": "xtokens"
+            }
+          ]
         }
       ]
     },
@@ -1391,6 +1428,29 @@
                   "mode": {
                     "type": "proportional",
                     "value": "31204285721418"
+                  },
+                  "instructions": "xtokensDest"
+                }
+              },
+              "type": "xtokens"
+            }
+          ]
+        },
+        {
+          "assetId": 0,
+          "assetLocation": "PARA",
+          "assetLocationPath": {
+            "type": "absolute"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "assetId": 4,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "625000000000000"
                   },
                   "instructions": "xtokensDest"
                 }
