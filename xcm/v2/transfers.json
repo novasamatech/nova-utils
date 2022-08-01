@@ -52,6 +52,13 @@
       "multiLocation": {
         "parachainId": 2000,
         "generalKey": "0x0000"
+      },
+      "reserveFee": {
+        "mode": {
+          "type": "proportional",
+          "value": "11655000000000"
+        },
+        "instructions": "xtokensReserve"
       }
     },
     "DOT": {
