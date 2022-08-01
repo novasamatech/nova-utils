@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+  pull_request:
+
 
 jobs:
   check:
@@ -203,12 +205,17 @@ jobs:
   xcm_table_update:
     runs-on: ubuntu-latest
     needs: check
-    if: always() && (needs.check.outputs.xcm == 'true')
+    if: always() && (needs.check.outputs.xcm == 'false')
     steps:
-      - name: Checkout current repository to Master branch
+      - name: Checkout current repository
+        uses: actions/checkout@v1
+
+      - name: Checkout support repo
         uses: actions/checkout@v1
         with:
+          path: ./support
           repository: nova-wallet/support-utils
+          ref: master
           token: ${{ secrets.PAT_TOKEN }}
 
       - name: Setup version to variables
@@ -217,7 +224,13 @@ jobs:
           echo "XCM_VERSION=$(bash .github/get_actual_json_path.sh xcm)" >> "$GITHUB_ENV"
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          cd ../support
+          ls -R
+          pip install -r ./requirements.txt
 
       - name: Generate new xcm list
-        run: python ./nova-utils/update_xcm_json_file.py
+        run: |
+          cd ../support
+          ls -R
+          python ./nova-utils/generate_xcm_google_table.py
