@@ -1219,61 +1219,6 @@
       ]
     },
     {
-      "chainId": "0f62b701fb12d02237a33b84818c11f621653d2b1614c777973babf4652b535d",
-      "assets": [
-        {
-          "assetId": 5,
-          "assetLocation": "HKO",
-          "assetLocationPath": {
-            "type": "absolute"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "64a1c658a48b2e70a7fb1ad4c39eea35022568c20fc44a6e2e3d0a57aee6053b",
-                "assetId": 0,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "6993000000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "chainId": "d43540ba6d3eb4897c28a77d48cb5b729fea37603cbbfc7a86a73b72adb3be8d",
-      "assets": [
-        {
-          "assetId": 7,
-          "assetLocation": "MOVR",
-          "assetLocationPath": {
-            "type": "absolute"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
-                "assetId": 0,
-                "fee": {
-                  "mode": {
-                    "type": "standard"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "chainId": "e61a41c53f5dcd0beb09df93b34402aada44cb05117b71059cce40a2723a4e97",
       "assets": [
         {
