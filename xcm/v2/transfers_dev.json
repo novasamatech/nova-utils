@@ -5,6 +5,13 @@
       "multiLocation": {
         "parachainId": 2000,
         "generalKey": "0x0080"
+      },
+      "reserveFee": {
+        "mode": {
+          "type": "proportional",
+          "value": "11655000000000"
+        },
+        "instructions": "xtokensReserve"
       }
     },
     "KSM": {
@@ -31,6 +38,12 @@
       "multiLocation": {
         "parachainId": 2023,
         "palletInstance": 10
+      },
+      "reserveFee": {
+        "mode": {
+          "type": "standard"
+        },
+        "instructions": "xtokensReserve"
       }
     },
     "BNC": {
@@ -96,6 +109,13 @@
       "multiLocation": {
         "parachainId": 2092,
         "generalKey": "0x000c"
+      },
+      "reserveFee": {
+        "mode": {
+          "type": "proportional",
+          "value": "310800000000"
+        },
+        "instructions": "xtokensReserve"
       }
     },
     "HKO": {
@@ -103,6 +123,13 @@
       "multiLocation": {
         "parachainId": 2085,
         "generalKey": "0x484b4f"
+      },
+      "reserveFee": {
+        "mode": {
+          "type": "proportional",
+          "value": "6993000000000"
+        },
+        "instructions": "xtokensReserve"
       }
     },
     "PARA": {
@@ -110,6 +137,13 @@
       "multiLocation": {
         "parachainId": 2012,
         "generalKey": "0x50415241"
+      },
+      "reserveFee": {
+        "mode": {
+          "type": "proportional",
+          "value": "23310000000000"
+        },
+        "instructions": "xtokensReserve"
       }
     }
   },
