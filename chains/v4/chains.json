@@ -694,12 +694,28 @@
         ],
         "nodes": [
             {
-                "url": "wss://karura-rpc.dwellir.com",
-                "name": "Dwellir node"
+                "url": "wss://karura-rpc-0.aca-api.network",
+                "name": "Acala Foundation node 0"
             },
             {
                 "url": "wss://karura.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
+            },
+            {
+                "url": "wss://karura-rpc-1.aca-api.network",
+                "name": "Acala Foundation node 1"
+            },
+            {
+                "url": "wss://karura-rpc-2.aca-api.network/ws",
+                "name": "Acala Foundation node 2"
+            },
+            {
+                "url": "wss://karura-rpc-3.aca-api.network/ws",
+                "name": "Acala Foundation node 3"
+            },
+            {
+                "url": "wss://karura-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "types": {
