@@ -3625,12 +3625,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://turing.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://rpc.turing.oak.tech",
                 "name": "Turing node"
+            },
+            {
+                "url": "wss://turing-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "types": {
