@@ -2258,60 +2258,6 @@
                 }
             },
             {
-                "assetId": 11,
-                "symbol": "WETH",
-                "precision": 18,
-                "type": "orml",
-                "priceId": "ethereum",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Ethereum.svg",
-                "typeExtras": {
-                    "currencyIdScale": "0x050600",
-                    "currencyIdType": "acala_primitives.currency.CurrencyId",
-                    "existentialDeposit": "500000000000000",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "assetId": 12,
-                "symbol": "USDCet",
-                "precision": 6,
-                "type": "orml",
-                "priceId": "tether",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/USDC__.svg",
-                "typeExtras": {
-                    "currencyIdScale": "0x0207df96d1341a7d16ba1ad431e2c847d978bc2bce",
-                    "currencyIdType": "acala_primitives.currency.CurrencyId",
-                    "existentialDeposit": "10000",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "assetId": 13,
-                "symbol": "WBTC",
-                "precision": 8,
-                "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bitcoin.svg",
-                "typeExtras": {
-                    "currencyIdScale": "0x050500",
-                    "currencyIdType": "acala_primitives.currency.CurrencyId",
-                    "existentialDeposit": "3000",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "assetId": 14,
-                "symbol": "DAI",
-                "precision": 18,
-                "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/DAI__.svg",
-                "typeExtras": {
-                    "currencyIdScale": "0x0254a37a01cd75b616d63e0ab665bffdb0143c52ae",
-                    "currencyIdType": "acala_primitives.currency.CurrencyId",
-                    "existentialDeposit": "10000000000000000",
-                    "transfersEnabled": true
-                }
-            },
-            {
                 "assetId": 15,
                 "symbol": "EQ",
                 "precision": 9,
