@@ -2262,6 +2262,7 @@
                 "symbol": "WETH",
                 "precision": 18,
                 "type": "orml",
+                "priceId": "ethereum",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Ethereum.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050600",
@@ -2275,6 +2276,7 @@
                 "symbol": "USDCet",
                 "precision": 6,
                 "type": "orml",
+                "priceId": "tether",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/USDC__.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0207df96d1341a7d16ba1ad431e2c847d978bc2bce",
@@ -2324,10 +2326,11 @@
             },
             {
                 "assetId": 16,
-                "symbol": "IBTC",
+                "symbol": "iBTC",
                 "precision": 8,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bitcoin.svg",
+                "priceId": "bitcoin",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/interBTC.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050300",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -2505,7 +2508,8 @@
                 "symbol": "xcINTR",
                 "precision": 10,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/PARA.svg",
+                "priceId": "interlay",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Interlay.svg",
                 "typeExtras": {
                     "assetId": "101170542313601871197860408087030232491"
                 }
@@ -2515,7 +2519,8 @@
                 "symbol": "xciBTC",
                 "precision": 8,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/PARA.svg",
+                "priceId": "bitcoin",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/interBTC.svg",
                 "typeExtras": {
                     "assetId": "120637696315203257380661607956669368914"
                 }
