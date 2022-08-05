@@ -1811,29 +1811,6 @@
           ]
         },
         {
-          "assetId": 1,
-          "assetLocation": "KSM",
-          "assetLocationPath": {
-            "type": "absolute"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "11587000000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            }
-          ]
-        },
-        {
           "assetId": 3,
           "assetLocation": "KAR",
           "assetLocationPath": {
