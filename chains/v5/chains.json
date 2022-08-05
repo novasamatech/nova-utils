@@ -803,6 +803,28 @@
                 "typeExtras": {
                     "assetId": "32615670524745285411807346420584982855"
                 }
+            },
+            {
+                "assetId": 5,
+                "symbol": "xcINTR",
+                "precision": 10,
+                "type": "statemine",
+                "priceId": "interlay",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Interlay.svg",
+                "typeExtras": {
+                    "assetId": "101170542313601871197860408087030232491"
+                }
+            },
+            {
+                "assetId": 6,
+                "symbol": "xciBTC",
+                "precision": 8,
+                "type": "statemine",
+                "priceId": "bitcoin",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/interBTC.svg",
+                "typeExtras": {
+                    "assetId": "120637696315203257380661607956669368914"
+                }
             }
         ],
         "nodes": [
@@ -2026,6 +2048,61 @@
                     "currencyIdScale": "0x0300000000",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
                     "existentialDeposit": "100000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 9,
+                "symbol": "INTR",
+                "precision": 10,
+                "type": "orml",
+                "priceId": "interlay",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Interlay.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x050400",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "1000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 10,
+                "symbol": "ASTR",
+                "precision": 18,
+                "type": "orml",
+                "priceId": "astar",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Astar.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x050200",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "100000000000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 15,
+                "symbol": "EQ",
+                "precision": 9,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Equilibrium.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x050700",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "1000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 16,
+                "symbol": "iBTC",
+                "precision": 8,
+                "type": "orml",
+                "priceId": "bitcoin",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/interBTC.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x050300",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "100",
                     "transfersEnabled": true
                 }
             }
