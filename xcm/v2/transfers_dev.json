@@ -41,7 +41,8 @@
       },
       "reserveFee": {
         "mode": {
-          "type": "standard"
+          "type": "proportional",
+          "value": "50000000000000000"
         },
         "instructions": "xtokensReserve"
       }
@@ -1342,7 +1343,8 @@
                 "assetId": 0,
                 "fee": {
                   "mode": {
-                    "type": "standard"
+                    "type": "proportional",
+                    "value": "50000000000000000"
                   },
                   "instructions": "xtokensDest"
                 }
@@ -1384,7 +1386,7 @@
                 "fee": {
                   "mode": {
                     "type": "proportional",
-                    "value": "1158700000000"
+                    "value": "115870000000000000"
                   },
                   "instructions": "xtokensDest"
                 }
@@ -1936,7 +1938,8 @@
                 "assetId": 0,
                 "fee": {
                   "mode": {
-                    "type": "standard"
+                    "type": "proportional",
+                    "value": "50000000000000000"
                   },
                   "instructions": "xtokensDest"
                 }
@@ -2028,7 +2031,8 @@
                 "assetId": 0,
                 "fee": {
                   "mode": {
-                    "type": "standard"
+                    "type": "proportional",
+                    "value": "50000000000000000"
                   },
                   "instructions": "xtokensDest"
                 }
