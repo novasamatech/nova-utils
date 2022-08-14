@@ -1301,7 +1301,11 @@
         "externalApi": {
             "history": {
                 "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bifrost"
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bifrost__bm92Y"
+            },
+            "staking": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bifrost__bm92Y"
             }
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Bifrost_Kusama.svg",
