@@ -180,6 +180,13 @@
       "multiLocation": {
         "parachainId": 2006,
         "palletInstance": 31
+      },
+      "reserveFee": {
+        "mode": {
+          "type": "proportional",
+          "value": "11587754"
+        },
+        "instructions": "xtokensReserve"
       }
     }
   },
