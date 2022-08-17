@@ -17,6 +17,7 @@
 | Downtown Moonbeam                 | https://dtmb.xyz                                     | evm,utilities           |
 | EVRLOOT                           | https://game.evrloot.com/game                        | nft                     |
 | Evolution Land. Columbus          | https://www.evolution.land/land/3                    | nft,evm                 |
+| GM! Say it back                   | https://app.gmordie.com/                             | community               |
 | Huckleberry Finance               | https://www.huckleberry.finance/#/swap               | defi,staking,evm        |
 | Impossible Finance                | https://invest.impossible.finance/launchpad          | defi,evm                |
 | Interlay Rewards Claim            | https://crowdloan.interlay.io/                       | crowdloans              |
