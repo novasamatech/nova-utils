@@ -95,6 +95,13 @@
       "multiLocation": {
         "parachainId": 2004,
         "palletInstance": 10
+      },
+      "reserveFee": {
+        "mode": {
+          "type": "proportional",
+          "value": "100000000000000000"
+        },
+        "instructions": "xtokensReserve"
       }
     },
     "RMRK": {
@@ -2223,7 +2230,8 @@
                 "assetId": 0,
                 "fee": {
                   "mode": {
-                    "type": "standard"
+                    "type": "proportional",
+                    "value": "100000000000000000"
                   },
                   "instructions": "xtokensDest"
                 }
