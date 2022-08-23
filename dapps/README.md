@@ -51,5 +51,6 @@
 | Subsocial App                     | https://app.subsocial.network/                       | community               |
 | Subsquare. Khala network          | https://khala.subsquare.io/                          | community               |
 | Talisman App                      | https://app.talisman.xyz/portfolio                   | defi,crowdloans         |
+| Tinkernet Rewards Claim           | https://www.tinker.network/claim                     | crowdloans              |
 | TofuNFT                           | https://tofunft.com/                                 | nft,evm                 |
 | cBRIDGE                           | https://cbridge.celer.network/#/transfer             | defi,evm                |
