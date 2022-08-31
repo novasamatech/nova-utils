@@ -1380,6 +1380,12 @@
         ],
         "explorers": [
             {
+                "name": "Subscan",
+                "extrinsic": "https://basilisk.subscan.io/extrinsic/{hash}",
+                "account": "https://basilisk.subscan.io/account/{address}",
+                "event": null
+            },
+            {
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
             }
@@ -1926,6 +1932,14 @@
             {
                 "url": "wss://pioneer.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://pioneer.subscan.io/extrinsic/{hash}",
+                "account": "https://pioneer.subscan.io/account/{address}",
+                "event": null
             }
         ],
         "types": {
@@ -2538,6 +2552,14 @@
                 "name": "Encointer association node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://encointer.subscan.io/extrinsic/{hash}",
+                "account": "https://encointer.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/encointer.json",
             "overridesCommon": true
@@ -3036,6 +3058,14 @@
                 "name": "Efinity node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://efinity.subscan.io/extrinsic/{hash}",
+                "account": "https://efinity.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/efinity.json",
             "overridesCommon": true
@@ -3065,6 +3095,14 @@
             {
                 "url": "wss://rpc-01.hydradx.io",
                 "name": "Calactic Council node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://hydradx.subscan.io/extrinsic/{hash}",
+                "account": "https://hydradx.subscan.io/account/{address}",
+                "event": null
             }
         ],
         "types": {
@@ -3621,6 +3659,14 @@
                 "name": "Liebi node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://bifrost.subscan.io/extrinsic/{hash}",
+                "account": "https://bifrost.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/bifrost_polkadot.json",
             "overridesCommon": true
@@ -3896,6 +3942,14 @@
             {
                 "url": "wss://tanganika.datahighway.com",
                 "name": "DataHighway node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://datahighway.subscan.io/extrinsic/{hash}",
+                "account": "https://datahighway.subscan.io/account/{address}",
+                "event": null
             }
         ],
         "types": {
