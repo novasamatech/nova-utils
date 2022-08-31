@@ -16,7 +16,7 @@
 | Dotmarketcap                      | https://dotmarketcap.com/                            | utilities               |
 | Downtown Moonbeam                 | https://dtmb.xyz                                     | evm,utilities           |
 | EVRLOOT                           | https://game.evrloot.com/game                        | nft                     |
-| Evolution Land. Columbus          | https://www.evolution.land/land/3                    | nft,evm                 |
+| Evolution Land. Columbus          | https://portal.evolution.land/land/3/market/land     | nft,evm                 |
 | GM! Say it back                   | https://app.gmordie.com/                             | community               |
 | Huckleberry Finance               | https://www.huckleberry.finance/#/swap               | defi,staking,evm        |
 | Impossible Finance                | https://invest.impossible.finance/launchpad          | defi,evm                |
