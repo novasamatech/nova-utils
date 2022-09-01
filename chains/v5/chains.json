@@ -4096,5 +4096,30 @@
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/GM.svg",
         "addressPrefix": 7013
+    },
+    {
+        "chainId": "cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Amplitude",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "AMPE",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Amplitude.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://pencol-kus-01.pendulumchain.tech",
+                "name": "PendulumChain node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/amplitude.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Amplitude.svg",
+        "addressPrefix": 57
     }
 ]
