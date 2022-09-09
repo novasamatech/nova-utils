@@ -1368,12 +1368,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc-01.basilisk.hydradx.io",
-                "name": "Hydradx node"
-            },
-            {
-                "url": "wss://basilisk.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
+                "url": "wss://rpc.basilisk.cloud",
+                "name": "Basilisk node"
             },
             {
                 "url": "wss://basilisk-rpc.dwellir.com",
@@ -3098,8 +3094,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc-01.hydradx.io",
+                "url": "wss://rpc.hydradx.cloud",
                 "name": "Calactic Council node"
+            },
+            {
+                "url": "wss://hydradx-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "explorers": [
