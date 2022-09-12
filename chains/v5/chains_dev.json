@@ -4631,5 +4631,42 @@
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Ternoa.svg",
         "addressPrefix": 42
+    },
+    {
+        "chainId": "18bcdb75a0bba577b084878db2dc2546eb21504eaad4b564bb7d47f9d02b6ace",
+        "name": "Ternoa Alphanet",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "CAPS",
+                "priceId": "coin-capsule",
+                "staking": "relaychain",
+                "precision": 18,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Ternoa.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://alphanet.ternoa.com",
+                "name": "Ternoa Alphanet node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Ternoa Alphanet explorer",
+                "extrinsic": "https://explorer-alphanet.ternoa.dev/extrinsic/{hash}",
+                "account": "https://explorer-alphanet.ternoa.dev/{address}",
+                "event": null
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/ternoa_alphanet.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Ternoa.svg",
+        "addressPrefix": 42,
+        "options": [
+            "testnet"
+        ]
     }
 ]
