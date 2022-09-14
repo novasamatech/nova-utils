@@ -139,11 +139,11 @@
         "externalApi": {
             "staking": {
                 "type": "subquery",
-                "url": "https://nova-wallet-kusama.gapi.subquery.network"
+                "url": "https://sz.api.subquery.network/sq/nova-wallet/nova-wallet-kusama"
             },
             "history": {
                 "type": "subquery",
-                "url": "https://nova-wallet-kusama.gapi.subquery.network"
+                "url": "https://sz.api.subquery.network/sq/nova-wallet/nova-wallet-kusama"
             },
             "crowdloans": {
                 "type": "github",
