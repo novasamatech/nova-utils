@@ -4676,5 +4676,33 @@
         "options": [
             "testnet"
         ]
+    },
+    {
+        "chainId": "d54f0988402deb4548538626ce37e4a318441ea0529ca369400ebec4e04dfe4b",
+        "name": "Turing Staging",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "TUR",
+                "staking": "turing",
+                "precision": 10,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Turing.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc.turing-staging.oak.tech",
+                "name": "OAK node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/turing_staging.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Turing_Staging.svg",
+        "addressPrefix": 51,
+        "options": [
+            "testnet"
+        ]
     }
 ]
