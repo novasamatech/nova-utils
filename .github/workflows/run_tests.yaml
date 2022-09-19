@@ -88,5 +88,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v2
         env:
           PERSONAL_TOKEN: ${{ secrets.PAT_TOKEN }}
+          external_repository: nova-wallet/testrunner
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: allure-history
