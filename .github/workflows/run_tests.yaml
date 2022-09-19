@@ -84,7 +84,7 @@ jobs:
 
       - name: Deploy report to Github Pages
         if: always()
-        uses: peaceiris/actions-gh-pages@v2
+        uses: peaceiris/actions-gh-pages@v3
         env:
           deploy_key: ${{ secrets.PAT_TOKEN }}
           external_repository: nova-wallet/test-runner
