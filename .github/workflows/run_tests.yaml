@@ -35,6 +35,7 @@ jobs:
         run: python -m pytest --rootdir . --alluredir=allure-report/ -n auto "${{ matrix.tests }}" --reruns 5 --reruns-delay 5
 
       - name: Tar files
+        if: always()
         run: tar -cvf allure-report.tar ./allure-report/
 
       - uses: actions/upload-artifact@v2
