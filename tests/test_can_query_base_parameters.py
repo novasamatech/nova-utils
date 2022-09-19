@@ -40,5 +40,5 @@ class TestCanGetIndex:
         connection = chain.create_connection()
         chain.init_properties()
 
-        storage = connection.rpc_request('account_nextIndex', ['0x7a28037947ecebe0dd86dc0e910911cb33185fd0714b37b75943f67dcf9b6e7c'])
+        storage = connection.rpc_request('account_nextIndex', ['5CJqRchpnKQ6zzB4zmkz3QSzFgFmLFJ741RxW1CunStvEwKd'])
         assert isinstance(connection, SubstrateInterface)
