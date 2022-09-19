@@ -4726,5 +4726,41 @@
         "options": [
             "testnet"
         ]
+    },
+    {
+        "chainId": "ea5af80801ea4579cedd029eaaa74938f0ea8dcaf507c8af96f2813d27d071ca",
+        "name": "Governance2 Testnet",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "Unit",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/GOV2.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://governance2-testnet.litentry.io",
+                "name": "Development node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Governance2 Testnet explorer",
+                "extrinsic": "https://gov2.statescan.io/extrinsic/{hash}",
+                "account": "https://gov2.statescan.io/{address}",
+                "event": null
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/governance2_testnet.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Governance2_Testnet.svg",
+        "addressPrefix": 42,
+        "options": [
+            "testnet",
+            "governance"
+        ]
     }
 ]
