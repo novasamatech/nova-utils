@@ -15,7 +15,7 @@ def collect_nodes_from_dev():
 
     return networks
 
-network_file_path=os.environ['JSON_PATH']
+network_file_path=os.getenv('JSON_PATH', "/chains/v5/chains_dev.json")
 
 @pytest.mark.parametrize("url", collect_nodes_from_dev())
 def test_can_create_connection(url):

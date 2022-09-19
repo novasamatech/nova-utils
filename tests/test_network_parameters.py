@@ -12,7 +12,7 @@ def collect_data_from_dev():
 
     return chains
 
-network_file_path=os.environ['JSON_PATH']
+network_file_path=os.getenv('JSON_PATH', "/chains/v5/chains_dev.json")
 
 chains = (
     collect_data_from_dev()
