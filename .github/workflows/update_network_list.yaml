@@ -18,17 +18,8 @@ jobs:
       - name: Checkout current repository to Master branch
         uses: actions/checkout@v1
 
-      - name: Setup version to variables
-        run: |
-          echo "CHAINS_VERSION=$(bash .github/get_actual_json_path.sh chains)" >> "$GITHUB_ENV"
-          echo "XCM_VERSION=$(bash .github/get_actual_json_path.sh xcm)" >> "$GITHUB_ENV"
-
-      - name: Setup json paths
-        run: |
-          echo "DEV_CHAINS_JSON_PATH=chains/${{ env.CHAINS_VERSION }}/chains_dev.json" >> "$GITHUB_ENV"
-          echo "CHAINS_JSON_PATH=chains/${{ env.CHAINS_VERSION }}/chains.json" >> "$GITHUB_ENV"
-          echo "DEV_XCM_JSON_PATH=xcm/${{ env.XCM_VERSION }}/transfers_dev.json" >> "$GITHUB_ENV"
-          echo "XCM_JSON_PATH=xcm/${{ env.XCM_VERSION }}/transfers.json" >> "$GITHUB_ENV"
+      - name: Set up actual paths
+        uses: ./.github/workflows/setup-path
 
       - name: Was chains.json changed?
         id: chains
@@ -67,44 +58,24 @@ jobs:
       - name: Checkout current repository to Master branch
         uses: actions/checkout@v1
 
-      - name: Setup version to variables
-        run: |
-          echo "CHAINS_VERSION=$(bash .github/get_actual_json_path.sh chains)" >> "$GITHUB_ENV"
-          echo "XCM_VERSION=$(bash .github/get_actual_json_path.sh xcm)" >> "$GITHUB_ENV"
+      - name: Set up actual paths
+        uses: ./.github/workflows/setup-path
 
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Generate README file
         run: python ./scripts/generate_network_list.py
 
-      - name: Commit files
-        id: commit
-        continue-on-error: true
-        run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add ./chains/README.md
-          git commit -m "Update networks"
-
-      - name: Push changes
-        if: steps.commit.outcome == 'success'
-        uses: ad-m/github-push-action@master
+      - name: Make Pull Request
+        uses: ./.github/workflows/make-pull-request
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: refs/heads/update-networks-${{github.run_number}}
+          commit-files: ./chains/README.md
+          commit-message: Update networks list
+          github-token: ${{ secrets.GITHUB_TOKEN  }}
+          branch-name: update-networks-${{github.run_number}}
+          pr-title: Update network list
+          pr-body: Update networks list in https://github.com/nova-wallet/nova-utils/tree/master/chains
 
-      - uses: repo-sync/pull-request@v2
-        if: steps.commit.outcome == 'success'
-        name: pull-request
-        with:
-          source_branch: "update-networks-${{github.run_number}}"
-          destination_branch: "master"
-          pr_title: "Update network list"
-          pr_body: |
-              Update networks list in https://github.com/nova-wallet/nova-utils/tree/master/chains
-          pr_reviewer: "stepanLav"
-          pr_draft: false
-          github_token: ${{ secrets.GITHUB_TOKEN }}
 
   dapps_update:
     runs-on: ubuntu-latest
@@ -114,44 +85,23 @@ jobs:
       - name: Checkout current repository to Master branch
         uses: actions/checkout@v1
 
-      - name: Setup version to variables
-        run: |
-          echo "CHAINS_VERSION=$(bash .github/get_actual_json_path.sh chains)" >> "$GITHUB_ENV"
-          echo "XCM_VERSION=$(bash .github/get_actual_json_path.sh xcm)" >> "$GITHUB_ENV"
+      - name: Set up actual paths
+        uses: ./.github/workflows/setup-path
 
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Generate new Dapps list file
         run: python ./scripts/generate_dapps_list.py
 
-      - name: Commit files
-        id: commit
-        continue-on-error: true
-        run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add ./dapps/README.md
-          git commit -m "Update dapps list"
-
-      - name: Push changes
-        if: steps.commit.outcome == 'success'
-        uses: ad-m/github-push-action@master
+      - name: Make Pull Request
+        uses: ./.github/workflows/make-pull-request
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: refs/heads/update-dapps-${{github.run_number}}
-
-      - uses: repo-sync/pull-request@v2
-        if: steps.commit.outcome == 'success'
-        name: pull-request
-        with:
-          source_branch: "update-dapps-${{github.run_number}}"
-          destination_branch: "master"
-          pr_title: "Update Dapps list"
-          pr_body: |
-              Update dapps list in https://github.com/nova-wallet/nova-utils/tree/master/dapps
-          pr_reviewer: "stepanLav"
-          pr_draft: false
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          commit-files: ./dapps/README.md
+          commit-message: Update dapps list
+          github-token: ${{ secrets.GITHUB_TOKEN  }}
+          branch-name: update-dapps-${{github.run_number}}
+          pr-title: Update Dapps list
+          pr-body: Update dapps list in https://github.com/nova-wallet/nova-utils/tree/master/dapps
 
   test_json_update:
     runs-on: ubuntu-latest
@@ -161,44 +111,23 @@ jobs:
       - name: Checkout current repository to Master branch
         uses: actions/checkout@v1
 
-      - name: Setup version to variables
-        run: |
-          echo "CHAINS_VERSION=$(bash .github/get_actual_json_path.sh chains)" >> "$GITHUB_ENV"
-          echo "XCM_VERSION=$(bash .github/get_actual_json_path.sh xcm)" >> "$GITHUB_ENV"
+      - name: Set up actual paths
+        uses: ./.github/workflows/setup-path
 
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Generate new Test data file
         run: python ./scripts/update_test_data.py
 
-      - name: Commit files
-        id: commit
-        continue-on-error: true
-        run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add ./tests/chains_for_testBalance.json
-          git commit -m "Update test data file"
-
-      - name: Push changes
-        if: steps.commit.outcome == 'success'
-        uses: ad-m/github-push-action@master
+      - name: Make Pull Request
+        uses: ./.github/workflows/make-pull-request
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: refs/heads/update-tests-${{github.run_number}}
-
-      - uses: repo-sync/pull-request@v2
-        if: steps.commit.outcome == 'success'
-        name: pull-request
-        with:
-          source_branch: "update-tests-${{github.run_number}}"
-          destination_branch: "master"
-          pr_title: "Update Test data File"
-          pr_body: |
-              Update test data file
-          pr_reviewer: "stepanLav"
-          pr_draft: false
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          commit-files: ./tests/chains_for_testBalance.json
+          commit-message: Update test data file
+          github-token: ${{ secrets.GITHUB_TOKEN  }}
+          branch-name: update-tests-${{github.run_number}}
+          pr-title: Update Test data File
+          pr-body: Update test data file
 
 
   xcm_table_update:
@@ -217,10 +146,8 @@ jobs:
           ref: master
           token: ${{ secrets.PAT_TOKEN }}
 
-      - name: Setup version to variables
-        run: |
-          echo "CHAINS_VERSION=$(bash .github/get_actual_json_path.sh chains)" >> "$GITHUB_ENV"
-          echo "XCM_VERSION=$(bash .github/get_actual_json_path.sh xcm)" >> "$GITHUB_ENV"
+      - name: Set up actual paths
+        uses: ./.github/workflows/setup-path
 
       - name: Install dependencies
         run: |
