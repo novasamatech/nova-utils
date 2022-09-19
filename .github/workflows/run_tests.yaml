@@ -10,6 +10,7 @@ env:
 jobs:
   test:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     strategy:
       fail-fast: false
       matrix:
@@ -32,6 +33,9 @@ jobs:
 
       - name: Run test
         run: python -m pytest --rootdir . --alluredir=allure-report/ -n auto "${{ matrix.tests }}" --reruns 5 --reruns-delay 5
+
+      - name: Tar files
+        run: tar -cvf allure-report.tar ./allure-report/
 
       - uses: actions/upload-artifact@v2
         if: always()
