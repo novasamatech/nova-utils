@@ -18,7 +18,6 @@ jobs:
           [
             ./tests/test_nodes_availability.py,
             ./tests/test_network_parameters.py,
-            ./tests/test_can_query_base_parameters.py,
             ./tests/test_xcm_data.py,
           ]
     steps:

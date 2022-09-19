@@ -5,9 +5,6 @@ from tests.utils.chain_model import Chain
 from substrateinterface import SubstrateInterface
 from tests.data.setting_data import *
 
-skipped_networks = ['Edgeware']
-network_file_path = os.getenv('JSON_PATH', "/chains/v5/chains.json")
-
 task_ids = [
     f'Test for {task.name}'
     for task in chains
