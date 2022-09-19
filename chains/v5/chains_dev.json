@@ -4650,6 +4650,10 @@
             }
         ],
         "externalApi": {
+            "staking": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-ternoa"
+            },
             "history": {
                 "type": "subquery",
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-ternoa"
