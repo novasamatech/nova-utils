@@ -4,7 +4,6 @@ import pytest
 
 from tests.data.setting_data import *
 from scripts.create_type_file import create_connection_by_url
-from tests.test_network_parameters import get_network_list
 from tests.utils.chain_model import Chain
 from substrateinterface import SubstrateInterface
 
