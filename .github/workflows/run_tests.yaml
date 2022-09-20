@@ -83,7 +83,7 @@ jobs:
         if: always()
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.PAT_TOKEN }}
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           external_repository: nova-wallet/test-runner
           publish_branch: gh-pages
           publish_dir: allure-history
