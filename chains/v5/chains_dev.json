@@ -344,16 +344,16 @@
         ],
         "nodes": [
             {
-                "url": "wss://statemine-rpc.polkadot.io",
-                "name": "Parity node"
-            },
-            {
                 "url": "wss://statemine.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
             },
             {
                 "url": "wss://statemine-rpc.dwellir.com",
                 "name": "Dwellir node"
+            },
+            {
+                "url": "wss://statemine-rpc.polkadot.io",
+                "name": "Parity node"
             }
         ],
         "explorers": [
