@@ -2479,36 +2479,6 @@
         "addressPrefix": 0
     },
     {
-        "chainId": "0bd72c1c305172e1275278aaeb3f161e02eccb7a819e63f62d47bd53a28189f8",
-        "name": "Subsocial Solochain",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "SUB",
-                "precision": 10,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Subsocial.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://arch.subsocial.network",
-                "name": "Arch node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
-            }
-        ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/subsocial_solo.json",
-            "overridesCommon": true
-        },
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Subsocial_Solochain.svg",
-        "addressPrefix": 28
-    },
-    {
         "chainId": "631ccc82a078481584041656af292834e1ae6daab61d2875b4dd0c14bb9b17bc",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Robonomics",
