@@ -1987,14 +1987,6 @@
             {
                 "url": "wss://ws.calamari.systems/",
                 "name": "Manta network node"
-            },
-            {
-                "url": "wss://calamari.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
-                "url": "wss://calamari-rpc.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -3052,7 +3044,7 @@
             },
             {
                 "url": "wss://rpc.api.kico.dico.io",
-                "name": "OnFinality node"
+                "name": "DICO FOUNDATION 2 node"
             }
         ],
         "types": {
@@ -4297,6 +4289,10 @@
             {
                 "url": "wss://kusama.kylin-node.co.uk",
                 "name": "Kylin node"
+            },
+            {
+                "url": "wss://pichiu.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "types": {
