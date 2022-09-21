@@ -4762,5 +4762,30 @@
             "testnet",
             "governance"
         ]
+    },
+    {
+        "chainId": "f2584690455deda322214e97edfffaf4c1233b6e4625e39478496b3e2f5a44c5",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Kylin",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "KYL",
+                "precision": 18,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/KYL.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://polkadot.kylin-node.co.uk",
+                "name": "Kylin node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/unique.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Kylin.svg",
+        "addressPrefix": 42
     }
 ]
