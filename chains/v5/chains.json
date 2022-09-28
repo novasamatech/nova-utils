@@ -695,7 +695,7 @@
             }
         ],
         "nodes": [
-             {
+            {
                 "url": "wss://karura.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
             }
@@ -2251,10 +2251,10 @@
                 "type": "statemine",
                 "priceId": "polkadot",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
-                 "typeExtras": {
-                     "assetId": "340282366920938463463374607431768211455"
-                 }
-             }
+                "typeExtras": {
+                    "assetId": "340282366920938463463374607431768211455"
+                }
+            }
         ],
         "nodes": [
             {
@@ -3363,11 +3363,11 @@
                 "symbol": "KSM",
                 "precision": 12,
                 "priceId": "kusama",
-                 "type": "orml",
+                "type": "orml",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg",
                 "typeExtras": {
-                    "currencyIdScale": "0x01",
-                    "currencyIdType": "turing_runtime.CurrencyId",
+                    "currencyIdScale": "0x01000000",
+                    "currencyIdType": "u32",
                     "existentialDeposit": "100000000",
                     "transfersEnabled": true
                 }
@@ -3377,11 +3377,11 @@
                 "symbol": "aUSD",
                 "precision": 12,
                 "priceId": "acala-dollar",
-                 "type": "orml",
+                "type": "orml",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/AUSD.svg",
                 "typeExtras": {
-                    "currencyIdScale": "0x02",
-                    "currencyIdType": "turing_runtime.CurrencyId",
+                    "currencyIdScale": "0x02000000",
+                    "currencyIdType": "u32",
                     "existentialDeposit": "10000000000",
                     "transfersEnabled": true
                 }
@@ -3391,11 +3391,11 @@
                 "symbol": "KAR",
                 "precision": 12,
                 "priceId": "karura",
-                 "type": "orml",
+                "type": "orml",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Karura.svg",
                 "typeExtras": {
-                    "currencyIdScale": "0x03",
-                    "currencyIdType": "turing_runtime.CurrencyId",
+                    "currencyIdScale": "0x03000000",
+                    "currencyIdType": "u32",
                     "existentialDeposit": "100000000000",
                     "transfersEnabled": true
                 }
@@ -3404,11 +3404,11 @@
                 "assetId": 4,
                 "symbol": "LKSM",
                 "precision": 12,
-                 "type": "orml",
+                "type": "orml",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/LKSM.svg",
                 "typeExtras": {
-                    "currencyIdScale": "0x04",
-                    "currencyIdType": "turing_runtime.CurrencyId",
+                    "currencyIdScale": "0x04000000",
+                    "currencyIdType": "u32",
                     "existentialDeposit": "500000000",
                     "transfersEnabled": true
                 }
@@ -3417,11 +3417,11 @@
                 "assetId": 5,
                 "symbol": "HKO",
                 "precision": 12,
-                 "type": "orml",
+                "type": "orml",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/HKO.svg",
                 "typeExtras": {
-                    "currencyIdScale": "0x05",
-                    "currencyIdType": "turing_runtime.CurrencyId",
+                    "currencyIdScale": "0x05000000",
+                    "currencyIdType": "u32",
                     "existentialDeposit": "500000000000",
                     "transfersEnabled": true
                 }
@@ -3430,11 +3430,11 @@
                 "assetId": 6,
                 "symbol": "sKSM",
                 "precision": 12,
-                 "type": "orml",
+                "type": "orml",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/sKSM.svg",
                 "typeExtras": {
-                    "currencyIdScale": "0x06",
-                    "currencyIdType": "turing_runtime.CurrencyId",
+                    "currencyIdScale": "0x06000000",
+                    "currencyIdType": "u32",
                     "existentialDeposit": "500000000",
                     "transfersEnabled": true
                 }
@@ -3444,11 +3444,11 @@
                 "symbol": "PHA",
                 "precision": 12,
                 "priceId": "pha",
-                 "type": "orml",
+                "type": "orml",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Phala.svg",
                 "typeExtras": {
-                    "currencyIdScale": "0x07",
-                    "currencyIdType": "turing_runtime.CurrencyId",
+                    "currencyIdScale": "0x07000000",
+                    "currencyIdType": "u32",
                     "existentialDeposit": "10000000000",
                     "transfersEnabled": true
                 }
