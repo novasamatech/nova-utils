@@ -2364,7 +2364,7 @@
         "addressPrefix": 10
     },
     {
-        "chainId": "5c562e6300954998233c9a40b6b86f3028977e6d32d0da1af207738d19f98c1b",
+        "chainId": "23fc729c2cdb7bd6770a4e8c58748387cc715fcf338f1f74a16833d90383f4b0",
         "name": "Acala Mandala",
         "assets": [
             {
@@ -2391,25 +2391,25 @@
             {
                 "url": "wss://mandala-rpc.aca-staging.network/ws",
                 "name": "Acala node"
-            },
-            {
-                "url": "wss://mandala.polkawallet.io",
-                "name": "Polkawallet"
-            },
-            {
-                "url": "wss://rpc.pinknode.io/mandala/explorer",
-                "name": "Pinknode node"
             }
         ],
-        "options": [
-            "testnet"
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://acala-testnet.subscan.io/extrinsic/{hash}",
+                "account": "https://acala-testnet.subscan.io/account/{address}",
+                "event": null
+            }
         ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/acala_mandala.json",
             "overridesCommon": true
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Acala_Mandala_Testnet.svg",
-        "addressPrefix": 42
+        "addressPrefix": 42,
+        "options": [
+            "testnet"
+        ]
     },
     {
         "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",

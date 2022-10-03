@@ -1,16 +1,16 @@
 {
-  "runtime_id": 2025,
+  "runtime_id": 2094,
   "types": {
-      "Balance": "u128",
-      "Index": "u32",
-      "Phase": "frame_system.Phase",
-      "Address": "sp_runtime.multiaddress.MultiAddress",
-      "ExtrinsicSignature": "acala_primitives.signature.AcalaMultiSignature",
-      "ParaId": "polkadot_parachain.primitives.Id",
-      "mandala_runtime.Event": "GenericEvent",
-      "mandala_runtime.Call": "GenericCall",
-      "sp_core.crypto.AccountId32": "GenericAccountId",
-      "pallet_identity.types.Data": "Data"
+    "Balance": "u128",
+    "Index": "u32",
+    "Phase": "frame_system.Phase",
+    "Address": "primitive_types.H160",
+    "ExtrinsicSignature": "sp_runtime.MultiSignature",
+    "ParaId": "polkadot_parachain.primitives.Id",
+    "mandala_runtime.Event": "GenericEvent",
+    "mandala_runtime.Call": "GenericCall",
+    "sp_core.crypto.AccountId32": "GenericAccountId",
+    "pallet_identity.types.Data": "Data"
   },
   "versioning": []
 }
