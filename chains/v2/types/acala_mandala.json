@@ -4,7 +4,7 @@
     "Balance": "u128",
     "Index": "u32",
     "Phase": "frame_system.Phase",
-    "Address": "primitive_types.H160",
+    "Address": "sp_runtime.multiaddress.MultiAddress",
     "ExtrinsicSignature": "sp_runtime.MultiSignature",
     "ParaId": "polkadot_parachain.primitives.Id",
     "mandala_runtime.Event": "GenericEvent",
