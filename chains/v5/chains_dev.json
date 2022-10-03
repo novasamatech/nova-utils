@@ -4913,5 +4913,39 @@
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Totem.svg",
         "addressPrefix": 2007
+    },
+    {
+        "chainId": "6fbd74e5e1d0a61d52ccfe9d4adaed16dd3a7caa37c6bc4d0c2fa12e8b2f4063",
+        "name": "Polymesh Mainnet",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "POLYX",
+                "precision": 6,
+                "priceId": "polymesh",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polymesh.svg",
+                "staking": "relaychain"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://mainnet-rpc.polymesh.network",
+                "name": "Polymesh node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://polymesh.subscan.io/extrinsic/{hash}",
+                "account": "https://polymesh.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/polymesh_mainnet.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Polymesh_Testnet.svg",
+        "addressPrefix": 12
     }
 ]
