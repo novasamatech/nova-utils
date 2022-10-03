@@ -4913,5 +4913,32 @@
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Totem.svg",
         "addressPrefix": 2007
+    },
+    {
+        "chainId": "8da6a03e0989154ff8c1977cbc0cbd55f6879d8759c272a4f3c078cef794bf5f",
+        "name": "Beresheet",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "tEDG",
+                "precision": 18,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Edgeware.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://beresheet.jelliedowl.net",
+                "name": "JelliedOwl node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/beresheet.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Beresheet.svg",
+        "addressPrefix": 7,
+        "options": [
+            "testnet"
+        ]
     }
 ]
