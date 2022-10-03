@@ -2364,7 +2364,7 @@
         "addressPrefix": 10
     },
     {
-        "chainId": "5c562e6300954998233c9a40b6b86f3028977e6d32d0da1af207738d19f98c1b",
+        "chainId": "23fc729c2cdb7bd6770a4e8c58748387cc715fcf338f1f74a16833d90383f4b0",
         "name": "Acala Mandala",
         "assets": [
             {
@@ -2389,27 +2389,27 @@
         ],
         "nodes": [
             {
-                "url": "wss://acala-mandala.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
-                "url": "wss://mandala.polkawallet.io",
-                "name": "Polkawallet"
-            },
-            {
-                "url": "wss://rpc.pinknode.io/mandala/explorer",
-                "name": "Pinknode node"
+                "url": "wss://mandala-rpc.aca-staging.network/ws",
+                "name": "Acala node"
             }
         ],
-        "options": [
-            "testnet"
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://acala-testnet.subscan.io/extrinsic/{hash}",
+                "account": "https://acala-testnet.subscan.io/account/{address}",
+                "event": null
+            }
         ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/acala_mandala.json",
             "overridesCommon": true
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Acala_Mandala_Testnet.svg",
-        "addressPrefix": 42
+        "addressPrefix": 42,
+        "options": [
+            "testnet"
+        ]
     },
     {
         "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
@@ -4651,7 +4651,7 @@
         ],
         "nodes": [
             {
-                "url": "wss://pencol-kus-01.pendulumchain.tech",
+                "url": "wss://rpc.pendulumchain.tech",
                 "name": "PendulumChain node"
             }
         ],
@@ -4947,5 +4947,32 @@
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Polymesh.svg",
         "addressPrefix": 12
+    },
+    {
+        "chainId": "8da6a03e0989154ff8c1977cbc0cbd55f6879d8759c272a4f3c078cef794bf5f",
+        "name": "Beresheet",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "tEDG",
+                "precision": 18,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Edgeware.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://beresheet.jelliedowl.net",
+                "name": "JelliedOwl node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/beresheet.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Beresheet.svg",
+        "addressPrefix": 7,
+        "options": [
+            "testnet"
+        ]
     }
 ]
