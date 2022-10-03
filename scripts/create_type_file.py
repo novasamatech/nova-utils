@@ -143,7 +143,7 @@ def get_primitive_from_metadata(name, metadata_types):
     data = find_type_in_metadata(name, metadata_types)
     value = metadata_types
     for path in data[0]:
-        if path == "name":
+        if path in ["name", "typeName"]:
             continue
         value = value[path]
     type_with_primitive = metadata_types[value["type"]]
