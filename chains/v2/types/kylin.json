@@ -1,5 +1,5 @@
 {
-  "runtime_id": 2094,
+  "runtime_id": 21,
   "types": {
     "Balance": "u128",
     "Index": "u32",
@@ -7,8 +7,8 @@
     "Address": "sp_runtime.multiaddress.MultiAddress",
     "ExtrinsicSignature": "sp_runtime.MultiSignature",
     "ParaId": "polkadot_parachain.primitives.Id",
-    "mandala_runtime.Event": "GenericEvent",
-    "mandala_runtime.Call": "GenericCall",
+    "kylin_runtime.Event": "GenericEvent",
+    "kylin_runtime.Call": "GenericCall",
     "sp_core.crypto.AccountId32": "GenericAccountId",
     "pallet_identity.types.Data": "Data"
   },

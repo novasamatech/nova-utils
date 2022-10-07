@@ -2,12 +2,14 @@
 # List of supported dapps
 |               DApp                |                         Url                          |          Tags           |
 | --------------------------------- | ---------------------------------------------------- | ----------------------- |
+| ACE                               | https://ace.web3go.xyz/#/                            | utilities               |
 | Acala Rewards Claim               | https://distribution.acala.network/claim/acala       | crowdloans              |
 | ArthSwap                          | https://app.arthswap.org/#/swap                      | defi,staking,evm        |
 | Astar DApp Hub                    | https://portal.astar.network/                        | defi,staking,evm        |
 | Basilisk Snek Swap                | https://app.basilisk.cloud/#/trade                   | defi                    |
 | Beamswap                          | https://app.beamswap.io/exchange/swap                | defi,staking,evm        |
 | Bifrost App                       | https://bifrost.app/                                 | defi,crowdloans         |
+| Bit.Country Pioneer Metaverse     | https://pioneer.bit.country/                         | nft,staking             |
 | Bit.Country Pioneer Rewards Claim | https://ksmcrowdloan.bit.country/reward              | crowdloans              |
 | Centrifuge Rewards Claim          | https://centrifuge.io/parachain/crowdloan/           | crowdloans              |
 | Damned Pirates Society            | https://damnedpiratessociety.io/                     | nft,evm                 |
@@ -54,4 +56,5 @@
 | Talisman App                      | https://app.talisman.xyz/portfolio                   | defi,crowdloans         |
 | Tinkernet Rewards Claim           | https://www.tinker.network/claim                     | crowdloans              |
 | TofuNFT                           | https://tofunft.com/                                 | nft,evm                 |
+| Zeitgeist                         | https://app.zeitgeist.pm/                            | utilities               |
 | cBRIDGE                           | https://cbridge.celer.network/#/transfer             | defi,evm                |
