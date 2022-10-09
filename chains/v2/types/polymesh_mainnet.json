@@ -7,8 +7,8 @@
         "Address": "sp_runtime.multiaddress.MultiAddress",
         "ExtrinsicSignature": "sp_runtime.MultiSignature",
         "ParaId": "polkadot_parachain.primitives.Id",
-        "polymesh_runtime_mainnet.Event": "GenericEvent",
-        "polymesh_runtime_mainnet.Call": "GenericCall",
+        "polymesh_runtime_mainnet.runtime.Event": "GenericEvent",
+        "polymesh_runtime_mainnet.runtime.Call": "GenericCall",
         "sp_core.crypto.AccountId32": "GenericAccountId",
         "pallet_identity.types.Data": "Data"
     },
