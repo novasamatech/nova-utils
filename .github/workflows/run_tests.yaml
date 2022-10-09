@@ -6,6 +6,8 @@ on:
 
 env:
   SUB_FOLDER: utils-tests
+  TEST_RE_RUNS: 1
+  TEST_RE_RUNS_DELAY: 10
 
 jobs:
   test:
@@ -31,7 +33,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run test
-        run: python -m pytest --rootdir . --alluredir=allure-report/ -n auto "${{ matrix.tests }}" --reruns 5 --reruns-delay 10
+        run: python -m pytest --rootdir . --alluredir=allure-report/ -n auto "${{ matrix.tests }}" --reruns ${{ env.TEST_RE_RUNS }} --reruns-delay ${{ env.TEST_RE_RUNS_DELAY }}
 
       - name: Tar files
         if: always()
@@ -79,7 +81,7 @@ jobs:
         if: always()
         with:
           allure_results: allure-results
-          allure_history: ${{ env.SUB_FOLDER }}/allure-history
+          allure_history: allure-history
           keep_reports: 30
           subfolder: ${{ env.SUB_FOLDER }}
 
