@@ -7,7 +7,7 @@
     "Address": "sp_runtime.multiaddress.MultiAddress",
     "ExtrinsicSignature": "sp_runtime.MultiSignature",
     "ParaId": "polkadot_parachain.primitives.Id",
-    "frame_system.Event": "GenericEvent",
+    "frame_system.pallet.Event": "GenericEvent",
     "frame_system.Call": "GenericCall",
     "sp_core.crypto.AccountId32": "GenericAccountId",
     "pallet_identity.types.Data": "Data"
