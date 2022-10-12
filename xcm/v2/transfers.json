@@ -1412,6 +1412,20 @@
                 }
               },
               "type": "xtokens"
+            },
+            {
+              "destination": {
+                "chainId": "e61a41c53f5dcd0beb09df93b34402aada44cb05117b71059cce40a2723a4e97",
+                "assetId": 13,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "154494"
+                  },
+                  "instructions": "xtokensDest"
+                }
+              },
+              "type": "xtokens"
             }
           ]
         }
@@ -1635,6 +1649,20 @@
                   "mode": {
                     "type": "proportional",
                     "value": "117205"
+                  },
+                  "instructions": "xtokensDest"
+                }
+              },
+              "type": "xtokens"
+            },
+            {
+              "destination": {
+                "chainId": "e61a41c53f5dcd0beb09df93b34402aada44cb05117b71059cce40a2723a4e97",
+                "assetId": 13,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "154494"
                   },
                   "instructions": "xtokensDest"
                 }
@@ -3023,6 +3051,20 @@
                   "mode": {
                     "type": "proportional",
                     "value": "11587"
+                  },
+                  "instructions": "xtokensDest"
+                }
+              },
+              "type": "xtokens"
+            },
+            {
+              "destination": {
+                "chainId": "e61a41c53f5dcd0beb09df93b34402aada44cb05117b71059cce40a2723a4e97",
+                "assetId": 13,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "154494"
                   },
                   "instructions": "xtokensDest"
                 }
