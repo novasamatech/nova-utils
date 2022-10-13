@@ -26,7 +26,7 @@ class Chain():
                 print("Can't connect to that node")
                 continue
 
-        raise TimeoutError("Can't connect to all nodes of network")
+        raise TimeoutError("Can't connect to all nodes of network", self.name)
 
 
     def init_properties(self):

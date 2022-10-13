@@ -1,0 +1,54 @@
+name: Make pull request
+description: Create commit and make pull-request
+inputs:
+  commit-files:
+    description: 'Which files will add to commit'
+    required: true
+  commit-message:
+    description: 'Message for creating a commit'
+    required: true
+  github-token:
+    description: 'Token for getting access to GitHub'
+    required: true
+  branch-name:
+    description: 'Name for branch for creating a commit'
+    required: true
+  pr-title:
+    description: 'Title for creating Pull Request'
+    required: true
+  pr-body:
+    description: 'Body for creating Pull Request'
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+
+      - name: Commit files
+        id: commit
+        continue-on-error: true
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add ${{ inputs.commit-files }}
+          git commit -m "${{ inputs.commit-message }}"
+        shell: bash
+
+      - name: Push changes
+        if: steps.commit.outcome == 'success'
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ inputs.github-token }}
+          branch: refs/heads/${{ inputs.branch-name }}
+
+      - uses: repo-sync/pull-request@v2
+        if: steps.commit.outcome == 'success'
+        name: pull-request
+        with:
+          source_branch: ${{ inputs.branch-name }}
+          destination_branch: "master"
+          pr_title: ${{ inputs.pr-title }}
+          pr_body: ${{ inputs.pr-body }}
+          pr_reviewer: "stepanLav"
+          pr_draft: false
+          github_token: ${{ inputs.github-token }}
