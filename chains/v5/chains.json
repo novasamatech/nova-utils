@@ -1447,6 +1447,19 @@
                     "existentialDeposit": "10000000000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 3,
+                "symbol": "TNKR",
+                "precision": 12,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Tinkernet.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x06000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1000000000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
