@@ -1920,7 +1920,8 @@
                 "symbol": "KMA",
                 "priceId": "calamari-network",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Calamari.svg",
-                "precision": 12
+                "precision": 12,
+                "staking": "parachain"
             }
         ],
         "nodes": [
@@ -1947,6 +1948,10 @@
         },
         "externalApi": {
             "history": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-calamari"
+            },
+            "staking": {
                 "type": "subquery",
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-calamari"
             }
