@@ -2020,12 +2020,25 @@
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Bit.Country Pioneer",
         "assets": [
-            {
+             {
                 "assetId": 0,
                 "symbol": "NEER",
                 "precision": 18,
                 "priceId": "metaverse-network-pioneer",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bit.Country.svg"
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/NEER.svg"
+            },
+            {
+                "assetId": 1,
+                "symbol": "BIT",
+                "precision": 18,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/BIT.svg",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x030000000000000000",
+                    "currencyIdType": "bit_country_primitives.FungibleTokenId",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
