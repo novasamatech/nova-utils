@@ -228,14 +228,14 @@
                 "precision": 12,
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Westend.svg"
             },
-             {
+            {
                 "assetId": 1,
                 "symbol": "SIRI",
                 "precision": 10,
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Default.svg",
                 "type": "statemine",
                 "typeExtras": {
-                     "assetId": "81"
+                    "assetId": "81"
                 }
             }
         ],
@@ -250,13 +250,13 @@
             }
         ],
         "explorers": [
-        {
-            "name": "Statescan",
-            "account": "https://westmint.statescan.io/account/{address}",
-            "extrinsic": "https://westmint.statescan.io/extrinsic/{hash}",
-            "event": "https://westmint.statescan.io/event/{event}"
-        }
-    ],
+            {
+                "name": "Statescan",
+                "account": "https://westmint.statescan.io/account/{address}",
+                "extrinsic": "https://westmint.statescan.io/extrinsic/{hash}",
+                "event": "https://westmint.statescan.io/event/{event}"
+            }
+        ],
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Westmint_Testnet.svg",
         "addressPrefix": 42,
         "types": {
@@ -2642,10 +2642,10 @@
                 "type": "statemine",
                 "priceId": "polkadot",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
-                 "typeExtras": {
-                     "assetId": "340282366920938463463374607431768211455"
-                 }
-             }
+                "typeExtras": {
+                    "assetId": "340282366920938463463374607431768211455"
+                }
+            }
         ],
         "nodes": [
             {
@@ -2994,13 +2994,13 @@
             }
         ],
         "explorers": [
-        {
-            "name": "Statescan",
-            "account": "https://statemint.statescan.io/account/{address}",
-            "extrinsic": "https://statemint.statescan.io/extrinsic/{hash}",
-            "event": "https://statemint.statescan.io/event/{event}"
-        }
-    ],
+            {
+                "name": "Statescan",
+                "account": "https://statemint.statescan.io/account/{address}",
+                "extrinsic": "https://statemint.statescan.io/extrinsic/{hash}",
+                "event": "https://statemint.statescan.io/event/{event}"
+            }
+        ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/statemint.json",
             "overridesCommon": true
@@ -4008,7 +4008,7 @@
                 "type": "subquery",
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-aleph-zero"
             },
-             "staking": {
+            "staking": {
                 "type": "subquery",
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-aleph-zero"
             }
@@ -5156,5 +5156,33 @@
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/SNOW.svg",
         "addressPrefix": 2207
+    },
+    {
+        "chainId": "e895bbd50ca2b646bf2b12f68de46dc29aa3b82560766f3c66227b7211d836c4",
+        "name": "Governance2 Novasama Testnet",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "Unit",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/GOV2.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://novasama.uz",
+                "name": "Development node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/governance2_testnet.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Governance2_Testnet.svg",
+        "addressPrefix": 42,
+        "options": [
+            "testnet",
+            "governance"
+        ]
     }
 ]
