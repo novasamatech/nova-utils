@@ -228,14 +228,14 @@
                 "precision": 12,
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Westend.svg"
             },
-             {
+            {
                 "assetId": 1,
                 "symbol": "SIRI",
                 "precision": 10,
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Default.svg",
                 "type": "statemine",
                 "typeExtras": {
-                     "assetId": "81"
+                    "assetId": "81"
                 }
             }
         ],
@@ -250,13 +250,13 @@
             }
         ],
         "explorers": [
-        {
-            "name": "Statescan",
-            "account": "https://westmint.statescan.io/account/{address}",
-            "extrinsic": "https://westmint.statescan.io/extrinsic/{hash}",
-            "event": "https://westmint.statescan.io/event/{event}"
-        }
-    ],
+            {
+                "name": "Statescan",
+                "account": "https://westmint.statescan.io/account/{address}",
+                "extrinsic": "https://westmint.statescan.io/extrinsic/{hash}",
+                "event": "https://westmint.statescan.io/event/{event}"
+            }
+        ],
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Westmint_Testnet.svg",
         "addressPrefix": 42,
         "types": {
@@ -2642,10 +2642,10 @@
                 "type": "statemine",
                 "priceId": "polkadot",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
-                 "typeExtras": {
-                     "assetId": "340282366920938463463374607431768211455"
-                 }
-             }
+                "typeExtras": {
+                    "assetId": "340282366920938463463374607431768211455"
+                }
+            }
         ],
         "nodes": [
             {
@@ -2994,13 +2994,13 @@
             }
         ],
         "explorers": [
-        {
-            "name": "Statescan",
-            "account": "https://statemint.statescan.io/account/{address}",
-            "extrinsic": "https://statemint.statescan.io/extrinsic/{hash}",
-            "event": "https://statemint.statescan.io/event/{event}"
-        }
-    ],
+            {
+                "name": "Statescan",
+                "account": "https://statemint.statescan.io/account/{address}",
+                "extrinsic": "https://statemint.statescan.io/extrinsic/{hash}",
+                "event": "https://statemint.statescan.io/event/{event}"
+            }
+        ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/statemint.json",
             "overridesCommon": true
@@ -4008,7 +4008,7 @@
                 "type": "subquery",
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-aleph-zero"
             },
-             "staking": {
+            "staking": {
                 "type": "subquery",
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-aleph-zero"
             }
@@ -4702,6 +4702,10 @@
             {
                 "url": "wss://tinker.invarch.network",
                 "name": "InvArch node"
+            },
+            {
+                "url": "wss://invarch-tinkernet.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "types": {
@@ -5119,6 +5123,39 @@
         "options": [
             "testnet"
         ]
+    },
+    {
+        "chainId": "b34f6cd03a41f0fab38ba9fd5b11cce5f303633c46f39f0c6fdc7c3c602bafa9",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Snow",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "ICZ",
+                "precision": 18,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/ICZ.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://snow-rpc.icenetwork.io",
+                "name": "Snow node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://snow.subscan.io/extrinsic/{hash}",
+                "account": "https://snow.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/snow.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/SNOW.svg",
+        "addressPrefix": 2207
     },
     {
         "chainId": "e895bbd50ca2b646bf2b12f68de46dc29aa3b82560766f3c66227b7211d836c4",
