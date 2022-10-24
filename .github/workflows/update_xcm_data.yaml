@@ -11,8 +11,10 @@ jobs:
       xcm_updated: ${{ steps.xcm.outputs.any_changed }}
 
     steps:
-      - name: Checkout current repository
-        uses: actions/checkout@v2
+      - name: Checkout current repository to Master branch
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Checkout support repo
         uses: actions/checkout@v2
@@ -36,7 +38,7 @@ jobs:
           python nova-utils/update_xcm_data.py
 
       - name: Move generated file
-        run: cp support/transfers_dev.json ${{ env.DEV_XCM_JSON_PATH }}
+        run: mv support/transfers_dev.json ${{ env.DEV_XCM_JSON_PATH }}
 
       - name: 🪬 Was xcm/transfers_dev.json changed?
         id: xcm
