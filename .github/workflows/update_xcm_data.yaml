@@ -41,7 +41,6 @@ jobs:
         run: mv support/transfers_dev.json ${{ env.DEV_XCM_JSON_PATH }}
 
       - name: Make Pull Request
-        if: (steps.xcm.outputs.any_changed == 'true')
         uses: ./.github/workflows/make-pull-request
         with:
           commit-files: ${{ env.DEV_XCM_JSON_PATH }}
