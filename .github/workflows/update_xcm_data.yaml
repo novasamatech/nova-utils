@@ -35,14 +35,14 @@ jobs:
           cd ./support
           python nova-utils/update_xcm_data.py
 
-      - name: Debug
-        run: ls -Ra
+      # - name: Debug
+      #   run: ls -Ra
 
-      - name: Move generated file
-        run: mv support/transfers_dev.json ${{ env.DEV_XCM_JSON_PATH }}
+      # - name: Move generated file
+      #   run: mv support/transfers_dev.json ${{ env.DEV_XCM_JSON_PATH }}
 
-      - name: Debug
-        run: ls -Ra
+      # - name: Debug
+      #   run: ls -Ra
 
       - name: 🪬 Was xcm/transfers_dev.json changed?
         id: xcm
