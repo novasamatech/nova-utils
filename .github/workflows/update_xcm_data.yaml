@@ -27,12 +27,12 @@ jobs:
 
       - name: ⚙️ Install dependencies
         run: |
-          cd ../support
+          cd ./support
           pip install -r ./requirements.txt
 
       - name: 🦾 Generate new xcm list
         run: |
-          cd ../support
+          cd ./support
           python nova-utils/update_xcm_data.py
 
       - name: Move generated file
