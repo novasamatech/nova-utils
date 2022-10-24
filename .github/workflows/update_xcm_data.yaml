@@ -1,0 +1,54 @@
+name: Update xcm coefficients
+
+on:
+  pull_request:
+
+
+jobs:
+  update-xcm:
+    runs-on: ubuntu-latest
+    outputs:
+      xcm_updated: ${{ steps.xcm.outputs.any_changed }}
+
+    steps:
+      - name: Checkout current repository
+        uses: actions/checkout@v2
+
+      - name: Checkout support repo
+        uses: actions/checkout@v2
+        with:
+          path: ./support
+          repository: nova-wallet/support-utils
+          ref: feature/auto-update-xcm
+          token: ${{ secrets.PAT_TOKEN }}
+
+      - name: 🛠 Set up actual paths
+        uses: ./.github/workflows/setup-path
+
+      - name: ⚙️ Install dependencies
+        run: |
+          cd ../support
+          pip install -r ./requirements.txt
+
+      - name: 🦾 Generate new xcm list
+        run: |
+          cd ../support
+          python nova-utils/update_xcm_data.py
+
+      - name: 🪬 Was xcm/transfers_dev.json changed?
+        id: xcm
+        uses: tj-actions/changed-files@v18.2
+        with:
+          files: |
+            ${{ env.DEV_XCM_JSON_PATH }}
+
+      - name: Make Pull Request
+        if: (steps.xcm.outputs.any_changed == 'true')
+        uses: ./.github/workflows/make-pull-request
+        with:
+          commit-files: ${{ env.DEV_XCM_JSON_PATH }}
+          commit-message: Update xcm coefficients
+          github-token: ${{ secrets.GITHUB_TOKEN  }}
+          branch-name: update-xcm-coefficients-${{github.run_number}}
+          pr-title: Update XCM coefficients 🆙
+          pr-body: This PR was generated automatically 🤖
