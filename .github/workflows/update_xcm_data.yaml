@@ -42,7 +42,7 @@ jobs:
 
       - name: 🪬 Was xcm/transfers_dev.json changed?
         id: xcm
-        uses: tj-actions/changed-files@v18.2
+        uses: tj-actions/changed-files@v33
         with:
           files: |
             ${{ env.DEV_XCM_JSON_PATH }}
