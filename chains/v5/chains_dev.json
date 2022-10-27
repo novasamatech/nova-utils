@@ -995,12 +995,8 @@
                 "name": "OnFinality node"
             },
             {
-                "url": "wss://moonriver-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
-                "url": "wss://wss.moonriver.moonbeam.network",
-                "name": "PureStake node"
+                "url": "wss://wss.api.moonriver.moonbeam.network",
+                "name": "Moonbeam Foundation node"
             },
             {
                 "url": "wss://moonriver.public.blastapi.io",
@@ -2574,8 +2570,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://moonbeam-rpc.dwellir.com",
-                "name": "Dwellir node"
+                "url": "wss://wss.api.moonbeam.network",
+                "name": "Moonbeam Foundation node"
             },
             {
                 "url": "wss://moonbeam.api.onfinality.io/public-ws",
@@ -2586,8 +2582,12 @@
                 "name": "Blast node"
             },
             {
-                "url": "wss://wss.api.moonbeam.network",
-                "name": "Moonbeam Foundation node"
+                "url": "wss://public-rpc.pinknode.io/moonbeam",
+                "name": "Pinknode node"
+            },
+            {
+                "url": "wss://1rpc.io/glmr",
+                "name": "Automata 1RPC node"
             }
         ],
         "explorers": [
