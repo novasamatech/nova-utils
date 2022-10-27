@@ -873,8 +873,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://moonbeam-rpc.dwellir.com",
-                "name": "Dwellir node"
+                "url": "wss://wss.api.moonbeam.network",
+                "name": "Moonbeam Foundation node"
             },
             {
                 "url": "wss://moonbeam.api.onfinality.io/public-ws",
@@ -883,10 +883,6 @@
             {
                 "url": "wss://moonbeam.public.blastapi.io",
                 "name": "Blast node"
-            },
-            {
-                "url": "wss://wss.api.moonbeam.network",
-                "name": "Moonbeam Foundation node"
             }
         ],
         "explorers": [
@@ -1113,12 +1109,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://moonriver-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
-                "url": "wss://wss.moonriver.moonbeam.network",
-                "name": "PureStake node"
+                "url": "wss://wss.api.moonriver.moonbeam.network",
+                "name": "Moonbeam Foundation node"
             },
             {
                 "url": "wss://moonriver.api.onfinality.io/public-ws",
