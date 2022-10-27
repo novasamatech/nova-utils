@@ -1,7 +1,9 @@
 name: Update xcm coefficients
 
 on:
-  pull_request:
+  schedule:
+    - cron: '1 * * * *'
+  workflow_dispatch:
 
 
 jobs:
@@ -14,7 +16,6 @@ jobs:
       - name: Checkout current repository to Master branch
         uses: actions/checkout@v3
         with:
-          ref: master
           fetch-depth: 0
 
       - name: Checkout support repo
