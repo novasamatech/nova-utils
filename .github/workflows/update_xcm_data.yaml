@@ -23,7 +23,7 @@ jobs:
         with:
           path: ./support
           repository: nova-wallet/support-utils
-          ref: feature/auto-update-xcm
+          ref: master
           token: ${{ secrets.PAT_TOKEN }}
 
       - name: 🛠 Set up actual paths
