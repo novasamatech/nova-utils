@@ -4604,5 +4604,30 @@
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/SNOW.svg",
         "addressPrefix": 2207
+    },
+    {
+        "chainId": "6f0f071506de39058fe9a95bbca983ac0e9c5da3443909574e95d52eb078d348",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "DAO IPCI",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "MITO",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/MITO.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://kusama.rpc.ipci.io",
+                "name": "Airalab node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/dao_ipci.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/DAOIPCI.svg",
+        "addressPrefix": 32
     }
 ]
