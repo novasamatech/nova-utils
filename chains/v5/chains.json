@@ -25,12 +25,20 @@
                 "name": "Dwellir node"
             },
             {
-                "url": "wss://rpc.polkadot.io",
-                "name": "Parity node"
-            },
-            {
                 "url": "wss://polkadot.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
+            },
+            {
+                "url": "wss://public-rpc.pinknode.io/polkadot",
+                "name": "Pinknode node"
+            },
+            {
+                "url": "wss://polkadot.public.curie.radiumblock.io/ws",
+                "name": "Radium block node"
+            },
+            {
+                "url": "wss://1rpc.io/dot",
+                "name": "Automata 1RPC node"
             }
         ],
         "explorers": [
