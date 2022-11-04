@@ -73,6 +73,10 @@
             "crowdloans": {
                 "type": "github",
                 "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/crowdloan/polkadot.json"
+            },
+            "governance": {
+                "type": "polkassembly",
+                "url": "https://polkadot.polkassembly.io/v1/graphql"
             }
         },
         "options": [
@@ -153,6 +157,10 @@
             "crowdloans": {
                 "type": "github",
                 "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/crowdloan/kusama.json"
+            },
+            "governance": {
+                "type": "polkassembly",
+                "url": "https://kusama.polkassembly.io/v1/graphql"
             }
         },
         "options": [
@@ -919,6 +927,10 @@
             "staking": {
                 "type": "subquery",
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonbeam"
+            },
+            "governance": {
+                "type": "polkassembly",
+                "url": "https://api.moonbeam.polkassembly.network/v1/graphql"
             }
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Moonbeam.svg",
@@ -1160,6 +1172,10 @@
             "staking": {
                 "type": "subquery",
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonriver"
+            },
+            "governance": {
+                "type": "polkassembly",
+                "url": "https://api.moonriver.polkassembly.network/v1/graphql"
             }
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Moonriver.svg",
