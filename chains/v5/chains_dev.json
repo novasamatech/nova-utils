@@ -21,12 +21,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://public-rpc.pinknode.io/polkadot",
-                "name": "Pinknode node"
-            },
-            {
                 "url": "wss://polkadot.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
+            },
+            {
+                "url": "wss://public-rpc.pinknode.io/polkadot",
+                "name": "Pinknode node"
             },
             {
                 "url": "wss://polkadot.public.curie.radiumblock.io/ws",
