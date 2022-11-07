@@ -62,10 +62,10 @@ jobs:
         if: ${{ env.environment }}
         run: |
           if [ "${{ env.environment }}" = "PROD" ]; then
-              mv support/transfers_dev.json ${{ env.XCM_JSON_PATH }}
+              mv support/transfers.json ${{ env.XCM_JSON_PATH }}
               echo "COMMIT_FILE=${{ env.XCM_JSON_PATH }}" >> "$GITHUB_ENV"
           else
-              mv support/transfers.json ${{ env.DEV_XCM_JSON_PATH }}
+              mv support/transfers_dev.json ${{ env.DEV_XCM_JSON_PATH }}
               echo "COMMIT_FILE=${{ env.DEV_XCM_JSON_PATH }}" >> "$GITHUB_ENV"
           fi
 
