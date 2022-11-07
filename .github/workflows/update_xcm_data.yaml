@@ -2,7 +2,7 @@ name: Update xcm coefficients
 
 on:
   schedule:
-    - cron: '1 * * * *'
+    - cron: '0 8 * * *'
   workflow_dispatch:
     inputs:
       environment:
@@ -13,10 +13,6 @@ on:
         options:
           - DEV
           - PROD
-  pull_request:
-
-env:
-  environment: PROD
 
 jobs:
   update-xcm:
@@ -30,7 +26,7 @@ jobs:
 
       - name: Set environment
         run: |
-          if [ "${{ env.environment }}" = "PROD" ]; then
+          if [ "${{ github.event.inputs.environment }}" = "PROD" ]; then
               echo "ENVIRONMENT=PROD" >> "$GITHUB_ENV"
           else
               echo "ENVIRONMENT=DEV" >> "$GITHUB_ENV"
@@ -58,9 +54,8 @@ jobs:
           python nova-utils/update_xcm_data.py
 
       - name: Move generated file
-        if: ${{ env.environment }}
         run: |
-          if [ "${{ env.environment }}" = "PROD" ]; then
+          if [ "${{ github.event.inputs.environment }}" = "PROD" ]; then
               mv support/transfers.json ${{ env.XCM_JSON_PATH }}
               echo "COMMIT_FILE=${{ env.XCM_JSON_PATH }}" >> "$GITHUB_ENV"
           else
@@ -75,5 +70,5 @@ jobs:
           commit-message: Update xcm coefficients
           github-token: ${{ secrets.GITHUB_TOKEN  }}
           branch-name: update-xcm-coefficients-${{github.run_number}}
-          pr-title: Update XCM coefficients 🆙
+          pr-title: 🆙 Update XCM coefficients for ${{ env.ENVIRONMENT }} env
           pr-body: This PR was generated automatically 🤖
