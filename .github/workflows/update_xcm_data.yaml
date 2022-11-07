@@ -5,7 +5,7 @@ on:
     - cron: '1 * * * *'
   workflow_dispatch:
     inputs:
-      ENVIRONMENT:
+      environment:
         required: true
         description: Which file will be updated DEV or PROD
         type: choice
@@ -19,14 +19,16 @@ on:
 jobs:
   update-xcm:
     runs-on: ubuntu-latest
-    outputs:
-      xcm_updated: ${{ steps.xcm.outputs.any_changed }}
 
     steps:
       - name: Checkout current repository to Master branch
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
+
+      - name: Set environment
+        if: ${{ github.event.inputs.environment }}
+        run: echo "ENVIRONMENT=${{ github.event.inputs.environment }}" >> "$GITHUB_ENV"
 
       - name: Checkout support repo
         uses: actions/checkout@v2
