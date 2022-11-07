@@ -13,10 +13,11 @@ on:
         options:
           - DEV
           - PROD
+  pull_request:
 
 
 env:
-  environment: PROD
+  environment: DEV
 
 jobs:
   update-xcm:
@@ -30,7 +31,7 @@ jobs:
 
       - name: Set environment
         run: |
-          if [ "${{ github.event.inputs.environment }}" = "PROD" ]; then
+          if [ "${{ env.environment }}" = "PROD" ]; then
               echo "ENVIRONMENT=PROD" >> "$GITHUB_ENV"
           else
               echo "ENVIRONMENT=DEV" >> "$GITHUB_ENV"
@@ -60,7 +61,7 @@ jobs:
       - name: Move generated file
         if: ${{ env.environment }}
         run: |
-          if [ "${{ github.event.inputs.environment }}" = "PROD" ]; then
+          if [ "${{ env.environment }}" = "PROD" ]; then
               mv support/transfers_dev.json ${{ env.XCM_JSON_PATH }}
               echo "COMMIT_FILE=${{ env.XCM_JSON_PATH }}" >> "$GITHUB_ENV"
           else
