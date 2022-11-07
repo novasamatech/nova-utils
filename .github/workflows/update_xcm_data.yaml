@@ -4,6 +4,16 @@ on:
   schedule:
     - cron: '1 * * * *'
   workflow_dispatch:
+    inputs:
+      ENVIRONMENT:
+        required: true
+        description: Which file will be updated DEV or PROD
+        type: choice
+        default: PROD
+        options:
+          - DEV
+          - PROD
+  pull_request:
 
 
 jobs:
