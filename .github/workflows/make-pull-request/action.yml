@@ -49,6 +49,6 @@ runs:
           destination_branch: "master"
           pr_title: ${{ inputs.pr-title }}
           pr_body: ${{ inputs.pr-body }}
-          pr_reviewer: "stepanLav"
+          pr_reviewer: "stepanLav,leohar"
           pr_draft: false
           github_token: ${{ inputs.github-token }}

@@ -1,0 +1,65 @@
+name: Update xcm coefficients
+
+on:
+  schedule:
+    - cron: '1 * * * *'
+  workflow_dispatch:
+    inputs:
+      environment:
+        required: true
+        description: Which file will be updated DEV or PROD
+        type: choice
+        default: PROD
+        options:
+          - DEV
+          - PROD
+  pull_request:
+
+
+jobs:
+  update-xcm:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout current repository to Master branch
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set environment
+        if: ${{ github.event.inputs.environment }}
+        run: echo "ENVIRONMENT=${{ github.event.inputs.environment }}" >> "$GITHUB_ENV"
+
+      - name: Checkout support repo
+        uses: actions/checkout@v2
+        with:
+          path: ./support
+          repository: nova-wallet/support-utils
+          ref: master
+          token: ${{ secrets.PAT_TOKEN }}
+
+      - name: 🛠 Set up actual paths
+        uses: ./.github/workflows/setup-path
+
+      - name: ⚙️ Install dependencies
+        run: |
+          cd ./support
+          pip install -r ./requirements.txt
+
+      - name: 🦾 Generate new xcm coefficients
+        run: |
+          cd ./support
+          python nova-utils/update_xcm_data.py
+
+      - name: Move generated file
+        run: mv support/transfers_dev.json ${{ env.DEV_XCM_JSON_PATH }}
+
+      - name: Make Pull Request
+        uses: ./.github/workflows/make-pull-request
+        with:
+          commit-files: ${{ env.DEV_XCM_JSON_PATH }}
+          commit-message: Update xcm coefficients
+          github-token: ${{ secrets.GITHUB_TOKEN  }}
+          branch-name: update-xcm-coefficients-${{github.run_number}}
+          pr-title: Update XCM coefficients 🆙
+          pr-body: This PR was generated automatically 🤖
