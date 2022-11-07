@@ -50,13 +50,15 @@ jobs:
           cd ./support
           python nova-utils/update_xcm_data.py
 
-      - name: Move generated file
-        run: mv support/transfers_dev.json ${{ env.DEV_XCM_JSON_PATH }}
+      - name: Move generated files
+        run: |
+          mv support/transfers_dev.json ${{ env.DEV_XCM_JSON_PATH }}
+          mv support/transfers.json ${{ env.XCM_JSON_PATH }}
 
       - name: Make Pull Request
         uses: ./.github/workflows/make-pull-request
         with:
-          commit-files: ${{ env.DEV_XCM_JSON_PATH }}
+          commit-files: ${{ env.DEV_XCM_JSON_PATH }} ${{ env.XCM_JSON_PATH }}
           commit-message: Update xcm coefficients
           github-token: ${{ secrets.GITHUB_TOKEN  }}
           branch-name: update-xcm-coefficients-${{github.run_number}}
