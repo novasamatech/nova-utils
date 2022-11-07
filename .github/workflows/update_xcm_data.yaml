@@ -13,7 +13,10 @@ on:
         options:
           - DEV
           - PROD
+  pull_request:
 
+env:
+  environment: PROD
 
 jobs:
   update-xcm:
@@ -26,8 +29,12 @@ jobs:
           fetch-depth: 0
 
       - name: Set environment
-        if: ${{ github.event.inputs.environment }}
-        run: echo "ENVIRONMENT=${{ github.event.inputs.environment }}" >> "$GITHUB_ENV"
+        run: |
+          if [ "${{ env.environment }}" = "PROD" ]; then
+              echo "ENVIRONMENT=PROD" >> "$GITHUB_ENV"
+          else
+              echo "ENVIRONMENT=DEV" >> "$GITHUB_ENV"
+          fi
 
       - name: Checkout support repo
         uses: actions/checkout@v2
@@ -50,16 +57,21 @@ jobs:
           cd ./support
           python nova-utils/update_xcm_data.py
 
-      - name: Move generated files
-        continue-on-error: true
+      - name: Move generated file
+        if: ${{ env.environment }}
         run: |
-          mv support/transfers_dev.json ${{ env.DEV_XCM_JSON_PATH }}
-          mv support/transfers.json ${{ env.XCM_JSON_PATH }}
+          if [ "${{ env.environment }}" = "PROD" ]; then
+              mv support/transfers.json ${{ env.XCM_JSON_PATH }}
+              echo "COMMIT_FILE=${{ env.XCM_JSON_PATH }}" >> "$GITHUB_ENV"
+          else
+              mv support/transfers_dev.json ${{ env.DEV_XCM_JSON_PATH }}
+              echo "COMMIT_FILE=${{ env.DEV_XCM_JSON_PATH }}" >> "$GITHUB_ENV"
+          fi
 
       - name: Make Pull Request
         uses: ./.github/workflows/make-pull-request
         with:
-          commit-files: ${{ env.DEV_XCM_JSON_PATH }} ${{ env.XCM_JSON_PATH }}
+          commit-files: ${{ env.COMMIT_FILE }}
           commit-message: Update xcm coefficients
           github-token: ${{ secrets.GITHUB_TOKEN  }}
           branch-name: update-xcm-coefficients-${{github.run_number}}
