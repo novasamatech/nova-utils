@@ -52,6 +52,7 @@ jobs:
           python nova-utils/update_xcm_data.py
 
       - name: Move generated files
+        continue-on-error: true
         run: |
           mv support/transfers_dev.json ${{ env.DEV_XCM_JSON_PATH }}
           mv support/transfers.json ${{ env.XCM_JSON_PATH }}
