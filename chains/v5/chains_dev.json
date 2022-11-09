@@ -5434,5 +5434,55 @@
             "testnet",
             "governance-v1"
         ]
+    },
+    {
+        "chainId": "74ed91fbc18497f011290f9119a2217908649170337b6414a2d44923ade07063",
+        "name": "Myriad",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "MYRIA",
+                "precision": 18,
+                "priceId": "myriad-social",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/MYRIA.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://gateway.mainnet.octopus.network/myriad/a4cb0a6e30ff5233a3567eb4e8cb71e0",
+                "name": "Octopus node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/myriad.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Myriad.svg",
+        "addressPrefix": 42
+    },
+    {
+        "chainId": "a7113159e275582ee71ee499b24378a2416f34dc5aaf714443f0d11c6c3d99d3",
+        "name": "Fusotao",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "TAO",
+                "precision": 18,
+                "priceId": "fusotao",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/TAO.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://gateway.mainnet.octopus.network/fusotao/0efwa9v0crdx4dg3uj8jdmc5y7dj4ir2",
+                "name": "Octopus node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/fusotao.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Fusotao.svg",
+        "addressPrefix": 42
     }
 ]
