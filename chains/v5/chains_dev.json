@@ -5453,6 +5453,14 @@
                 "name": "Octopus node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Explorer",
+                "extrinsic": null,
+                "account": "https://explorer.mainnet.oct.network/myriad/accounts/{address}",
+                "event": null
+            }
+        ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/myriad.json",
             "overridesCommon": true
@@ -5476,6 +5484,14 @@
             {
                 "url": "wss://gateway.mainnet.octopus.network/fusotao/0efwa9v0crdx4dg3uj8jdmc5y7dj4ir2",
                 "name": "Octopus node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Explorer",
+                "extrinsic": null,
+                "account": "https://explorer.mainnet.oct.network/fusotao/accounts/{address}",
+                "event": null
             }
         ],
         "types": {
