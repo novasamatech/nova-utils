@@ -297,12 +297,12 @@
             {
                 "assetId": 7,
                 "symbol": "USDT",
-                "precision": 4,
+                "precision": 6,
                 "priceId": "tether",
                 "type": "statemine",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/USDT.svg",
                 "typeExtras": {
-                    "assetId": "11"
+                    "assetId": "1984"
                 }
             }
         ],
@@ -2672,6 +2672,17 @@
                 "precision": 10,
                 "priceId": "polkadot",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg"
+            },
+            {
+                "assetId": 1,
+                "symbol": "USDT",
+                "precision": 6,
+                "priceId": "tether",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/USDT.svg",
+                "typeExtras": {
+                    "assetId": "1984"
+                }
             }
         ],
         "nodes": [
