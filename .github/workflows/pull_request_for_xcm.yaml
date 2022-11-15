@@ -40,13 +40,13 @@ jobs:
       - name: Generate message for PROD
         if: steps.prod.outputs.any_changed == 'true'
         run: |
-          echo ## Changes for PROD >> body_file.txt
+          echo "## Changes for PROD" >> body_file.txt
           python scripts/print_xcm_changes.py prod >> body_file.txt
 
       - name: Generate message for DEV
         if: steps.dev.outputs.any_changed == 'true'
         run: |
-          echo ## Changes for DEV >> body_file.txt
+          echo "## Changes for DEV" >> body_file.txt
           python scripts/print_xcm_changes.py dev >> body_file.txt
 
       - name: Find Comment
