@@ -47,7 +47,7 @@ jobs:
         if: steps.dev.outputs.any_changed == 'true'
         run: |
           echo ## Changes for DEV >> body_file.txt
-          python scripts/print_xcm_changes.py dev >> dev_changes.txt
+          python scripts/print_xcm_changes.py dev >> body_file.txt
 
       - name: Find Comment
         uses: peter-evans/find-comment@v2
