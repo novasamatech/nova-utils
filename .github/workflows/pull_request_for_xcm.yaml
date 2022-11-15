@@ -34,21 +34,20 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Build body text
+        run: echo This comment was written by a bot! >> body_file.txt
+
       - name: Generate message for PROD
         if: steps.prod.outputs.any_changed == 'true'
-        run: python scripts/print_xcm_changes.py prod >> prod_changes.txt
+        run: |
+          echo ## Changes for PROD >> body_file.txt
+          python scripts/print_xcm_changes.py prod >> body_file.txt
 
       - name: Generate message for DEV
         if: steps.dev.outputs.any_changed == 'true'
-        run: python scripts/print_xcm_changes.py dev >> dev_changes.txt
-
-      - name: Build body text
         run: |
-          echo This comment was written by a bot! >> body_file.txt
-          echo ## Changes for PROD >> body_file.txt
-          cat prod_changes.txt >> body_file.txt
           echo ## Changes for DEV >> body_file.txt
-          cat dev_changes.txt >> body_file.txt
+          python scripts/print_xcm_changes.py dev >> dev_changes.txt
 
       - name: Find Comment
         uses: peter-evans/find-comment@v2
