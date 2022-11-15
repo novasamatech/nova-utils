@@ -92,9 +92,10 @@ def compare_destinations(object_accumulator, actual_chain_dict, new_chain_dict, 
                 destination_value = destination.get('destination')
                 destination_chain_id = destination_value.get('chainId')
                 destination_name = chains_json_dict[destination_chain_id].get('name')
+                new_destinations = asset_in_new_chain_dict.get('xcmTransfers')
                 try:
                     destination_in_new_chain_dict = next(
-                        destination for destination in asset_in_new_chain_dict.get('xcmTransfers') if destination.get('destination').get('chainId') == destination_chain_id)
+                        destination for destination in new_destinations if destination.get('destination').get('chainId') == destination_chain_id)
                 except StopIteration:
                     object_accumulator['chains'][chain_name][asset_symbol][destination_name] = 'That destination was removed'
                     continue
