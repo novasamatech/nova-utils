@@ -36,20 +36,19 @@ jobs:
 
       - name: Generate message for PROD
         if: steps.prod.outputs.any_changed == 'true'
-        run: |
-          output=$(python scripts/print_xcm_changes.py prod)
-          echo "XCM_CHANGES<<EOF" >> $GITHUB_ENV
-          echo "$output" >> $GITHUB_ENV
-          echo "EOF" >> $GITHUB_ENV
+        run: python scripts/print_xcm_changes.py prod >> prod_changes.txt
 
       - name: Generate message for DEV
         if: steps.dev.outputs.any_changed == 'true'
-        run: |
-          output=$(python scripts/print_xcm_changes.py dev)
-          echo "DEV_XCM_CHANGES<<EOF" >> $GITHUB_ENV
-          echo "$output" >> $GITHUB_ENV
-          echo "EOF" >> $GITHUB_ENV
+        run: python scripts/print_xcm_changes.py dev >> dev_changes.txt
 
+      - name: Build body text
+        run: |
+          echo This comment was written by a bot! >> body_file.txt
+          echo ## Changes for PROD >> body_file.txt
+          cat prod_changes.txt >> body_file.txt
+          echo ## Changes for DEV >> body_file.txt
+          cat dev_changes.txt >> body_file.txt
 
       - name: Find Comment
         uses: peter-evans/find-comment@v2
@@ -64,22 +63,12 @@ jobs:
         uses: peter-evans/create-or-update-comment@v2
         with:
           issue-number: ${{ github.event.pull_request.number }}
-          body: |
-            This comment was written by a bot!
-            ## Changes for PROD
-            ${{ env.XCM_CHANGES }}
-            ## Changes for DEV
-            ${{ env.DEV_XCM_CHANGES }}
+          body-file: body_file.txt
 
       - name: Update comment
         if: steps.fc.outputs.comment-id != ''
         uses: peter-evans/create-or-update-comment@v2
         with:
           comment-id: ${{ steps.fc.outputs.comment-id }}
-          body: |
-            This comment was written by a bot!
-            ## Changes for PROD
-            ${{ env.XCM_CHANGES }}
-            ## Changes for DEV
-            ${{ env.DEV_XCM_CHANGES }}
+          body-file: body_file.txt
           edit-mode: replace
