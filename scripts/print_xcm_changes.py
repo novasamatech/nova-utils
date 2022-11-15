@@ -80,29 +80,30 @@ def compare_destinations(object_accumulator, actual_chain_dict, new_chain_dict, 
 
     for chain_id, chain_data in actual_chain_dict.items():
         chain_name = chains_json_dict[chain_id].get('name')
-        for assets_id, chain_asset in enumerate(chain_data.get('assets')):
+        for chain_asset in chain_data.get('assets'):
+            asset_symbol = chain_asset['assetLocation']
             try:
-                new_asset = new_chain_dict[chain_id].get('assets')[assets_id]
-            except:
-                object_accumulator['chains'][chain_name][chain_asset.get(
-                    'assetLocation')] = 'That asset was removed'
+                asset_in_new_chain_dict = next(
+                    asset for asset in new_chain_dict[chain_id]['assets'] if asset['assetLocation'] == asset_symbol)
+            except StopIteration:
+                object_accumulator['chains'][chain_name][asset_symbol] = 'That asset was removed'
                 continue
-            for destination_id, destination_value in enumerate(chain_asset.get('xcmTransfers')):
-                destination_name = chains_json_dict[destination_value.get(
-                    'destination').get('chainId')].get('name')
+            for destination in chain_asset.get('xcmTransfers'):
+                destination_value = destination.get('destination')
+                destination_chain_id = destination_value.get('chainId')
+                destination_name = chains_json_dict[destination_chain_id].get('name')
                 try:
-                    new_destination = new_asset.get('xcmTransfers')[
-                        destination_id]
-                except:
-                    object_accumulator['chains'][chain_name][chain_asset.get(
-                        'assetLocation')][destination_name] = 'That destination was removed'
+                    destination_in_new_chain_dict = next(
+                        destination for destination in asset_in_new_chain_dict.get('xcmTransfers') if destination.get('destination').get('chainId') == destination_chain_id)
+                except StopIteration:
+                    object_accumulator['chains'][chain_name][asset_symbol][destination_name] = 'That destination was removed'
                     continue
                 new_destination_value = deep_search_an_elemnt_by_key(
-                    new_destination, 'value')
+                    destination_in_new_chain_dict, 'value')
                 old_destination_value = deep_search_an_elemnt_by_key(
                     destination_value, 'value')
                 if new_destination_value != old_destination_value:
-                    object_accumulator['chains'][chain_name][chain_asset.get('assetLocation')][destination_name] = {
+                    object_accumulator['chains'][chain_name][asset_symbol][destination_name] = {
                         'old_value': old_destination_value, 'new_value': new_destination_value}
 
 
