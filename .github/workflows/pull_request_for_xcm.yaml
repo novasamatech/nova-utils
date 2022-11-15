@@ -29,7 +29,7 @@ jobs:
         uses: tj-actions/changed-files@v18.2
         with:
           files: |
-            ${{ env.XCM_JSON_PATH }}
+            ${{ env.DEV_XCM_JSON_PATH }}
 
       - name: Install dependencies
         run: pip install -r requirements.txt
