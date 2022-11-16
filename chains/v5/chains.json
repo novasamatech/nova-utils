@@ -4656,5 +4656,38 @@
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/DAOIPCI.svg",
         "addressPrefix": 32
+    },
+    {
+        "chainId": "74ed91fbc18497f011290f9119a2217908649170337b6414a2d44923ade07063",
+        "name": "Myriad",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "MYRIA",
+                "precision": 18,
+                "priceId": "myriad-social",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/MYRIA.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://gateway.mainnet.octopus.network/myriad/a4cb0a6e30ff5233a3567eb4e8cb71e0",
+                "name": "Octopus node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Explorer",
+                "extrinsic": null,
+                "account": "https://explorer.mainnet.oct.network/myriad/accounts/{address}",
+                "event": null
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/myriad.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Myriad.svg",
+        "addressPrefix": 42
     }
 ]
