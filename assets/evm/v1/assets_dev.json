@@ -240,32 +240,6 @@
         ]
     },
     {
-        "symbol": "WETH",
-        "precision": 18,
-        "name": "Wrapped Ether",
-        "priceId": "wrapped-ethw",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/ETH.svg",
-        "instances": [
-            {
-                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
-                "contractAddress": "0xab3f0245B83feB11d15AAffeFD7AD465a59817eD"
-            }
-        ]
-    },
-    {
-        "symbol": "xcKSM",
-        "precision": 12,
-        "name": "xcKSM",
-        "priceId": "kusama",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg",
-        "instances": [
-            {
-                "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
-                "contractAddress": "0xFfFFfFff1FcaCBd218EDc0EbA20Fc2308C778080"
-            }
-        ]
-    },
-    {
         "symbol": "IDIA",
         "precision": 18,
         "name": "Impossible Decentralized Incubator Access Token",
@@ -363,6 +337,10 @@
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Default.svg",
         "instances": [
             {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                    "contractAddress": "0x65b09ef8c5A096C5Fd3A80f1F7369E56eB932412"
+            },
+            {
                 "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
                 "contractAddress": "0xC2392DD3e3fED2c8Ed9f7f0bDf6026fcd1348453"
             }
@@ -378,6 +356,45 @@
             {
                 "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
                 "contractAddress": "0x55aF5865807b196bD0197e0902746F31FBcCFa58"
+            }
+        ]
+    },
+    {
+        "symbol": "STELLA",
+        "precision": 18,
+        "name": "StellaSwap",
+        "priceId": "stellaswap",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/STELLA.svg",
+        "instances": [
+            {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "contractAddress": "0x0E358838ce72d5e61E0018a2ffaC4bEC5F4c88d2"
+            }
+        ]
+    },
+    {
+        "symbol": "BNB",
+        "precision": 18,
+        "name": "Binance",
+        "priceId": "binancecoin",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/BNB.svg",
+        "instances": [
+            {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "contractAddress": "0xc9BAA8cfdDe8E328787E29b4B078abf2DaDc2055"
+            }
+        ]
+    },
+    {
+        "symbol": "ETH",
+        "precision": 18,
+        "name": "Ethereum",
+        "priceId": "ethereum",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/ETH.svg",
+        "instances": [
+            {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "contractAddress": "0xfA9343C3897324496A05fC75abeD6bAC29f8A40f"
             }
         ]
     }
