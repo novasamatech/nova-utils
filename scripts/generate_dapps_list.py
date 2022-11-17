@@ -14,7 +14,7 @@ readme = Template("""
 def generate_dapps_table():
     writer = MarkdownTableWriter(
         table_name="List of supported dapps",
-        headers=["DApp", "Url", "Tags"],
+        headers=["--", "DApp", "Url", "Tags"],
         value_matrix=generate_value_matrix(),
         margin=1
     )
@@ -29,10 +29,13 @@ def generate_value_matrix():
     for dapp in data['dapps']:
         network_data_array = []
         network_data_array.append(dapp["name"])
+        network_data_array.append(dapp["name"])
         network_data_array.append(dapp["url"])
         network_data_array.append(",".join(dapp["categories"]))
         returning_array.append(network_data_array)
     returning_array.sort()
+    increment = iter(range(1, len(returning_array)+1))
+    [network.insert(0, next(increment)) for network in returning_array]
     return returning_array
 
 

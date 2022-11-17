@@ -1,7 +1,7 @@
 import json
 import os
 
-CHAINS_VERISON = os.getenv('CHAINS_VERSION', default = "v4")
+CHAINS_VERISON = os.getenv('CHAINS_VERSION', default = "v6")
 
 with open(f"chains/{CHAINS_VERISON}/chains_dev.json") as fin:
     dev_chains = json.load(fin)
