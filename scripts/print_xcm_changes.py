@@ -164,11 +164,11 @@ def main(argv):
         transfers_file = os.getenv(
             "DEV_XCM_JSON_PATH", "xcm/v2/transfers_dev.json")
         chains_url = nova_utils_url + \
-            os.getenv("DEV_CHAINS_JSON_PATH", "chains/v5/chains_dev.json")
+            os.getenv("DEV_CHAINS_JSON_PATH", "chains/v6/chains_dev.json")
     elif 'prod' in argv:
         transfers_file = os.getenv("XCM_JSON_PATH", "xcm/v2/transfers.json")
         chains_url = nova_utils_url + \
-            os.getenv("CHAINS_JSON_PATH", "chains/v5/chains.json")
+            os.getenv("CHAINS_JSON_PATH", "chains/v6/chains.json")
     else:
         raise Exception(
             'Provide a string `dev` or `prod` as parameter for the script')
