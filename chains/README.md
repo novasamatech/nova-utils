@@ -1,9 +1,9 @@
 
-# Some brief data about supported networks
-## 🕸️ Supported networks:   65
-## 🪙 Unique assets:    115
-## 🧾 Subquery projects:    59
-## 👀 Networks without any block explorers:     14
+# Some brief data about supported networks:
+### 🕸️ Supported networks: 65
+### 🪙 Unique assets: 115
+### 🧾 Subquery projects: 59
+### 👀 Networks without any block explorers: 14
 ---
 # List of supported networks
 | --  |        Network        |                                                                                                                        Assets                                                                                                                         |             Explorers              |                                                  SubQuery explorer                                                  |

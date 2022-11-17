@@ -8,11 +8,11 @@ from pytablewriter import MarkdownTableWriter
 
 
 readme = Template("""
-# Some brief data about supported networks
-## 🕸️ Supported networks: {{ number_of_networks }}
-## 🪙 Unique assets: {{ number_of_assets }}
-## 🧾 Subquery projects: {{ number_of_subquery_explorers }}
-## 👀 Networks without any block explorers: {{ number_of_networks_without_explorers }}
+# Some brief data about supported networks:
+### 🕸️ Supported networks: {{ number_of_networks }}
+### 🪙 Unique assets: {{ number_of_assets }}
+### 🧾 Subquery projects: {{ number_of_subquery_explorers }}
+### 👀 Networks without any block explorers: {{ number_of_networks_without_explorers }}
 ---
 {{networks_table}}
 """)
