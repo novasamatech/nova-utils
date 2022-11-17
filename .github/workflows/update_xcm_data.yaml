@@ -68,7 +68,7 @@ jobs:
         with:
           commit-files: ${{ env.COMMIT_FILE }}
           commit-message: Update xcm coefficients
-          github-token: ${{ secrets.GITHUB_TOKEN  }}
+          github-token: ${{ secrets.PAT_TOKEN  }}
           branch-name: update-xcm-coefficients-${{github.run_number}}
           pr-title: 🆙 Update XCM coefficients for ${{ env.ENVIRONMENT }} env
           pr-body: This PR was generated automatically 🤖
