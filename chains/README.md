@@ -1,7 +1,7 @@
 
 # Supported Networks & Assets data:
 ### 🕸️ Supported networks: 65
-### 💮 All assets 201
+### 💰 All assets 201
 ### 🪙 Unique assets: 115
 ### 💫 Cross Chain directions: 189
 ### 🧾 SubQuery API projects: 59
