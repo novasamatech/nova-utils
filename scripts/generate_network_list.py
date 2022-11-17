@@ -19,8 +19,8 @@ readme = Template("""
 {{networks_table}}
 """)
 
-CHAINS_VERSION = os.getenv('CHAINS_VERSION', default = "v6")
-XCM_VERSION = os.getenv('XCM_JSON_PATH', default = "v2")
+CHAINS_VERSION = os.getenv('CHAINS_VERSION', default="v6")
+XCM_VERSION = os.getenv('XCM_JSON_PATH', default="v2")
 
 
 def generate_networks_table():
@@ -74,7 +74,8 @@ def parse_parameters(key_param, parsing_object):
     if key_param == "symbol":
         return '<br />'.join(str(x.get(key_param)) for x in parsing_object)
     else:
-        return_data = '<br />'.join(str(x.get(key_param)) for x in parsing_object)
+        return_data = '<br />'.join(str(x.get(key_param))
+                                    for x in parsing_object)
 
     if return_data is None:
         return " - "
@@ -94,6 +95,7 @@ def subquery_url_formator(url):
         final_explorer_url = f"[{injecting_part}]({explorer_base_url + injecting_part})"
         return final_explorer_url
 
+
 def calculate_parameters(list_of_arrays, element_name):
     unique_elements = []
     all_elements = []
@@ -104,31 +106,31 @@ def calculate_parameters(list_of_arrays, element_name):
             break
 
     for value in list_of_arrays.value_matrix:
-        if value[element_index] != " - ":
-            if element_name == "Network":
-                all_elements.append(value[element_index])
-                if value[element_index] not in unique_elements:
-                    unique_elements.append(value[element_index])
-            elif element_name == "Assets":
-                asset_list = value[element_index].split('<br />')
-                for asset in asset_list:
-                    all_elements.append(value[element_index])
-                    if asset not in unique_elements:
-                        unique_elements.append(asset)
-            elif element_name == "SubQuery explorer":
-                all_elements.append(value[element_index])
-                if value[element_index] not in unique_elements:
-                    unique_elements.append(value[element_index])
-            elif element_name == "Explorers":
-                all_elements.append(value[element_index])
-                if value[element_index] not in unique_elements:
-                    unique_elements.append(value[element_index])
-            else:
-                raise Exception("Unknown type of value")
-        else:
+        if value[element_index] == " - ":
             continue
+        if element_name == "Network":
+            all_elements.append(value[element_index])
+            if value[element_index] not in unique_elements:
+                unique_elements.append(value[element_index])
+        elif element_name == "Assets":
+            asset_list = value[element_index].split('<br />')
+            for asset in asset_list:
+                all_elements.append(value[element_index])
+                if asset not in unique_elements:
+                    unique_elements.append(asset)
+        elif element_name == "SubQuery explorer":
+            all_elements.append(value[element_index])
+            if value[element_index] not in unique_elements:
+                unique_elements.append(value[element_index])
+        elif element_name == "Explorers":
+            all_elements.append(value[element_index])
+            if value[element_index] not in unique_elements:
+                unique_elements.append(value[element_index])
+        else:
+            raise Exception("Unknown type of value")
 
     return len(unique_elements), len(all_elements)
+
 
 def calculate_number_of_xcms():
     with open(os.getcwd()+f"/xcm/{XCM_VERSION}/transfers.json", 'r') as json_file:
@@ -144,10 +146,14 @@ def calculate_number_of_xcms():
 if __name__ == '__main__':
     with open("./chains/README.md", "w") as f:
         network_table = generate_networks_table()
-        unique_networks, all_networks = calculate_parameters(network_table, 'Network')
-        uniques_assets, all_assets = calculate_parameters(network_table, 'Assets')
-        unique_sq_explorers, all_explorers = calculate_parameters(network_table, 'SubQuery explorer')
-        unique_explorers, all_explorers = calculate_parameters(network_table, 'Explorers')
+        unique_networks, all_networks = calculate_parameters(
+            network_table, 'Network')
+        uniques_assets, all_assets = calculate_parameters(
+            network_table, 'Assets')
+        unique_sq_explorers, all_explorers = calculate_parameters(
+            network_table, 'SubQuery explorer')
+        unique_explorers, all_explorers = calculate_parameters(
+            network_table, 'Explorers')
         xcm_number = calculate_number_of_xcms()
         f.write(readme.render(
             networks_table=network_table,
@@ -155,6 +161,6 @@ if __name__ == '__main__':
             number_of_assets=all_assets,
             number_of_subquery_explorers=unique_sq_explorers,
             networks_with_block_explorers=all_explorers,
-            unique_assets = uniques_assets,
+            unique_assets=uniques_assets,
             number_of_xcms=xcm_number
         ))
