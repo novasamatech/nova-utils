@@ -1,5 +1,5 @@
 {
-  "runtime_id": 907,
+  "runtime_id": 943,
   "types": {
       "Balance": "u128",
       "Index": "u32",
@@ -7,8 +7,8 @@
       "Address": "sp_runtime.multiaddress.MultiAddress",
       "ExtrinsicSignature": "sp_runtime.MultiSignature",
       "ParaId": "polkadot_parachain.primitives.Id",
-      "bifrost_runtime.Event": "GenericEvent",
-      "bifrost_runtime.Call": "GenericCall",
+      "bifrost_kusama_runtime.Event": "GenericEvent",
+      "bifrost_kusama_runtime.Call": "GenericCall",
       "sp_core.crypto.AccountId32": "GenericAccountId",
       "pallet_identity.types.Data": "Data"
   },

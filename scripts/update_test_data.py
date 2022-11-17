@@ -1,6 +1,9 @@
 import json
+import os
 
-with open("chains/v4/chains_dev.json") as fin:
+CHAINS_VERISON = os.getenv('CHAINS_VERSION', default = "v4")
+
+with open(f"chains/{CHAINS_VERISON}/chains_dev.json") as fin:
     dev_chains = json.load(fin)
 
 with open("tests/chains_for_testBalance.json") as fin:
@@ -11,7 +14,7 @@ def get_ids(chains):
     return list(map(lambda x: x["chainId"], chains))
 
 
-exludeChains = ['Kintsugi', 'Statemint', 'Singular testnet', 'Interlay']
+exludeChains = ['Kintsugi', 'Singular testnet', 'Interlay', 'Mangata X', 'Arctic Relay Testnet', 'Rococo Testnet', 'Imbue', 'Acala Mandala', 'Polymesh Testnet', 'Ternoa Alphanet', 'Turing Staging', 'Governance2 Testnet', 'Beresheet', 'Governance2 Novasama Testnet', 'Governance1 Novasama Testnet', 'Fusotao']
 
 dev_ids = get_ids(dev_chains)
 test_ids = get_ids(test_chains)

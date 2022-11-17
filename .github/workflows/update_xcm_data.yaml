@@ -1,0 +1,74 @@
+name: Update xcm coefficients
+
+on:
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+    inputs:
+      environment:
+        required: true
+        description: Which file will be updated DEV or PROD
+        type: choice
+        default: PROD
+        options:
+          - DEV
+          - PROD
+
+jobs:
+  update-xcm:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout current repository to Master branch
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set environment
+        run: |
+          if [ "${{ github.event.inputs.environment }}" = "PROD" ]; then
+              echo "ENVIRONMENT=PROD" >> "$GITHUB_ENV"
+          else
+              echo "ENVIRONMENT=DEV" >> "$GITHUB_ENV"
+          fi
+
+      - name: Checkout support repo
+        uses: actions/checkout@v2
+        with:
+          path: ./support
+          repository: nova-wallet/support-utils
+          ref: master
+          token: ${{ secrets.PAT_TOKEN }}
+
+      - name: 🛠 Set up actual paths
+        uses: ./.github/workflows/setup-path
+
+      - name: ⚙️ Install dependencies
+        run: |
+          cd ./support
+          pip install -r ./requirements.txt
+
+      - name: 🦾 Generate new xcm coefficients
+        run: |
+          cd ./support
+          python nova-utils/update_xcm_data.py
+
+      - name: Move generated file
+        run: |
+          if [ "${{ github.event.inputs.environment }}" = "PROD" ]; then
+              mv support/transfers.json ${{ env.XCM_JSON_PATH }}
+              echo "COMMIT_FILE=${{ env.XCM_JSON_PATH }}" >> "$GITHUB_ENV"
+          else
+              mv support/transfers_dev.json ${{ env.DEV_XCM_JSON_PATH }}
+              echo "COMMIT_FILE=${{ env.DEV_XCM_JSON_PATH }}" >> "$GITHUB_ENV"
+          fi
+
+      - name: Make Pull Request
+        uses: ./.github/workflows/make-pull-request
+        with:
+          commit-files: ${{ env.COMMIT_FILE }}
+          commit-message: Update xcm coefficients
+          github-token: ${{ secrets.GITHUB_TOKEN  }}
+          branch-name: update-xcm-coefficients-${{github.run_number}}
+          pr-title: 🆙 Update XCM coefficients for ${{ env.ENVIRONMENT }} env
+          pr-body: This PR was generated automatically 🤖

@@ -60,11 +60,11 @@
         "externalApi": {
             "staking": {
                 "type": "subquery",
-                "url": "https://nova-polkadot.gapi.subquery.network"
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadot"
             },
             "history": {
                 "type": "subquery",
-                "url": "https://nova-polkadot.gapi.subquery.network"
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadot"
             },
             "crowdloans": {
                 "type": "github",
@@ -139,11 +139,11 @@
         "externalApi": {
             "staking": {
                 "type": "subquery",
-                "url": "https://nova-kusama.gapi.subquery.network"
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kusama"
             },
             "history": {
                 "type": "subquery",
-                "url": "https://nova-kusama.gapi.subquery.network"
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kusama"
             },
             "crowdloans": {
                 "type": "github",
@@ -201,11 +201,11 @@
         "externalApi": {
             "staking": {
                 "type": "subquery",
-                "url": "https://nova-westend.gapi.subquery.network"
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-westend"
             },
             "history": {
                 "type": "subquery",
-                "url": "https://nova-westend.gapi.subquery.network"
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-westend"
             },
             "crowdloans": {
                 "type": "github",

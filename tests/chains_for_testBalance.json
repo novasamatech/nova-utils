@@ -107,7 +107,7 @@
     {
         "chainId": "6811a339673c9daa897944dcdac99c6e2939cc88245ed21951a0a3c9a2be75bc",
         "name": "Picasso",
-        "account": "0xe29a3f1571721bdbda403d5ebaf976b6ce9aab4617a29c13794c4ecc19f48d7d"
+        "account": "0x82e0e20e288f8f1edb4de8ecf452862525fbf303c49c56478a8ce8698cf38f56"
     },
     {
         "chainId": "da5831fbc8570e3c6336d0d72b8c08f8738beefec812df21ef2afc2982ede09c",
@@ -118,11 +118,6 @@
         "chainId": "b3db41421702df9a7fcac62b53ffeac85f7853cc4e689e0b93aeb3db18c09d82",
         "name": "Centrifuge Parachain",
         "account": "0xb03cd3fb823de75f888ac647105d7820476a6b1943a74af840996d2b28e64017"
-    },
-    {
-        "chainId": "0bd72c1c305172e1275278aaeb3f161e02eccb7a819e63f62d47bd53a28189f8",
-        "name": "Subsocial Solochain",
-        "account": "0x24d6d8fc5d051fd471e275f14c83e95287d2b863e4cc802de1f78dea06c6ca78"
     },
     {
         "chainId": "1bf2a2ecb4a868de66ea8610f2ce7c8c43706561b6476031315f6640fe38e060",
@@ -143,11 +138,6 @@
         "chainId": "91bc6e169807aaa54802737e1c504b2577d4fafedd5a02c10293b1cd60e39527",
         "name": "Moonbase Alpha",
         "account": "0xecfd4b7d4e25c55439d8e111812d47ee3e029909"
-    },
-    {
-        "chainId": "5c562e6300954998233c9a40b6b86f3028977e6d32d0da1af207738d19f98c1b",
-        "name": "Acala Mandala",
-        "account": "0xae11d3c53a718499271a1e3ef920d888a7d4fac98a1c2f636d1375ba8314fb3a"
     },
     {
         "chainId": "7dd99936c1e9e6d1ce7d90eb6f33bea8393b4bf87677d675aa63c9cb3e8c5b5b",
@@ -182,7 +172,7 @@
     {
         "chainId": "97da7ede98d7bad4e36b4d734b6055425a3be036da2a332ea5a7037656427a21",
         "name": "Nodle Parachain",
-        "account": "0x0c4b6f3ee4dcd1288b6886f52f9d779d6e3d436f3543fde14a1e352f03aefd71"
+        "account": "0x6d6f646c70792f72657372760000000000000000000000000000000000000000"
     },
     {
         "chainId": "1bb969d85965e4bb5a651abbedf21a54b6b31a21f66b5401cc3f1e286268d736",
@@ -192,7 +182,7 @@
     {
         "chainId": "0f62b701fb12d02237a33b84818c11f621653d2b1614c777973babf4652b535d",
         "name": "Turing",
-        "account": "0x488ced7d199b4386081a52505962128da5a3f54f4665db3d78b6e9f9e89eea4d"
+        "account": "0xde6c3184c7b03cf3d3623d079a033b007aab9e09f04ee8764490b254d596b57f"
     },
     {
         "chainId": "cdedc8eadbfa209d3f207bba541e57c3c58a667b05a2e1d1e86353c9000758da",
@@ -207,7 +197,7 @@
     {
         "chainId": "daab8df776eb52ec604a5df5d388bb62a050a0aaec4556a64265b9d42755552d",
         "name": "Composable Finance",
-        "account": "0x407648a7a9cdd55870785b8d3efb884618a9a6144cf15e3c45a493362675dc0f"
+        "account": "0x7c955939c78c2a3b857ed14ae1494ce317fa514ebd7a01731521d7e60ee5a31b"
     },
     {
         "chainId": "3920bcb4960a1eef5580cd5367ff3f430eef052774f78468852f7b9cb39f8a3c",
@@ -248,5 +238,100 @@
         "chainId": "577d331ca43646f547cdaa07ad0aa387a383a93416764480665103081f3eaf14",
         "name": "Dora Factory",
         "account": "0x1c78db691342ffdd4d23a3b3a13e55e4939fbc01c2021d87c98139c5a1ff9a4c"
+    },
+    {
+        "chainId": "e7e0962324a3b86c83404dbea483f25fb5dab4c224791c81b756cfc948006174",
+        "name": "OriginTrail Parachain",
+        "account": "0x7cd910cfb223f0b17c8672c7495cad1778f19fb8b6508f8ee09220b2d818261b"
+    },
+    {
+        "chainId": "05d5279c52c484cc80396535a316add7d47b1c5b9e0398dd1f584149341460c5",
+        "name": "Aleph Zero Testnet",
+        "account": "0x987b17d76fabe1627b983933ed2b10783e60d3990a01c8af30fd002f020a6929"
+    },
+    {
+        "chainId": "e1ea3ab1d46ba8f4898b6b4b9c54ffc05282d299f89e84bd0fd08067758c9443",
+        "name": "Moonbase Relay Testnet",
+        "account": "0xb48663c0c39f8b6f69550dd2d7af070e0b638d675643b50b91bc45ac6e946d5c"
+    },
+    {
+        "chainId": "0e06260459b4f9034aba0a75108c08ed73ea51d2763562749b1d3600986c4ea5",
+        "name": "Pichiu",
+        "account": "0xfab8f4d540d69953f04b3afdd3e3df57937a4a24de85217f3bdeed59f62d7d17"
+    },
+    {
+        "chainId": "feb426ca713f0f46c96465b8f039890370cf6bfd687c9076ea2843f58a6ae8a7",
+        "name": "Kabocha",
+        "account": "0x2a6a802c4ea04e94d5d1788fede99e91b9df2c36c2a79388508d253bb426a45f"
+    },
+    {
+        "chainId": "eacdd2d5b42de9769ccbb6e8d9013ab0d90ab105bf601d4aac53e874c145ec21",
+        "name": "Tanganika",
+        "account": "0x32f763291ff1963cdf1944539ea99fc3735a7d6f6689ba49bee01f3bc77b0648"
+    },
+    {
+        "chainId": "35a06bfec2edf0ff4be89a6428ccd9ff5bd0167d618c5a0d4341f9600a458d14",
+        "name": "Bajun",
+        "account": "0x826939f45e70591448e916f5093700a02d0c4bbf677cf1a946279813f37b0e32"
+    },
+    {
+        "chainId": "19a3733beb9cb8a970a308d835599e9005e02dc007a35440e461a451466776f8",
+        "name": "GM",
+        "account": "0x7cc8f7ae75fa8c2e8deb07fd0f0e528784f70e626114aaea40e5f73772512166"
+    },
+    {
+        "chainId": "d42e9606a995dfe433dc7955dc2a70f495f350f373daa200098ae84437816ad2",
+        "name": "Tinkernet",
+        "account": "0xea55d832eda0d27865866ef6b01c4edf6bf83bf6d33784e9bc03c8289d2e7239"
+    },
+    {
+        "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+        "name": "Statemint",
+        "account": "0xaa41228830918cc1cf16e50df86ba154a483d77ebe3182bacfb876af4fe9ff6b"
+    },
+    {
+        "chainId": "cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
+        "name": "Amplitude",
+        "account": "0xe6a6e0982d8789297512734b05a3b6992cc844b70697435cf88eccd902675431"
+    },
+    {
+        "chainId": "6859c81ca95ef624c9dfe4dc6e3381c33e5d6509e35e147092bfbc780f777c4e",
+        "name": "Ternoa",
+        "account": "0xc039ee91ae16d7abcfaa91f7099498c4ac51fde4798fb58e626644fdc632814d"
+    },
+    {
+        "chainId": "f2584690455deda322214e97edfffaf4c1233b6e4625e39478496b3e2f5a44c5",
+        "name": "Kylin",
+        "account": "0x06861bc739b3c29d4886c2dde7b45f4646cc96ef5ce6a03ce6c59f1f7c8c9f5e"
+    },
+    {
+        "chainId": "e71578b37a7c799b0ab4ee87ffa6f059a6b98f71f06fb8c84a8d88013a548ad6",
+        "name": "Darwinia",
+        "account": "0x0a66532a23c418cca12183fee5f6afece770a0bb8725f459d7d1b1b598f91c49"
+    },
+    {
+        "chainId": "7838c3c774e887c0a53bcba9e64f702361a1a852d5550b86b58cd73827fa1e1e",
+        "name": "Kapex",
+        "account": "0xa66e3ebef250ad0ef0b9ead7ba1f9d2aceb6efcb83cc8e3c61e1bec20c3c1730"
+    },
+    {
+        "chainId": "6fbd74e5e1d0a61d52ccfe9d4adaed16dd3a7caa37c6bc4d0c2fa12e8b2f4063",
+        "name": "Polymesh Mainnet",
+        "account": "0xf2aee43ecd134756088d19159a44f8733c36d8d5fd63fc9ffb8821b4ad148a7e"
+    },
+    {
+        "chainId": "b34f6cd03a41f0fab38ba9fd5b11cce5f303633c46f39f0c6fdc7c3c602bafa9",
+        "name": "Snow",
+        "account": "0x6d6f646c70792f74727372790000000000000000000000000000000000000000"
+    },
+    {
+        "chainId": "6f0f071506de39058fe9a95bbca983ac0e9c5da3443909574e95d52eb078d348",
+        "name": "DAO IPCI",
+        "account": "0x9ce0033ab3ffd86dd5fd3a21a4dbd28ee263bffb12e10480f43f17751cba6dd2"
+    },
+    {
+        "chainId": "74ed91fbc18497f011290f9119a2217908649170337b6414a2d44923ade07063",
+        "name": "Myriad",
+        "account": "0xbabdeafb82f8ebb4d2fda53b4bcbadef9cb04e6a6eb49a8aaa6816cc20036c7c"
     }
 ]
