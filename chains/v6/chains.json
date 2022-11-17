@@ -66,10 +66,12 @@
                 "type": "subquery",
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadot"
             },
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadot"
-            },
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadot"
+                }
+            ],
             "crowdloans": {
                 "type": "github",
                 "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/crowdloan/polkadot.json"
@@ -150,10 +152,12 @@
                 "type": "subquery",
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kusama"
             },
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kusama"
-            },
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kusama"
+                }
+            ],
             "crowdloans": {
                 "type": "github",
                 "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/crowdloan/kusama.json"
@@ -217,10 +221,12 @@
                 "type": "subquery",
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-westend"
             },
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-westend"
-            },
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-westend"
+                }
+            ],
             "crowdloans": {
                 "type": "github",
                 "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/crowdloan/westend.json"
@@ -343,10 +349,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-statemine"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-statemine"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Statemine.svg",
         "addressPrefix": 2
@@ -747,10 +755,12 @@
             }
         ],
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-karura"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-karura"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Karura.svg",
         "addressPrefix": 8
@@ -920,10 +930,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonbeam"
-            },
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonbeam"
+                }
+            ],
             "staking": {
                 "type": "subquery",
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonbeam"
@@ -1165,10 +1177,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonriver"
-            },
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonriver"
+                }
+            ],
             "staking": {
                 "type": "subquery",
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonriver"
@@ -1230,10 +1244,12 @@
             }
         ],
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-shiden"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-shiden"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Shiden.svg",
         "addressPrefix": 5,
@@ -1424,10 +1440,12 @@
             }
         ],
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bifrost"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bifrost"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Bifrost_Kusama.svg",
         "addressPrefix": 6
@@ -1513,10 +1531,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-basilisk"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-basilisk"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Basilisk.svg",
         "addressPrefix": 10041
@@ -1561,10 +1581,12 @@
             }
         ],
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-altair"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-altair"
+                }
+            ]
         },
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/altair.json",
@@ -1694,10 +1716,12 @@
             }
         ],
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-parallel-heiko"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-parallel-heiko"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/ParallelHeiko.svg",
         "addressPrefix": 110
@@ -1878,10 +1902,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-khala"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-khala"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Khala.svg",
         "addressPrefix": 30
@@ -1926,10 +1952,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kilt"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kilt"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/KILT_Spiritnet.svg",
         "addressPrefix": 38
@@ -1971,10 +1999,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-calamari"
-            },
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-calamari"
+                }
+            ],
             "staking": {
                 "type": "subquery",
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-calamari"
@@ -2031,10 +2061,12 @@
             }
         ],
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-quartz"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-quartz"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Quartz.svg",
         "addressPrefix": 255
@@ -2084,10 +2116,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bit-country"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bit-country"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Bit.Country_Pioneer.svg",
         "addressPrefix": 268
@@ -2313,10 +2347,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-acala"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-acala"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Acala.svg",
         "addressPrefix": 10
@@ -2377,10 +2413,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-astar"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-astar"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Astar.svg",
         "addressPrefix": 5,
@@ -2609,10 +2647,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-parallel"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-parallel"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Parallel.svg",
         "addressPrefix": 172
@@ -2653,10 +2693,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-clover"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-clover"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/CLV_Parachain.svg",
         "addressPrefix": 128
@@ -2712,10 +2754,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-statemint"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-statemint"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Statemint.svg",
         "addressPrefix": 0
@@ -2760,10 +2804,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-robonomics"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-robonomics"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Robonomics.svg",
         "addressPrefix": 32
@@ -2804,10 +2850,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-encointer"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-encointer"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Encointer.svg",
         "addressPrefix": 2
@@ -2887,10 +2935,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kintsugi"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kintsugi"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Kintsugi.svg",
         "addressPrefix": 2092
@@ -2926,10 +2976,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-picasso"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-picasso"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Picasso.svg",
         "addressPrefix": 49
@@ -2974,10 +3026,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-zeitgeist"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-zeitgeist"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Zeitgeist.svg",
         "addressPrefix": 73
@@ -3005,10 +3059,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kico"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kico"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/KICO.svg",
         "addressPrefix": 42
@@ -3049,10 +3105,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-litmus"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-litmus"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Litmus.svg",
         "addressPrefix": 131
@@ -3093,10 +3151,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-crab"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-crab"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Crab.svg",
         "addressPrefix": 42
@@ -3130,10 +3190,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-subsocial"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-subsocial"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Subsocial_Parachain.svg",
         "addressPrefix": 28
@@ -3174,10 +3236,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-shadow"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-shadow"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Crust_Shadow.svg",
         "addressPrefix": 66
@@ -3226,10 +3290,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-integritee"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-integritee"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Integritee.svg",
         "addressPrefix": 13
@@ -3274,10 +3340,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-centrifuge"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-centrifuge"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Centrifuge.svg",
         "addressPrefix": 36
@@ -3318,10 +3386,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-efinity"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-efinity"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Efinity.svg",
         "addressPrefix": 1110
@@ -3361,10 +3431,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-hydra"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-hydra"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/HydraDX.svg",
         "addressPrefix": 63
@@ -3482,10 +3554,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-interlay"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-interlay"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Interlay.svg",
         "addressPrefix": 2032
@@ -3530,10 +3604,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-nodle"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-nodle"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Nodle.svg",
         "addressPrefix": 37
@@ -3570,10 +3646,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-phala"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-phala"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Phala.svg",
         "addressPrefix": 30
@@ -3709,10 +3787,12 @@
             }
         ],
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-turing"
-            },
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-turing"
+                }
+            ],
             "staking": {
                 "type": "subquery",
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-turing"
@@ -3753,10 +3833,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-aleph-zero"
-            },
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-aleph-zero"
+                }
+            ],
             "staking": {
                 "type": "subquery",
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-aleph-zero"
@@ -3796,10 +3878,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-composable"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-composable"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Composable.png",
         "addressPrefix": 49
@@ -3848,10 +3932,12 @@
                 "type": "subquery",
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadex"
             },
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadex"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadex"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Polkadex.svg",
         "addressPrefix": 88
@@ -3879,10 +3965,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-origin-trail"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-origin-trail"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/OriginTrail.svg",
         "addressPrefix": 101
@@ -3919,10 +4007,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bifrost-polkadot"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bifrost-polkadot"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Bifrost_Polkadot.svg",
         "addressPrefix": 6
@@ -3955,10 +4045,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-litentry"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-litentry"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Litentry.svg",
         "addressPrefix": 31
@@ -4002,10 +4094,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-unique"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-unique"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Unique.svg",
         "addressPrefix": 7391
@@ -4034,10 +4128,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-dora"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-dora"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/DoraFactory.svg",
         "addressPrefix": 128
@@ -4141,10 +4237,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-pichiu"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-pichiu"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Pichiu.svg",
         "addressPrefix": 42
@@ -4172,10 +4270,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kabocha"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kabocha"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Kabocha.svg",
         "addressPrefix": 27
@@ -4212,10 +4312,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-tanganika"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-tanganika"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Tanganika_DataHighway.svg",
         "addressPrefix": 33
@@ -4243,10 +4345,12 @@
             }
         ],
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bajun"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bajun"
+                }
+            ]
         },
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/bajun.json",
@@ -4278,10 +4382,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-imbue"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-imbue"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Imbue.svg",
         "addressPrefix": 42
@@ -4313,10 +4419,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-tinkernet"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-tinkernet"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Tinkernet.svg",
         "addressPrefix": 117
@@ -4382,10 +4490,12 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-gm-network"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-gm-network"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/GM.svg",
         "addressPrefix": 7013
@@ -4447,10 +4557,12 @@
                 "type": "subquery",
                 "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-ternoa"
             },
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-ternoa"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-ternoa"
+                }
+            ]
         },
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/ternoa.json",
@@ -4479,10 +4591,12 @@
             }
         ],
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kylin"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kylin"
+                }
+            ]
         },
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/kylin.json",
@@ -4523,10 +4637,12 @@
             }
         ],
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-darwinia"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-darwinia"
+                }
+            ]
         },
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/darwinia.json",
@@ -4554,10 +4670,12 @@
             }
         ],
         "externalApi": {
-            "history": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kapex"
-            }
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kapex"
+                }
+            ]
         },
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/kapex.json",
