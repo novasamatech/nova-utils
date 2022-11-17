@@ -29,7 +29,6 @@ def generate_value_matrix():
     for dapp in data['dapps']:
         network_data_array = []
         network_data_array.append(dapp["name"])
-        network_data_array.append(dapp["name"])
         network_data_array.append(dapp["url"])
         network_data_array.append(",".join(dapp["categories"]))
         returning_array.append(network_data_array)
