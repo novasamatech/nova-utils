@@ -1040,6 +1040,12 @@
                 "extrinsic": "https://moonriver.subscan.io/extrinsic/{hash}",
                 "account": "https://moonriver.subscan.io/account/{address}",
                 "event": null
+            },
+            {
+                "name": "Moonscan",
+                "extrinsic": "https://moonriver.moonscan.io/tx/{hash}",
+                "account": "https://moonriver.moonscan.io/address/{address}",
+                "event": null
             }
         ],
         "types": {
@@ -2682,6 +2688,12 @@
                 "name": "Subscan",
                 "extrinsic": "https://moonbeam.subscan.io/extrinsic/{hash}",
                 "account": "https://moonbeam.subscan.io/account/{address}",
+                "event": null
+            },
+            {
+                "name": "Moonscan",
+                "extrinsic": "https://moonbeam.moonscan.io/tx/{hash}",
+                "account": "https://moonbeam.moonscan.io/address/{address}",
                 "event": null
             }
         ],
