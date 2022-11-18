@@ -77,7 +77,7 @@ def find_new_destinations(object_accumulator, actual_chain_dict, new_cahin_dict,
                 asset_in_actual_chain_dict = next(
                     asset for asset in actual_chain_dict[chain_id]['assets'] if asset['assetLocation'] == asset_symbol)
             except (StopIteration, KeyError):
-                object_accumulator['chains'][chain_name][asset_symbol] = {'WARNING': 'That asset was added first time!'}
+                pass
             for destination in chain_asset.get('xcmTransfers'):
                 destination_value = destination.get('destination')
                 destination_chain_id = destination_value.get('chainId')
