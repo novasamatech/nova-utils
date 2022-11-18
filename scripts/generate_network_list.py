@@ -20,7 +20,7 @@ readme = Template("""
 """)
 
 CHAINS_VERSION = os.getenv('CHAINS_VERSION', default="v6")
-XCM_VERSION = os.getenv('XCM_JSON_PATH', default="v2")
+XCM_VERSION = os.getenv('XCM_VERSION', default="v2")
 
 
 def generate_networks_table():
