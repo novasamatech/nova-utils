@@ -1,6 +1,7 @@
 import json
 import pytest
-from scripts.create_type_file import get_properties, create_connection_by_url, get_metadata_param
+from scripts.utils.network_interaction import create_connection_by_url
+from scripts.create_type_file import get_metadata_param, get_properties
 
 test_data = [
     ["wss://rpc.polkadot.io", "Polkadot", "chains/v2/types/polkadot.json"],

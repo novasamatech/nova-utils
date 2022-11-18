@@ -1,4 +1,5 @@
-from scripts.create_type_file import create_connection_by_url, get_properties
+from scripts.utils.network_interaction import create_connection_by_url
+from scripts.create_type_file import get_properties
 
 
 class Chain():

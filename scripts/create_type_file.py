@@ -1,6 +1,8 @@
 import json
-from typing import List
-from substrateinterface import SubstrateInterface, Keypair
+
+from utils.metadata_interaction import metadata_is_v14, find_in_obj, account_does_not_need_updates, deep_search_an_elemnt_by_key, write_data_to_file
+from utils.network_interaction import create_connection_by_url
+from substrateinterface import SubstrateInterface
 
 
 class JsonObject:
@@ -26,11 +28,8 @@ class JsonObject:
         json_types["Address"] = types_address
         json_types["ExtrinsicSignature"] = types_extrinsicSignature
         json_types["ParaId"] = types_paraId
-        network_runtime_name = get_current_path_from_metadata(
-            "Event", metadata_types
-        ).split(".")[0]
-        json_types[network_runtime_name + ".Event"] = "GenericEvent"
-        json_types[network_runtime_name + ".Call"] = "GenericCall"
+        json_types[find_path_in_metadata("Event", metadata_types)] = "GenericEvent"
+        json_types[find_path_in_metadata("Call", metadata_types)] = "GenericCall"
         json_types["sp_core.crypto.AccountId32"] = types_sp_core_crypto_accountId32
         json_types["pallet_identity.types.Data"] = types_pallet_identity_types_data
         self.types.update(json_types)
@@ -52,17 +51,17 @@ def get_properties(substrate: SubstrateInterface) -> Properties:
     substrate.get_constant('system', 'ss58Prefix')
     symbol = substrate.properties["tokenSymbol"]
 
-    if (isinstance(symbol, list)):
+    if isinstance(symbol, list):
         symbol = substrate.properties["tokenSymbol"][0]
 
     precision = substrate.properties["tokenDecimals"]
-    if (isinstance(precision, list)):
+    if isinstance(precision, list):
         precision = substrate.properties["tokenDecimals"][0]
 
     data_prop = Properties(
         chain_name=substrate.chain,
         chain_symbol=symbol,
-        chain_prefix= substrate.ss58_format,
+        chain_prefix=substrate.ss58_format,
         chain_precision=precision,
 
         # The genesis hash should be obtained last, because the main object "substrate" may change after the genesis was obtained
@@ -74,46 +73,22 @@ def get_properties(substrate: SubstrateInterface) -> Properties:
 def get_metadata_param(substrate: SubstrateInterface) -> JsonObject:
     metadata = substrate.get_block_metadata()
     metadata_is_v14(metadata)
-    account_do_not_need_updates(substrate)
+    account_does_not_need_updates(substrate)
     metadata_types = metadata.value[1]["V14"]["types"]["types"]
 
     metadata_json = JsonObject(
         runtime_id=metadata.runtime_config.active_spec_version_id,
-        types_balance=get_primitive_from_metadata("Balance", metadata_types),
-        types_index=get_primitive_for_index("AccountInfo", metadata_types),
-        types_phase=get_path_from_metadata("Phase", metadata_types),
-        types_address=get_address_path_from_metadata("Address", metadata_types),
-        types_extrinsicSignature=get_crypto_path_from_metadata(
-            "Sr25519", metadata_types
-        ),
+        types_balance=find_primitive("Balance", metadata_types),
+        types_index=find_primitive("Index", metadata_types),
+        types_phase=find_path_in_metadata("phase", metadata_types),
+        types_address=find_path_in_metadata("Address", metadata_types),
+        types_extrinsicSignature=find_path_in_metadata("Sr25519", metadata_types),
         types_paraId="polkadot_parachain.primitives.Id",
         types_sp_core_crypto_accountId32="GenericAccountId",
         types_pallet_identity_types_data="Data",
         metadata_types=metadata_types,
     )
     return metadata_json
-
-
-def metadata_is_v14(metadata):
-    if "V14" in metadata.value[1].keys():
-        return True
-    else:
-        raise Exception("It's not a v14 runtime: %s" % (metadata.value[1].keys()))
-
-
-def account_do_not_need_updates(substrate: SubstrateInterface):
-    keypair = Keypair.create_from_uri("//Alice")
-    account_info = substrate.query("System", "Account", params=[keypair.ss58_address])
-    elements = ["nonce", "free", "reserved", "misc_frozen", "fee_frozen"]
-    if len(account_info.value["data"]) != 4:
-        raise Exception("Account info is changed: %s" % (account_info))
-    for element in elements:
-        if element in account_info:
-            continue
-        elif element in account_info["data"]:
-            continue
-        else:
-            raise Exception("Account info is changed: %s" % (account_info))
 
 
 def find_type_in_metadata(name, metadata_types):
@@ -123,165 +98,69 @@ def find_type_in_metadata(name, metadata_types):
     return return_data
 
 
-def get_primitive_for_index(name, metadata_types):
+def find_primitive(name, metadata_types):
     data = find_type_in_metadata(name, metadata_types)
     value = metadata_types
     for path in data[0]:
-        if path == "path":
-            new_path = find_type_in_metadata("Index", value)
-            for key in new_path[0]:
-                if key == "name":
-                    continue
-                value = value[key]
+        if path == 'name':
+            if value[path] == name:
+                type_with_primitive = metadata_types[value["type"]]
+                break
+        value = value[path]
+    return deep_search_an_elemnt_by_key(type_with_primitive, "primitive")
+
+
+def find_path_in_metadata(name, metadata_types):
+    data = find_type_in_metadata(name, metadata_types)
+
+    def check_temp_path(path, value):
+        for element in path:
+            if value in element:
+                return True
+        return False
+
+    for path in data:
+        value = metadata_types
+        if 'type_with_primitive' in locals():
             break
-        value = value[path]
-    type_with_primitive = metadata_types[value["type"]]
-    return type_with_primitive["type"]["def"]["primitive"]
-
-
-def get_primitive_from_metadata(name, metadata_types):
-    data = find_type_in_metadata(name, metadata_types)
-    value = metadata_types
-    for path in data[0]:
-        if path in ["name", "typeName"]:
-            continue
-        value = value[path]
-    type_with_primitive = metadata_types[value["type"]]
-    return type_with_primitive["type"]["def"]["primitive"]
-
-
-def get_path_from_metadata(name, metadata_types):
-    data = find_type_in_metadata(name, metadata_types)
-    value = metadata_types
-    for path in data[0]:
-        if path in ("typeName", "name"):
-            continue
-        value = value[path]
-    type_with_primitive = metadata_types[value["type"]]
-    returned_path = ".".join(str(x) for x in type_with_primitive["type"]["path"])
-    return returned_path
-
-def get_address_path_from_metadata(name, metadata_types):
-    data_lake = find_type_in_metadata(name, metadata_types)
-    value = metadata_types
-    value_variants = []
-    for data in data_lake:
-        value = metadata_types
-        for path in data:
-            if path in ("typeName", "name"):
-                continue
-            value = value[path]
-        value_variants.append(value)
-
-    for variant in value_variants:
-        if (variant.get('name') == name):
-            try:
-                type_with_primitive = metadata_types[variant["type"]]
-            except:
-                print("can't find that value %s" % variant)
-    returned_path = ".".join(str(x) for x in type_with_primitive["type"]["path"])
-    return returned_path
-
-
-def get_current_path_from_metadata(name, metadata_types):
-    data = find_type_in_metadata(name, metadata_types)
-    value = metadata_types
-    for path in data[0]:
-        if path == "path":
-            value = value[path]
-            returned_path = ".".join(str(x) for x in value)
-            return returned_path
-        value = value[path]
-    return "Can't find value"
-
-
-def get_crypto_path_from_metadata(name, metadata_types):
-    data = find_type_in_metadata(name, metadata_types)
-    value = metadata_types
-    for variants in data:
-        wrong_path = False
-        for path in variants:
-            if path == "def":
-                for list_val in value["path"]:
-                    if list_val in ("did", "MultiSigner"):
-                        wrong_path = True
-                        break
-                if wrong_path:
+        for path_element in path:
+            if 'path' in value:
+                temp_path = value['path']
+            if path_element == 'name':
+                if value[path_element] == name:
+                    try:
+                        type_with_primitive = metadata_types[value["type"]]
+                    except KeyError:
+                        # Find correct ExtrinsicSignature
+                        if check_temp_path(temp_path, 'MultiSignature'):
+                            return ".".join(temp_path)
                     break
-                value = value["path"]
-                returned_path = ".".join(str(x) for x in value)
-                return returned_path
-            value = value[path]
-        value = metadata_types
-    return "Can't find value"
+            # Find correct Event and Call
+            if path[-1] == path_element and check_temp_path(temp_path, '_runtime'):
+                return ".".join(temp_path)
 
-
-def find_in_obj(obj, condition, path=None):
-
-    if path is None:
-        path = []
-
-    # In case this is a list
-    if isinstance(obj, list):
-        for index, value in enumerate(obj):
-            new_path = list(path)
-            new_path.append(index)
-            for result in find_in_obj(value, condition, path=new_path):
-                yield result
-
-    # In case this is a dictionary
-    if isinstance(obj, dict):
-        for key, value in obj.items():
-            new_path = list(path)
-            new_path.append(key)
-            for result in find_in_obj(value, condition, path=new_path):
-                yield result
-
-            if condition == key:
-                new_path = list(path)
-                new_path.append(key)
-                yield new_path
-
-    if condition == obj:
-        new_path = list(path)
-        yield new_path
-
-
-def create_connection_by_url(url):
-    try:
-        substrate = SubstrateInterface(url=url, use_remote_preset=True)
-    except ConnectionRefusedError and TimeoutError:
-        print("⚠️ Can't connect by %s, check it is available?" % (url))
-        raise
-
-    return substrate
-
-
-def write_data_to_file(name, data: str):
-
-    with open(name, "w") as file:
-        file.write(data)
+            value = value[path_element]
+    found_path = deep_search_an_elemnt_by_key(type_with_primitive, "path")
+    return ".".join(found_path)
 
 
 def main():
-
-    user_input = input("Enter a url for collect data, url should start with wss:\n")
-    url = user_input.strip()
-
+    # user_input = input(
+    #     "Enter a url for collect data, url should start with wss:\n")
+    # url = user_input.strip()
+    url = "wss://westend-rpc.polkadot.io"
     print("Data collecting in process and will write to file in current directory.")
 
     substrate = create_connection_by_url(url)
-
     json_metadata = get_metadata_param(substrate)
     json_property = get_properties(substrate)
-
     write_data_to_file(
         json_property.name + "_types.json", json.dumps(json_metadata.__dict__)
     )
     write_data_to_file(
-        json_property.name + "_property.json", json.dumps(json_property.__dict__)
+        json_property.name +
+        "_property.json", json.dumps(json_property.__dict__)
     )
-
     print("Success! \ncheck " + json_property.name + "_* files")
 
 
