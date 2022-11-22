@@ -5564,13 +5564,18 @@
                 "assetId": 0,
                 "symbol": "XX",
                 "precision": 9,
+                "priceId": "xxcoin",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/XX.svg"
             }
         ],
         "nodes": [
             {
+                "url": "wss://rpc.xx.network",
+                "name": "xx Foundation node"
+            },
+            {
                 "url": "wss://xxnetwork-rpc.dwellir.com",
-                "name": "XX network node"
+                "name": "Dwellir node"
             }
         ],
         "types": {
