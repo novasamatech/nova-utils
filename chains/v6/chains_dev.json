@@ -5684,5 +5684,29 @@
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Fusotao.svg",
         "addressPrefix": 42
+    },
+    {
+        "chainId": "50dd5d206917bf10502c68fb4d18a59fc8aa31586f4e8856b493e43544aa82aa",
+        "name": "XX network",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "xx",
+                "precision": 9,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Default.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://xxnetwork-rpc.dwellir.com",
+                "name": "XX network node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/xx_network.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Default.svg",
+        "addressPrefix": 55
     }
 ]
