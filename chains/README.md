@@ -1,8 +1,8 @@
 
 # Supported Networks & Assets data:
-### 🕸️ Supported networks: 66
-### 💰 All assets 204
-### 🪙 Unique assets: 116
+### 🕸️ Supported networks: 67
+### 💰 All assets 205
+### 🪙 Unique assets: 117
 ### 💫 Cross Chain directions: 208
 ### 🧾 SubQuery API projects: 59
 ### 👀 Networks with block explorers: 52
@@ -75,4 +75,5 @@
 |  63 | Turing                | TUR<br />KSM<br />aUSD<br />KAR<br />LKSM<br />HKO<br />sKSM<br />PHA                                                                                                                                                                                 | Subscan                            | [nova-wallet-turing](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-turing)                     |
 |  64 | UNIQUE                | UNQ                                                                                                                                                                                                                                                   | Subscan                            | [nova-wallet-unique](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-unique)                     |
 |  65 | Westend               | WND                                                                                                                                                                                                                                                   | Subscan                            | [nova-wallet-westend](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-westend)                   |
-|  66 | Zeitgeist             | ZTG                                                                                                                                                                                                                                                   | Subscan<br />Sub.ID                | [nova-wallet-zeitgeist](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-zeitgeist)               |
+|  66 | XX network            | XX                                                                                                                                                                                                                                                    |  -                                 |  -                                                                                                                  |
+|  67 | Zeitgeist             | ZTG                                                                                                                                                                                                                                                   | Subscan<br />Sub.ID                | [nova-wallet-zeitgeist](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-zeitgeist)               |
