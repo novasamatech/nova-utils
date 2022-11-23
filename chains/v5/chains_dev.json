@@ -5578,6 +5578,20 @@
                 "name": "Dwellir node"
             }
         ],
+        "explorers": [
+            {
+                "name": "XX explorer",
+                "extrinsic": "https://explorer.xx.network/extrinsics/{hash}",
+                "account": "https://explorer.xx.network/accounts/{address}",
+                "event": "https://explorer.xx.network/extrinsics/{event}"
+            },
+            {
+                "name": "Polkastats",
+                "extrinsic": "https://xx.polkastats.io/extrinsic/{hash}",
+                "account": "https://xx.polkastats.io/account/{address}",
+                "event": null
+            }
+        ],
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/xx_network.json",
             "overridesCommon": true
