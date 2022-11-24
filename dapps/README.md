@@ -37,25 +37,26 @@
 |  33 | Parallel Finance App              | https://app.parallel.fi/                             | defi                    |
 |  34 | Parallel Rewards Claim            | https://crowdloan.parallel.fi/#/auction/rewards/     | crowdloans              |
 |  35 | Phala App                         | https://app.phala.network/                           | defi,staking            |
-|  36 | Polkadot Lido                     | https://polkadot.lido.fi/                            | staking,evm             |
-|  37 | Polkadot Staking Dashboard        | https://staking.polkadot.network/dashboard#/overview | staking                 |
-|  38 | Polkadot.js                       | https://polkadot.js.org/apps/#                       | utilities               |
-|  39 | Polkassembly                      | https://polkadot.polkassembly.io/                    | community               |
-|  40 | Polkawatch                        | https://polkawatch.app/                              | staking                 |
-|  41 | Proof of Chaos                    | https://proofofchaos.app                             | nft,community           |
-|  42 | Raresama                          | https://raresama.com/                                | nft                     |
-|  43 | Singular                          | https://singular.rmrk.app/                           | nft                     |
-|  44 | Singular 2.0                      | https://singular.app/                                | nft                     |
-|  45 | Skybreach                         | https://skybreach.app/                               | nft,evm                 |
-|  46 | Solarbeam                         | https://app.solarbeam.io/exchange/swap               | defi,staking,evm        |
-|  47 | Solarflare                        | https://app.solarflare.io/exchange/swap              | defi,staking,evm        |
-|  48 | Stellaswap                        | https://app.stellaswap.com/exchange/swap             | defi,staking,evm        |
-|  49 | Sub.ID                            | https://sub.id/#/                                    | utilities               |
-|  50 | SubBridge                         | https://subbridge.io/                                | defi,evm                |
-|  51 | Subsocial App                     | https://app.subsocial.network/                       | community               |
-|  52 | Subsquare. Khala network          | https://khala.subsquare.io/                          | community               |
-|  53 | Talisman App                      | https://app.talisman.xyz/portfolio                   | defi,crowdloans         |
-|  54 | Tinkernet Rewards Claim           | https://www.tinker.network/claim                     | crowdloans              |
-|  55 | TofuNFT                           | https://tofunft.com/                                 | nft,evm                 |
-|  56 | Zeitgeist                         | https://app.zeitgeist.pm/                            | utilities               |
-|  57 | cBRIDGE                           | https://cbridge.celer.network/#/transfer             | defi,evm                |
+|  36 | PolkaVerse                        | https://polkaverse.com/                              | community               |
+|  37 | Polkadot Lido                     | https://polkadot.lido.fi/                            | staking,evm             |
+|  38 | Polkadot Staking Dashboard        | https://staking.polkadot.network/dashboard#/overview | staking                 |
+|  39 | Polkadot.js                       | https://polkadot.js.org/apps/#                       | utilities               |
+|  40 | Polkassembly                      | https://polkadot.polkassembly.io/                    | community               |
+|  41 | Polkawatch                        | https://polkawatch.app/                              | staking                 |
+|  42 | Proof of Chaos                    | https://proofofchaos.app                             | nft,community           |
+|  43 | Raresama                          | https://raresama.com/                                | nft                     |
+|  44 | Singular                          | https://singular.rmrk.app/                           | nft                     |
+|  45 | Singular 2.0                      | https://singular.app/                                | nft                     |
+|  46 | Skybreach                         | https://skybreach.app/                               | nft,evm                 |
+|  47 | Solarbeam                         | https://app.solarbeam.io/exchange/swap               | defi,staking,evm        |
+|  48 | Solarflare                        | https://app.solarflare.io/exchange/swap              | defi,staking,evm        |
+|  49 | Stellaswap                        | https://app.stellaswap.com/exchange/swap             | defi,staking,evm        |
+|  50 | Sub.ID                            | https://sub.id/#/                                    | utilities               |
+|  51 | SubBridge                         | https://subbridge.io/                                | defi,evm                |
+|  52 | Subsocial App                     | https://app.subsocial.network/                       | community               |
+|  53 | Subsquare. Khala network          | https://khala.subsquare.io/                          | community               |
+|  54 | Talisman App                      | https://app.talisman.xyz/portfolio                   | defi,crowdloans         |
+|  55 | Tinkernet Rewards Claim           | https://www.tinker.network/claim                     | crowdloans              |
+|  56 | TofuNFT                           | https://tofunft.com/                                 | nft,evm                 |
+|  57 | Zeitgeist                         | https://app.zeitgeist.pm/                            | utilities               |
+|  58 | cBRIDGE                           | https://cbridge.celer.network/#/transfer             | defi,evm                |
