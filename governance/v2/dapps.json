@@ -4,13 +4,13 @@
     "dapps": [
       {
         "title": "Polkassembly",
-        "url": "https://polkadot.polkassembly.io/referendum/{referendumId}",
+        "urlV1": "https://polkadot.polkassembly.io/referendum/{referendumId}",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/Polkassembly.svg",
         "details": "Comment and react"
       },
       {
         "title": "Subsquare",
-        "url": "https://polkadot.subsquare.io/democracy/referendum/{referendumId}",
+        "urlV1": "https://polkadot.subsquare.io/democracy/referendum/{referendumId}",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/color/SubSquare.svg",
         "details": "Comment and react"
       }
@@ -21,19 +21,20 @@
     "dapps": [
       {
         "title": "Polkassembly",
-        "url": "https://kusama.polkassembly.io/referendum/{referendumId}",
+        "urlV1": "https://kusama.polkassembly.io/referendum/{referendumId}",
+        "urlV2": "https://kusama.polkassembly.io/referenda/{referendumId}",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/Polkassembly.svg",
         "details": "Comment and react"
       },
       {
         "title": "Subsquare",
-        "url": "https://kusama.subsquare.io/democracy/referendum/{referendumId}",
+        "urlV1": "https://kusama.subsquare.io/democracy/referendum/{referendumId}",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/color/SubSquare.svg",
         "details": "Comment and react"
       },
       {
         "title": "Proof of Chaos",
-        "url": "https://www.proofofchaos.app/vote/",
+        "urlV1": "https://www.proofofchaos.app/vote/",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/Proof_of_Chaos.png",
         "details": "Pass the quiz for NFT upgrade"
       }
@@ -44,7 +45,7 @@
     "dapps": [
       {
         "title": "Polkassembly",
-        "url": "https://moonbeam.polkassembly.io/referendum/{referendumId}",
+        "urlV1": "https://moonbeam.polkassembly.io/referendum/{referendumId}",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/Polkassembly.svg",
         "details": "Comment and react"
       }
@@ -55,7 +56,7 @@
     "dapps": [
       {
         "title": "Polkassembly",
-        "url": "https://moonriver.polkassembly.io/referendum/{referendumId}",
+        "urlV1": "https://moonriver.polkassembly.io/referendum/{referendumId}",
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/Polkassembly.svg",
         "details": "Comment and react"
       }

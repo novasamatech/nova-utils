@@ -1,0 +1,73 @@
+name: Check pull requests
+
+on:
+  pull_request:
+    paths:
+      - 'xcm/**'
+
+jobs:
+  create-comment-with-changes:
+    runs-on: ubuntu-latest
+    name: Create a comment with xcm changed data
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: 🛠 Set up actual paths
+        uses: ./.github/workflows/setup-path
+
+      - name: Was transfers.json changed?
+        id: prod
+        uses: tj-actions/changed-files@v18.2
+        with:
+          files: |
+            ${{ env.XCM_JSON_PATH }}
+
+      - name: Was transfers_dev.json changed?
+        id: dev
+        uses: tj-actions/changed-files@v18.2
+        with:
+          files: |
+            ${{ env.DEV_XCM_JSON_PATH }}
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build body text
+        run: echo This comment was written by a bot! >> body_file.txt
+
+      - name: Generate message for PROD
+        if: steps.prod.outputs.any_changed == 'true'
+        run: |
+          echo "## Changes for PROD" >> body_file.txt
+          python scripts/print_xcm_changes.py prod >> body_file.txt
+
+      - name: Generate message for DEV
+        if: steps.dev.outputs.any_changed == 'true'
+        run: |
+          echo "## Changes for DEV" >> body_file.txt
+          python scripts/print_xcm_changes.py dev >> body_file.txt
+
+      - name: Find Comment
+        uses: peter-evans/find-comment@v2
+        id: fc
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: 'github-actions[bot]'
+          body-includes: This comment was written by a bot!
+
+      - name: Create comment
+        if: steps.fc.outputs.comment-id == ''
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          body-file: body_file.txt
+
+      - name: Update comment
+        if: steps.fc.outputs.comment-id != ''
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          comment-id: ${{ steps.fc.outputs.comment-id }}
+          body-file: body_file.txt
+          edit-mode: replace

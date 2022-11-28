@@ -167,6 +167,7 @@
         },
         "options": [
             "crowdloans",
+            "governance",
             "governance-v1"
         ]
     },
@@ -1010,6 +1011,17 @@
                 "typeExtras": {
                     "assetId": "16797826370226091782818345603793389938"
                 }
+            },
+            {
+                "assetId": 17,
+                "symbol": "xcXRT",
+                "precision": 9,
+                "priceId": "robonomics-network",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Robonomics.svg",
+                "typeExtras": {
+                    "assetId": "108036400430056508975016746969135344601"
+                }
             }
         ],
         "nodes": [
@@ -1039,6 +1051,12 @@
                 "name": "Subscan",
                 "extrinsic": "https://moonriver.subscan.io/extrinsic/{hash}",
                 "account": "https://moonriver.subscan.io/account/{address}",
+                "event": null
+            },
+            {
+                "name": "Moonscan",
+                "extrinsic": "https://moonriver.moonscan.io/tx/{hash}",
+                "account": "https://moonriver.moonscan.io/address/{address}",
                 "event": null
             }
         ],
@@ -2683,6 +2701,12 @@
                 "extrinsic": "https://moonbeam.subscan.io/extrinsic/{hash}",
                 "account": "https://moonbeam.subscan.io/account/{address}",
                 "event": null
+            },
+            {
+                "name": "Moonscan",
+                "extrinsic": "https://moonbeam.moonscan.io/tx/{hash}",
+                "account": "https://moonbeam.moonscan.io/address/{address}",
+                "event": null
             }
         ],
         "types": {
@@ -3420,10 +3444,6 @@
             {
                 "url": "wss://crab-parachain-rpc.darwinia.network/",
                 "name": "Crab node"
-            },
-            {
-                "url": "wss://darwiniacrab-rpc.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -3465,6 +3485,10 @@
         ],
         "nodes": [
             {
+                "url": "wss://para.f3joule.space",
+                "name": "Subsocial node"
+            },
+            {
                 "url": "wss://para.subsocial.network",
                 "name": "Dappforce node"
             }
@@ -3503,7 +3527,7 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc2-shadow.crust.network/",
+                "url": "wss://rpc-sha-subscan.crust.network",
                 "name": "Crust node"
             },
             {
@@ -4319,6 +4343,34 @@
                 "precision": 12,
                 "priceId": "bifrost-native-coin",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bifrost.svg"
+            },
+            {
+                "assetId": 1,
+                "symbol": "GLMR",
+                "precision": 18,
+                "priceId": "moonbeam",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonbeam.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0801",
+                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "existentialDeposit": "1000000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 2,
+                "symbol": "DOT",
+                "precision": 10,
+                "priceId": "polkadot",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0800",
+                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "existentialDeposit": "1000000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
@@ -5411,7 +5463,7 @@
         "addressPrefix": 32
     },
     {
-        "chainId": "debc82d28e63857f236a6d1ab981a35e2401e1a5834656667747f39303d52e07",
+        "chainId": "854371e4ecdc08dabcf74ff08c7125d223428fb3523b6af4684fe69314b98658",
         "name": "Governance1 Novasama Testnet",
         "assets": [
             {
@@ -5503,5 +5555,48 @@
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Fusotao.svg",
         "addressPrefix": 42
+    },
+    {
+        "chainId": "50dd5d206917bf10502c68fb4d18a59fc8aa31586f4e8856b493e43544aa82aa",
+        "name": "XX network",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "XX",
+                "precision": 9,
+                "priceId": "xxcoin",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/XX.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc.xx.network",
+                "name": "xx Foundation node"
+            },
+            {
+                "url": "wss://xxnetwork-rpc.dwellir.com",
+                "name": "Dwellir node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "XX explorer",
+                "extrinsic": "https://explorer.xx.network/extrinsics/{hash}",
+                "account": "https://explorer.xx.network/accounts/{address}",
+                "event": "https://explorer.xx.network/extrinsics/{event}"
+            },
+            {
+                "name": "Polkastats",
+                "extrinsic": "https://xx.polkastats.io/extrinsic/{hash}",
+                "account": "https://xx.polkastats.io/account/{address}",
+                "event": null
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/xx_network.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/XX_network.svg",
+        "addressPrefix": 55
     }
 ]
