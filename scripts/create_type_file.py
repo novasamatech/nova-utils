@@ -28,10 +28,10 @@ class JsonObject:
         json_types["Address"] = types_address
         json_types["ExtrinsicSignature"] = types_extrinsicSignature
         json_types["ParaId"] = types_paraId
-        json_types[find_path_in_metadata(
-            "Event", metadata_types)] = "GenericEvent"
-        json_types[find_path_in_metadata(
-            "Call", metadata_types)] = "GenericCall"
+        event_type = find_certain_type_in_metadata("Event", metadata_types)
+        call_type = find_certain_type_in_metadata("Call", metadata_types)
+        json_types[return_type_path(event_type, 'path')] = "GenericEvent"
+        json_types[return_type_path(call_type, 'path')] = "GenericCall"
         json_types["sp_core.crypto.AccountId32"] = types_sp_core_crypto_accountId32
         json_types["pallet_identity.types.Data"] = types_pallet_identity_types_data
         self.types.update(json_types)
@@ -86,10 +86,11 @@ def get_metadata_param(substrate: SubstrateInterface) -> JsonObject:
         runtime_id=metadata.runtime_config.active_spec_version_id,
         types_balance=find_primitive("Balance", metadata_types),
         types_index=find_primitive("Index", metadata_types),
-        types_phase=find_path_in_metadata("phase", metadata_types),
-        types_address=find_path_in_metadata("Address", metadata_types),
-        types_extrinsicSignature=find_path_in_metadata(
-            "Sr25519", metadata_types),
+        types_phase=find_path_for_type_in_metadata("Phase", metadata_types),
+        types_address=find_path_for_type_in_metadata(
+            "AccountIdLookupOf<T>", metadata_types),
+        types_extrinsicSignature=find_path_for_type_in_metadata(
+            "Signature", metadata_types),
         types_paraId="polkadot_parachain.primitives.Id",
         types_sp_core_crypto_accountId32="GenericAccountId",
         types_pallet_identity_types_data="Data",
@@ -97,87 +98,73 @@ def get_metadata_param(substrate: SubstrateInterface) -> JsonObject:
     )
 
     if use_additional_type_mapping:
-        runtime_dispatch_info = {
-            "type": "struct",
-            "type_mapping": [
-                [
-                    "weight",
-                    "sp_weights.weight_v2.Weight"
-                ],
-                [
-                    "class",
-                    "frame_support.dispatch.DispatchClass"
-                ],
-                [
-                    "partialFee",
-                    "Balance"
-                ]
-            ]
-        }
+        runtime_dispatch_info = find_dispatch_info(
+            'DispatchInfo', metadata_types)
         metadata_json.use_v2_weight_mapping(runtime_dispatch_info)
 
     return metadata_json
 
 
-def find_type_in_metadata(name, metadata_types):
-    return_data = []
-    for item in find_in_obj(metadata_types, name):
-        return_data.append(item)
-    return return_data
+def find_type_id_in_metadata(name, metadata_types, default_path_marker='typeName'):
+    data_set = find_type_in_metadata(name, metadata_types)
+    for data in data_set:
+        value = metadata_types
+        for path in data:
+            if path == default_path_marker:
+                return value['type']
+            value = value[path]
+
+    # if nothing were found, then try to find with another marker
+    type_found_by_name = find_type_id_in_metadata(name, metadata_types, default_path_marker='name')
+    if type_found_by_name:
+        return type_found_by_name
+    else:
+        raise Exception(f"Can't find type_id for {name}")
+
+
+def find_dispatch_info(name, metadata_types):
+    dispatch_info = find_certain_type_in_metadata(name, metadata_types)
+    weight, dispatch_class, _ = dispatch_info['type']['def']['composite']['fields']
+    dispatch_class_path = return_type_path(
+        metadata_types[dispatch_class['type']], 'path')
+    weight_path = return_type_path(
+        metadata_types[weight['type']], 'path')
+    dispatch_info_object = {"type": "struct", "type_mapping": [["weight", weight_path], [
+        "class", dispatch_class_path], ["partialFee", "Balance"]]}
+    return dispatch_info_object
 
 
 def find_primitive(name, metadata_types):
-    data = find_type_in_metadata(name, metadata_types)
-    value = metadata_types
-    for path in data[0]:
-        if path == 'name':
-            if value[path] == name:
-                type_with_primitive = metadata_types[value["type"]]
-                break
-        value = value[path]
+    type_id = find_type_id_in_metadata(name, metadata_types)
+    type_with_primitive = metadata_types[type_id]
     return deep_search_an_elemnt_by_key(type_with_primitive, "primitive")
 
 
-def find_path_in_metadata(name, metadata_types):
-    data = find_type_in_metadata(name, metadata_types)
+def find_path_for_type_in_metadata(name, metadata_types):
+    type_id = find_type_id_in_metadata(name, metadata_types)
+    return return_type_path(metadata_types[type_id], "path")
 
-    def check_temp_path(path, value):
-        for element in path:
-            if value in element:
-                return True
-        return False
 
+def find_certain_type_in_metadata(name, metadata_types):
     if name in ['Event', 'Call']:
-        new_path = find_path_in_metadata('Runtime'+name, metadata_types)
+        new_path = find_certain_type_in_metadata(
+            'Runtime'+name, metadata_types)
         if new_path:
             return new_path
 
-    def return_path():
+    data_set = find_type_in_metadata(name, metadata_types)
+    if len(data_set) == 1:
+        type_id = data_set[0][0]
+        return metadata_types[type_id]
+
+    for data in data_set:
+        value = metadata_types
         for path in data:
-            value = metadata_types
-            if 'type_with_primitive' in locals():
-                break
-            for path_element in path:
-                if 'path' in value:
-                    temp_path = value['path']
-                if path_element == 'name':
-                    if value[path_element] == name:
-                        try:
-                            type_with_primitive = metadata_types[value["type"]]
-                        except (KeyError, TypeError):
-                            # Find correct ExtrinsicSignature
-                            if check_temp_path(temp_path, 'MultiSignature'):
-                                return ".".join(temp_path)
-                        break
-                # Find correct Event and Call
-                if path[-1] == path_element and check_temp_path(temp_path, '_runtime') and len(temp_path) == 2:
-                    return ".".join(temp_path)
+            if path == 'path':
+                return metadata_types[data[0]]
+            value = value[path]
 
-                value = value[path_element]
-        found_path = deep_search_an_elemnt_by_key(type_with_primitive, "path")
-        return ".".join(found_path)
-
-    return return_path()
+    raise Exception(f"Can't find any type in metadata for: {name}")
 
 
 def check_fee_is_structure(substrate: SubstrateInterface):
@@ -188,6 +175,18 @@ def check_fee_is_structure(substrate: SubstrateInterface):
         return True
     else:
         return False
+
+
+def return_type_path(metadata_type, search_key):
+    found_path = deep_search_an_elemnt_by_key(metadata_type, search_key)
+    return ".".join(found_path)
+
+
+def find_type_in_metadata(name, metadata_types):
+    return_data = []
+    for item in find_in_obj(metadata_types, name):
+        return_data.append(item)
+    return return_data
 
 
 def main():
@@ -201,7 +200,8 @@ def main():
     json_metadata = get_metadata_param(substrate)
     json_property = get_properties(substrate)
     write_data_to_file(
-        json_property.name + "_types.json", json.dumps(json_metadata.__dict__, indent=2)
+        json_property.name +
+        "_types.json", json.dumps(json_metadata.__dict__, indent=2)
     )
     write_data_to_file(
         json_property.name +
