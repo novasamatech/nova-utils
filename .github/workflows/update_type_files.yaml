@@ -23,7 +23,7 @@ jobs:
       - name: Make Pull Request
         uses: ./.github/workflows/make-pull-request
         with:
-          commit-files: ./chains/**/*.json
+          commit-files: --all
           commit-message: Update chain types
           github-token: ${{ secrets.GITHUB_TOKEN  }}
           branch-name: update-types-${{github.run_number}}
