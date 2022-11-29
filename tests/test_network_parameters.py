@@ -1,7 +1,6 @@
-import os
 import pytest
 
-from tests.utils.chain_model import Chain
+from scripts.utils.chain_model import Chain
 from tests.data.setting_data import *
 
 task_ids = [
