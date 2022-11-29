@@ -1,8 +1,11 @@
 from utils.network_interaction import create_connection_by_url
 from .metadata_interaction import get_properties
 
+from substrateinterface import SubstrateInterface
+
 
 class Chain():
+    substrate: SubstrateInterface
 
     def __init__(self, arg):
         self.chainId = arg.get("chainId")
@@ -16,12 +19,13 @@ class Chain():
         self.substrate = None
         self.properties = None
 
-    def create_connection(self):
+    def create_connection(self) -> SubstrateInterface:
         for node in self.nodes:
             if (self.substrate):
                 return self.substrate
             try:
                 self.substrate = create_connection_by_url(node.get('url'))
+                self.substrate.update_type_registry_presets()
                 return self.substrate
             except:
                 print("Can't connect to that node")

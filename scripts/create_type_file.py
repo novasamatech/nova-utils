@@ -26,14 +26,11 @@ def compare_type_files_for_all_networks(chains_file):
         types_from_runtime = get_metadata_param(chain_object.substrate)
         if types_from_runtime is None:
             continue
-        for key, value in types_from_runtime.__dict__.items():
-            if key == 'types':
-                for type_key, type_value in value.items():
-                    actual_types_file['types'][type_key] = type_value
-                continue
-            actual_types_file[key] = value
+        actual_runtime_dispatch_info = actual_types_file['types'].get('RuntimeDispatchInfo')
+        if actual_runtime_dispatch_info:
+            types_from_runtime.__dict__['types']['RuntimeDispatchInfo'] = actual_runtime_dispatch_info
         write_data_to_file(actual_types_file_path,
-                           json.dumps(actual_types_file, indent=2))
+                           json.dumps(types_from_runtime.__dict__, indent=4))
         print(f"Generating has successfuly finished: {chain['name']} 🎉")
 
 

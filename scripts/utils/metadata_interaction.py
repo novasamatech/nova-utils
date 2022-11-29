@@ -1,4 +1,6 @@
 from substrateinterface import SubstrateInterface, Keypair
+from substrateinterface.exceptions import SubstrateRequestException
+
 
 class JsonObject:
     def __init__(
@@ -79,7 +81,7 @@ def get_metadata_param(substrate: SubstrateInterface) -> JsonObject:
     metadata_is_v14(metadata)
     account_does_not_need_updates(substrate)
     metadata_types = metadata.value[1]["V14"]["types"]["types"]
-    # use_additional_type_mapping = check_fee_is_structure(substrate)
+    can_calculate_fee = check_fee_is_calculating(substrate)
     address_type = find_certain_type_in_metadata("MultiAddress", metadata_types)
     if address_type is None: # Some network use AccountId32 as base
         address_type = find_certain_type_in_metadata("AccountId32", metadata_types)
@@ -101,10 +103,10 @@ def get_metadata_param(substrate: SubstrateInterface) -> JsonObject:
         metadata_types=metadata_types,
     )
 
-    # if use_additional_type_mapping:
-    #     runtime_dispatch_info = find_dispatch_info(
-    #         'DispatchInfo', metadata_types)
-    #     metadata_json.use_v2_weight_mapping(runtime_dispatch_info)
+    if can_calculate_fee is False:
+        runtime_dispatch_info = find_dispatch_info(
+            'DispatchInfo', metadata_types)
+        metadata_json.use_v2_weight_mapping(runtime_dispatch_info)
 
     return metadata_json
 
@@ -131,16 +133,16 @@ def find_type_id_in_metadata(name, metadata_types, default_path_marker='typeName
         raise Exception(f"Can't find type_id for {name}")
 
 
-# def find_dispatch_info(name, metadata_types):
-#     dispatch_info = find_certain_type_in_metadata(name, metadata_types)
-#     weight, dispatch_class, _ = dispatch_info['type']['def']['composite']['fields']
-#     dispatch_class_path = return_type_path(
-#         metadata_types[dispatch_class['type']], 'path')
-#     weight_path = return_type_path(
-#         metadata_types[weight['type']], 'path')
-#     dispatch_info_object = {"type": "struct", "type_mapping": [["weight", weight_path], [
-#         "class", dispatch_class_path], ["partialFee", "Balance"]]}
-#     return dispatch_info_object
+def find_dispatch_info(name, metadata_types):
+    dispatch_info = find_certain_type_in_metadata(name, metadata_types)
+    weight, dispatch_class, _ = dispatch_info['type']['def']['composite']['fields']
+    dispatch_class_path = return_type_path(
+        metadata_types[dispatch_class['type']], 'path')
+    weight_path = return_type_path(
+        metadata_types[weight['type']], 'path')
+    dispatch_info_object = {"type": "struct", "type_mapping": [["weight", weight_path], [
+        "class", dispatch_class_path], ["partialFee", "Balance"]]}
+    return dispatch_info_object
 
 
 def find_primitive(name, metadata_types):
@@ -186,14 +188,25 @@ def check_runtime_path(runtime_type, part_of_path):
         return bool(part_of_path in ".".join(runtime_type['type']['path']))
 
 
-def check_fee_is_structure(substrate: SubstrateInterface):
-    weight = substrate.get_constant('System', 'BlockWeights').value
-    base_extrinsic = weight.get('per_class').get(
-        'normal').get('base_extrinsic')
-    if isinstance(base_extrinsic, dict):
+def check_fee_is_calculating(substrate: SubstrateInterface):
+    test_keypair = Keypair.create_from_uri('//Alice')
+    call = substrate.compose_call(
+        call_module='Balances',
+        call_function='transfer',
+        call_params={
+            'dest': test_keypair.ss58_address,
+            'value': 0,
+        }
+    )
+    try:
+        query_info = substrate.get_payment_info(call=call, keypair=test_keypair)
         return True
-    else:
+    except SubstrateRequestException as substrate_error:
+        print(f"Can't calculate fee, error is: \n{substrate_error}")
         return False
+    except Exception as err:
+        print(f"Can't calculate fee by another reason error is: \n{err}")
+        return True
 
 
 def return_type_path(metadata_type, search_key):
