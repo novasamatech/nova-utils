@@ -1,5 +1,5 @@
 {
-  "runtime_id": 1,
+  "runtime_id": 14,
   "types": {
     "Balance": "u128",
     "Index": "u32",
@@ -10,7 +10,9 @@
     "invarch_runtime.Event": "GenericEvent",
     "invarch_runtime.Call": "GenericCall",
     "sp_core.crypto.AccountId32": "GenericAccountId",
-    "pallet_identity.types.Data": "Data"
+    "pallet_identity.types.Data": "Data",
+    "tinkernet_runtime.Event": "GenericEvent",
+    "tinkernet_runtime.Call": "GenericCall"
   },
   "versioning": []
 }

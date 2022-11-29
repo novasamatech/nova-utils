@@ -1,5 +1,5 @@
 {
-  "runtime_id": 917004,
+  "runtime_id": 924010,
   "types": {
     "Balance": "u128",
     "Index": "u32",
@@ -10,7 +10,9 @@
     "cumulus_pallet_parachain_system.Event": "GenericEvent",
     "cumulus_pallet_parachain_system.Call": "GenericCall",
     "sp_core.crypto.AccountId32": "GenericAccountId",
-    "pallet_identity.types.Data": "Data"
+    "pallet_identity.types.Data": "Data",
+    "unique_runtime.Event": "GenericEvent",
+    "unique_runtime.Call": "GenericCall"
   },
   "versioning": []
 }
