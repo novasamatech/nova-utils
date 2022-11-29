@@ -116,7 +116,7 @@ def find_type_id_in_metadata(name, metadata_types, default_path_marker='typeName
         for path in data:
             if path == default_path_marker:
                 if check_path is not None:
-                    if check_runtime_path(metadata_types[data[0]], check_path):
+                    if check_runtime_path(metadata_types[value['type']], check_path):
                         return value['type']
                     else:
                         value = value[path]
