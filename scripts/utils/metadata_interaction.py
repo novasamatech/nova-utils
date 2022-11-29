@@ -80,15 +80,21 @@ def get_metadata_param(substrate: SubstrateInterface) -> JsonObject:
     account_does_not_need_updates(substrate)
     metadata_types = metadata.value[1]["V14"]["types"]["types"]
     # use_additional_type_mapping = check_fee_is_structure(substrate)
+    address_type = find_certain_type_in_metadata("MultiAddress", metadata_types)
+    if address_type is None: # Some network use AccountId32 as base
+        address_type = find_certain_type_in_metadata("AccountId32", metadata_types)
+    signature_type_path = find_path_for_type_in_metadata("Signature", metadata_types, check_path='MultiSignature')
+    if signature_type_path is None:
+        signature_type = find_certain_type_in_metadata("MultiSignature", metadata_types)
+        signature_type_path = return_type_path(signature_type, 'path')
 
     metadata_json = JsonObject(
         runtime_id=metadata.runtime_config.active_spec_version_id,
         types_balance=find_primitive("Balance", metadata_types),
         types_index=find_primitive("Index", metadata_types),
         types_phase=find_path_for_type_in_metadata("Phase", metadata_types),
-        types_address=return_type_path(
-            find_certain_type_in_metadata("MultiAddress", metadata_types), 'path'),
-        types_extrinsicSignature=find_path_for_type_in_metadata("Signature", metadata_types),
+        types_address=return_type_path(address_type, 'path'),
+        types_extrinsicSignature=signature_type_path,
         types_paraId="polkadot_parachain.primitives.Id",
         types_sp_core_crypto_accountId32="GenericAccountId",
         types_pallet_identity_types_data="Data",
@@ -103,18 +109,24 @@ def get_metadata_param(substrate: SubstrateInterface) -> JsonObject:
     return metadata_json
 
 
-def find_type_id_in_metadata(name, metadata_types, default_path_marker='typeName'):
+def find_type_id_in_metadata(name, metadata_types, default_path_marker='typeName', check_path=None):
     data_set = find_type_in_metadata(name, metadata_types)
     for data in data_set:
         value = metadata_types
         for path in data:
             if path == default_path_marker:
+                if check_path is not None:
+                    if check_runtime_path(metadata_types[data[0]], check_path):
+                        return value['type']
+                    else:
+                        value = value[path]
+                        continue
                 return value['type']
             value = value[path]
 
     # if nothing were found, then try to find with another marker
     if default_path_marker != 'name':
-        return find_type_id_in_metadata(name, metadata_types, default_path_marker='name')
+        return find_type_id_in_metadata(name, metadata_types, default_path_marker='name', check_path=check_path)
     else:
         raise Exception(f"Can't find type_id for {name}")
 
@@ -137,15 +149,12 @@ def find_primitive(name, metadata_types):
     return deep_search_an_elemnt_by_key(type_with_primitive, "primitive")
 
 
-def find_path_for_type_in_metadata(name, metadata_types):
-    type_id = find_type_id_in_metadata(name, metadata_types)
+def find_path_for_type_in_metadata(name, metadata_types, check_path=None):
+    type_id = find_type_id_in_metadata(name, metadata_types, check_path=check_path)
     return return_type_path(metadata_types[type_id], "path")
 
 
 def find_certain_type_in_metadata(name, metadata_types):
-
-    def check_runtime_path(runtime_type, part_of_path):
-        return bool(part_of_path in ".".join(runtime_type['type']['path']))
 
     if name in ['Event', 'Call']:
         new_path = find_certain_type_in_metadata(
@@ -162,14 +171,19 @@ def find_certain_type_in_metadata(name, metadata_types):
         value = metadata_types
         for path in data:
             if path == 'path':
-                if new_path is None:
-                    if check_runtime_path(metadata_types[data[0]], '_runtime'):
+                if any(call in name for call in ('Event', 'Call')):
+                    if check_runtime_path(metadata_types[data[0]], 'runtime'):
                         return metadata_types[data[0]]
                     else:
                         value = value[path]
                         continue
-                return metadata_types[data[0]]
+                else:
+                    return metadata_types[data[0]]
             value = value[path]
+
+
+def check_runtime_path(runtime_type, part_of_path):
+        return bool(part_of_path in ".".join(runtime_type['type']['path']))
 
 
 def check_fee_is_structure(substrate: SubstrateInterface):

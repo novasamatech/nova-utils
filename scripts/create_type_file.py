@@ -6,14 +6,19 @@ from utils.metadata_interaction import get_metadata_param, get_properties, write
 from utils.network_interaction import create_connection_by_url
 from print_xcm_changes import get_data_from_file
 from utils.chain_model import Chain
-from substrateinterface import SubstrateInterface, Keypair
 
 
 def compare_type_files_for_all_networks(chains_file):
     index = 0
     for chain in chains_file:
         index += 1
-        print(f"Generating has started for: {chain['name']}. {index}/{len(chains_file)}")
+        print(
+            f"Generating has started for: {chain['name']}. {index}/{len(chains_file)}")
+        if chain['name'] in ['Moonbeam', 'Moonriver', 'Moonbase']:
+            # TODO need to implement creation type file for EVM networks
+            print(
+                f"Temporary can't generate type files for EVM networks, {chain['name']} was skipped")
+            continue
         actual_types_file_path = chain['types']['url'].split('master/')[1]
         actual_types_file = get_data_from_file(actual_types_file_path)
         chain_object = Chain(chain)
@@ -25,8 +30,10 @@ def compare_type_files_for_all_networks(chains_file):
             if key == 'types':
                 for type_key, type_value in value.items():
                     actual_types_file['types'][type_key] = type_value
+                continue
             actual_types_file[key] = value
-        write_data_to_file(actual_types_file_path, json.dumps(actual_types_file, indent=2))
+        write_data_to_file(actual_types_file_path,
+                           json.dumps(actual_types_file, indent=2))
         print(f"Generating has successfuly finished: {chain['name']} 🎉")
 
 
@@ -47,14 +54,15 @@ def create_new_type_file(url):
 
 def main(argv):
     if 'dev' in argv:
-        url = "wss://acala-rpc.dwellir.com"
+        url = "wss://rpc.efinity.io"
         create_new_type_file(url)
     elif 'prod' in argv:
         chains_path = os.getenv("CHAINS_JSON_PATH", "chains/v6/chains.json")
         chains_file = get_data_from_file(chains_path)
         compare_type_files_for_all_networks(chains_file)
     else:
-        user_input = input("Enter a url for collect data, url should start with wss:\n")
+        user_input = input(
+            "Enter a url for collect data, url should start with wss:\n")
         url = user_input.strip()
         print("Data collecting in process and will write to file in current directory.")
         create_new_type_file(url)
