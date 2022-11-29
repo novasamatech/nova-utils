@@ -13,8 +13,8 @@ def create_connection_by_url(url):
                 "pong_timeout": 5,
                 "headers": {"Origin": "polkadot.js.org"}
             })
-    except ConnectionRefusedError and TimeoutError:
-        print("⚠️ Can't connect by %s, check it is available?" % (url))
+    except Exception as err:
+        print(f"⚠️ Can't connect by {url}, check it is available? \n {err}")
         raise
 
     return substrate
