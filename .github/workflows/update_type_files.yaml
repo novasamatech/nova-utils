@@ -1,0 +1,37 @@
+name: Update types for all network
+
+on:
+  pull_request:
+
+
+jobs:
+  chains_update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current repository to Master branch
+        uses: actions/checkout@v1
+
+      - name: Set up actual paths
+        uses: ./.github/workflows/setup-path
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Update chain types
+        run: python ./scripts/create_type_file.py prod
+
+      - name: Make Pull Request
+        uses: ./.github/workflows/make-pull-request
+        with:
+          commit-files: --all
+          commit-message: Update chain types
+          github-token: ${{ secrets.GITHUB_TOKEN  }}
+          branch-name: update-types-${{github.run_number}}
+          pr-title: Update types for networks
+          pr-body: This PR was generated automatically by the GitHub Action, **update-types**.
+
+            Feel free to close this PR if the changes are not needed.
+
+            If you would like to recreate this PR, check the box below.
+
+            - [ ] Re-create this PR

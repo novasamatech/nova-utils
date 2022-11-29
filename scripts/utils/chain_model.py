@@ -1,4 +1,5 @@
-from scripts.create_type_file import create_connection_by_url, get_properties
+from utils.network_interaction import create_connection_by_url
+from .metadata_interaction import get_properties
 
 
 class Chain():
@@ -26,7 +27,7 @@ class Chain():
                 print("Can't connect to that node")
                 continue
 
-        raise TimeoutError("Can't connect to all nodes of network", self.name)
+        print("Can't connect to all nodes of network", self.name)
 
 
     def init_properties(self):
