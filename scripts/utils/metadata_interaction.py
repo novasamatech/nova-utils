@@ -185,7 +185,11 @@ def find_certain_type_in_metadata(name, metadata_types):
 
 
 def check_runtime_path(runtime_type, part_of_path):
-        return bool(part_of_path in ".".join(runtime_type['type']['path']))
+    runtime_path = runtime_type['type']['path']
+    if bool(part_of_path in ".".join(runtime_path)):
+        if len(runtime_path) <= 3:
+            return True
+    return False
 
 
 def check_fee_is_calculating(substrate: SubstrateInterface):
