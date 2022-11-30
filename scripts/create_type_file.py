@@ -31,7 +31,7 @@ def compare_type_files_for_all_networks(chains_file):
         if actual_runtime_dispatch_info:
             types_from_runtime.__dict__['types']['RuntimeDispatchInfo'] = actual_runtime_dispatch_info
         write_data_to_file(actual_types_file_path,
-                           json.dumps(types_from_runtime.__dict__, indent=4))
+                           json.dumps(types_from_runtime.__dict__, indent=2))
         chain_object.close_substrate_connection()
         print(f"Generating has successfuly finished: {chain['name']} 🎉")
 
