@@ -206,7 +206,10 @@ def check_fee_is_calculating(substrate: SubstrateInterface):
         return True
     except SubstrateRequestException as substrate_error:
         print(f"Can't calculate fee, error is: \n{substrate_error}")
-        return False
+        if "failed to decode" in substrate_error.args[0]['data'].lower():
+            return False
+        else:
+            return True
     except Exception as err:
         print(f"Can't calculate fee by another reason error is: \n{err}")
         return True
