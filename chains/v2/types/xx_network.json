@@ -14,20 +14,20 @@
         "RuntimeDispatchInfo": {
             "type": "struct",
             "type_mapping": [
-              [
-                "weight",
-                "u64"
-              ],
-              [
-                "class",
-                "frame_support.weights.DispatchClass"
-              ],
-              [
-                "partialFee",
-                "Balance"
-              ]
+                [
+                    "weight",
+                    "u64"
+                ],
+                [
+                    "class",
+                    "frame_support.weights.DispatchClass"
+                ],
+                [
+                    "partialFee",
+                    "Balance"
+                ]
             ]
-          }
+        }
     },
     "versioning": []
 }

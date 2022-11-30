@@ -1,5 +1,5 @@
 {
-    "runtime_id": 100,
+    "runtime_id": 115,
     "types": {
         "Balance": "u128",
         "Index": "u32",
@@ -10,7 +10,24 @@
         "hydradx_runtime.Event": "GenericEvent",
         "hydradx_runtime.Call": "GenericCall",
         "sp_core.crypto.AccountId32": "GenericAccountId",
-        "pallet_identity.types.Data": "Data"
+        "pallet_identity.types.Data": "Data",
+        "RuntimeDispatchInfo": {
+            "type": "struct",
+            "type_mapping": [
+                [
+                    "weight",
+                    "frame_support.weights.weight_v2.Weight"
+                ],
+                [
+                    "class",
+                    "frame_support.weights.DispatchClass"
+                ],
+                [
+                    "partialFee",
+                    "Balance"
+                ]
+            ]
+        }
     },
     "versioning": []
 }
