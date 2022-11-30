@@ -23,6 +23,7 @@ def compare_type_files_for_all_networks(chains_file):
         actual_types_file = get_data_from_file(actual_types_file_path)
         chain_object = Chain(chain)
         chain_object.create_connection()
+
         types_from_runtime = get_metadata_param(chain_object.substrate)
         if types_from_runtime is None:
             continue
@@ -31,6 +32,7 @@ def compare_type_files_for_all_networks(chains_file):
             types_from_runtime.__dict__['types']['RuntimeDispatchInfo'] = actual_runtime_dispatch_info
         write_data_to_file(actual_types_file_path,
                            json.dumps(types_from_runtime.__dict__, indent=4))
+        chain_object.close_substrate_connection()
         print(f"Generating has successfuly finished: {chain['name']} 🎉")
 
 
@@ -51,7 +53,7 @@ def create_new_type_file(url):
 
 def main(argv):
     if 'dev' in argv:
-        url = "wss://rpc.efinity.io"
+        url = "wss://quartz.api.onfinality.io/public-ws"
         create_new_type_file(url)
     elif 'prod' in argv:
         chains_path = os.getenv("CHAINS_JSON_PATH", "chains/v6/chains.json")

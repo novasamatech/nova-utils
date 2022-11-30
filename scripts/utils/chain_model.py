@@ -21,17 +21,21 @@ class Chain():
 
     def create_connection(self) -> SubstrateInterface:
         for node in self.nodes:
-            if (self.substrate):
-                return self.substrate
             try:
                 self.substrate = create_connection_by_url(node.get('url'))
-                self.substrate.update_type_registry_presets()
                 return self.substrate
+                # if self.substrate.websocket.connected is True:
+                #     return self.substrate
+                # print(f"Can't connect to endpoint {node.get('url')} for the {self.name}")
             except:
                 print("Can't connect to that node")
                 continue
 
         print("Can't connect to all nodes of network", self.name)
+
+
+    def close_substrate_connection(self):
+        self.substrate.close()
 
 
     def init_properties(self):

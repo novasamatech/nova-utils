@@ -75,8 +75,8 @@ def get_properties(substrate: SubstrateInterface) -> Properties:
 def get_metadata_param(substrate: SubstrateInterface) -> JsonObject:
     try:
         metadata = substrate.get_block_metadata()
-    except Exception as e:
-        print(f"Can't connect \n {e}")
+    except Exception as error:
+        print(f"There is some error with getting metadata from remote, Error:\n{error}")
         return None
     metadata_is_v14(metadata)
     account_does_not_need_updates(substrate)
@@ -190,16 +190,19 @@ def check_runtime_path(runtime_type, part_of_path):
 
 def check_fee_is_calculating(substrate: SubstrateInterface):
     test_keypair = Keypair.create_from_uri('//Alice')
-    call = substrate.compose_call(
-        call_module='Balances',
-        call_function='transfer',
-        call_params={
-            'dest': test_keypair.ss58_address,
-            'value': 0,
-        }
-    )
     try:
+        call = substrate.compose_call(
+            call_module='Balances',
+            call_function='transfer',
+            call_params={
+                'dest': test_keypair.ss58_address,
+                'value': 0,
+            }
+        )
         query_info = substrate.get_payment_info(call=call, keypair=test_keypair)
+        return True
+    except ValueError as value_error:
+        print(f"Case when Balance pallet not found:\n{value_error}")
         return True
     except SubstrateRequestException as substrate_error:
         print(f"Can't calculate fee, error is: \n{substrate_error}")
@@ -232,10 +235,11 @@ def account_does_not_need_updates(substrate: SubstrateInterface):
     keypair = Keypair.create_from_uri("//Alice")
     try:
         account_info = substrate.query("System", "Account", params=[keypair.ss58_address])
-    except ValueError:
-        account_info = substrate.query("System", "Account", params=['0xC4d9Aa77d94c36D737c5A25F5CdD0FCC7BAEf963'])
-    except:
-        raise Exception(f"Can't get account info for {substrate.chain}")
+    # except ValueError as value_error:
+    #     print(f"Error while getting an account info:\n{value_error}")
+    #     account_info = substrate.query("System", "Account", params=['0xC4d9Aa77d94c36D737c5A25F5CdD0FCC7BAEf963'])
+    except Exception as error:
+        raise Exception(f"Can't get account info for {substrate.chain}, Error:\n{error}")
 
     elements = ["nonce", "free", "reserved", "misc_frozen", "fee_frozen"]
     if len(account_info.value["data"]) != 4:
