@@ -1,8 +1,13 @@
+#!/usr/bin/env python3
+"""That script contains some functions for working with metadata"""
+
 from substrateinterface import SubstrateInterface, Keypair
 from substrateinterface.exceptions import SubstrateRequestException
 
 
 class JsonObject:
+    """That object is used for creating json object for metadata"""
+
     def __init__(
         self,
         runtime_id,
@@ -39,6 +44,8 @@ class JsonObject:
 
 
 class Properties:
+    """That object is used for creating json object for network properties"""
+
     def __init__(
         self, chain_id, chain_name, chain_symbol, chain_precision, chain_prefix
     ) -> None:
@@ -50,6 +57,14 @@ class Properties:
 
 
 def get_properties(substrate: SubstrateInterface) -> Properties:
+    """Get network properties from metadata
+
+    Args:
+        substrate (SubstrateInterface): Initialized substrate interface
+
+    Returns:
+        Properties: Oject with network properties
+    """
     substrate.get_constant('system', 'ss58Prefix')
     symbol = substrate.properties["tokenSymbol"]
 
@@ -73,6 +88,14 @@ def get_properties(substrate: SubstrateInterface) -> Properties:
 
 
 def get_metadata_param(substrate: SubstrateInterface) -> JsonObject:
+    """Generate object for useage as type in chains/**/types/*.json
+
+    Args:
+        substrate (SubstrateInterface): Initialized substrate interface
+
+    Returns:
+        JsonObject: Object with types from metadata
+    """
     try:
         metadata = substrate.get_block_metadata()
     except Exception as error:
@@ -104,14 +127,29 @@ def get_metadata_param(substrate: SubstrateInterface) -> JsonObject:
     )
 
     if can_calculate_fee is False:
-        runtime_dispatch_info = find_dispatch_info(
-            'DispatchInfo', metadata_types)
+        runtime_dispatch_info = find_dispatch_info(metadata_types)
         metadata_json.use_v2_weight_mapping(runtime_dispatch_info)
 
     return metadata_json
 
 
-def find_type_id_in_metadata(name, metadata_types, default_path_marker='typeName', check_path=None):
+def find_type_id_in_metadata(name, metadata_types, default_path_marker='typeName', check_path=None) -> int:
+    """Find type id in metadata by type name
+
+    Args:
+        name (str): Type name to find
+        metadata_types (array): Array with metadata types
+        default_path_marker (str, optional): A parameter that specifies a name for the part of the path
+            in which the script tries to find a specific name. Defaults to 'typeName'.
+        check_path (string, optional): If not None, then a check is added for the found type
+            that the path contains the check_path. Defaults to None.
+
+    Raises:
+        Exception: If can't to find type in metadata by provided parameters
+
+    Returns:
+        int: Metadata type id for found type
+    """
     data_set = find_type_in_metadata(name, metadata_types)
     for data in data_set:
         value = metadata_types
@@ -133,8 +171,16 @@ def find_type_id_in_metadata(name, metadata_types, default_path_marker='typeName
         raise Exception(f"Can't find type_id for {name}")
 
 
-def find_dispatch_info(name, metadata_types):
-    dispatch_info = find_certain_type_in_metadata(name, metadata_types)
+def find_dispatch_info(metadata_types) -> dict:
+    """Generate RuntimeDispatchInfo object from metadata
+
+    Args:
+        metadata_types (array): Array with metadata types
+
+    Returns:
+        dict: Formated object to usage in types file
+    """
+    dispatch_info = find_certain_type_in_metadata('DispatchInfo', metadata_types)
     weight, dispatch_class, _ = dispatch_info['type']['def']['composite']['fields']
     dispatch_class_path = return_type_path(
         metadata_types[dispatch_class['type']], 'path')
@@ -146,17 +192,46 @@ def find_dispatch_info(name, metadata_types):
 
 
 def find_primitive(name, metadata_types):
+    """Find primitive value in metadata types
+
+    Args:
+        name (str): Primitive name
+        metadata_types (array): Array with metadata types
+
+    Returns:
+        str: Value for found type
+    """
     type_id = find_type_id_in_metadata(name, metadata_types)
     type_with_primitive = metadata_types[type_id]
     return deep_search_an_elemnt_by_key(type_with_primitive, "primitive")
 
 
 def find_path_for_type_in_metadata(name, metadata_types, check_path=None):
+    """Find path for type in metadata
+
+    Args:
+        name (str): Type name to find
+        metadata_types (array): Array with metadata types
+        check_path (str, optional): If not None will check found result,
+            that path is contains provided string. Defaults to None.
+
+    Returns:
+        str: Path for found type
+    """
     type_id = find_type_id_in_metadata(name, metadata_types, check_path=check_path)
     return return_type_path(metadata_types[type_id], "path")
 
 
 def find_certain_type_in_metadata(name, metadata_types):
+    """Found type in metadata by name
+
+    Args:
+        name (str): Type name to find
+        metadata_types (array): Array with metadata types
+
+    Returns:
+        obj: Found type as object
+    """
 
     if name in ['Event', 'Call']:
         new_path = find_certain_type_in_metadata(
@@ -184,7 +259,17 @@ def find_certain_type_in_metadata(name, metadata_types):
             value = value[path]
 
 
-def check_runtime_path(runtime_type, part_of_path):
+def check_runtime_path(runtime_type, part_of_path) -> bool:
+    """Check that runtime type path contains provided string
+
+    Args:
+        runtime_type (dict): Runtime type
+        part_of_path (str): Part of path to check
+
+    Returns:
+        bool: True if path contains provided string, otherwise False
+    """
+
     runtime_path = runtime_type['type']['path']
     if bool(part_of_path in ".".join(runtime_path)):
         if len(runtime_path) <= 3:
@@ -192,7 +277,16 @@ def check_runtime_path(runtime_type, part_of_path):
     return False
 
 
-def check_fee_is_calculating(substrate: SubstrateInterface):
+def check_fee_is_calculating(substrate: SubstrateInterface) -> bool:
+    """Check that substrate can calculate fee
+
+    Args:
+        substrate (SubstrateInterface): Initialized substrate interface
+
+    Returns:
+        bool: True if substrate can calculate fee, otherwise False
+    """
+
     test_keypair = Keypair.create_from_uri('//Alice')
     try:
         call = substrate.compose_call(
@@ -219,12 +313,22 @@ def check_fee_is_calculating(substrate: SubstrateInterface):
         return True
 
 
-def return_type_path(metadata_type, search_key):
+def return_type_path(metadata_type, search_key) -> str:
     found_path = deep_search_an_elemnt_by_key(metadata_type, search_key)
     return ".".join(found_path)
 
 
-def find_type_in_metadata(name, metadata_types):
+def find_type_in_metadata(name, metadata_types) -> list:
+    """Find all types in metadata by name
+
+    Args:
+        name (str): _description_
+        metadata_types (list): List with metadata types
+
+    Returns:
+        list: All found types
+    """
+
     return_data = []
     for item in find_in_obj(metadata_types, name):
         return_data.append(item)
@@ -304,9 +408,3 @@ def find_in_obj(obj, condition, path=None):
     if condition == obj:
         new_path = list(path)
         yield new_path
-
-
-def write_data_to_file(name, data: str):
-
-    with open(name, "w") as file:
-        file.write(data)

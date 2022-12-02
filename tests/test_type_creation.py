@@ -1,6 +1,6 @@
 import json
 import pytest
-from scripts.utils.network_interaction import create_connection_by_url
+from scripts.utils.substrate_interface import create_connection_by_url
 from scripts.create_type_file import get_metadata_param, get_properties
 
 test_data = [

@@ -1,14 +1,25 @@
+#!/usr/bin/env python3
+"""That script is used for creating type files in chains/**/types/ directory."""
+
 import os
 import sys
 import json
 
-from utils.metadata_interaction import get_metadata_param, get_properties, write_data_to_file
-from utils.network_interaction import create_connection_by_url
+from utils.metadata_interaction import get_metadata_param, get_properties
+from utils.getting_data import get_data_from_file, write_data_to_file
+from utils.substrate_interface import create_connection_by_url
 from print_xcm_changes import get_data_from_file
 from utils.chain_model import Chain
 
 
 def compare_type_files_for_all_networks(chains_file):
+    """This function compare type files with runtime metadata for all networks provided by chain_files
+    all changes will be written in particular type file.
+
+    Args:
+        chains_file (obj): Json object with all chains from chains/**/chains*.json
+    """
+
     index = 0
     for chain in chains_file:
         index += 1
@@ -52,9 +63,19 @@ def create_new_type_file(url):
 
 
 def main(argv):
+    """Main function for create or update type files.
+
+    Args:
+        argv (str): ["dev", "prod", None]
+            if "dev" - type files will be created for all networks from chains/**/chains_dev.json
+            if "prod" - type files will be created for all networks from chains/**/chains.json
+            if None - type file will be created for network provided by url
+    """
+
     if 'dev' in argv:
-        url = "wss://quartz.api.onfinality.io/public-ws"
-        create_new_type_file(url)
+        chains_path = os.getenv("DEV_CHAINS_JSON_PATH", "chains/v6/chains_dev.json")
+        chains_file = get_data_from_file(chains_path)
+        compare_type_files_for_all_networks(chains_file)
     elif 'prod' in argv:
         chains_path = os.getenv("CHAINS_JSON_PATH", "chains/v6/chains.json")
         chains_file = get_data_from_file(chains_path)
