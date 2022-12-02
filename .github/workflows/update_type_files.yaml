@@ -1,8 +1,9 @@
 name: Update types for all network
 
 on:
-  pull_request:
-
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch:
 
 jobs:
   chains_update:
