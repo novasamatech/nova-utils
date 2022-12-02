@@ -112,7 +112,7 @@ def compare_destinations(object_accumulator, actual_chain_dict, new_chain_dict, 
             try:
                 asset_in_new_chain_dict = next(
                     asset for asset in new_chain_dict[chain_id]['assets'] if asset['assetLocation'] == asset_symbol)
-            except StopIteration:
+            except (StopIteration, KeyError):
                 object_accumulator['chains'][chain_name][asset_symbol] = 'That asset was removed'
                 continue
             for destination in chain_asset.get('xcmTransfers'):
