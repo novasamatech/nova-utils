@@ -34,3 +34,4 @@ def write_data_to_file(name, data: str):
 
     with open(name, "w") as file:
         file.write(data)
+        file.write("\n")

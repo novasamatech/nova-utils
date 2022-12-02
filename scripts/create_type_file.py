@@ -6,9 +6,8 @@ import sys
 import json
 
 from utils.metadata_interaction import get_metadata_param, get_properties
-from utils.getting_data import get_data_from_file, write_data_to_file
+from utils.work_with_data import get_data_from_file, write_data_to_file
 from utils.substrate_interface import create_connection_by_url
-from print_xcm_changes import get_data_from_file
 from utils.chain_model import Chain
 
 

@@ -6,7 +6,7 @@ import sys
 import os
 import json
 from collections import defaultdict
-from utils.getting_data import get_data_from_file, get_request_via_https
+from utils.work_with_data import get_data_from_file, get_request_via_https
 
 
 def deep_search_an_elemnt_by_key(obj, key):
