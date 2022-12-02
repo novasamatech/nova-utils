@@ -1,16 +1,16 @@
 {
-  "runtime_id": 25,
+  "runtime_id": 82,
   "types": {
-      "Balance": "u128",
-      "Index": "u32",
-      "Phase": "frame_system.Phase",
-      "Address": "sp_core.crypto.AccountId32",
-      "ExtrinsicSignature": "sp_runtime.MultiSignature",
-      "ParaId": "polkadot_parachain.primitives.Id",
-      "basilisk_runtime.Event": "GenericEvent",
-      "basilisk_runtime.Call": "GenericCall",
-      "sp_core.crypto.AccountId32": "GenericAccountId",
-      "pallet_identity.types.Data": "Data"
+    "Balance": "u128",
+    "Index": "u32",
+    "Phase": "frame_system.Phase",
+    "Address": "sp_core.crypto.AccountId32",
+    "ExtrinsicSignature": "sp_runtime.MultiSignature",
+    "ParaId": "polkadot_parachain.primitives.Id",
+    "basilisk_runtime.Event": "GenericEvent",
+    "basilisk_runtime.Call": "GenericCall",
+    "sp_core.crypto.AccountId32": "GenericAccountId",
+    "pallet_identity.types.Data": "Data"
   },
   "versioning": []
 }
