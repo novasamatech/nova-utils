@@ -1998,10 +1998,6 @@
         ],
         "nodes": [
             {
-                "url": "wss://quartz.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://quartz.unique.network",
                 "name": "Unique node"
             },
@@ -2012,6 +2008,10 @@
             {
                 "url": "wss://us-ws-quartz.unique.network",
                 "name": "Unique US node"
+            },
+            {
+                "url": "wss://asia-ws-quartz.unique.network",
+                "name": "Unique Asia node"
             }
         ],
         "types": {
