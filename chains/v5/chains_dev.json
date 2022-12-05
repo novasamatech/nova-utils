@@ -5467,7 +5467,8 @@
                 "assetId": 0,
                 "symbol": "Unit",
                 "precision": 10,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/GOV2.svg"
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/GOV2.svg",
+                "staking": "relaychain"
             }
         ],
         "nodes": [
@@ -5476,6 +5477,12 @@
                 "name": "Development node"
             }
         ],
+        "externalApi": {
+            "staking": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadot"
+            }
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/polkadot.json",
             "overridesCommon": true
