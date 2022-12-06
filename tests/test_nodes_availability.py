@@ -3,8 +3,8 @@ from typing import List
 import pytest
 
 from tests.data.setting_data import *
-from scripts.create_type_file import create_connection_by_url
-from tests.utils.chain_model import Chain
+from scripts.utils.substrate_interface import create_connection_by_url
+from scripts.utils.chain_model import Chain
 from substrateinterface import SubstrateInterface
 
 

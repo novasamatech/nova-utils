@@ -6,22 +6,7 @@ import sys
 import os
 import json
 from collections import defaultdict
-import requests
-
-
-def get_data_from_file(file_path):
-    with open(file_path, encoding='UTF-8') as fin:
-        return json.load(fin)
-
-
-def get_request_via_https(url) -> json:
-    try:
-        response = requests.get(url, timeout=60)
-        response.raise_for_status()
-        data = response.json()
-        return data
-    except requests.exceptions.RequestException as request_error:
-        raise SystemExit(request_error)
+from utils.work_with_data import get_data_from_file, get_request_via_https
 
 
 def deep_search_an_elemnt_by_key(obj, key):
