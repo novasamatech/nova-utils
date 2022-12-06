@@ -5590,14 +5590,15 @@
         "addressPrefix": 32
     },
     {
-        "chainId": "854371e4ecdc08dabcf74ff08c7125d223428fb3523b6af4684fe69314b98658",
+        "chainId": "de06348a2bb1ca0b6ad293af89b08cc9e916d7753065c784d77c8d27a31af299",
         "name": "Governance1 Novasama Testnet",
         "assets": [
             {
                 "assetId": 0,
                 "symbol": "Unit",
                 "precision": 10,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/GOV2.svg"
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/GOV2.svg",
+                "staking": "relaychain"
             }
         ],
         "nodes": [
@@ -5606,6 +5607,12 @@
                 "name": "Development node"
             }
         ],
+        "externalApi": {
+            "staking": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadot"
+            }
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/polkadot.json",
             "overridesCommon": true
