@@ -1,14 +1,19 @@
 #!/usr/bin/env python3
 """That script is used for creating type files in chains/**/types/ directory."""
 
+from pathlib import Path
 import os
 import sys
 import json
 
-from utils.metadata_interaction import get_metadata_param, get_properties
-from utils.work_with_data import get_data_from_file, write_data_to_file
-from utils.substrate_interface import create_connection_by_url
-from utils.chain_model import Chain
+# add parent directory to evade import problems across different modules
+path_root = Path(__file__).parents[1]
+sys.path.append(str(path_root))
+
+from scripts.utils.metadata_interaction import get_metadata_param, get_properties
+from scripts.utils.work_with_data import get_data_from_file, write_data_to_file
+from scripts.utils.substrate_interface import create_connection_by_url
+from scripts.utils.chain_model import Chain
 
 
 def compare_type_files_for_all_networks(chains_file):

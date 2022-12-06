@@ -1,4 +1,4 @@
-from utils.substrate_interface import create_connection_by_url
+from .substrate_interface import create_connection_by_url
 from .metadata_interaction import get_properties
 
 from substrateinterface import SubstrateInterface
