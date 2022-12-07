@@ -24,6 +24,23 @@
         ]
       ]
     },
+    "RuntimeDispatchInfo": {
+      "type": "struct",
+      "type_mapping": [
+        [
+          "weight",
+          "sp_weights.weight_v2.Weight"
+        ],
+        [
+          "class",
+          "frame_support.dispatch.DispatchClass"
+        ],
+        [
+          "partialFee",
+          "Balance"
+        ]
+      ]
+    },
     "ExtrinsicSignature": "EthereumSignature",
     "ParaId": "polkadot_parachain.primitives.Id",
     "moonbase_runtime.Event": "GenericEvent",
