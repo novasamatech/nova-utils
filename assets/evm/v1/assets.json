@@ -9,6 +9,392 @@
             {
                 "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
                 "contractAddress": "0xeFAeeE334F0Fd1712f9a8cc375f427D9Cdd40d73"
+            },
+            {
+                "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
+                "contractAddress": "0xB44a9B6905aF7c801311e8F4E76932ee959c663C"
+            }
+        ]
+    },
+    {
+        "symbol": "USDC",
+        "precision": 6,
+        "name": "USD Coin",
+        "priceId": "usd-coin",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/USDC.svg",
+        "instances": [
+            {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "contractAddress": "0x818ec0A7Fe18Ff94269904fCED6AE3DaE6d6dC0b"
+            },
+            {
+                "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
+                "contractAddress": "0xE3F5a90F9cb311505cd691a46596599aA1A0AD7D"
+            }
+        ]
+    },
+    {
+        "symbol": "BUSD",
+        "precision": 18,
+        "name": "Binance-Peg BUSD Token",
+        "priceId": "binance-usd",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/BUSD.svg",
+        "instances": [
+            {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "contractAddress": "0xA649325Aa7C5093d12D6F98EB4378deAe68CE23F"
+            }
+        ]
+    },
+    {
+        "symbol": "MATIC",
+        "precision": 18,
+        "name": "Matic",
+        "priceId": "matic-network",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/MATIC.svg",
+        "instances": [
+            {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "contractAddress": "0x3405A1bd46B85c5C029483FbECf2F3E611026e45"
+            }
+        ]
+    },
+    {
+        "symbol": "DAI",
+        "precision": 18,
+        "name": "Dai Stablecoin",
+        "priceId": "dai",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/DAI.svg",
+        "instances": [
+            {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "contractAddress": "0x765277EebeCA2e31912C9946eAe1021199B39C61"
+            },
+            {
+                "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
+                "contractAddress": "0x80A16016cC4A2E6a2CACA8a4a498b1699fF0f844"
+            }
+        ]
+    },
+    {
+        "symbol": "AVAX",
+        "precision": 18,
+        "name": "Avalanche",
+        "priceId": "avalanche-2",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/AVAX.svg",
+        "instances": [
+            {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "contractAddress": "0x4792C1EcB969B036eb51330c63bD27899A13D84e"
+            }
+        ]
+    },
+    {
+        "symbol": "WBTC",
+        "precision": 8,
+        "name": "Wrapped BTC",
+        "priceId": "wrapped-bitcoin",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/WBTC.svg",
+        "instances": [
+            {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "contractAddress": "0x922D641a426DcFFaeF11680e5358F34d97d112E1"
+            }
+        ]
+    },
+    {
+        "symbol": "FRAX",
+        "precision": 18,
+        "name": "Frax",
+        "priceId": "frax",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/FRAX.svg",
+        "instances": [
+            {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "contractAddress": "0x322E86852e492a7Ee17f28a78c663da38FB33bfb"
+            },
+            {
+                "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
+                "contractAddress": "0x1A93B23281CC1CDE4C4741353F3064709A16197d"
+            }
+        ]
+    },
+    {
+        "symbol": "FTM",
+        "precision": 18,
+        "name": "Fantom",
+        "priceId": "fantom",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/FTM.svg",
+        "instances": [
+            {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "contractAddress": "0xC19281F22A075E0F10351cd5D6Ea9f0AC63d4327"
+            }
+        ]
+    },
+    {
+        "symbol": "FXS",
+        "precision": 18,
+        "name": "Frax Share",
+        "priceId": "frax-share",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/FXS.svg",
+        "instances": [
+            {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "contractAddress": "0x2CC0A9D8047A5011dEfe85328a6f26968C8aaA1C"
+            },
+            {
+                "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
+                "contractAddress": "0x6f1D1Ee50846Fcbc3de91723E61cb68CFa6D0E98"
+            }
+        ]
+    },
+    {
+        "symbol": "WGLMR",
+        "precision": 18,
+        "name": "Wrapped GLMR",
+        "priceId": "wrapped-moonbeam",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonbeam.svg",
+        "instances": [
+            {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "contractAddress": "0xAcc15dC74880C9944775448304B263D191c6077F"
+            }
+        ]
+    },
+    {
+        "symbol": "BOBA",
+        "precision": 18,
+        "name": "BOBA Token",
+        "priceId": "boba-network",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/BOBA.svg",
+        "instances": [
+            {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "contractAddress": "0x18D17A9fD652D7d6a59903E23792ab97F832Ed6C"
+            }
+        ]
+    },
+    {
+        "symbol": "BEPRO",
+        "precision": 18,
+        "name": "BEPRO Network",
+        "priceId": "bepro-network",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/BEPRO.svg",
+        "instances": [
+            {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "contractAddress": "0x4EdF8E0778967012D46968ceadb75436d0426f88"
+            }
+        ]
+    },
+    {
+        "symbol": "mbXEN",
+        "precision": 18,
+        "name": "XEN Crypto",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/mbXEN.svg",
+        "instances": [
+            {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "contractAddress": "0xb564A5767A00Ee9075cAC561c427643286F8F4E1"
+            }
+        ]
+    },
+    {
+        "symbol": "CONV",
+        "precision": 18,
+        "name": "Convergence",
+        "priceId": "convergence",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/CONV.svg",
+        "instances": [
+            {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "contractAddress": "0x8006320739fC281da67Ee62eB9b4Ef8ADD5C903a"
+            }
+        ]
+    },
+    {
+        "symbol": "GLINT",
+        "precision": 18,
+        "name": "Beamswap Token",
+        "priceId": "beamswap",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/GLINT.svg",
+        "instances": [
+            {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "contractAddress": "0xcd3B51D98478D53F4515A306bE565c6EebeF1D58"
+            }
+        ]
+    },
+    {
+        "symbol": "EFT",
+        "precision": 18,
+        "name": "Energyfi Token",
+        "priceId": "energyfi",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/EFT.svg",
+        "instances": [
+            {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "contractAddress": "0xA423E7eEB60547d9C7b65005477b63ae7CE67E62"
+            }
+        ]
+    },
+    {
+        "symbol": "IDIA",
+        "precision": 18,
+        "name": "Impossible Decentralized Incubator Access Token",
+        "priceId": "idia",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/IDIA.svg",
+        "instances": [
+            {
+                "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
+                "contractAddress": "0x2d28AA28fA1E5e6bF121CF688309Bf3faAAe3C70"
+            }
+        ]
+    },
+    {
+        "symbol": "WMOVR",
+        "precision": 6,
+        "name": "Wrapped MOVR",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonriver.svg",
+        "instances": [
+            {
+                "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
+                "contractAddress": "0x98878B06940aE243284CA214f92Bb71a2b032B8A"
+            }
+        ]
+    },
+    {
+        "symbol": "CWS",
+        "precision": 18,
+        "name": "Crowns",
+        "priceId": "crowns",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/CWS.svg",
+        "instances": [
+            {
+                "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
+                "contractAddress": "0x6fc9651f45B262AE6338a701D563Ab118B1eC0Ce"
+            }
+        ]
+    },
+    {
+        "symbol": "ZLK",
+        "precision": 18,
+        "name": "Zenlink Network Token",
+        "priceId": "zenlink-network-token",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/ZLK.svg",
+        "instances": [
+            {
+                "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
+                "contractAddress": "0x0f47ba9d9Bde3442b42175e51d6A367928A1173B"
+            }
+        ]
+    },
+    {
+        "symbol": "SOLAR",
+        "precision": 18,
+        "name": "SolarBeam Token",
+        "priceId": "solarbeam",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/SOLAR.svg",
+        "instances": [
+            {
+                "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
+                "contractAddress": "0x6bD193Ee6D2104F14F94E2cA6efefae561A4334B"
+            }
+        ]
+    },
+    {
+        "symbol": "HYDRO",
+        "precision": 18,
+        "name": "HYDRO TOKEN",
+        "priceId": "hydro",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/HYDRO.svg",
+        "instances": [
+            {
+                "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
+                "contractAddress": "0x946112efaB61C3636CBD52DE2E1392D7A75A6f01"
+            }
+        ]
+    },
+    {
+        "symbol": "RIB",
+        "precision": 18,
+        "name": "RiverBoat",
+        "priceId": "riverboat",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/RIB.svg",
+        "instances": [
+            {
+                "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
+                "contractAddress": "0xbD90A6125a84E5C512129D622a75CDDE176aDE5E"
+            }
+        ]
+    },
+    {
+        "symbol": "BEANS",
+        "precision": 18,
+        "name": "MoonBeans",
+        "priceId": "moonbeans",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/BEANS.svg",
+        "instances": [
+            {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                    "contractAddress": "0x65b09ef8c5A096C5Fd3A80f1F7369E56eB932412"
+            },
+            {
+                "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
+                "contractAddress": "0xC2392DD3e3fED2c8Ed9f7f0bDf6026fcd1348453"
+            }
+        ]
+    },
+    {
+        "symbol": "SPACE",
+        "precision": 18,
+        "name": "Space Token",
+        "priceId": "space-token-bsc",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/SPACE.svg",
+        "instances": [
+            {
+                "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
+                "contractAddress": "0x55aF5865807b196bD0197e0902746F31FBcCFa58"
+            }
+        ]
+    },
+    {
+        "symbol": "STELLA",
+        "precision": 18,
+        "name": "StellaSwap",
+        "priceId": "stellaswap",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/STELLA.svg",
+        "instances": [
+            {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "contractAddress": "0x0E358838ce72d5e61E0018a2ffaC4bEC5F4c88d2"
+            }
+        ]
+    },
+    {
+        "symbol": "BNB",
+        "precision": 18,
+        "name": "Binance",
+        "priceId": "binancecoin",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/BNB.svg",
+        "instances": [
+            {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "contractAddress": "0xc9BAA8cfdDe8E328787E29b4B078abf2DaDc2055"
+            }
+        ]
+    },
+    {
+        "symbol": "ETH",
+        "precision": 18,
+        "name": "Ethereum",
+        "priceId": "ethereum",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/ETH.svg",
+        "instances": [
+            {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "contractAddress": "0xfA9343C3897324496A05fC75abeD6bAC29f8A40f"
             }
         ]
     }
