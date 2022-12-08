@@ -245,7 +245,8 @@
       },
       "reserveFee": {
         "mode": {
-          "type": "standard"
+          "type": "proportional",
+          "value": "341500"
         },
         "instructions": "xtokensReserve"
       }
@@ -2008,7 +2009,7 @@
                 "fee": {
                   "mode": {
                     "type": "proportional",
-                    "value": "115870000000"
+                    "value": "115870000"
                   },
                   "instructions": "xcmPalletDest"
                 }
