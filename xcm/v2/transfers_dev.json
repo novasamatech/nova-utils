@@ -2337,7 +2337,8 @@
                 "assetId": 7,
                 "fee": {
                   "mode": {
-                    "type": "standard"
+                    "type": "proportional",
+                    "value": "1000000"
                   },
                   "instructions": "xtokensDest"
                 }
