@@ -235,6 +235,14 @@
         },
         "instructions": "xtokensReserve"
       }
+    },
+    "USDT": {
+      "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
+      "multiLocation": {
+        "parachainId": 1000,
+        "palletInstance": 50,
+        "generalIndex": "1984"
+      }
     }
   },
   "instructions": {
@@ -1958,6 +1966,29 @@
                   "mode": {
                     "type": "proportional",
                     "value": "77639751552"
+                  },
+                  "instructions": "xcmPalletDest"
+                }
+              },
+              "type": "xcmpallet"
+            }
+          ]
+        },
+        {
+          "assetId": 7,
+          "assetLocation": "USDT",
+          "assetLocationPath": {
+            "type": "relative"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
+                "assetId": 7,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "25000000"
                   },
                   "instructions": "xcmPalletDest"
                 }
