@@ -923,6 +923,12 @@
                 "extrinsic": "https://moonbeam.subscan.io/extrinsic/{hash}",
                 "account": "https://moonbeam.subscan.io/account/{address}",
                 "event": null
+            },
+            {
+                "name": "Moonscan",
+                "extrinsic": "https://moonbeam.moonscan.io/tx/{hash}",
+                "account": "https://moonbeam.moonscan.io/address/{address}",
+                "event": null
             }
         ],
         "types": {
@@ -934,6 +940,11 @@
                 {
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonbeam"
+                },
+                {
+                    "assetType": "evm",
+                    "type": "etherscan",
+                    "url": "https://api-moonbeam.moonscan.io/api"
                 }
             ],
             "staking": {
@@ -1170,6 +1181,12 @@
                 "extrinsic": "https://moonriver.subscan.io/extrinsic/{hash}",
                 "account": "https://moonriver.subscan.io/account/{address}",
                 "event": null
+            },
+            {
+                "name": "Moonscan",
+                "extrinsic": "https://moonriver.moonscan.io/tx/{hash}",
+                "account": "https://moonriver.moonscan.io/address/{address}",
+                "event": null
             }
         ],
         "types": {
@@ -1181,6 +1198,11 @@
                 {
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonriver"
+                },
+                {
+                    "assetType": "evm",
+                    "type": "etherscan",
+                    "url": "https://api-moonriver.moonscan.io/api"
                 }
             ],
             "staking": {
