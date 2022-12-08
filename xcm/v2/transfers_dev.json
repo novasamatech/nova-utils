@@ -62,7 +62,13 @@
     },
     "UNIT": {
       "chainId": "e1ea3ab1d46ba8f4898b6b4b9c54ffc05282d299f89e84bd0fd08067758c9443",
-      "multiLocation": {}
+      "multiLocation": {},
+      "reserveFee": {
+        "mode": {
+          "type": "standard"
+        },
+        "instructions": "xtokensReserve"
+      }
     },
     "ACA": {
       "chainId": "fc41b9bd8ef8fe53d58c7ea67c794c7ec9a73daf05e6d54b14ff6342c99ba64c",
