@@ -51,10 +51,9 @@
 |  47 | Stellaswap                    | https://app.stellaswap.com/exchange/swap             | defi,staking,evm        |
 |  48 | Sub.ID                        | https://sub.id/#/                                    | utilities               |
 |  49 | SubBridge                     | https://subbridge.io/                                | defi,evm                |
-|  50 | Subsocial App                 | https://app.subsocial.network/                       | community               |
-|  51 | Subsquare. Khala network      | https://khala.subsquare.io/                          | community               |
-|  52 | Talisman App                  | https://app.talisman.xyz/portfolio                   | defi,crowdloans         |
-|  53 | Tinkernet Rewards Claim       | https://www.tinker.network/claim                     | crowdloans              |
-|  54 | TofuNFT                       | https://tofunft.com/                                 | nft,evm                 |
-|  55 | Zeitgeist                     | https://app.zeitgeist.pm/                            | utilities               |
-|  56 | cBRIDGE                       | https://cbridge.celer.network/#/transfer             | defi,evm                |
+|  50 | Subsquare. Khala network      | https://khala.subsquare.io/                          | community               |
+|  51 | Talisman App                  | https://app.talisman.xyz/portfolio                   | defi,crowdloans         |
+|  52 | Tinkernet Rewards Claim       | https://www.tinker.network/claim                     | crowdloans              |
+|  53 | TofuNFT                       | https://tofunft.com/                                 | nft,evm                 |
+|  54 | Zeitgeist                     | https://app.zeitgeist.pm/                            | utilities               |
+|  55 | cBRIDGE                       | https://cbridge.celer.network/#/transfer             | defi,evm                |
