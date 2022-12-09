@@ -57,6 +57,7 @@ def find_new_destinations(object_accumulator, actual_chain_dict, new_cahin_dict,
     for chain_id, chain_data in new_cahin_dict.items():
         chain_name = chain_json_dict[chain_id].get('name')
         for chain_asset in chain_data.get('assets'):
+            asset_in_actual_chain_dict = {}
             asset_symbol = chain_asset['assetLocation']
             try:
                 asset_in_actual_chain_dict = next(
@@ -71,9 +72,9 @@ def find_new_destinations(object_accumulator, actual_chain_dict, new_cahin_dict,
                 actual_destinations = asset_in_actual_chain_dict.get(
                     'xcmTransfers')
                 try:
-                    destination_in_actual_chain_dict = next(
-                        destination for destination in actual_destinations if destination.get('destination').get('chainId') == destination_chain_id)
-                except (StopIteration, KeyError):
+                    destination_in_generated_chain_file = next(
+                        new_destination for new_destination in actual_destinations if new_destination.get('destination').get('chainId') == destination_chain_id)
+                except (StopIteration, KeyError, TypeError):
                     object_accumulator['chains'][chain_name][asset_symbol][destination_name] = 'That destination was added'
                     continue
 
