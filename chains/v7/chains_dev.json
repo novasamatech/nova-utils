@@ -234,7 +234,11 @@
             "governance": {
                 "type": "polkassembly",
                 "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "network": "westend"
+                "parameters": [
+                    {
+                        "network": "westend"
+                    }
+                ]
             }
         },
         "options": [
@@ -819,7 +823,11 @@
             "governance": {
                 "type": "polkassembly",
                 "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "network": "karura"
+                "parameters": [
+                    {
+                        "network": "karura"
+                    }
+                ]
             }
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Karura.svg",
@@ -1221,7 +1229,11 @@
             "governance": {
                 "type": "polkassembly",
                 "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "network": "shiden"
+                "parameters": [
+                    {
+                        "network": "shiden"
+                    }
+                ]
             }
         }
     },
@@ -1796,7 +1808,11 @@
             "governance": {
                 "type": "polkassembly",
                 "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "network": "basilisk"
+                "parameters": [
+                    {
+                        "network": "basilisk"
+                    }
+                ]
             }
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Basilisk.svg",
@@ -1858,7 +1874,11 @@
             "governance": {
                 "type": "polkassembly",
                 "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "network": "altair"
+                "parameters": [
+                    {
+                        "network": "altair"
+                    }
+                ]
             }
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Altair.svg",
@@ -2028,7 +2048,11 @@
             "governance": {
                 "type": "polkassembly",
                 "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "network": "khala"
+                "parameters": [
+                    {
+                        "network": "khala"
+                    }
+                ]
             }
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Khala.svg",
@@ -2179,7 +2203,11 @@
             "governance": {
                 "type": "polkassembly",
                 "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "network": "calamari"
+                "parameters": [
+                    {
+                        "network": "calamari"
+                    }
+                ]
             }
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Calamari.svg",
@@ -2534,7 +2562,11 @@
             "governance": {
                 "type": "polkassembly",
                 "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "network": "acala"
+                "parameters": [
+                    {
+                        "network": "acala"
+                    }
+                ]
             }
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Acala.svg",
@@ -2858,7 +2890,11 @@
             "governance": {
                 "type": "polkassembly",
                 "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "network": "astar"
+                "parameters": [
+                    {
+                        "network": "astar"
+                    }
+                ]
             }
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Astar.svg",
@@ -3097,7 +3133,11 @@
             "governance": {
                 "type": "polkassembly",
                 "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "network": "parallel"
+                "parameters": [
+                    {
+                        "network": "parallel"
+                    }
+                ]
             }
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Parallel.svg",
@@ -3262,7 +3302,11 @@
             "governance": {
                 "type": "polkassembly",
                 "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "network": "robonomics"
+                "parameters": [
+                    {
+                        "network": "robonomics"
+                    }
+                ]
             }
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Robonomics.svg",
@@ -3639,7 +3683,11 @@
             "governance": {
                 "type": "polkassembly",
                 "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "network": "crustshadow"
+                "parameters": [
+                    {
+                        "network": "crustshadow"
+                    }
+                ]
             }
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Crust_Shadow.svg",
@@ -3848,7 +3896,11 @@
             "governance": {
                 "type": "polkassembly",
                 "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "network": "hydradx"
+                "parameters": [
+                    {
+                        "network": "hydradx"
+                    }
+                ]
             }
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/HydraDX.svg",
@@ -4246,7 +4298,11 @@
             "governance": {
                 "type": "polkassembly",
                 "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "network": "turing"
+                "parameters": [
+                    {
+                        "network": "turing"
+                    }
+                ]
             }
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Turing.svg",
@@ -4341,7 +4397,11 @@
             "governance": {
                 "type": "polkassembly",
                 "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "network": "composable"
+                "parameters": [
+                    {
+                        "network": "composable"
+                    }
+                ]
             }
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Composable.png",
@@ -4403,7 +4463,11 @@
             "governance": {
                 "type": "polkassembly",
                 "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "network": "polkadex"
+                "parameters": [
+                    {
+                        "network": "polkadex"
+                    }
+                ]
             }
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Polkadex.svg",
@@ -4916,7 +4980,11 @@
             "governance": {
                 "type": "polkassembly",
                 "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "network": "tanganika"
+                "parameters": [
+                    {
+                        "network": "tanganika"
+                    }
+                ]
             }
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Tanganika_DataHighway.svg",
@@ -5181,7 +5249,11 @@
             "governance": {
                 "type": "polkassembly",
                 "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "network": "amplitude"
+                "parameters": [
+                    {
+                        "network": "amplitude"
+                    }
+                ]
             }
         },
         "types": {
@@ -5370,7 +5442,11 @@
             "governance": {
                 "type": "polkassembly",
                 "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "network": "kylin"
+                "parameters": [
+                    {
+                        "network": "kylin"
+                    }
+                ]
             }
         },
         "types": {
