@@ -1,5 +1,5 @@
 {
-  "runtime_id": 2101,
+  "runtime_id": 2110,
   "types": {
     "Balance": "u128",
     "Index": "u32",
@@ -7,8 +7,8 @@
     "Address": "sp_runtime.multiaddress.MultiAddress",
     "ExtrinsicSignature": "acala_primitives.signature.AcalaMultiSignature",
     "ParaId": "polkadot_parachain.primitives.Id",
-    "acala_runtime.Event": "GenericEvent",
-    "acala_runtime.Call": "GenericCall",
+    "acala_runtime.RuntimeEvent": "GenericEvent",
+    "acala_runtime.RuntimeCall": "GenericCall",
     "sp_core.crypto.AccountId32": "GenericAccountId",
     "pallet_identity.types.Data": "Data",
     "RuntimeDispatchInfo": {
