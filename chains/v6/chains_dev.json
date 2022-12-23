@@ -5454,6 +5454,12 @@
             }
         ],
         "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-amplitude"
+                }
+            ],
             "governance": {
                 "type": "polkassembly",
                 "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql"
@@ -5907,6 +5913,14 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-dao-ipci"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/dao_ipci.json",
             "overridesCommon": true
@@ -6051,6 +6065,14 @@
                 "event": null
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-xx-network"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/xx_network.json",
             "overridesCommon": true
