@@ -52,6 +52,12 @@
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
+            },
+            {
+                "name": "Polkaholic",
+                "account": "https://shadow.polkaholic.io/account/{address}?group=overview&chainfilters=all",
+                "extrinsic": "https://shadow.polkaholic.io/tx/{hash}"
+
             }
         ],
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Polkadot.svg",
