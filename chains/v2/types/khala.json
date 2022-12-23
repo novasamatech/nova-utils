@@ -1,5 +1,5 @@
 {
-  "runtime_id": 1090,
+  "runtime_id": 1201,
   "types": {
     "Balance": "u128",
     "Index": "u32",
@@ -7,10 +7,27 @@
     "Address": "sp_runtime.multiaddress.MultiAddress",
     "ExtrinsicSignature": "sp_runtime.MultiSignature",
     "ParaId": "polkadot_parachain.primitives.Id",
-    "khala_parachain_runtime.Event": "GenericEvent",
-    "khala_parachain_runtime.Call": "GenericCall",
+    "khala_parachain_runtime.RuntimeEvent": "GenericEvent",
+    "khala_parachain_runtime.RuntimeCall": "GenericCall",
     "sp_core.crypto.AccountId32": "GenericAccountId",
-    "pallet_identity.types.Data": "Data"
+    "pallet_identity.types.Data": "Data",
+    "RuntimeDispatchInfo": {
+      "type": "struct",
+      "type_mapping": [
+        [
+          "weight",
+          "sp_weights.weight_v2.Weight"
+        ],
+        [
+          "class",
+          "frame_support.dispatch.DispatchClass"
+        ],
+        [
+          "partialFee",
+          "Balance"
+        ]
+      ]
+    }
   },
   "versioning": []
 }

@@ -1,7 +1,8 @@
 import pytest
-from tests.utils.chain_model import Chain
 from substrateinterface import SubstrateInterface
-from tests.data.setting_data import *
+
+from scripts.utils.chain_model import Chain
+from tests.data.setting_data import chains
 
 task_ids = [
     f'Test for {task.name}'

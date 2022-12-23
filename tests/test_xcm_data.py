@@ -2,8 +2,8 @@ import pytest
 import json
 import deepdiff
 
-from tests.data.setting_data import *
-from tests.utils.chain_model import Chain
+from tests.data.setting_data import chains
+from scripts.utils.chain_model import Chain
 
 xcm_data_file_path = './tests/data/xcm_data.json'
 

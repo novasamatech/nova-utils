@@ -6,22 +6,7 @@ import sys
 import os
 import json
 from collections import defaultdict
-import requests
-
-
-def get_data_from_file(file_path):
-    with open(file_path, encoding='UTF-8') as fin:
-        return json.load(fin)
-
-
-def get_request_via_https(url) -> json:
-    try:
-        response = requests.get(url, timeout=60)
-        response.raise_for_status()
-        data = response.json()
-        return data
-    except requests.exceptions.RequestException as request_error:
-        raise SystemExit(request_error)
+from utils.work_with_data import get_data_from_file, get_request_via_https
 
 
 def deep_search_an_elemnt_by_key(obj, key):
@@ -68,6 +53,32 @@ def compare_reserve_fee(object_accumulator, actual_assets_location, changed_asse
                 'old_value': old_value, 'new_value': new_value}
 
 
+def find_new_destinations(object_accumulator, actual_chain_dict, new_cahin_dict, chain_json_dict):
+    for chain_id, chain_data in new_cahin_dict.items():
+        chain_name = chain_json_dict[chain_id].get('name')
+        for chain_asset in chain_data.get('assets'):
+            asset_in_actual_chain_dict = {}
+            asset_symbol = chain_asset['assetLocation']
+            try:
+                asset_in_actual_chain_dict = next(
+                    asset for asset in actual_chain_dict[chain_id]['assets'] if asset['assetLocation'] == asset_symbol)
+            except (StopIteration, KeyError):
+                pass
+            for destination in chain_asset.get('xcmTransfers'):
+                destination_value = destination.get('destination')
+                destination_chain_id = destination_value.get('chainId')
+                destination_name = chain_json_dict[destination_chain_id].get(
+                    'name')
+                actual_destinations = asset_in_actual_chain_dict.get(
+                    'xcmTransfers')
+                try:
+                    destination_in_generated_chain_file = next(
+                        new_destination for new_destination in actual_destinations if new_destination.get('destination').get('chainId') == destination_chain_id)
+                except (StopIteration, KeyError, TypeError):
+                    object_accumulator['chains'][chain_name][asset_symbol][destination_name] = 'That destination was added'
+                    continue
+
+
 def compare_destinations(object_accumulator, actual_chain_dict, new_chain_dict, chains_json_dict):
     """Compare destinations between production and changed assets location
 
@@ -78,6 +89,8 @@ def compare_destinations(object_accumulator, actual_chain_dict, new_chain_dict, 
         chains_json_dict (dict): Dictinary with chains.json
     """
 
+    find_new_destinations(object_accumulator, actual_chain_dict, new_chain_dict, chains_json_dict)
+
     for chain_id, chain_data in actual_chain_dict.items():
         chain_name = chains_json_dict[chain_id].get('name')
         for chain_asset in chain_data.get('assets'):
@@ -85,7 +98,7 @@ def compare_destinations(object_accumulator, actual_chain_dict, new_chain_dict, 
             try:
                 asset_in_new_chain_dict = next(
                     asset for asset in new_chain_dict[chain_id]['assets'] if asset['assetLocation'] == asset_symbol)
-            except StopIteration:
+            except (StopIteration, KeyError):
                 object_accumulator['chains'][chain_name][asset_symbol] = 'That asset was removed'
                 continue
             for destination in chain_asset.get('xcmTransfers'):
@@ -164,11 +177,11 @@ def main(argv):
         transfers_file = os.getenv(
             "DEV_XCM_JSON_PATH", "xcm/v2/transfers_dev.json")
         chains_url = nova_utils_url + \
-            os.getenv("DEV_CHAINS_JSON_PATH", "chains/v5/chains_dev.json")
+            os.getenv("DEV_CHAINS_JSON_PATH", "chains/v6/chains_dev.json")
     elif 'prod' in argv:
         transfers_file = os.getenv("XCM_JSON_PATH", "xcm/v2/transfers.json")
         chains_url = nova_utils_url + \
-            os.getenv("CHAINS_JSON_PATH", "chains/v5/chains.json")
+            os.getenv("CHAINS_JSON_PATH", "chains/v6/chains.json")
     else:
         raise Exception(
             'Provide a string `dev` or `prod` as parameter for the script')

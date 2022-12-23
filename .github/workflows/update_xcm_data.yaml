@@ -2,7 +2,7 @@ name: Update xcm coefficients
 
 on:
   schedule:
-    - cron: '0 8 * * *'
+    - cron: '0 8 1/3 * *'
   workflow_dispatch:
     inputs:
       environment:
@@ -68,7 +68,7 @@ jobs:
         with:
           commit-files: ${{ env.COMMIT_FILE }}
           commit-message: Update xcm coefficients
-          github-token: ${{ secrets.GITHUB_TOKEN  }}
+          github-token: ${{ secrets.PAT_TOKEN  }}
           branch-name: update-xcm-coefficients-${{github.run_number}}
           pr-title: 🆙 Update XCM coefficients for ${{ env.ENVIRONMENT }} env
           pr-body: This PR was generated automatically 🤖

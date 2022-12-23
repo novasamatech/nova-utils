@@ -1,16 +1,33 @@
 {
-  "runtime_id": 2000,
+  "runtime_id": 2110,
   "types": {
-      "Balance": "u128",
-      "Index": "u32",
-      "Phase": "frame_system.Phase",
-      "Address": "sp_runtime.multiaddress.MultiAddress",
-      "ExtrinsicSignature": "acala_primitives.signature.AcalaMultiSignature",
-      "ParaId": "polkadot_parachain.primitives.Id",
-      "acala_runtime.Event": "GenericEvent",
-      "acala_runtime.Call": "GenericCall",
-      "sp_core.crypto.AccountId32": "GenericAccountId",
-      "pallet_identity.types.Data": "Data"
+    "Balance": "u128",
+    "Index": "u32",
+    "Phase": "frame_system.Phase",
+    "Address": "sp_runtime.multiaddress.MultiAddress",
+    "ExtrinsicSignature": "acala_primitives.signature.AcalaMultiSignature",
+    "ParaId": "polkadot_parachain.primitives.Id",
+    "acala_runtime.RuntimeEvent": "GenericEvent",
+    "acala_runtime.RuntimeCall": "GenericCall",
+    "sp_core.crypto.AccountId32": "GenericAccountId",
+    "pallet_identity.types.Data": "Data",
+    "RuntimeDispatchInfo": {
+      "type": "struct",
+      "type_mapping": [
+        [
+          "weight",
+          "u64"
+        ],
+        [
+          "class",
+          "frame_support.weights.DispatchClass"
+        ],
+        [
+          "partialFee",
+          "Balance"
+        ]
+      ]
+    }
   },
   "versioning": []
 }

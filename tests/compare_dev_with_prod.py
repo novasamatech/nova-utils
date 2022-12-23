@@ -1,7 +1,9 @@
-import deepdiff
 from pprint import pprint
 import json
+import os
+import deepdiff
 
+CHAINS_VERISON = os.getenv('CHAINS_VERSION', default = "v6")
 
 def compare_network(prod, dev):
     for network in prod:
@@ -12,12 +14,11 @@ def compare_network(prod, dev):
                 pprint(diff, indent=2)
 
 
-with open("chains/v4/chains_dev.json") as fin:
+with open(f"chains/{CHAINS_VERISON}/chains_dev.json") as fin:
     dev_chains = json.load(fin)
 
 
-with open("chains/v4/chains.json") as fin:
+with open(f"chains/{CHAINS_VERISON}/chains.json") as fin:
     prod_chains = json.load(fin)
 
 compare_network(prod_chains, dev_chains)
-
