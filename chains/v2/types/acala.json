@@ -10,24 +10,7 @@
     "acala_runtime.RuntimeEvent": "GenericEvent",
     "acala_runtime.RuntimeCall": "GenericCall",
     "sp_core.crypto.AccountId32": "GenericAccountId",
-    "pallet_identity.types.Data": "Data",
-    "RuntimeDispatchInfo": {
-      "type": "struct",
-      "type_mapping": [
-        [
-          "weight",
-          "sp_weights.weight_v2.Weight"
-        ],
-        [
-          "class",
-          "frame_support.dispatch.DispatchClass"
-        ],
-        [
-          "partialFee",
-          "Balance"
-        ]
-      ]
-    }
+    "pallet_identity.types.Data": "Data"
   },
   "versioning": []
 }
