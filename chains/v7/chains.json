@@ -1603,7 +1603,14 @@
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-basilisk"
                 }
-            ]
+            ],
+            "governance": {
+                "type": "polkassembly",
+                "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
+                "parameters": {
+                    "network": "basilisk"
+                }
+            }
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Basilisk.svg",
         "addressPrefix": 10041,
@@ -2054,7 +2061,11 @@
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kilt"
                 }
-            ]
+            ],
+            "governance": {
+                "type": "polkassembly",
+                "url": "https://kilt-hasura.herokuapp.com/v1/graphql"
+            }
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/KILT_Spiritnet.svg",
         "addressPrefix": 38,
@@ -2954,7 +2965,14 @@
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-robonomics"
                 }
-            ]
+            ],
+            "governance": {
+                "type": "polkassembly",
+                "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
+                "parameters": {
+                    "network": "robonomics"
+                }
+            }
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Robonomics.svg",
         "addressPrefix": 32,
