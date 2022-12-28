@@ -1129,9 +1129,11 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonriver"
                 },
                 {
-                    "assetType": "evm",
                     "type": "etherscan",
-                    "url": "https://api-moonriver.moonscan.io/api"
+                    "url": "https://api-moonriver.moonscan.io/api",
+                    "parameters": {
+                        "assetType": "evm"
+                    }
                 }
             ],
             "staking": [
@@ -2918,9 +2920,11 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonbeam"
                 },
                 {
-                    "assetType": "evm",
                     "type": "etherscan",
-                    "url": "https://api-moonbeam.moonscan.io/api"
+                    "url": "https://api-moonbeam.moonscan.io/api",
+                    "parameters": {
+                        "assetType": "evm"
+                    }
                 }
             ],
             "staking": [
