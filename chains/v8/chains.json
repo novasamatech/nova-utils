@@ -28,8 +28,12 @@
                 "name": "Pinknode node"
             },
             {
-                "url": "wss://polkadot.public.curie.radiumblock.io/ws",
-                "name": "Radium block node"
+                "url": "wss://polkadot-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://rpc.polkadot.io",
+                "name": "Parity node"
             },
             {
                 "url": "wss://1rpc.io/dot",
@@ -121,12 +125,16 @@
                 "name": "OnFinality node"
             },
             {
-                "url": "wss://kusama.public.curie.radiumblock.xyz/ws",
-                "name": "Radium block node"
-            },
-            {
                 "url": "wss://public-rpc.pinknode.io/kusama",
                 "name": "Pinknode node"
+            },
+            {
+                "url": "wss://kusama-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://kusama.public.curie.radiumblock.co/ws",
+                "name": "Radium node"
             },
             {
                 "url": "wss://kusama-rpc.polkadot.io",
@@ -4769,10 +4777,6 @@
             }
         ],
         "nodes": [
-            {
-                "url": "wss://tinker.invarch.network",
-                "name": "InvArch node"
-            },
             {
                 "url": "wss://invarch-tinkernet.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
