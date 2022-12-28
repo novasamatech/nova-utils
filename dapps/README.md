@@ -56,6 +56,6 @@
 |  52 | Talisman App                  | https://app.talisman.xyz/portfolio                   | defi,crowdloans             |
 |  53 | Tinkernet Rewards Claim       | https://www.tinker.network/claim                     | crowdloans                  |
 |  54 | TofuNFT                       | https://tofunft.com/                                 | nft,evm                     |
-|  55 | XX Network Hub                | https://hub.xx.network                               | community,staking,utilities |
-|  56 | Zeitgeist                     | https://app.zeitgeist.pm/                            | utilities                   |
-|  57 | cBRIDGE                       | https://cbridge.celer.network/#/transfer             | defi,evm                    |
+|  55 | Zeitgeist                     | https://app.zeitgeist.pm/                            | utilities                   |
+|  56 | cBRIDGE                       | https://cbridge.celer.network/#/transfer             | defi,evm                    |
+|  57 | xx network Hub                | https://hub.xx.network                               | community,staking,utilities |
