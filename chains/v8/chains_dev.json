@@ -2946,6 +2946,12 @@
                     "type": "polkassembly",
                     "url": "https://moonbeamp-hasura.herokuapp.com/v1/graphql"
                 }
+            ],
+            "governance-delegations": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kusama-governance"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Moonbeam.svg",
