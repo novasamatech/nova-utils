@@ -140,7 +140,8 @@
       "categories": [
         "defi",
         "crowdloans"
-      ]
+      ],
+      "desktopOnly": true
     },
     {
       "name": "Phala App",
@@ -654,6 +655,56 @@
         "staking",
         "utilities"
       ]
+    },
+    {
+      "name": "Acala App (not mobile-friendly yet)",
+      "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/color/Acala.svg",
+      "url": "https://apps.acala.network/",
+      "categories": [
+        "defi",
+        "staking",
+        "community"
+      ],
+      "desktopOnly": true
+    },
+    {
+      "name": "Mangata X (not mobile-friendly yet)",
+      "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/MangataX.svg",
+      "url": "https://app.mangata.finance/",
+      "categories": [
+        "defi"
+      ],
+      "desktopOnly": true
+    },
+    {
+      "name": "Zenlink (not mobile-friendly yet)",
+      "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/ZLK.svg",
+      "url": "https://dex.zenlink.pro/#/swap",
+      "categories": [
+        "defi",
+        "staking"
+      ],
+      "desktopOnly": true
+    },
+    {
+      "name": "Gensiro (not mobile-friendly yet)",
+      "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Genshiro.svg",
+      "url": "https://genshiro.equilibrium.io/gateway/en/market",
+      "categories": [
+        "defi",
+        "staking"
+      ],
+      "desktopOnly": true
+    },
+    {
+      "name": "Equilibrium (not mobile-friendly yet)",
+      "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Equilibrium.svg",
+      "url": "https://app.equilibrium.io/",
+      "categories": [
+        "defi",
+        "staking"
+      ],
+      "desktopOnly": true
     }
   ]
 }
