@@ -44,18 +44,19 @@
 |  40 | Polkawatch                    | https://polkawatch.app/                              | staking                     |
 |  41 | Proof of Chaos                | https://proofofchaos.app                             | nft,community               |
 |  42 | Raresama                      | https://raresama.com/                                | nft                         |
-|  43 | Singular                      | https://singular.rmrk.app/                           | nft                         |
-|  44 | Singular 2.0                  | https://singular.app/                                | nft                         |
-|  45 | Skybreach                     | https://skybreach.app/                               | nft,evm                     |
-|  46 | Solarbeam                     | https://app.solarbeam.io/exchange/swap               | defi,staking,evm            |
-|  47 | Solarflare                    | https://app.solarflare.io/exchange/swap              | defi,staking,evm            |
-|  48 | Stellaswap                    | https://app.stellaswap.com/exchange/swap             | defi,staking,evm            |
-|  49 | Sub.ID                        | https://sub.id/#/                                    | utilities                   |
-|  50 | SubBridge                     | https://subbridge.io/                                | defi,evm                    |
-|  51 | Subsquare. Khala network      | https://khala.subsquare.io/                          | community                   |
-|  52 | Talisman App                  | https://app.talisman.xyz/portfolio                   | defi,crowdloans             |
-|  53 | Tinkernet Rewards Claim       | https://www.tinker.network/claim                     | crowdloans                  |
-|  54 | TofuNFT                       | https://tofunft.com/                                 | nft,evm                     |
-|  55 | Zeitgeist                     | https://app.zeitgeist.pm/                            | utilities                   |
-|  56 | cBRIDGE                       | https://cbridge.celer.network/#/transfer             | defi,evm                    |
-|  57 | xx network Hub                | https://hub.xx.network                               | community,staking,utilities |
+|  43 | Secret Stash                  | https://secret-stash.io/                             | nft,utilities               |
+|  44 | Singular                      | https://singular.rmrk.app/                           | nft                         |
+|  45 | Singular 2.0                  | https://singular.app/                                | nft                         |
+|  46 | Skybreach                     | https://skybreach.app/                               | nft,evm                     |
+|  47 | Solarbeam                     | https://app.solarbeam.io/exchange/swap               | defi,staking,evm            |
+|  48 | Solarflare                    | https://app.solarflare.io/exchange/swap              | defi,staking,evm            |
+|  49 | Stellaswap                    | https://app.stellaswap.com/exchange/swap             | defi,staking,evm            |
+|  50 | Sub.ID                        | https://sub.id/#/                                    | utilities                   |
+|  51 | SubBridge                     | https://subbridge.io/                                | defi,evm                    |
+|  52 | Subsquare. Khala network      | https://khala.subsquare.io/                          | community                   |
+|  53 | Talisman App                  | https://app.talisman.xyz/portfolio                   | defi,crowdloans             |
+|  54 | Tinkernet Rewards Claim       | https://www.tinker.network/claim                     | crowdloans                  |
+|  55 | TofuNFT                       | https://tofunft.com/                                 | nft,evm                     |
+|  56 | Zeitgeist                     | https://app.zeitgeist.pm/                            | utilities                   |
+|  57 | cBRIDGE                       | https://cbridge.celer.network/#/transfer             | defi,evm                    |
+|  58 | xx network Hub                | https://hub.xx.network                               | community,staking,utilities |
