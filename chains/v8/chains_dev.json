@@ -4282,9 +4282,12 @@
                 "precision": 10,
                 "priceId": "polkadot",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
-                "type": "statemine",
+                "type": "orml",
                 "typeExtras": {
-                    "assetId": "5"
+                    "currencyIdScale": "0x05000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
                 }
             },
             {
@@ -4292,10 +4295,13 @@
                 "symbol": "DAI",
                 "precision": 18,
                 "priceId": "dai",
-                "type": "statemine",
+                "type": "orml",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/DAI.svg",
                 "typeExtras": {
-                    "assetId": "2"
+                    "currencyIdScale": "0x02000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
                 }
             }
         ],
