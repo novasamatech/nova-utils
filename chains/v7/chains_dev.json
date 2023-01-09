@@ -4207,6 +4207,28 @@
                 "symbol": "HDX",
                 "precision": 12,
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/HydraDX.svg"
+            },
+            {
+                "assetId": 1,
+                "symbol": "DOT",
+                "precision": 10,
+                "priceId": "polkadot",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "5"
+                }
+            },
+            {
+                "assetId": 2,
+                "symbol": "DAI",
+                "precision": 18,
+                "priceId": "dai",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/DAI.svg",
+                "typeExtras": {
+                    "assetId": "2"
+                }
             }
         ],
         "nodes": [
