@@ -1675,16 +1675,16 @@
         ],
         "nodes": [
             {
-                "url": "wss://edgeware.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://edgeware-rpc.dwellir.com",
                 "name": "Dwellir node"
             },
             {
                 "url": "wss://edgeware.jelliedowl.net",
                 "name": "JelliedOwl node"
+            },
+            {
+                "url": "wss://mainnet2.edgewa.re",
+                "name": "Edgeware node"
             }
         ],
         "types": {
@@ -3370,10 +3370,6 @@
             {
                 "url": "wss://rpc.parallel.fi",
                 "name": "Parallel node"
-            },
-            {
-                "url": "wss://parallel.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -3432,10 +3428,6 @@
             {
                 "url": "wss://rpc-para.clover.finance",
                 "name": "Clover node"
-            },
-            {
-                "url": "wss://clover.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "explorers": [
