@@ -1,5 +1,5 @@
 {
-  "runtime_id": 900,
+  "runtime_id": 2000,
   "types": {
     "Balance": "u128",
     "Index": "u32",
@@ -26,8 +26,8 @@
     },
     "ExtrinsicSignature": "EthereumSignature",
     "ParaId": "polkadot_parachain.primitives.Id",
-    "moonriver_runtime.Event": "GenericEvent",
-    "moonriver_runtime.Call": "GenericCall",
+    "moonriver_runtime.RuntimeEvent": "GenericEvent",
+    "moonriver_runtime.RuntimeCall": "GenericCall",
     "sp_core.crypto.AccountId32": "GenericAccountId",
     "pallet_identity.types.Data": "Data"
   },
