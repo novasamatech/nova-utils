@@ -1,5 +1,5 @@
 {
-  "runtime_id": 900,
+  "runtime_id": 2000,
   "types": {
     "Balance": "u128",
     "Index": "u32",
@@ -43,8 +43,8 @@
     },
     "ExtrinsicSignature": "EthereumSignature",
     "ParaId": "polkadot_parachain.primitives.Id",
-    "moonbase_runtime.Event": "GenericEvent",
-    "moonbase_runtime.Call": "GenericCall",
+    "moonbase_runtime.RuntimeEvent": "GenericEvent",
+    "moonbase_runtime.RuntimeCall": "GenericCall",
     "sp_core.crypto.AccountId32": "GenericAccountId",
     "pallet_identity.types.Data": "Data"
   },
