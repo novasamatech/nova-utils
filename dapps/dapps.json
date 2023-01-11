@@ -75,8 +75,10 @@
       "url": "https://bifrost.app/",
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/color/Bifrost.svg",
       "categories": [
-        "defi",
-        "crowdloans"
+        "bridge",
+        "crowdloans",
+        "dex",
+        "staking"
       ]
     },
     {
@@ -84,7 +86,7 @@
       "url": "https://portal.astar.network/",
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/Astar.png",
       "categories": [
-        "defi",
+        "bridge",
         "staking",
         "evm"
       ]
@@ -94,7 +96,7 @@
       "url": "https://polkaverse.com/",
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/PolkaVerse.svg",
       "categories": [
-        "community"
+        "social"
       ]
     },
     {
@@ -126,7 +128,7 @@
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/Dotmarketcap.svg",
       "url": "https://dotmarketcap.com/",
       "categories": [
-        "utilities"
+        "social"
       ]
     },
     {
@@ -134,24 +136,25 @@
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/Polkassembly.svg",
       "url": "https://polkadot.polkassembly.io/",
       "categories": [
-        "community"
+        "governance"
       ]
     },
     {
-      "name": "Talisman App",
+      "name": "Talisman App (Desktop mode)",
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/Talisman.svg",
       "url": "https://app.talisman.xyz/portfolio",
       "categories": [
-        "defi",
-        "crowdloans"
-      ]
+        "crowdloans",
+        "staking",
+        "nft"
+      ],
+      "desktopOnly": true
     },
     {
       "name": "Phala App",
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/color/Phala.svg",
       "url": "https://app.phala.network/",
       "categories": [
-        "defi",
         "staking"
       ]
     },
@@ -168,8 +171,8 @@
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/color/Kintsugi.svg",
       "url": "https://kintsugi.interlay.io/",
       "categories": [
+        "bridge",
         "staking",
-        "defi",
         "crowdloans"
       ]
     },
@@ -178,6 +181,7 @@
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/Moonbeam.svg",
       "url": "https://apps.moonbeam.network/moonbeam",
       "categories": [
+        "bridge",
         "staking",
         "crowdloans",
         "evm"
@@ -188,6 +192,7 @@
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/Moonriver.svg",
       "url": "https://apps.moonbeam.network/moonriver",
       "categories": [
+        "bridge",
         "staking",
         "crowdloans",
         "evm"
@@ -198,7 +203,8 @@
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/Solarflare.png",
       "url": "https://app.solarflare.io/exchange/swap",
       "categories": [
-        "defi",
+        "bridge",
+        "dex",
         "staking",
         "evm"
       ]
@@ -208,7 +214,8 @@
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/Solarbeam.png",
       "url": "https://app.solarbeam.io/exchange/swap",
       "categories": [
-        "defi",
+        "bridge",
+        "dex",
         "staking",
         "evm"
       ]
@@ -218,7 +225,8 @@
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/Beamswap.svg",
       "url": "https://app.beamswap.io/exchange/swap",
       "categories": [
-        "defi",
+        "bridge",
+        "dex",
         "staking",
         "evm"
       ]
@@ -228,7 +236,8 @@
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/StellaSwap.svg",
       "url": "https://app.stellaswap.com/exchange/swap",
       "categories": [
-        "defi",
+        "bridge",
+        "dex",
         "staking",
         "evm"
       ]
@@ -238,7 +247,7 @@
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/ImpossibleFinance.svg",
       "url": "https://invest.impossible.finance/launchpad",
       "categories": [
-        "defi",
+        "dex",
         "evm"
       ]
     },
@@ -247,7 +256,8 @@
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/Huckleberry.svg",
       "url": "https://www.huckleberry.finance/#/swap",
       "categories": [
-        "defi",
+        "bridge",
+        "dex",
         "staking",
         "evm"
       ]
@@ -257,7 +267,8 @@
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/MyTrade.svg",
       "url": "https://mytrade.org/",
       "categories": [
-        "defi",
+        "dex",
+        "staking",
         "evm"
       ]
     },
@@ -266,7 +277,8 @@
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/color/Parallel-Heiko.svg",
       "url": "https://app.parallel.fi/",
       "categories": [
-        "defi"
+        "bridge",
+        "dex"
       ]
     },
     {
@@ -274,7 +286,7 @@
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/DappRadar.svg",
       "url": "https://dappradar.com/",
       "categories": [
-        "utilities"
+        "social"
       ]
     },
     {
@@ -287,11 +299,11 @@
       ]
     },
     {
-      "name": "Subsquare. Khala network",
+      "name": "Subsquare",
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/color/SubSquare.svg",
-      "url": "https://khala.subsquare.io/",
+      "url": "https://polkadot.subsquare.io/",
       "categories": [
-        "community"
+        "governance"
       ]
     },
     {
@@ -317,7 +329,7 @@
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/ArthSwap.svg",
       "url": "https://app.arthswap.org/#/swap",
       "categories": [
-        "defi",
+        "dex",
         "staking",
         "evm"
       ]
@@ -327,8 +339,9 @@
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/cBRIDGE.png",
       "url": "https://cbridge.celer.network/#/transfer",
       "categories": [
-        "defi",
-        "evm"
+        "dex",
+        "evm",
+        "nft"
       ]
     },
     {
@@ -336,7 +349,8 @@
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/Moonwell.svg",
       "url": "https://moonwell.fi/apollo/MOVR",
       "categories": [
-        "defi",
+        "bridge",
+        "dex",
         "evm"
       ]
     },
@@ -345,6 +359,7 @@
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Litmus.svg",
       "url": "https://apps.litentry.com/",
       "categories": [
+        "bridge",
         "crowdloans",
         "evm"
       ]
@@ -354,7 +369,7 @@
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/SubBridge.svg",
       "url": "https://subbridge.io/",
       "categories": [
-        "defi",
+        "bridge",
         "evm"
       ]
     },
@@ -363,7 +378,8 @@
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/MoonwellArtemis.svg",
       "url": "https://moonwell.fi/artemis/GLMR",
       "categories": [
-        "defi",
+        "bridge",
+        "dex",
         "evm"
       ]
     },
@@ -373,7 +389,8 @@
       "url": "https://skybreach.app/",
       "categories": [
         "nft",
-        "evm"
+        "evm",
+        "gaming"
       ]
     },
     {
@@ -390,7 +407,8 @@
       "url": "https://damnedpiratessociety.io/",
       "categories": [
         "nft",
-        "evm"
+        "evm",
+        "gaming"
       ]
     },
     {
@@ -398,7 +416,8 @@
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/StakingDashboard.svg",
       "url": "https://staking.polkadot.network/dashboard#/overview",
       "categories": [
-        "staking"
+        "staking",
+        "utilities"
       ]
     },
     {
@@ -416,7 +435,7 @@
       "url": "https://dtmb.xyz",
       "categories": [
         "evm",
-        "utilities"
+        "social"
       ]
     },
     {
@@ -424,7 +443,8 @@
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/EVRLOOT.svg",
       "url": "https://game.evrloot.com/game",
       "categories": [
-        "nft"
+        "nft",
+        "gaming"
       ]
     },
     {
@@ -441,7 +461,8 @@
       "url": "https://portal.evolution.land/land/3/market/land",
       "categories": [
         "nft",
-        "evm"
+        "evm",
+        "gaming"
       ]
     },
     {
@@ -449,7 +470,8 @@
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/SnekSwap.svg",
       "url": "https://app.basilisk.cloud/#/trade",
       "categories": [
-        "defi"
+        "bridge",
+        "dex"
       ]
     },
     {
@@ -457,7 +479,7 @@
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/GM.svg",
       "url": "https://app.gmordie.com/",
       "categories": [
-        "community"
+        "social"
       ]
     },
     {
@@ -482,8 +504,8 @@
       "url": "https://pioneer.bit.country/",
       "categories": [
         "nft",
-        "staking"
-
+        "staking",
+        "gaming"
       ]
     },
     {
@@ -508,7 +530,7 @@
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/Proof_of_Chaos.png",
       "categories": [
         "nft",
-        "community"
+        "governance"
       ]
     },
     {
@@ -516,7 +538,7 @@
       "url": "https://orderbook.polkadex.trade/",
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadex.svg",
       "categories": [
-        "defi",
+        "dex",
         "utilities"
       ]
     },
@@ -525,8 +547,8 @@
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Interlay.svg",
       "url": "https://app.interlay.io/",
       "categories": [
+        "bridge",
         "staking",
-        "defi",
         "crowdloans"
       ]
     },
@@ -535,7 +557,7 @@
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/XX.svg",
       "url": "https://hub.xx.network",
       "categories": [
-        "community",
+        "social",
         "staking",
         "utilities"
       ]
@@ -545,6 +567,7 @@
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Litentry.svg",
       "url": "https://apps.litentry.com/",
       "categories": [
+        "bridge",
         "evm"
       ]
     },
@@ -553,7 +576,8 @@
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/HydraDX.svg",
       "url": "https://app.hydradx.io/#/trade",
       "categories": [
-        "defi"
+        "bridge",
+        "dex"
       ]
     },
     {
@@ -561,8 +585,49 @@
       "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/Pablo.svg",
       "url": "https://app.pablo.finance/",
       "categories": [
-        "defi"
+        "dex"
       ]
+    },
+    {
+      "name": "Karura App (Desktop mode)",
+      "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/color/Karura.svg",
+      "url": "https://apps.karura.network/",
+      "categories": [
+        "bridge",
+        "dex",
+        "staking"
+      ],
+      "desktopOnly": true
+    },
+    {
+      "name": "Acala App (Desktop mode)",
+      "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/dapps/color/Acala.png",
+      "url": "https://apps.acala.network/",
+      "categories": [
+        "bridge",
+        "dex",
+        "staking"
+      ],
+      "desktopOnly": true
+    },
+    {
+      "name": "Mangata X (Desktop mode)",
+      "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/MangataX.svg",
+      "url": "https://app.mangata.finance/",
+      "categories": [
+        "bridge"
+      ],
+      "desktopOnly": true
+    },
+    {
+      "name": "Zenlink (Desktop mode)",
+      "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/ZLK.svg",
+      "url": "https://dex.zenlink.pro/#/swap",
+      "categories": [
+        "dex",
+        "staking"
+      ],
+      "desktopOnly": true
     }
   ]
 }
