@@ -535,6 +535,7 @@
                 "assetId": 5,
                 "symbol": "LKSM",
                 "precision": 12,
+                "priceId": "liquid-ksm",
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/LKSM.svg",
                 "typeExtras": {
@@ -1258,6 +1259,7 @@
                 "assetId": 2,
                 "symbol": "LKSM",
                 "precision": 12,
+                "priceId": "liquid-ksm",
                 "type": "statemine",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/LKSM.svg",
                 "typeExtras": {
@@ -1665,6 +1667,48 @@
                     "existentialDeposit": "0",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 3,
+                "symbol": "LKSM",
+                "precision": 12,
+                "priceId": "liquid-ksm",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/LKSM.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0102000000",
+                    "currencyIdType": "interbtc_primitives.CurrencyId",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 4,
+                "symbol": "USDT",
+                "precision": 6,
+                "priceId": "tether",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/USDT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0103000000",
+                    "currencyIdType": "interbtc_primitives.CurrencyId",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 5,
+                "symbol": "aUSD",
+                "precision": 12,
+                "priceId": "acala-dollar",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/AUSD.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0101000000",
+                    "currencyIdType": "interbtc_primitives.CurrencyId",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
@@ -1720,16 +1764,16 @@
         ],
         "nodes": [
             {
-                "url": "wss://edgeware.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://edgeware-rpc.dwellir.com",
                 "name": "Dwellir node"
             },
             {
                 "url": "wss://edgeware.jelliedowl.net",
                 "name": "JelliedOwl node"
+            },
+            {
+                "url": "wss://mainnet2.edgewa.re",
+                "name": "Edgeware node"
             }
         ],
         "types": {
@@ -1802,6 +1846,7 @@
                 "assetId": 3,
                 "symbol": "LKSM",
                 "precision": 12,
+                "priceId": "liquid-ksm",
                 "type": "statemine",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/LKSM.svg",
                 "typeExtras": {
@@ -3457,10 +3502,6 @@
             {
                 "url": "wss://rpc.parallel.fi",
                 "name": "Parallel node"
-            },
-            {
-                "url": "wss://parallel.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -3524,10 +3565,6 @@
             {
                 "url": "wss://rpc-para.clover.finance",
                 "name": "Clover node"
-            },
-            {
-                "url": "wss://clover.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -4457,6 +4494,34 @@
                     "existentialDeposit": "0",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 6,
+                "symbol": "LDOT",
+                "precision": 10,
+                "priceId": "liquid-staking-dot",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/LDOT.svg",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x0101000000",
+                    "currencyIdType": "interbtc_primitives.CurrencyId",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 7,
+                "symbol": "USDT",
+                "precision": 6,
+                "priceId": "tether",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/USDT.svg",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x0102000000",
+                    "currencyIdType": "interbtc_primitives.CurrencyId",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
@@ -4687,6 +4752,7 @@
                 "assetId": 4,
                 "symbol": "LKSM",
                 "precision": 12,
+                "priceId": "liquid-ksm",
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/LKSM.svg",
                 "typeExtras": {
