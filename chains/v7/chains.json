@@ -248,13 +248,6 @@
             "crowdloans": {
                 "type": "github",
                 "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/crowdloan/westend.json"
-            },
-            "governance": {
-                "type": "polkassembly",
-                "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "parameters": {
-                    "network": "westend"
-                }
             }
         },
         "options": [
@@ -994,7 +987,7 @@
             },
             "governance": {
                 "type": "polkassembly",
-                "url": "https://moonbeamp-hasura.herokuapp.com/v1/graphql"
+                "url": "https://api.moonbeam.polkassembly.network/v1/graphql"
             }
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Moonbeam.svg",
@@ -1268,7 +1261,7 @@
             },
             "governance": {
                 "type": "polkassembly",
-                "url": "https://moonriver-hasura.herokuapp.com/v1/graphql"
+                "url": "https://api.moonriver.polkassembly.network/v1/graphql"
             }
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Moonriver.svg",
