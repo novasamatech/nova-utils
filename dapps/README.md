@@ -49,19 +49,20 @@
 |  45 | Polkawatch                     | https://polkawatch.app/                              | staking                       |
 |  46 | Proof of Chaos                 | https://proofofchaos.app                             | nft,governance                |
 |  47 | Raresama                       | https://raresama.com/                                | nft                           |
-|  48 | Singular                       | https://singular.rmrk.app/                           | nft                           |
-|  49 | Singular 2.0                   | https://singular.app/                                | nft                           |
-|  50 | Skybreach                      | https://skybreach.app/                               | nft,evm,gaming                |
-|  51 | Solarbeam                      | https://app.solarbeam.io/exchange/swap               | bridge,dex,staking,evm        |
-|  52 | Solarflare                     | https://app.solarflare.io/exchange/swap              | bridge,dex,staking,evm        |
-|  53 | Stellaswap                     | https://app.stellaswap.com/exchange/swap             | bridge,dex,staking,evm        |
-|  54 | Sub.ID                         | https://sub.id/#/                                    | utilities                     |
-|  55 | SubBridge                      | https://subbridge.io/                                | bridge,evm                    |
-|  56 | Subsquare                      | https://polkadot.subsquare.io/                       | governance                    |
-|  57 | Talisman App (Desktop mode)    | https://app.talisman.xyz/portfolio                   | crowdloans,staking,nft        |
-|  58 | Tinkernet Rewards Claim        | https://www.tinker.network/claim                     | crowdloans                    |
-|  59 | TofuNFT                        | https://tofunft.com/                                 | nft,evm                       |
-|  60 | Zeitgeist                      | https://app.zeitgeist.pm/                            | utilities                     |
-|  61 | Zenlink (Desktop mode)         | https://dex.zenlink.pro/#/swap                       | dex,staking                   |
-|  62 | cBRIDGE                        | https://cbridge.celer.network/#/transfer             | dex,evm,nft                   |
-|  63 | xx network Hub                 | https://hub.xx.network                               | social,staking,utilities      |
+|  48 | Secret Stash                   | https://secret-stash.io/                             | nft,utilities                 |
+|  49 | Singular                       | https://singular.rmrk.app/                           | nft                           |
+|  50 | Singular 2.0                   | https://singular.app/                                | nft                           |
+|  51 | Skybreach                      | https://skybreach.app/                               | nft,evm,gaming                |
+|  52 | Solarbeam                      | https://app.solarbeam.io/exchange/swap               | bridge,dex,staking,evm        |
+|  53 | Solarflare                     | https://app.solarflare.io/exchange/swap              | bridge,dex,staking,evm        |
+|  54 | Stellaswap                     | https://app.stellaswap.com/exchange/swap             | bridge,dex,staking,evm        |
+|  55 | Sub.ID                         | https://sub.id/#/                                    | utilities                     |
+|  56 | SubBridge                      | https://subbridge.io/                                | bridge,evm                    |
+|  57 | Subsquare                      | https://polkadot.subsquare.io/                       | governance                    |
+|  58 | Talisman App (Desktop mode)    | https://app.talisman.xyz/portfolio                   | crowdloans,staking,nft        |
+|  59 | Tinkernet Rewards Claim        | https://www.tinker.network/claim                     | crowdloans                    |
+|  60 | TofuNFT                        | https://tofunft.com/                                 | nft,evm                       |
+|  61 | Zeitgeist                      | https://app.zeitgeist.pm/                            | utilities                     |
+|  62 | Zenlink (Desktop mode)         | https://dex.zenlink.pro/#/swap                       | dex,staking                   |
+|  63 | cBRIDGE                        | https://cbridge.celer.network/#/transfer             | dex,evm,nft                   |
+|  64 | xx network Hub                 | https://hub.xx.network                               | social,staking,utilities      |
