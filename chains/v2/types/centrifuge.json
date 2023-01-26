@@ -1,5 +1,5 @@
 {
-  "runtime_id": 1015,
+  "runtime_id": 1016,
   "types": {
     "Balance": "u128",
     "Index": "u32",
@@ -7,10 +7,27 @@
     "Address": "sp_runtime.multiaddress.MultiAddress",
     "ExtrinsicSignature": "sp_runtime.MultiSignature",
     "ParaId": "polkadot_parachain.primitives.Id",
-    "centrifuge_runtime.Event": "GenericEvent",
-    "centrifuge_runtime.Call": "GenericCall",
+    "centrifuge_runtime.RuntimeEvent": "GenericEvent",
+    "centrifuge_runtime.RuntimeCall": "GenericCall",
     "sp_core.crypto.AccountId32": "GenericAccountId",
-    "pallet_identity.types.Data": "Data"
+    "pallet_identity.types.Data": "Data",
+    "RuntimeDispatchInfo": {
+      "type": "struct",
+      "type_mapping": [
+        [
+          "weight",
+          "sp_weights.weight_v2.Weight"
+        ],
+        [
+          "class",
+          "frame_support.dispatch.DispatchClass"
+        ],
+        [
+          "partialFee",
+          "Balance"
+        ]
+      ]
+    }
   },
   "versioning": []
 }
