@@ -6299,7 +6299,7 @@
         ]
     },
     {
-        "chainId": "f179a15464514e00fe355a66b2bdafa490c4e232eed60f036bc46302b5d898eb",
+        "chainId": "7b095dd428bbd1ab9d462248559b2f96aeb7c725680b7a22d4d1a6016e61d8a5",
         "name": "Governance2 Novasama Testnet",
         "assets": [
             {
@@ -6318,6 +6318,14 @@
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/governance2_testnet.json",
             "overridesCommon": true
+        },
+        "externalApi": {
+            "governance-delegations": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-gov-test"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Governance2_Testnet.svg",
         "addressPrefix": 42,
