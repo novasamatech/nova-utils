@@ -4361,7 +4361,7 @@
                 "symbol": "LRNA",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Default.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/LRNA.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x01000000",
                     "currencyIdType": "u32",
@@ -4371,10 +4371,11 @@
             },
             {
                 "assetId": 4,
-                "symbol": "WETH",
+                "symbol": "WETH-worm",
                 "precision": 18,
+                "priceId": "weth",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/ETH.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/WETH-worm.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x04000000",
                     "currencyIdType": "u32",
@@ -4384,7 +4385,7 @@
             },
             {
                 "assetId": 5,
-                "symbol": "WBTC",
+                "symbol": "WBTC-worm",
                 "precision": 8,
                 "priceId": "wrapped-bitcoin",
                 "type": "orml",
