@@ -3946,6 +3946,47 @@
                     "existentialDeposit": "10000000000000000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 3,
+                "symbol": "LRNA",
+                "precision": 12,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/LRNA.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x01000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "400000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 4,
+                "symbol": "WETH-worm",
+                "precision": 18,
+                "priceId": "ethereum-wormhole",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/WETH-worm.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x04000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "7000000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 5,
+                "symbol": "WBTC-worm",
+                "precision": 8,
+                "priceId": "wrapped-bitcoin",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/WBTC.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x03000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "44",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
