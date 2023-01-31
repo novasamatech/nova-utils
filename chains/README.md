@@ -1,8 +1,8 @@
 
 # Supported Networks & Assets data:
 ### 🕸️ Supported networks: 67
-### 💰 All assets 234
-### 🪙 Unique assets: 119
+### 💰 All assets 237
+### 🪙 Unique assets: 122
 ### 💫 Cross Chain directions: 227
 ### 🧾 SubQuery API projects: 62
 ### 👀 Networks with block explorers: 66
@@ -33,7 +33,7 @@
 |  21 | Efinity               | EFI                                                                                                                                                                                                                                                   | Subscan<br />Polkaholic                            | [nova-wallet-efinity](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-efinity)                   |
 |  22 | Encointer             | KSM                                                                                                                                                                                                                                                   | Subscan<br />Polkaholic                            | [nova-wallet-encointer](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-encointer)               |
 |  23 | GM                    | FREN<br />GM<br />GN                                                                                                                                                                                                                                  | Polkaholic                                         | [nova-wallet-gm-network](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-gm-network)             |
-|  24 | HydraDX               | HDX<br />DOT<br />DAI                                                                                                                                                                                                                                 | Subscan<br />Polkaholic                            | [nova-wallet-hydra](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-hydra)                       |
+|  24 | HydraDX               | HDX<br />DOT<br />DAI<br />LRNA<br />WETH-worm<br />WBTC-worm                                                                                                                                                                                         | Subscan<br />Polkaholic                            | [nova-wallet-hydra](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-hydra)                       |
 |  25 | Imbue                 | IMBU                                                                                                                                                                                                                                                  | Polkaholic                                         | [nova-wallet-imbue](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-imbue)                       |
 |  26 | Integritee Parachain  | TEER                                                                                                                                                                                                                                                  | Subscan<br />Sub.ID<br />Polkaholic                | [nova-wallet-integritee](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-integritee)             |
 |  27 | Interlay              | INTR<br />iBTC<br />DOT<br />KINT<br />kBTC<br />KSM<br />LDOT<br />USDT                                                                                                                                                                              | Subscan<br />Polkaholic                            | [nova-wallet-interlay](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-interlay)                 |
