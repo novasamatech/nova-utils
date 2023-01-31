@@ -115,10 +115,6 @@
         ],
         "nodes": [
             {
-                "url": "wss://kusama.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://public-rpc.pinknode.io/kusama",
                 "name": "Pinknode node"
             },
@@ -133,6 +129,10 @@
             {
                 "url": "wss://kusama-rpc.polkadot.io",
                 "name": "Parity node"
+            },
+            {
+                "url": "wss://kusama.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "explorers": [
