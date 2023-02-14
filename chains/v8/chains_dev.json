@@ -1992,6 +1992,20 @@
                     "existentialDeposit": "1000000000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 4,
+                "symbol": "USDT",
+                "precision": 6,
+                "type": "orml",
+                "priceId": "tether",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/USDT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0e000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "10000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
