@@ -149,6 +149,10 @@ jobs:
       - name: Set up actual paths
         uses: ./.github/workflows/setup-path
 
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.9.15'
+
       - name: Install dependencies
         run: |
           cd ../support
