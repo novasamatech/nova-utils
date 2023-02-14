@@ -1,9 +1,9 @@
 
 # Supported Networks & Assets data:
 ### 🕸️ Supported networks: 67
-### 💰 All assets 237
+### 💰 All assets 238
 ### 🪙 Unique assets: 122
-### 💫 Cross Chain directions: 227
+### 💫 Cross Chain directions: 229
 ### 🧾 SubQuery API projects: 62
 ### 👀 Networks with block explorers: 66
 ---
@@ -16,7 +16,7 @@
 |   4 | Amplitude             | AMPE                                                                                                                                                                                                                                                  |  -                                                 | [nova-wallet-amplitude](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-amplitude)               |
 |   5 | Astar                 | ASTR<br />DOT<br />GLMR<br />iBTC<br />INTR<br />PHA<br />ACA<br />LDOT<br />aUSD<br />USDT                                                                                                                                                           | Subscan<br />Sub.ID<br />Polkaholic                | [nova-wallet-astar](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-astar)                       |
 |   6 | Bajun                 | BAJU                                                                                                                                                                                                                                                  | Polkaholic                                         | [nova-wallet-bajun](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-bajun)                       |
-|   7 | Basilisk              | BSX<br />KSM<br />aUSD<br />TNKR                                                                                                                                                                                                                      | Subscan<br />Sub.ID<br />Polkaholic                | [nova-wallet-basilisk](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-basilisk)                 |
+|   7 | Basilisk              | BSX<br />KSM<br />aUSD<br />TNKR<br />USDT                                                                                                                                                                                                            | Subscan<br />Sub.ID<br />Polkaholic                | [nova-wallet-basilisk](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-basilisk)                 |
 |   8 | Bifrost Kusama        | BNC<br />KSM<br />RMRK<br />ZLK<br />KAR<br />aUSD<br />vsKSM<br />USDT<br />MOVR<br />PHA<br />vKSM                                                                                                                                                  | Subscan<br />Sub.ID<br />Polkaholic                | [nova-wallet-bifrost](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-bifrost)                   |
 |   9 | Bifrost Polkadot      | BNC<br />GLMR<br />DOT                                                                                                                                                                                                                                | Subscan<br />Polkaholic                            | [nova-wallet-bifrost-polkadot](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-bifrost-polkadot) |
 |  10 | Bit.Country Pioneer   | NEER<br />BIT                                                                                                                                                                                                                                         | Subscan<br />Polkaholic                            | [nova-wallet-bit-country](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-bit-country)           |
