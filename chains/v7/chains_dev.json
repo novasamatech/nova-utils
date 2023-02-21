@@ -6461,6 +6461,14 @@
                 "name": "Pendulum node"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-pendulum"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/pendulum.json",
             "overridesCommon": true
