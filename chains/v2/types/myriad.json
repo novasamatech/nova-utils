@@ -1,5 +1,5 @@
 {
-  "runtime_id": 2020,
+  "runtime_id": 2034,
   "types": {
     "Balance": "u128",
     "Index": "u32",
@@ -7,8 +7,8 @@
     "Address": "sp_runtime.multiaddress.MultiAddress",
     "ExtrinsicSignature": "sp_runtime.MultiSignature",
     "ParaId": "polkadot_parachain.primitives.Id",
-    "myriad_runtime.Event": "GenericEvent",
-    "myriad_runtime.Call": "GenericCall",
+    "myriad_runtime.RuntimeEvent": "GenericEvent",
+    "myriad_runtime.RuntimeCall": "GenericCall",
     "sp_core.crypto.AccountId32": "GenericAccountId",
     "pallet_identity.types.Data": "Data"
   },
