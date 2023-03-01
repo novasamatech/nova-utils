@@ -1961,7 +1961,8 @@
                 "assetId": 0,
                 "fee": {
                   "mode": {
-                    "type": "standard"
+                    "type": "proportional",
+                    "value": "5000000000000000000"
                   },
                   "instructions": "xtokensDest"
                 }
