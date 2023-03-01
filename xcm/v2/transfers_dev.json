@@ -103,7 +103,8 @@
       },
       "reserveFee": {
         "mode": {
-          "type": "standard"
+          "type": "proportional",
+          "value": "5000000000000000000"
         },
         "instructions": "xtokensReserve"
       }
@@ -2086,7 +2087,8 @@
                 "assetId": 0,
                 "fee": {
                   "mode": {
-                    "type": "standard"
+                    "type": "proportional",
+                    "value": "5000000000000000000"
                   },
                   "instructions": "xtokensDest"
                 }
@@ -3339,7 +3341,8 @@
                 "assetId": 0,
                 "fee": {
                   "mode": {
-                    "type": "standard"
+                    "type": "proportional",
+                    "value": "5000000000000000000"
                   },
                   "instructions": "xtokensDest"
                 }
