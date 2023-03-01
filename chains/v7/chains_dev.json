@@ -24,12 +24,20 @@
                 "name": "OnFinality node"
             },
             {
-                "url": "wss://polkadot-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
                 "url": "wss://rpc.polkadot.io",
                 "name": "Parity node"
+            },
+            {
+                "url": "wss://rpc.dotters.network/polkadot",
+                "name": "Dotters Net node"
+            },
+            {
+                "url": "wss://rpc.ibp.network/polkadot",
+                "name": "IBP network node"
+            },
+            {
+                "url": "wss://polkadot-rpc.dwellir.com",
+                "name": "Dwellir node"
             },
             {
                 "url": "wss://1rpc.io/dot",
@@ -111,8 +119,20 @@
         ],
         "nodes": [
             {
+                "url": "wss://rpc.ibp.network/kusama",
+                "name": "IBP network node"
+            },
+            {
+                "url": "wss://1rpc.io/ksm",
+                "name": "Automata 1RPC node"
+            },
+            {
                 "url": "wss://kusama-rpc.dwellir.com",
                 "name": "Dwellir node"
+            },
+            {
+                "url": "wss://rpc.dotters.network/kusama",
+                "name": "Dotters Net node"
             },
             {
                 "url": "wss://kusama.public.curie.radiumblock.co/ws",
@@ -1861,10 +1881,6 @@
             {
                 "url": "wss://heiko-rpc.parallel.fi",
                 "name": "Parallel"
-            },
-            {
-                "url": "wss://heiko-rpc.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "types": {
@@ -3715,8 +3731,8 @@
                 "name": "Composable node"
             },
             {
-                "url": "wss://picasso-rpc.dwellir.com",
-                "name": "Dwellir node"
+                "url": "wss://rpc.composablenodes.tech",
+                "name": "Composable node"
             }
         ],
         "explorers": [
@@ -5556,8 +5572,12 @@
                 "name": "AjunaNetwork node"
             },
             {
-                "url": "wss://bajun-rpc.dwellir.com",
-                "name": "Dwellir node"
+                "url": "wss://bajun.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://bajun.public.curie.radiumblock.co/ws",
+                "name": "Radium node"
             }
         ],
         "explorers": [
@@ -5762,8 +5782,8 @@
                 "name": "bLd node"
             },
             {
-                "url": "wss://ws-node-gm.terrabiodao.org",
-                "name": "TerraBioDao node"
+                "url": "wss://intern.gmordie.com",
+                "name": "GM intern node"
             },
             {
                 "url": "wss://leemo.gmordie.com",
@@ -6406,7 +6426,11 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc.xx.network",
+                "url": "wss://rpc-hetzner.xx.network",
+                "name": "xx Foundation node"
+            },
+            {
+                "url": "wss://rpc-do.xx.network",
                 "name": "xx Foundation node"
             },
             {
