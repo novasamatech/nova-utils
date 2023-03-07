@@ -5926,7 +5926,8 @@
                 "assetId": 0,
                 "symbol": "AMPE",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Amplitude.svg"
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Amplitude.svg",
+                 "staking": "parachain"
             }
         ],
         "nodes": [
@@ -5942,6 +5943,10 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-amplitude"
                 }
             ],
+            "staking": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-amplitude"
+            },
             "governance": [
                 {
                     "type": "polkassembly",
@@ -6597,7 +6602,8 @@
                 "assetId": 0,
                 "symbol": "PEN",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/PEN.svg"
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/PEN.svg",
+                "staking": "parachain"
             }
         ],
         "nodes": [
@@ -6612,7 +6618,11 @@
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-pendulum"
                 }
-            ]
+            ],
+            "staking": {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-pendulum"
+            }
         },
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/pendulum.json",
