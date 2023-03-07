@@ -3691,6 +3691,16 @@
                 "precision": 9,
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Robonomics.svg",
                 "priceId": "robonomics-network"
+            },
+            {
+                "assetId": 1,
+                "symbol": "KSM",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg",
+                "priceId": "kusama",
+                "typeExtras": {
+                    "assetId": "4294967295"
+                }
             }
         ],
         "nodes": [
