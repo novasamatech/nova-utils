@@ -4608,6 +4608,20 @@
                     "type": "proportional",
                     "value": "8865248226"
                   },
+                  "instructions": "xtokensDest"
+                }
+              },
+              "type": "xtokens"
+            },
+            {
+              "destination": {
+                "chainId": "a85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755",
+                "assetId": 5,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "50000"
+                  },
                   "instructions": "xcmPalletDest"
                 }
               },
