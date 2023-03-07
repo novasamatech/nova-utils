@@ -2025,6 +2025,20 @@
                     "existentialDeposit": "10000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 5,
+                "symbol": "XRT",
+                "precision": 9,
+                "type": "orml",
+                "priceId": "robonomics-network",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Robonomics.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x10000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1683502",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
