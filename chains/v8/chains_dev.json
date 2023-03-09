@@ -6620,5 +6620,32 @@
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Pendulum.svg",
         "addressPrefix": 56
+    },
+    {
+        "chainId": "a6ffcef7fb8caadf7f6c5ad8ada65e3eaa90d1604f3eabda546ff1d486865a0c",
+        "name": "Aventus Testnet",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "AVT",
+                "precision": 18,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/AVT.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://public-rpc.public-testnet.aventus.io",
+                "name": "Aventus testnet node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/aventus_testnet.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Aventus_Testnet.svg",
+        "addressPrefix": 42,
+        "options": [
+            "testnet"
+        ]
     }
 ]
