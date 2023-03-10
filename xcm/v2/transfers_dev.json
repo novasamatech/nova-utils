@@ -220,7 +220,8 @@
       "multiLocation": {},
       "reserveFee": {
         "mode": {
-          "type": "standard"
+          "type": "proportional",
+          "value": "10543518372081"
         },
         "instructions": "xtokensReserve"
       }
@@ -4373,7 +4374,8 @@
                 "assetId": 0,
                 "fee": {
                   "mode": {
-                    "type": "standard"
+                    "type": "proportional",
+                    "value": "800000000000"
                   },
                   "instructions": "xcmPalletTeleportDest"
                 }
@@ -4400,7 +4402,8 @@
                 "assetId": 0,
                 "fee": {
                   "mode": {
-                    "type": "standard"
+                    "type": "proportional",
+                    "value": "10543518372081"
                   },
                   "instructions": "xcmPalletTeleportDest"
                 }
