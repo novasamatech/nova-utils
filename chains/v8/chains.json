@@ -206,6 +206,12 @@
                     "type": "polkassembly",
                     "url": "https://kusama.polkassembly.io/v1/graphql"
                 }
+            ],
+            "governance-delegations": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kusama-governance2"
+                }
             ]
         },
         "options": [
