@@ -29,7 +29,7 @@ def compare_type_files_for_all_networks(chains_file):
         index += 1
         print(
             f"Generating has started for: {chain['name']}. {index}/{len(chains_file)}")
-        if chain['name'] in ['Moonbeam', 'Moonriver', 'Moonbase']:
+        if chain['name'] in ['Moonbeam', 'Moonriver', 'Moonbase', 'Crab']:
             # TODO need to implement creation type file for EVM networks
             print(
                 f"Temporary can't generate type files for EVM networks, {chain['name']} was skipped")
@@ -77,11 +77,11 @@ def main(argv):
     """
 
     if 'dev' in argv:
-        chains_path = os.getenv("DEV_CHAINS_JSON_PATH", "chains/v6/chains_dev.json")
+        chains_path = os.getenv("DEV_CHAINS_JSON_PATH", "chains/v8/chains_dev.json")
         chains_file = get_data_from_file(chains_path)
         compare_type_files_for_all_networks(chains_file)
     elif 'prod' in argv:
-        chains_path = os.getenv("CHAINS_JSON_PATH", "chains/v6/chains.json")
+        chains_path = os.getenv("CHAINS_JSON_PATH", "chains/v8/chains.json")
         chains_file = get_data_from_file(chains_path)
         compare_type_files_for_all_networks(chains_file)
     else:
