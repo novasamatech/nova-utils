@@ -3951,7 +3951,7 @@
     {
         "chainId": "eac895d7768b17837a9c3a9f0280c01502c3ef40193df923490a0fa9c60ea076",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Crab",
+        "name": "Crab2",
         "assets": [
             {
                 "assetId": 0,
@@ -3970,8 +3970,8 @@
         "explorers": [
             {
                 "name": "Subscan",
-                "extrinsic": "https://crab.subscan.io/extrinsic/{hash}",
-                "account": "https://crab.subscan.io/account/{address}",
+                "extrinsic": "https://darwinia-parachain.subscan.io/extrinsic/{hash}",
+                "account": "https://darwinia-parachain.subscan.io/account/{address}",
                 "event": null
             },
             {
@@ -3985,7 +3985,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/crab.json",
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/crab2.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -3997,7 +3997,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Crab.svg",
-        "addressPrefix": 42
+        "addressPrefix": 42,
+        "options":[
+            "ethereumBased"
+        ]
     },
     {
         "chainId": "4a12be580bb959937a1c7a61d5cf24428ed67fa571974b4007645d1886e7c89f",
