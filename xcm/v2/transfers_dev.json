@@ -19,7 +19,8 @@
       "multiLocation": {},
       "reserveFee": {
         "mode": {
-          "type": "standard"
+          "type": "proportional",
+          "value": "35047875048"
         },
         "instructions": "xtokensReserve"
       }
@@ -65,7 +66,8 @@
       "multiLocation": {},
       "reserveFee": {
         "mode": {
-          "type": "standard"
+          "type": "proportional",
+          "value": "35047875048"
         },
         "instructions": "xtokensReserve"
       }
@@ -409,7 +411,8 @@
                 "assetId": 0,
                 "fee": {
                   "mode": {
-                    "type": "standard"
+                    "type": "proportional",
+                    "value": "35047875048"
                   },
                   "instructions": "xtokensDest"
                 }
@@ -1415,7 +1418,8 @@
                 "assetId": 0,
                 "fee": {
                   "mode": {
-                    "type": "standard"
+                    "type": "proportional",
+                    "value": "35047875048"
                   },
                   "instructions": "xtokensDest"
                 }
@@ -2223,7 +2227,8 @@
                 "assetId": 0,
                 "fee": {
                   "mode": {
-                    "type": "standard"
+                    "type": "proportional",
+                    "value": "35047875048"
                   },
                   "instructions": "xcmPalletTeleportDest"
                 }
@@ -4800,20 +4805,6 @@
                   "mode": {
                     "type": "proportional",
                     "value": "115870000000"
-                  },
-                  "instructions": "xcmPalletDest"
-                }
-              },
-              "type": "xcmpallet"
-            },
-            {
-              "destination": {
-                "chainId": "bf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72",
-                "assetId": 5,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "20306692567"
                   },
                   "instructions": "xcmPalletDest"
                 }
