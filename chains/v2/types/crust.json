@@ -1,14 +1,14 @@
 {
-  "runtime_id": 2150,
+  "runtime_id": 4,
   "types": {
     "Balance": "u128",
     "Index": "u32",
     "Phase": "frame_system.Phase",
     "Address": "sp_runtime.multiaddress.MultiAddress",
-    "ExtrinsicSignature": "acala_primitives.signature.AcalaMultiSignature",
+    "ExtrinsicSignature": "sp_runtime.MultiSignature",
     "ParaId": "polkadot_parachain.primitives.Id",
-    "karura_runtime.RuntimeEvent": "GenericEvent",
-    "karura_runtime.RuntimeCall": "GenericCall",
+    "crust_parachain_runtime.Event": "GenericEvent",
+    "crust_parachain_runtime.Call": "GenericCall",
     "sp_core.crypto.AccountId32": "GenericAccountId",
     "pallet_identity.types.Data": "Data"
   },
