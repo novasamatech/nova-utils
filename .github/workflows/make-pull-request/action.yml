@@ -19,6 +19,10 @@ inputs:
   pr-body:
     description: 'Body for creating Pull Request'
     required: true
+  pr-reviewer:
+    description: 'Reviewers for creating PR, support comma delimiter'
+    required: false
+    default: "stepanLav,leohar"
 
 runs:
   using: "composite"
@@ -49,6 +53,6 @@ runs:
           destination_branch: "master"
           pr_title: ${{ inputs.pr-title }}
           pr_body: ${{ inputs.pr-body }}
-          pr_reviewer: "stepanLav,leohar"
+          pr_reviewer: ${{ inputs.pr-reviewer }}
           pr_draft: false
           github_token: ${{ inputs.github-token }}
