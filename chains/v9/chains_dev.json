@@ -74,24 +74,30 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "staking": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadot"
-            },
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadot"
+                }
+            ],
             "history": [
                 {
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadot"
                 }
             ],
-            "crowdloans": {
-                "type": "github",
-                "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/crowdloan/polkadot-dev.json"
-            },
-            "governance": {
-                "type": "polkassembly",
-                "url": "https://polkadot.polkassembly.io/v1/graphql"
-            }
+            "crowdloans": [
+                {
+                    "type": "github",
+                    "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/crowdloan/polkadot-dev.json"
+                }
+            ],
+            "governance": [
+                {
+                    "type": "polkassembly",
+                    "url": "https://polkadot.polkassembly.io/v1/graphql"
+                }
+            ]
         },
         "options": [
             "crowdloans",
@@ -177,24 +183,36 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "staking": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kusama"
-            },
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kusama"
+                }
+            ],
             "history": [
                 {
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kusama"
                 }
             ],
-            "crowdloans": {
-                "type": "github",
-                "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/crowdloan/kusama.json"
-            },
-            "governance": {
-                "type": "polkassembly",
-                "url": "https://kusama.polkassembly.io/v1/graphql"
-            }
+            "crowdloans": [
+                {
+                    "type": "github",
+                    "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/crowdloan/kusama.json"
+                }
+            ],
+            "governance": [
+                {
+                    "type": "polkassembly",
+                    "url": "https://kusama.polkassembly.io/v1/graphql"
+                }
+            ],
+            "governance-delegations": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kusama-governance2"
+                }
+            ]
         },
         "options": [
             "crowdloans",
@@ -243,27 +261,33 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "staking": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-westend"
-            },
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-westend"
+                }
+            ],
             "history": [
                 {
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-westend"
                 }
             ],
-            "crowdloans": {
-                "type": "github",
-                "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/crowdloan/westend.json"
-            },
-            "governance": {
-                "type": "polkassembly",
-                "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "parameters": {
-                    "network": "westend"
+            "crowdloans": [
+                {
+                    "type": "github",
+                    "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/crowdloan/westend.json"
                 }
-            }
+            ],
+            "governance": [
+                {
+                    "type": "polkassembly",
+                    "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
+                    "parameters": {
+                        "network": "westend"
+                    }
+                }
+            ]
         },
         "options": [
             "testnet",
@@ -855,13 +879,15 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-karura"
                 }
             ],
-            "governance": {
-                "type": "polkassembly",
-                "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "parameters": {
-                    "network": "karura"
+            "governance": [
+                {
+                    "type": "polkassembly",
+                    "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
+                    "parameters": {
+                        "network": "karura"
+                    }
                 }
-            }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Karura.svg",
         "addressPrefix": 8,
@@ -1122,24 +1148,37 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonriver"
                 },
                 {
-                    "assetType": "evm",
                     "type": "etherscan",
-                    "url": "https://api-moonriver.moonscan.io/api"
+                    "url": "https://api-moonriver.moonscan.io/api",
+                    "parameters": {
+                        "assetType": "evm"
+                    }
                 }
             ],
-            "staking": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonriver"
-            },
-            "governance": {
-                "type": "polkassembly",
-                "url": "https://moonriver-hasura.herokuapp.com/v1/graphql"
-            }
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonriver"
+                }
+            ],
+            "governance": [
+                {
+                    "type": "polkassembly",
+                    "url": "https://moonriver-hasura.herokuapp.com/v1/graphql"
+                }
+            ],
+            "governance-delegations": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonriver-gov"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Moonriver.svg",
         "addressPrefix": 1285,
         "options": [
             "ethereumBased",
+            "governance",
             "governance-v1"
         ]
     },
@@ -1367,13 +1406,15 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-shiden"
                 }
             ],
-            "governance": {
-                "type": "polkassembly",
-                "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "parameters": {
-                    "network": "shiden"
+            "governance": [
+                {
+                    "type": "polkassembly",
+                    "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
+                    "parameters": {
+                        "network": "shiden"
+                    }
                 }
-            }
+            ]
         }
     },
     {
@@ -1570,10 +1611,12 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bifrost"
                 }
             ],
-            "staking": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bifrost"
-            }
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bifrost"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Bifrost_Kusama.svg",
         "addressPrefix": 6,
@@ -1759,10 +1802,12 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-edgeware__bm92Y"
                 }
             ],
-            "staking": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-edgeware__bm92Y"
-            }
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-edgeware__bm92Y"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Edgeware.svg",
         "addressPrefix": 7
@@ -2034,13 +2079,15 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-basilisk"
                 }
             ],
-            "governance": {
-                "type": "polkassembly",
-                "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "parameters": {
-                    "network": "basilisk"
+            "governance": [
+                {
+                    "type": "polkassembly",
+                    "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
+                    "parameters": {
+                        "network": "basilisk"
+                    }
                 }
-            }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Basilisk.svg",
         "addressPrefix": 10041,
@@ -2099,13 +2146,15 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-altair"
                 }
             ],
-            "governance": {
-                "type": "polkassembly",
-                "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "parameters": {
-                    "network": "altair"
+            "governance": [
+                {
+                    "type": "polkassembly",
+                    "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
+                    "parameters": {
+                        "network": "altair"
+                    }
                 }
-            }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Altair.svg",
         "addressPrefix": 136,
@@ -2276,13 +2325,15 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-khala"
                 }
             ],
-            "governance": {
-                "type": "polkassembly",
-                "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "parameters": {
-                    "network": "khala"
+            "governance": [
+                {
+                    "type": "polkassembly",
+                    "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
+                    "parameters": {
+                        "network": "khala"
+                    }
                 }
-            }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Khala.svg",
         "addressPrefix": 30
@@ -2338,10 +2389,12 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kilt"
                 }
             ],
-            "governance": {
-                "type": "polkassembly",
-                "url": "https://kilt-hasura.herokuapp.com/v1/graphql"
-            }
+            "governance": [
+                {
+                    "type": "polkassembly",
+                    "url": "https://kilt-hasura.herokuapp.com/v1/graphql"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/KILT_Spiritnet.svg",
         "addressPrefix": 38,
@@ -2432,17 +2485,21 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-calamari"
                 }
             ],
-            "staking": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-calamari"
-            },
-            "governance": {
-                "type": "polkassembly",
-                "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "parameters": {
-                    "network": "calamari"
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-calamari"
                 }
-            }
+            ],
+            "governance": [
+                {
+                    "type": "polkassembly",
+                    "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
+                    "parameters": {
+                        "network": "calamari"
+                    }
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Calamari.svg",
         "addressPrefix": 78,
@@ -2822,13 +2879,15 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-acala"
                 }
             ],
-            "governance": {
-                "type": "polkassembly",
-                "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "parameters": {
-                    "network": "acala"
+            "governance": [
+                {
+                    "type": "polkassembly",
+                    "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
+                    "parameters": {
+                        "network": "acala"
+                    }
                 }
-            }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Acala.svg",
         "addressPrefix": 10,
@@ -3062,19 +3121,25 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonbeam"
                 },
                 {
-                    "assetType": "evm",
                     "type": "etherscan",
-                    "url": "https://api-moonbeam.moonscan.io/api"
+                    "url": "https://api-moonbeam.moonscan.io/api",
+                    "parameters": {
+                        "assetType": "evm"
+                    }
                 }
             ],
-            "staking": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonbeam"
-            },
-            "governance": {
-                "type": "polkassembly",
-                "url": "https://moonbeamp-hasura.herokuapp.com/v1/graphql"
-            }
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonbeam"
+                }
+            ],
+            "governance": [
+                {
+                    "type": "polkassembly",
+                    "url": "https://moonbeamp-hasura.herokuapp.com/v1/graphql"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Moonbeam.svg",
         "addressPrefix": 1284,
@@ -3242,13 +3307,15 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-astar"
                 }
             ],
-            "governance": {
-                "type": "polkassembly",
-                "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "parameters": {
-                    "network": "astar"
+            "governance": [
+                {
+                    "type": "polkassembly",
+                    "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
+                    "parameters": {
+                        "network": "astar"
+                    }
                 }
-            }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Astar.svg",
         "addressPrefix": 5,
@@ -3484,13 +3551,15 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-parallel"
                 }
             ],
-            "governance": {
-                "type": "polkassembly",
-                "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "parameters": {
-                    "network": "parallel"
+            "governance": [
+                {
+                    "type": "polkassembly",
+                    "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
+                    "parameters": {
+                        "network": "parallel"
+                    }
                 }
-            }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Parallel.svg",
         "addressPrefix": 172,
@@ -3673,13 +3742,15 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-robonomics"
                 }
             ],
-            "governance": {
-                "type": "polkassembly",
-                "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "parameters": {
-                    "network": "robonomics"
+            "governance": [
+                {
+                    "type": "polkassembly",
+                    "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
+                    "parameters": {
+                        "network": "robonomics"
+                    }
                 }
-            }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Robonomics.svg",
         "addressPrefix": 32,
@@ -3843,10 +3914,12 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-zeitgeist"
                 }
             ],
-            "staking": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-zeitgeist"
-            }
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-zeitgeist"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Zeitgeist.svg",
         "addressPrefix": 73,
@@ -4097,13 +4170,15 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-shadow"
                 }
             ],
-            "governance": {
-                "type": "polkassembly",
-                "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "parameters": {
-                    "network": "crustshadow"
+            "governance": [
+                {
+                    "type": "polkassembly",
+                    "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
+                    "parameters": {
+                        "network": "crustshadow"
+                    }
                 }
-            }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Crust_Shadow.svg",
         "addressPrefix": 66,
@@ -4390,13 +4465,15 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-hydra"
                 }
             ],
-            "governance": {
-                "type": "polkassembly",
-                "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "parameters": {
-                    "network": "hydradx"
+            "governance": [
+                {
+                    "type": "polkassembly",
+                    "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
+                    "parameters": {
+                        "network": "hydradx"
+                    }
                 }
-            }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/HydraDX.svg",
         "addressPrefix": 63,
@@ -4835,17 +4912,21 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-turing"
                 }
             ],
-            "staking": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-turing"
-            },
-            "governance": {
-                "type": "polkassembly",
-                "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "parameters": {
-                    "network": "turing"
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-turing"
                 }
-            }
+            ],
+            "governance": [
+                {
+                    "type": "polkassembly",
+                    "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
+                    "parameters": {
+                        "network": "turing"
+                    }
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Turing.svg",
         "addressPrefix": 51,
@@ -4891,10 +4972,12 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-aleph-zero"
                 }
             ],
-            "staking": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-aleph-zero"
-            }
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-aleph-zero"
+                }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/AlephZero.svg",
         "addressPrefix": 42
@@ -4941,13 +5024,15 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-composable"
                 }
             ],
-            "governance": {
-                "type": "polkassembly",
-                "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "parameters": {
-                    "network": "composable"
+            "governance": [
+                {
+                    "type": "polkassembly",
+                    "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
+                    "parameters": {
+                        "network": "composable"
+                    }
                 }
-            }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Composable.png",
         "addressPrefix": 49,
@@ -4991,23 +5076,27 @@
             "overridesCommon": true
         },
         "externalApi": {
-            "staking": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadex"
-            },
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadex"
+                }
+            ],
             "history": [
                 {
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadex"
                 }
             ],
-            "governance": {
-                "type": "polkassembly",
-                "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "parameters": {
-                    "network": "polkadex"
+            "governance": [
+                {
+                    "type": "polkassembly",
+                    "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
+                    "parameters": {
+                        "network": "polkadex"
+                    }
                 }
-            }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Polkadex.svg",
         "addressPrefix": 88,
@@ -5567,13 +5656,15 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-tanganika"
                 }
             ],
-            "governance": {
-                "type": "polkassembly",
-                "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "parameters": {
-                    "network": "tanganika"
+            "governance": [
+                {
+                    "type": "polkassembly",
+                    "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
+                    "parameters": {
+                        "network": "tanganika"
+                    }
                 }
-            }
+            ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Tanganika_DataHighway.svg",
         "addressPrefix": 33,
@@ -5865,13 +5956,15 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-amplitude"
                 }
             ],
-            "governance": {
-                "type": "polkassembly",
-                "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "parameters": {
-                    "network": "amplitude"
+            "governance": [
+                {
+                    "type": "polkassembly",
+                    "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
+                    "parameters": {
+                        "network": "amplitude"
+                    }
                 }
-            }
+            ]
         },
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/amplitude.json",
@@ -5911,10 +6004,12 @@
             }
         ],
         "externalApi": {
-            "staking": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-ternoa"
-            },
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-ternoa"
+                }
+            ],
             "history": [
                 {
                     "type": "subquery",
@@ -6063,13 +6158,15 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kylin"
                 }
             ],
-            "governance": {
-                "type": "polkassembly",
-                "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                "parameters": {
-                    "network": "kylin"
+            "governance": [
+                {
+                    "type": "polkassembly",
+                    "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
+                    "parameters": {
+                        "network": "kylin"
+                    }
                 }
-            }
+            ]
         },
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/kylin.json",
@@ -6292,6 +6389,14 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/novasama_gov2_testnet.json",
             "overridesCommon": true
         },
+        "externalApi": {
+            "governance-delegations": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-gov-test"
+                }
+            ]
+        },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Governance2_Testnet.svg",
         "addressPrefix": 2,
         "options": [
@@ -6358,10 +6463,12 @@
             }
         ],
         "externalApi": {
-            "staking": {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadot"
-            }
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadot"
+                }
+            ]
         },
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/polkadot.json",
@@ -6596,39 +6703,5 @@
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Aventus.svg",
         "addressPrefix": 42
-    },
-    {
-        "chainId": "4319cc49ee79495b57a1fec4d2bd43f59052dcc690276de566c2691d6df4f7b8",
-        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "Crust",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "CRU",
-                "precision": 12,
-                "priceId": "crust-network",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/CRU.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://crust-parachain.crustapps.net",
-                "name": "Crust node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://crust-parachain.subscan.io/extrinsic/{hash}",
-                "account": "https://crust-parachain.subscan.io/account/{address}",
-                "event": null
-            }
-        ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/crust.json",
-            "overridesCommon": true
-        },
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Crust.svg",
-        "addressPrefix": 88
     }
 ]
