@@ -6597,5 +6597,39 @@
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Aventus.svg",
         "addressPrefix": 42
+    },
+    {
+        "chainId": "4319cc49ee79495b57a1fec4d2bd43f59052dcc690276de566c2691d6df4f7b8",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Crust",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "CRU",
+                "precision": 12,
+                "priceId": "crust-network",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/CRU.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://crust-parachain.crustapps.net",
+                "name": "Crust node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://crust-parachain.subscan.io/extrinsic/{hash}",
+                "account": "https://crust-parachain.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/crust.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Crust.svg",
+        "addressPrefix": 88
     }
 ]

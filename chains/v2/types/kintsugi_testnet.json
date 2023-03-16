@@ -1,14 +1,14 @@
 {
-  "runtime_id": 58,
+  "runtime_id": 1022000,
   "types": {
     "Balance": "u128",
     "Index": "u32",
     "Phase": "frame_system.Phase",
-    "Address": "sp_runtime.multiaddress.MultiAddress",
+    "Address": "sp_core.crypto.AccountId32",
     "ExtrinsicSignature": "sp_runtime.MultiSignature",
     "ParaId": "polkadot_parachain.primitives.Id",
-    "aleph_runtime.RuntimeEvent": "GenericEvent",
-    "aleph_runtime.RuntimeCall": "GenericCall",
+    "testnet_kintsugi_runtime_parachain.RuntimeEvent": "GenericEvent",
+    "testnet_kintsugi_runtime_parachain.RuntimeCall": "GenericCall",
     "sp_core.crypto.AccountId32": "GenericAccountId",
     "pallet_identity.types.Data": "Data"
   },
