@@ -3149,6 +3149,51 @@
         ]
     },
     {
+        "chainId": "eip155:1",
+        "name": "Ethereum",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "ETH",
+                "priceId": "ethereum",
+                "type": "evmNative",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/ETH.svg",
+                "precision": 18
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://mainnet.infura.io/ws/v3/1e69544301064ef19edb194a14fb75f3",
+                "name": "Infura test node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Etherscan",
+                "extrinsic": "https://etherscan.io/tx/{hash}",
+                "account": "https://etherscan.io/address/{address}",
+                "event": null
+            }
+        ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "etherscan",
+                    "url": "https://api.etherscan.io/api",
+                    "parameters": {
+                        "assetType": "evm"
+                    }
+                }
+            ]
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Ethereum.svg",
+        "addressPrefix": 1,
+        "options": [
+            "ethereumBased",
+            "noSubstrateRuntime"
+        ]
+    },
+    {
         "chainId": "9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
         "name": "Astar",
@@ -4019,60 +4064,6 @@
         "addressPrefix": 131,
         "options": [
             "governance-v1"
-        ]
-    },
-    {
-        "chainId": "86e49c195aeae7c5c4a86ced251f1a28c67b3c35d8289c387ede1776cdd88b24",
-        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Crab2",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "CRAB",
-                "precision": 18,
-                "priceId": "darwinia-crab-network",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Crab.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://crab-parachain-rpc.darwinia.network/",
-                "name": "Crab node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://darwinia-parachain.subscan.io/extrinsic/{hash}",
-                "account": "https://darwinia-parachain.subscan.io/account/{address}",
-                "event": null
-            },
-            {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
-            }
-        ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/crab2.json",
-            "overridesCommon": true
-        },
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-crab"
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Crab.svg",
-        "addressPrefix": 42,
-        "options":[
-            "ethereumBased"
         ]
     },
     {
@@ -6611,6 +6602,7 @@
                 "assetId": 0,
                 "symbol": "PEN",
                 "precision": 12,
+                "priceId": "pendulum-chain",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/PEN.svg"
             }
         ],
@@ -6735,7 +6727,7 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/crust.json",
             "overridesCommon": true
         },
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Crust.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Crust.svg",
         "addressPrefix": 88
     },
     {
