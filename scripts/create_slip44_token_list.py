@@ -21,9 +21,12 @@ def request_data_from_metamask():
     data = response.json()
     return data
 
-def filter_dict_by_symbol(first_dict, second_dict):
-    filtered_dict = {k: v for k, v in second_dict.items() if v['symbol'] in first_dict}
-    return filtered_dict
+def create_slip44_array(first_dict, second_dict):
+    slip44_array = []
+    for _, value in second_dict.items():
+        if value['symbol'] in first_dict:
+            slip44_array.append({ "index": value["index"], "symbol": value["symbol"] })
+    return slip44_array
 
 def collect_all_assets_in_nova(chains_file, assets_file) -> Tuple[Dict[str, list], Dict[str, list]]:
     chain_assets = defaultdict(list)
@@ -46,12 +49,12 @@ def create_slip44_token_list(chains_file, assets_file):
     chain_assets, evm_assets = collect_all_assets_in_nova(chains_file, assets_file)
     metamask_data = request_data_from_metamask()
     merged_dict = {**chain_assets, **evm_assets}
-    slip44_dict = filter_dict_by_symbol(merged_dict, metamask_data)
-    print(f"Slip44 filtered dict has {len(slip44_dict)} elements")
+    slip44_array = create_slip44_array(merged_dict, metamask_data)
+    print(f"Slip44 array has {len(slip44_array)} elements")
 
-    return slip44_dict
+    return slip44_array
 
 
 if __name__ == '__main__':
-    slip44_dict = create_slip44_token_list(chains_file=dev_chains, assets_file=evm_assets)
-    write_data_to_file('assets/slip44.json', json.dumps(slip44_dict, indent=4))
+    slip44_array = create_slip44_token_list(chains_file=dev_chains, assets_file=evm_assets)
+    write_data_to_file('assets/slip44.json', json.dumps(slip44_array, indent=4))
