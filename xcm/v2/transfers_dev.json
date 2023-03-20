@@ -2916,29 +2916,6 @@
               "type": "xcmpallet-teleport"
             }
           ]
-        },
-        {
-          "assetId": 0,
-          "assetLocation": "DOT",
-          "assetLocationPath": {
-            "type": null
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": null,
-                    "value": "800000000000"
-                  },
-                  "instructions": null
-                }
-              },
-              "type": null
-            }
-          ]
         }
       ]
     },
