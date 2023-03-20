@@ -10,7 +10,24 @@
     "composable_runtime.Event": "GenericEvent",
     "composable_runtime.Call": "GenericCall",
     "sp_core.crypto.AccountId32": "GenericAccountId",
-    "pallet_identity.types.Data": "Data"
+    "pallet_identity.types.Data": "Data",
+    "RuntimeDispatchInfo": {
+      "type": "struct",
+      "type_mapping": [
+        [
+          "weight",
+          ""
+        ],
+        [
+          "class",
+          "frame_support.weights.DispatchClass"
+        ],
+        [
+          "partialFee",
+          "Balance"
+        ]
+      ]
+    }
   },
   "versioning": []
 }
