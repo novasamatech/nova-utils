@@ -6829,5 +6829,34 @@
         "options": [
             "testnet"
         ]
+    },
+    {
+        "chainId": "dce5477cfca571c2cb652f38bbb70429004be3cf9649dd2b4ad9455b2251fe43",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Hashed Network",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "HASH",
+                "precision": 18,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/HASH.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://c1.hashed.network",
+                "name": "Hashed systems 1 node"
+            },
+            {
+                "url": "wss://c2.hashed.network",
+                "name": "Hashed systems 2 node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/hashed.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Hashed.svg",
+        "addressPrefix": 42
     }
 ]
