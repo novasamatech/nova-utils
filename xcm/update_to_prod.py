@@ -50,28 +50,28 @@ def update_assets(dev, prod, meta_dict):
 def update_destinations(dev, prod, meta_dict):
     for chain_id, chain in prod.items():
         for asset_location, asset in chain['assets'].items():
-            for destination_id, destination in dev[chain_id]['assets'][asset_location]['destinations'].items():
-                if destination_id not in asset['destinations']:
+            for destination_id, destination in dev[chain_id]['assets'][asset_location]['xcmTransfers'].items():
+                if destination_id not in asset['xcmTransfers']:
                     print(f"Was added new destination in {meta_dict[chain_id]['name']} \
                           \nfor asset: {asset_location} \
                           \nto network: {meta_dict[destination_id]['name']} ")
                     if ask_to_update():
-                        prod[chain_id]['assets'][asset_location][destination_id] = destination
+                        prod[chain_id]['assets'][asset_location]['xcmTransfers'][destination_id] = destination
 
     return prod
 
 
 def conver_chains_to_dict(chains_obj):
-    chins_dict = {chain['chainId']: chain for chain in chains_obj}
-    for _, chain in chins_dict.items():
+    chains_dict = {chain['chainId']: chain for chain in chains_obj}
+    for chain_id, chain in chains_dict.items():
         assets_dict = {}
         for asset in chain['assets']:
             destinations_dict = {destination['destination']['chainId']: destination for destination in asset['xcmTransfers']}
             assets_dict[asset['assetLocation']] = asset
-            assets_dict[asset['assetLocation']]['destinations'] = destinations_dict
-        chain['assets'] = assets_dict
+            assets_dict[asset['assetLocation']]['xcmTransfers'] = destinations_dict
+        chains_dict[chain_id]['assets'] = assets_dict
 
-    return chins_dict
+    return chains_dict
 
 def convert_chain_dict_to_array_back(chains_dict):
     temp_chains = []
@@ -79,9 +79,9 @@ def convert_chain_dict_to_array_back(chains_dict):
         temp_assets = []
         for _, asset in chain['assets'].items():
             temp_destinations = []
-            for _, destination in asset['destinations'].items():
+            for _, destination in asset['xcmTransfers'].items():
                 temp_destinations.append(destination)
-            asset['destinations'] = temp_destinations
+            asset['xcmTransfers'] = temp_destinations
             temp_assets.append(asset)
         chain['assets'] = temp_assets
         temp_chains.append(chain)
@@ -100,7 +100,7 @@ def promote_updates_to_prod(dev_file, prod_file, meta_data):
     updated_prod = update_assets(dev_chains_dict, updated_prod, meta_dict)
     updated_prod = update_destinations(dev_chains_dict, updated_prod, meta_dict)
 
-    updated_chains = convert_chain_dict_to_array_back(prod_chains_data)
+    updated_chains = convert_chain_dict_to_array_back(updated_prod)
 
     updated_base_weight = update_network_base_weight(dev_file, prod_file, meta_dict)
 
