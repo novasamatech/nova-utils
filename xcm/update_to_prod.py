@@ -1,3 +1,7 @@
+"""
+This script compares the dev and prod transfers.json files, finds the difference and asks which changes to apply, then updates the prod file.
+"""
+
 import json
 
 def ask_to_update():
@@ -61,7 +65,7 @@ def update_destinations(dev, prod, meta_dict):
     return prod
 
 
-def conver_chains_to_dict(chains_obj):
+def convert_chains_to_dict(chains_obj):
     chains_dict = {chain['chainId']: chain for chain in chains_obj}
     for chain_id, chain in chains_dict.items():
         assets_dict = {}
@@ -93,8 +97,8 @@ def convert_chain_dict_to_array_back(chains_dict):
 def promote_updates_to_prod(dev_file, prod_file, meta_data):
     meta_dict = {chain['chainId']: chain for chain in meta_data}
 
-    dev_chains_dict = conver_chains_to_dict(dev_file['chains'])
-    prod_chains_data = conver_chains_to_dict(prod_file['chains'])
+    dev_chains_dict = convert_chains_to_dict(dev_file['chains'])
+    prod_chains_data = convert_chains_to_dict(prod_file['chains'])
 
     updated_prod = update_networks(dev_chains_dict, prod_chains_data, meta_dict)
     updated_prod = update_assets(dev_chains_dict, updated_prod, meta_dict)
