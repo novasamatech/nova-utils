@@ -3194,6 +3194,52 @@
         ]
     },
     {
+        "chainId": "eip155:5",
+        "name": "Ethereum - Goerli",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "ETH",
+                "priceId": "ethereum",
+                "type": "evmNative",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/ETH.svg",
+                "precision": 18
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://goerli.infura.io/ws/v3/25bd0a6e359240529b237e5dd8b19e1f",
+                "name": "Infura test node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Etherscan",
+                "extrinsic": "https://goerli.etherscan.io/tx/{hash}",
+                "account": "https://goerli.etherscan.io/address/{address}",
+                "event": null
+            }
+        ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "etherscan",
+                    "url": "https://goerli.etherscan.io/api",
+                    "parameters": {
+                        "assetType": "evm"
+                    }
+                }
+            ]
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Ethereum.svg",
+        "addressPrefix": 1,
+        "options": [
+            "testnet",
+            "ethereumBased",
+            "noSubstrateRuntime"
+        ]
+    },
+    {
         "chainId": "9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
         "name": "Astar",
