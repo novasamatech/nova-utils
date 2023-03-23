@@ -1030,6 +1030,51 @@
         ]
     },
     {
+        "chainId": "eip155:1",
+        "name": "Ethereum",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "ETH",
+                "priceId": "ethereum",
+                "type": "evmNative",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/ETH.svg",
+                "precision": 18
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://mainnet.infura.io/ws/v3/{INFURA_API_KEY}",
+                "name": "Infura test node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Etherscan",
+                "extrinsic": "https://etherscan.io/tx/{hash}",
+                "account": "https://etherscan.io/address/{address}",
+                "event": null
+            }
+        ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "etherscan",
+                    "url": "https://api.etherscan.io/api",
+                    "parameters": {
+                        "assetType": "evm"
+                    }
+                }
+            ]
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Ethereum.svg",
+        "addressPrefix": 1,
+        "options": [
+            "ethereumBased",
+            "noSubstrateRuntime"
+        ]
+    },
+    {
         "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Moonriver",
