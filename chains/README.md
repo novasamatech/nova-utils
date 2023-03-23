@@ -1,9 +1,9 @@
 
 # Supported Networks & Assets data:
 ### 🕸️ Supported networks: 71
-### 💰 All assets 243
+### 💰 All assets 244
 ### 🪙 Unique assets: 126
-### 💫 Cross Chain directions: 237
+### 💫 Cross Chain directions: 251
 ### 🧾 SubQuery API projects: 62
 ### 👀 Networks with block explorers: 68
 ---
@@ -59,7 +59,7 @@
 |  47 | OriginTrail Parachain | OTP                                                                                                                                                                                                                                                   | Polkaholic                                         | [nova-wallet-origin-trail](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-origin-trail)         |
 |  48 | Parallel              | PARA<br />DOT<br />sDOT<br />ACA<br />aUSD<br />LDOT<br />GLMR<br />cDOT-6/13<br />cDOT-7/14<br />cDOT-8/15<br />cDOT-9/16<br />cDOT-10/17<br />INTR<br />iBTC<br />USDT<br />CLV<br />ASTR<br />PHA                                                  | Subscan<br />Sub.ID<br />Polkaholic                | [nova-wallet-parallel](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-parallel)                 |
 |  49 | Parallel Heiko        | HKO<br />KSM<br />aUSD<br />LKSM<br />sKSM<br />KAR<br />MOVR<br />PHA<br />GENS<br />USDT                                                                                                                                                            | Subscan<br />Polkaholic                            | [nova-wallet-parallel-heiko](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-parallel-heiko)     |
-|  50 | Pendulum              | PEN                                                                                                                                                                                                                                                   |  -                                                 |  -                                                                                                                  |
+|  50 | Pendulum              | PEN<br />DOT                                                                                                                                                                                                                                          |  -                                                 |  -                                                                                                                  |
 |  51 | Phala                 | PHA                                                                                                                                                                                                                                                   | Subscan<br />Polkaholic                            | [nova-wallet-phala](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-phala)                       |
 |  52 | Picasso               | PICA                                                                                                                                                                                                                                                  | Subscan<br />Polkaholic                            | [nova-wallet-picasso](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-picasso)                   |
 |  53 | Pichiu                | PCHU                                                                                                                                                                                                                                                  | Polkaholic                                         | [nova-wallet-pichiu](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-pichiu)                     |
