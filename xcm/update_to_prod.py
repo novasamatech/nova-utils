@@ -22,7 +22,7 @@ def update_networks(dev, prod, meta_dict):
 def update_network_base_weight(dev_file, prod_file, meta_dict):
     for chain_id, weight in dev_file['networkBaseWeight'].items():
         if chain_id not in prod_file['networkBaseWeight']:
-            print(f"Was added new base weight in chain: {meta_dict[chain_id]['name']}")
+            print(f"Added new base weight in chain: {meta_dict[chain_id]['name']}")
             if ask_to_update():
                 prod_file['networkBaseWeight'][chain_id] = weight
 
