@@ -1843,11 +1843,8 @@
             ],
             "governance": [
                 {
-                    "type": "polkassembly",
-                    "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                    "parameters": {
-                        "network": "basilisk"
-                    }
+                    "type": "subsquare",
+                    "url": "https://basilisk.subsquare.io/api"
                 }
             ]
         },
@@ -3960,6 +3957,12 @@
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-centrifuge"
                 }
+            ],
+            "governance": [
+                {
+                    "type": "subsquare",
+                    "url": "https://centrifuge.subsquare.io/api"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Centrifuge.svg",
@@ -4137,11 +4140,8 @@
             ],
             "governance": [
                 {
-                    "type": "polkassembly",
-                    "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                    "parameters": {
-                        "network": "hydradx"
-                    }
+                    "type": "subsquare",
+                    "url": "https://hydradx.subsquare.io/api"
                 }
             ]
         },
