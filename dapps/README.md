@@ -59,7 +59,7 @@
 |  55 | Sub.ID                         | https://sub.id/#/                                    | utilities                     |
 |  56 | SubBridge                      | https://subbridge.io/                                | bridge,evm                    |
 |  57 | Subsquare                      | https://polkadot.subsquare.io/                       | governance                    |
-|  58 | Talisman App (Desktop mode)                 | https://app.talisman.xyz/portfolio                   | crowdloans,staking,nft        |
+|  58 | Talisman App (Desktop mode)    | https://app.talisman.xyz/portfolio                   | crowdloans,staking,nft        |
 |  59 | Tinkernet Rewards Claim        | https://www.tinker.network/claim                     | crowdloans                    |
 |  60 | TofuNFT                        | https://tofunft.com/                                 | nft,evm                       |
 |  61 | Zeitgeist                      | https://app.zeitgeist.pm/                            | utilities                     |
