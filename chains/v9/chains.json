@@ -94,8 +94,8 @@
             ],
             "governance": [
                 {
-                    "type": "polkassembly",
-                    "url": "https://polkadot.polkassembly.io/v1/graphql"
+                    "type": "subsquare",
+                    "url": "https://polkadot.subsquare.io/api"
                 }
             ]
         },
@@ -203,8 +203,8 @@
             ],
             "governance": [
                 {
-                    "type": "polkassembly",
-                    "url": "https://kusama.polkassembly.io/v1/graphql"
+                    "type": "subsquare",
+                    "url": "https://kusama.subsquare.io/api"
                 }
             ],
             "governance-delegations": [
@@ -1030,6 +1030,51 @@
         ]
     },
     {
+        "chainId": "eip155:1",
+        "name": "Ethereum",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "ETH",
+                "priceId": "ethereum",
+                "type": "evmNative",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/ETH.svg",
+                "precision": 18
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://mainnet.infura.io/ws/v3/{INFURA_API_KEY}",
+                "name": "Infura node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Etherscan",
+                "extrinsic": "https://etherscan.io/tx/{hash}",
+                "account": "https://etherscan.io/address/{address}",
+                "event": null
+            }
+        ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "etherscan",
+                    "url": "https://api.etherscan.io/api",
+                    "parameters": {
+                        "assetType": "evm"
+                    }
+                }
+            ]
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Ethereum.svg",
+        "addressPrefix": 1,
+        "options": [
+            "ethereumBased",
+            "noSubstrateRuntime"
+        ]
+    },
+    {
         "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Moonriver",
@@ -1798,11 +1843,8 @@
             ],
             "governance": [
                 {
-                    "type": "polkassembly",
-                    "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                    "parameters": {
-                        "network": "basilisk"
-                    }
+                    "type": "subsquare",
+                    "url": "https://basilisk.subsquare.io/api"
                 }
             ]
         },
@@ -3665,57 +3707,6 @@
         "addressPrefix": 131
     },
     {
-        "chainId": "eac895d7768b17837a9c3a9f0280c01502c3ef40193df923490a0fa9c60ea076",
-        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Crab",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "CRAB",
-                "precision": 18,
-                "priceId": "darwinia-crab-network",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Crab.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://crab-parachain-rpc.darwinia.network/",
-                "name": "Crab node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://crab.subscan.io/extrinsic/{hash}",
-                "account": "https://crab.subscan.io/account/{address}",
-                "event": null
-            },
-            {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
-            }
-        ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/crab.json",
-            "overridesCommon": true
-        },
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-crab"
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Crab.svg",
-        "addressPrefix": 42
-    },
-    {
         "chainId": "4a12be580bb959937a1c7a61d5cf24428ed67fa571974b4007645d1886e7c89f",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Subsocial",
@@ -3915,6 +3906,12 @@
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-centrifuge"
                 }
+            ],
+            "governance": [
+                {
+                    "type": "subsquare",
+                    "url": "https://centrifuge.subsquare.io/api"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Centrifuge.svg",
@@ -4092,11 +4089,8 @@
             ],
             "governance": [
                 {
-                    "type": "polkassembly",
-                    "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                    "parameters": {
-                        "network": "hydradx"
-                    }
+                    "type": "subsquare",
+                    "url": "https://hydradx.subsquare.io/api"
                 }
             ]
         },
