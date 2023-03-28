@@ -3,6 +3,7 @@ This script compares the dev and prod transfers.json files, finds the difference
 """
 
 import json
+import os
 
 def ask_to_update():
     update = input("Would you like to update that data? (y/n)")
@@ -10,59 +11,61 @@ def ask_to_update():
         return True
     return False
 
-def update_networks(dev, prod, meta_dict):
-    for key, value in dev.items():
-        if key not in prod:
-            print(f"Was added new chain - {meta_dict[key]['name']}")
+def update_networks(dev_chains, prod_chains, meta_dict):
+    for dev_chain_id, dev_chain in dev_chains.items():
+        if dev_chain_id not in prod_chains:
+            print(f"Added new chain - {meta_dict[dev_chain_id]['name']}")
             if ask_to_update():
-                prod[key] = value
+                prod_chains[dev_chain_id] = dev_chain
 
-    return prod
+    return prod_chains
 
 def update_network_base_weight(dev_file, prod_file, meta_dict):
-    for chain_id, weight in dev_file['networkBaseWeight'].items():
-        if chain_id not in prod_file['networkBaseWeight']:
-            print(f"Added new base weight in chain: {meta_dict[chain_id]['name']}")
+    for dev_chain_id, dev_weight in dev_file['networkBaseWeight'].items():
+        if dev_chain_id not in prod_file['networkBaseWeight']:
+            print(f"Added new base weight in chain: {meta_dict[dev_chain_id]['name']}")
             if ask_to_update():
-                prod_file['networkBaseWeight'][chain_id] = weight
+                prod_file['networkBaseWeight'][dev_chain_id] = dev_weight
 
     return prod_file['networkBaseWeight']
 
 
 def update_reserves(dev_file, prod_file):
-    for asset_location, asset in dev_file['assetsLocation'].items():
-        if asset_location not in prod_file['assetsLocation']:
-            print(f"Was added new asset: {asset_location}")
+    for dev_asset_location, dev_asset in dev_file['assetsLocation'].items():
+        if dev_asset_location not in prod_file['assetsLocation']:
+            print(f"Added new asset: {dev_asset_location}")
             if ask_to_update():
-                prod_file['assetsLocation'][asset_location] = asset
+                prod_file['assetsLocation'][dev_asset_location] = dev_asset
 
     return prod_file['assetsLocation']
 
 
-def update_assets(dev, prod, meta_dict):
-    for chain_id, _ in prod.items():
-        for asset_location, asset in dev[chain_id]['assets'].items():
-            if asset_location \
-                not in prod[chain_id]['assets']:
-                print(f"Was added new asset {asset_location} in chain: {meta_dict[chain_id]['name']}")
+def update_assets(dev_chains, prod_chains, meta_dict):
+    for prod_chain_id, _ in prod_chains.items():
+        for dev_asset_location, dev_asset in dev_chains[prod_chain_id]['assets'].items():
+            if dev_asset_location not in prod_chains[prod_chain_id]['assets']:
+                print(f"Added new asset {dev_asset_location} in chain: {meta_dict[prod_chain_id]['name']}")
                 if ask_to_update():
-                    prod[chain_id]['assets'][asset_location] = asset
+                    prod_chains[prod_chain_id]['assets'][dev_asset_location] = dev_asset
 
-    return prod
+    return prod_chains
 
 
-def update_destinations(dev, prod, meta_dict):
-    for chain_id, chain in prod.items():
-        for asset_location, asset in chain['assets'].items():
-            for destination_id, destination in dev[chain_id]['assets'][asset_location]['xcmTransfers'].items():
-                if destination_id not in asset['xcmTransfers']:
-                    print(f"Was added new destination in {meta_dict[chain_id]['name']} \
-                          \nfor asset: {asset_location} \
-                          \nto network: {meta_dict[destination_id]['name']} ")
+def update_destinations(dev_chains, prod_chains, meta_dict):
+    for prod_chain_id, prod_chain in prod_chains.items():
+        for prod_asset_location, prod_asset in prod_chain['assets'].items():
+
+            for dev_destination_id, dev_destination \
+                in dev_chains[prod_chain_id]['assets'][prod_asset_location]['xcmTransfers'].items():
+
+                if dev_destination_id not in prod_asset['xcmTransfers']:
+                    print(f"Added new destination in {meta_dict[prod_chain_id]['name']} \
+                          \nfor asset: {prod_asset_location} \
+                          \nto network: {meta_dict[dev_destination_id]['name']} ")
                     if ask_to_update():
-                        prod[chain_id]['assets'][asset_location]['xcmTransfers'][destination_id] = destination
+                        prod_chains[prod_chain_id]['assets'][prod_asset_location]['xcmTransfers'][dev_destination_id] = dev_destination
 
-    return prod
+    return prod_chains
 
 
 def convert_chains_to_dict(chains_obj):
@@ -95,6 +98,8 @@ def convert_chain_dict_to_array_back(chains_dict):
 
 
 def promote_updates_to_prod(dev_file, prod_file, meta_data):
+
+    # meta_dict is used to get a human-readable network name
     meta_dict = {chain['chainId']: chain for chain in meta_data}
 
     dev_chains_dict = convert_chains_to_dict(dev_file['chains'])
@@ -118,17 +123,20 @@ def promote_updates_to_prod(dev_file, prod_file, meta_data):
 
 
 if __name__ == "__main__":
+    xcm_dev_file_path = os.getenv('DEV_XCM_JSON_PATH')
+    xcm_file_path = os.getenv('XCM_JSON_PATH')
+    chains_dev_path = os.getenv('DEV_CHAINS_JSON_PATH')
     # Read data from files
-    with open('xcm/v2/transfers_dev.json') as f:
+    with open(xcm_dev_file_path) as f:
         data1 = json.load(f)
-    with open('xcm/v2/transfers.json') as f:
+    with open(xcm_file_path) as f:
         data2 = json.load(f)
-    with open('chains/v8/chains_dev.json') as f:
+    with open(chains_dev_path) as f:
         meta_data = json.load(f)
 
 
     updated_obj = promote_updates_to_prod(dev_file=data1, prod_file=data2, meta_data=meta_data)
 
-    with open('xcm/v2/transfers.json', 'w') as f:
+    with open(xcm_file_path, 'w') as f:
         json.dump(updated_obj, f, indent=2)
-        print("Data updated in xcm/v2/transfers.json")
+        print(f"Data updated in {xcm_file_path}")
