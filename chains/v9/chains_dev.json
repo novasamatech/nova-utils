@@ -6982,5 +6982,30 @@
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Hashed.svg",
         "addressPrefix": 42
+    },
+    {
+        "chainId": "2f0555cc76fc2840a25a6ea3b9637146806f1f44b090c175ffde2a7e5ab36c03",
+        "name": "Bittensor",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "TAO",
+                "precision": 9,
+                "priceId": "bittensor",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/TAO_bittensor.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://entrypoint-finney.opentensor.ai:443",
+                "name": "Opentensor Fdn node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/bittensor.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Bittensor.svg",
+        "addressPrefix": 42
     }
 ]
