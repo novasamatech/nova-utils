@@ -126,6 +126,7 @@ if __name__ == "__main__":
     xcm_dev_file_path = os.getenv('DEV_XCM_JSON_PATH')
     xcm_file_path = os.getenv('XCM_JSON_PATH')
     chains_dev_path = os.getenv('DEV_CHAINS_JSON_PATH')
+    print(f"The following files are used:\n{xcm_dev_file_path}\n{xcm_file_path}\n{chains_dev_path}")
     # Read data from files
     with open(xcm_dev_file_path) as f:
         data1 = json.load(f)
