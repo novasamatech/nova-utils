@@ -29,7 +29,7 @@ def compare_type_files_for_all_networks(chains_file):
         index += 1
         print(
             f"Generating has started for: {chain['name']}. {index}/{len(chains_file)}")
-        if chain['name'] in ['Moonbeam', 'Moonriver', 'Moonbase', 'Crab']:
+        if chain['name'] in ['Moonbeam', 'Moonriver', 'Moonbase', 'Crab', 'Ethereum']:
             # TODO need to implement creation type file for EVM networks
             print(
                 f"Temporary can't generate type files for EVM networks, {chain['name']} was skipped")
