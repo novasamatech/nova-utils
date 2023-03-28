@@ -24,7 +24,7 @@ def generate_dapps_table():
 
 def generate_value_matrix():
     returning_array = []
-    with open(os.getcwd() + f"/dapps/dapps.json", 'r') as json_file:
+    with open(os.getcwd() + f"/dapps/dapps_full.json", 'r') as json_file:
         data = json.load(json_file)
     for dapp in data['dapps']:
         network_data_array = []
