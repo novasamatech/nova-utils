@@ -7007,5 +7007,50 @@
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Bittensor.svg",
         "addressPrefix": 42
+    },
+    {
+        "chainId": "eip155:137",
+        "name": "Polygon",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "MATIC",
+                "priceId": "matic-network",
+                "type": "evmNative",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/MATIC.svg",
+                "precision": 18
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc-mainnet.matic.network",
+                "name": "Polygon node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Polygonscan",
+                "extrinsic": "https://polygonscan.com/tx/{hash}",
+                "account": "https://polygonscan.com/address/{address}",
+                "event": null
+            }
+        ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "polygonscan",
+                    "url": "https://api.polygonscan.com/api",
+                    "parameters": {
+                        "assetType": "evm"
+                    }
+                }
+            ]
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Polygon.svg",
+        "addressPrefix": 137,
+        "options": [
+            "ethereumBased",
+            "noSubstrateRuntime"
+        ]
     }
 ]
