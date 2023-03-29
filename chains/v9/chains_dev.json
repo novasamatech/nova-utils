@@ -7038,7 +7038,7 @@
         "externalApi": {
             "history": [
                 {
-                    "type": "polygonscan",
+                    "type": "etherscan",
                     "url": "https://api.polygonscan.com/api",
                     "parameters": {
                         "assetType": "evm"
@@ -7059,7 +7059,7 @@
         "assets": [
             {
                 "assetId": 0,
-                "symbol": "MOONSAMA",
+                "symbol": "SAMA",
                 "priceId": "exosama-network",
                 "type": "evmNative",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/MOONSAMA.svg",
@@ -7083,7 +7083,7 @@
         "externalApi": {
             "history": [
                 {
-                    "type": "exosama",
+                    "type": "etherscan",
                     "url": "https://explorer.exosama.com/api",
                     "parameters": {
                         "assetType": "evm"
