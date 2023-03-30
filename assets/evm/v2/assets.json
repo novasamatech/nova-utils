@@ -68,6 +68,10 @@
             {
                 "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
                 "contractAddress": "0x3405A1bd46B85c5C029483FbECf2F3E611026e45"
+            },
+            {
+                "chainId": "eip155:1",
+                "contractAddress": "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0"
             }
         ]
     },
@@ -115,6 +119,10 @@
             {
                 "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
                 "contractAddress": "0x922D641a426DcFFaeF11680e5358F34d97d112E1"
+            },
+            {
+                "chainId": "eip155:1",
+                "contractAddress": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
             }
         ]
     },
@@ -359,6 +367,10 @@
             {
                 "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
                 "contractAddress": "0xc9BAA8cfdDe8E328787E29b4B078abf2DaDc2055"
+            },
+            {
+                "chainId": "eip155:1",
+                "contractAddress": "0xB8c77482e45F1F44dE1745F52C74426C631bDD52"
             }
         ]
     },
@@ -384,6 +396,45 @@
             {
                 "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
                 "contractAddress": "0x6021D2C27B6FBd6e7608D1F39B41398CAee2F824"
+            }
+        ]
+    },
+    {
+        "symbol": "HEX",
+        "precision": 8,
+        "name": "Hex",
+        "priceId": "hex",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/HEX.svg",
+        "instances": [
+            {
+                "chainId": "eip155:1",
+                "contractAddress": "0x2b591e99afe9f32eaa6214f7b7629768c40eeb39"
+            }
+        ]
+    },
+    {
+        "symbol": "stETH",
+        "precision": 18,
+        "name": "Lido Staked Ether",
+        "priceId": "staked-ether",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/stETH.svg",
+        "instances": [
+            {
+                "chainId": "eip155:1",
+                "contractAddress": "0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84"
+            }
+        ]
+    },
+    {
+        "symbol": "UNI",
+        "precision": 18,
+        "name": "Uniswap",
+        "priceId": "uniswap",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/UNI.svg",
+        "instances": [
+            {
+                "chainId": "eip155:1",
+                "contractAddress": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984"
             }
         ]
     }
