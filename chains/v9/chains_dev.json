@@ -7101,50 +7101,5 @@
             "ethereumBased",
             "noSubstrateRuntime"
         ]
-    },
-    {
-        "chainId": "eip155:80001",
-        "name": "Polygon - Mumbai",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "MATIC",
-                "type": "evmNative",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/MATIC.svg",
-                "precision": 18
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://polygon-testnet.public.blastapi.io",
-                "name": "Mumbai node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Mumbai Polygonscan",
-                "extrinsic": "https://mumbai.polygonscan.com/tx/{hash}",
-                "account": "https://mumbai.polygonscan.com/address/{address}",
-                "event": null
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "etherscan",
-                    "url": "https://api-testnet.polygonscan.com/api",
-                    "parameters": {
-                        "assetType": "evm"
-                    }
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Polygon_Mumbai.svg",
-        "addressPrefix": 80001,
-        "options": [
-            "testnet",
-            "ethereumBased",
-            "noSubstrateRuntime"
-        ]
     }
 ]
