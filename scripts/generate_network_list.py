@@ -19,8 +19,8 @@ readme = Template("""
 {{networks_table}}
 """)
 
-CHAINS_VERSION = os.getenv('CHAINS_VERSION', default="v6")
-XCM_VERSION = os.getenv('XCM_VERSION', default="v2")
+CHAINS_VERSION = os.getenv('CHAINS_VERSION')
+XCM_VERSION = os.getenv('XCM_VERSION')
 
 
 def generate_networks_table():
@@ -67,6 +67,8 @@ def parse_parameters(key_param, parsing_object):
                 if key_param == "history":
                     if item.get('type') == 'subquery':
                         return subquery_url_formator(item.get('url'))
+                    if item.get('type') == 'etherscan':
+                        return item.get('url')
                     return ", ".join(data)
                 else:
                     raise Exception(F"Unknown key_param: {key_param}")
