@@ -1044,12 +1044,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://mainnet.infura.io/ws/v3/9dddd77ac74043dc9a8dc48f82822c7d",
-                "name": "Infura node 2"
-            },
-            {
                 "url": "wss://mainnet.infura.io/ws/v3/{INFURA_API_KEY}",
                 "name": "Infura node"
+            },
+            {
+                "url": "wss://mainnet.infura.io/ws/v3/9dddd77ac74043dc9a8dc48f82822c7d",
+                "name": "Infura node 2"
             }
         ],
         "explorers": [
