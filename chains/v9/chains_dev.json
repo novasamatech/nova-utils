@@ -7062,5 +7062,37 @@
             "ethereumBased",
             "noSubstrateRuntime"
         ]
+    },
+    {
+        "chainId": "6c5894837ad89b6d92b114a2fb3eafa8fe3d26a54848e3447015442cd6ef4e66",
+        "name": "3DPass",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "P3D",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Default.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc2.3dpass.org",
+                "name": "3DPass node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "3DPass explorer",
+                "extrinsic": "https://explorer.3dpass.org/extrinsic/{hash}",
+                "account": "https://explorer.3dpass.org/account/{address}",
+                "event": null
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/3dpass.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/NovaCustom.svg",
+        "addressPrefix": 71
     }
 ]
