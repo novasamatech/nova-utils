@@ -796,20 +796,6 @@
             },
             {
               "destination": {
-                "chainId": "9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "202060000000"
-                  },
-                  "instructions": "xcmPalletDest"
-                }
-              },
-              "type": "xcmpallet"
-            },
-            {
-              "destination": {
                 "chainId": "9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed",
                 "assetId": 1,
                 "fee": {
