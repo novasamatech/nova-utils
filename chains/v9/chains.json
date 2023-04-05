@@ -9,13 +9,7 @@
                 "precision": 10,
                 "priceId": "polkadot",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
-                "staking": "relaychain",
-                "buyProviders": {
-                    "transak": {
-                        "network": "MAINNET"
-                    },
-                    "mercuryo": {}
-                }
+                "staking": "relaychain"
             }
         ],
         "nodes": [
@@ -114,13 +108,7 @@
                 "precision": 12,
                 "priceId": "kusama",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg",
-                "staking": "relaychain",
-                "buyProviders": {
-                    "transak": {
-                        "network": "MAINNET"
-                    },
-                    "mercuryo": {}
-                }
+                "staking": "relaychain"
             }
         ],
         "nodes": [
@@ -835,12 +823,7 @@
                 "precision": 18,
                 "priceId": "moonbeam",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonbeam.svg",
-                "staking": "parachain",
-                "buyProviders": {
-                    "transak": {
-                        "network": "MAINNET"
-                    }
-                }
+                "staking": "parachain"
             },
             {
                 "assetId": 1,
@@ -1090,12 +1073,7 @@
                 "precision": 18,
                 "priceId": "moonriver",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonriver.svg",
-                "staking": "parachain",
-                "buyProviders": {
-                    "transak": {
-                        "network": "MOONRIVER"
-                    }
-                }
+                "staking": "parachain"
             },
             {
                 "assetId": 1,
@@ -1365,12 +1343,7 @@
                 "symbol": "SDN",
                 "precision": 18,
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Shiden.svg",
-                "priceId": "shiden",
-                "buyProviders": {
-                    "transak": {
-                        "network": "SHIDEN"
-                    }
-                }
+                "priceId": "shiden"
             },
             {
                 "assetId": 1,
@@ -2761,12 +2734,7 @@
                 "symbol": "ASTR",
                 "priceId": "astar",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Astar.svg",
-                "precision": 18,
-                "buyProviders": {
-                    "transak": {
-                        "network": "ASTAR"
-                    }
-                }
+                "precision": 18
             },
             {
                 "assetId": 1,
