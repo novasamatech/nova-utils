@@ -7,6 +7,7 @@ runs:
       run: |
         echo "CHAINS_VERSION=$(bash .github/get_actual_json_path.sh chains)" >> "$GITHUB_ENV"
         echo "XCM_VERSION=$(bash .github/get_actual_json_path.sh xcm)" >> "$GITHUB_ENV"
+        echo "ASSETS_VERSION=$(bash .github/get_actual_json_path.sh assets)" >> "$GITHUB_ENV"
       shell: bash
 
     - name: Setup json paths
@@ -15,4 +16,6 @@ runs:
         echo "CHAINS_JSON_PATH=chains/${{ env.CHAINS_VERSION }}/chains.json" >> "$GITHUB_ENV"
         echo "DEV_XCM_JSON_PATH=xcm/${{ env.XCM_VERSION }}/transfers_dev.json" >> "$GITHUB_ENV"
         echo "XCM_JSON_PATH=xcm/${{ env.XCM_VERSION }}/transfers.json" >> "$GITHUB_ENV"
+        echo "DEV_ASSETS_JSON_PATH=xcm/${{ env.ASSETS_VERSION }}/assets_dev.json" >> "$GITHUB_ENV"
+        echo "ASSETS_JSON_PATH=xcm/${{ env.ASSETS_VERSION }}/assets.json" >> "$GITHUB_ENV"
       shell: bash
