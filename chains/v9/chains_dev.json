@@ -3307,6 +3307,14 @@
                 "name": "Dwellir node"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-equilibrium"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/equilibrium_types.json",
             "overridesCommon": true
