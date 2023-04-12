@@ -7,7 +7,7 @@ Note: For better UX in your app its recommended to
 1. prepare UI states & logic when this information cannot be fetched due to github unavailability
 2. cache the data to cover part of the issue of 1.
 
-### [List of supported networks](https://github.com/nova-wallet/nova-utils/tree/master/chains#list-of-supported-networks)
+### [List of supported networks](https://github.com/nova-wallet/nova-utils/tree/master/chains#supported-networks--assets-data)
 ### [List of supported dapps](https://github.com/nova-wallet/nova-utils/tree/master/dapps#list-of-supported-dapps)
 
 ## Modules
