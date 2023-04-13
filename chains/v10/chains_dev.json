@@ -3366,6 +3366,14 @@
                 "name": "Dwellir node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://equilibrium.subscan.io/extrinsic/{hash}",
+                "account": "https://equilibrium.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
         "externalApi": {
             "history": [
                 {
