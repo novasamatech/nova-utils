@@ -5784,6 +5784,12 @@
         ],
         "explorers": [
             {
+                "name": "Subscan",
+                "extrinsic": "https://bajun.subscan.io/extrinsic/{hash}",
+                "account": "https://bajun.subscan.io/account/{address}",
+                "event": null
+            },
+            {
                 "name": "Polkaholic",
                 "account": "https://polkaholic.io/account/{address}",
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
