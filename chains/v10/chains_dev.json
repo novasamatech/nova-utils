@@ -3332,6 +3332,28 @@
                 "typeExtras": {
                     "assetId": "25969"
                 }
+            },
+            {
+                "assetId": 1,
+                "symbol": "DOT",
+                "precision": 9,
+                "priceId": "polkadot",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
+                "type": "equilibrium",
+                "typeExtras": {
+                    "assetId": "6582132"
+                }
+            },
+            {
+                "assetId": 2,
+                "symbol": "EQD",
+                "precision": 9,
+                "priceId": "tether",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/EQD.svg",
+                "type": "equilibrium",
+                "typeExtras": {
+                    "assetId": "6648164"
+                }
             }
         ],
         "nodes": [
@@ -3342,6 +3364,14 @@
             {
                 "url": "wss://equilibrium-rpc.dwellir.com",
                 "name": "Dwellir node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://equilibrium.subscan.io/extrinsic/{hash}",
+                "account": "https://equilibrium.subscan.io/account/{address}",
+                "event": null
             }
         ],
         "externalApi": {
