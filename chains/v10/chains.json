@@ -5903,5 +5903,50 @@
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Hashed.svg",
         "addressPrefix": 42
+    },
+    {
+        "chainId": "eip155:2109",
+        "name": "Exosama",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "SAMA",
+                "priceId": "exosama-network",
+                "type": "evmNative",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/MOONSAMA.svg",
+                "precision": 18
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc.exosama.com",
+                "name": "Exosama node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Exosama explorer",
+                "extrinsic": "https://explorer.exosama.com/tx/{hash}",
+                "account": "https://explorer.exosama.com/address/{address}",
+                "event": null
+            }
+        ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "etherscan",
+                    "url": "https://explorer.exosama.com/api",
+                    "parameters": {
+                        "assetType": "evm"
+                    }
+                }
+            ]
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Exosama.svg",
+        "addressPrefix": 2109,
+        "options": [
+            "ethereumBased",
+            "noSubstrateRuntime"
+        ]
     }
 ]
