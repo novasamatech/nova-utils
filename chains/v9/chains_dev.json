@@ -5784,6 +5784,12 @@
         ],
         "explorers": [
             {
+                "name": "Subscan",
+                "extrinsic": "https://bajun.subscan.io/extrinsic/{hash}",
+                "account": "https://bajun.subscan.io/account/{address}",
+                "event": null
+            },
+            {
                 "name": "Polkaholic",
                 "account": "https://polkaholic.io/account/{address}",
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
@@ -7113,7 +7119,7 @@
                 "assetId": 0,
                 "symbol": "P3D",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Default.svg"
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/P3D.svg"
             }
         ],
         "nodes": [
@@ -7134,7 +7140,7 @@
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/3dpass.json",
             "overridesCommon": true
         },
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/NovaCustom.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/3DPass.svg",
         "addressPrefix": 71
     }
 ]
