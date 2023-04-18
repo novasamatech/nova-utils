@@ -4582,6 +4582,48 @@
                     "existentialDeposit": "44",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 6,
+                "symbol": "iBTC",
+                "precision": 8,
+                "priceId": "bitcoin",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/interBTC.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0b000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "36",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 7,
+                "symbol": "ZTG",
+                "precision": 10,
+                "priceId": "zeitgeist",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Zeitgeist.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0c000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1204151916",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 8,
+                "symbol": "ASTR",
+                "precision": 18,
+                "priceId": "astar",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Astar.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x09000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "147058823529412000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
