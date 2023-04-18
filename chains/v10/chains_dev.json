@@ -2489,8 +2489,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://ws.calamari.systems/",
+                "url": "wss://calamari.systems",
                 "name": "Manta network node"
+            },
+            {
+                "url": "wss://ws.calamari.systems/",
+                "name": "Manta network node old"
             }
         ],
         "explorers": [
