@@ -45,12 +45,16 @@ def compare_reserve_fee(object_accumulator, actual_assets_location, changed_asse
     """
 
     for assets, assets_data in actual_assets_location.items():
-        new_value = deep_search_an_elemnt_by_key(
-            changed_assets_location[assets], 'value')
-        old_value = deep_search_an_elemnt_by_key(assets_data, 'value')
-        if new_value != old_value:
-            object_accumulator['reserveFee'][assets] = {
-                'old_value': old_value, 'new_value': new_value}
+        try:
+            new_value = deep_search_an_elemnt_by_key(
+                changed_assets_location[assets], 'value')
+            old_value = deep_search_an_elemnt_by_key(assets_data, 'value')
+            if new_value != old_value:
+                object_accumulator['reserveFee'][assets] = {
+                    'old_value': old_value, 'new_value': new_value}
+        except:
+            object_accumulator['reserveFee'][assets] = "That asset was removed"
+        
 
 
 def find_new_destinations(object_accumulator, actual_chain_dict, new_cahin_dict, chain_json_dict):
