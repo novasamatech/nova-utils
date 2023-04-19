@@ -24,7 +24,7 @@ class TestAssets:
         chain.init_properties()
         if isinstance(chain.substrate.token_symbol, list):
             for symbol in chain.substrate.token_symbol:
-                delayed_assert.expect(symbol in added_assets.keys() or symbol in added_assets.values(), "new token to add: " + symbol)
+                delayed_assert.expect(symbol in chain_assets.keys() or symbol in chain_assets.values(), "new token to add: " + symbol)
         else:
             assert chain.assets[0]['symbol'] == chain.properties.symbol, "native asset has changed"
         delayed_assert.assert_expectations()
