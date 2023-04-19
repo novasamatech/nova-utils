@@ -42,6 +42,6 @@ class TestETHNodesAvailability:
 
         # Compare block numbers and assert the difference is not greater than 3
         assert wss_block_number - rpc_block_number <= 3, f"Difference in block numbers is greater than 3:\
-            eth_block_number={wss_block_number}, rpc_block_number={rpc_block_number}"
+            wss_block_number={wss_block_number}, rpc_block_number={rpc_block_number}"
         
         
