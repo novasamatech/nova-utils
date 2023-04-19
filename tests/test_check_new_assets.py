@@ -11,14 +11,15 @@ task_ids = [
 
 @pytest.mark.parametrize("chain", chains, ids=task_ids)
 class TestAssets:
+    # workaround to differences between asset names at runtime and in our configuration
+    asset_mapping = {
+        'AUSD': 'KUSD'
+    }
+    
     def test_has_new_assets(self, chain: Chain):
-
-        added_assets = {}
-        for asset in chain.assets:
-            if asset['symbol'].upper() == 'AUSD':
-                added_assets.update({asset['symbol'].upper(): 'KUSD'})
-            else:
-                added_assets[asset['symbol'].upper()] = ''
+        
+        chain_assets = {asset['symbol'].upper(): '' for asset in chain.assets}
+        chain_assets.update(self.asset_mapping)
         chain.create_connection()
         chain.init_properties()
         if isinstance(chain.substrate.token_symbol, list):
