@@ -12,14 +12,18 @@ task_ids = [
 @pytest.mark.parametrize("chain", chains, ids=task_ids)
 class TestAssets:
     def test_has_new_assets(self, chain: Chain):
-        added_assets = []
+
+        added_assets = {}
         for asset in chain.assets:
-            added_assets.append(asset['symbol'].upper())
+            if asset['symbol'].upper() == 'AUSD':
+                added_assets.update({asset['symbol'].upper(): 'KUSD'})
+            else:
+                added_assets[asset['symbol'].upper()] = ''
         chain.create_connection()
         chain.init_properties()
         if isinstance(chain.substrate.token_symbol, list):
             for symbol in chain.substrate.token_symbol:
-                delayed_assert.expect(symbol in added_assets, "new token to add: " + symbol)
+                delayed_assert.expect(symbol in added_assets.keys() or symbol in added_assets.values(), "new token to add: " + symbol)
         else:
             assert chain.assets[0]['symbol'] == chain.properties.symbol, "native asset has changed"
         delayed_assert.assert_expectations()
