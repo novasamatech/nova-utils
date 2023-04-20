@@ -5973,5 +5973,77 @@
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Bittensor.svg",
         "addressPrefix": 42
+    },
+    {
+        "chainId": "89d3ec46d2fb43ef5a9713833373d5ea666b092fa8fd68fbc34596036571b907",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Equilibrium",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "EQ",
+                "precision": 9,
+                "priceId": "equilibrium-token",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Equilibrium.svg",
+                "type": "equilibrium",
+                "typeExtras": {
+                    "assetId": "25969"
+                }
+            },
+            {
+                "assetId": 1,
+                "symbol": "DOT",
+                "precision": 9,
+                "priceId": "polkadot",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
+                "type": "equilibrium",
+                "typeExtras": {
+                    "assetId": "6582132"
+                }
+            },
+            {
+                "assetId": 2,
+                "symbol": "EQD",
+                "precision": 9,
+                "priceId": "tether",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/EQD.svg",
+                "type": "equilibrium",
+                "typeExtras": {
+                    "assetId": "6648164"
+                }
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://node.pol.equilibrium.io",
+                "name": "Equilibrium node"
+            },
+            {
+                "url": "wss://equilibrium-rpc.dwellir.com",
+                "name": "Dwellir node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://equilibrium.subscan.io/extrinsic/{hash}",
+                "account": "https://equilibrium.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-equilibrium"
+                }
+            ]
+        },
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/equilibrium_types.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Equilibrium.svg",
+        "addressPrefix": 68
     }
 ]
