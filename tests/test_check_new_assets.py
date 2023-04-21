@@ -13,7 +13,8 @@ task_ids = [
 class TestAssets:
     # workaround to differences between asset names at runtime and in our configuration
     asset_mapping = {
-        'AUSD': 'KUSD'
+        'AUSD': 'KUSD',
+        'XX': 'xx'
     }
     
     def test_has_new_assets(self, chain: Chain):
