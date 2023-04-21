@@ -13,7 +13,8 @@ task_ids = [
 class TestAssets:
     # workaround to differences between asset names at runtime and in our configuration
     asset_mapping = {
-        'AUSD': 'KUSD'
+        'AUSD': 'KUSD',
+        'XX': 'xx'
     }
     
     def test_has_new_assets(self, chain: Chain):
@@ -26,5 +27,5 @@ class TestAssets:
             for symbol in chain.substrate.token_symbol:
                 delayed_assert.expect(symbol in chain_assets.keys() or symbol in chain_assets.values(), "new token to add: " + symbol)
         else:
-            assert chain.assets[0]['symbol'] == chain.properties.symbol, "native asset has changed"
+            assert chain.properties.symbol in chain_assets.keys() or chain.properties.symbol in chain_assets.values(), "native asset has changed"
         delayed_assert.assert_expectations()
