@@ -5915,35 +5915,32 @@
         "addressPrefix": 42
     },
     {
-        "chainId": "6c5894837ad89b6d92b114a2fb3eafa8fe3d26a54848e3447015442cd6ef4e66",
-        "name": "3DPass",
+        "chainId": "e358eb1d11b31255a286c12e44fe6780b7edb171d657905a97e39f71d9c6c3ee",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Ajuna",
         "assets": [
             {
                 "assetId": 0,
-                "symbol": "P3D",
+                "symbol": "AJUN",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/P3D.svg"
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/AJUN.svg"
             }
         ],
         "nodes": [
             {
-                "url": "wss://rpc2.3dpass.org",
-                "name": "3DPass node"
-            }
-        ],
-        "explorers": [
+                "url": "wss://rpc-parachain.ajuna.network",
+                "name": "Ajuna node"
+            },
             {
-                "name": "3DPass explorer",
-                "extrinsic": "https://explorer.3dpass.org/extrinsic/{hash}",
-                "account": "https://explorer.3dpass.org/account/{address}",
-                "event": null
+                "url": "wss://ajuna.public.curie.radiumblock.co/ws",
+                "name": "RadiumBlock node"
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/3dpass.json",
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/ajuna.json",
             "overridesCommon": true
         },
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/3DPass.svg",
-        "addressPrefix": 71
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Ajuna.svg",
+        "addressPrefix": 1328
     }
 ]

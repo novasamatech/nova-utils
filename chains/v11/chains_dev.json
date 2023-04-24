@@ -1751,6 +1751,48 @@
                     "existentialDeposit": "0",
                     "transfersEnabled": false
                 }
+            },
+            {
+                "assetId": 9,
+                "symbol": "INTR",
+                "precision": 10,
+                "priceId": "interlay",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Interlay.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0002",
+                    "currencyIdType": "interbtc_primitives.CurrencyId",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 10,
+                "symbol": "iBTC",
+                "precision": 8,
+                "priceId": "bitcoin",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/interBTC.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0001",
+                    "currencyIdType": "interbtc_primitives.CurrencyId",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 11,
+                "symbol": "DOT",
+                "precision": 10,
+                "priceId": "polkadot",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0000",
+                    "currencyIdType": "interbtc_primitives.CurrencyId",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
@@ -3336,7 +3378,7 @@
             {
                 "assetId": 1,
                 "symbol": "DOT",
-                "precision": 9,
+                "precision": 10,
                 "priceId": "polkadot",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
                 "type": "equilibrium",
@@ -4402,6 +4444,10 @@
             }
         ],
         "nodes": [
+            {
+                "url": "wss://centrifuge-parachain.api.onfinality.io/public-ws",
+                "name": "Onfinality node"
+            },
             {
                 "url": "wss://fullnode.parachain.centrifuge.io",
                 "name": "Centrifuge node"
@@ -6431,7 +6477,7 @@
         "assets": [
             {
                 "assetId": 0,
-                "symbol": "KAPEX",
+                "symbol": "KPX",
                 "precision": 12,
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/KAPEX.svg"
             }
@@ -6567,14 +6613,14 @@
         ]
     },
     {
-        "chainId": "03e9685133ff74308fc46ac457da098f00d7b0a61498d5cbd7763bf40559fa81",
-        "name": "Novasama Testnet",
+        "chainId": "f460fe68f5f34ced6b18d8e4612410e334c55521bf27714cdca654b63b685ae6",
+        "name": "Novasama Testnet - Kusama",
         "assets": [
             {
                 "assetId": 0,
-                "symbol": "Unit",
-                "precision": 10,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/GOV2.svg"
+                "symbol": "KSM",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg"
             }
         ],
         "nodes": [
@@ -6596,7 +6642,7 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Governance2_Testnet.svg",
-        "addressPrefix": 0,
+        "addressPrefix": 2,
         "options": [
             "testnet",
             "governance"
