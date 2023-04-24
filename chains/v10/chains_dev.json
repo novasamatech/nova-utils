@@ -4403,6 +4403,10 @@
         ],
         "nodes": [
             {
+                "url": "wss://centrifuge-parachain.api.onfinality.io/public-ws",
+                "name": "Onfinality node"
+            },
+            {
                 "url": "wss://fullnode.parachain.centrifuge.io",
                 "name": "Centrifuge node"
             }
