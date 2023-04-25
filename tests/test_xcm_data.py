@@ -2,7 +2,7 @@ import pytest
 import json
 import deepdiff
 
-from tests.data.setting_data import chains
+from tests.data.setting_data import get_substrate_chains
 from scripts.utils.chain_model import Chain
 
 xcm_data_file_path = './tests/data/xcm_data.json'
@@ -13,10 +13,10 @@ def was_network_data_changed(data_from_network, saved_data):
 
 task_ids = [
     f'Check XCM data for {task.name}'
-    for task in chains
+    for task in get_substrate_chains()
 ]
 
-@pytest.mark.parametrize('chain', chains, ids=task_ids)
+@pytest.mark.parametrize('chain', get_substrate_chains(), ids=task_ids)
 class TestCompareXCMData:
 
     def test_xcm_parameters(self, chain: Chain):

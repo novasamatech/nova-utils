@@ -1,15 +1,15 @@
 import pytest
 import delayed_assert
 from scripts.utils.chain_model import Chain
-from tests.data.setting_data import chains
+from tests.data.setting_data import get_substrate_chains
 
 task_ids = [
     f'Test for {task.name}'
-    for task in chains
+    for task in get_substrate_chains()
 ]
 
 
-@pytest.mark.parametrize("chain", chains, ids=task_ids)
+@pytest.mark.parametrize("chain", get_substrate_chains(), ids=task_ids)
 class TestAssets:
     # workaround to differences between asset names at runtime and in our configuration
     asset_mapping = {
