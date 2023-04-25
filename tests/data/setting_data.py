@@ -5,11 +5,20 @@ from scripts.utils.work_with_data import get_network_list
 from scripts.utils.chain_model import Chain
 
 network_file_path = os.getenv('CHAINS_JSON_PATH', "chains/v10/chains.json")
-skipped_networks = ['Edgeware', 'Ethereum']
+skipped_networks = ['Edgeware']
 network_list = get_network_list('/' + network_file_path)
 
-chains = [Chain(data) for data in network_list if data.get(
-    'name') not in skipped_networks]
+
+def get_substrate_chains():
+    substrate_chains = []
+    for data in network_list:
+        if data.get('name') in skipped_networks:
+            continue
+        options = data.get('options')
+        if options is None or 'noSubstrateRuntime' in options:
+            substrate_chains.append(Chain(data))
+    
+    return substrate_chains
 
 
 def get_ethereum_chains():
