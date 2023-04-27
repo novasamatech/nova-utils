@@ -1,7 +1,7 @@
 import json
 import os
 
-CHAINS_VERISON = os.getenv('CHAINS_VERSION', default = "v9")
+CHAINS_VERISON = os.getenv('CHAINS_VERSION', default = "v11")
 
 with open(f"chains/{CHAINS_VERISON}/chains_dev.json") as fin:
     dev_chains = json.load(fin)
@@ -14,7 +14,8 @@ def get_ids(chains):
     return list(map(lambda x: x["chainId"], chains))
 
 
-exludeChains = ['Kintsugi', 'Singular testnet', 'Interlay', 'Mangata X', 'Arctic Relay Testnet', 'Rococo Testnet', 'Imbue', 'Acala Mandala', 'Polymesh Testnet', 'Ternoa Alphanet', 'Turing Staging', 'Governance2 Testnet', 'Beresheet', 'Novasama Testnet - Kusama', 'Fusotao', 'KILT Peregrine', 'Aventus Testnet', 'Kintsugi Testnet', 'Equilibrium']
+exludeChains = ['Kintsugi', 'Interlay', 'Mangata X', 'Fusotao', 'Equilibrium']
+skip_options = ['ethereumBased', 'noSubstrateRuntime', 'testnet']
 
 dev_ids = get_ids(dev_chains)
 test_ids = get_ids(test_chains)
@@ -42,8 +43,14 @@ for dev_index, dev_id in enumerate(dev_ids):  # Add new network
             'name': dev_chains[dev_index]['name'],
             'account': ' - '}
 
+        options = dev_chains[dev_index].get('options')
+        
         if (dev_chains[dev_index]['name'] in exludeChains):  # Skip some special chains
             continue
+        
+        if options is not None:
+            need_skip = [option for option in skip_options if option in options]
+            if need_skip: continue
 
         test_chains.append(chain_dict)
 
