@@ -15,8 +15,13 @@ def get_substrate_chains():
         if data.get('name') in skipped_networks:
             continue
         options = data.get('options')
-        if options is None or 'noSubstrateRuntime' in options:
+        
+        if options is None:
             substrate_chains.append(Chain(data))
+        elif 'noSubstrateRuntime' not in options:
+            substrate_chains.append(Chain(data))
+        else:
+            continue
     
     return substrate_chains
 
