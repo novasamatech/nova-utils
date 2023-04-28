@@ -29,11 +29,15 @@ def compare_type_files_for_all_networks(chains_file):
         index += 1
         print(
             f"Generating has started for: {chain['name']}. {index}/{len(chains_file)}")
-        if chain['name'] in ['Moonbeam', 'Moonriver', 'Moonbase', 'Crab', 'Ethereum']:
-            # TODO need to implement creation type file for EVM networks
-            print(
-                f"Temporary can't generate type files for EVM networks, {chain['name']} was skipped")
-            continue
+        chain_options = chain.get('options')
+        skip_options = {'ethereumBased', 'noSubstrateRuntime'}
+        
+        if chain_options is not None:
+            if skip_options.intersection(chain_options):
+                # TODO need to implement creation type file for EVM networks
+                print(f"Temporary can't generate type files for EVM networks, {chain['name']} was skipped")
+                continue
+
         actual_types_file_path = chain['types']['url'].split('master/')[1]
         actual_types_file = get_data_from_file(actual_types_file_path)
         chain_object = Chain(chain)
@@ -77,11 +81,11 @@ def main(argv):
     """
 
     if 'dev' in argv:
-        chains_path = os.getenv("DEV_CHAINS_JSON_PATH", "chains/v8/chains_dev.json")
+        chains_path = os.getenv("DEV_CHAINS_JSON_PATH", "chains/v11/chains_dev.json")
         chains_file = get_data_from_file(chains_path)
         compare_type_files_for_all_networks(chains_file)
     elif 'prod' in argv:
-        chains_path = os.getenv("CHAINS_JSON_PATH", "chains/v8/chains.json")
+        chains_path = os.getenv("CHAINS_JSON_PATH", "chains/v11/chains.json")
         chains_file = get_data_from_file(chains_path)
         compare_type_files_for_all_networks(chains_file)
     else:
