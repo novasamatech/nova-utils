@@ -1,5 +1,5 @@
 {
-  "runtime_id": 6,
+  "runtime_id": 15,
   "types": {
     "Balance": "u128",
     "Index": "u32",
@@ -7,8 +7,8 @@
     "Address": "sp_runtime.multiaddress.MultiAddress",
     "ExtrinsicSignature": "sp_runtime.MultiSignature",
     "ParaId": "polkadot_parachain.primitives.Id",
-    "alphanet_runtime.Event": "GenericEvent",
-    "alphanet_runtime.Call": "GenericCall",
+    "alphanet_runtime.RuntimeEvent": "GenericEvent",
+    "alphanet_runtime.RuntimeCall": "GenericCall",
     "sp_core.crypto.AccountId32": "GenericAccountId",
     "pallet_identity.types.Data": "Data"
   },
