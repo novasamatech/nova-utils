@@ -30,11 +30,10 @@ def compare_type_files_for_all_networks(chains_file):
         print(
             f"Generating has started for: {chain['name']}. {index}/{len(chains_file)}")
         chain_options = chain.get('options')
-        skip_options = ['ethereumBased', 'noSubstrateRuntime']
+        skip_options = {'ethereumBased', 'noSubstrateRuntime'}
         
         if chain_options is not None:
-            need_skip = [option for option in skip_options if option in chain_options]
-            if need_skip:
+            if skip_options.intersection(chain_options):
                 # TODO need to implement creation type file for EVM networks
                 print(f"Temporary can't generate type files for EVM networks, {chain['name']} was skipped")
                 continue
