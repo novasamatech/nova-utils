@@ -6663,6 +6663,14 @@
                 "event": null
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-myriad"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/myriad.json",
             "overridesCommon": true
@@ -6867,6 +6875,14 @@
                 "event": null
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-aventus"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/aventus.json",
             "overridesCommon": true
@@ -6901,6 +6917,14 @@
                 "event": null
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-crust"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/crust.json",
             "overridesCommon": true
@@ -7056,6 +7080,14 @@
                 "name": "Hashed systems 2 node"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-hashed-network"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/hashed.json",
             "overridesCommon": true
@@ -7081,6 +7113,14 @@
                 "name": "Opentensor Fdn node"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bittensor"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/bittensor.json",
             "overridesCommon": true
@@ -7203,6 +7243,14 @@
                 "event": null
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-3dpass"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/3dpass.json",
             "overridesCommon": true
@@ -7232,6 +7280,14 @@
                 "name": "RadiumBlock node"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-ajuna"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/ajuna.json",
             "overridesCommon": true
