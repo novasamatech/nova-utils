@@ -4244,6 +4244,12 @@
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-zeitgeist"
                 }
+            ],
+            "governance": [
+                {
+                    "type": "subsquare",
+                    "url": "https://zeitgeist.subsquare.io/api"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Zeitgeist.svg",
@@ -5040,6 +5046,12 @@
                 {
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-phala"
+                }
+            ],
+            "governance": [
+                {
+                    "type": "subsquare",
+                    "url": "https://phala.subsquare.io/api"
                 }
             ]
         },
