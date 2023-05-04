@@ -3686,10 +3686,19 @@
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-zeitgeist"
                 }
+            ],
+            "governance": [
+                {
+                    "type": "subsquare",
+                    "url": "https://zeitgeist.subsquare.io/api"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Zeitgeist.svg",
-        "addressPrefix": 73
+        "addressPrefix": 73,
+        "options": [
+            "governance-v1"
+        ]
     },
     {
         "chainId": "da5831fbc8570e3c6336d0d72b8c08f8738beefec812df21ef2afc2982ede09c",
@@ -4393,10 +4402,19 @@
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-phala"
                 }
+            ],
+            "governance": [
+                {
+                    "type": "subsquare",
+                    "url": "https://phala.subsquare.io/api"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Phala.svg",
-        "addressPrefix": 30
+        "addressPrefix": 30,
+        "options": [
+            "governance-v1"
+        ]
     },
     {
         "chainId": "0f62b701fb12d02237a33b84818c11f621653d2b1614c777973babf4652b535d",
