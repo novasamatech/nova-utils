@@ -6040,5 +6040,41 @@
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/3DPass.svg",
         "addressPrefix": 71
+    },
+    {
+        "chainId": "4a587bf17a404e3572747add7aab7bbe56e805a5479c6c436f07f36fcc8d3ae1",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Frequency",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "FRQCY",
+                "precision": 8,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/FRQCY.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://0.rpc.frequency.xyz",
+                "name": "Frequency0 node"
+            },
+            {
+                "url": "wss://1.rpc.frequency.xyz",
+                "name": "Frequency1 node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Polkaholic",
+                "account": "https://polkaholic.io/account/{address}",
+                "extrinsic": "https://polkaholic.io/tx/{hash}"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/frequency.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Frequency.svg",
+        "addressPrefix": 90
     }
 ]
