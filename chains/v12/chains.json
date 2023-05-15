@@ -114,7 +114,9 @@
                 "precision": 12,
                 "priceId": "kusama",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg",
-                "staking": "relaychain",
+                "staking": [
+                    "relaychain"
+                ],
                 "buyProviders": {
                     "transak": {
                         "network": "MAINNET"
@@ -229,7 +231,9 @@
                 "symbol": "WND",
                 "precision": 12,
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Westend.svg",
-                "staking": "relaychain"
+                "staking": [
+                    "relaychain"
+                ]
             }
         ],
         "nodes": [
@@ -835,7 +839,9 @@
                 "precision": 18,
                 "priceId": "moonbeam",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonbeam.svg",
-                "staking": "parachain",
+                "staking": [
+                    "parachain"
+                ],
                 "buyProviders": {
                     "transak": {
                         "network": "MAINNET"
@@ -1122,7 +1128,9 @@
                 "precision": 18,
                 "priceId": "moonriver",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonriver.svg",
-                "staking": "parachain",
+                "staking": [
+                    "parachain"
+                ],
                 "buyProviders": {
                     "transak": {
                         "network": "MOONRIVER"
@@ -2386,7 +2394,9 @@
                 "priceId": "calamari-network",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Calamari.svg",
                 "precision": 12,
-                "staking": "parachain"
+                "staking": [
+                    "parachain"
+                ]
             }
         ],
         "nodes": [
@@ -3688,7 +3698,9 @@
             {
                 "assetId": 0,
                 "symbol": "ZTG",
-                "staking": "parachain",
+                "staking": [
+                    "parachain"
+                ],
                 "precision": 10,
                 "priceId": "zeitgeist",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Zeitgeist.svg"
@@ -4517,7 +4529,9 @@
             {
                 "assetId": 0,
                 "symbol": "TUR",
-                "staking": "turing",
+                "staking": [
+                    "turing"
+                ],
                 "precision": 10,
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Turing.svg"
             },
@@ -4670,7 +4684,9 @@
                 "assetId": 0,
                 "symbol": "AZERO",
                 "priceId": "aleph-zero",
-                "staking": "aleph-zero",
+                "staking": [
+                    "aleph-zero"
+                ],
                 "precision": 12,
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Aleph_zero.svg"
             }
@@ -4806,7 +4822,9 @@
                 "assetId": 0,
                 "symbol": "PDEX",
                 "priceId": "polkadex",
-                "staking": "relaychain",
+                "staking": [
+                    "relaychain"
+                ],
                 "precision": 12,
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadex.svg"
             }
@@ -5554,7 +5572,9 @@
                 "assetId": 0,
                 "symbol": "CAPS",
                 "priceId": "coin-capsule",
-                "staking": "relaychain",
+                "staking": [
+                    "relaychain"
+                ],
                 "precision": 18,
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Ternoa.svg"
             }
