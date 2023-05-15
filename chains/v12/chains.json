@@ -1950,7 +1950,10 @@
             "overridesCommon": true
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Altair.svg",
-        "addressPrefix": 136
+        "addressPrefix": 136,
+        "options": [
+            "governance-v1"
+        ]
     },
     {
         "chainId": "64a1c658a48b2e70a7fb1ad4c39eea35022568c20fc44a6e2e3d0a57aee6053b",
