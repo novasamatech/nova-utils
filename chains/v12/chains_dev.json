@@ -22,6 +22,10 @@
         ],
         "nodes": [
             {
+                "url": "wss://rpc-polkadot.luckyfriday.io",
+                "name": "LuckyFriday node"
+            },
+            {
                 "url": "wss://rpc.polkadot.io",
                 "name": "Parity node"
             },
@@ -128,6 +132,10 @@
             }
         ],
         "nodes": [
+            {
+                "url": "wss://rpc-kusama.luckyfriday.io",
+                "name": "LuckyFriday node"
+            },
             {
                 "url": "wss://rpc.ibp.network/kusama",
                 "name": "IBP network node"
