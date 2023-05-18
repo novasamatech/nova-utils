@@ -6500,6 +6500,7 @@
                 "assetId": 0,
                 "symbol": "KSM",
                 "precision": 12,
+                "staking": "relaychain",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg"
             }
         ],
@@ -6514,6 +6515,18 @@
             "overridesCommon": true
         },
         "externalApi": {
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/novasama-test-kusama"
+                }
+            ],
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/novasama-test-kusama"
+                }
+            ],
             "governance-delegations": [
                 {
                     "type": "subquery",
@@ -6525,7 +6538,8 @@
         "addressPrefix": 2,
         "options": [
             "testnet",
-            "governance"
+            "governance",
+            "governance-v1"
         ]
     },
     {
