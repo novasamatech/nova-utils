@@ -64,6 +64,6 @@
 |  60 | Tinkernet Rewards Claim        | https://www.tinker.network/claim                     | crowdloans                    |
 |  61 | TofuNFT                        | https://tofunft.com/                                 | nft,evm                       |
 |  62 | Zeitgeist                      | https://app.zeitgeist.pm/                            | utilities                     |
-|  63 | Zenlink (Desktop mode)         | https://dex.zenlink.pro/#/swap                       | dex,staking                   |
+|  63 | Zenlink                        | https://app.zenlink.pro                              | dex,staking                   |
 |  64 | cBRIDGE                        | https://cbridge.celer.network/#/transfer             | dex,evm,nft                   |
 |  65 | xx network Hub                 | https://hub.xx.network                               | social,staking,utilities      |
