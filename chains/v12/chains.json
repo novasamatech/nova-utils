@@ -4488,8 +4488,16 @@
         ],
         "nodes": [
             {
+                "url": "wss://phala-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
                 "url": "wss://api.phala.network/ws",
                 "name": "Phala node"
+            },
+            {
+                "url": "wss://phala.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -4789,6 +4797,10 @@
             }
         ],
         "nodes": [
+            {
+                "url": "wss://composable.api.onfinality.io/public-ws",
+                "name": "Onfinality node"
+            },
             {
                 "url": "wss://rpc.composable.finance",
                 "name": "Composable node"
