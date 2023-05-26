@@ -232,10 +232,24 @@
         "instructions": "xtokensReserve"
       }
     },
-    "USDT": {
+    "USDT-Statemine": {
       "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
       "multiLocation": {
         "parachainId": 1000,
+        "palletInstance": 50,
+        "generalIndex": "1984"
+      },
+      "reserveFee": {
+        "mode": {
+          "type": "proportional",
+          "value": "341500"
+        },
+        "instructions": "xtokensReserve"
+      }
+    },
+    "USDT-Statemint": {
+      "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+      "multiLocation": {
         "palletInstance": 50,
         "generalIndex": "1984"
       },
@@ -743,7 +757,7 @@
         },
         {
           "assetId": 7,
-          "assetLocation": "USDT",
+          "assetLocation": "USDT-Statemine",
           "assetLocationPath": {
             "type": "absolute"
           },
@@ -1366,7 +1380,7 @@
         },
         {
           "assetId": 17,
-          "assetLocation": "USDT",
+          "assetLocation": "USDT-Statemine",
           "assetLocationPath": {
             "type": "absolute"
           },
@@ -1798,7 +1812,7 @@
         },
         {
           "assetId": 10,
-          "assetLocation": "USDT",
+          "assetLocation": "USDT-Statemint",
           "assetLocationPath": {
             "type": "absolute"
           },
@@ -2342,7 +2356,7 @@
         },
         {
           "assetId": 7,
-          "assetLocation": "USDT",
+          "assetLocation": "USDT-Statemine",
           "assetLocationPath": {
             "type": "relative"
           },
@@ -2742,7 +2756,7 @@
         },
         {
           "assetId": 7,
-          "assetLocation": "USDT",
+          "assetLocation": "USDT-Statemine",
           "assetLocationPath": {
             "type": "absolute"
           },
@@ -2956,7 +2970,7 @@
         },
         {
           "assetId": 1,
-          "assetLocation": "USDT",
+          "assetLocation": "USDT-Statemint",
           "assetLocationPath": {
             "type": "absolute"
           },
@@ -3328,7 +3342,7 @@
         },
         {
           "assetId": 9,
-          "assetLocation": "USDT",
+          "assetLocation": "USDT-Statemine",
           "assetLocationPath": {
             "type": "absolute"
           },
@@ -3950,7 +3964,7 @@
         },
         {
           "assetId": 14,
-          "assetLocation": "USDT",
+          "assetLocation": "USDT-Statemint",
           "assetLocationPath": {
             "type": "absolute"
           },
@@ -4513,7 +4527,7 @@
         },
         {
           "assetId": 4,
-          "assetLocation": "USDT",
+          "assetLocation": "USDT-Statemine",
           "assetLocationPath": {
             "type": "absolute"
           },
@@ -5300,7 +5314,7 @@
         },
         {
           "assetId": 2,
-          "assetLocation": "USDT",
+          "assetLocation": "USDT-Statemint",
           "assetLocationPath": {
             "type": "absolute"
           },
