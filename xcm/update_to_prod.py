@@ -11,6 +11,26 @@ def ask_to_update():
         return True
     return False
 
+def remove_none_keys(data):
+    if isinstance(data, dict):
+        # Iterate over the dictionary keys
+        for key in list(data.keys()):
+            # Recursively call the function on the corresponding value
+            data[key] = remove_none_keys(data[key])
+            
+            # Check if the value is None after recursing, remove it if so
+            if data[key] is None:
+                del data[key]
+
+    elif isinstance(data, list):
+        # Iterate over the list elements
+        data[:] = [remove_none_keys(elem) for elem in data]
+        
+        # Remove any empty dictionaries in the list
+        data[:] = [elem for elem in data if isinstance(elem, dict) and len(elem) > 0]
+        
+    return data
+
 def update_networks(dev_chains, prod_chains, meta_dict):
     for dev_chain_id, dev_chain in dev_chains.items():
         if dev_chain_id not in prod_chains:
@@ -36,8 +56,14 @@ def update_reserves(dev_file, prod_file):
             print(f"Added new asset: {dev_asset_location}")
             if ask_to_update():
                 prod_file['assetsLocation'][dev_asset_location] = dev_asset
+    
+    for prod_asset_location, prod_asset in prod_file['assetsLocation'].items():
+        if prod_asset_location not in dev_file['assetsLocation']:
+            print(f"Asset was removed: {prod_asset_location}")
+            if ask_to_update():
+                prod_file['assetsLocation'][prod_asset_location] = None
 
-    return prod_file['assetsLocation']
+    return remove_none_keys(prod_file['assetsLocation'])
 
 
 def update_assets(dev_chains, prod_chains, meta_dict):
@@ -54,18 +80,26 @@ def update_assets(dev_chains, prod_chains, meta_dict):
 def update_destinations(dev_chains, prod_chains, meta_dict):
     for prod_chain_id, prod_chain in prod_chains.items():
         for prod_asset_location, prod_asset in prod_chain['assets'].items():
-
-            for dev_destination_id, dev_destination \
-                in dev_chains[prod_chain_id]['assets'][prod_asset_location]['xcmTransfers'].items():
-
-                if dev_destination_id not in prod_asset['xcmTransfers']:
-                    print(f"Added new destination in {meta_dict[prod_chain_id]['name']} \
+            
+            if dev_chains[prod_chain_id]['assets'].get(prod_asset_location) is None:
+                print(f"Destination was removed in {meta_dict[prod_chain_id]['name']} \
                           \nfor asset: {prod_asset_location} \
                           \nto network: {meta_dict[dev_destination_id]['name']} ")
-                    if ask_to_update():
-                        prod_chains[prod_chain_id]['assets'][prod_asset_location]['xcmTransfers'][dev_destination_id] = dev_destination
+                if ask_to_update():
+                    prod_chains[prod_chain_id]['assets'][prod_asset_location] = None
+            else:
+                for dev_destination_id, dev_destination \
+                    in dev_chains[prod_chain_id]['assets'][prod_asset_location]['xcmTransfers'].items():
 
-    return prod_chains
+                    if dev_destination_id not in prod_asset['xcmTransfers']:
+                        print(f"Added new destination in {meta_dict[prod_chain_id]['name']} \
+                            \nfor asset: {prod_asset_location} \
+                            \nto network: {meta_dict[dev_destination_id]['name']} ")
+                        if ask_to_update():
+                            prod_chains[prod_chain_id]['assets'][prod_asset_location]['xcmTransfers'][dev_destination_id] = dev_destination
+
+    
+    return remove_none_keys(prod_chains)
 
 
 def convert_chains_to_dict(chains_obj):
