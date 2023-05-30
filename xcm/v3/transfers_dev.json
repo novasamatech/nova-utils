@@ -2303,6 +2303,29 @@
               "type": "xtokens"
             }
           ]
+        },
+        {
+          "assetId": 14,
+          "assetLocation": "USDT-Statemint",
+          "assetLocationPath": {
+            "type": "absolute"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+                "assetId": 1,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "125000000"
+                  },
+                  "instructions": "xtokensDest"
+                }
+              },
+              "type": "xtokens"
+            }
+          ]
         }
       ]
     },
@@ -3012,6 +3035,20 @@
                   "mode": {
                     "type": "proportional",
                     "value": "25000000"
+                  },
+                  "instructions": "xcmPalletDest"
+                }
+              },
+              "type": "xcmpallet"
+            },
+            {
+              "destination": {
+                "chainId": "fc41b9bd8ef8fe53d58c7ea67c794c7ec9a73daf05e6d54b14ff6342c99ba64c",
+                "assetId": 14,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "10103000000000"
                   },
                   "instructions": "xcmPalletDest"
                 }
