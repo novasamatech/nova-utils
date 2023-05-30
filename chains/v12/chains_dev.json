@@ -2922,6 +2922,20 @@
                     "existentialDeposit": "10000000000000000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 14,
+                "symbol": "USDT",
+                "precision": 6,
+                "type": "orml",
+                "priceId": "tether",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/USDT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x050c00",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "10000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
