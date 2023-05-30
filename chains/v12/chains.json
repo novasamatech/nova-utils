@@ -4487,8 +4487,16 @@
         ],
         "nodes": [
             {
+                "url": "wss://phala-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
                 "url": "wss://api.phala.network/ws",
                 "name": "Phala node"
+            },
+            {
+                "url": "wss://phala.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -4788,6 +4796,10 @@
             }
         ],
         "nodes": [
+            {
+                "url": "wss://composable.api.onfinality.io/public-ws",
+                "name": "Onfinality node"
+            },
             {
                 "url": "wss://rpc.composable.finance",
                 "name": "Composable node"
@@ -5508,10 +5520,6 @@
                 "name": "bLd node"
             },
             {
-                "url": "wss://intern.gmordie.com",
-                "name": "GM intern node"
-            },
-            {
                 "url": "wss://leemo.gmordie.com",
                 "name": "Leemo node"
             }
@@ -5985,10 +5993,6 @@
         ],
         "nodes": [
             {
-                "url": "wss://c1.hashed.network",
-                "name": "Hashed systems 1 node"
-            },
-            {
                 "url": "wss://c2.hashed.network",
                 "name": "Hashed systems 2 node"
             }
@@ -6349,7 +6353,6 @@
                 "assetId": 0,
                 "symbol": "VARA",
                 "precision": 12,
-                "staking": "relaychain",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/VARA.svg"
             }
         ],
