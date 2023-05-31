@@ -2717,6 +2717,7 @@
                 "assetId": 11,
                 "symbol": "EQ",
                 "precision": 9,
+                "priceId": "equilibrium-token",
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Equilibrium.svg",
                 "typeExtras": {
@@ -2737,6 +2738,20 @@
                     "currencyIdScale": "0x050300",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
                     "existentialDeposit": "100",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 13,
+                "symbol": "USDT",
+                "precision": 6,
+                "type": "orml",
+                "priceId": "tether",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/USDT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x050c00",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "10000",
                     "transfersEnabled": true
                 }
             }
@@ -4200,6 +4215,20 @@
                     "existentialDeposit": "147058823529412000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 9,
+                "symbol": "USDT",
+                "precision": 6,
+                "priceId": "tether",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/USDT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0a000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "10000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
@@ -4946,6 +4975,20 @@
                     "currencyIdScale": "0x0800",
                     "currencyIdType": "node_primitives.currency.CurrencyId",
                     "existentialDeposit": "1000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 3,
+                "symbol": "USDT",
+                "precision": 6,
+                "priceId": "tether",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/USDT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0802",
+                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "existentialDeposit": "1000",
                     "transfersEnabled": true
                 }
             }
