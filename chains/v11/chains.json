@@ -4045,7 +4045,7 @@
     {
         "chainId": "335369975fced3fc22e23498da306a712f4fd964c957364d53c49cea9db8bc2f",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "Efinity",
+        "name": "Efinity (PAUSED)",
         "assets": [
             {
                 "assetId": 0,
@@ -5288,7 +5288,7 @@
     {
         "chainId": "feb426ca713f0f46c96465b8f039890370cf6bfd687c9076ea2843f58a6ae8a7",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Kabocha",
+        "name": "Kabocha (PAUSED)",
         "assets": [
             {
                 "assetId": 0,
@@ -5324,53 +5324,6 @@
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Kabocha.svg",
         "addressPrefix": 27
-    },
-    {
-        "chainId": "eacdd2d5b42de9769ccbb6e8d9013ab0d90ab105bf601d4aac53e874c145ec21",
-        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Tanganika",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "DHX",
-                "precision": 18,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/DataHighway.svg",
-                "priceId": "datahighway"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://tanganika.datahighway.com",
-                "name": "DataHighway node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://datahighway.subscan.io/extrinsic/{hash}",
-                "account": "https://datahighway.subscan.io/account/{address}",
-                "event": null
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
-            }
-        ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/tanganika.json",
-            "overridesCommon": true
-        },
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-tanganika"
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Tanganika_DataHighway.svg",
-        "addressPrefix": 33
     },
     {
         "chainId": "35a06bfec2edf0ff4be89a6428ccd9ff5bd0167d618c5a0d4341f9600a458d14",
