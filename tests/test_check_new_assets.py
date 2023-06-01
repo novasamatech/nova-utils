@@ -16,11 +16,19 @@ class TestAssets:
         'AUSD': 'KUSD',
         'XX': 'xx'
     }
+    # assets that has no working cases on network
+    exclusions = {
+        'Bifrost Kusama': {'DOT': ''},
+        'Kintsugi': {'INTR': '', 'iBTC': 'IBTC', 'DOT': ''}}
     
     def test_has_new_assets(self, chain: Chain):
         
         chain_assets = {asset['symbol'].upper(): '' for asset in chain.assets}
         chain_assets.update(self.asset_mapping)
+        if chain.name in self.exclusions.keys():
+            for key, value in self.exclusions.items():
+                if key == chain.name:
+                    chain_assets.update(value)
         chain.create_connection()
         chain.init_properties()
         if isinstance(chain.substrate.token_symbol, list):
