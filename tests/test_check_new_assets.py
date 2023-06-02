@@ -11,17 +11,14 @@ task_ids = [
 
 @pytest.mark.parametrize("chain", get_substrate_chains(), ids=task_ids)
 class TestAssets:
-    # assets that have no working cases or having differences between
-    # asset names at runtime and in our configuration
+     # workaround to differences between asset names at runtime and in our configuration
+    asset_mapping = {
+        'AUSD': 'KUSD'
+    }
+    # assets that has no working cases on network
     exclusions = {
-        'Karura': {'AUSD': 'KUSD'},
-        'Acala': {'AUSD': 'KUSD'},
-        'Shiden': {'AUSD': 'KUSD'},
-        'Bifrost Kusama': {'AUSD': 'KUSD', 'DOT': ''},
-        'Kintsugi': {'AUSD': 'KUSD', 'INTR': '', 'iBTC': 'IBTC', 'DOT': ''},
-        'Basilisk': {'AUSD': 'KUSD'},
-        'Turing': {'AUSD': 'KUSD'},
-        'XX network': {'XX': 'xx'}}
+        'Bifrost Kusama': {'DOT': ''},
+        'Kintsugi': {'INTR': '', 'IBTC': '', 'DOT': ''}}
 
     def test_has_new_assets(self, chain: Chain):
 
