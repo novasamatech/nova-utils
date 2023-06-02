@@ -23,10 +23,10 @@ class TestAssets:
     def test_has_new_assets(self, chain: Chain):
 
         chain_assets = {asset['symbol'].upper(): '' for asset in chain.assets}
-        if chain.name in self.exclusions.keys():
-            for key, value in self.exclusions.items():
-                if key == chain.name:
-                    chain_assets.update(value)
+        chain_assets.update(self.asset_mapping)
+        
+        if chain.name in self.exclusions:
+            chain_assets.update({ex_asset: '' for ex_asset in self.exclusions[chain.name]})
         chain.create_connection()
         chain.init_properties()
         if isinstance(chain.substrate.token_symbol, list):
