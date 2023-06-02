@@ -11,7 +11,7 @@ task_ids = [
 
 @pytest.mark.parametrize("chain", get_substrate_chains(), ids=task_ids)
 class TestAssets:
-     # workaround to differences between asset names at runtime and in our configuration
+    # workaround to differences between asset names at runtime and in our configuration
     asset_mapping = {
         'AUSD': 'KUSD'
     }
@@ -24,15 +24,16 @@ class TestAssets:
 
         chain_assets = {asset['symbol'].upper(): '' for asset in chain.assets}
         chain_assets.update(self.asset_mapping)
-        
+
         if chain.name in self.exclusions:
             chain_assets.update({ex_asset: '' for ex_asset in self.exclusions[chain.name]})
         chain.create_connection()
         chain.init_properties()
-        if isinstance(chain.substrate.token_symbol, list):
-            for symbol in chain.substrate.token_symbol:
-                delayed_assert.expect(symbol in chain_assets.keys() or symbol in chain_assets.values(),
-                                      "new token to add: " + symbol)
-        else:
-            assert chain.properties.symbol in chain_assets.keys() or chain.properties.symbol in chain_assets.values(), "native asset has changed"
+        symbols = chain.substrate.token_symbol if isinstance(chain.substrate.token_symbol, list) else [
+            chain.properties.symbol]
+
+        for symbol in symbols:
+            delayed_assert.expect(symbol.upper() in chain_assets.keys() or symbol.upper() in chain_assets.values(),
+                                  "new token to add: " + symbol)
+
         delayed_assert.assert_expectations()
