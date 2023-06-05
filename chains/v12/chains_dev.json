@@ -7579,5 +7579,75 @@
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Giant.svg",
         "addressPrefix": 42
+    },
+    {
+        "chainId": "eip155:97",
+        "name": "BSC Testnet",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "BNB",
+                "priceId": "binancecoin",
+                "type": "evmNative",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/BNB.svg",
+                "precision": 8
+            }
+        ],
+        "nodeSelectionStrategy": "uniform",
+        "nodes": [
+            {
+                "url": "https://data-seed-prebsc-1-s1.binance.org:8545",
+                "name": "BSC testnet node 1"
+            },
+            {
+                "url": "https://data-seed-prebsc-2-s1.binance.org:8545",
+                "name": "BSC testnet node 2"
+            },
+            {
+                "url": "https://data-seed-prebsc-1-s2.binance.org:8545",
+                "name": "BSC testnet node 1s2"
+            },
+            {
+                "url": "https://data-seed-prebsc-2-s2.binance.org:8545",
+                "name": "BSC testnet node 2s2"
+            },
+            {
+                "url": "https://data-seed-prebsc-1-s3.binance.org:8545",
+                "name": "BSC testnet node 1s3"
+            },
+            {
+                "url": "https://data-seed-prebsc-2-s3.binance.org:8545",
+                "name": "BSC testnet node 2s3"
+            },
+            {
+                "url": "wss://testnet.binance.vision/ws/T9GZDMY62FYZRG11Z1CVQ6T1F7XAKRPRAE",
+                "name": "BSC test rpc node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Testnet Bscscan",
+                "extrinsic": "https://testnet.bscscan.com/tx/{hash}",
+                "account": "https://testnet.bscscan.com/address/{address}",
+                "event": null
+            }
+        ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "etherscan",
+                    "url": "https://api-testnet.bscscan.com/api",
+                    "parameters": {
+                        "assetType": "evm"
+                    }
+                }
+            ]
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/BSCTestnet.svg",
+        "addressPrefix": 97,
+        "options": [
+            "ethereumBased",
+            "noSubstrateRuntime"
+        ]
     }
 ]
