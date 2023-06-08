@@ -7683,5 +7683,33 @@
             "ethereumBased",
             "noSubstrateRuntime"
         ]
+    },
+    {
+        "chainId": "c9824829d23066e7dd92b80cfef52559c7692866fcfc3530e737e3fe01410eef",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "GIANT Testnet",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "GIANT",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Giant.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc-4-us-east-1-dev.giantprotocol.org:443",
+                "name": "Giant testnet node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/giant_testnet.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Giant_Testnet.svg",
+        "addressPrefix": 42,
+        "options": [
+            "testnet"
+        ]
     }
 ]
