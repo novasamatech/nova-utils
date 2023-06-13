@@ -17,10 +17,6 @@
             {
                 "chainId": "eip155:1",
                 "contractAddress": "0xdac17f958d2ee523a2206206994597c13d831ec7"
-            },
-            {
-                "chainId": "eip155:56",
-                "contractAddress": "0x55d398326f99059fF775485246999027B3197955"
             }
         ]
     },
@@ -42,10 +38,6 @@
             {
                 "chainId": "eip155:1",
                 "contractAddress": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
-            },
-            {
-                "chainId": "eip155:56",
-                "contractAddress": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d"
             }
         ]
     },
@@ -510,6 +502,32 @@
             {
                 "chainId": "eip155:56",
                 "contractAddress": "0xBf5140A22578168FD562DCcF235E5D43A02ce9B1"
+            }
+        ]
+    },
+    {
+        "symbol": "USDT",
+        "precision": 18,
+        "name": "Tether USD",
+        "priceId": "tether",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/USDT.svg",
+        "instances": [
+            {
+                "chainId": "eip155:56",
+                "contractAddress": "0x55d398326f99059fF775485246999027B3197955"
+            }
+        ]
+    },
+    {
+        "symbol": "USDC",
+        "precision": 18,
+        "name": "USD Coin",
+        "priceId": "usd-coin",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/USDC.svg",
+        "instances": [
+            {
+                "chainId": "eip155:56",
+                "contractAddress": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d"
             }
         ]
     }
