@@ -7711,5 +7711,89 @@
         "options": [
             "testnet"
         ]
+    },
+    {
+        "chainId": "eip155:2088",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Altair EVM",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "AIR",
+                "precision": 18,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Altair.svg",
+                "priceId": "altair"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://fullnode.altair.centrifuge.io",
+                "name": "Centrifuge"
+            },
+            {
+                "url": "wss://altair.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/altair.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Altair.svg",
+        "addressPrefix": 2088,
+        "options": [
+            "ethereumBased"
+        ]
+    },
+    {
+        "chainId": "eip155:592",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Astar EVM",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "ASTR",
+                "priceId": "astar",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Astar.svg",
+                "precision": 18
+            }
+        ],
+        "nodes": [
+            {
+                "url": "https://evm.astar.network",
+                "name": "Astar node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Blockscout",
+                "extrinsic": "https://blockscout.com/astar/tx/{hash}",
+                "account": "https://blockscout.com/astar/address/{address}",
+                "event": null
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/astar.json",
+            "overridesCommon": true
+        },
+        "externalApi": {
+            "history": [
+                {
+                    "type": "etherscan",
+                    "url": "https://blockscout.com/astar/api",
+                    "parameters": {
+                        "assetType": "evm"
+                    }
+                }
+            ]
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Astar.svg",
+        "addressPrefix": 592,
+        "additional": {
+            "defaultTip": "1000000"
+        },
+        "options": [
+            "ethereumBased"
+        ]
     }
 ]
