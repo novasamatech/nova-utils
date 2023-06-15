@@ -10,7 +10,8 @@
                 "priceId": "polkadot",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
                 "staking": [
-                    "relaychain"
+                    "relaychain",
+                    "nomination-pools"
                 ],
                 "buyProviders": {
                     "transak": {
@@ -121,7 +122,8 @@
                 "priceId": "kusama",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg",
                 "staking": [
-                    "relaychain"
+                    "relaychain",
+                    "nomination-pools"
                 ],
                 "buyProviders": {
                     "transak": {
@@ -241,7 +243,8 @@
                 "precision": 12,
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Westend.svg",
                 "staking": [
-                    "relaychain"
+                    "relaychain",
+                    "nomination-pools"
                 ]
             }
         ],
@@ -5293,7 +5296,8 @@
                 "assetId": 0,
                 "symbol": "AZERO",
                 "staking": [
-                    "aleph-zero"
+                    "aleph-zero",
+                    "nomination-pools"
                 ],
                 "priceId": "aleph-zero",
                 "precision": 12,
