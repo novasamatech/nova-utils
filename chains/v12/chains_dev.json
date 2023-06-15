@@ -104,6 +104,12 @@
                     "type": "subsquare",
                     "url": "https://polkadot.subsquare.io/api"
                 }
+            ],
+            "governance-delegations": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadot-gov"
+                }
             ]
         },
         "options": [
