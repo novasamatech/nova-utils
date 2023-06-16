@@ -10,7 +10,8 @@
                 "priceId": "polkadot",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
                 "staking": [
-                    "relaychain"
+                    "relaychain",
+                    "nomination-pools"
                 ],
                 "buyProviders": {
                     "transak": {
@@ -103,11 +104,18 @@
                     "type": "subsquare",
                     "url": "https://polkadot.subsquare.io/api"
                 }
+            ],
+            "governance-delegations": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadot-gov"
+                }
             ]
         },
         "options": [
             "crowdloans",
-            "governance-v1"
+            "governance-v1",
+            "governance"
         ]
     },
     {
@@ -121,7 +129,8 @@
                 "priceId": "kusama",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg",
                 "staking": [
-                    "relaychain"
+                    "relaychain",
+                    "nomination-pools"
                 ],
                 "buyProviders": {
                     "transak": {
@@ -132,10 +141,6 @@
             }
         ],
         "nodes": [
-            {
-                "url": "wss://rpc-kusama.luckyfriday.io",
-                "name": "LuckyFriday node"
-            },
             {
                 "url": "wss://rpc.ibp.network/kusama",
                 "name": "IBP network node"
@@ -159,6 +164,10 @@
             {
                 "url": "wss://kusama-rpc.polkadot.io",
                 "name": "Parity node"
+            },
+            {
+                "url": "wss://rpc-kusama.luckyfriday.io",
+                "name": "LuckyFriday node"
             },
             {
                 "url": "wss://kusama.api.onfinality.io/public-ws",
@@ -241,7 +250,8 @@
                 "precision": 12,
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Westend.svg",
                 "staking": [
-                    "relaychain"
+                    "relaychain",
+                    "nomination-pools"
                 ]
             }
         ],
@@ -360,7 +370,7 @@
     {
         "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Statemine",
+        "name": "Kusama Asset Hub",
         "assets": [
             {
                 "assetId": 0,
@@ -481,7 +491,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Statemine.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Kusama_Asset_Hub.svg",
         "addressPrefix": 2
     },
     {
@@ -3936,7 +3946,7 @@
     {
         "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "Statemint",
+        "name": "Polkadot Asset Hub",
         "assets": [
             {
                 "assetId": 0,
@@ -3996,7 +4006,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Statemint.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Polkadot_Asset_Hub.svg",
         "addressPrefix": 0
     },
     {
@@ -5274,11 +5284,8 @@
             ],
             "governance": [
                 {
-                    "type": "polkassembly",
-                    "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                    "parameters": {
-                        "network": "turing"
-                    }
+                    "type": "subsquare",
+                    "url": "https://turing.subsquare.io/api"
                 }
             ]
         },
@@ -5296,7 +5303,8 @@
                 "assetId": 0,
                 "symbol": "AZERO",
                 "staking": [
-                    "aleph-zero"
+                    "aleph-zero",
+                    "nomination-pools"
                 ],
                 "priceId": "aleph-zero",
                 "precision": 12,
@@ -5950,49 +5958,6 @@
         "addressPrefix": 42,
         "options": [
             "testnet"
-        ]
-    },
-    {
-        "chainId": "0e06260459b4f9034aba0a75108c08ed73ea51d2763562749b1d3600986c4ea5",
-        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Pichiu",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "PCHU",
-                "precision": 18,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Pichiu.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://kusama.kylin-node.co.uk",
-                "name": "Kylin node"
-            }
-        ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/pichiu.json",
-            "overridesCommon": true
-        },
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-pichiu"
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Pichiu.svg",
-        "addressPrefix": 42,
-        "options": [
-            "governance-v1"
-        ],
-        "explorers": [
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
-            }
         ]
     },
     {
@@ -6902,7 +6867,10 @@
             "overridesCommon": true
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Pendulum.svg",
-        "addressPrefix": 56
+        "addressPrefix": 56,
+        "options": [
+            "governance-v1"
+        ]
     },
     {
         "chainId": "a6ffcef7fb8caadf7f6c5ad8ada65e3eaa90d1604f3eabda546ff1d486865a0c",
@@ -7557,7 +7525,6 @@
     },
     {
         "chainId": "49f4849244114177544d73d2412289f6d73a892b9eb1ca97cef81c9c0c9ec0ff",
-        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
         "name": "GIANT",
         "assets": [
             {
@@ -7752,6 +7719,66 @@
         "options": [
             "testnet"
         ]
+    },
+    {
+        "chainId": "dcf691b5a3fbe24adc99ddc959c0561b973e329b1aef4c4b22e7bb2ddecb4464",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Polkadot Bridge Hub",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "DOT",
+                "precision": 10,
+                "priceId": "polkadot",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://polkadot-bridge-hub-rpc.polkadot.io",
+                "name": "Parity node"
+            },
+            {
+                "url": "wss://dot-rpc.stakeworld.io/bridgehub",
+                "name": "Stakeworld node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/polkadot_bridge_hub.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Polkadot_Bridge_Hub.svg",
+        "addressPrefix": 0
+    },
+    {
+        "chainId": "00dcb981df86429de8bbacf9803401f09485366c44efbf53af9ecfab03adc7e5",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Kusama Bridge Hub",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "KSM",
+                "precision": 12,
+                "priceId": "kusama",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://kusama-bridge-hub-rpc.polkadot.io",
+                "name": "Parity node"
+            },
+            {
+                "url": "wss://ksm-rpc.stakeworld.io/bridgehub",
+                "name": "Stakeworld node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/kusama_bridge_hub.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Kusama_Bridge_Hub.svg",
+        "addressPrefix": 2
     },
     {
         "chainId": "eip155:aa3876c1dc8a1afcc2e9a685a49ff7704cfd36ad8c90bf2702b9d1b00cc40011",
