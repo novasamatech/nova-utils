@@ -1907,6 +1907,20 @@
             },
             {
               "destination": {
+                "chainId": "46ee89aa2eedd13e988962630ec9fb7565964cf5023bb351f2b6b25c1b68b0b2",
+                "assetId": 0,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "8799873000"
+                  },
+                  "instructions": "xcmPalletTeleportDest"
+                }
+              },
+              "type": "xcmpallet-teleport"
+            },
+            {
+              "destination": {
                 "chainId": "e61a41c53f5dcd0beb09df93b34402aada44cb05117b71059cce40a2723a4e97",
                 "assetId": 1,
                 "fee": {
@@ -2002,20 +2016,6 @@
                 }
               },
               "type": "xcmpallet"
-            },
-            {
-              "destination": {
-                "chainId": "46ee89aa2eedd13e988962630ec9fb7565964cf5023bb351f2b6b25c1b68b0b2",
-                "assetId": 0,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "8799873000"
-                  },
-                  "instructions": "xcmPalletTeleportDest"
-                }
-              },
-              "type": "xcmpallet-teleport"
             }
           ]
         }
