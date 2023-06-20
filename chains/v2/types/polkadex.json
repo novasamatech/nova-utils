@@ -16,11 +16,11 @@
       "type_mapping": [
         [
           "ref_time",
-          "u64"
+          "Compact<u64>"
         ],
         [
           "proof_size",
-          "u64"
+          "Compact<u64>"
         ]
       ]
     },
