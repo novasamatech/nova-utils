@@ -11,12 +11,25 @@
     "node_polkadex_runtime.Call": "GenericCall",
     "sp_core.crypto.AccountId32": "GenericAccountId",
     "pallet_identity.types.Data": "Data",
+    "nova.fee.weight": {
+      "type": "struct",
+      "type_mapping": [
+        [
+          "ref_time",
+          "u64"
+        ],
+        [
+          "proof_size",
+          "u64"
+        ]
+      ]
+    },
     "RuntimeDispatchInfo": {
       "type": "struct",
       "type_mapping": [
         [
           "weight",
-          "u64"
+          "nova.fee.weight"
         ],
         [
           "class",
