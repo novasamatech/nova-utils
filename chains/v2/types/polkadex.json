@@ -16,11 +16,11 @@
       "type_mapping": [
         [
           "weight",
-          "u64"
+          "sp_weights.weight_v2.Weight"
         ],
         [
           "class",
-          "frame_support.weights.DispatchClass"
+          "frame_support.dispatch.DispatchClass"
         ],
         [
           "partialFee",
