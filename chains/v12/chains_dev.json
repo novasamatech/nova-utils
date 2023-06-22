@@ -7825,5 +7825,33 @@
         },
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Polkadot_Collectives.svg",
         "addressPrefix": 0
+    },
+    {
+        "chainId": "67221cd96c1551b72d55f65164d6a39f31b570c77a05c90e31931b0e2f379e13",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Amplitude Foucoco",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "AMPE",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Amplitude.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc-foucoco.pendulumchain.tech/",
+                "name": "PendulumChain node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/amplitude_foucoco.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/gradient/Amplitude_foucoco.svg",
+        "addressPrefix": 57,
+        "options": [
+            "testnet"
+        ]
     }
 ]
