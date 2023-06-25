@@ -4247,6 +4247,20 @@
                 "precision": 10,
                 "priceId": "zeitgeist",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Zeitgeist.svg"
+            },
+            {
+                "assetId": 1,
+                "symbol": "DOT",
+                "precision": 10,
+                "priceId": "polkadot",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0500000000",
+                    "currencyIdType": "zeitgeist_primitives.asset.Asset",
+                    "existentialDeposit": "10000000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
