@@ -1581,6 +1581,20 @@
                     "existentialDeposit": "100000000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 11,
+                "symbol": "kBTC",
+                "precision": 8,
+                "type": "orml",
+                "priceId": "bitcoin",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/KBTC.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0802",
+                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "existentialDeposit": "100",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
@@ -5577,6 +5591,20 @@
                     "currencyIdScale": "0x0802",
                     "currencyIdType": "node_primitives.currency.CurrencyId",
                     "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 4,
+                "symbol": "ASTR",
+                "precision": 18,
+                "priceId": "astar",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Astar.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0803",
+                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "existentialDeposit": "10000000000000000",
                     "transfersEnabled": true
                 }
             }
