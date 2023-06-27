@@ -5240,6 +5240,87 @@
                     "existentialDeposit": "0",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 3,
+                "symbol": "TUR",
+                "precision": 10,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Turing.svg",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x07000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 4,
+                "symbol": "BNC",
+                "precision": 12,
+                "priceId": "bifrost-native-coin",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bifrost.svg",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x0e000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 5,
+                "symbol": "RMRK",
+                "precision": 10,
+                "priceId": "rmrk",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/RMRK.svg",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x1f000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 6,
+                "symbol": "ZLK",
+                "precision": 18,
+                "priceId": "zenlink-network-token",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/ZLK.svg",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x1a000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 7,
+                "symbol": "vsKSM",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/vsKSM.svg",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x10000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 8,
+                "symbol": "vKSM",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/vKSM.svg",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x0f000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
