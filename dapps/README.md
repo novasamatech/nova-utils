@@ -40,31 +40,32 @@
 |  36 | PABLO                          | https://app.pablo.finance/                           | dex                           |
 |  37 | Parallel Finance App           | https://app.parallel.fi/                             | bridge,dex                    |
 |  38 | Parallel Rewards Claim         | https://crowdloan.parallel.fi/#/auction/rewards/     | crowdloans                    |
-|  39 | Phala App                      | https://app.phala.network/                           | staking                       |
-|  40 | PolkaVerse                     | https://polkaverse.com/                              | social                        |
-|  41 | Polkadex Orderbook             | https://orderbook.polkadex.trade/                    | dex,utilities                 |
-|  42 | Polkadot Lido                  | https://polkadot.lido.fi/                            | staking,evm                   |
-|  43 | Polkadot Staking Dashboard     | https://staking.polkadot.network/dashboard#/overview | staking,utilities             |
-|  44 | Polkadot.js                    | https://polkadot.js.org/apps/#                       | utilities                     |
-|  45 | Polkassembly                   | https://polkadot.polkassembly.io/                    | governance                    |
-|  46 | Polkawatch                     | https://polkawatch.app/                              | staking                       |
-|  47 | PrivaDEX                       | https://app.privadex.xyz/                            | dex                           |
-|  48 | Proof of Chaos                 | https://proofofchaos.app                             | nft,governance                |
-|  49 | Raresama                       | https://raresama.com/                                | nft                           |
-|  50 | Secret Stash                   | https://secret-stash.io/                             | nft,utilities                 |
-|  51 | Singular                       | https://singular.rmrk.app/                           | nft                           |
-|  52 | Singular 2.0                   | https://singular.app/                                | nft                           |
-|  53 | Skybreach                      | https://skybreach.app/                               | nft,evm,gaming                |
-|  54 | Solarbeam                      | https://app.solarbeam.io/exchange/swap               | bridge,dex,staking,evm        |
-|  55 | Solarflare                     | https://app.solarflare.io/exchange/swap              | bridge,dex,staking,evm        |
-|  56 | Stellaswap                     | https://app.stellaswap.com/exchange/swap             | bridge,dex,staking,evm        |
-|  57 | Sub.ID                         | https://sub.id/#/                                    | utilities                     |
-|  58 | SubBridge                      | https://subbridge.io/                                | bridge,evm                    |
-|  59 | Subsquare                      | https://polkadot.subsquare.io/                       | governance                    |
-|  60 | Talisman Portal                | https://app.talisman.xyz/portfolio                   | crowdloans,staking,nft        |
-|  61 | Tinkernet Rewards Claim        | https://www.tinker.network/claim                     | crowdloans                    |
-|  62 | TofuNFT                        | https://tofunft.com/                                 | nft,evm                       |
-|  63 | Zeitgeist                      | https://app.zeitgeist.pm/                            | utilities                     |
-|  64 | Zenlink                        | https://app.zenlink.pro                              | dex,staking                   |
-|  65 | cBRIDGE                        | https://cbridge.celer.network/#/transfer             | dex,evm,nft                   |
-|  66 | xx network Hub                 | https://hub.xx.network                               | social,staking,utilities      |
+|  39 | Pendulum Chain Portal          | https://portal.pendulumchain.org/pendulum/dashboard  | utilities,staking             |
+|  40 | Phala App                      | https://app.phala.network/                           | staking                       |
+|  41 | PolkaVerse                     | https://polkaverse.com/                              | social                        |
+|  42 | Polkadex Orderbook             | https://orderbook.polkadex.trade/                    | dex,utilities                 |
+|  43 | Polkadot Lido                  | https://polkadot.lido.fi/                            | staking,evm                   |
+|  44 | Polkadot Staking Dashboard     | https://staking.polkadot.network/dashboard#/overview | staking,utilities             |
+|  45 | Polkadot.js                    | https://polkadot.js.org/apps/#                       | utilities                     |
+|  46 | Polkassembly                   | https://polkadot.polkassembly.io/                    | governance                    |
+|  47 | Polkawatch                     | https://polkawatch.app/                              | staking                       |
+|  48 | PrivaDEX                       | https://app.privadex.xyz/                            | dex                           |
+|  49 | Proof of Chaos                 | https://proofofchaos.app                             | nft,governance                |
+|  50 | Raresama                       | https://raresama.com/                                | nft                           |
+|  51 | Secret Stash                   | https://secret-stash.io/                             | nft,utilities                 |
+|  52 | Singular                       | https://singular.rmrk.app/                           | nft                           |
+|  53 | Singular 2.0                   | https://singular.app/                                | nft                           |
+|  54 | Skybreach                      | https://skybreach.app/                               | nft,evm,gaming                |
+|  55 | Solarbeam                      | https://app.solarbeam.io/exchange/swap               | bridge,dex,staking,evm        |
+|  56 | Solarflare                     | https://app.solarflare.io/exchange/swap              | bridge,dex,staking,evm        |
+|  57 | Stellaswap                     | https://app.stellaswap.com/exchange/swap             | bridge,dex,staking,evm        |
+|  58 | Sub.ID                         | https://sub.id/#/                                    | utilities                     |
+|  59 | SubBridge                      | https://subbridge.io/                                | bridge,evm                    |
+|  60 | Subsquare                      | https://polkadot.subsquare.io/                       | governance                    |
+|  61 | Talisman Portal                | https://app.talisman.xyz/portfolio                   | crowdloans,nft                |
+|  62 | Tinkernet Rewards Claim        | https://www.tinker.network/claim                     | crowdloans                    |
+|  63 | TofuNFT                        | https://tofunft.com/                                 | nft,evm                       |
+|  64 | Zeitgeist                      | https://app.zeitgeist.pm/                            | utilities                     |
+|  65 | Zenlink                        | https://app.zenlink.pro                              | dex,staking                   |
+|  66 | cBRIDGE                        | https://cbridge.celer.network/#/transfer             | dex,evm,nft                   |
+|  67 | xx network Hub                 | https://hub.xx.network                               | social,staking,utilities      |
