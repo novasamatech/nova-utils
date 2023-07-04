@@ -437,5 +437,31 @@
                 "contractAddress": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984"
             }
         ]
+    },
+    {
+        "symbol": "WELL",
+        "precision": 18,
+        "name": "Moonwell",
+        "priceId": "moonwell-artemis",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/WELL.svg",
+        "instances": [
+            {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "contractAddress": "0x511aB53F793683763E5a8829738301368a2411E3"
+            }
+        ]
+    },
+    {
+        "symbol": "MFAM",
+        "precision": 18,
+        "name": "Moonwell Apollo",
+        "priceId": "moonwell",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/MFAM.svg",
+        "instances": [
+            {
+                "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
+                "contractAddress": "0xBb8d88bcD9749636BC4D2bE22aaC4Bb3B01A58F1"
+            }
+        ]
     }
 ]
