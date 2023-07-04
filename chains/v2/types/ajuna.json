@@ -1,5 +1,5 @@
 {
-  "runtime_id": 1,
+  "runtime_id": 119,
   "types": {
     "Balance": "u128",
     "Index": "u32",
@@ -7,8 +7,8 @@
     "Address": "sp_runtime.multiaddress.MultiAddress",
     "ExtrinsicSignature": "sp_runtime.MultiSignature",
     "ParaId": "polkadot_parachain.primitives.Id",
-    "ajuna_runtime.Event": "GenericEvent",
-    "ajuna_runtime.Call": "GenericCall",
+    "ajuna_runtime.RuntimeEvent": "GenericEvent",
+    "ajuna_runtime.RuntimeCall": "GenericCall",
     "sp_core.crypto.AccountId32": "GenericAccountId",
     "pallet_identity.types.Data": "Data"
   },
