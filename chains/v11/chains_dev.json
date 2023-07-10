@@ -4595,10 +4595,10 @@
             "governance-v1"
         ]
     },
-    {
+  {
         "chainId": "99ded175d436bee7d751fa3f2f8c7a257ddc063a541f8daa5e6152604f66b2a0",
-        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "Efinity",
+        "parentId": "d8761d3c88f26dc12875c00d3165f7d67243d56fc85b4cf19937601a7916e5a9",
+        "name": "Efinity Matrixchain",
         "assets": [
             {
                 "assetId": 0,
@@ -4612,6 +4612,14 @@
             {
                 "url": "wss://rpc.efinity.io",
                 "name": "Efinity node"
+            },
+            {
+                "url": "wss://efinity-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://efinity.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -4623,8 +4631,8 @@
             },
             {
                 "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
+                "account": "https://efinity.polkaholic.io/account/{address}",
+                "extrinsic": "https://efinity.polkaholic.io/tx/{hash}"
             }
         ],
         "types": {
