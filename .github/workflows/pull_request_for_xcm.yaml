@@ -4,6 +4,8 @@ on:
   pull_request:
     paths:
       - 'xcm/**'
+  pull_request_target:
+    types: [labeled]
 
 jobs:
   create-comment-with-changes:

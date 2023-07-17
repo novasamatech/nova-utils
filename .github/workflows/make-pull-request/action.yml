@@ -45,14 +45,9 @@ runs:
           github_token: ${{ inputs.github-token }}
           branch: refs/heads/${{ inputs.branch-name }}
 
-      - uses: repo-sync/pull-request@v2
+      - name: create pull request
         if: steps.commit.outcome == 'success'
-        name: pull-request
-        with:
-          source_branch: ${{ inputs.branch-name }}
-          destination_branch: "master"
-          pr_title: ${{ inputs.pr-title }}
-          pr_body: ${{ inputs.pr-body }}
-          pr_reviewer: ${{ inputs.pr-reviewer }}
-          pr_draft: false
-          github_token: ${{ inputs.github-token }}
+        run: gh pr create --base master --head ${{ inputs.branch-name }} --title '${{ inputs.pr-title }}' --body '${{ inputs.pr-body }}' --reviewer ${{ inputs.pr-reviewer }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
