@@ -74,7 +74,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN  }}
           branch-name: update-networks-${{github.run_number}}
           pr-title: Update network list
-          pr-body: Update networks list in https://github.com/novasamatechnova-utils/tree/master/chains
+          pr-body: Update networks list in https://github.com/novasamatech/nova-utils/tree/master/chains
 
 
   dapps_update:
@@ -101,7 +101,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN  }}
           branch-name: update-dapps-${{github.run_number}}
           pr-title: Update Dapps list
-          pr-body: Update dapps list in https://github.com/novasamatechnova-utils/tree/master/dapps
+          pr-body: Update dapps list in https://github.com/novasamatech/nova-utils/tree/master/dapps
 
   test_json_update:
     runs-on: ubuntu-latest

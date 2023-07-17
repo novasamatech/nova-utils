@@ -7,8 +7,8 @@ Note: For better UX in your app its recommended to
 1. prepare UI states & logic when this information cannot be fetched due to github unavailability
 2. cache the data to cover part of the issue of 1.
 
-### [List of supported networks](https://github.com/novasamatechnova-utils/tree/master/chains#supported-networks--assets-data)
-### [List of supported dapps](https://github.com/novasamatechnova-utils/tree/master/dapps#list-of-supported-dapps)
+### [List of supported networks](https://github.com/novasamatech/nova-utils/tree/master/chains#supported-networks--assets-data)
+### [List of supported dapps](https://github.com/novasamatech/nova-utils/tree/master/dapps#list-of-supported-dapps)
 
 ## Modules
 #### Crowdloan
@@ -27,7 +27,7 @@ Contains JSON file with networks info: its token (ticker, precision), types, ava
 #### Dapps
 Contains JSON file with featured DApps
 
-Note: To submit a DApp make sure it's not already in [DApps list](https://github.com/novasamatechnova-utils/tree/master/dapps#list-of-supported-networks) and if not submit a PR to repository.
+Note: To submit a DApp make sure it's not already in [DApps list](https://github.com/novasamatech/nova-utils/tree/master/dapps#list-of-supported-networks) and if not submit a PR to repository.
 
 #### Icons
 Contains the iconography for the different parachains and DApp's.
