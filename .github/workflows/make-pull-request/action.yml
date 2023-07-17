@@ -50,4 +50,4 @@ runs:
         run: gh pr create --base master --head ${{ inputs.branch-name }} --title '${{ inputs.pr-title }}' --body '${{ inputs.pr-body }}' --reviewer ${{ inputs.pr-reviewer }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
+        shell: bash
