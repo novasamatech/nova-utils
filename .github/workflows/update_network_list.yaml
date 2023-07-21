@@ -127,7 +127,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN  }}
           branch-name: update-tests-${{github.run_number}}
           pr-title: Update Test data File
-          pr-body: Update test data file
+          pr-body: Update test data file ./tests/chains_for_testBalance.json
 
 
   xcm_table_update:
