@@ -175,7 +175,7 @@ def main(argv):
         Exception: If script arguments are not valid
     """
 
-    nova_utils_url = "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/"
+    nova_utils_url = "https://raw.githubusercontent.com/novasamatech/nova-utils/master/"
 
     if 'dev' in argv:
         transfers_file = os.getenv(
