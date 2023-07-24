@@ -71,7 +71,8 @@ jobs:
         with:
           commit-files: ./chains/README.md
           commit-message: Update networks list
-          github-token: ${{ secrets.GITHUB_TOKEN  }}
+          app-id: ${{ secrets.PR_APP_ID}}
+          app-token: ${{ secrets.PR_APP_TOKEN}}
           branch-name: update-networks-${{github.run_number}}
           pr-title: Update network list
           pr-body: Update networks list in https://github.com/novasamatech/nova-utils/tree/master/chains
@@ -98,7 +99,8 @@ jobs:
         with:
           commit-files: ./dapps/README.md
           commit-message: Update dapps list
-          github-token: ${{ secrets.GITHUB_TOKEN  }}
+          app-id: ${{ secrets.PR_APP_ID}}
+          app-token: ${{ secrets.PR_APP_TOKEN}}
           branch-name: update-dapps-${{github.run_number}}
           pr-title: Update Dapps list
           pr-body: Update dapps list in https://github.com/novasamatech/nova-utils/tree/master/dapps
@@ -124,7 +126,8 @@ jobs:
         with:
           commit-files: ./tests/chains_for_testBalance.json
           commit-message: Update test data file
-          github-token: ${{ secrets.GITHUB_TOKEN  }}
+          app-id: ${{ secrets.PR_APP_ID}}
+          app-token: ${{ secrets.PR_APP_TOKEN}}
           branch-name: update-tests-${{github.run_number}}
           pr-title: Update Test data File
           pr-body: Update test data file ./tests/chains_for_testBalance.json
