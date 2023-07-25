@@ -47,7 +47,7 @@ runs:
         committer: GitHub <noreply@github.com>
         author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
         signoff: false
-        branch: refs/heads/${{ inputs.branch-name }}
+        branch: ${{ inputs.branch-name }}
         delete-branch: true
         title: ${{ inputs.pr-title }}
         body: ${{ inputs.pr-body }}
