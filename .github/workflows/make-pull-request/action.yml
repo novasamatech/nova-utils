@@ -16,6 +16,9 @@ inputs:
   branch-name:
     description: "Name for branch for creating a commit"
     required: true
+  pr-base:
+    description: "Base branch for creating PR"
+    required: true
   pr-title:
     description: "Title for creating Pull Request"
     required: true
@@ -50,3 +53,4 @@ runs:
         body: ${{ inputs.pr-body }}
         reviewers: ${{ inputs.pr-reviewer }}
         draft: false
+        base: ${{ inputs.pr-base }}

@@ -76,6 +76,7 @@ jobs:
           branch-name: update-networks-${{github.run_number}}
           pr-title: Update network list
           pr-body: Update networks list in https://github.com/novasamatech/nova-utils/tree/master/chains
+          pr-base: master
 
 
   dapps_update:
@@ -104,6 +105,7 @@ jobs:
           branch-name: update-dapps-${{github.run_number}}
           pr-title: Update Dapps list
           pr-body: Update dapps list in https://github.com/novasamatech/nova-utils/tree/master/dapps
+          pr-base: master
 
   test_json_update:
     runs-on: ubuntu-latest
@@ -131,6 +133,7 @@ jobs:
           branch-name: update-tests-${{github.run_number}}
           pr-title: Update Test data File
           pr-body: Update test data file ./tests/chains_for_testBalance.json
+          pr-base: master
 
 
   xcm_table_update:

@@ -77,3 +77,4 @@ jobs:
           branch-name: update-xcm-coefficients-${{github.run_number}}
           pr-title: 🆙 Update XCM coefficients for ${{ env.ENVIRONMENT }} env
           pr-body: This PR was generated automatically 🤖
+          pr-base: master
