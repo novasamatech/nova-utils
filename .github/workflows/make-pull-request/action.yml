@@ -44,6 +44,7 @@ runs:
       with:
         token: ${{ steps.generate-token.outputs.token }}
         commit-message: ${{ inputs.commit-message }}
+        add-paths: ${{ inputs.commit-files }}
         committer: GitHub <noreply@github.com>
         author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
         signoff: false
