@@ -46,7 +46,7 @@ runs:
         commit-message: ${{ inputs.commit-message }}
         add-paths: ${{ inputs.commit-files }}
         committer: GitHub <noreply@github.com>
-        author: GitHub <noreply@github.com>
+        author: novasama-bot <noreply@github.com>
         signoff: false
         branch: ${{ inputs.branch-name }}
         delete-branch: true
