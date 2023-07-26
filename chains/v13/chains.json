@@ -22,6 +22,14 @@
         ],
         "nodes": [
             {
+                "url": "wss://rpc.dotters.network/polkadot",
+                "name": "Dotters Net node"
+            },
+            {
+                "url": "wss://rpc.ibp.network/polkadot",
+                "name": "IBP network node"
+            },
+            {
                 "url": "wss://rpc.polkadot.io",
                 "name": "Parity node"
             },
@@ -32,14 +40,6 @@
             {
                 "url": "wss://polkadot.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
-            },
-            {
-                "url": "wss://rpc.dotters.network/polkadot",
-                "name": "Dotters Net node"
-            },
-            {
-                "url": "wss://rpc.ibp.network/polkadot",
-                "name": "IBP network node"
             },
             {
                 "url": "wss://polkadot-rpc.dwellir.com",
@@ -144,16 +144,16 @@
                 "name": "IBP network node"
             },
             {
+                "url": "wss://rpc.dotters.network/kusama",
+                "name": "Dotters Net node"
+            },
+            {
                 "url": "wss://1rpc.io/ksm",
                 "name": "Automata 1RPC node"
             },
             {
                 "url": "wss://kusama-rpc.dwellir.com",
                 "name": "Dwellir node"
-            },
-            {
-                "url": "wss://rpc.dotters.network/kusama",
-                "name": "Dotters Net node"
             },
             {
                 "url": "wss://kusama.public.curie.radiumblock.co/ws",
@@ -253,6 +253,14 @@
             }
         ],
         "nodes": [
+            {
+                "url": "wss://rpc.ibp.network/westend",
+                "name": "IBP network node"
+            },
+            {
+                "url": "wss://rpc.dotters.network/westend",
+                "name": "Dotters Net node"
+            },
             {
                 "url": "wss://westend-rpc.polkadot.io",
                 "name": "Parity node"
@@ -381,6 +389,14 @@
             }
         ],
         "nodes": [
+            {
+                "url": "wss://sys.ibp.network/statemine",
+                "name": "IBP network node"
+            },
+            {
+                "url": "wss://sys.dotters.network/statemine",
+                "name": "Dotters Net node"
+            },
             {
                 "url": "wss://statemine.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
@@ -3313,6 +3329,14 @@
         ],
         "nodes": [
             {
+                "url": "wss://sys.ibp.network/statemint",
+                "name": "IBP network node"
+            },
+            {
+                "url": "wss://sys.dotters.network/statemint",
+                "name": "Dotters Net node"
+            },
+            {
                 "url": "wss://statemint-rpc.polkadot.io",
                 "name": "Parity node"
             },
@@ -3434,6 +3458,14 @@
             }
         ],
         "nodes": [
+            {
+                "url": "wss://sys.ibp.network/encointer-kusama",
+                "name": "IBP network node"
+            },
+            {
+                "url": "wss://sys.dotters.network/encointer-kusama",
+                "name": "Dotters Net node"
+            },
             {
                 "url": "wss://api.kusama.encointer.org",
                 "name": "Encointer association node"
@@ -6630,6 +6662,14 @@
         ],
         "nodes": [
             {
+                "url": "wss://sys.ibp.network/bridgehub-polkadot",
+                "name": "IBP network node"
+            },
+            {
+                "url": "wss://sys.dotters.network/bridgehub-polkadot",
+                "name": "Dotters Net node"
+            },
+            {
                 "url": "wss://polkadot-bridge-hub-rpc.polkadot.io",
                 "name": "Parity node"
             },
@@ -6659,6 +6699,14 @@
             }
         ],
         "nodes": [
+            {
+                "url": "wss://sys.ibp.network/bridgehub-kusama",
+                "name": "IBP network node"
+            },
+            {
+                "url": "wss://sys.dotters.network/bridgehub-kusama",
+                "name": "Dotters Net node"
+            },
             {
                 "url": "wss://kusama-bridge-hub-rpc.polkadot.io",
                 "name": "Parity node"
@@ -6690,20 +6738,20 @@
         ],
         "nodes": [
             {
+                "url": "wss://sys.ibp.network/collectives-polkadot",
+                "name": "IBP network node"
+            },
+            {
+                "url": "wss://sys.dotters.network/collectives-polkadot",
+                "name": "Dotters Net node"
+            },
+            {
                 "url": "wss://polkadot-collectives-rpc.polkadot.io",
                 "name": "Parity node"
             },
             {
                 "url": "wss://collectives.api.onfinality.io/public-ws",
                 "name": "Onfinality node"
-            },
-            {
-                "url": "wss://sys.dotters.network/collectives-polkadot",
-                "name": "via IBP-GeoDNS2"
-            },
-            {
-                "url": "wss://sys.ibp.network/collectives-polkadot",
-                "name": "via IBP-GeoDNS1"
             },
             {
                 "url": "wss://collectives.public.curie.radiumblock.co/ws",
