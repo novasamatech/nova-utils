@@ -41,30 +41,30 @@ jobs:
           ref: master
           token: ${{ secrets.PAT_TOKEN }}
 
-      - name: 🛠 Set up actual paths
-        uses: ./.github/workflows/setup-path
+      # - name: 🛠 Set up actual paths
+      #   uses: ./.github/workflows/setup-path
 
-      - name: ⚙️ Install dependencies
-        run: |
-          cd ./support
-          pip install -r ./requirements.txt
+      # - name: ⚙️ Install dependencies
+      #   run: |
+      #     cd ./support
+      #     pip install -r ./requirements.txt
 
-      - name: 🦾 Generate new xcm coefficients
-        run: |
-          cd ./support
-          python nova-utils/update_xcm_data.py
+      # - name: 🦾 Generate new xcm coefficients
+      #   run: |
+      #     cd ./support
+      #     python nova-utils/update_xcm_data.py
 
-      - name: Move generated file
-        run: |
-          if [ "${{ github.event.inputs.environment }}" = "PROD" ]; then
-              mv support/transfers.json ${{ env.XCM_JSON_PATH }}
-              echo "COMMIT_FILE=${{ env.XCM_JSON_PATH }}" >> "$GITHUB_ENV"
-              echo "PR_REVIEWER=ERussel,leohar,valentunn" >> "$GITHUB_ENV"
-          else
-              mv support/transfers_dev.json ${{ env.DEV_XCM_JSON_PATH }}
-              echo "COMMIT_FILE=${{ env.DEV_XCM_JSON_PATH }}" >> "$GITHUB_ENV"
-              echo "PR_REVIEWER=leohar" >> "$GITHUB_ENV"
-          fi
+      # - name: Move generated file
+      #   run: |
+      #     if [ "${{ github.event.inputs.environment }}" = "PROD" ]; then
+      #         mv support/transfers.json ${{ env.XCM_JSON_PATH }}
+      #         echo "COMMIT_FILE=${{ env.XCM_JSON_PATH }}" >> "$GITHUB_ENV"
+      #         echo "PR_REVIEWER=ERussel,leohar,valentunn" >> "$GITHUB_ENV"
+      #     else
+      #         mv support/transfers_dev.json ${{ env.DEV_XCM_JSON_PATH }}
+      #         echo "COMMIT_FILE=${{ env.DEV_XCM_JSON_PATH }}" >> "$GITHUB_ENV"
+      #         echo "PR_REVIEWER=leohar" >> "$GITHUB_ENV"
+      #     fi
 
       - name: Make Pull Request
         uses: ./.github/workflows/make-pull-request
