@@ -58,11 +58,11 @@ jobs:
           if [ "${{ github.event.inputs.environment }}" = "PROD" ]; then
               mv support/transfers.json ${{ env.XCM_JSON_PATH }}
               echo "COMMIT_FILE=${{ env.XCM_JSON_PATH }}" >> "$GITHUB_ENV"
-              echo "PR_REVIEWER=ERussel,leohar,valentunn" >> "$GITHUB_ENV"
+              echo "PR_REVIEWER=ERussel,leohar,valentunn,stepanLav" >> "$GITHUB_ENV"
           else
               mv support/transfers_dev.json ${{ env.DEV_XCM_JSON_PATH }}
               echo "COMMIT_FILE=${{ env.DEV_XCM_JSON_PATH }}" >> "$GITHUB_ENV"
-              echo "PR_REVIEWER=leohar" >> "$GITHUB_ENV"
+              echo "PR_REVIEWER=leohar,stepanLav" >> "$GITHUB_ENV"
           fi
 
       - name: Make Pull Request
