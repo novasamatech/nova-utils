@@ -47,10 +47,10 @@
             }
         ],
         "color": "linear-gradient(315deg, #D43079 0%, #F93C90 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Polkadot.svg",
         "addressPrefix": 0,
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/polkadot.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/polkadot.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -64,7 +64,7 @@
             },
             "crowdloans": {
                 "type": "github",
-                "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/crowdloan/polkadot.json"
+                "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/crowdloan/polkadot.json"
             }
         },
         "options": [
@@ -126,10 +126,10 @@
             }
         ],
         "color": "linear-gradient(315deg, #000000 0%, #3F3F3F 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Kusama.svg",
         "addressPrefix": 2,
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/kusama.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/kusama.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -143,7 +143,7 @@
             },
             "crowdloans": {
                 "type": "github",
-                "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/crowdloan/kusama.json"
+                "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/crowdloan/kusama.json"
             }
         },
         "options": [
@@ -188,10 +188,10 @@
             }
         ],
         "color": "linear-gradient(315deg, #434852 0%, #787F92 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Westend.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Westend.svg",
         "addressPrefix": 42,
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/westend.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/westend.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -205,7 +205,7 @@
             },
             "crowdloans": {
                 "type": "github",
-                "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/crowdloan/westend.json"
+                "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/crowdloan/westend.json"
             }
         },
         "options": [
@@ -222,7 +222,7 @@
                 "assetId": 0,
                 "symbol": "KSM",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Kusama.svg",
                 "priceId": "kusama"
             },
             {
@@ -231,7 +231,7 @@
                 "precision": 10,
                 "priceId": "rmrk",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/RMRK.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/RMRK.svg",
                 "typeExtras": {
                     "assetId": "8"
                 }
@@ -241,7 +241,7 @@
                 "symbol": "CHAOS",
                 "precision": 10,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/CHAOS.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/CHAOS.svg",
                 "typeExtras": {
                     "assetId": "69420"
                 }
@@ -251,7 +251,7 @@
                 "symbol": "CHRWNA",
                 "precision": 10,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/CHRWNA.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/CHRWNA.svg",
                 "typeExtras": {
                     "assetId": "567"
                 }
@@ -261,7 +261,7 @@
                 "symbol": "SHIBATALES",
                 "precision": 0,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Default.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg",
                 "typeExtras": {
                     "assetId": "88888"
                 }
@@ -271,7 +271,7 @@
                 "symbol": "BILLCOIN",
                 "precision": 8,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/BILLCOIN.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/BILLCOIN.svg",
                 "typeExtras": {
                     "assetId": "223"
                 }
@@ -282,7 +282,7 @@
                 "precision": 4,
                 "priceId": "tether",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/USDT.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDT.svg",
                 "typeExtras": {
                     "assetId": "11"
                 }
@@ -321,7 +321,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/statemine.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/statemine.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -331,7 +331,7 @@
             }
         },
         "color": "linear-gradient(315deg, #1C3816 0%, #4F6B49 75%, #3F3F3F 75.01%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Statemine-Statemint.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Statemine-Statemint.svg",
         "addressPrefix": 2
     },
     {
@@ -349,7 +349,7 @@
                 "assetId": 1,
                 "symbol": "aUSD",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/AUSD.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AUSD.svg",
                 "priceId": "tether",
                 "type": "orml",
                 "typeExtras": {
@@ -363,7 +363,7 @@
                 "assetId": 2,
                 "symbol": "KSM",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Kusama.svg",
                 "priceId": "kusama",
                 "type": "orml",
                 "typeExtras": {
@@ -378,7 +378,7 @@
                 "symbol": "RMRK",
                 "precision": 10,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/RMRK.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/RMRK.svg",
                 "priceId": "rmrk",
                 "typeExtras": {
                     "currencyIdScale": "0x050000",
@@ -392,7 +392,7 @@
                 "symbol": "BNC",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bifrost.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Bifrost.svg",
                 "priceId": "bifrost-native-coin",
                 "typeExtras": {
                     "currencyIdScale": "0x00a8",
@@ -406,7 +406,7 @@
                 "symbol": "LKSM",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/LKSM.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/LKSM.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0083",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -420,7 +420,7 @@
                 "precision": 12,
                 "priceId": "pha",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Phala.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Phala.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x00aa",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -434,7 +434,7 @@
                 "precision": 12,
                 "priceId": "kintsugi",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kintsugi.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Kintsugi.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x00ab",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -448,7 +448,7 @@
                 "precision": 8,
                 "priceId": "bitcoin",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/KBTC.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/KBTC.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x00ac",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -461,7 +461,7 @@
                 "symbol": "TAI",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/TAI.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/TAI.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0084",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -474,7 +474,7 @@
                 "symbol": "vsKSM",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/vsKSM.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vsKSM.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x00a9",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -487,7 +487,7 @@
                 "symbol": "taiKSM",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/taiKSM.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/taiKSM.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0300000000",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -501,7 +501,7 @@
                 "precision": 18,
                 "priceId": "quartz",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Quartz.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Quartz.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050200",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -515,7 +515,7 @@
                 "precision": 18,
                 "priceId": "moonriver",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonriver.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Moonriver.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050300",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -528,7 +528,7 @@
                 "symbol": "HKO",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/HKO.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/HKO.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050400",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -542,7 +542,7 @@
                 "precision": 12,
                 "priceId": "crust-storage-market",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/CrustShadow.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/CrustShadow.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050500",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -556,7 +556,7 @@
                 "precision": 6,
                 "priceId": "tether",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/USDT.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDT.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050700",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -570,7 +570,7 @@
                 "precision": 12,
                 "priceId": "calamari-network",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Calamari.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Calamari.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050a00",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -584,7 +584,7 @@
                 "precision": 12,
                 "priceId": "integritee",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Integritee.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Integritee.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050800",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -597,7 +597,7 @@
                 "symbol": "KICO",
                 "precision": 14,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/KICO.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/KICO.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050600",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -610,7 +610,7 @@
                 "symbol": "NEER",
                 "precision": 18,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bit.Country.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Bit.Country.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050900",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -623,7 +623,7 @@
                 "symbol": "BSX",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Basilisk.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Basilisk.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050b00",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -637,7 +637,7 @@
                 "precision": 18,
                 "priceId": "altair",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Altair.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Altair.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050c00",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -651,7 +651,7 @@
                 "precision": 9,
                 "type": "orml",
                 "priceId": "genshiro",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Genshiro.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Genshiro.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050e00",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -665,7 +665,7 @@
                 "precision": 9,
                 "priceId": "tether",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/EQD.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/EQD.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050f00",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -679,7 +679,7 @@
                 "precision": 18,
                 "type": "orml",
                 "priceId": "darwinia-crab-network",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Crab.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Crab.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050d00",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -695,7 +695,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/karura.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/karura.json",
             "overridesCommon": true
         },
         "explorers": [
@@ -717,7 +717,7 @@
             }
         },
         "color": "linear-gradient(315.17deg, #E40C5B 0%, #FF4C3B 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Karura.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Karura.svg",
         "addressPrefix": 8
     },
     {
@@ -743,7 +743,7 @@
                 "precision": 10,
                 "type": "statemine",
                 "priceId": "polkadot",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Polkadot.svg",
                 "typeExtras": {
                     "assetId": "42259045809535163221576417993425387648"
                 }
@@ -754,7 +754,7 @@
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "tether",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/AUSD.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AUSD.svg",
                 "typeExtras": {
                     "assetId": "110021739665376159354538090254163045594"
                 }
@@ -765,7 +765,7 @@
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "acala",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Acala.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Acala.svg",
                 "typeExtras": {
                     "assetId": "224821240862170613278369189818311486111"
                 }
@@ -775,7 +775,7 @@
                 "symbol": "xcPARA",
                 "precision": 12,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/PARA.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/PARA.svg",
                 "typeExtras": {
                     "assetId": "32615670524745285411807346420584982855"
                 }
@@ -808,7 +808,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/moonbeam.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/moonbeam.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -822,7 +822,7 @@
             }
         },
         "color": "linear-gradient(135deg, #53CBC8 0%, #11807D 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonbeam.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Moonbeam.svg",
         "addressPrefix": 1284,
         "options": [
             "ethereumBased"
@@ -851,7 +851,7 @@
                 "precision": 10,
                 "priceId": "rmrk",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/RMRK.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/RMRK.svg",
                 "typeExtras": {
                     "assetId": "182365888117048807484804376330534607370"
                 }
@@ -862,7 +862,7 @@
                 "precision": 12,
                 "priceId": "kusama",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Kusama.svg",
                 "typeExtras": {
                     "assetId": "42259045809535163221576417993425387648"
                 }
@@ -873,7 +873,7 @@
                 "precision": 12,
                 "priceId": "kintsugi",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kintsugi.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Kintsugi.svg",
                 "typeExtras": {
                     "assetId": "175400718394635817552109270754364440562"
                 }
@@ -884,7 +884,7 @@
                 "precision": 12,
                 "priceId": "karura",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Karura.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Karura.svg",
                 "typeExtras": {
                     "assetId": "10810581592933651521121702237638664357"
                 }
@@ -895,7 +895,7 @@
                 "precision": 12,
                 "priceId": "bifrost-native-coin",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bifrost.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Bifrost.svg",
                 "typeExtras": {
                     "assetId": "319623561105283008236062145480775032445"
                 }
@@ -906,7 +906,7 @@
                 "precision": 8,
                 "priceId": "bitcoin",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/KBTC.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/KBTC.svg",
                 "typeExtras": {
                     "assetId": "328179947973504579459046439826496046832"
                 }
@@ -917,7 +917,7 @@
                 "precision": 6,
                 "priceId": "tether",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/USDT.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDT.svg",
                 "typeExtras": {
                     "assetId": "311091173110107856861649819128533077277"
                 }
@@ -928,7 +928,7 @@
                 "precision": 12,
                 "priceId": "tether",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/AUSD.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AUSD.svg",
                 "typeExtras": {
                     "assetId": "214920334981412447805621250067209749032"
                 }
@@ -939,7 +939,7 @@
                 "precision": 12,
                 "priceId": "crust-storage-market",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/CrustShadow.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/CrustShadow.svg",
                 "typeExtras": {
                     "assetId": "108457044225666871745333730479173774551"
                 }
@@ -950,7 +950,7 @@
                 "precision": 12,
                 "priceId": "pha",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Phala.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Phala.svg",
                 "typeExtras": {
                     "assetId": "189307976387032586987344677431204943363"
                 }
@@ -960,7 +960,7 @@
                 "symbol": "xcHKO",
                 "precision": 12,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/HKO.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/HKO.svg",
                 "typeExtras": {
                     "assetId": "76100021443485661246318545281171740067"
                 }
@@ -971,7 +971,7 @@
                 "precision": 12,
                 "priceId": "calamari-network",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Calamari.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Calamari.svg",
                 "typeExtras": {
                     "assetId": "213357169630950964874127107356898319277"
                 }
@@ -982,7 +982,7 @@
                 "precision": 18,
                 "priceId": "darwinia-crab-network",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Crab.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Crab.svg",
                 "typeExtras": {
                     "assetId": "173481220575862801646329923366065693029"
                 }
@@ -993,7 +993,7 @@
                 "precision": 12,
                 "priceId": "integritee",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Integritee.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Integritee.svg",
                 "typeExtras": {
                     "assetId": "105075627293246237499203909093923548958"
                 }
@@ -1030,7 +1030,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/moonriver.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/moonriver.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -1044,7 +1044,7 @@
             }
         },
         "color": "linear-gradient(135deg, #F2A007 19.29%, #A56B00 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonriver.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Moonriver.svg",
         "addressPrefix": 1285,
         "options": [
             "ethereumBased"
@@ -1095,10 +1095,10 @@
             }
         },
         "color": "linear-gradient(135deg, #987ED9 0%, #5132AA 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Shiden.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Shiden.svg",
         "addressPrefix": 5,
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/shiden.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/shiden.json",
             "overridesCommon": true
         }
     },
@@ -1117,7 +1117,7 @@
                 "assetId": 1,
                 "symbol": "KSM",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Kusama.svg",
                 "priceId": "kusama",
                 "type": "orml",
                 "typeExtras": {
@@ -1132,7 +1132,7 @@
                 "symbol": "RMRK",
                 "precision": 10,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/RMRK.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/RMRK.svg",
                 "priceId": "rmrk",
                 "typeExtras": {
                     "currencyIdScale": "0x0209",
@@ -1147,7 +1147,7 @@
                 "precision": 18,
                 "priceId": "zenlink-network-token",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/ZLK.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/ZLK.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0207",
                     "currencyIdType": "node_primitives.currency.CurrencyId",
@@ -1161,7 +1161,7 @@
                 "precision": 12,
                 "priceId": "karura",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Karura.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Karura.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0206",
                     "currencyIdType": "node_primitives.currency.CurrencyId",
@@ -1175,7 +1175,7 @@
                 "precision": 12,
                 "priceId": "tether",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/AUSD.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AUSD.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0302",
                     "currencyIdType": "node_primitives.currency.CurrencyId",
@@ -1188,7 +1188,7 @@
                 "symbol": "vsKSM",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/vsKSM.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vsKSM.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0404",
                     "currencyIdType": "node_primitives.currency.CurrencyId",
@@ -1202,7 +1202,7 @@
                 "precision": 6,
                 "priceId": "tether",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/USDT.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDT.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0700000000",
                     "currencyIdType": "node_primitives.currency.CurrencyId",
@@ -1216,7 +1216,7 @@
                 "precision": 18,
                 "type": "orml",
                 "priceId": "moonriver",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonriver.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Moonriver.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x020a",
                     "currencyIdType": "node_primitives.currency.CurrencyId",
@@ -1230,7 +1230,7 @@
                 "precision": 12,
                 "type": "orml",
                 "priceId": "pha",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Phala.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Phala.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0208",
                     "currencyIdType": "node_primitives.currency.CurrencyId",
@@ -1243,7 +1243,7 @@
                 "symbol": "vKSM",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/vKSM.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vKSM.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0104",
                     "currencyIdType": "node_primitives.currency.CurrencyId",
@@ -1267,7 +1267,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/bifrost.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/bifrost.json",
             "overridesCommon": true
         },
         "explorers": [
@@ -1289,7 +1289,7 @@
             }
         },
         "color": "linear-gradient(135deg, #3F3F3F 26.21%, #2EA9E7 26.42%, #4584F5 40.32%, #AC57C0 60.21%, #E65659 80.19%, #FFBF12 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bifrost.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Bifrost.svg",
         "addressPrefix": 6
     },
     {
@@ -1324,7 +1324,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/basilisk.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/basilisk.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -1334,7 +1334,7 @@
             }
         },
         "color": "linear-gradient(315deg, #5B892B 0%, #97D92D 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Basilisk.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Basilisk.svg",
         "addressPrefix": 10041
     },
     {
@@ -1378,11 +1378,11 @@
             }
         },
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/altair.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/altair.json",
             "overridesCommon": true
         },
         "color": "linear-gradient(315deg, #A37539 0%, #F5B840 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Altair.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Altair.svg",
         "addressPrefix": 136
     },
     {
@@ -1394,7 +1394,7 @@
                 "assetId": 0,
                 "symbol": "HKO",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/HKO.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/HKO.svg"
             },
             {
                 "assetId": 1,
@@ -1402,7 +1402,7 @@
                 "precision": 12,
                 "priceId": "kusama",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Kusama.svg",
                 "typeExtras": {
                     "assetId": "100"
                 }
@@ -1413,7 +1413,7 @@
                 "precision": 12,
                 "priceId": "tether",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/AUSD.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AUSD.svg",
                 "typeExtras": {
                     "assetId": "103"
                 }
@@ -1423,7 +1423,7 @@
                 "symbol": "LKSM",
                 "precision": 12,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/LKSM.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/LKSM.svg",
                 "typeExtras": {
                     "assetId": "109"
                 }
@@ -1433,7 +1433,7 @@
                 "symbol": "sKSM",
                 "precision": 12,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/sKSM.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/sKSM.svg",
                 "typeExtras": {
                     "assetId": "1000"
                 }
@@ -1444,7 +1444,7 @@
                 "precision": 12,
                 "priceId": "karura",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Karura.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Karura.svg",
                 "typeExtras": {
                     "assetId": "107"
                 }
@@ -1455,7 +1455,7 @@
                 "precision": 18,
                 "priceId": "moonriver",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonriver.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Moonriver.svg",
                 "typeExtras": {
                     "assetId": "113"
                 }
@@ -1466,7 +1466,7 @@
                 "precision": 12,
                 "priceId": "pha",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Phala.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Phala.svg",
                 "typeExtras": {
                     "assetId": "115"
                 }
@@ -1477,7 +1477,7 @@
                 "precision": 9,
                 "priceId": "genshiro",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Genshiro.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Genshiro.svg",
                 "typeExtras": {
                     "assetId": "123"
                 }
@@ -1494,7 +1494,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/parallel_heiko.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/parallel_heiko.json",
             "overridesCommon": true
         },
         "explorers": [
@@ -1512,7 +1512,7 @@
             }
         },
         "color": "linear-gradient(315deg, #3A55F5 8%, #04E2FF 75%, #3F3F3F 75.01%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Parallel-Heiko.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Parallel-Heiko.svg",
         "addressPrefix": 110
     },
     {
@@ -1537,7 +1537,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/types/edgeware.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/types/edgeware.json",
             "overridesCommon": false
         },
         "explorers": [
@@ -1553,7 +1553,7 @@
             }
         ],
         "color": "linear-gradient(315deg, #000000 0%, #3F3F3F 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Edgeware.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Edgeware.svg",
         "addressPrefix": 7
     },
     {
@@ -1566,7 +1566,7 @@
                 "symbol": "PHA",
                 "precision": 12,
                 "priceId": "pha",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Phala.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Phala.svg"
             },
             {
                 "assetId": 1,
@@ -1574,7 +1574,7 @@
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "kusama",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Kusama.svg",
                 "typeExtras": {
                     "assetId": "0"
                 }
@@ -1585,7 +1585,7 @@
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "karura",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Karura.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Karura.svg",
                 "typeExtras": {
                     "assetId": "1"
                 }
@@ -1596,7 +1596,7 @@
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "bifrost-native-coin",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bifrost.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Bifrost.svg",
                 "typeExtras": {
                     "assetId": "2"
                 }
@@ -1607,7 +1607,7 @@
                 "precision": 18,
                 "priceId": "zenlink-network-token",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/ZLK.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/ZLK.svg",
                 "typeExtras": {
                     "assetId": "3"
                 }
@@ -1618,7 +1618,7 @@
                 "precision": 12,
                 "priceId": "tether",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/AUSD.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AUSD.svg",
                 "typeExtras": {
                     "assetId": "4"
                 }
@@ -1628,7 +1628,7 @@
                 "symbol": "BSX",
                 "precision": 12,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Basilisk.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Basilisk.svg",
                 "typeExtras": {
                     "assetId": "5"
                 }
@@ -1639,7 +1639,7 @@
                 "precision": 18,
                 "priceId": "moonriver",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonriver.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Moonriver.svg",
                 "typeExtras": {
                     "assetId": "6"
                 }
@@ -1649,7 +1649,7 @@
                 "symbol": "HKO",
                 "precision": 12,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/HKO.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/HKO.svg",
                 "typeExtras": {
                     "assetId": "7"
                 }
@@ -1678,7 +1678,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/khala.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/khala.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -1688,7 +1688,7 @@
             }
         },
         "color": "linear-gradient(315deg, #0B8789 0%, #36F7FA 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Khala.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Khala.svg",
         "addressPrefix": 30
     },
     {
@@ -1726,7 +1726,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/kilt_spiritnet.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/kilt_spiritnet.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -1736,7 +1736,7 @@
             }
         },
         "color": "linear-gradient(135deg, #F86842 0%, #8C175B 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/KILT.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/KILT.svg",
         "addressPrefix": 38
     },
     {
@@ -1778,7 +1778,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/calamari.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/calamari.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -1788,7 +1788,7 @@
             }
         },
         "color": "linear-gradient(315deg, #5C09BA 0%, #C72F9E 58.33%, #FCA027 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Calamari.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Calamari.svg",
         "addressPrefix": 78
     },
     {
@@ -1822,7 +1822,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/quartz.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/quartz.json",
             "overridesCommon": true
         },
         "explorers": [
@@ -1844,7 +1844,7 @@
             }
         },
         "color": "linear-gradient(315deg, #CB2E41 0%, #ED5B6D 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Quartz.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Quartz.svg",
         "addressPrefix": 255
     },
     {
@@ -1869,7 +1869,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/bit.country_pioneer.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/bit.country_pioneer.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -1879,7 +1879,7 @@
             }
         },
         "color": "linear-gradient(315deg, #391BB5 0%, #DB3795 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bit.Country.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Bit.Country.svg",
         "addressPrefix": 268
     },
     {
@@ -1899,7 +1899,7 @@
                 "precision": 10,
                 "priceId": "liquid-staking-dot",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/LDOT.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/LDOT.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0003",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -1913,7 +1913,7 @@
                 "precision": 12,
                 "priceId": "tether",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/AUSD.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AUSD.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0001",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -1927,7 +1927,7 @@
                 "precision": 10,
                 "priceId": "polkadot",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Polkadot.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0002",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -1941,7 +1941,7 @@
                 "precision": 10,
                 "priceId": "liquid-crowdloan-dot",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/lcDOT.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/lcDOT.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x040d000000",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -1955,7 +1955,7 @@
                 "precision": 18,
                 "priceId": "moonbeam",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonbeam.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Moonbeam.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050000",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -1968,7 +1968,7 @@
                 "symbol": "PARA",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/PARA.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/PARA.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050100",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -1981,7 +1981,7 @@
                 "symbol": "TAP",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/TAP.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/TAP.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0004",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -1994,7 +1994,7 @@
                 "symbol": "tDOT",
                 "precision": 10,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/tDOT.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/tDOT.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0300000000",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -2042,7 +2042,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/acala.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/acala.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -2052,7 +2052,7 @@
             }
         },
         "color": "linear-gradient(97.21deg, #E40C5B 0%, #645AFD 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Acala.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Acala.svg",
         "addressPrefix": 10
     },
     {
@@ -2077,7 +2077,7 @@
                 "precision": 10,
                 "type": "statemine",
                 "priceId": "polkadot",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Polkadot.svg",
                  "typeExtras": {
                      "assetId": "340282366920938463463374607431768211455"
                  }
@@ -2106,7 +2106,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/astar.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/astar.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -2116,7 +2116,7 @@
             }
         },
         "color": "linear-gradient(315deg, #DD037D 0%, #00B1FF 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Astar.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Astar.svg",
         "addressPrefix": 5,
         "additional": {
             "defaultTip": "1000000"
@@ -2131,7 +2131,7 @@
                 "assetId": 0,
                 "symbol": "PARA",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/PARA.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/PARA.svg"
             },
             {
                 "assetId": 1,
@@ -2139,7 +2139,7 @@
                 "precision": 10,
                 "priceId": "polkadot",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Polkadot.svg",
                 "typeExtras": {
                     "assetId": "101"
                 }
@@ -2150,7 +2150,7 @@
                 "precision": 10,
                 "priceId": "polkadot",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Polkadot.svg",
                 "typeExtras": {
                     "assetId": "1001"
                 }
@@ -2161,7 +2161,7 @@
                 "precision": 12,
                 "priceId": "acala",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Acala.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Acala.svg",
                 "typeExtras": {
                     "assetId": "108"
                 }
@@ -2172,7 +2172,7 @@
                 "precision": 12,
                 "priceId": "tether",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/AUSD.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AUSD.svg",
                 "typeExtras": {
                     "assetId": "104"
                 }
@@ -2183,7 +2183,7 @@
                 "precision": 10,
                 "priceId": "liquid-staking-dot",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/LDOT.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/LDOT.svg",
                 "typeExtras": {
                     "assetId": "110"
                 }
@@ -2194,7 +2194,7 @@
                 "precision": 18,
                 "priceId": "moonbeam",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Moonbeam.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Moonbeam.svg",
                 "typeExtras": {
                     "assetId": "114"
                 }
@@ -2223,7 +2223,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/parallel.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/parallel.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -2233,7 +2233,7 @@
             }
         },
         "color": "linear-gradient(315deg, #5314F1 8%, #04E2FF 75%, #D43079 75.01%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Parallel-Heiko.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Parallel-Heiko.svg",
         "addressPrefix": 172
     },
     {
@@ -2267,7 +2267,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/clover.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/clover.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -2277,7 +2277,7 @@
             }
         },
         "color": "linear-gradient(315deg, #4AA7CA 0%, #56D5A7 75%, #D43079 75.01%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Clover.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Clover.svg",
         "addressPrefix": 128
     },
     {
@@ -2290,7 +2290,7 @@
                 "symbol": "DOT",
                 "precision": 10,
                 "priceId": "polkadot",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Polkadot.svg"
             }
         ],
         "nodes": [
@@ -2316,7 +2316,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/statemint.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/statemint.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -2326,7 +2326,7 @@
             }
         },
         "color": "linear-gradient(315deg, #23371A 0%, #89C62D 75%, #D43079 75.01%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Statemine-Statemint.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Statemine-Statemint.svg",
         "addressPrefix": 0
     },
     {
@@ -2352,11 +2352,11 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/subsocial_solo.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/subsocial_solo.json",
             "overridesCommon": true
         },
         "color": "linear-gradient(315deg, #720497 0%, #F50083 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Subsocial.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Subsocial.svg",
         "addressPrefix": 28
     },
     {
@@ -2390,7 +2390,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/robonomics.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/robonomics.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -2400,7 +2400,7 @@
             }
         },
         "color": "linear-gradient(315deg, #2A4ECB 0%, #4CABEC 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Robonomics.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Robonomics.svg",
         "addressPrefix": 32
     },
     {
@@ -2413,7 +2413,7 @@
                 "symbol": "KSM",
                 "precision": 12,
                 "priceId": "kusama",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Kusama.svg"
             }
         ],
         "nodes": [
@@ -2427,7 +2427,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/encointer.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/encointer.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -2437,7 +2437,7 @@
             }
         },
         "color": "linear-gradient(315deg, #001BC4 0%, #3F59FF 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Encointer.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Encointer.svg",
         "addressPrefix": 2
     },
     {
@@ -2451,7 +2451,7 @@
                 "precision": 12,
                 "type": "orml",
                 "priceId": "kintsugi",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kintsugi.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Kintsugi.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x000c",
                     "currencyIdType": "interbtc_primitives.CurrencyId",
@@ -2465,7 +2465,7 @@
                 "precision": 8,
                 "type": "orml",
                 "priceId": "bitcoin",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/KBTC.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/KBTC.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x000b",
                     "currencyIdType": "interbtc_primitives.CurrencyId",
@@ -2479,7 +2479,7 @@
                 "precision": 12,
                 "priceId": "kusama",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Kusama.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x000a",
                     "currencyIdType": "interbtc_primitives.CurrencyId",
@@ -2507,7 +2507,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/kintsugi.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/kintsugi.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -2517,7 +2517,7 @@
             }
         },
         "color": "linear-gradient(315deg, #180C2B 0%, #1E3258 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kintsugi.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Kintsugi.svg",
         "addressPrefix": 2092
     },
     {
@@ -2529,7 +2529,7 @@
                 "assetId": 0,
                 "symbol": "PICA",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Picasso.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Picasso.svg"
             }
         ],
         "nodes": [
@@ -2547,7 +2547,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/picasso.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/picasso.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -2557,7 +2557,7 @@
             }
         },
         "color": "linear-gradient(315deg, #D57923 0%, #F8A65A 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Picasso.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Picasso.svg",
         "addressPrefix": 49
     },
     {
@@ -2570,7 +2570,7 @@
                 "symbol": "ZTG",
                 "precision": 10,
                 "priceId": "zeitgeist",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Zeitgeist.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Zeitgeist.svg"
             }
         ],
         "nodes": [
@@ -2600,7 +2600,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/zeitgeist.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/zeitgeist.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -2610,7 +2610,7 @@
             }
         },
         "color": "linear-gradient(315deg, #132849 0%, #2C5AA6 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Zeitgeist.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Zeitgeist.svg",
         "addressPrefix": 73
     },
     {
@@ -2622,7 +2622,7 @@
                 "assetId": 0,
                 "symbol": "KICO",
                 "precision": 14,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/KICO.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/KICO.svg"
             }
         ],
         "nodes": [
@@ -2636,7 +2636,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/kico.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/kico.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -2646,7 +2646,7 @@
             }
         },
         "color": "linear-gradient(315deg, #248A63 0%, #58B18F 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/KICO.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/KICO.svg",
         "addressPrefix": 42
     },
     {
@@ -2659,7 +2659,7 @@
                 "symbol": "LIT",
                 "precision": 12,
                 "priceId": "litentry",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Litentry.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Litentry.svg"
             }
         ],
         "nodes": [
@@ -2681,7 +2681,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/litmus.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/litmus.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -2691,7 +2691,7 @@
             }
         },
         "color": "linear-gradient(315deg, #4A22E1 0%, #7657EF 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Litmus.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Litmus.svg",
         "addressPrefix": 131
     },
     {
@@ -2704,7 +2704,7 @@
                 "symbol": "CRAB",
                 "precision": 18,
                 "priceId": "darwinia-crab-network",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Crab.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Crab.svg"
             }
         ],
         "nodes": [
@@ -2726,7 +2726,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/crab.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/crab.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -2736,7 +2736,7 @@
             }
         },
         "color": "linear-gradient(315deg, #E6335B 0%, #0036F5 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Crab.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Crab.svg",
         "addressPrefix": 42
     },
     {
@@ -2748,7 +2748,7 @@
                 "assetId": 0,
                 "symbol": "SUB",
                 "precision": 10,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Subsocial.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Subsocial.svg"
             }
         ],
         "nodes": [
@@ -2764,7 +2764,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/subsocial.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/subsocial.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -2774,7 +2774,7 @@
             }
         },
         "color": "linear-gradient(315deg, #0C0011 0%, #681391 75%, #3F3F3F 75.01%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Subsocial.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Subsocial.svg",
         "addressPrefix": 28
     },
     {
@@ -2787,7 +2787,7 @@
                 "symbol": "CSM",
                 "precision": 12,
                 "priceId": "crust-storage-market",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/CrustShadow.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/CrustShadow.svg"
             }
         ],
         "nodes": [
@@ -2809,7 +2809,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/crust_shadow.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/crust_shadow.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -2819,7 +2819,7 @@
             }
         },
         "color": "linear-gradient(315deg, #D57923 0%, #F8A65A 75%, #3F3F3F 75.01%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/CrustShadow.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/CrustShadow.svg",
         "addressPrefix": 66
     },
     {
@@ -2832,7 +2832,7 @@
                 "symbol": "TEER",
                 "precision": 12,
                 "priceId": "integritee",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Integritee.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Integritee.svg"
             }
         ],
         "nodes": [
@@ -2858,7 +2858,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/Integritee.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/Integritee.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -2868,7 +2868,7 @@
             }
         },
         "color": "linear-gradient(315deg, #000C5F 47.14%, #91E3DA 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Integritee.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Integritee.svg",
         "addressPrefix": 13
     },
     {
@@ -2881,7 +2881,7 @@
                 "symbol": "CFG",
                 "precision": 18,
                 "priceId": "centrifuge",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Centrifuge.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Centrifuge.svg"
             }
         ],
         "nodes": [
@@ -2903,7 +2903,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/centrifuge.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/centrifuge.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -2913,7 +2913,7 @@
             }
         },
         "color": "linear-gradient(315.17deg, #000000 0%, #3F3F3F 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Centrifuge.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Centrifuge.svg",
         "addressPrefix": 36
     },
     {
@@ -2926,7 +2926,7 @@
                 "symbol": "EFI",
                 "precision": 18,
                 "priceId": "efinity",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Efinity.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Efinity.svg"
             }
         ],
         "nodes": [
@@ -2936,7 +2936,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/efinity.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/efinity.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -2946,7 +2946,7 @@
             }
         },
         "color": "linear-gradient(315.17deg, #4E6FD4 0%, #7B99F5 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Efinity.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Efinity.svg",
         "addressPrefix": 1110
     },
     {
@@ -2958,7 +2958,7 @@
                 "assetId": 0,
                 "symbol": "HDX",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/HydraDX.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/HydraDX.svg"
             }
         ],
         "nodes": [
@@ -2968,7 +2968,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/hydra_dx.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/hydra_dx.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -2978,7 +2978,7 @@
             }
         },
         "color": "linear-gradient(315.17deg, #081152 19.76%, #F569AD 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/HydraDX.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/HydraDX.svg",
         "addressPrefix": 63
     },
     {
@@ -2991,7 +2991,7 @@
                 "symbol": "INTR",
                 "precision": 10,
                 "priceId": "interlay",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Interlay.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Interlay.svg",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x0002",
@@ -3005,7 +3005,7 @@
                 "symbol": "iBTC",
                 "precision": 8,
                 "priceId": "bitcoin",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/interBTC.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/interBTC.svg",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x0001",
@@ -3019,7 +3019,7 @@
                 "symbol": "DOT",
                 "precision": 10,
                 "priceId": "polkadot",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadot.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Polkadot.svg",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x0000",
@@ -3033,7 +3033,7 @@
                 "symbol": "KINT",
                 "precision": 12,
                 "priceId": "kintsugi",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kintsugi.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Kintsugi.svg",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x000c",
@@ -3047,7 +3047,7 @@
                 "symbol": "kBTC",
                 "precision": 8,
                 "priceId": "bitcoin",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/KBTC.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/KBTC.svg",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x000b",
@@ -3061,7 +3061,7 @@
                 "symbol": "KSM",
                 "precision": 12,
                 "priceId": "kusama",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Kusama.svg",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x000a",
@@ -3090,7 +3090,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/interlay.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/interlay.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -3100,7 +3100,7 @@
             }
         },
         "color": "linear-gradient(315.17deg, #000000 0%, #3F3F3F 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Interlay.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Interlay.svg",
         "addressPrefix": 2032
     },
     {
@@ -3112,7 +3112,7 @@
                 "assetId": 0,
                 "symbol": "NODL",
                 "precision": 11,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Nodle.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Nodle.svg"
             }
         ],
         "nodes": [
@@ -3138,7 +3138,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/nodle.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/nodle.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -3148,7 +3148,7 @@
             }
         },
         "color": "linear-gradient(315.17deg, #50AA85 0%, #57C799 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Nodle.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Nodle.svg",
         "addressPrefix": 37
     },
     {
@@ -3161,7 +3161,7 @@
                 "symbol": "PHA",
                 "precision": 12,
                 "priceId": "pha",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Phala.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Phala.svg"
             }
         ],
         "nodes": [
@@ -3179,7 +3179,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/phala.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/phala.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -3189,7 +3189,7 @@
             }
         },
         "color": "linear-gradient(315deg, #78930F 0%, #D1F068 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Phala.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Phala.svg",
         "addressPrefix": 30
     },
     {
@@ -3202,7 +3202,7 @@
                 "symbol": "TUR",
                 "staking": "turing",
                 "precision": 10,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Turing.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Turing.svg"
             },
             {
                 "assetId": 1,
@@ -3210,7 +3210,7 @@
                 "precision": 12,
                 "priceId": "kusama",
                  "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Kusama.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x01",
                     "currencyIdType": "turing_runtime.CurrencyId",
@@ -3224,7 +3224,7 @@
                 "precision": 12,
                 "priceId": "tether",
                  "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/AUSD.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AUSD.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x02",
                     "currencyIdType": "turing_runtime.CurrencyId",
@@ -3238,7 +3238,7 @@
                 "precision": 12,
                 "priceId": "karura",
                  "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Karura.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Karura.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x03",
                     "currencyIdType": "turing_runtime.CurrencyId",
@@ -3251,7 +3251,7 @@
                 "symbol": "LKSM",
                 "precision": 12,
                  "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/LKSM.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/LKSM.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x04",
                     "currencyIdType": "turing_runtime.CurrencyId",
@@ -3264,7 +3264,7 @@
                 "symbol": "HKO",
                 "precision": 12,
                  "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/HKO.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/HKO.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x05",
                     "currencyIdType": "turing_runtime.CurrencyId",
@@ -3277,7 +3277,7 @@
                 "symbol": "sKSM",
                 "precision": 12,
                  "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/sKSM.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/sKSM.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x06",
                     "currencyIdType": "turing_runtime.CurrencyId",
@@ -3291,7 +3291,7 @@
                 "precision": 12,
                 "priceId": "pha",
                  "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/Phala.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Phala.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x07",
                     "currencyIdType": "turing_runtime.CurrencyId",
@@ -3311,7 +3311,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/turing.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/turing.json",
             "overridesCommon": true
         },
         "explorers": [
@@ -3333,7 +3333,7 @@
             }
         },
         "color": "linear-gradient(315deg, #B533B3 14.94%, #38EDF1 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Turing.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Turing.svg",
         "addressPrefix": 51
     },
     {
@@ -3346,7 +3346,7 @@
                 "priceId": "aleph-zero",
                 "staking": "aleph-zero",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Aleph_zero.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Aleph_zero.svg"
             }
         ],
         "nodes": [
@@ -3364,7 +3364,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/aleph_zero.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/aleph_zero.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -3378,7 +3378,7 @@
             }
         },
         "color": "linear-gradient(315deg, #008464 20%, #69E6C8 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Aleph_zero.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Aleph_zero.svg",
         "addressPrefix": 42
     },
     {
@@ -3390,7 +3390,7 @@
                 "assetId": 0,
                 "symbol": "LAYR",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Composable.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Composable.svg"
             }
         ],
         "nodes": [
@@ -3412,7 +3412,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/composable.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/composable.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -3422,7 +3422,7 @@
             }
         },
         "color": "linear-gradient(315.17deg, #7A0354 13.48%, #8E0076 46.85%, #F139FE 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Composable.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Composable.svg",
         "addressPrefix": 49
     },
     {
@@ -3435,7 +3435,7 @@
                 "priceId": "polkadex",
                 "staking": "relaychain",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadex.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Polkadex.svg"
             }
         ],
         "nodes": [
@@ -3461,7 +3461,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/polkadex.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/polkadex.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -3475,7 +3475,7 @@
             }
         },
         "color": "linear-gradient(315deg, #2B2D36 23.96%, #606169 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Polkadex.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Polkadex.svg",
         "addressPrefix": 88
     },
     {
@@ -3496,7 +3496,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/origintrail.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/origintrail.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -3506,7 +3506,7 @@
             }
         },
         "color": "linear-gradient(315deg, #B62EB1 0%, #E96CE5 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/OriginTrail.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/OriginTrail.svg",
         "addressPrefix": 101
     },
     {
@@ -3528,7 +3528,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/bifrost_polkadot.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/bifrost_polkadot.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -3538,7 +3538,7 @@
             }
         },
         "color": "linear-gradient(135deg, #D43079 26.21%, #2EA9E7 26.42%, #4584F5 40.32%, #AC57C0 60.21%, #E65659 80.19%, #FFBF12 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bifrost.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Bifrost.svg",
         "addressPrefix": 6
     },
     {
@@ -3560,7 +3560,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/litentry.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/litentry.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -3570,7 +3570,7 @@
             }
         },
         "color": "linear-gradient(315deg, #0E7227 0%, #5CC774 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Litentry.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Litentry.svg",
         "addressPrefix": 31
     },
     {
@@ -3607,7 +3607,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/unique.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/unique.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -3617,7 +3617,7 @@
             }
         },
         "color": "linear-gradient(315deg, #267DEE 0%, #5FC2F9 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Unique.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Unique.svg",
         "addressPrefix": 7391
     },
     {
@@ -3639,7 +3639,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/dorafactory.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/dorafactory.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -3649,7 +3649,7 @@
             }
         },
         "color": "linear-gradient(315deg, #E04E02 0%, #FCB350 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/DoraFactory.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/DoraFactory.svg",
         "addressPrefix": 128
     },
     {
@@ -3661,7 +3661,7 @@
                 "assetId": 0,
                 "symbol": "MGX",
                 "precision": 18,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/MangataX.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/MangataX.svg",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x00000000",
@@ -3675,7 +3675,7 @@
                 "symbol": "KSM",
                 "precision": 12,
                 "priceId": "kusama",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kusama.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Kusama.svg",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x04000000",
@@ -3689,7 +3689,7 @@
                 "symbol": "ETH",
                 "precision": 18,
                 "priceId": "ethereum",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/tokens/white/ETH.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/ETH.svg",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x01000000",
@@ -3718,11 +3718,11 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/mangatax.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/mangatax.json",
             "overridesCommon": true
         },
         "color": "linear-gradient(315deg, #009F80 24.99%, #95E7D7 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/MangataX.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/MangataX.svg",
         "addressPrefix": 42
     },
     {
@@ -3743,7 +3743,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/pichiu.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/pichiu.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -3753,7 +3753,7 @@
             }
         },
         "color": "linear-gradient(315deg, #A91056 0%, #F34594 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Pichiu.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Pichiu.svg",
         "addressPrefix": 42
     },
     {
@@ -3774,7 +3774,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/kabocha.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/kabocha.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -3784,7 +3784,7 @@
             }
         },
         "color": "linear-gradient(315deg, #C9B904 0%, #D3CD4A 66.15%, #FDF775 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Kabocha.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Kabocha.svg",
         "addressPrefix": 27
     },
     {
@@ -3806,7 +3806,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/tanganika.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/tanganika.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -3816,7 +3816,7 @@
             }
         },
         "color": "linear-gradient(315deg, #7D20BF 15.1%, #584DDB 57.81%, #51BEF9 94.27%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/DataHighway.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/DataHighway.svg",
         "addressPrefix": 33
     },
     {
@@ -3837,11 +3837,11 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/bajun.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/bajun.json",
             "overridesCommon": true
         },
         "color": "linear-gradient(315deg, #DF5262 16.15%, #EC725D 53.13%, #F38861 75.32%, #3F3F3F 75.41%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Bajun.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Bajun.svg",
         "addressPrefix": 1337
     },
     {
@@ -3862,11 +3862,11 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/v2/types/imbue.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/imbue.json",
             "overridesCommon": true
         },
         "color": "linear-gradient(315.17deg, #7CB00B 12.5%, #B5FF14 100%)",
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-utils/master/icons/chains/white/Imbue.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Imbue.svg",
         "addressPrefix": 42
     }
 ]
