@@ -348,7 +348,8 @@
     "dapps": [
       {
         "title": "Subsquare",
-        "urlV1": "https://bifrost.subsquare.io/democracy/referendum/{referendumId}",
+        "urlV1": "https://bifrost-kusama.subsquare.io/democracy/referendum/{referendumId}",
+        "urlV2": "https://bifrost-kusama.subsquare.io/referenda/referendum/{referendumId}",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/color/SubSquare.svg",
         "details": "Comment and react"
       }
