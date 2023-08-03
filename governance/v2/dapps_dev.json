@@ -229,6 +229,13 @@
         "urlV1": "https://moonriver.polkassembly.io/referendum/{referendumId}",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/Polkassembly.svg",
         "details": "Comment and react"
+      },
+      {
+        "title": "Subsquare",
+        "urlV1": "https://moonriver.subsquare.io/democracy/referendum/{referendumId}",
+        "urlV2": "https://moonriver.subsquare.io/referenda/referendum/{referendumId}",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/color/SubSquare.svg",
+        "details": "Comment and react"
       }
     ]
   },
@@ -348,7 +355,8 @@
     "dapps": [
       {
         "title": "Subsquare",
-        "urlV1": "https://bifrost.subsquare.io/democracy/referendum/{referendumId}",
+        "urlV1": "https://bifrost-kusama.subsquare.io/democracy/referendum/{referendumId}",
+        "urlV2": "https://bifrost-kusama.subsquare.io/referenda/referendum/{referendumId}",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/color/SubSquare.svg",
         "details": "Comment and react"
       }
@@ -371,6 +379,17 @@
       {
         "title": "Subsquare",
         "urlV1": "https://zeitgeist.subsquare.io/democracy/referendum/{referendumId}",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/color/SubSquare.svg",
+        "details": "Comment and react"
+      }
+    ]
+  },
+  {
+    "chainId": "262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b",
+    "dapps": [
+      {
+        "title": "Subsquare",
+        "urlV1": "https://bifrost.subsquare.io/democracy/referendum/{referendumId}",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/color/SubSquare.svg",
         "details": "Comment and react"
       }
