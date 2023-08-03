@@ -839,10 +839,19 @@
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-karura"
                 }
+            ],
+            "governance": [
+                {
+                    "type": "subsquare",
+                    "url": "https://karura.subsquare.io/api"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Karura.svg",
-        "addressPrefix": 8
+        "addressPrefix": 8,
+        "options": [
+            "governance-v1"
+        ]
     },
     {
         "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
@@ -1399,8 +1408,8 @@
             ],
             "governance": [
                 {
-                    "type": "polkassembly",
-                    "url": "https://api.moonriver.polkassembly.network/v1/graphql"
+                    "type": "subsquare",
+                    "url": "https://moonriver.subsquare.io/api"
                 }
             ]
         },
@@ -1408,6 +1417,7 @@
         "addressPrefix": 1285,
         "options": [
             "ethereumBased",
+            "governance",
             "governance-v1"
         ]
     },
@@ -2837,10 +2847,19 @@
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-acala"
                 }
+            ],
+            "governance": [
+                {
+                    "type": "subsquare",
+                    "url": "https://acala.subsquare.io/api"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Acala.svg",
-        "addressPrefix": 10
+        "addressPrefix": 10,
+        "options": [
+            "governance-v1"
+        ]
     },
     {
         "chainId": "9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6",
@@ -5203,10 +5222,19 @@
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bifrost-polkadot"
                 }
+            ],
+            "governance": [
+                {
+                    "type": "subsquare",
+                    "url": "https://bifrost.subsquare.io/api"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Bifrost_Polkadot.svg",
-        "addressPrefix": 6
+        "addressPrefix": 6,
+        "options": [
+            "governance-v1"
+        ]
     },
     {
         "chainId": "2fc8bb6ed7c0051bdcf4866c322ed32b6276572713607e3297ccf411b8f14aa9",
