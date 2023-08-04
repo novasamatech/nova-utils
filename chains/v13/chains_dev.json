@@ -8434,5 +8434,38 @@
         "options": [
             "testnet"
         ]
+    },
+    {
+        "chainId": "b3dd5ad6a82872b30aabaede8f41dfd4ff6c32ff82f8757d034a45be63cf104c",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "krest",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "KREST",
+                "precision": 18,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/MITO.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://wss-krest.peaq.network",
+                "name": "Krest node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://krest.subscan.io/extrinsic/{hash}",
+                "account": "https://krest.subscan.io/account/{address}",
+                "event": null
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/krest.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/DAOIPCI.svg",
+        "addressPrefix": 42
     }
 ]
