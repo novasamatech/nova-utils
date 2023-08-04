@@ -21,7 +21,7 @@
 |  17 | GM! Say it back                | https://app.gmordie.com/                             | social                        |
 |  18 | Huckleberry Finance            | https://www.huckleberry.finance/#/swap               | bridge,dex,staking,evm        |
 |  19 | HydraDX Omnipool               | https://app.hydradx.io/#/trade                       | bridge,dex                    |
-|  20 | Impossible Finance             | https://invest.impossible.finance/launchpad          | dex,evm                       |
+|  20 | Impossible Finance             | https://app.impossible.finance/explore               | dex,evm                       |
 |  21 | Interlay Bitcoin DeFi Hub      | https://app.interlay.io/                             | bridge,staking,dex            |
 |  22 | KILT Stakeboard (Desktop mode) | https://stakeboard.kilt.io/                          | staking                       |
 |  23 | Kanaria                        | https://kanaria.rmrk.app/                            | nft                           |
