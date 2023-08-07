@@ -1411,6 +1411,12 @@
                     "type": "subsquare",
                     "url": "https://moonriver.subsquare.io/api"
                 }
+            ],
+            "governance-delegations": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonriver-gov"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Moonriver.svg",
