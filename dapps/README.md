@@ -5,7 +5,7 @@
 |   1 | ACE                                  | https://ace.web3go.xyz/#/                            | utilities                     |
 |   2 | Acala App (Desktop mode)             | https://apps.acala.network/                          | bridge,dex,staking            |
 |   3 | ArthSwap                             | https://app.arthswap.org/#/swap                      | dex,staking,evm               |
-|   4 | Astar DApp Hub                       | https://portal.astar.network/                        | bridge,staking,evm            |
+|   4 | Astar Portal                         | https://portal.astar.network/                        | bridge,staking,evm            |
 |   5 | Awesome Ajuna Avatars (Desktop mode) | https://aaa.ajuna.io/                                | nft,gaming                    |
 |   6 | Basilisk Snek Swap                   | https://app.basilisk.cloud/#/trade                   | bridge,dex                    |
 |   7 | Beamswap                             | https://app.beamswap.io/exchange/swap                | bridge,dex,staking,evm        |
