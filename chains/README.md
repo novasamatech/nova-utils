@@ -1,11 +1,11 @@
 
 # Supported Networks & Assets data:
-### 🕸️ Supported networks: 79
-### 💰 All assets 290
-### 🪙 Unique assets: 144
-### 💫 Cross Chain directions: 279
+### 🕸️ Supported networks: 80
+### 💰 All assets 291
+### 🪙 Unique assets: 145
+### 💫 Cross Chain directions: 284
 ### 🧾 SubQuery API projects: 60
-### 👀 Networks with block explorers: 70
+### 👀 Networks with block explorers: 71
 ---
 # List of supported networks
 | --  |        Network        |                                                                                                                        Assets                                                                                                                         |                     Explorers                      |                                                  SubQuery explorer                                                  |
@@ -89,3 +89,4 @@
 |  77 | Westend               | WND                                                                                                                                                                                                                                                   | Subscan                                            | [nova-wallet-westend__bm92Y](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-westend__bm92Y)     |
 |  78 | XX network            | XX                                                                                                                                                                                                                                                    | XX explorer<br />Polkastats                        | [nova-wallet-xx-network](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-xx-network)             |
 |  79 | Zeitgeist             | ZTG                                                                                                                                                                                                                                                   | Subscan<br />Sub.ID<br />Polkaholic                | [nova-wallet-zeitgeist](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-zeitgeist)               |
+|  80 | krest                 | KREST                                                                                                                                                                                                                                                 | Subscan                                            |  -                                                                                                                  |
