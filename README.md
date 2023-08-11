@@ -35,3 +35,6 @@ Contains the iconography for the different parachains and DApp's.
 Note: Icons should be used from trusted sources, however currently icons are not available on the participants' websites, so for convenience, there is /icons folder.
 
 [Nova Wallet]: https://t.me/novawallet
+
+## License
+Nova utils is available under the Apache 2.0 license. See the LICENSE file for more info.
