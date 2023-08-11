@@ -66,9 +66,10 @@
 |  62 | Subsquare                            | https://polkadot.subsquare.io/                       | governance                    |
 |  63 | Talisman Portal                      | https://app.talisman.xyz/portfolio                   | crowdloans,nft                |
 |  64 | Tensor Wallet                        | https://tensorwallet.ca/                             | utilities,staking             |
-|  65 | Tinkernet Rewards Claim              | https://www.tinker.network/claim                     | crowdloans                    |
-|  66 | TofuNFT                              | https://tofunft.com/                                 | nft,evm                       |
-|  67 | Zeitgeist                            | https://app.zeitgeist.pm/                            | utilities                     |
-|  68 | Zenlink                              | https://app.zenlink.pro                              | dex,staking                   |
-|  69 | cBRIDGE                              | https://cbridge.celer.network/#/transfer             | dex,evm,nft                   |
-|  70 | xx network Hub                       | https://hub.xx.network                               | social,staking,utilities      |
+|  65 | The Button                           | https://the-button.azero.dev/play                    | gaming                        |
+|  66 | Tinkernet Rewards Claim              | https://www.tinker.network/claim                     | crowdloans                    |
+|  67 | TofuNFT                              | https://tofunft.com/                                 | nft,evm                       |
+|  68 | Zeitgeist                            | https://app.zeitgeist.pm/                            | utilities                     |
+|  69 | Zenlink                              | https://app.zenlink.pro                              | dex,staking                   |
+|  70 | cBRIDGE                              | https://cbridge.celer.network/#/transfer             | dex,evm,nft                   |
+|  71 | xx network Hub                       | https://hub.xx.network                               | social,staking,utilities      |
