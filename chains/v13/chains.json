@@ -983,6 +983,17 @@
                 "typeExtras": {
                     "assetId": "311091173110107856861649819128533077277"
                 }
+            },
+            {
+                "assetId": 10,
+                "symbol": "xcCFG",
+                "precision": 18,
+                "type": "statemine",
+                "priceId": "centrifuge",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Centrifuge.svg",
+                "typeExtras": {
+                    "assetId": "91372035960551235635465443179559840483"
+                }
             }
         ],
         "nodes": [
@@ -1007,14 +1018,12 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://moonbeam.subscan.io/extrinsic/{hash}",
-                "account": "https://moonbeam.subscan.io/account/{address}",
-                "event": null
+                "account": "https://moonbeam.subscan.io/account/{address}"
             },
             {
                 "name": "Moonscan",
                 "extrinsic": "https://moonbeam.moonscan.io/tx/{hash}",
-                "account": "https://moonbeam.moonscan.io/address/{address}",
-                "event": null
+                "account": "https://moonbeam.moonscan.io/address/{address}"
             },
             {
                 "name": "Polkaholic",
@@ -1049,7 +1058,7 @@
             "governance": [
                 {
                     "type": "polkassembly",
-                    "url": "https://api.moonbeam.polkassembly.network/v1/graphql"
+                    "url": "https://moonbeamp-hasura.herokuapp.com/v1/graphql"
                 }
             ]
         },
@@ -1058,7 +1067,11 @@
         "options": [
             "ethereumBased",
             "governance-v1"
-        ]
+        ],
+        "additional": {
+            "themeColor": "#10B6B1",
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/parachains-and-solochains"
+        }
     },
     {
         "chainId": "eip155:1",
@@ -4228,7 +4241,7 @@
             },
             {
                 "assetId": 2,
-                "symbol": "DAI",
+                "symbol": "DAI-worm",
                 "precision": 18,
                 "priceId": "dai",
                 "type": "orml",
@@ -4336,6 +4349,20 @@
                     "existentialDeposit": "10000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 10,
+                "symbol": "CFG",
+                "precision": 18,
+                "priceId": "centrifuge",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Centrifuge.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0d000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "32467532467532500",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
@@ -4352,8 +4379,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://hydradx.subscan.io/extrinsic/{hash}",
-                "account": "https://hydradx.subscan.io/account/{address}",
-                "event": null
+                "account": "https://hydradx.subscan.io/account/{address}"
             },
             {
                 "name": "Polkaholic",
