@@ -1060,7 +1060,7 @@
             "governance": [
                 {
                     "type": "polkassembly",
-                    "url": "https://moonbeamp-hasura.herokuapp.com/v1/graphql"
+                    "url": "https://api.moonbeam.polkassembly.network/v1/graphql"
                 }
             ]
         },
@@ -1069,11 +1069,7 @@
         "options": [
             "ethereumBased",
             "governance-v1"
-        ],
-        "additional": {
-            "themeColor": "#10B6B1",
-            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/parachains-and-solochains"
-        }
+        ]
     },
     {
         "chainId": "eip155:1",
