@@ -3210,6 +3210,17 @@
                 "typeExtras": {
                     "assetId": "311091173110107856861649819128533077277"
                 }
+            },
+            {
+                "assetId": 10,
+                "symbol": "xcCFG",
+                "precision": 18,
+                "type": "statemine",
+                "priceId": "centrifuge",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Centrifuge.svg",
+                "typeExtras": {
+                    "assetId": "91372035960551235635465443179559840483"
+                }
             }
         ],
         "nodes": [
@@ -4800,6 +4811,20 @@
                     "currencyIdScale": "0x0a000000",
                     "currencyIdType": "u32",
                     "existentialDeposit": "10000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 10,
+                "symbol": "CFG",
+                "precision": 18,
+                "priceId": "centrifuge",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Centrifuge.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0d000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "32467532467532500",
                     "transfersEnabled": true
                 }
             }
