@@ -1018,12 +1018,14 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://moonbeam.subscan.io/extrinsic/{hash}",
-                "account": "https://moonbeam.subscan.io/account/{address}"
+                "account": "https://moonbeam.subscan.io/account/{address}",
+                "event": null
             },
             {
                 "name": "Moonscan",
                 "extrinsic": "https://moonbeam.moonscan.io/tx/{hash}",
-                "account": "https://moonbeam.moonscan.io/address/{address}"
+                "account": "https://moonbeam.moonscan.io/address/{address}",
+                "event": null
             },
             {
                 "name": "Polkaholic",
@@ -4241,7 +4243,7 @@
             },
             {
                 "assetId": 2,
-                "symbol": "DAI-worm",
+                "symbol": "DAI",
                 "precision": 18,
                 "priceId": "dai",
                 "type": "orml",
@@ -4379,7 +4381,8 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://hydradx.subscan.io/extrinsic/{hash}",
-                "account": "https://hydradx.subscan.io/account/{address}"
+                "account": "https://hydradx.subscan.io/account/{address}",
+                "event": null
             },
             {
                 "name": "Polkaholic",
