@@ -6845,5 +6845,41 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/krest.svg",
         "addressPrefix": 42
+    },
+    {
+        "chainId": "58d1393b47b11707978fbc07e77d7b6f7d9aa88d207dc008a52385f7dba6156a",
+        "name": "Jur",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "JUR",
+                "precision": 18,
+                "priceId": "jur",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/JUR.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://jur-mainnet-archive-rpc-1.icebergnodes.io",
+                "name": "Iceberg node"
+            },
+            {
+                "url": "wss://jur-archive-mainnet-1.simplystaking.xyz/VX68C07AR4K2/ws",
+                "name": "Simplystaking node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Polkascan",
+                "account": "https://jur.io/explorer/jur/account/{address}",
+                "event": "https://jur.io/explorer/jur/event/{event}"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/jur.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Jur.svg",
+        "addressPrefix": 42
     }
 ]
