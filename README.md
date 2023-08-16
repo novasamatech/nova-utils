@@ -1,10 +1,10 @@
 # Nova Utils
 
 ## About
-This repo contains static information (logos, links, etc) to support client apps in Polkadot & Kusama ecosystem (e.g. [Nova Wallet]) to map it to the keys/ids from the network itself.
+This repo contains static information (logos, links, etc.) to support client apps in Polkadot & Kusama ecosystem (e.g. [Nova Wallet]) to map it to the keys/ids from the network itself.
 
-Note: For better UX in your app its recommended to
-1. prepare UI states & logic when this information cannot be fetched due to github unavailability
+Note: For better UX in your app it is recommended to
+1. prepare UI states & logic when this information cannot be fetched due to gitHub unavailability
 2. cache the data to cover part of the issue of 1.
 
 ### [List of supported networks](https://github.com/novasamatech/nova-utils/tree/master/chains#supported-networks--assets-data)
@@ -35,3 +35,7 @@ Contains the iconography for the different parachains and DApp's.
 Note: Icons should be used from trusted sources, however currently icons are not available on the participants' websites, so for convenience, there is /icons folder.
 
 [Nova Wallet]: https://t.me/novawallet
+
+## License
+Nova utils is available under the Apache 2.0 license. See the LICENSE file for more info.
+© Novasama Technologies GmbH 2023
