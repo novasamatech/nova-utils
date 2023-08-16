@@ -54,12 +54,10 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://polkadot.subscan.io/extrinsic/{hash}",
-                "account": "https://polkadot.subscan.io/account/{address}",
-                "event": null
+                "account": "https://polkadot.subscan.io/account/{address}"
             },
             {
                 "name": "Polkascan",
-                "extrinsic": "https://polkascan.io/polkadot/extrinsic/{hash}",
                 "account": "https://polkascan.io/polkadot/account/{address}",
                 "event": "https://polkascan.io/polkadot/event/{event}"
             },
@@ -176,12 +174,10 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://kusama.subscan.io/extrinsic/{hash}",
-                "account": "https://kusama.subscan.io/account/{address}",
-                "event": null
+                "account": "https://kusama.subscan.io/account/{address}"
             },
             {
                 "name": "Polkascan",
-                "extrinsic": "https://polkascan.io/kusama/extrinsic/{hash}",
                 "account": "https://polkascan.io/kusama/account/{address}",
                 "event": "https://polkascan.io/kusama/event/{event}"
             },
@@ -270,8 +266,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://westend.subscan.io/extrinsic/{hash}",
-                "account": "https://westend.subscan.io/account/{address}",
-                "event": null
+                "account": "https://westend.subscan.io/account/{address}"
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
@@ -398,8 +393,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://statemine.subscan.io/extrinsic/{hash}",
-                "account": "https://statemine.subscan.io/account/{address}",
-                "event": null
+                "account": "https://statemine.subscan.io/account/{address}"
             },
             {
                 "name": "Statescan",
@@ -820,8 +814,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://karura.subscan.io/extrinsic/{hash}",
-                "account": "https://karura.subscan.io/account/{address}",
-                "event": null
+                "account": "https://karura.subscan.io/account/{address}"
             },
             {
                 "name": "Sub.ID",
@@ -1007,14 +1000,12 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://moonbeam.subscan.io/extrinsic/{hash}",
-                "account": "https://moonbeam.subscan.io/account/{address}",
-                "event": null
+                "account": "https://moonbeam.subscan.io/account/{address}"
             },
             {
                 "name": "Moonscan",
                 "extrinsic": "https://moonbeam.moonscan.io/tx/{hash}",
-                "account": "https://moonbeam.moonscan.io/address/{address}",
-                "event": null
+                "account": "https://moonbeam.moonscan.io/address/{address}"
             },
             {
                 "name": "Polkaholic",
@@ -1120,8 +1111,7 @@
             {
                 "name": "Etherscan",
                 "extrinsic": "https://etherscan.io/tx/{hash}",
-                "account": "https://etherscan.io/address/{address}",
-                "event": null
+                "account": "https://etherscan.io/address/{address}"
             }
         ],
         "externalApi": {
@@ -1367,14 +1357,12 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://moonriver.subscan.io/extrinsic/{hash}",
-                "account": "https://moonriver.subscan.io/account/{address}",
-                "event": null
+                "account": "https://moonriver.subscan.io/account/{address}"
             },
             {
                 "name": "Moonscan",
                 "extrinsic": "https://moonriver.moonscan.io/tx/{hash}",
-                "account": "https://moonriver.moonscan.io/address/{address}",
-                "event": null
+                "account": "https://moonriver.moonscan.io/address/{address}"
             },
             {
                 "name": "Polkaholic",
@@ -1568,8 +1556,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://shiden.subscan.io/extrinsic/{hash}",
-                "account": "https://shiden.subscan.io/account/{address}",
-                "event": null
+                "account": "https://shiden.subscan.io/account/{address}"
             },
             {
                 "name": "Sub.ID",
@@ -1783,8 +1770,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://bifrost-kusama.subscan.io/extrinsic/{hash}",
-                "account": "https://bifrost-kusama.subscan.io/account/{address}",
-                "event": null
+                "account": "https://bifrost-kusama.subscan.io/account/{address}"
             },
             {
                 "name": "Sub.ID",
@@ -1913,8 +1899,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://basilisk.subscan.io/extrinsic/{hash}",
-                "account": "https://basilisk.subscan.io/account/{address}",
-                "event": null
+                "account": "https://basilisk.subscan.io/account/{address}"
             },
             {
                 "name": "Sub.ID",
@@ -1977,8 +1962,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://altair.subscan.io/extrinsic/{hash}",
-                "account": "https://altair.subscan.io/account/{address}",
-                "event": null
+                "account": "https://altair.subscan.io/account/{address}"
             },
             {
                 "name": "Sub.ID",
@@ -2138,8 +2122,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://parallel-heiko.subscan.io/extrinsic/{hash}",
-                "account": "https://parallel-heiko.subscan.io/account/{address}",
-                "event": null
+                "account": "https://parallel-heiko.subscan.io/account/{address}"
             },
             {
                 "name": "Polkaholic",
@@ -2192,8 +2175,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://edgeware.subscan.io/extrinsic/{hash}",
-                "account": "https://edgeware.subscan.io/account/{address}",
-                "event": null
+                "account": "https://edgeware.subscan.io/account/{address}"
             },
             {
                 "name": "Sub.ID",
@@ -2342,8 +2324,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://khala.subscan.io/extrinsic/{hash}",
-                "account": "https://khala.subscan.io/account/{address}",
-                "event": null
+                "account": "https://khala.subscan.io/account/{address}"
             },
             {
                 "name": "Sub.ID",
@@ -2397,8 +2378,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://spiritnet.subscan.io/extrinsic/{hash}",
-                "account": "https://spiritnet.subscan.io/account/{address}",
-                "event": null
+                "account": "https://spiritnet.subscan.io/account/{address}"
             },
             {
                 "name": "Sub.ID",
@@ -2460,8 +2440,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://calamari.subscan.io/extrinsic/{hash}",
-                "account": "https://calamari.subscan.io/account/{address}",
-                "event": null
+                "account": "https://calamari.subscan.io/account/{address}"
             },
             {
                 "name": "Sub.ID",
@@ -2533,8 +2512,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://quartz.subscan.io/extrinsic/{hash}",
-                "account": "https://quartz.subscan.io/account/{address}",
-                "event": null
+                "account": "https://quartz.subscan.io/account/{address}"
             },
             {
                 "name": "Sub.ID",
@@ -2593,8 +2571,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://pioneer.subscan.io/extrinsic/{hash}",
-                "account": "https://pioneer.subscan.io/account/{address}",
-                "event": null
+                "account": "https://pioneer.subscan.io/account/{address}"
             },
             {
                 "name": "Polkaholic",
@@ -2840,8 +2817,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://acala.subscan.io/extrinsic/{hash}",
-                "account": "https://acala.subscan.io/account/{address}",
-                "event": null
+                "account": "https://acala.subscan.io/account/{address}"
             },
             {
                 "name": "Sub.ID",
@@ -3012,8 +2988,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://astar.subscan.io/extrinsic/{hash}",
-                "account": "https://astar.subscan.io/account/{address}",
-                "event": null
+                "account": "https://astar.subscan.io/account/{address}"
             },
             {
                 "name": "Sub.ID",
@@ -3247,8 +3222,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://parallel.subscan.io/extrinsic/{hash}",
-                "account": "https://parallel.subscan.io/account/{address}",
-                "event": null
+                "account": "https://parallel.subscan.io/account/{address}"
             },
             {
                 "name": "Sub.ID",
@@ -3298,8 +3272,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://clv.subscan.io/extrinsic/{hash}",
-                "account": "https://clv.subscan.io/account/{address}",
-                "event": null
+                "account": "https://clv.subscan.io/account/{address}"
             },
             {
                 "name": "Polkaholic",
@@ -3415,8 +3388,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://robonomics.subscan.io/extrinsic/{hash}",
-                "account": "https://robonomics.subscan.io/account/{address}",
-                "event": null
+                "account": "https://robonomics.subscan.io/account/{address}"
             },
             {
                 "name": "Sub.ID",
@@ -3482,8 +3454,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://encointer.subscan.io/extrinsic/{hash}",
-                "account": "https://encointer.subscan.io/account/{address}",
-                "event": null
+                "account": "https://encointer.subscan.io/account/{address}"
             },
             {
                 "name": "Polkaholic",
@@ -3684,8 +3655,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://kintsugi.subscan.io/extrinsic/{hash}",
-                "account": "https://kintsugi.subscan.io/account/{address}",
-                "event": null
+                "account": "https://kintsugi.subscan.io/account/{address}"
             },
             {
                 "name": "Sub.ID",
@@ -3780,8 +3750,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://picasso.subscan.io/extrinsic/{hash}",
-                "account": "https://picasso.subscan.io/account/{address}",
-                "event": null
+                "account": "https://picasso.subscan.io/account/{address}"
             },
             {
                 "name": "Polkaholic",
@@ -3834,8 +3803,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://zeitgeist.subscan.io/extrinsic/{hash}",
-                "account": "https://zeitgeist.subscan.io/account/{address}",
-                "event": null
+                "account": "https://zeitgeist.subscan.io/account/{address}"
             },
             {
                 "name": "Sub.ID",
@@ -3900,8 +3868,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://litmus.subscan.io/extrinsic/{hash}",
-                "account": "https://litmus.subscan.io/account/{address}",
-                "event": null
+                "account": "https://litmus.subscan.io/account/{address}"
             },
             {
                 "name": "Sub.ID",
@@ -4003,8 +3970,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://shadow.subscan.io/extrinsic/{hash}",
-                "account": "https://shadow.subscan.io/account/{address}",
-                "event": null
+                "account": "https://shadow.subscan.io/account/{address}"
             },
             {
                 "name": "Polkaholic",
@@ -4054,8 +4020,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://integritee.subscan.io/extrinsic/{hash}",
-                "account": "https://integritee.subscan.io/account/{address}",
-                "event": null
+                "account": "https://integritee.subscan.io/account/{address}"
             },
             {
                 "name": "Sub.ID",
@@ -4109,8 +4074,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://centrifuge-parachain.subscan.io/extrinsic/{hash}",
-                "account": "https://centrifuge-parachain.subscan.io/account/{address}",
-                "event": null
+                "account": "https://centrifuge-parachain.subscan.io/account/{address}"
             },
             {
                 "name": "Sub.ID",
@@ -4176,8 +4140,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://efinity.subscan.io/extrinsic/{hash}",
-                "account": "https://efinity.subscan.io/account/{address}",
-                "event": null
+                "account": "https://efinity.subscan.io/account/{address}"
             },
             {
                 "name": "Polkaholic",
@@ -4352,8 +4315,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://hydradx.subscan.io/extrinsic/{hash}",
-                "account": "https://hydradx.subscan.io/account/{address}",
-                "event": null
+                "account": "https://hydradx.subscan.io/account/{address}"
             },
             {
                 "name": "Polkaholic",
@@ -4595,8 +4557,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://interlay.subscan.io/extrinsic/{hash}",
-                "account": "https://interlay.subscan.io/account/{address}",
-                "event": null
+                "account": "https://interlay.subscan.io/account/{address}"
             },
             {
                 "name": "Polkaholic",
@@ -4646,8 +4607,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://nodle.subscan.io/extrinsic/{hash}",
-                "account": "https://nodle.subscan.io/account/{address}",
-                "event": null
+                "account": "https://nodle.subscan.io/account/{address}"
             },
             {
                 "name": "Sub.ID",
@@ -4705,8 +4665,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://phala.subscan.io/extrinsic/{hash}",
-                "account": "https://phala.subscan.io/account/{address}",
-                "event": null
+                "account": "https://phala.subscan.io/account/{address}"
             },
             {
                 "name": "Polkaholic",
@@ -4867,8 +4826,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://turing.subscan.io/extrinsic/{hash}",
-                "account": "https://turing.subscan.io/account/{address}",
-                "event": null
+                "account": "https://turing.subscan.io/account/{address}"
             },
             {
                 "name": "Polkaholic",
@@ -4918,8 +4876,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://alephzero.subscan.io/extrinsic/{hash}",
-                "account": "https://alephzero.subscan.io/account/{address}",
-                "event": null
+                "account": "https://alephzero.subscan.io/account/{address}"
             }
         ],
         "types": {
@@ -5011,8 +4968,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://composable.subscan.io/extrinsic/{hash}",
-                "account": "https://composable.subscan.io/account/{address}",
-                "event": null
+                "account": "https://composable.subscan.io/account/{address}"
             },
             {
                 "name": "Polkaholic",
@@ -5082,8 +5038,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://polkadex.subscan.io/extrinsic/{hash}",
-                "account": "https://polkadex.subscan.io/account/{address}",
-                "event": null
+                "account": "https://polkadex.subscan.io/account/{address}"
             },
             {
                 "name": "Sub.ID",
@@ -5241,8 +5196,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://bifrost.subscan.io/extrinsic/{hash}",
-                "account": "https://bifrost.subscan.io/account/{address}",
-                "event": null
+                "account": "https://bifrost.subscan.io/account/{address}"
             },
             {
                 "name": "Polkaholic",
@@ -5350,8 +5304,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://unique.subscan.io/extrinsic/{hash}",
-                "account": "https://unique.subscan.io/account/{address}",
-                "event": null
+                "account": "https://unique.subscan.io/account/{address}"
             },
             {
                 "name": "Polkaholic",
@@ -5557,8 +5510,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://mangatax.subscan.io/extrinsic/{hash}",
-                "account": "https://mangatax.subscan.io/account/{address}",
-                "event": null
+                "account": "https://mangatax.subscan.io/account/{address}"
             },
             {
                 "name": "Polkaholic",
@@ -5870,8 +5822,7 @@
             {
                 "name": "Ternoa explorer",
                 "extrinsic": "https://explorer.ternoa.com/extrinsic/{hash}",
-                "account": "https://explorer.ternoa.com/account/{address}",
-                "event": null
+                "account": "https://explorer.ternoa.com/account/{address}"
             }
         ],
         "externalApi": {
@@ -5998,8 +5949,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://polymesh.subscan.io/extrinsic/{hash}",
-                "account": "https://polymesh.subscan.io/account/{address}",
-                "event": null
+                "account": "https://polymesh.subscan.io/account/{address}"
             }
         ],
         "types": {
@@ -6070,9 +6020,7 @@
         "explorers": [
             {
                 "name": "Explorer",
-                "extrinsic": null,
-                "account": "https://explorer.mainnet.oct.network/myriad/accounts/{address}",
-                "event": null
+                "account": "https://explorer.mainnet.oct.network/myriad/accounts/{address}"
             }
         ],
         "types": {
@@ -6112,14 +6060,12 @@
             {
                 "name": "XX explorer",
                 "extrinsic": "https://explorer.xx.network/extrinsics/{hash}",
-                "account": "https://explorer.xx.network/accounts/{address}",
-                "event": null
+                "account": "https://explorer.xx.network/accounts/{address}"
             },
             {
                 "name": "Polkastats",
                 "extrinsic": "https://xx.polkastats.io/extrinsic/{hash}",
-                "account": "https://xx.polkastats.io/account/{address}",
-                "event": null
+                "account": "https://xx.polkastats.io/account/{address}"
             }
         ],
         "externalApi": {
@@ -6214,8 +6160,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://crust-parachain.subscan.io/extrinsic/{hash}",
-                "account": "https://crust-parachain.subscan.io/account/{address}",
-                "event": null
+                "account": "https://crust-parachain.subscan.io/account/{address}"
             }
         ],
         "types": {
@@ -6248,8 +6193,7 @@
             {
                 "name": "Aventus explorer",
                 "extrinsic": "https://explorer.mainnet.aventus.io/transaction/{hash}",
-                "account": "https://explorer.mainnet.aventus.io/address/{address}",
-                "event": null
+                "account": "https://explorer.mainnet.aventus.io/address/{address}"
             }
         ],
         "types": {
@@ -6307,8 +6251,7 @@
             {
                 "name": "Exosama explorer",
                 "extrinsic": "https://explorer.exosama.com/tx/{hash}",
-                "account": "https://explorer.exosama.com/address/{address}",
-                "event": null
+                "account": "https://explorer.exosama.com/address/{address}"
             }
         ],
         "externalApi": {
@@ -6407,8 +6350,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://equilibrium.subscan.io/extrinsic/{hash}",
-                "account": "https://equilibrium.subscan.io/account/{address}",
-                "event": null
+                "account": "https://equilibrium.subscan.io/account/{address}"
             }
         ],
         "externalApi": {
@@ -6476,8 +6418,7 @@
             {
                 "name": "3DPass explorer",
                 "extrinsic": "https://explorer.3dpass.org/extrinsic/{hash}",
-                "account": "https://explorer.3dpass.org/account/{address}",
-                "event": null
+                "account": "https://explorer.3dpass.org/account/{address}"
             }
         ],
         "types": {
@@ -6520,8 +6461,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://darwinia.subscan.io/extrinsic/{hash}",
-                "account": "https://darwinia.subscan.io/account/{address}",
-                "event": null
+                "account": "https://darwinia.subscan.io/account/{address}"
             }
         ],
         "types": {
@@ -6575,8 +6515,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://crab.subscan.io/extrinsic/{hash}",
-                "account": "https://crab.subscan.io/account/{address}",
-                "event": null
+                "account": "https://crab.subscan.io/account/{address}"
             }
         ],
         "types": {
@@ -6645,9 +6584,8 @@
         "explorers": [
             {
                 "name": "Varascan",
-                "extrinsic": null,
                 "account": "https://explorer.vara-network.io/account/{address}",
-                "event": null
+                "event": "https://explorer.vara-network.io/event/{event}"
             }
         ],
         "types": {
@@ -6810,8 +6748,7 @@
             {
                 "name": "Subscan",
                 "extrinsic": "https://krest.subscan.io/extrinsic/{hash}",
-                "account": "https://krest.subscan.io/account/{address}",
-                "event": null
+                "account": "https://krest.subscan.io/account/{address}"
             }
         ],
         "types": {
