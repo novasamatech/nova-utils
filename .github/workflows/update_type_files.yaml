@@ -28,7 +28,7 @@ jobs:
           commit-message: Update chain types
           app-id: ${{ secrets.PR_APP_ID}}
           app-token: ${{ secrets.PR_APP_TOKEN}}
-          branch-name: update-types-${{github.run_number}}
+          branch-name: update-type-files
           pr-title: Update types for networks
           pr-body: This PR was generated automatically by the GitHub Action, **update-types**.
 

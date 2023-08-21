@@ -73,7 +73,7 @@ jobs:
           commit-message: Update networks list
           app-id: ${{ secrets.PR_APP_ID}}
           app-token: ${{ secrets.PR_APP_TOKEN}}
-          branch-name: update-networks-${{github.run_number}}
+          branch-name: update-networks-readme
           pr-title: Update network list
           pr-body: Update networks list in https://github.com/novasamatech/nova-utils/tree/master/chains
           pr-base: master
@@ -102,7 +102,7 @@ jobs:
           commit-message: Update dapps list
           app-id: ${{ secrets.PR_APP_ID}}
           app-token: ${{ secrets.PR_APP_TOKEN}}
-          branch-name: update-dapps-${{github.run_number}}
+          branch-name: update-dapps-readme
           pr-title: Update Dapps list
           pr-body: Update dapps list in https://github.com/novasamatech/nova-utils/tree/master/dapps
           pr-base: master
@@ -130,7 +130,7 @@ jobs:
           commit-message: Update test data file
           app-id: ${{ secrets.PR_APP_ID}}
           app-token: ${{ secrets.PR_APP_TOKEN}}
-          branch-name: update-tests-${{github.run_number}}
+          branch-name: update-test-file
           pr-title: Update Test data File
           pr-body: Update test data file ./tests/chains_for_testBalance.json
           pr-base: master
