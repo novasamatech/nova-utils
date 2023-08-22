@@ -1,4 +1,5 @@
 # Variables
+PYTHON := python
 PYTHON_VERSION := 3.11
 VENV ?= .venv
 JOBS ?= 4
@@ -7,7 +8,7 @@ CHAINS_FILES=\
 	chains
 
 # Targets
-.PHONY: test clean lint install venv requirements
+.PHONY: test clean lint init venv requirements generate_network_list
 
 clean:
 	rm -rf *.pyc __pycache__/ htmlcov/
@@ -18,6 +19,15 @@ flake8:
 	$(VENV)/bin/flake8 --jobs $(JOBS) --statistics --show-source $(CHAINS_FILES)
 
 init: venv .create-venv requirements .install-pre-commit
+
+generate_network_list:
+	$(VENV)/bin/python ./scripts/generate_network_list.py
+
+generate_dapp_list:
+	$(VENV)/bin/python ./scripts/generate_dapps_list.py
+
+generate_test_file:
+	$(VENV)/bin/python ./scripts/update_test_data.py
 
 venv:
 	$(PYTHON) -m venv .venv
