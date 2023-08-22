@@ -4744,7 +4744,7 @@
             },
             {
                 "assetId": 2,
-                "symbol": "DAI-worm",
+                "symbol": "DAI-Acala",
                 "precision": 18,
                 "priceId": "dai",
                 "type": "orml",
@@ -4771,7 +4771,7 @@
             },
             {
                 "assetId": 4,
-                "symbol": "WETH-worm",
+                "symbol": "WETH-Acala",
                 "precision": 18,
                 "priceId": "ethereum-wormhole",
                 "type": "orml",
@@ -4785,7 +4785,7 @@
             },
             {
                 "assetId": 5,
-                "symbol": "WBTC-worm",
+                "symbol": "WBTC-Acala",
                 "precision": 8,
                 "priceId": "wrapped-bitcoin",
                 "type": "orml",
@@ -4864,6 +4864,62 @@
                     "currencyIdScale": "0x0d000000",
                     "currencyIdType": "u32",
                     "existentialDeposit": "32467532467532500",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 11,
+                "symbol": "BNC",
+                "precision": 12,
+                "priceId": "bifrost-native-coin",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Bifrost.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0e000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "68795189840",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 12,
+                "symbol": "DAI-Moonbeam",
+                "precision": 18,
+                "priceId": "dai",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/DAI.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x12000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "10000000000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 13,
+                "symbol": "WBTC-Moonbeam",
+                "precision": 8,
+                "priceId": "wrapped-bitcoin",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/WBTC.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x13000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "34",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 14,
+                "symbol": "WETH-Moonbeam",
+                "precision": 18,
+                "priceId": "ethereum-wormhole",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/WETH-worm.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x14000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "7000000000000",
                     "transfersEnabled": true
                 }
             }
