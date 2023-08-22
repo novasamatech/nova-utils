@@ -14,3 +14,8 @@ repos:
                 "--statistics",  "--show-source",
                 "--config=setup.cfg",
         ]
+
+-   repo: https://github.com/stepanLav/pre-commit-hooks
+    rev: 52833d30790449e6f8d2c12a888295bee738a78b
+    hooks:
+    -   id: check-chains-json
