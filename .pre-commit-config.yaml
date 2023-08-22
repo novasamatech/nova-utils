@@ -1,21 +1,8 @@
 repos:
--   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
-    hooks:
-    -   id: end-of-file-fixer
-    -   id: trailing-whitespace
-    -   id: check-json
-
--   repo: https://github.com/PyCQA/flake8
-    rev: 4.0.1
-    hooks:
-      - id: flake8
-        args: [
-                "--statistics",  "--show-source",
-                "--config=setup.cfg",
-        ]
-
 -   repo: https://github.com/stepanLav/pre-commit-hooks
     rev: e89ab43b0c47945cd70e9f81f8f1cd4245e0060f
     hooks:
     -   id: check-chains-json
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+    -   id: check-json
