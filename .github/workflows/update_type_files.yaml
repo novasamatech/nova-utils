@@ -16,7 +16,7 @@ jobs:
         uses: ./.github/workflows/setup-path
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: make init
 
       - name: Update chain types
         run: python ./scripts/create_type_file.py prod
@@ -28,7 +28,7 @@ jobs:
           commit-message: Update chain types
           app-id: ${{ secrets.PR_APP_ID}}
           app-token: ${{ secrets.PR_APP_TOKEN}}
-          branch-name: update-types-${{github.run_number}}
+          branch-name: update-type-files
           pr-title: Update types for networks
           pr-body: This PR was generated automatically by the GitHub Action, **update-types**.
 

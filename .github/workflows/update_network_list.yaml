@@ -62,9 +62,9 @@ jobs:
         uses: ./.github/workflows/setup-path
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: make init
       - name: Generate README file
-        run: python ./scripts/generate_network_list.py
+        run: make generate_network_list
 
       - name: Make Pull Request
         uses: ./.github/workflows/make-pull-request
@@ -73,7 +73,7 @@ jobs:
           commit-message: Update networks list
           app-id: ${{ secrets.PR_APP_ID}}
           app-token: ${{ secrets.PR_APP_TOKEN}}
-          branch-name: update-networks-${{github.run_number}}
+          branch-name: update-networks-readme
           pr-title: Update network list
           pr-body: Update networks list in https://github.com/novasamatech/nova-utils/tree/master/chains
           pr-base: master
@@ -91,9 +91,9 @@ jobs:
         uses: ./.github/workflows/setup-path
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: make init
       - name: Generate new Dapps list file
-        run: python ./scripts/generate_dapps_list.py
+        run: make generate_dapp_list
 
       - name: Make Pull Request
         uses: ./.github/workflows/make-pull-request
@@ -102,7 +102,7 @@ jobs:
           commit-message: Update dapps list
           app-id: ${{ secrets.PR_APP_ID}}
           app-token: ${{ secrets.PR_APP_TOKEN}}
-          branch-name: update-dapps-${{github.run_number}}
+          branch-name: update-dapps-readme
           pr-title: Update Dapps list
           pr-body: Update dapps list in https://github.com/novasamatech/nova-utils/tree/master/dapps
           pr-base: master
@@ -119,9 +119,9 @@ jobs:
         uses: ./.github/workflows/setup-path
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: make init
       - name: Generate new Test data file
-        run: python ./scripts/update_test_data.py
+        run: make generate_test_file
 
       - name: Make Pull Request
         uses: ./.github/workflows/make-pull-request
@@ -130,7 +130,7 @@ jobs:
           commit-message: Update test data file
           app-id: ${{ secrets.PR_APP_ID}}
           app-token: ${{ secrets.PR_APP_TOKEN}}
-          branch-name: update-tests-${{github.run_number}}
+          branch-name: update-test-file
           pr-title: Update Test data File
           pr-body: Update test data file ./tests/chains_for_testBalance.json
           pr-base: master
