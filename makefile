@@ -10,7 +10,7 @@ CHAINS_FILES=\
 .PHONY: test clean lint init venv requirements generate_network_list
 
 clean:
-	rm -rf *.pyc __pycache__/ htmlcov/
+	rm -rf *.pyc __pycache__/ **/__pycache__/
 
 init: venv .create-venv requirements .install-pre-commit
 
