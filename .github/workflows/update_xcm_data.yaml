@@ -73,7 +73,7 @@ jobs:
           app-id: ${{ secrets.PR_APP_ID}}
           app-token: ${{ secrets.PR_APP_TOKEN}}
           pr-reviewer: ${{ env.PR_REVIEWER }}
-          branch-name: update-xcm-coefficients-${{github.run_number}}
+          branch-name: update-xcm-coefficients
           pr-title: 🆙 Update XCM coefficients for ${{ env.ENVIRONMENT }} env
           pr-body: This PR was generated automatically 🤖
           pr-base: master
