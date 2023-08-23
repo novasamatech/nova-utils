@@ -1106,16 +1106,20 @@
                 "name": "One rpc node"
             },
             {
-                "url": "wss://mainnet.infura.io/ws/v3/1e69544301064ef19edb194a14fb75f3",
-                "name": "Infura node 3"
-            },
-            {
                 "url": "wss://mainnet.infura.io/ws/v3/{INFURA_API_KEY}",
                 "name": "Infura node"
             },
             {
-                "url": "wss://mainnet.infura.io/ws/v3/9dddd77ac74043dc9a8dc48f82822c7d",
+                "url": "wss://mainnet.infura.io/ws/v3/1e69544301064ef19edb194a14fb75f3",
                 "name": "Infura node 2"
+            },
+            {
+                "url": "wss://mainnet.infura.io/ws/v3/25bd0a6e359240529b237e5dd8b19e1f",
+                "name": "Infura node 3"
+            },
+            {
+                "url": "wss://mainnet.infura.io/ws/v3/9dddd77ac74043dc9a8dc48f82822c7d",
+                "name": "Infura node 4"
             }
         ],
         "explorers": [
@@ -2796,6 +2800,20 @@
                     "existentialDeposit": "10000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 14,
+                "symbol": "DAI",
+                "precision": 18,
+                "type": "orml",
+                "priceId": "dai",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/DAI.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0254a37a01cd75b616d63e0ab665bffdb0143c52ae",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "10000000000000000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
@@ -4202,7 +4220,7 @@
             },
             {
                 "assetId": 2,
-                "symbol": "DAI",
+                "symbol": "DAI-worm",
                 "precision": 18,
                 "priceId": "dai",
                 "type": "orml",
@@ -5619,6 +5637,11 @@
         ],
         "explorers": [
             {
+                "name": "Subscan",
+                "extrinsic": "https://bajun.subscan.io/extrinsic/{hash}",
+                "account": "https://bajun.subscan.io/account/{address}"
+            },
+            {
                 "name": "Polkaholic",
                 "account": "https://polkaholic.io/account/{address}",
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
@@ -6044,6 +6067,14 @@
                 "account": "https://explorer.mainnet.oct.network/myriad/accounts/{address}"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-myriad"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/myriad.json",
             "overridesCommon": true
@@ -6151,6 +6182,14 @@
                 "name": "Pendulum node"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-pendulum"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/pendulum.json",
             "overridesCommon": true
@@ -6184,6 +6223,14 @@
                 "account": "https://crust-parachain.subscan.io/account/{address}"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-crust"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/crust.json",
             "overridesCommon": true
@@ -6217,6 +6264,14 @@
                 "account": "https://explorer.mainnet.aventus.io/address/{address}"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-aventus"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/aventus.json",
             "overridesCommon": true
@@ -6242,6 +6297,14 @@
                 "name": "Hashed systems 2 node"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-hashed-network"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/hashed.json",
             "overridesCommon": true
@@ -6311,6 +6374,14 @@
                 "name": "Opentensor Fdn node"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bittensor"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/bittensor.json",
             "overridesCommon": true
@@ -6442,6 +6513,14 @@
                 "account": "https://explorer.3dpass.org/account/{address}"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-3dpass"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/3dpass.json",
             "overridesCommon": true
