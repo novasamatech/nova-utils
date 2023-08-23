@@ -3,11 +3,17 @@ PYTHON := python
 PYTHON_VERSION := 3.11
 VENV ?= .venv
 
+THREADS = 4
+RE_RUNS = 2
+RE_RUN_DELAY = 15
+ALLURE_DIR = allure-results
+TEST_RUN = $(VENV)/bin/python -m pytest --rootdir . --alluredir=$(ALLURE_DIR) -n $(THREADS) -v --reruns $(RE_RUNS) --reruns-delay $(RE_RUN_DELAY)
+
 CHAINS_FILES=\
 	chains
 
 # Targets
-.PHONY: test clean lint init venv requirements generate_network_list
+.PHONY: test clean lint init venv requirements generate_network_list test-all
 
 clean:
 	rm -rf *.pyc __pycache__/ **/__pycache__/
@@ -37,3 +43,26 @@ venv:
 requirements:
 	$(VENV)/bin/poetry install
 	. .venv/bin/activate
+
+test-all: test-nodes-availability test-networks-precision test-network-chain-id test-network-prefix test-eth-availability test-new-assets
+
+test-nodes-availability:
+	$(TEST_RUN) "./tests/test_nodes_availability.py"
+
+test-networks-precision:
+	$(TEST_RUN) "./tests/test_network_parameters.py::TestPrecision"
+
+test-network-chain-id:
+	$(TEST_RUN) "./tests/test_network_parameters.py::TestChainId"
+
+test-network-prefix:
+	$(TEST_RUN) "./tests/test_network_parameters.py::TestNetworkPrefix"
+
+test-eth-availability:
+	$(TEST_RUN) "./tests/test_eth_nodes_availability.py"
+
+test-new-assets:
+	$(TEST_RUN) "./tests/test_check_new_assets.py"
+
+allure:
+	allure serve $(ALLURE_DIR)
