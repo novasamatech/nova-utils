@@ -1171,6 +1171,26 @@
                 "typeExtras": {
                     "assetId": "203223821023327994093278529517083736593"
                 }
+            },
+            {
+                "assetId": 21,
+                "symbol": "xcMGX",
+                "precision": 9,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/MangataX.svg",
+                "typeExtras": {
+                    "assetId": "118095707745084482624853002839493125353"
+                }
+            },
+            {
+                "assetId": 22,
+                "symbol": "xcTUR",
+                "precision": 10,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Turing.svg",
+                "typeExtras": {
+                    "assetId": "133300872918374599700079037156071917454"
+                }
             }
         ],
         "nodes": [
@@ -3292,6 +3312,72 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Centrifuge.svg",
                 "typeExtras": {
                     "assetId": "91372035960551235635465443179559840483"
+                }
+            },
+            {
+                "assetId": 12,
+                "symbol": "xcBNC",
+                "precision": 12,
+                "type": "statemine",
+                "priceId": "bifrost-native-coin",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Bifrost.svg",
+                "typeExtras": {
+                    "assetId": "165823357460190568952172802245839421906"
+                }
+            },
+            {
+                "assetId": 13,
+                "symbol": "xcEQ",
+                "precision": 9,
+                "type": "statemine",
+                "priceId": "equilibrium-token",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Equilibrium.svg",
+                "typeExtras": {
+                    "assetId": "190590555344745888270686124937537713878"
+                }
+            },
+            {
+                "assetId": 14,
+                "symbol": "xcEQD",
+                "precision": 9,
+                "type": "statemine",
+                "priceId": "tether",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/EQD.svg",
+                "typeExtras": {
+                    "assetId": "187224307232923873519830480073807488153"
+                }
+            },
+            {
+                "assetId": 15,
+                "symbol": "xcHDX",
+                "precision": 12,
+                "type": "statemine",
+                "priceId": "hydradx",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/HydraDX.svg",
+                "typeExtras": {
+                    "assetId": "69606720909260275826784788104880799692"
+                }
+            },
+            {
+                "assetId": 16,
+                "symbol": "xcNODL",
+                "precision": 11,
+                "type": "statemine",
+                "priceId": "nodle-network",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Nodle.svg",
+                "typeExtras": {
+                    "assetId": "309163521958167876851250718453738106865"
+                }
+            },
+            {
+                "assetId": 17,
+                "symbol": "xcRING",
+                "precision": 18,
+                "type": "statemine",
+                "priceId": "darwinia-network-native-token",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/darwinia-network-native-token",
+                "typeExtras": {
+                    "assetId": "125699734534028342599692732320197985871"
                 }
             }
         ],
