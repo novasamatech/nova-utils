@@ -68,4 +68,5 @@ allure:
 	allure serve $(ALLURE_DIR)
 
 pr-comment-creation:
+	echo "## Changes for $(PR_ENV)" >> $(PR_FILE_NAME)
 	$(VENV)/bin/python scripts/print_xcm_changes.py $(PR_ENV) >> $(PR_FILE_NAME)
