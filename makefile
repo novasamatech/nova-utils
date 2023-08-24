@@ -66,3 +66,6 @@ test-new-assets:
 
 allure:
 	allure serve $(ALLURE_DIR)
+
+pr-comment-creation:
+	$(VENV)/bin/python scripts/print_xcm_changes.py $(PR_ENV) >> $(PR_FILE_NAME)
