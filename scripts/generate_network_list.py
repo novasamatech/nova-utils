@@ -166,3 +166,4 @@ if __name__ == '__main__':
             unique_assets=uniques_assets,
             number_of_xcms=xcm_number
         ))
+        f.write("\n")
