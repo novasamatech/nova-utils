@@ -456,10 +456,10 @@
             },
             {
                 "assetId": 1,
-                "symbol": "aUSD",
+                "symbol": "aSEED",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AUSD.svg",
-                "priceId": "acala-dollar",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/aSEED.svg",
+                "priceId": "ausd-seed-karura",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x0081",
@@ -895,11 +895,11 @@
             },
             {
                 "assetId": 2,
-                "symbol": "xcaUSD",
+                "symbol": "xcaSEED",
                 "precision": 12,
                 "type": "statemine",
-                "priceId": "acala-dollar",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AUSD.svg",
+                "priceId": "ausd-seed-acala",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/aSEED.svg",
                 "typeExtras": {
                     "assetId": "110021739665376159354538090254163045594"
                 }
@@ -1002,6 +1002,72 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Centrifuge.svg",
                 "typeExtras": {
                     "assetId": "91372035960551235635465443179559840483"
+                }
+            },
+            {
+                "assetId": 12,
+                "symbol": "xcBNC",
+                "precision": 12,
+                "type": "statemine",
+                "priceId": "bifrost-native-coin",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Bifrost.svg",
+                "typeExtras": {
+                    "assetId": "165823357460190568952172802245839421906"
+                }
+            },
+            {
+                "assetId": 13,
+                "symbol": "xcEQ",
+                "precision": 9,
+                "type": "statemine",
+                "priceId": "equilibrium-token",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Equilibrium.svg",
+                "typeExtras": {
+                    "assetId": "190590555344745888270686124937537713878"
+                }
+            },
+            {
+                "assetId": 14,
+                "symbol": "xcEQD",
+                "precision": 9,
+                "type": "statemine",
+                "priceId": "tether",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/EQD.svg",
+                "typeExtras": {
+                    "assetId": "187224307232923873519830480073807488153"
+                }
+            },
+            {
+                "assetId": 15,
+                "symbol": "xcHDX",
+                "precision": 12,
+                "type": "statemine",
+                "priceId": "hydradx",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/HydraDX.svg",
+                "typeExtras": {
+                    "assetId": "69606720909260275826784788104880799692"
+                }
+            },
+            {
+                "assetId": 16,
+                "symbol": "xcNODL",
+                "precision": 11,
+                "type": "statemine",
+                "priceId": "nodle-network",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Nodle.svg",
+                "typeExtras": {
+                    "assetId": "309163521958167876851250718453738106865"
+                }
+            },
+            {
+                "assetId": 17,
+                "symbol": "xcRING",
+                "precision": 18,
+                "type": "statemine",
+                "priceId": "darwinia-network-native-token",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Darwinia.svg",
+                "typeExtras": {
+                    "assetId": "125699734534028342599692732320197985871"
                 }
             }
         ],
@@ -1262,11 +1328,11 @@
             },
             {
                 "assetId": 8,
-                "symbol": "xcaUSD",
+                "symbol": "xcaSEED",
                 "precision": 12,
-                "priceId": "acala-dollar",
+                "priceId": "ausd-seed-karura",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AUSD.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/aSEED.svg",
                 "typeExtras": {
                     "assetId": "214920334981412447805621250067209749032"
                 }
@@ -1367,6 +1433,56 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Robonomics.svg",
                 "typeExtras": {
                     "assetId": "108036400430056508975016746969135344601"
+                }
+            },
+            {
+                "assetId": 18,
+                "symbol": "xcvKSM",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vKSM.svg",
+                "typeExtras": {
+                    "assetId": "264344629840762281112027368930249420542"
+                }
+            },
+            {
+                "assetId": 19,
+                "symbol": "xcvBNC",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vBNC.svg",
+                "typeExtras": {
+                    "assetId": "72145018963825376852137222787619937732"
+                }
+            },
+            {
+                "assetId": 20,
+                "symbol": "xcvMOVR",
+                "precision": 18,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vMOVR.svg",
+                "typeExtras": {
+                    "assetId": "203223821023327994093278529517083736593"
+                }
+            },
+            {
+                "assetId": 21,
+                "symbol": "xcMGX",
+                "precision": 9,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/MangataX.svg",
+                "typeExtras": {
+                    "assetId": "118095707745084482624853002839493125353"
+                }
+            },
+            {
+                "assetId": 22,
+                "symbol": "xcTUR",
+                "precision": 10,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Turing.svg",
+                "typeExtras": {
+                    "assetId": "133300872918374599700079037156071917454"
                 }
             }
         ],
@@ -1526,11 +1642,11 @@
             },
             {
                 "assetId": 7,
-                "symbol": "aUSD",
+                "symbol": "aSEED",
                 "precision": 12,
                 "type": "statemine",
-                "priceId": "acala-dollar",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AUSD.svg",
+                "priceId": "ausd-seed-karura",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/aSEED.svg",
                 "typeExtras": {
                     "assetId": "18446744073709551616"
                 }
@@ -1684,11 +1800,11 @@
             },
             {
                 "assetId": 5,
-                "symbol": "aUSD",
+                "symbol": "aSEED",
                 "precision": 12,
-                "priceId": "acala-dollar",
+                "priceId": "ausd-seed-karura",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AUSD.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/aSEED.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0302",
                     "currencyIdType": "node_primitives.currency.CurrencyId",
@@ -1777,6 +1893,32 @@
                     "existentialDeposit": "100",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 12,
+                "symbol": "vBNC",
+                "precision": 12,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vBNC.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0101",
+                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "existentialDeposit": "10000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 13,
+                "symbol": "vMOVR",
+                "precision": 18,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vMOVR.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x010a",
+                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "existentialDeposit": "1000000000000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
@@ -1862,11 +2004,11 @@
             },
             {
                 "assetId": 2,
-                "symbol": "aUSD",
+                "symbol": "aSEED",
                 "precision": 12,
-                "priceId": "acala-dollar",
+                "priceId": "ausd-seed-karura",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AUSD.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/aSEED.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x02000000",
                     "currencyIdType": "u32",
@@ -2053,11 +2195,11 @@
             },
             {
                 "assetId": 2,
-                "symbol": "aUSD",
+                "symbol": "aSEED",
                 "precision": 12,
-                "priceId": "acala-dollar",
+                "priceId": "ausd-seed-karura",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AUSD.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/aSEED.svg",
                 "typeExtras": {
                     "assetId": "103"
                 }
@@ -2274,11 +2416,11 @@
             },
             {
                 "assetId": 5,
-                "symbol": "aUSD",
+                "symbol": "aSEED",
                 "precision": 12,
-                "priceId": "acala-dollar",
+                "priceId": "ausd-seed-karura",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AUSD.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/aSEED.svg",
                 "typeExtras": {
                     "assetId": "4"
                 }
@@ -2653,11 +2795,11 @@
             },
             {
                 "assetId": 2,
-                "symbol": "aUSD",
+                "symbol": "aSEED",
                 "precision": 12,
-                "priceId": "acala-dollar",
+                "priceId": "ausd-seed-acala",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AUSD.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/aSEED.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0001",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -2805,20 +2947,6 @@
             },
             {
                 "assetId": 13,
-                "symbol": "USDT",
-                "precision": 6,
-                "type": "orml",
-                "priceId": "tether",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDT.svg",
-                "typeExtras": {
-                    "currencyIdScale": "0x050c00",
-                    "currencyIdType": "acala_primitives.currency.CurrencyId",
-                    "existentialDeposit": "10000",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "assetId": 14,
                 "symbol": "DAI",
                 "precision": 18,
                 "type": "orml",
@@ -2828,6 +2956,20 @@
                     "currencyIdScale": "0x0254a37a01cd75b616d63e0ab665bffdb0143c52ae",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
                     "existentialDeposit": "10000000000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 14,
+                "symbol": "USDT",
+                "precision": 6,
+                "type": "orml",
+                "priceId": "tether",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x050c00",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "10000",
                     "transfersEnabled": true
                 }
             }
@@ -2994,11 +3136,11 @@
             },
             {
                 "assetId": 8,
-                "symbol": "aUSD",
+                "symbol": "aSEED",
                 "precision": 12,
                 "type": "statemine",
-                "priceId": "acala-dollar",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AUSD.svg",
+                "priceId": "ausd-seed-acala",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/aSEED.svg",
                 "typeExtras": {
                     "assetId": "18446744073709551617"
                 }
@@ -3110,11 +3252,11 @@
             },
             {
                 "assetId": 4,
-                "symbol": "aUSD",
+                "symbol": "aSEED",
                 "precision": 12,
-                "priceId": "acala-dollar",
+                "priceId": "ausd-seed-acala",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AUSD.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/aSEED.svg",
                 "typeExtras": {
                     "assetId": "104"
                 }
@@ -3615,11 +3757,11 @@
             },
             {
                 "assetId": 5,
-                "symbol": "aUSD",
+                "symbol": "aSEED",
                 "precision": 12,
-                "priceId": "acala-dollar",
+                "priceId": "ausd-seed-karura",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AUSD.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/aSEED.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0101000000",
                     "currencyIdType": "interbtc_primitives.CurrencyId",
@@ -4252,7 +4394,7 @@
             },
             {
                 "assetId": 2,
-                "symbol": "DAI-worm",
+                "symbol": "DAI-Acala",
                 "precision": 18,
                 "priceId": "dai",
                 "type": "orml",
@@ -4279,7 +4421,7 @@
             },
             {
                 "assetId": 4,
-                "symbol": "WETH-worm",
+                "symbol": "WETH-Acala",
                 "precision": 18,
                 "priceId": "ethereum-wormhole",
                 "type": "orml",
@@ -4293,7 +4435,7 @@
             },
             {
                 "assetId": 5,
-                "symbol": "WBTC-worm",
+                "symbol": "WBTC-Acala",
                 "precision": 8,
                 "priceId": "wrapped-bitcoin",
                 "type": "orml",
@@ -4372,6 +4514,62 @@
                     "currencyIdScale": "0x0d000000",
                     "currencyIdType": "u32",
                     "existentialDeposit": "32467532467532500",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 11,
+                "symbol": "BNC",
+                "precision": 12,
+                "priceId": "bifrost-native-coin",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Bifrost.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0e000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "68795189840",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 12,
+                "symbol": "DAI-Moonbeam",
+                "precision": 18,
+                "priceId": "dai",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/DAI.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x12000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "10000000000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 13,
+                "symbol": "WBTC-Moonbeam",
+                "precision": 8,
+                "priceId": "wrapped-bitcoin",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/WBTC.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x13000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "34",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 14,
+                "symbol": "WETH-Moonbeam",
+                "precision": 18,
+                "priceId": "ethereum-wormhole",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/WETH-worm.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x14000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "7000000000000",
                     "transfersEnabled": true
                 }
             }
@@ -4802,11 +5000,11 @@
             },
             {
                 "assetId": 2,
-                "symbol": "aUSD",
+                "symbol": "aSEED",
                 "precision": 12,
-                "priceId": "acala-dollar",
+                "priceId": "ausd-seed-karura",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AUSD.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/aSEED.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x02000000",
                     "currencyIdType": "u32",
@@ -5255,6 +5453,58 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Astar.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0803",
+                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "existentialDeposit": "10000000000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 5,
+                "symbol": "vDOT",
+                "precision": 10,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vDOT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0900",
+                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "existentialDeposit": "1000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 6,
+                "symbol": "vGLMR",
+                "precision": 18,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vGLMR.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0901",
+                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "existentialDeposit": "1000000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 7,
+                "symbol": "vFIL",
+                "precision": 18,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vFIL.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0904",
+                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "existentialDeposit": "1000000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 8,
+                "symbol": "vASTR",
+                "precision": 18,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vASTR.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0903",
                     "currencyIdType": "node_primitives.currency.CurrencyId",
                     "existentialDeposit": "10000000000000000",
                     "transfersEnabled": true
