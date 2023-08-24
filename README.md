@@ -36,6 +36,14 @@ Note: Icons should be used from trusted sources, however currently icons are not
 
 [Nova Wallet]: https://t.me/novawallet
 
+### Submitting Contributions
+
+- Fork the repository and create a new branch for your contribution.
+- Initialize repository by: `make init`
+- Commit your changes with a descriptive commit message.
+- Push your branch to your forked repository.
+- Submit a pull request detailing your changes and explaining why they should be merged.
+
 ## License
 Nova utils is available under the Apache 2.0 license. See the LICENSE file for more info.
 © Novasama Technologies GmbH 2023

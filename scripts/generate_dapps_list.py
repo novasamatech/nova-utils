@@ -43,3 +43,4 @@ if __name__ == '__main__':
         f.write(readme.render(
             dapps_table=generate_dapps_table()
         ))
+        f.write("\n")

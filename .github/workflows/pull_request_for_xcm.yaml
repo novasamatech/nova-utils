@@ -34,7 +34,7 @@ jobs:
             ${{ env.DEV_XCM_JSON_PATH }}
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: make init
 
       - name: Build body text
         run: echo This comment was written by a bot! >> body_file.txt

@@ -16,7 +16,7 @@ jobs:
         uses: ./.github/workflows/setup-path
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: make init
 
       - name: Update chain types
         run: python ./scripts/create_type_file.py prod
