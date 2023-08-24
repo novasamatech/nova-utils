@@ -62,9 +62,9 @@ jobs:
         uses: ./.github/workflows/setup-path
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: make init
       - name: Generate README file
-        run: python ./scripts/generate_network_list.py
+        run: make generate_network_list
 
       - name: Make Pull Request
         uses: ./.github/workflows/make-pull-request
@@ -91,9 +91,9 @@ jobs:
         uses: ./.github/workflows/setup-path
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: make init
       - name: Generate new Dapps list file
-        run: python ./scripts/generate_dapps_list.py
+        run: make generate_dapp_list
 
       - name: Make Pull Request
         uses: ./.github/workflows/make-pull-request
@@ -119,9 +119,9 @@ jobs:
         uses: ./.github/workflows/setup-path
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: make init
       - name: Generate new Test data file
-        run: python ./scripts/update_test_data.py
+        run: make generate_test_file
 
       - name: Make Pull Request
         uses: ./.github/workflows/make-pull-request

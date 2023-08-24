@@ -1144,6 +1144,36 @@
             },
             {
                 "assetId": 18,
+                "symbol": "xcvKSM",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vKSM.svg",
+                "typeExtras": {
+                    "assetId": "264344629840762281112027368930249420542"
+                }
+            },
+            {
+                "assetId": 19,
+                "symbol": "xcvBNC",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vBNC.svg",
+                "typeExtras": {
+                    "assetId": "72145018963825376852137222787619937732"
+                }
+            },
+            {
+                "assetId": 20,
+                "symbol": "xcvMOVR",
+                "precision": 18,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vMOVR.svg",
+                "typeExtras": {
+                    "assetId": "203223821023327994093278529517083736593"
+                }
+            },
+            {
+                "assetId": 21,
                 "symbol": "xcMGX",
                 "precision": 9,
                 "type": "statemine",
@@ -1153,7 +1183,7 @@
                 }
             },
             {
-                "assetId": 19,
+                "assetId": 22,
                 "symbol": "xcTUR",
                 "precision": 10,
                 "type": "statemine",
@@ -1645,6 +1675,32 @@
                     "currencyIdScale": "0x0802",
                     "currencyIdType": "node_primitives.currency.CurrencyId",
                     "existentialDeposit": "100",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 12,
+                "symbol": "vBNC",
+                "precision": 12,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vBNC.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0101",
+                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "existentialDeposit": "10000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 13,
+                "symbol": "vMOVR",
+                "precision": 18,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vMOVR.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x010a",
+                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "existentialDeposit": "1000000000000",
                     "transfersEnabled": true
                 }
             }
@@ -5906,6 +5962,58 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Astar.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0803",
+                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "existentialDeposit": "10000000000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 5,
+                "symbol": "vDOT",
+                "precision": 10,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vDOT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0900",
+                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "existentialDeposit": "1000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 6,
+                "symbol": "vGLMR",
+                "precision": 18,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vGLMR.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0901",
+                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "existentialDeposit": "1000000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 7,
+                "symbol": "vFIL",
+                "precision": 18,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vFIL.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0904",
+                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "existentialDeposit": "1000000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 8,
+                "symbol": "vASTR",
+                "precision": 18,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Astar.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0903",
                     "currencyIdType": "node_primitives.currency.CurrencyId",
                     "existentialDeposit": "10000000000000000",
                     "transfersEnabled": true

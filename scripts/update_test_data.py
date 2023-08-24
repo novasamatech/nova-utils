@@ -44,10 +44,10 @@ for dev_index, dev_id in enumerate(dev_ids):  # Add new network
             'account': ' - '}
 
         options = dev_chains[dev_index].get('options')
-        
+
         if (dev_chains[dev_index]['name'] in exludeChains):  # Skip some special chains
             continue
-        
+
         if options is not None:
             need_skip = [option for option in skip_options if option in options]
             if need_skip: continue
@@ -57,3 +57,4 @@ for dev_index, dev_id in enumerate(dev_ids):  # Add new network
 
 with open("tests/chains_for_testBalance.json", "w") as fout:
     json.dump(test_chains, fout, indent=4)
+    fout.write("\n")
