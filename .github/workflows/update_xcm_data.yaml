@@ -77,3 +77,21 @@ jobs:
           pr-title: 🆙 Update XCM coefficients for ${{ env.ENVIRONMENT }} env
           pr-body: This PR was generated automatically 🤖
           pr-base: master
+    
+  alert:
+    runs-on: ubuntu-latest
+    needs: update-xcm
+    if: always() && (needs.update-xcm.result == 'failure')
+    env:
+      GITHUB_WORKFLOW_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+    steps:
+      - name: Report
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            XCM update workflow failed, lets check:
+
+            Failed run:
+            ${{ env.GITHUB_WORKFLOW_URL }}
