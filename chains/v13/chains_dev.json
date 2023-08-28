@@ -8809,5 +8809,35 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Manta.svg",
         "addressPrefix": 77
+    },
+    {
+        "chainId": "9b86ea7366584c5ddf67de243433fcc05732864933258de9467db46eb9bef8b5",
+        "name": "Vara Testnet",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "TVARA",
+                "precision": 12,
+                "staking": [
+                    "relaychain"
+                ],
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/VARA.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://vit.vara-network.io",
+                "name": "Gear Tech test node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/vara_testnet.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Vara.svg",
+        "addressPrefix": 137,
+        "options": [
+            "testnet"
+        ]
     }
 ]
