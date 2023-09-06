@@ -1,0 +1,43 @@
+name: Reusable workflow for trigger event in another repo
+
+on:
+  workflow_call:
+    inputs:
+      repository:
+        required: true
+        type: string
+      event-type:
+        required: true
+        type: string
+      payload:
+        required: true
+        type: string
+
+    secrets:
+      PR_APP_ID:
+        required: true
+      PR_APP_TOKEN:
+        required: true
+
+env:
+  PR_APP_ID: ${{ secrets.PR_APP_ID}}
+  PR_APP_TOKEN: ${{ secrets.PR_APP_TOKEN}}
+
+jobs:
+  trigger-event:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: tibdex/github-app-token@v1
+        id: generate-token
+        with:
+          app_id: ${{ env.PR_APP_ID }}
+          private_key: ${{ env.PR_APP_TOKEN }}
+
+      - name: Repository Dispatch
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ steps.generate-token.outputs.token }}
+          repository: ${{ inputs.repository }}
+          event-type: ${{ inputs.event-type }}
+          client-payload: ${{ inputs.payload }}
