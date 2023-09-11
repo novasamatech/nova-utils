@@ -113,7 +113,11 @@
             "crowdloans",
             "governance-v1",
             "governance"
-        ]
+        ],
+        "additional": {
+            "themeColor": "#E6007A",
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polkadot-and-kusama"
+        }
     },
     {
         "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
@@ -232,7 +236,11 @@
         "options": [
             "crowdloans",
             "governance"
-        ]
+        ],
+        "additional": {
+            "themeColor": "#1F78FF",
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polkadot-and-kusama"
+        }
     },
     {
         "chainId": "e143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e",
@@ -306,7 +314,11 @@
         "options": [
             "testnet",
             "crowdloans"
-        ]
+        ],
+        "additional": {
+            "themeColor": "#1F78FF",
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polkadot-and-kusama"
+        }
     },
     {
         "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
@@ -1142,7 +1154,12 @@
         "options": [
             "ethereumBased",
             "governance-v1"
-        ]
+        ],
+        "additional": {
+            "themeColor": "#10B6B1",
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/parachains-and-solochains",
+            "defaultBlockTime": 12000
+        }
     },
     {
         "chainId": "eip155:1",
@@ -1560,7 +1577,12 @@
             "ethereumBased",
             "governance",
             "governance-v1"
-        ]
+        ],
+        "additional": {
+            "themeColor": "#E4A228",
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/parachains-and-solochains",
+            "defaultBlockTime": 12000
+        }
     },
     {
         "chainId": "f1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
@@ -2644,7 +2666,12 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Calamari.svg",
-        "addressPrefix": 78
+        "addressPrefix": 78,
+        "additional": {
+            "themeColor": "#D632C1",
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/parachains-and-solochains",
+            "defaultBlockTime": 12000
+        }
     },
     {
         "chainId": "cd4d732201ebe5d6b014edda071c4203e16867305332301dc8d092044b28e554",
@@ -4046,7 +4073,11 @@
         "addressPrefix": 73,
         "options": [
             "governance-v1"
-        ]
+        ],
+        "additional": {
+            "themeColor": "#1F78FF",
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/parachains-and-solochains"
+        }
     },
     {
         "chainId": "da5831fbc8570e3c6336d0d72b8c08f8738beefec812df21ef2afc2982ede09c",
@@ -5122,7 +5153,12 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Turing.svg",
-        "addressPrefix": 51
+        "addressPrefix": 51,
+        "additional": {
+            "themeColor": "#14B1D3",
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/parachains-and-solochains",
+            "defaultBlockTime": 12000
+        }
     },
     {
         "chainId": "70255b4d28de0fc4e1a193d7e175ad1ccef431598211c55538f1018651a0344e",
@@ -5171,7 +5207,12 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/AlephZero.svg",
-        "addressPrefix": 42
+        "addressPrefix": 42,
+        "additional": {
+            "themeColor": "#10B6B1",
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/parachains-and-solochains",
+            "defaultBlockTime": 1000
+        }
     },
     {
         "chainId": "daab8df776eb52ec604a5df5d388bb62a050a0aaec4556a64265b9d42755552d",
@@ -5337,7 +5378,11 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadex.svg",
-        "addressPrefix": 88
+        "addressPrefix": 88,
+        "additional": {
+            "themeColor": "#1F78FF",
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/parachains-and-solochains"
+        }
     },
     {
         "chainId": "e7e0962324a3b86c83404dbea483f25fb5dab4c224791c81b756cfc948006174",
@@ -6170,7 +6215,11 @@
             "overridesCommon": true
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Ternoa.svg",
-        "addressPrefix": 42
+        "addressPrefix": 42,
+        "additional": {
+            "themeColor": "#EB2B6C",
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/parachains-and-solochains"
+        }
     },
     {
         "chainId": "f2584690455deda322214e97edfffaf4c1233b6e4625e39478496b3e2f5a44c5",
