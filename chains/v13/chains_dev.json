@@ -7120,6 +7120,14 @@
                 "account": "https://polymesh.subscan.io/account/{address}"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polymesh"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/polymesh_mainnet.json",
             "overridesCommon": true
@@ -8002,6 +8010,14 @@
                 "account": "https://darwinia.subscan.io/account/{address}"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-darwinia"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/darwinia_polkadot.json",
             "overridesCommon": true
@@ -8056,6 +8072,14 @@
                 "account": "https://crab.subscan.io/account/{address}"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-darwinia"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/darwinia_crab.json",
             "overridesCommon": true
@@ -8095,6 +8119,14 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/frequency"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/frequency.json",
             "overridesCommon": true
@@ -8129,6 +8161,14 @@
                 "event": "https://explorer.vara-network.io/event/{event}"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---vara"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/vara.json",
             "overridesCommon": true
@@ -8157,6 +8197,14 @@
                 "name": "Anchor node"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---giant"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/giant.json",
             "overridesCommon": true
@@ -8380,6 +8428,14 @@
                 "name": "Stakeworld node"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/polkadot-bridgehub"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/polkadot_bridge_hub.json",
             "overridesCommon": true
@@ -8418,6 +8474,14 @@
                 "name": "Stakeworld node"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---kusama-bridgehub"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/kusama_bridge_hub.json",
             "overridesCommon": true
@@ -8464,6 +8528,14 @@
                 "name": "Stakeworld node"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/polkadot-collectives"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/collectives.json",
             "overridesCommon": true
@@ -8737,6 +8809,14 @@
                 "account": "https://krest.subscan.io/account/{address}"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---krest"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/krest.json",
             "overridesCommon": true
