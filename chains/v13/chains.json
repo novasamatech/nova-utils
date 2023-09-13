@@ -6227,8 +6227,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://k-ui.kapex.network",
-                "name": "Totem node"
+                "url": "wss://kapex-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://kapex-parachain.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "explorers": [
