@@ -22,6 +22,14 @@
         ],
         "nodes": [
             {
+                "url": "wss://polkadot-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://rpc.polkadot.io",
+                "name": "Parity node"
+            },
+            {
                 "url": "wss://rpc-polkadot.luckyfriday.io",
                 "name": "LuckyFriday node"
             },
@@ -30,20 +38,12 @@
                 "name": "IBP network node"
             },
             {
-                "url": "wss://rpc.polkadot.io",
-                "name": "Parity node"
-            },
-            {
                 "url": "wss://rpc.dotters.network/polkadot",
                 "name": "Dotters Net node"
             },
             {
                 "url": "wss://polkadot.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
-            },
-            {
-                "url": "wss://polkadot-rpc.dwellir.com",
-                "name": "Dwellir node"
             },
             {
                 "url": "wss://1rpc.io/dot",
