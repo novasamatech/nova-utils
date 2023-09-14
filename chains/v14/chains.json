@@ -23,16 +23,16 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc-polkadot.luckyfriday.io",
-                "name": "LuckyFriday node"
-            },
-            {
                 "url": "wss://rpc.ibp.network/polkadot",
                 "name": "IBP network node"
             },
             {
                 "url": "wss://rpc.polkadot.io",
                 "name": "Parity node"
+            },
+            {
+                "url": "wss://rpc-polkadot.luckyfriday.io",
+                "name": "LuckyFriday node"
             },
             {
                 "url": "wss://rpc.dotters.network/polkadot",
