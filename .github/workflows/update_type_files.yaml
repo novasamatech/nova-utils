@@ -19,7 +19,7 @@ jobs:
         run: make init
 
       - name: Update chain types
-        run: python ./scripts/create_type_file.py prod
+        run: make generate_type_files
 
       - name: Make Pull Request
         uses: ./.github/workflows/make-pull-request
