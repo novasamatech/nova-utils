@@ -20,6 +20,9 @@ clean:
 
 init: venv .create-venv requirements .install-pre-commit
 
+generate_type_files:
+	$(VENV)/bin/python ./scripts/create_type_file.py prod
+
 generate_network_list:
 	$(VENV)/bin/python ./scripts/generate_network_list.py
 
