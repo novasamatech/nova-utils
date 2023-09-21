@@ -4364,59 +4364,6 @@
         ]
     },
     {
-        "chainId": "99ded175d436bee7d751fa3f2f8c7a257ddc063a541f8daa5e6152604f66b2a0",
-        "name": "Efinity",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "EFI",
-                "precision": 18,
-                "priceId": "efinity",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Efinity.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://rpc.efinity.io",
-                "name": "Efinity node"
-            },
-            {
-                "url": "wss://efinity-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
-                "url": "wss://efinity.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://efinity.subscan.io/extrinsic/{hash}",
-                "account": "https://efinity.subscan.io/account/{address}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
-            }
-        ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/efinity.json",
-            "overridesCommon": true
-        },
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-efinity"
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Efinity.svg",
-        "addressPrefix": 1110
-    },
-    {
         "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
         "name": "HydraDX",
@@ -7296,5 +7243,34 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Jur.svg",
         "addressPrefix": 42
+    },
+    {
+        "chainId": "3af4ff48ec76d2efc8476730f423ac07e25ad48f5f4c9dc39c778b164d808615",
+        "name": "Enjin Matrixchain",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "ENJ",
+                "precision": 18,
+                "priceId": "enjincoin",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/ENJ.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc.matrix.blockchain.enjin.io",
+                "name": "Enjin node"
+            },
+            {
+                "url": "wss://enjin-matrix-rpc-1.dwellir.com",
+                "name": "Dwellir node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/enjin_matrixchain.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Enjin.svg",
+        "addressPrefix": 1110
     }
 ]
