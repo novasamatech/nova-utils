@@ -482,8 +482,8 @@
         "explorers": [
             {
                 "name": "Subscan",
-                "extrinsic": "https://statemine.subscan.io/extrinsic/{hash}",
-                "account": "https://statemine.subscan.io/account/{address}"
+                "extrinsic": "https://assethub-kusama.subscan.io/extrinsic/{hash}",
+                "account": "https://assethub-kusama.subscan.io/account/{address}"
             },
             {
                 "name": "Statescan",
@@ -4191,6 +4191,11 @@
             }
         ],
         "explorers": [
+            {
+                "name": "Subscan",
+                "account": "https://assethub-polkadot.subscan.io/account/{address}",
+                "extrinsic": "https://assethub-polkadot.subscan.io/extrinsic/{hash}"
+            },
             {
                 "name": "Statescan",
                 "account": "https://statemint.statescan.io/account/{address}",
