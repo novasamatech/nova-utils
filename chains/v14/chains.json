@@ -7266,6 +7266,13 @@
                 "name": "Dwellir node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://matrix.subscan.io/extrinsic/{hash}",
+                "account": "https://matrix.subscan.io/account/{address}"
+            }
+        ],
         "types": {
             "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/enjin_matrixchain.json",
             "overridesCommon": true
