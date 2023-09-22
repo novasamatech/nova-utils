@@ -2803,7 +2803,12 @@
                 "symbol": "NEER",
                 "precision": 18,
                 "priceId": "metaverse-network-pioneer",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/NEER.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/NEER.svg",
+                "buyProviders": {
+                    "transak": {
+                        "network": "PIONEER"
+                    }
+                }
             },
             {
                 "assetId": 1,
@@ -3479,7 +3484,15 @@
                 "priceId": "ethereum",
                 "type": "evmNative",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/ETH.svg",
-                "precision": 18
+                "precision": 18,
+                "buyProviders": {
+                    "transak": {
+                        "network": "ETHEREUM"
+                    },
+                    "mercuryo": {
+                        "network": "ETHEREUM"
+                    }
+                }
             }
         ],
         "nodeSelectionStrategy": "uniform",
@@ -5648,7 +5661,12 @@
                 ],
                 "priceId": "aleph-zero",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Aleph_zero.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Aleph_zero.svg",
+                "buyProviders": {
+                    "transak": {
+                        "network": "ALEPHZERO"
+                    }
+                }
             }
         ],
         "nodes": [
