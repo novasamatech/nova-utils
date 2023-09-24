@@ -1542,6 +1542,20 @@
                 }
               },
               "type": "xtokens"
+            },
+            {
+              "destination": {
+                "chainId": "9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6",
+                "assetId": 6,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "277000000000"
+                  },
+                  "instructions": "xtokensDest"
+                }
+              },
+              "type": "xtokens"
             }
           ]
         },
@@ -5823,10 +5837,10 @@
                     "type": "proportional",
                     "value": "2298688790"
                   },
-                  "instructions": "xcmPalletDest"
+                  "instructions": "xtokensDest"
                 }
               },
-              "type": "xcmpallet"
+              "type": "xtokens"
             },
             {
               "destination": {
@@ -5837,10 +5851,10 @@
                     "type": "proportional",
                     "value": "8799000000"
                   },
-                  "instructions": "xcmPalletDest"
+                  "instructions": "xtokensDest"
                 }
               },
-              "type": "xcmpallet"
+              "type": "xtokens"
             },
             {
               "destination": {
@@ -5851,10 +5865,10 @@
                     "type": "proportional",
                     "value": "30000000000"
                   },
-                  "instructions": "xcmPalletDest"
+                  "instructions": "xtokensDest"
                 }
               },
-              "type": "xcmpallet"
+              "type": "xtokens"
             },
             {
               "destination": {
@@ -5865,10 +5879,10 @@
                     "type": "proportional",
                     "value": "18012616398"
                   },
-                  "instructions": "xcmPalletDest"
+                  "instructions": "xtokensDest"
                 }
               },
-              "type": "xcmpallet"
+              "type": "xtokens"
             },
             {
               "destination": {
@@ -5879,10 +5893,10 @@
                     "type": "proportional",
                     "value": "33068783068"
                   },
-                  "instructions": "xcmPalletDest"
+                  "instructions": "xtokensDest"
                 }
               },
-              "type": "xcmpallet"
+              "type": "xtokens"
             },
             {
               "destination": {
@@ -5893,10 +5907,10 @@
                     "type": "proportional",
                     "value": "53711462025"
                   },
-                  "instructions": "xcmPalletDest"
+                  "instructions": "xtokensDest"
                 }
               },
-              "type": "xcmpallet"
+              "type": "xtokens"
             },
             {
               "destination": {
@@ -5907,10 +5921,10 @@
                     "type": "proportional",
                     "value": "800000000000"
                   },
-                  "instructions": "xcmPalletDest"
+                  "instructions": "xtokensDest"
                 }
               },
-              "type": "xcmpallet"
+              "type": "xtokens"
             },
             {
               "destination": {
@@ -5935,10 +5949,10 @@
                     "type": "proportional",
                     "value": "3959149500"
                   },
-                  "instructions": "xcmPalletDest"
+                  "instructions": "xtokensDest"
                 }
               },
-              "type": "xcmpallet"
+              "type": "xtokens"
             }
           ]
         },
@@ -5958,10 +5972,33 @@
                     "type": "proportional",
                     "value": "175000000"
                   },
-                  "instructions": "xcmPalletDest"
+                  "instructions": "xtokensDest"
                 }
               },
-              "type": "xcmpallet"
+              "type": "xtokens"
+            }
+          ]
+        },
+        {
+          "assetId": 6,
+          "assetLocation": "ACA",
+          "assetLocationPath": {
+            "type": "absolute"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "fc41b9bd8ef8fe53d58c7ea67c794c7ec9a73daf05e6d54b14ff6342c99ba64c",
+                "assetId": 0,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "8037000000000"
+                  },
+                  "instructions": "xtokensDest"
+                }
+              },
+              "type": "xtokens"
             }
           ]
         }
