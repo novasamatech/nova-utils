@@ -4932,29 +4932,6 @@
               "type": "xtokens"
             }
           ]
-        },
-        {
-          "assetId": 5,
-          "assetLocation": "KSM",
-          "assetLocationPath": {
-            "type": "absolute"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "4ac80c99289841dd946ef92765bf659a307d39189b3ce374a92b5f0415ee17a1",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "166666666667"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            }
-          ]
         }
       ]
     },
@@ -6818,20 +6795,6 @@
                   "mode": {
                     "type": "proportional",
                     "value": "423833805788"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "bf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72",
-                "assetId": 5,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "18012616398"
                   },
                   "instructions": "xtokensDest"
                 }
