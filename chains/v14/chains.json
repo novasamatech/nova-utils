@@ -2626,6 +2626,39 @@
                 "staking": [
                     "parachain"
                 ]
+            },
+            {
+                "assetId": 1,
+                "symbol": "KAR",
+                "precision": 12,
+                "priceId": "karura",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Karura.svg",
+                "typeExtras": {
+                    "assetId": "8"
+                }
+            },
+            {
+                "assetId": 2,
+                "symbol": "KSM",
+                "precision": 12,
+                "priceId": "kusama",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Kusama.svg",
+                "typeExtras": {
+                    "assetId": "12"
+                }
+            },
+            {
+                "assetId": 3,
+                "symbol": "MOVR",
+                "precision": 18,
+                "priceId": "moonriver",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Moonriver.svg",
+                "typeExtras": {
+                    "assetId": "11"
+                }
             }
         ],
         "nodes": [
