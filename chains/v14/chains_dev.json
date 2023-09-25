@@ -2675,13 +2675,10 @@
                 "symbol": "KAR",
                 "precision": 12,
                 "priceId": "karura",
-                "type": "orml",
+                "type": "statemine",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Karura.svg",
                 "typeExtras": {
-                    "currencyIdScale": "0x08000000000000000000000000000000",
-                    "currencyIdType": "u128",
-                    "existentialDeposit": "100000000000",
-                    "transfersEnabled": true
+                    "assetId": "8"
                 }
             },
             {
@@ -2689,13 +2686,10 @@
                 "symbol": "KSM",
                 "precision": 12,
                 "priceId": "kusama",
-                "type": "orml",
+                "type": "statemine",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Kusama.svg",
                 "typeExtras": {
-                    "currencyIdScale": "0x0c000000000000000000000000000000",
-                    "currencyIdType": "u128",
-                    "existentialDeposit": "33333333",
-                    "transfersEnabled": true
+                    "assetId": "12"
                 }
             },
             {
@@ -2703,13 +2697,10 @@
                 "symbol": "MOVR",
                 "precision": 18,
                 "priceId": "moonriver",
-                "type": "orml",
+                "type": "statemine",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Moonriver.svg",
                 "typeExtras": {
-                    "currencyIdScale": "0x0b000000000000000000000000000000",
-                    "currencyIdType": "u128",
-                    "existentialDeposit": "100000000000000000",
-                    "transfersEnabled": true
+                    "assetId": "11"
                 }
             }
         ],
