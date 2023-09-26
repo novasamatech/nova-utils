@@ -1,9 +1,9 @@
 
 # Supported Networks & Assets data:
 ### 🕸️ Supported networks: 81
-### 💰 All assets 319
+### 💰 All assets 322
 ### 🪙 Unique assets: 168
-### 💫 Cross Chain directions: 288
+### 💫 Cross Chain directions: 330
 ### 🧾 SubQuery API projects: 70
 ### 👀 Networks with block explorers: 72
 ---
@@ -25,7 +25,7 @@
 |  13 | Bit.Country Pioneer   | NEER<br />BIT                                                                                                                                                                                                                                                      | Subscan<br />Polkaholic                            | [nova-wallet-bit-country](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-bit-country)           |
 |  14 | Bittensor             | TAO                                                                                                                                                                                                                                                                |  -                                                 | [nova-wallet-bittensor](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-bittensor)               |
 |  15 | CLV Parachain         | CLV                                                                                                                                                                                                                                                                | Subscan<br />Polkaholic                            | [nova-wallet-clover](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-clover)                     |
-|  16 | Calamari              | KMA                                                                                                                                                                                                                                                                | Subscan<br />Sub.ID<br />Polkaholic                | [nova-wallet-calamari](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-calamari)                 |
+|  16 | Calamari              | KMA<br />KAR<br />KSM<br />MOVR                                                                                                                                                                                                                                    | Subscan<br />Sub.ID<br />Polkaholic                | [nova-wallet-calamari](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-calamari)                 |
 |  17 | Centrifuge Parachain  | CFG                                                                                                                                                                                                                                                                | Subscan<br />Sub.ID<br />Polkaholic                | [nova-wallet-centrifuge](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-centrifuge)             |
 |  18 | Composable Finance    | LAYR<br />DOT<br />KSM<br />USDT                                                                                                                                                                                                                                   | Subscan<br />Polkaholic                            | [nova-wallet-composable](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-composable)             |
 |  19 | Crab                  | CRAB<br />CKTON                                                                                                                                                                                                                                                    | Subscan                                            |  -                                                                                                                  |
