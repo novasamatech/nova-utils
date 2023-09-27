@@ -8986,5 +8986,111 @@
         "options": [
             "governance-v1"
         ]
+    },
+    {
+        "chainId": "eip155:73799",
+        "name": "Energy Web Volta",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "VT",
+                "type": "evmNative",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/EWT.svg",
+                "precision": 18
+            }
+        ],
+        "nodeSelectionStrategy": "uniform",
+        "nodes": [
+            {
+                "url": "https://volta-rpc.energyweb.org/ws",
+                "name": "Volta http node"
+            },
+            {
+                "url": "wss://volta-rpc.energyweb.org/ws",
+                "name": "Volta wss node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Volta Explorer",
+                "extrinsic": "https://volta-explorer.energyweb.org/tx/{hash}",
+                "account": "https://volta-explorer.energyweb.org/address/{address}"
+            }
+        ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "etherscan",
+                    "url": "https://volta-explorer.energyweb.org/api",
+                    "parameters": {
+                        "assetType": "evm"
+                    }
+                }
+            ]
+        },
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Energy_Web.svg",
+        "addressPrefix": 73799,
+        "options": [
+            "testnet",
+            "ethereumBased",
+            "noSubstrateRuntime"
+        ]
+    },
+    {
+        "chainId": "eip155:246",
+        "name": "Energy Web Chain",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "EWT",
+                "priceId": "energy-web-token",
+                "type": "evmNative",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/EWT.svg",
+                "precision": 18
+            }
+        ],
+        "nodeSelectionStrategy": "uniform",
+        "nodes": [
+            {
+                "url": "https://consortia-rpc.energyweb.org",
+                "name": "Public EWC http node"
+            },
+            {
+                "url": "https://rpc.energyweb.org",
+                "name": "Energy web http node"
+            },
+            {
+                "url": "https://archive-rpc.energyweb.org",
+                "name": "Archive http node"
+            },
+            {
+                "url": "wss://rpc.energyweb.org/ws",
+                "name": "Energy web wss node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Energy Web Explorer",
+                "extrinsic": "https://explorer.energyweb.org/tx/{hash}",
+                "account": "https://explorer.energyweb.org/address/{address}"
+            }
+        ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "etherscan",
+                    "url": "https://explorer.energyweb.org/api",
+                    "parameters": {
+                        "assetType": "evm"
+                    }
+                }
+            ]
+        },
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Energy_Web.svg",
+        "addressPrefix": 246,
+        "options": [
+            "ethereumBased",
+            "noSubstrateRuntime"
+        ]
     }
 ]
