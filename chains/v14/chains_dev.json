@@ -17,7 +17,11 @@
                     "transak": {
                         "network": "MAINNET"
                     },
-                    "mercuryo": {}
+                    "mercuryo": {},
+                    "banxa": {
+                        "coinType": "DOT",
+                        "blockchain": "POLKADOT"
+                    }
                 }
             }
         ],
@@ -138,7 +142,11 @@
                     "transak": {
                         "network": "MAINNET"
                     },
-                    "mercuryo": {}
+                    "mercuryo": {},
+                    "banxa": {
+                        "coinType": "KSM",
+                        "blockchain": "KUSAMA"
+                    }
                 }
             }
         ],
@@ -953,6 +961,10 @@
                 "buyProviders": {
                     "transak": {
                         "network": "MOONRIVER"
+                    },
+                    "banxa": {
+                        "coinType": "MOVR",
+                        "blockchain": "MOONRIVER"
                     }
                 }
             },
@@ -3230,6 +3242,10 @@
                 "buyProviders": {
                     "transak": {
                         "network": "MAINNET"
+                    },
+                    "banxa": {
+                        "coinType": "GLMR",
+                        "blockchain": "MOONBEAM"
                     }
                 }
             },
@@ -3524,6 +3540,10 @@
                     },
                     "mercuryo": {
                         "network": "ETHEREUM"
+                    },
+                    "banxa": {
+                        "coinType": "ETH",
+                        "blockchain": "ETHEREUM"
                     }
                 }
             }
@@ -6875,7 +6895,13 @@
                     "relaychain"
                 ],
                 "precision": 18,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Ternoa.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Ternoa.svg",
+                "buyProviders": {
+                    "banxa": {
+                        "coinType": "CAPS",
+                        "blockchain": "TERNOA"
+                    }
+                }
             }
         ],
         "nodes": [
