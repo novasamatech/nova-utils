@@ -1,0 +1,32 @@
+{
+    "reserveLocations": {
+        "WND": {
+            "chainId": "e143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e",
+            "multiLocation": {}
+        },
+        "WND-Westmint": {
+            "chainId": "67f9723393ef76214df0118c34bbbd3dbebc8ed46a10973a8c969d48fe7598c9",
+            "multiLocation": {}
+        },
+        "SIRI": {
+            "chainId": "67f9723393ef76214df0118c34bbbd3dbebc8ed46a10973a8c969d48fe7598c9",
+            "multiLocation": {
+                "parachainId": 1000,
+                "palletInstance": 50,
+                "generalIndex": 81
+            }
+        },
+        "KSM": {
+            "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+            "multiLocation": {}
+        }
+    },
+    "matchOverrides": {
+        "67f9723393ef76214df0118c34bbbd3dbebc8ed46a10973a8c969d48fe7598c9": [
+            {
+                "assetId": 0,
+                "overrideSymbol": "WND-Westmint"
+            }
+        ]
+    }
+}
