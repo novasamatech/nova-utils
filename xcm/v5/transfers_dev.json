@@ -7649,7 +7649,7 @@
           "assetId": 0,
           "assetLocation": "SDN",
           "assetLocationPath": {
-            "type": "absolute"
+            "type": "relative"
           },
           "xcmTransfers": [
             {
@@ -7661,10 +7661,10 @@
                     "type": "proportional",
                     "value": "81460289737958539970"
                   },
-                  "instructions": "xcmPalletDest"
+                  "instructions": "xtokensDest"
                 }
               },
-              "type": "xcmpallet"
+              "type": "xtokens"
             }
           ]
         },
