@@ -9014,55 +9014,6 @@
         ]
     },
     {
-        "chainId": "eip155:73799",
-        "name": "Energy Web Volta",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "VT",
-                "type": "evmNative",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/EWT.svg",
-                "precision": 18
-            }
-        ],
-        "nodeSelectionStrategy": "uniform",
-        "nodes": [
-            {
-                "url": "https://volta-rpc.energyweb.org/ws",
-                "name": "Volta http node"
-            },
-            {
-                "url": "wss://volta-rpc.energyweb.org/ws",
-                "name": "Volta wss node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Volta Explorer",
-                "extrinsic": "https://volta-explorer.energyweb.org/tx/{hash}",
-                "account": "https://volta-explorer.energyweb.org/address/{address}"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "etherscan",
-                    "url": "https://volta-explorer.energyweb.org/api",
-                    "parameters": {
-                        "assetType": "evm"
-                    }
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Energy_Web_Testnet.svg",
-        "addressPrefix": 73799,
-        "options": [
-            "testnet",
-            "ethereumBased",
-            "noSubstrateRuntime"
-        ]
-    },
-    {
         "chainId": "eip155:246",
         "name": "Energy Web Chain",
         "assets": [
