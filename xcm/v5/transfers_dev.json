@@ -189,6 +189,20 @@
         "instructions": "xtokensReserve"
       }
     },
+    "kBTC": {
+      "chainId": "9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
+      "multiLocation": {
+        "parachainId": 2092,
+        "generalKey": "0x000b"
+      },
+      "reserveFee": {
+        "mode": {
+          "type": "proportional",
+          "value": "79491"
+        },
+        "instructions": "xtokensReserve"
+      }
+    },
     "BSX": {
       "chainId": "a85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755",
       "multiLocation": {
@@ -585,7 +599,7 @@
                 "fee": {
                   "mode": {
                     "type": "proportional",
-                    "value": "364326511523"
+                    "value": "336657693192"
                   },
                   "instructions": "xtokensDest"
                 }
@@ -964,7 +978,7 @@
                 "fee": {
                   "mode": {
                     "type": "proportional",
-                    "value": "2391931512"
+                    "value": "2319288151"
                   },
                   "instructions": "xtokensDest"
                 }
@@ -1150,7 +1164,7 @@
                 "fee": {
                   "mode": {
                     "type": "proportional",
-                    "value": "364326511523"
+                    "value": "336657693192"
                   },
                   "instructions": "xcmPalletDest"
                 }
@@ -1555,7 +1569,7 @@
                 "fee": {
                   "mode": {
                     "type": "proportional",
-                    "value": "364326511523"
+                    "value": "336657693192"
                   },
                   "instructions": "xtokensDest"
                 }
@@ -3023,7 +3037,7 @@
                 "fee": {
                   "mode": {
                     "type": "proportional",
-                    "value": "5571881"
+                    "value": "5105554"
                   },
                   "instructions": "xcmPalletDest"
                 }
@@ -3307,7 +3321,7 @@
                 "fee": {
                   "mode": {
                     "type": "proportional",
-                    "value": "364326511523"
+                    "value": "336657693192"
                   },
                   "instructions": "xtokensDest"
                 }
@@ -3628,7 +3642,7 @@
                 "fee": {
                   "mode": {
                     "type": "proportional",
-                    "value": "364326511523"
+                    "value": "336657693192"
                   },
                   "instructions": "xtokensDest"
                 }
@@ -3671,6 +3685,29 @@
                   "mode": {
                     "type": "proportional",
                     "value": "1000000000"
+                  },
+                  "instructions": "xtokensDest"
+                }
+              },
+              "type": "xtokens"
+            }
+          ]
+        },
+        {
+          "assetId": 1,
+          "assetLocation": "kBTC",
+          "assetLocationPath": {
+            "type": "absolute"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "f1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
+                "assetId": 4,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "237"
                   },
                   "instructions": "xtokensDest"
                 }
@@ -4089,7 +4126,7 @@
                 "fee": {
                   "mode": {
                     "type": "proportional",
-                    "value": "364326511523"
+                    "value": "336657693192"
                   },
                   "instructions": "xtokensDest"
                 }
@@ -5339,7 +5376,7 @@
                 "fee": {
                   "mode": {
                     "type": "proportional",
-                    "value": "364326511523"
+                    "value": "336657693192"
                   },
                   "instructions": "xtokensDest"
                 }
@@ -5725,7 +5762,7 @@
                 "fee": {
                   "mode": {
                     "type": "proportional",
-                    "value": "112304153214258"
+                    "value": "107441009446322"
                   },
                   "instructions": "xtokensDest"
                 }
@@ -6255,7 +6292,7 @@
                 "fee": {
                   "mode": {
                     "type": "proportional",
-                    "value": "2391931512"
+                    "value": "2319288151"
                   },
                   "instructions": "xcmPalletDest"
                 }
@@ -6292,7 +6329,7 @@
                 "fee": {
                   "mode": {
                     "type": "proportional",
-                    "value": "364326511523"
+                    "value": "336657693192"
                   },
                   "instructions": "xcmPalletDest"
                 }
@@ -7111,7 +7148,7 @@
                 "fee": {
                   "mode": {
                     "type": "proportional",
-                    "value": "364326511523"
+                    "value": "336657693192"
                   },
                   "instructions": "xtokensDest"
                 }
@@ -7376,7 +7413,7 @@
                 "fee": {
                   "mode": {
                     "type": "proportional",
-                    "value": "364326511523"
+                    "value": "336657693192"
                   },
                   "instructions": "xtokensDest"
                 }
@@ -7622,7 +7659,7 @@
                 "fee": {
                   "mode": {
                     "type": "proportional",
-                    "value": "81460289737958539264"
+                    "value": "81460289737958539970"
                   },
                   "instructions": "xtokensDest"
                 }
@@ -7688,6 +7725,29 @@
                   "mode": {
                     "type": "proportional",
                     "value": "3159557661927330300"
+                  },
+                  "instructions": "xtokensDest"
+                }
+              },
+              "type": "xtokens"
+            }
+          ]
+        },
+        {
+          "assetId": 4,
+          "assetLocation": "kBTC",
+          "assetLocationPath": {
+            "type": "absolute"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
+                "assetId": 1,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "203120000000"
                   },
                   "instructions": "xtokensDest"
                 }

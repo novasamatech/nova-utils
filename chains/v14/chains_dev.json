@@ -17,7 +17,11 @@
                     "transak": {
                         "network": "MAINNET"
                     },
-                    "mercuryo": {}
+                    "mercuryo": {},
+                    "banxa": {
+                        "coinType": "DOT",
+                        "blockchain": "POLKADOT"
+                    }
                 }
             }
         ],
@@ -138,7 +142,11 @@
                     "transak": {
                         "network": "MAINNET"
                     },
-                    "mercuryo": {}
+                    "mercuryo": {},
+                    "banxa": {
+                        "coinType": "KSM",
+                        "blockchain": "KUSAMA"
+                    }
                 }
             }
         ],
@@ -953,6 +961,10 @@
                 "buyProviders": {
                     "transak": {
                         "network": "MOONRIVER"
+                    },
+                    "banxa": {
+                        "coinType": "MOVR",
+                        "blockchain": "MOONRIVER"
                     }
                 }
             },
@@ -3230,6 +3242,10 @@
                 "buyProviders": {
                     "transak": {
                         "network": "MAINNET"
+                    },
+                    "banxa": {
+                        "coinType": "GLMR",
+                        "blockchain": "MOONBEAM"
                     }
                 }
             },
@@ -3524,6 +3540,10 @@
                     },
                     "mercuryo": {
                         "network": "ETHEREUM"
+                    },
+                    "banxa": {
+                        "coinType": "ETH",
+                        "blockchain": "ETHEREUM"
                     }
                 }
             }
@@ -6875,7 +6895,13 @@
                     "relaychain"
                 ],
                 "precision": 18,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Ternoa.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Ternoa.svg",
+                "buyProviders": {
+                    "banxa": {
+                        "coinType": "CAPS",
+                        "blockchain": "TERNOA"
+                    }
+                }
             }
         ],
         "nodes": [
@@ -8985,6 +9011,63 @@
         "addressPrefix": 1110,
         "options": [
             "governance-v1"
+        ]
+    },
+    {
+        "chainId": "eip155:246",
+        "name": "Energy Web Chain",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "EWT",
+                "priceId": "energy-web-token",
+                "type": "evmNative",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/EWT.svg",
+                "precision": 18
+            }
+        ],
+        "nodeSelectionStrategy": "uniform",
+        "nodes": [
+            {
+                "url": "https://consortia-rpc.energyweb.org",
+                "name": "Public EWC http node"
+            },
+            {
+                "url": "https://rpc.energyweb.org",
+                "name": "Energy web http node"
+            },
+            {
+                "url": "https://archive-rpc.energyweb.org",
+                "name": "Archive http node"
+            },
+            {
+                "url": "wss://rpc.energyweb.org/ws",
+                "name": "Energy web wss node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Energy Web Explorer",
+                "extrinsic": "https://explorer.energyweb.org/tx/{hash}",
+                "account": "https://explorer.energyweb.org/address/{address}"
+            }
+        ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "etherscan",
+                    "url": "https://explorer.energyweb.org/api",
+                    "parameters": {
+                        "assetType": "evm"
+                    }
+                }
+            ]
+        },
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Energy_Web.svg",
+        "addressPrefix": 246,
+        "options": [
+            "ethereumBased",
+            "noSubstrateRuntime"
         ]
     }
 ]
