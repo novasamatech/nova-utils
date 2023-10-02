@@ -8066,6 +8066,14 @@
                 "account": "https://darwinia.subscan.io/account/{address}"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-darwinia"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/darwinia_polkadot.json",
             "overridesCommon": true
@@ -8120,14 +8128,6 @@
                 "account": "https://crab.subscan.io/account/{address}"
             }
         ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-darwinia"
-                }
-            ]
-        },
         "types": {
             "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/darwinia_crab.json",
             "overridesCommon": true
