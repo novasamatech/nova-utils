@@ -534,7 +534,13 @@
                 "symbol": "KAR",
                 "precision": 12,
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Karura.svg",
-                "priceId": "karura"
+                "priceId": "karura",
+                "buyProviders": {
+                    "banxa": {
+                        "coinType": "KAR",
+                        "blockchain": "KARURA"
+                    }
+                }
             },
             {
                 "assetId": 1,
@@ -1801,6 +1807,12 @@
                     "currencyIdType": "interbtc_primitives.CurrencyId",
                     "existentialDeposit": "0",
                     "transfersEnabled": true
+                },
+                "buyProviders": {
+                    "banxa": {
+                        "coinType": "KINT",
+                        "blockchain": "KINTSUGI"
+                    }
                 }
             },
             {
@@ -2210,7 +2222,13 @@
                 "symbol": "BSX",
                 "precision": 12,
                 "priceId": "basilisk",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Basilisk.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Basilisk.svg",
+                "buyProviders": {
+                    "banxa": {
+                        "coinType": "BSX",
+                        "blockchain": "BASILISK"
+                    }
+                }
             },
             {
                 "assetId": 1,
@@ -3750,6 +3768,10 @@
                 "buyProviders": {
                     "transak": {
                         "network": "ASTAR"
+                    },
+                    "banxa": {
+                        "coinType": "ASTR",
+                        "blockchain": "ASTAR"
                     }
                 }
             },
@@ -5173,6 +5195,12 @@
                     "currencyIdType": "interbtc_primitives.CurrencyId",
                     "existentialDeposit": "0",
                     "transfersEnabled": true
+                },
+                "buyProviders": {
+                    "banxa": {
+                        "coinType": "INTR",
+                        "blockchain": "INTERLAY"
+                    }
                 }
             },
             {
@@ -5718,6 +5746,10 @@
                 "buyProviders": {
                     "transak": {
                         "network": "ALEPHZERO"
+                    },
+                    "banxa": {
+                        "coinType": "AZERO",
+                        "blockchain": "ALEPH ZERO"
                     }
                 }
             }
@@ -6620,7 +6652,13 @@
                 "symbol": "BAJU",
                 "precision": 12,
                 "priceId": "ajuna-network",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Bajun.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Bajun.svg",
+                "buyProviders": {
+                    "banxa": {
+                        "coinType": "BAJU",
+                        "blockchain": "BAJUN"
+                    }
+                }
             }
         ],
         "nodes": [
