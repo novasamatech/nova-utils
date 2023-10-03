@@ -20,6 +20,13 @@
                 "buyProviders": {
                     "transak": {
                         "network": "ETHEREUM"
+                    },
+                    "mercuryo": {
+                        "network": "ETHEREUM"
+                    },
+                    "banxa": {
+                        "coinType": "USDT",
+                        "blockchain": "ETHEREUM"
                     }
                 }
             }
@@ -42,7 +49,16 @@
             },
             {
                 "chainId": "eip155:1",
-                "contractAddress": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+                "contractAddress": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+                "buyProviders": {
+                    "transak": {
+                        "network": "ETHEREUM"
+                    },
+                    "banxa": {
+                        "coinType": "USDC",
+                        "blockchain": "ETHEREUM"
+                    }
+                }
             }
         ]
     },
