@@ -9087,6 +9087,14 @@
                 "account": "https://matrix.subscan.io/account/{address}"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/enjin-matrixchain"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/enjin_matrixchain.json",
             "overridesCommon": true
