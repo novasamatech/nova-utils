@@ -3897,10 +3897,6 @@
             {
                 "url": "wss://astar.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
-            },
-            {
-                "url": "wss://astar-rpc.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -4880,15 +4876,15 @@
                 "name": "Onfinality node"
             },
             {
-                "url": "wss://fullnode.parachain.centrifuge.io",
-                "name": "Centrifuge node"
+                "url": "wss://centrifuge-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "explorers": [
             {
                 "name": "Subscan",
-                "extrinsic": "https://centrifuge-parachain.subscan.io/extrinsic/{hash}",
-                "account": "https://centrifuge-parachain.subscan.io/account/{address}"
+                "extrinsic": "https://centrifuge.subscan.io/extrinsic/{hash}",
+                "account": "https://centrifuge.subscan.io/account/{address}"
             },
             {
                 "name": "Sub.ID",
@@ -9179,6 +9175,86 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Energy_Web.svg",
         "addressPrefix": 246,
+        "options": [
+            "ethereumBased",
+            "noSubstrateRuntime"
+        ]
+    },
+    {
+        "chainId": "eip155:592",
+        "name": "Astar EVM",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "ASTR",
+                "priceId": "astar",
+                "type": "evmNative",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Astar.svg",
+                "precision": 18
+            }
+        ],
+        "nodeSelectionStrategy": "uniform",
+        "nodes": [
+            {
+                "url": "wss://astar-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "https://astar-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "https://astar.public.blastapi.io",
+                "name": "Blast node"
+            },
+            {
+                "url": "https://1rpc.io/astr",
+                "name": "1rpc node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://astar.subscan.io/extrinsic/{hash}",
+                "account": "https://astar.subscan.io/account/{address}"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Astar.svg",
+        "addressPrefix": 592,
+        "options": [
+            "ethereumBased",
+            "noSubstrateRuntime"
+        ]
+    },
+    {
+        "chainId": "eip155:2031",
+        "name": "Centrifuge EVM",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "CFG",
+                "priceId": "centrifuge",
+                "type": "evmNative",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master//icons/chains/white/Centrifuge.svg",
+                "precision": 18
+            }
+        ],
+        "nodeSelectionStrategy": "uniform",
+        "nodes": [
+            {
+                "url": "wss://fullnode.parachain.centrifuge.io",
+                "name": "Fullnode node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://centrifuge.subscan.io/extrinsic/{hash}",
+                "account": "https://centrifuge.subscan.io/account/{address}"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Centrifuge.svg",
+        "addressPrefix": 2031,
         "options": [
             "ethereumBased",
             "noSubstrateRuntime"
