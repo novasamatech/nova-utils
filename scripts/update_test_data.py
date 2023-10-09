@@ -1,7 +1,7 @@
 import json
 import os
 
-CHAINS_VERISON = os.getenv('CHAINS_VERSION', default = "v11")
+CHAINS_VERISON = os.getenv('CHAINS_VERSION')
 
 with open(f"chains/{CHAINS_VERISON}/chains_dev.json") as fin:
     dev_chains = json.load(fin)
@@ -14,7 +14,7 @@ def get_ids(chains):
     return list(map(lambda x: x["chainId"], chains))
 
 
-exludeChains = ['Kintsugi', 'Interlay', 'Mangata X', 'Fusotao', 'Equilibrium', 'Polkadot Bridge Hub']
+exludeChains = ['Kintsugi', 'Interlay', 'Mangata X', 'Fusotao', 'Equilibrium']
 skip_options = ['ethereumBased', 'noSubstrateRuntime', 'testnet']
 
 dev_ids = get_ids(dev_chains)
@@ -46,6 +46,9 @@ for dev_index, dev_id in enumerate(dev_ids):  # Add new network
         options = dev_chains[dev_index].get('options')
 
         if (dev_chains[dev_index]['name'] in exludeChains):  # Skip some special chains
+            continue
+
+        if ('PAUSED' in dev_chains[dev_index]['name']):  # Skip paused networks
             continue
 
         if options is not None:
