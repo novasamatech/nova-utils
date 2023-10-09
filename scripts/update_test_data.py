@@ -5,6 +5,8 @@ CHAINS_VERISON = os.getenv('CHAINS_VERSION')
 
 with open(f"chains/{CHAINS_VERISON}/chains_dev.json") as fin:
     dev_chains = json.load(fin)
+    # Skip paused networks
+    dev_chains = [chain for chain in dev_chains if 'PAUSED' not in chain['name']]
 
 with open("tests/chains_for_testBalance.json") as fin:
     test_chains = json.load(fin)
@@ -37,7 +39,7 @@ del_element(test_ids)
 
 for dev_index, dev_id in enumerate(dev_ids):  # Add new network
 
-    if dev_id not in test_ids and ':' not in dev_id:
+    if dev_id not in test_ids:
         chain_dict = {
             'chainId': dev_chains[dev_index]['chainId'],
             'name': dev_chains[dev_index]['name'],
@@ -46,9 +48,6 @@ for dev_index, dev_id in enumerate(dev_ids):  # Add new network
         options = dev_chains[dev_index].get('options')
 
         if (dev_chains[dev_index]['name'] in exludeChains):  # Skip some special chains
-            continue
-
-        if ('PAUSED' in dev_chains[dev_index]['name']):  # Skip paused networks
             continue
 
         if options is not None:
