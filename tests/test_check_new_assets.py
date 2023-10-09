@@ -18,7 +18,10 @@ class TestAssets:
     # assets that has no working cases on network
     exclusions = {
         'Bifrost Kusama': {'DOT': ''},
-        'Kintsugi': {'INTR': '', 'IBTC': '', 'DOT': ''}}
+        'Kintsugi': {'INTR': '', 'IBTC': '', 'DOT': ''},
+        'Equilibrium': {'TOKEN': ''}
+    }
+
 
     def test_has_new_assets(self, chain: Chain):
 
