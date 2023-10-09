@@ -12,7 +12,7 @@ network_list = get_network_list('/' + network_file_path)
 def get_substrate_chains():
     substrate_chains = []
     for data in network_list:
-        if data.get('name') in skipped_networks or data.get('name')[-7:-1] == 'PAUSED':
+        if data.get('name') in skipped_networks or 'PAUSED' in data.get('name'):
             continue
         options = data.get('options')
 
