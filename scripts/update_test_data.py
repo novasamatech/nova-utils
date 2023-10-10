@@ -1,10 +1,12 @@
 import json
 import os
 
-CHAINS_VERISON = os.getenv('CHAINS_VERSION', default = "v11")
+CHAINS_VERISON = os.getenv('CHAINS_VERSION')
 
 with open(f"chains/{CHAINS_VERISON}/chains_dev.json") as fin:
     dev_chains = json.load(fin)
+    # Skip paused networks
+    dev_chains = [chain for chain in dev_chains if 'PAUSED' not in chain['name']]
 
 with open("tests/chains_for_testBalance.json") as fin:
     test_chains = json.load(fin)
@@ -14,7 +16,7 @@ def get_ids(chains):
     return list(map(lambda x: x["chainId"], chains))
 
 
-exludeChains = ['Kintsugi', 'Interlay', 'Mangata X', 'Fusotao', 'Equilibrium', 'Polkadot Bridge Hub']
+exludeChains = ['Kintsugi', 'Interlay', 'Mangata X', 'Fusotao', 'Equilibrium']
 skip_options = ['ethereumBased', 'noSubstrateRuntime', 'testnet']
 
 dev_ids = get_ids(dev_chains)
@@ -37,7 +39,7 @@ del_element(test_ids)
 
 for dev_index, dev_id in enumerate(dev_ids):  # Add new network
 
-    if dev_id not in test_ids and ':' not in dev_id:
+    if dev_id not in test_ids:
         chain_dict = {
             'chainId': dev_chains[dev_index]['chainId'],
             'name': dev_chains[dev_index]['name'],
