@@ -2842,6 +2842,39 @@
                 "typeExtras": {
                     "assetId": "11"
                 }
+            },
+            {
+                "assetId": 4,
+                "symbol": "USDT",
+                "precision": 6,
+                "priceId": "tether",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDT.svg",
+                "typeExtras": {
+                    "assetId": "14"
+                }
+            },
+            {
+                "assetId": 5,
+                "symbol": "DAI-Karura",
+                "precision": 18,
+                "priceId": "dai",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/DAI.svg",
+                "typeExtras": {
+                    "assetId": "15"
+                }
+            },
+            {
+                "assetId": 6,
+                "symbol": "USDC-Karura",
+                "precision": 6,
+                "priceId": "usd-coin",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDC.svg",
+                "typeExtras": {
+                    "assetId": "16"
+                }
             }
         ],
         "nodes": [
