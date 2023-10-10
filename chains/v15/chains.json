@@ -3233,10 +3233,6 @@
             {
                 "url": "wss://astar.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
-            },
-            {
-                "url": "wss://astar-rpc.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -7352,5 +7348,51 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Enjin.svg",
         "addressPrefix": 1110
+    },
+    {
+        "chainId": "eip155:592",
+        "name": "Astar EVM",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "ASTR",
+                "priceId": "astar",
+                "type": "evmNative",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Astar.svg",
+                "precision": 18
+            }
+        ],
+        "nodeSelectionStrategy": "uniform",
+        "nodes": [
+            {
+                "url": "wss://astar-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "https://astar-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "https://astar.public.blastapi.io",
+                "name": "Blast node"
+            },
+            {
+                "url": "https://1rpc.io/astr",
+                "name": "1rpc node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://astar.subscan.io/extrinsic/{hash}",
+                "account": "https://astar.subscan.io/account/{address}"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Astar.svg",
+        "addressPrefix": 592,
+        "options": [
+            "ethereumBased",
+            "noSubstrateRuntime"
+        ]
     }
 ]
