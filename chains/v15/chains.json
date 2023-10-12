@@ -1076,6 +1076,46 @@
                 "typeExtras": {
                     "assetId": "125699734534028342599692732320197985871"
                 }
+            },
+            {
+                "assetId": 18,
+                "symbol": "xcOTP",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/OriginTrail.svg",
+                "typeExtras": {
+                    "assetId": "238111524681612888331172110363070489924"
+                }
+            },
+            {
+                "assetId": 19,
+                "symbol": "xcvDOT",
+                "precision": 10,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vDOT.svg",
+                "typeExtras": {
+                    "assetId": "29085784439601774464560083082574142143"
+                }
+            },
+            {
+                "assetId": 20,
+                "symbol": "xcvFIL",
+                "precision": 18,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vFIL.svg",
+                "typeExtras": {
+                    "assetId": "272547899416482196831721420898811311297"
+                }
+            },
+            {
+                "assetId": 21,
+                "symbol": "xcvGLMR",
+                "precision": 18,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vGLMR.svg",
+                "typeExtras": {
+                    "assetId": "204507659831918931608354793288110796652"
+                }
             }
         ],
         "nodes": [
@@ -1708,6 +1748,27 @@
                 "typeExtras": {
                     "assetId": "4294969280"
                 }
+            },
+            {
+                "assetId": 11,
+                "symbol": "vKSM",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vKSM.svg",
+                "typeExtras": {
+                    "assetId": "18446744073709551628"
+                }
+            },
+            {
+                "assetId": 12,
+                "symbol": "BNC",
+                "precision": 12,
+                "type": "statemine",
+                "priceId": "bifrost-native-coin",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Bifrost.svg",
+                "typeExtras": {
+                    "assetId": "18446744073709551627"
+                }
             }
         ],
         "nodes": [
@@ -2304,6 +2365,28 @@
                 "typeExtras": {
                     "assetId": "102"
                 }
+            },
+            {
+                "assetId": 10,
+                "symbol": "KINT",
+                "precision": 12,
+                "priceId": "kintsugi",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Kintsugi.svg",
+                "typeExtras": {
+                    "assetId": "119"
+                }
+            },
+            {
+                "assetId": 11,
+                "symbol": "kBTC",
+                "precision": 8,
+                "priceId": "bitcoin",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/KBTC.svg",
+                "typeExtras": {
+                    "assetId": "121"
+                }
             }
         ],
         "nodes": [
@@ -2502,6 +2585,59 @@
                 "typeExtras": {
                     "assetId": "10"
                 }
+            },
+            {
+                "assetId": 11,
+                "symbol": "CRAB",
+                "precision": 18,
+                "priceId": "darwinia-network-native-token",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Crab.svg",
+                "typeExtras": {
+                    "assetId": "11"
+                }
+            },
+            {
+                "assetId": 12,
+                "symbol": "SDN",
+                "precision": 18,
+                "priceId": "shiden",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Shiden.svg",
+                "typeExtras": {
+                    "assetId": "12"
+                }
+            },
+            {
+                "assetId": 13,
+                "symbol": "NEER",
+                "precision": 18,
+                "priceId": "metaverse-network-pioneer",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Bit.Country.svg",
+                "typeExtras": {
+                    "assetId": "13"
+                }
+            },
+            {
+                "assetId": 14,
+                "symbol": "BIT",
+                "precision": 18,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/BIT.svg",
+                "typeExtras": {
+                    "assetId": "14"
+                }
+            },
+            {
+                "assetId": 15,
+                "symbol": "PICA",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Picasso.svg",
+                "typeExtras": {
+                    "assetId": "15"
+                }
             }
         ],
         "nodes": [
@@ -2658,6 +2794,39 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Moonriver.svg",
                 "typeExtras": {
                     "assetId": "11"
+                }
+            },
+            {
+                "assetId": 4,
+                "symbol": "USDT",
+                "precision": 6,
+                "priceId": "tether",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDT.svg",
+                "typeExtras": {
+                    "assetId": "14"
+                }
+            },
+            {
+                "assetId": 5,
+                "symbol": "DAI-Karura",
+                "precision": 18,
+                "priceId": "dai",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/DAI.svg",
+                "typeExtras": {
+                    "assetId": "15"
+                }
+            },
+            {
+                "assetId": 6,
+                "symbol": "USDC-Karura",
+                "precision": 6,
+                "priceId": "usd-coin",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDC.svg",
+                "typeExtras": {
+                    "assetId": "16"
                 }
             }
         ],
@@ -3222,6 +3391,49 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDT.svg",
                 "typeExtras": {
                     "assetId": "4294969280"
+                }
+            },
+            {
+                "assetId": 10,
+                "symbol": "BNC",
+                "precision": 12,
+                "type": "statemine",
+                "priceId": "bifrost-native-coin",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Bifrost.svg",
+                "typeExtras": {
+                    "assetId": "18446744073709551623"
+                }
+            },
+            {
+                "assetId": 11,
+                "symbol": "UNQ",
+                "precision": 18,
+                "type": "statemine",
+                "priceId": "unique-network",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Unique.svg",
+                "typeExtras": {
+                    "assetId": "18446744073709551631"
+                }
+            },
+            {
+                "assetId": 12,
+                "symbol": "vDOT",
+                "precision": 10,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vDOT.svg",
+                "typeExtras": {
+                    "assetId": "18446744073709551624"
+                }
+            },
+            {
+                "assetId": 13,
+                "symbol": "EQD",
+                "precision": 9,
+                "type": "statemine",
+                "priceId": "tether",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/EQD.svg",
+                "typeExtras": {
+                    "assetId": "18446744073709551629"
                 }
             }
         ],
