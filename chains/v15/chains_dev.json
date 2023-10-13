@@ -9481,5 +9481,77 @@
             "ethereumBased",
             "noSubstrateRuntime"
         ]
+    },
+    {
+        "chainId": "6408de7737c59c238890533af25896a2c20608d8b380bb01029acb392781063e",
+        "name": "Rococo",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "ROC",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Rococo.svg",
+                "staking": [
+                    "relaychain"
+                ]
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rococo-rpc.polkadot.io",
+                "name": "Parity node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://rococo.subscan.io/extrinsic/{hash}",
+                "account": "https://rococo.subscan.ioaccount/{address}"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/rococo.json",
+        "addressPrefix": 42,
+        "types": {
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/rococo.json",
+            "overridesCommon": true
+        },
+        "options": [
+            "crowdloans"
+        ]
+    },
+    {
+        "chainId": "7c34d42fc815d392057c78b49f2755c753440ccd38bcb0405b3bcfb601d08734",
+        "parentId": "6408de7737c59c238890533af25896a2c20608d8b380bb01029acb392781063e",
+        "name": "Rococo Asset Hub",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "ROC",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Rococo.svg"
+            },
+            {
+                "assetId": 1,
+                "symbol": "HOP",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg",
+                "typeExtras": {
+                    "assetId": "0x0001007d12"
+                }
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rococo-asset-hub-rpc.polkadot.io",
+                "name": "Parity node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/rococo_asset_hub.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Asset_Hub.svg",
+        "addressPrefix": 2
     }
 ]
