@@ -409,7 +409,8 @@
             "overridesCommon": true
         },
         "options": [
-            "testnet"
+            "testnet",
+            "swap-hub"
         ]
     },
     {
@@ -9515,6 +9516,9 @@
             "overridesCommon": true
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Asset_Hub.svg",
-        "addressPrefix": 2
+        "addressPrefix": 2,
+        "options":[
+            "swap-hub"
+        ]
     }
 ]
