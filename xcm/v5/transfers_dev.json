@@ -5235,34 +5235,6 @@
                 }
               },
               "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "fc41b9bd8ef8fe53d58c7ea67c794c7ec9a73daf05e6d54b14ff6342c99ba64c",
-                "assetId": 10,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "8037000000000000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b",
-                "assetId": 4,
-                "fee": {
-                  "mode": {
-                    "type": null,
-                    "value": "8799000000000000"
-                  },
-                  "instructions": null
-                }
-              },
-              "type": null
             }
           ]
         }
