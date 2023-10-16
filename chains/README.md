@@ -1,9 +1,9 @@
 
 # Supported Networks & Assets data:
 ### 🕸️ Supported networks: 81
-### 💰 All assets 344
+### 💰 All assets 346
 ### 🪙 Unique assets: 174
-### 💫 Cross Chain directions: 373
+### 💫 Cross Chain directions: 391
 ### 🧾 SubQuery API projects: 73
 ### 👀 Networks with block explorers: 72
 ---
@@ -15,7 +15,7 @@
 |   3 | Ajuna                 | AJUN                                                                                                                                                                                                                                                               |  -                                                 |  -                                                                                                                  |
 |   4 | Aleph Zero            | AZERO                                                                                                                                                                                                                                                              | Subscan                                            | [nova-wallet-aleph-zero](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-aleph-zero)             |
 |   5 | Altair                | AIR                                                                                                                                                                                                                                                                | Subscan<br />Sub.ID<br />Polkaholic                | [nova-wallet-altair](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-altair)                     |
-|   6 | Amplitude             | AMPE                                                                                                                                                                                                                                                               |  -                                                 | [nova-wallet-amplitude](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-amplitude)               |
+|   6 | Amplitude             | AMPE<br />KSM<br />USDT                                                                                                                                                                                                                                            |  -                                                 | [nova-wallet-amplitude](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-amplitude)               |
 |   7 | Astar                 | ASTR<br />DOT<br />GLMR<br />iBTC<br />INTR<br />PHA<br />ACA<br />LDOT<br />aSEED<br />USDT<br />BNC<br />UNQ<br />vDOT<br />EQD                                                                                                                                  | Subscan<br />Sub.ID<br />Polkaholic                | [nova-wallet-astar](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-astar)                       |
 |   8 | Aventus               | AVT                                                                                                                                                                                                                                                                | Aventus explorer                                   | [nova-wallet-aventus](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-aventus)                   |
 |   9 | Bajun                 | BAJU                                                                                                                                                                                                                                                               | Subscan<br />Polkaholic                            | [nova-wallet-bajun](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-bajun)                       |
