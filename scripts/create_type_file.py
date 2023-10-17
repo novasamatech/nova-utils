@@ -31,7 +31,7 @@ def compare_type_files_for_all_networks(chains_file):
             f"Generating has started for: {chain['name']}. {index}/{len(chains_file)}")
         chain_options = chain.get('options')
         skip_options = {'ethereumBased', 'noSubstrateRuntime'}
-        
+
         if chain_options is not None:
             if skip_options.intersection(chain_options):
                 # TODO need to implement creation type file for EVM networks
@@ -81,11 +81,11 @@ def main(argv):
     """
 
     if 'dev' in argv:
-        chains_path = os.getenv("DEV_CHAINS_JSON_PATH", "chains/v11/chains_dev.json")
+        chains_path = os.getenv("DEV_CHAINS_JSON_PATH")
         chains_file = get_data_from_file(chains_path)
         compare_type_files_for_all_networks(chains_file)
     elif 'prod' in argv:
-        chains_path = os.getenv("CHAINS_JSON_PATH", "chains/v11/chains.json")
+        chains_path = os.getenv("CHAINS_JSON_PATH")
         chains_file = get_data_from_file(chains_path)
         compare_type_files_for_all_networks(chains_file)
     else:

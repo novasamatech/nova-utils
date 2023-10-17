@@ -2,7 +2,7 @@
   "runtime_id": 16,
   "types": {
     "Balance": "u128",
-    "Index": "u8",
+    "Index": "u32",
     "Phase": "frame_system.Phase",
     "Address": "sp_runtime.multiaddress.MultiAddress",
     "ExtrinsicSignature": "sp_runtime.MultiSignature",
