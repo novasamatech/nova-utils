@@ -160,12 +160,8 @@ jobs:
         with:
           python-version: '3.9.15'
 
-      - name: Install dependencies
+      - name: Generate google table
         run: |
           cd ../support
-          pip install -r ./requirements.txt
-
-      - name: Generate new xcm list
-        run: |
-          cd ../support
-          python ./nova-utils/generate_xcm_google_table.py
+          make install
+          make generate-google-table
