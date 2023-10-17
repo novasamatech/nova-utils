@@ -115,8 +115,8 @@ def get_metadata_param(substrate: SubstrateInterface) -> JsonObject:
 
     metadata_json = JsonObject(
         runtime_id=metadata.runtime_config.active_spec_version_id,
-        types_balance=find_primitive("Balance", metadata_types),
-        types_index=find_primitive("Index", metadata_types),
+        types_balance=substrate.get_type_definition('Balance'),
+        types_index=substrate.get_type_definition('Index'),
         types_phase=find_path_for_type_in_metadata("Phase", metadata_types),
         types_address=return_type_path(address_type, 'path'),
         types_extrinsicSignature=signature_type_path,
@@ -193,21 +193,6 @@ def find_dispatch_info(metadata_types) -> dict:
     dispatch_info_object = {"type": "struct", "type_mapping": [["weight", weight_path], [
         "class", dispatch_class_path], ["partialFee", "Balance"]]}
     return dispatch_info_object
-
-
-def find_primitive(name, metadata_types):
-    """Find primitive value in metadata types
-
-    Args:
-        name (str): Primitive name
-        metadata_types (array): Array with metadata types
-
-    Returns:
-        str: Value for found type
-    """
-    type_id = find_type_id_in_metadata(name, metadata_types)
-    type_with_primitive = metadata_types[type_id]
-    return deep_search_an_elemnt_by_key(type_with_primitive, "primitive")
 
 
 def find_path_for_type_in_metadata(name, metadata_types, check_path=None):
