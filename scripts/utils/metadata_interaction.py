@@ -161,10 +161,11 @@ def find_type_id_in_metadata(name, metadata_types, default_path_marker='typeName
                     else:
                         value = value[path]
                         continue
-                try:
-                    return value['type']
-                except KeyError:
+                elif value.get('type') is None:
                     return value['index']
+                else:
+                    return value['type']
+
             value = value[path]
 
     # if nothing were found, then try to find with another marker
