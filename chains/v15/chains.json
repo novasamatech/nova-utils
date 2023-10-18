@@ -1328,10 +1328,6 @@
                 "buyProviders": {
                     "transak": {
                         "network": "MOONRIVER"
-                    },
-                    "banxa": {
-                        "coinType": "MOVR",
-                        "blockchain": "MOVR"
                     }
                 }
             },
@@ -2098,13 +2094,7 @@
                 "symbol": "BSX",
                 "precision": 12,
                 "priceId": "basilisk",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Basilisk.svg",
-                "buyProviders": {
-                    "banxa": {
-                        "coinType": "BSX",
-                        "blockchain": "BSX"
-                    }
-                }
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Basilisk.svg"
             },
             {
                 "assetId": 1,
@@ -6523,13 +6513,7 @@
                     "relaychain"
                 ],
                 "precision": 18,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Ternoa.svg",
-                "buyProviders": {
-                    "banxa": {
-                        "coinType": "CAPS",
-                        "blockchain": "TERNOA"
-                    }
-                }
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Ternoa.svg"
             }
         ],
         "nodes": [
