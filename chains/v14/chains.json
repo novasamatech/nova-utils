@@ -17,7 +17,11 @@
                     "transak": {
                         "network": "MAINNET"
                     },
-                    "mercuryo": {}
+                    "mercuryo": {},
+                    "banxa": {
+                        "coinType": "DOT",
+                        "blockchain": "DOT"
+                    }
                 }
             }
         ],
@@ -138,7 +142,11 @@
                     "transak": {
                         "network": "MAINNET"
                     },
-                    "mercuryo": {}
+                    "mercuryo": {},
+                    "banxa": {
+                        "coinType": "KSM",
+                        "blockchain": "KSM"
+                    }
                 }
             }
         ],
@@ -463,7 +471,13 @@
                 "symbol": "KAR",
                 "precision": 12,
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Karura.svg",
-                "priceId": "karura"
+                "priceId": "karura",
+                "buyProviders": {
+                    "banxa": {
+                        "coinType": "KAR",
+                        "blockchain": "KAR"
+                    }
+                }
             },
             {
                 "assetId": 1,
@@ -886,6 +900,10 @@
                 "buyProviders": {
                     "transak": {
                         "network": "MAINNET"
+                    },
+                    "banxa": {
+                        "coinType": "GLMR",
+                        "blockchain": "GLMR"
                     }
                 }
             },
@@ -1213,6 +1231,10 @@
                     },
                     "mercuryo": {
                         "network": "ETHEREUM"
+                    },
+                    "banxa": {
+                        "coinType": "ETH",
+                        "blockchain": "ETH"
                     }
                 }
             }
@@ -3292,6 +3314,10 @@
                 "buyProviders": {
                     "transak": {
                         "network": "ASTAR"
+                    },
+                    "banxa": {
+                        "coinType": "ASTR",
+                        "blockchain": "ASTR"
                     }
                 }
             },
@@ -3994,6 +4020,12 @@
                     "currencyIdType": "interbtc_primitives.CurrencyId",
                     "existentialDeposit": "0",
                     "transfersEnabled": true
+                },
+                "buyProviders": {
+                    "banxa": {
+                        "coinType": "KINT",
+                        "blockchain": "KINT"
+                    }
                 }
             },
             {
@@ -4913,6 +4945,12 @@
                     "currencyIdType": "interbtc_primitives.CurrencyId",
                     "existentialDeposit": "0",
                     "transfersEnabled": true
+                },
+                "buyProviders": {
+                    "banxa": {
+                        "coinType": "INTR",
+                        "blockchain": "INTR"
+                    }
                 }
             },
             {
@@ -5427,6 +5465,10 @@
                 "buyProviders": {
                     "transak": {
                         "network": "ALEPHZERO"
+                    },
+                    "banxa": {
+                        "coinType": "AZERO",
+                        "blockchain": "AZERO"
                     }
                 }
             }
@@ -6202,7 +6244,13 @@
                 "symbol": "BAJU",
                 "precision": 12,
                 "priceId": "ajuna-network",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Bajun.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Bajun.svg",
+                "buyProviders": {
+                    "banxa": {
+                        "coinType": "BAJU",
+                        "blockchain": "BAJU"
+                    }
+                }
             }
         ],
         "nodes": [
