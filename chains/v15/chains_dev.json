@@ -9470,7 +9470,7 @@
                 "symbol": "CFG",
                 "priceId": "centrifuge",
                 "type": "evmNative",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master//icons/chains/white/Centrifuge.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Centrifuge.svg",
                 "precision": 18
             }
         ],
@@ -9532,6 +9532,37 @@
         "options":[
             "testnet",
             "swap-hub"
+        ]
+    },
+    {
+        "chainId": "eip155:595",
+        "name": "Acala Mandala TC9",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "mACA",
+                "type": "evmNative",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Acala.svg",
+                "precision": 12
+            }
+        ],
+        "nodeSelectionStrategy": "uniform",
+        "nodes": [
+            {
+                "url": "wss://eth-rpc-tc9.aca-staging.network",
+                "name": "wss node"
+            },
+            {
+                "url": "https://eth-rpc-tc9.aca-staging.network",
+                "name": "http node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Acala_Mandala_Testnet.svg",
+        "addressPrefix": 595,
+        "options": [
+            "testnet",
+            "ethereumBased",
+            "noSubstrateRuntime"
         ]
     }
 ]
