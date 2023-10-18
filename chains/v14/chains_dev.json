@@ -4331,6 +4331,10 @@
             {
                 "url": "wss://rpc.parallel.fi",
                 "name": "Parallel node"
+            },
+            {
+                "url": "wss://parallel-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -4614,10 +4618,6 @@
             {
                 "url": "wss://api.kusama.encointer.org",
                 "name": "Encointer association node"
-            },
-            {
-                "url": "wss://encointer.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -5601,8 +5601,12 @@
                 "name": "Kintsugi Labs node"
             },
             {
-                "url": "wss://interlay.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
+                "url": "wss://interlay-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://rpc-interlay.luckyfriday.io/",
+                "name": "LuckyFriday node"
             }
         ],
         "explorers": [
@@ -7404,10 +7408,6 @@
             {
                 "url": "wss://kapex-rpc.dwellir.com",
                 "name": "Dwellir node"
-            },
-            {
-                "url": "wss://kapex-parachain.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -7693,10 +7693,6 @@
             {
                 "url": "wss://rpc-do.xx.network",
                 "name": "xx Foundation node"
-            },
-            {
-                "url": "wss://xx.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -9237,10 +9233,6 @@
             {
                 "url": "wss://ws.manta.systems",
                 "name": "Manta node"
-            },
-            {
-                "url": "wss://manta.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "explorers": [
