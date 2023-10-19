@@ -1328,6 +1328,10 @@
                 "buyProviders": {
                     "transak": {
                         "network": "MOONRIVER"
+                    },
+                    "banxa": {
+                        "coinType": "MOVR",
+                        "blockchain": "MOVR"
                     }
                 }
             },
@@ -1848,7 +1852,13 @@
                 "symbol": "BNC",
                 "priceId": "bifrost-native-coin",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Bifrost.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Bifrost.svg",
+                "buyProviders": {
+                    "banxa": {
+                        "coinType": "BNC",
+                        "blockchain": "BNC"
+                    }
+                }
             },
             {
                 "assetId": 1,
@@ -2094,7 +2104,13 @@
                 "symbol": "BSX",
                 "precision": 12,
                 "priceId": "basilisk",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Basilisk.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Basilisk.svg",
+                "buyProviders": {
+                    "banxa": {
+                        "coinType": "BSX",
+                        "blockchain": "BSX"
+                    }
+                }
             },
             {
                 "assetId": 1,
@@ -6513,7 +6529,13 @@
                     "relaychain"
                 ],
                 "precision": 18,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Ternoa.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Ternoa.svg",
+                "buyProviders": {
+                    "banxa": {
+                        "coinType": "CAPS",
+                        "blockchain": "TERNOA"
+                    }
+                }
             }
         ],
         "nodes": [
