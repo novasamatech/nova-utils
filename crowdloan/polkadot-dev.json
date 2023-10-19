@@ -22,7 +22,8 @@
       "paraId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
       "apiLink": "yy9252r9jh.api.purestake.io",
       "apiTokenName": "MOONBEAM_PROD_AUTH_TOKEN"
-    }
+    },
+    "movedToParaId": "3342"
   },
   {
     "paraid": "2006",
@@ -367,5 +368,19 @@
     "description": "Parallel enables token holders and projects to flexibly and borderlessly put their idle capital to earn interests",
     "website": "https://www.frequency.xyz/?ref=parachains-info",
     "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Parallel.svg"
+  },
+  {
+    "paraid": "3342",
+    "name": "Moonbeam",
+    "token": "GLMR",
+    "description": "Ethereum-compatible smart contract parachain on Polkadot",
+    "website": "https://moonbeam.network/",
+    "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Moonbeam.svg",
+    "customFlow": "Moonbeam",
+    "extras": {
+      "paraId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+      "apiLink": "yy9252r9jh.api.purestake.io",
+      "apiTokenName": "MOONBEAM_PROD_AUTH_TOKEN"
+    }
   }
 ]
