@@ -1556,7 +1556,13 @@
                 "priceId": "bifrost-native-coin",
                 "staking": [
                     "parachain"
-                ]
+                ],
+                "buyProviders": {
+                    "banxa": {
+                        "coinType": "BNC",
+                        "blockchain": "BNC"
+                    }
+                }
             },
             {
                 "assetId": 1,
