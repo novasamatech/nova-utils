@@ -9403,16 +9403,12 @@
                 "name": "Dwellir node"
             },
             {
-                "url": "https://astar-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
                 "url": "https://astar.public.blastapi.io",
                 "name": "Blast node"
             },
             {
-                "url": "https://1rpc.io/astr",
-                "name": "1rpc node"
+                "url": "https://astar-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -9424,6 +9420,17 @@
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Astar.svg",
         "addressPrefix": 592,
+        "externalApi": {
+            "history": [
+                {
+                    "type": "etherscan",
+                    "url": "https://blockscout.com/astar/api",
+                    "parameters": {
+                        "assetType": "evm"
+                    }
+                }
+            ]
+        },
         "options": [
             "ethereumBased",
             "noSubstrateRuntime"
