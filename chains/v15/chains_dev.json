@@ -47,12 +47,12 @@
                 "name": "Dotters Net node"
             },
             {
-                "url": "wss://polkadot.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://1rpc.io/dot",
                 "name": "Automata 1RPC node"
+            },
+            {
+                "url": "wss://polkadot.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -281,12 +281,12 @@
                 "name": "Parity node"
             },
             {
-                "url": "wss://westend.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://westend-rpc.dwellir.com",
                 "name": "Dwellir node"
+            },
+            {
+                "url": "wss://westend.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -1228,20 +1228,16 @@
         ],
         "nodes": [
             {
-                "url": "wss://moonriver.api.onfinality.io/ws?apikey=41935d3d-3d6c-4a90-a0e1-33c065401d05",
-                "name": "OnFinality node"
-            },
-            {
-                "url": "wss://moonriver.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://wss.api.moonriver.moonbeam.network",
                 "name": "Moonbeam Foundation node"
             },
             {
                 "url": "wss://moonriver.public.blastapi.io",
                 "name": "Blast node"
+            },
+            {
+                "url": "wss://moonriver.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -1338,12 +1334,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://moonbeam-alpha.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://wss.testnet.moonbeam.network",
                 "name": "Moonbeam Network node"
+            },
+            {
+                "url": "wss://moonbeam-alpha.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -1518,12 +1514,12 @@
                 "name": "StakeTechnologies node"
             },
             {
-                "url": "wss://shiden.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://shiden-rpc.dwellir.com",
                 "name": "Dwellir node"
+            },
+            {
+                "url": "wss://shiden.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -1772,12 +1768,12 @@
                 "name": "Liebi node"
             },
             {
-                "url": "wss://bifrost-parachain.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://bifrost-rpc.dwellir.com",
                 "name": "Dwellir node"
+            },
+            {
+                "url": "wss://bifrost-parachain.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "types": {
@@ -2658,12 +2654,12 @@
                 "name": "Phala node"
             },
             {
-                "url": "wss://khala.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://khala-rpc.dwellir.com",
                 "name": "Dwellir node"
+            },
+            {
+                "url": "wss://khala.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -3653,16 +3649,16 @@
                 "name": "Moonbeam Foundation node"
             },
             {
-                "url": "wss://moonbeam.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://moonbeam.public.blastapi.io",
                 "name": "Blast node"
             },
             {
                 "url": "wss://1rpc.io/glmr",
                 "name": "Automata 1RPC node"
+            },
+            {
+                "url": "wss://moonbeam.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -4504,12 +4500,12 @@
                 "name": "Parity node"
             },
             {
-                "url": "wss://statemint.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://statemint-rpc.dwellir.com",
                 "name": "Dwellir node"
+            },
+            {
+                "url": "wss://statemint.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -5038,12 +5034,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://integritee-kusama.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://kusama.api.integritee.network",
                 "name": "Integritee node"
+            },
+            {
+                "url": "wss://integritee-kusama.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -5092,12 +5088,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://centrifuge-parachain.api.onfinality.io/public-ws",
-                "name": "Onfinality node"
-            },
-            {
                 "url": "wss://centrifuge-rpc.dwellir.com",
                 "name": "Dwellir node"
+            },
+            {
+                "url": "wss://centrifuge-parachain.api.onfinality.io/public-ws",
+                "name": "Onfinality node"
             }
         ],
         "explorers": [
@@ -5680,12 +5676,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://nodle-parachain.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://eden-rpc.dwellir.com",
                 "name": "Dwellir node"
+            },
+            {
+                "url": "wss://nodle-parachain.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -6098,12 +6094,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://composable.api.onfinality.io/public-ws",
-                "name": "Onfinality node"
-            },
-            {
                 "url": "wss://rpc.composable.finance",
                 "name": "Composable node"
+            },
+            {
+                "url": "wss://composable.api.onfinality.io/public-ws",
+                "name": "Onfinality node"
             }
         ],
         "explorers": [
@@ -6917,12 +6913,12 @@
                 "name": "AjunaNetwork node"
             },
             {
-                "url": "wss://bajun.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://bajun.public.curie.radiumblock.co/ws",
                 "name": "Radium node"
+            },
+            {
+                "url": "wss://bajun.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -8900,16 +8896,16 @@
                 "name": "Parity node"
             },
             {
-                "url": "wss://collectives.api.onfinality.io/public-ws",
-                "name": "Onfinality node"
-            },
-            {
                 "url": "wss://collectives.public.curie.radiumblock.co/ws",
                 "name": "Radium node"
             },
             {
                 "url": "wss://dot-rpc.stakeworld.io/collectives",
                 "name": "Stakeworld node"
+            },
+            {
+                "url": "wss://collectives.api.onfinality.io/public-ws",
+                "name": "Onfinality node"
             }
         ],
         "externalApi": {
