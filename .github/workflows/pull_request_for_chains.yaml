@@ -1,58 +1,14 @@
-name: Check pull requests for chains
+name: Check commit rules
 
 on:
   pull_request:
-    paths:
-      - 'chains/**'
-
-env:
-  BODY_FILE: body_file.txt
+  push:
+    branches: [main]
 
 jobs:
-  create-comment-with-changes:
+  pre-commit:
     runs-on: ubuntu-latest
-    name: Create a comment with chains changed data
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.x'
-
-      - name: Install dependencies
-        run: make init
-
-      - name: Build body text
-        run: echo This comment was written by a bot! >> ${{ env.BODY_FILE }}
-
-      - name: Run check_json.py
-        run: make check-chains-file
-
-      - name: Find Comment
-        if: always()
-        uses: peter-evans/find-comment@v2
-        id: fc
-        with:
-          issue-number: ${{ github.event.pull_request.number }}
-          comment-author: 'github-actions[bot]'
-          body-includes: This comment was written by a bot!
-
-      - name: Create comment
-        if: always() && steps.fc.outputs.comment-id == ''
-        uses: peter-evans/create-or-update-comment@v2
-        with:
-          issue-number: ${{ github.event.pull_request.number }}
-          body-file: ${{ env.BODY_FILE }}
-
-      - name: Update comment
-        if: always() && steps.fc.outputs.comment-id != ''
-        uses: peter-evans/create-or-update-comment@v2
-        with:
-          comment-id: ${{ steps.fc.outputs.comment-id }}
-          body-file: ${{ env.BODY_FILE }}
-          edit-mode: replace
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v3
+    - uses: pre-commit/action@v3.0.0
