@@ -45,12 +45,12 @@ jobs:
       - name: Generate message for PROD
         if: steps.prod.outputs.any_changed == 'true'
         run: |
-          make pr-comment-creation PR_ENV=PROD PR_FILE_NAME=${{ env.BODY_FILE }} 
+          make pr-comment-creation PR_ENV=PROD PR_FILE_NAME=${{ env.BODY_FILE }}
 
       - name: Generate message for DEV
         if: steps.dev.outputs.any_changed == 'true'
         run: |
-          make pr-comment-creation PR_ENV=DEV PR_FILE_NAME=${{ env.BODY_FILE }} 
+          make pr-comment-creation PR_ENV=DEV PR_FILE_NAME=${{ env.BODY_FILE }}
 
       - name: Find Comment
         uses: peter-evans/find-comment@v2
