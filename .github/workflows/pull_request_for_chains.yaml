@@ -31,8 +31,7 @@ jobs:
         run: echo This comment was written by a bot! >> ${{ env.BODY_FILE }}
 
       - name: Run check_json.py
-        run: |
-          pre-commit run --files $(git diff --name-only origin/master | grep 'chains/.*\.json') >> ${{ env.BODY_FILE }}
+        run: make check-chains-file
 
       - name: Find Comment
         uses: peter-evans/find-comment@v2
