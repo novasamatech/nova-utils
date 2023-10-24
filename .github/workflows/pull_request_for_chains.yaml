@@ -30,7 +30,7 @@ jobs:
 
       - name: Run check_json.py
         run: |
-          pre-commit run --files $(git diff --name-only HEAD~1 | grep 'chains/.*\.json') >> ${{ env.BODY_FILE }}
+          pre-commit run --files $(git diff --name-only master | grep 'chains/.*\.json') >> ${{ env.BODY_FILE }}
 
       - name: Find Comment
         uses: peter-evans/find-comment@v2
