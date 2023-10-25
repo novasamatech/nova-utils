@@ -1,0 +1,37 @@
+name: Integration tests for config
+
+on:
+  pull_request:
+    paths:
+      - "chains/**"
+
+jobs:
+  integration-tests:
+    name: ${{ matrix.test_path }}
+    runs-on: ubuntu-latest
+    env:
+      PARALLEL_THREADS: 10 # Number or auto
+    strategy:
+      fail-fast: false
+      matrix:
+        test_path:
+          [
+            "test-nodes-availability",
+            "test-networks-precision",
+            "test-network-chain-id",
+            "test-network-prefix",
+            "test-eth-availability",
+            "test-new-assets",
+          ]
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up actual paths
+        uses: ./.github/workflows/setup-path
+
+      - name: Install dependencies
+        run: make init
+
+      - name: Run test
+        continue-on-error: true
+        run: make ${{ matrix.test_path }}
