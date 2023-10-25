@@ -14,15 +14,5 @@ jobs:
         python-version: 3.x
     - uses: pre-commit/action@v3.0.0
 
-    - name: Update PR
-      if: failure()
-      uses: ./.github/workflows/make-pull-request
-      with:
-        commit-files: ./
-        commit-message: fix pre-commit hooks
-        app-id: ${{ secrets.PR_APP_ID}}
-        app-token: ${{ secrets.PR_APP_TOKEN}}
-        branch-name: ${{ github.head_ref }}
-        pr-title: ${{ github.event.pull_request.title }}
-        pr-body: ${{ github.event.pull_request.body }}
-        pr-base: ${{ github.event.pull_request.base.ref }}
+    - uses: stefanzweifel/git-auto-commit-action@v5
+      if: always()
