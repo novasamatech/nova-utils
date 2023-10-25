@@ -360,28 +360,6 @@
                 "typeExtras": {
                     "assetId": "81"
                 }
-            },
-            {
-                "assetId": 2,
-                "symbol": "DOT",
-                "precision": 10,
-                "priceId": "polkadot",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Polkadot.svg",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "0x02010902",
-                    "palletName": "ForeignAssets"
-                }
-            },
-            {
-                "assetId": 3,
-                "symbol": "JOE",
-                "precision": 3,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "8"
-                }
             }
         ],
         "nodes": [
@@ -409,8 +387,7 @@
             "overridesCommon": true
         },
         "options": [
-            "testnet",
-            "swap-hub"
+            "testnet"
         ]
     },
     {
@@ -6636,7 +6613,6 @@
                 "assetId": 3,
                 "symbol": "TUR",
                 "precision": 10,
-                "priceId": "turing-network",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Turing.svg",
                 "type": "orml",
                 "typeExtras": {
@@ -9437,6 +9413,17 @@
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Astar.svg",
         "addressPrefix": 592,
+        "externalApi": {
+            "history": [
+                {
+                    "type": "etherscan",
+                    "url": "https://blockscout.com/astar/api",
+                    "parameters": {
+                        "assetType": "evm"
+                    }
+                }
+            ]
+        },
         "options": [
             "ethereumBased",
             "noSubstrateRuntime"
@@ -9474,45 +9461,6 @@
         "options": [
             "ethereumBased",
             "noSubstrateRuntime"
-        ]
-    },
-    {
-        "chainId": "7c34d42fc815d392057c78b49f2755c753440ccd38bcb0405b3bcfb601d08734",
-        "parentId": "6408de7737c59c238890533af25896a2c20608d8b380bb01029acb392781063e",
-        "name": "Rococo Asset Hub",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "ROC",
-                "precision": 12,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Rococo.svg"
-            },
-            {
-                "assetId": 1,
-                "symbol": "HOP",
-                "precision": 12,
-                "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg",
-                "typeExtras": {
-                    "assetId": "0x010100b11c"
-                }
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://rococo-asset-hub-rpc.polkadot.io",
-                "name": "Parity node"
-            }
-        ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/rococo_asset_hub.json",
-            "overridesCommon": true
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Asset_Hub.svg",
-        "addressPrefix": 2,
-        "options":[
-            "testnet",
-            "swap-hub"
         ]
     },
     {

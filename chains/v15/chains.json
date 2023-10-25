@@ -281,12 +281,12 @@
                 "name": "Parity node"
             },
             {
-                "url": "wss://westend-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
                 "url": "wss://westend.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
+            },
+            {
+                "url": "wss://westend-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -4288,10 +4288,6 @@
             {
                 "url": "wss://picasso-rpc.composable.finance",
                 "name": "Composable node"
-            },
-            {
-                "url": "wss://rpc.composablenodes.tech",
-                "name": "Composable node"
             }
         ],
         "explorers": [
@@ -5586,6 +5582,10 @@
             {
                 "url": "wss://rpc.composable.finance",
                 "name": "Composable node"
+            },
+            {
+                "url": "wss://composable.api.onfinality.io/public-ws",
+                "name": "Onfinality node"
             }
         ],
         "explorers": [
