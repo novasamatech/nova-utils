@@ -13,8 +13,8 @@ jobs:
     - uses: tibdex/github-app-token@v1
       id: generate-token
       with:
-        app_id: ${{ inputs.app-id }}
-        private_key: ${{ inputs.app-token }}
+        app_id: ${{ secrets.PR_APP_ID}}
+        private_key: ${{ secrets.PR_APP_TOKEN}}
 
     - uses: actions/checkout@v4
       with:
