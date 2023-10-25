@@ -74,5 +74,8 @@ pr-comment-creation:
 	echo "## Changes for $(PR_ENV)" >> $(PR_FILE_NAME)
 	$(VENV)/bin/python scripts/print_xcm_changes.py $(PR_ENV) >> $(PR_FILE_NAME)
 
+check-chains-file:
+	$(VENV)/bin/pre-commit run --files chains/**/*.json
+
 update-xcm-to-prod:
 	$(VENV)/bin/python xcm/update_to_prod.py

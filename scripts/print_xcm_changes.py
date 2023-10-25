@@ -54,7 +54,7 @@ def compare_reserve_fee(object_accumulator, actual_assets_location, changed_asse
                     'old_value': old_value, 'new_value': new_value}
         except:
             object_accumulator['reserveFee'][assets] = "That asset was removed"
-        
+
 
 
 def find_new_destinations(object_accumulator, actual_chain_dict, new_cahin_dict, chain_json_dict):
