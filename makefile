@@ -49,6 +49,9 @@ requirements:
 
 test-all: test-nodes-availability test-networks-precision test-network-chain-id test-network-prefix test-eth-availability test-new-assets
 
+test-core:
+	CHAINS_JSON_PATH=$(CHAINS_JSON_PATH) $(TEST_RUN) -m core
+
 test-nodes-availability:
 	$(TEST_RUN) "./tests/test_nodes_availability.py"
 

@@ -6,23 +6,58 @@ on:
       - "chains/**"
 
 jobs:
+  prepare-matrix:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+      current: ${{ steps.current.outputs.any_changed }}
+      previous: ${{ steps.previous.outputs.any_changed }}
+    name: Create a comment with xcm changed data
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: 🛠 Set up actual paths
+        uses: ./.github/workflows/setup-path
+
+      - name: Was chains.json changed?
+        id: current
+        uses: tj-actions/changed-files@v18.2
+        with:
+          files: |
+            ${{ env.CHAINS_JSON_PATH }}
+
+      - name: Was previous chains.json changed?
+        id: previous
+        uses: tj-actions/changed-files@v18.2
+        with:
+          files: |
+            ${{ env.PREVIOUS_CHAINS_JSON_PATH }}
+
+      - name: Generate test paths
+        run: |
+          if [[ "${{ steps.current.outputs.any_changed }}" == 'true' ]]; then
+            echo "TEST_PATHS=${{ env.CHAINS_JSON_PATH }}" >> $GITHUB_ENV
+          fi
+          if [[ "${{ steps.previous.outputs.any_changed }}" == 'true' ]]; then
+            echo "TEST_PATHS=${{ env.TEST_PATHS }},${{ env.PREVIOUS_CHAINS_JSON_PATH }}" >> $GITHUB_ENV
+          fi
+      - name: Set matrix
+        id: set-matrix
+        run: |
+          echo "::set-output name=matrix::{\"test_path\": [\"${TEST_PATHS}\"]}"
+
+
   integration-tests:
     name: ${{ matrix.test_path }}
     runs-on: ubuntu-latest
-    env:
-      PARALLEL_THREADS: 10 # Number or auto
+    needs: prepare-matrix
+    if: always() && (needs.prepare-matrix.outputs.current == 'true' || needs.prepare-matrix.outputs.previous == 'true')
     strategy:
       fail-fast: false
       matrix:
-        test_path:
-          [
-            "test-nodes-availability",
-            "test-networks-precision",
-            "test-network-chain-id",
-            "test-network-prefix",
-            "test-eth-availability",
-            "test-new-assets",
-          ]
+        test_path: ${{fromJson(needs.prepare-matrix.outputs.matrix).test_path}}
 
     steps:
       - uses: actions/checkout@v4
@@ -33,5 +68,4 @@ jobs:
         run: make init
 
       - name: Run test
-        continue-on-error: true
-        run: make ${{ matrix.test_path }}
+        run: CHAINS_JSON_PATH=${{ matrix.test_path }} make test-core
