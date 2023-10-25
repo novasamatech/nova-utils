@@ -5,6 +5,10 @@ on:
     paths:
       - "chains/**"
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   prepare-matrix:
     runs-on: ubuntu-latest
@@ -12,7 +16,7 @@ jobs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
       current: ${{ steps.current.outputs.any_changed }}
       previous: ${{ steps.previous.outputs.any_changed }}
-    name: Create a comment with xcm changed data
+    name: Check which version was changed
 
     steps:
       - name: Checkout
