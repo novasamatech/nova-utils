@@ -3724,12 +3724,16 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc.parallel.fi",
-                "name": "Parallel node"
+                "url": "wss://mainnet.polkadex.trade",
+                "name": "Polkadex team node"
             },
             {
-                "url": "wss://parallel-rpc.dwellir.com",
-                "name": "Dwellir node"
+                "url": "wss://polkadex.public.curie.radiumblock.co/ws",
+                "name": "RadiumBlock node"
+            },
+            {
+                "url": "wss://polkadex.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "explorers": [
