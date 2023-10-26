@@ -5658,7 +5658,11 @@
                 "name": "Polkadex team node"
             },
             {
-                "url": "wss://polkadex-parachain.api.onfinality.io/public-ws",
+                "url": "wss://polkadex.public.curie.radiumblock.co/ws",
+                "name": "RadiumBlock node"
+            },
+            {
+                "url": "wss://polkadex.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
             }
         ],
