@@ -3594,6 +3594,7 @@
                 "symbol": "xcvDOT",
                 "precision": 10,
                 "type": "statemine",
+                "priceId": "voucher-dot",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vDOT.svg",
                 "typeExtras": {
                     "assetId": "29085784439601774464560083082574142143"
@@ -4065,6 +4066,7 @@
                 "symbol": "vDOT",
                 "precision": 10,
                 "type": "statemine",
+                "priceId": "voucher-dot",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vDOT.svg",
                 "typeExtras": {
                     "assetId": "18446744073709551624"
@@ -6337,6 +6339,7 @@
                 "assetId": 5,
                 "symbol": "vDOT",
                 "precision": 10,
+                "priceId": "voucher-dot",
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vDOT.svg",
                 "typeExtras": {
@@ -9497,6 +9500,34 @@
             "testnet",
             "ethereumBased",
             "noSubstrateRuntime"
+        ]
+    },
+    {
+        "chainId": "6ab1bd8aed6d5fdcaf347826bfcd0172681181edf8356b90cb3cf47076698ae2",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "EWX Staging Parachain Argon",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "VT",
+                "precision": 18,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/EWT.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://ewx-staging-parachain-argon-wmfbanx0xb.energyweb.org/ws",
+                "name": "EWX node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/ewx_parachain_testnet.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Energy_Web_Testnet.svg",
+        "addressPrefix": 42,
+        "options": [
+            "testnet"
         ]
     },
     {
