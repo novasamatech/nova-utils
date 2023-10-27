@@ -9529,5 +9529,30 @@
         "options": [
             "testnet"
         ]
+    },
+    {
+        "chainId": "161db6cdc5896fe55ef12b4778fe78dd65d7af43f65c601786b88d7a93ebc58a",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Watr",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "WATR",
+                "precision": 18,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/WATR.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://watr-rpc.watr-api.network",
+                "name": "EWX node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/watr.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Watr.svg",
+        "addressPrefix": 19
     }
 ]
