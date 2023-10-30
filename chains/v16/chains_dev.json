@@ -541,7 +541,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_Asset_Hub.svg",
-        "addressPrefix": 2
+        "addressPrefix": 2,
+        "options": [
+            "swap-hub"
+        ]
     },
     {
         "chainId": "baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b",
@@ -4542,7 +4545,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Asset_Hub.svg",
-        "addressPrefix": 0
+        "addressPrefix": 0,
+        "options": [
+            "swap-hub"
+        ]
     },
     {
         "chainId": "631ccc82a078481584041656af292834e1ae6daab61d2875b4dd0c14bb9b17bc",
