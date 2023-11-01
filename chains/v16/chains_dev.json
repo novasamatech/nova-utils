@@ -9534,7 +9534,10 @@
         "options":[
             "testnet",
             "swap-hub"
-        ]
+        ],
+        "additional": {
+            "relaychainAsNative": true
+        }
     },
     {
         "chainId": "eip155:595",
