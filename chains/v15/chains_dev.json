@@ -375,9 +375,8 @@
         "explorers": [
             {
                 "name": "Statescan",
-                "account": "https://westmint.statescan.io/account/{address}",
-                "extrinsic": "https://westmint.statescan.io/extrinsic/{hash}",
-                "event": "https://westmint.statescan.io/event/{event}"
+                "account": "https://westmint.statescan.io/#/accounts/{address}",
+                "event": "https://westmint.statescan.io/#/events/{event}"
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Westmint_Testnet.svg",
@@ -491,9 +490,8 @@
             },
             {
                 "name": "Statescan",
-                "extrinsic": "https://statemine.statescan.io/extrinsic/{hash}",
-                "account": "https://statemine.statescan.io/account/{address}",
-                "event": "https://statemine.statescan.io/event/{event}"
+                "account": "https://statemine.statescan.io/#/accounts/{address}",
+                "event": "https://statemine.statescan.io/#/events/{event}"
             },
             {
                 "name": "Sub.ID",
@@ -4496,9 +4494,8 @@
             },
             {
                 "name": "Statescan",
-                "account": "https://statemint.statescan.io/account/{address}",
-                "extrinsic": "https://statemint.statescan.io/extrinsic/{hash}",
-                "event": "https://statemint.statescan.io/event/{event}"
+                "account": "https://statemint.statescan.io/#/accounts/{address}",
+                "event": "https://statemint.statescan.io/#/events/{event}"
             },
             {
                 "name": "Polkaholic",
@@ -7334,8 +7331,7 @@
         "explorers": [
             {
                 "name": "Governance2 Testnet explorer",
-                "extrinsic": "https://gov2.statescan.io/extrinsic/{hash}",
-                "account": "https://gov2.statescan.io/account/{address}"
+                "account": "https://gov2.statescan.io/#/accounts/{address}"
             }
         ],
         "types": {
