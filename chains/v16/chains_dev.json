@@ -9515,6 +9515,12 @@
                 }
             }
         ],
+        "history": [
+            {
+                "type": "subquery",
+                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---westmint"
+            }
+        ],
         "nodes": [
             {
                 "url": "wss://rococo-asset-hub-rpc.polkadot.io",
@@ -9527,7 +9533,7 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Asset_Hub.svg",
         "addressPrefix": 2,
-        "options":[
+        "options": [
             "testnet",
             "swap-hub"
         ],
