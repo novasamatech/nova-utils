@@ -45,7 +45,11 @@ jobs:
             echo "TEST_PATHS=${{ env.CHAINS_JSON_PATH }}" >> $GITHUB_ENV
           fi
           if [[ "${{ steps.previous.outputs.any_changed }}" == 'true' ]]; then
-            echo "TEST_PATHS=${{ env.TEST_PATHS }},${{ env.PREVIOUS_CHAINS_JSON_PATH }}" >> $GITHUB_ENV
+            if [[ -n "${{ env.TEST_PATHS }}" ]]; then
+              echo "TEST_PATHS=${{ env.TEST_PATHS }},${{ env.PREVIOUS_CHAINS_JSON_PATH }}" >> $GITHUB_ENV
+            else
+              echo "TEST_PATHS=${{ env.PREVIOUS_CHAINS_JSON_PATH }}" >> $GITHUB_ENV
+            fi
           fi
       - name: Set matrix
         id: set-matrix
