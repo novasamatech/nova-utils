@@ -73,3 +73,9 @@ jobs:
 
       - name: Run test
         run: CHAINS_JSON_PATH=${{ matrix.test_path }} make test-core
+
+      - name: Surface failing tests
+        if: always()
+        uses: pmeier/pytest-results-action@main
+        with:
+          path: test-results.xml

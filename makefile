@@ -8,6 +8,7 @@ RE_RUNS = 2
 RE_RUN_DELAY = 15
 ALLURE_DIR = allure-results
 TEST_RUN = $(VENV)/bin/python -m pytest --rootdir . --alluredir=$(ALLURE_DIR) -n $(THREADS) -v --reruns $(RE_RUNS) --reruns-delay $(RE_RUN_DELAY)
+TEST_RUN_JUNIT = $(VENV)/bin/python -m pytest --rootdir . --junit-xml=test-results.xml -n $(THREADS) -v --reruns $(RE_RUNS) --reruns-delay $(RE_RUN_DELAY)
 
 CHAINS_FILES=\
 	chains
@@ -50,7 +51,7 @@ requirements:
 test-all: test-nodes-availability test-networks-precision test-network-chain-id test-network-prefix test-eth-availability test-new-assets
 
 test-core:
-	CHAINS_JSON_PATH=$(CHAINS_JSON_PATH) $(TEST_RUN) -m core
+	CHAINS_JSON_PATH=$(CHAINS_JSON_PATH) $(TEST_RUN_JUNIT) -m core
 
 test-nodes-availability:
 	$(TEST_RUN) "./tests/test_nodes_availability.py"
