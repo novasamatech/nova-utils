@@ -9,6 +9,9 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+env:
+  BODY_FILE: comment-body.txt
+
 jobs:
   prepare-matrix:
     runs-on: ubuntu-latest
