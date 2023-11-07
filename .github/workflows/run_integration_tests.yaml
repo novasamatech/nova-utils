@@ -80,6 +80,7 @@ jobs:
 
       - name: Run test
         run: CHAINS_JSON_PATH=${{ matrix.test_path }} make test-core
+        continue-on-error: true
 
       - name: Surface failing tests
         if: always()
