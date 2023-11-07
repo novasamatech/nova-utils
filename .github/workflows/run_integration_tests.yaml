@@ -93,7 +93,7 @@ jobs:
     if: always()
     steps:
       - name: Save URLs to file
-        run: echo "Test results can be found here for each file:\n" > ${{ env.BODY_FILE }}
+        run: echo "🧪 Test results can be found here for each file:" > ${{ env.BODY_FILE }}
 
       - name: Install jq
         run: sudo apt-get install jq
@@ -107,7 +107,7 @@ jobs:
           urls=""
           for id in $job_ids
           do
-            echo "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}/attempts/1#summary-$id \n" > ${{ env.BODY_FILE }}
+            echo "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}/attempts/1#summary-$id" >> ${{ env.BODY_FILE }}
           done
 
       - name: Find Comment
