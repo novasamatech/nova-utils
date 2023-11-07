@@ -83,3 +83,53 @@ jobs:
         uses: pmeier/pytest-results-action@main
         with:
           path: test-results.xml
+
+  process-results:
+    runs-on: ubuntu-latest
+    needs: integration-tests
+    if: always()
+    steps:
+      - name: Save URLs to file
+        run: echo "Test results can be found here for each file:\n" > ${{ env.BODY_FILE }}
+
+      - name: Install jq
+        run: sudo apt-get install jq
+
+      - name: Get job IDs and create URLs
+        id: get-job-ids
+        run: |
+          url="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs"
+          response=$(curl --silent --location "$url")
+          job_ids=$(echo "$response" | jq '.jobs[1:][] | .id')
+          urls=""
+          for id in $job_ids
+          do
+            urls+="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}/attempts/1#summary-$id\n"
+          done
+          echo "URLS=$urls" >> $GITHUB_ENV
+
+      - name: Save URLs to file
+        run: echo "$URLS" > ${{ env.BODY_FILE }}
+
+      - name: Find Comment
+        uses: peter-evans/find-comment@v2
+        id: fc
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: 'github-actions[bot]'
+          body-includes: This comment was written by a bot!
+
+      - name: Create comment
+        if: steps.fc.outputs.comment-id == ''
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          body-file: ${{ env.BODY_FILE }}
+
+      - name: Update comment
+        if: steps.fc.outputs.comment-id != ''
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          comment-id: ${{ steps.fc.outputs.comment-id }}
+          body-file: ${{ env.BODY_FILE }}
+          edit-mode: replace
