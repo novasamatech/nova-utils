@@ -107,11 +107,8 @@ jobs:
           urls=""
           for id in $job_ids
           do
-            echo "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}/attempts/1#summary-$id \n" >> $GITHUB_ENV
+            echo "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}/attempts/1#summary-$id \n" > ${{ env.BODY_FILE }}
           done
-
-      - name: Save URLs to file
-        run: echo "$URLS" > ${{ env.BODY_FILE }}
 
       - name: Find Comment
         uses: peter-evans/find-comment@v2
