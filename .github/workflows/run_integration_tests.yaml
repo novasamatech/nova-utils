@@ -94,7 +94,7 @@ jobs:
     if: always()
     steps:
       - name: Save URLs to file
-        run: echo "🧪 Test results can be found here for each file:" > ${{ env.BODY_FILE }}
+        run: echo "🧪 Test results" > ${{ env.BODY_FILE }}
 
       - name: Install jq
         run: sudo apt-get install jq
@@ -117,7 +117,7 @@ jobs:
         with:
           issue-number: ${{ github.event.pull_request.number }}
           comment-author: 'github-actions[bot]'
-          body-includes: This comment was written by a bot!
+          body-includes: 🧪 Test results
 
       - name: Create comment
         if: steps.fc.outputs.comment-id == ''
