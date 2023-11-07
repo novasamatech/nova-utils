@@ -9632,5 +9632,39 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Watr.svg",
         "addressPrefix": 19
+    },
+    {
+        "chainId": "6b5e488e0fa8f9821110d5c13f4c468abcd43ce5e297e62b34c53c3346465956",
+        "name": "Joystream",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "JOY",
+                "precision": 10,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/JOY.svg",
+                "staking": [
+                    "relaychain"
+                ]
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc.joystream.org",
+                "name": "Jsgenesis node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://joystream.subscan.io/extrinsic/{hash}",
+                "account": "https://joystream.subscan.io/account/{address}"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/joystream.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Joystream.svg",
+        "addressPrefix": 126
     }
 ]
