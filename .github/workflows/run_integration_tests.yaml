@@ -107,9 +107,8 @@ jobs:
           urls=""
           for id in $job_ids
           do
-            urls+="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}/attempts/1#summary-$id\n"
+            echo "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}/attempts/1#summary-$id \n" >> $GITHUB_ENV
           done
-          echo "URLS=$urls" >> $GITHUB_ENV
 
       - name: Save URLs to file
         run: echo "$URLS" > ${{ env.BODY_FILE }}
