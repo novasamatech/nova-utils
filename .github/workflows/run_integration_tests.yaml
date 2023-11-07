@@ -104,7 +104,7 @@ jobs:
         run: |
           url="https://api.github.com/repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs"
           response=$(curl --silent --location "$url")
-          job_ids=$(echo "$response" | jq '.jobs[1:][] | .id')
+          job_ids=$(echo "$response" | jq '.jobs[1:-1][] | .id')
           urls=""
           for id in $job_ids
           do
