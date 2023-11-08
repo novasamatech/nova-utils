@@ -9529,18 +9529,20 @@
                 }
             }
         ],
-        "history": [
-            {
-                "type": "subquery",
-                "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---westmint"
-            }
-        ],
         "nodes": [
             {
                 "url": "wss://rococo-asset-hub-rpc.polkadot.io",
                 "name": "Parity node"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---westmint"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/rococo_asset_hub.json",
             "overridesCommon": true
