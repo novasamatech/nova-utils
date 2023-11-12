@@ -2958,6 +2958,62 @@
           ]
         }
       ]
+    },
+    {
+      "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+      "assets": [
+        {
+          "assetId": 0,
+          "assetLocation": "KSM",
+          "assetLocationPath": {
+            "type": "relative"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
+                "assetId": 0,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "3959149500"
+                  },
+                  "instructions": "xcmPalletTeleportDest"
+                }
+              },
+              "type": "xcmpallet-teleport"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
+      "assets": [
+        {
+          "assetId": 0,
+          "assetLocation": "KSM-Statemine",
+          "assetLocationPath": {
+            "type": "absolute"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+                "assetId": 0,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "30718568454"
+                  },
+                  "instructions": "xcmPalletTeleportDest"
+                }
+              },
+              "type": "xcmpallet-teleport"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
