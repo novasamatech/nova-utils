@@ -36,6 +36,9 @@ jobs:
           files: |
             ${{ env.DEV_XCM_JSON_PATH }}
 
+      - name: Set GITHUB_BASE environment variable
+        run: echo "GITHUB_BASE=${{ github.event.pull_request.base.ref }}" >> $GITHUB_ENV
+
       - name: Install dependencies
         run: make init
 
