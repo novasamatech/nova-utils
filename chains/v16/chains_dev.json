@@ -9586,6 +9586,13 @@
                 "name": "Parity node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://assethub-rococo.subscan.io/extrinsic/{hash}",
+                "account": "https://assethub-rococo.subscan.io/account/{address}"
+            }
+        ],
         "externalApi": {
             "history": [
                 {
