@@ -17,6 +17,12 @@ sorted_version_numbers=($(printf '%s\n' "${version_numbers[@]}" | sort -rn))
 
 # Retrieve the latest version folder
 latest_version_number=${sorted_version_numbers[0]}
+
+# Check if second argument exists and if so, subtract 1 from the latest version
+if [ -n "$2" ]; then
+  latest_version_number=$((latest_version_number - 1))
+fi
+
 latest_version_folder="v${latest_version_number}"
 
 echo $latest_version_folder

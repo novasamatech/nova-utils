@@ -1,30 +1,13 @@
-import pytest
-
 from scripts.utils.chain_model import Chain
-from tests.data.setting_data import get_substrate_chains
 
-task_ids = [
-    f'Test for {task.name}'
-    for task in get_substrate_chains()
-]
-
-@pytest.mark.parametrize("chain", get_substrate_chains(), ids=task_ids)
 class TestNetworkPrefix:
-    def test_address_prefix(self, chain: Chain):
-        chain.create_connection()
-        chain.init_properties()
-        assert chain.properties.ss58Format == chain.addressPrefix
+    def test_address_prefix(self, chain_model: Chain):
+        assert chain_model.properties.ss58Format == chain_model.addressPrefix
 
-@pytest.mark.parametrize("chain", get_substrate_chains(), ids=task_ids)
 class TestChainId:
-    def test_chainId(self, chain: Chain):
-        chain.create_connection()
-        chain.init_properties()
-        assert chain.properties.chainId == '0x'+chain.chainId
+    def test_chainId(self, chain_model: Chain):
+        assert chain_model.properties.chainId == '0x'+chain_model.chainId
 
-@pytest.mark.parametrize("chain", get_substrate_chains(), ids=task_ids)
 class TestPrecision:
-    def test_precision(self, chain: Chain):
-        chain.create_connection()
-        chain.init_properties()
-        assert chain.properties.precision == chain.assets[0].get('precision')
+    def test_precision(self, chain_model: Chain):
+        assert chain_model.properties.precision == chain_model.assets[0].get('precision')

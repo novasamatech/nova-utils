@@ -1,0 +1,135 @@
+name: Integration tests for config
+
+on:
+  pull_request:
+    paths:
+      - "chains/**"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  BODY_FILE: comment-body.txt
+
+jobs:
+  prepare-matrix:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+      current: ${{ steps.current.outputs.any_changed }}
+      previous: ${{ steps.previous.outputs.any_changed }}
+    name: Check which version was changed
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: 🛠 Set up actual paths
+        uses: ./.github/workflows/setup-path
+
+      - name: Was chains.json changed?
+        id: current
+        uses: tj-actions/changed-files@v18.2
+        with:
+          files: |
+            ${{ env.CHAINS_JSON_PATH }}
+
+      - name: Was previous chains.json changed?
+        id: previous
+        uses: tj-actions/changed-files@v18.2
+        with:
+          files: |
+            ${{ env.PREVIOUS_CHAINS_JSON_PATH }}
+
+      - name: Generate test paths
+        run: |
+          if [[ "${{ steps.current.outputs.any_changed }}" == 'true' ]]; then
+            echo "TEST_PATHS=${{ env.CHAINS_JSON_PATH }}" >> $GITHUB_ENV
+          fi
+          if [[ "${{ steps.previous.outputs.any_changed }}" == 'true' ]]; then
+            if [[ -n "${{ env.TEST_PATHS }}" ]]; then
+              echo "TEST_PATHS=${{ env.TEST_PATHS }},${{ env.PREVIOUS_CHAINS_JSON_PATH }}" >> $GITHUB_ENV
+            else
+              echo "TEST_PATHS=${{ env.PREVIOUS_CHAINS_JSON_PATH }}" >> $GITHUB_ENV
+            fi
+          fi
+      - name: Set matrix
+        id: set-matrix
+        run: |
+          echo "::set-output name=matrix::{\"test_path\": [\"${TEST_PATHS}\"]}"
+
+
+  integration-tests:
+    name: ${{ matrix.test_path }}
+    runs-on: ubuntu-latest
+    needs: prepare-matrix
+    if: always() && (needs.prepare-matrix.outputs.current == 'true' || needs.prepare-matrix.outputs.previous == 'true')
+    strategy:
+      fail-fast: false
+      matrix:
+        test_path: ${{fromJson(needs.prepare-matrix.outputs.matrix).test_path}}
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up actual paths
+        uses: ./.github/workflows/setup-path
+
+      - name: Install dependencies
+        run: make init
+
+      - name: Run test
+        run: CHAINS_JSON_PATH=${{ matrix.test_path }} make test-core
+        continue-on-error: true
+
+      - name: Surface failing tests
+        if: always()
+        uses: pmeier/pytest-results-action@main
+        with:
+          path: test-results.xml
+
+  process-results:
+    runs-on: ubuntu-latest
+    needs: integration-tests
+    if: always()
+    steps:
+      - name: Save URLs to file
+        run: echo "🧪 Test results" > ${{ env.BODY_FILE }}
+
+      - name: Install jq
+        run: sudo apt-get install jq
+
+      - name: Get job IDs and create URLs
+        id: get-job-ids
+        run: |
+          url="https://api.github.com/repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs"
+          response=$(curl --silent --location "$url")
+          job_ids=$(echo "$response" | jq '.jobs[1:-1][] | .id')
+          urls=""
+          for id in $job_ids
+          do
+            echo "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}/attempts/1#summary-$id" >> ${{ env.BODY_FILE }}
+          done
+
+      - name: Find Comment
+        uses: peter-evans/find-comment@v2
+        id: fc
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: 'github-actions[bot]'
+          body-includes: 🧪 Test results
+
+      - name: Create comment
+        if: steps.fc.outputs.comment-id == ''
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          body-file: ${{ env.BODY_FILE }}
+
+      - name: Update comment
+        if: steps.fc.outputs.comment-id != ''
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          comment-id: ${{ steps.fc.outputs.comment-id }}
+          body-file: ${{ env.BODY_FILE }}
+          edit-mode: replace
