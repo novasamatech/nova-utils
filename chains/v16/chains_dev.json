@@ -416,7 +416,10 @@
         "options": [
             "testnet",
             "swap-hub"
-        ]
+        ],
+        "additional": {
+            "relaychainAsNative": true
+        }
     },
     {
         "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
