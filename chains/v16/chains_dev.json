@@ -413,6 +413,14 @@
             "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/westmint.json",
             "overridesCommon": true
         },
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---westmint-test__bm92Y"
+                }
+            ]
+        },
         "options": [
             "testnet",
             "swap-hub"
