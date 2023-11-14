@@ -176,6 +176,9 @@ def main(argv):
     """
 
     nova_utils_url = "https://raw.githubusercontent.com/novasamatech/nova-utils/master/"
+    github_base = os.getenv('GITHUB_BASE')
+    if github_base:
+        nova_utils_url = f"https://raw.githubusercontent.com/novasamatech/nova-utils/{github_base}/"
 
     if 'DEV' in argv:
         transfers_file = os.getenv(
