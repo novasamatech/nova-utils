@@ -8194,6 +8194,12 @@
                 "name": "Opentensor Fdn node"
             }
         ],
+        "explorers": [
+            {
+                "name": "SCAN",
+                "account": "https://bittensor.com/scan/address/{address}"
+            }
+        ],
         "externalApi": {
             "history": [
                 {
