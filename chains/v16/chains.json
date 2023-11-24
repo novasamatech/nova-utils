@@ -1145,10 +1145,6 @@
             {
                 "url": "wss://1rpc.io/glmr",
                 "name": "Automata 1RPC node"
-            },
-            {
-                "url": "wss://moonbeam.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -1579,8 +1575,8 @@
                 "name": "Blast node"
             },
             {
-                "url": "wss://moonriver.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
+                "url": "wss://moonriver-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -7191,10 +7187,6 @@
         "nodes": [
             {
                 "url": "wss://rpc.3dpscan.io",
-                "name": "3DPass node"
-            },
-            {
-                "url": "wss://rpc.3dpass.org",
                 "name": "3DPass node"
             },
             {
