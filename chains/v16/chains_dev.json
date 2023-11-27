@@ -31,10 +31,6 @@
                 "name": "Dwellir node"
             },
             {
-                "url": "wss://rpc.polkadot.io",
-                "name": "Parity node"
-            },
-            {
                 "url": "wss://rpc-polkadot.luckyfriday.io",
                 "name": "LuckyFriday node"
             },
@@ -157,10 +153,6 @@
                 "name": "Dwellir node"
             },
             {
-                "url": "wss://kusama-rpc.polkadot.io",
-                "name": "Parity node"
-            },
-            {
                 "url": "wss://rpc-kusama.luckyfriday.io",
                 "name": "LuckyFriday node"
             },
@@ -279,16 +271,16 @@
                 "name": "Dotters Net node"
             },
             {
-                "url": "wss://westend-rpc.polkadot.io",
-                "name": "Parity node"
-            },
-            {
                 "url": "wss://westend-rpc.dwellir.com",
                 "name": "Dwellir node"
             },
             {
                 "url": "wss://westend.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
+            },
+            {
+                "url": "wss://westend-rpc.polkadot.io",
+                "name": "Parity node"
             }
         ],
         "explorers": [
@@ -396,12 +388,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://westmint-rpc.polkadot.io",
-                "name": "Parity node"
-            },
-            {
                 "url": "wss://westmint-rpc.dwellir.com",
                 "name": "Dwellir node"
+            },
+            {
+                "url": "wss://westmint-rpc.polkadot.io",
+                "name": "Parity node"
             }
         ],
         "explorers": [
@@ -4525,16 +4517,16 @@
                 "name": "Dotters Net node"
             },
             {
-                "url": "wss://polkadot-asset-hub-rpc.polkadot.io",
-                "name": "Parity node"
-            },
-            {
                 "url": "wss://statemint-rpc.dwellir.com",
                 "name": "Dwellir node"
             },
             {
                 "url": "wss://statemint.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
+            },
+            {
+                "url": "wss://polkadot-asset-hub-rpc.polkadot.io",
+                "name": "Parity node"
             }
         ],
         "explorers": [
@@ -8845,12 +8837,12 @@
                 "name": "Dotters Net node"
             },
             {
-                "url": "wss://polkadot-bridge-hub-rpc.polkadot.io",
-                "name": "Parity node"
-            },
-            {
                 "url": "wss://dot-rpc.stakeworld.io/bridgehub",
                 "name": "Stakeworld node"
+            },
+            {
+                "url": "wss://polkadot-bridge-hub-rpc.polkadot.io",
+                "name": "Parity node"
             }
         ],
         "externalApi": {
@@ -8891,12 +8883,12 @@
                 "name": "Dotters Net node"
             },
             {
-                "url": "wss://kusama-bridge-hub-rpc.polkadot.io",
-                "name": "Parity node"
-            },
-            {
                 "url": "wss://ksm-rpc.stakeworld.io/bridgehub",
                 "name": "Stakeworld node"
+            },
+            {
+                "url": "wss://kusama-bridge-hub-rpc.polkadot.io",
+                "name": "Parity node"
             }
         ],
         "externalApi": {
@@ -8937,10 +8929,6 @@
                 "name": "Dotters Net node"
             },
             {
-                "url": "wss://polkadot-collectives-rpc.polkadot.io",
-                "name": "Parity node"
-            },
-            {
                 "url": "wss://collectives.public.curie.radiumblock.co/ws",
                 "name": "Radium node"
             },
@@ -8951,6 +8939,10 @@
             {
                 "url": "wss://collectives.api.onfinality.io/public-ws",
                 "name": "Onfinality node"
+            },
+            {
+                "url": "wss://polkadot-collectives-rpc.polkadot.io",
+                "name": "Parity node"
             }
         ],
         "externalApi": {
