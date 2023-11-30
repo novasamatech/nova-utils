@@ -5399,6 +5399,33 @@
                     "existentialDeposit": "6164274209",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 18,
+                "symbol": "SUB",
+                "precision": 10,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Subsocial.svg",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x18000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "20000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 19,
+                "symbol": "vDOT",
+                "precision": 10,
+                "priceId": "voucher-dot",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vDOT.svg",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x0f000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "18761726",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
