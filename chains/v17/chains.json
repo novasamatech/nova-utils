@@ -74,10 +74,6 @@
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot.svg",
         "addressPrefix": 0,
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/polkadot.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "staking": [
                 {
@@ -200,10 +196,6 @@
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama.svg",
         "addressPrefix": 2,
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/kusama.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "staking": [
                 {
@@ -288,10 +280,6 @@
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
         "addressPrefix": 42,
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/westend.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "staking": [
                 {
@@ -432,10 +420,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/statemine.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -820,10 +804,6 @@
                 "name": "Onfinality node"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/karura.json",
-            "overridesCommon": true
-        },
         "explorers": [
             {
                 "name": "Subscan",
@@ -1145,10 +1125,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/moonbeam.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -1577,10 +1553,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/moonriver.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -1810,11 +1782,7 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Shiden.svg",
-        "addressPrefix": 5,
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/shiden.json",
-            "overridesCommon": true
-        }
+        "addressPrefix": 5
     },
     {
         "chainId": "9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed",
@@ -2027,10 +1995,6 @@
                 "name": "OnFinality node"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/bifrost.json",
-            "overridesCommon": true
-        },
         "explorers": [
             {
                 "name": "Subscan",
@@ -2182,10 +2146,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/basilisk.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -2254,10 +2214,6 @@
                     "url": "https://altair.subsquare.io/api"
                 }
             ]
-        },
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/altair.json",
-            "overridesCommon": true
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Altair.svg",
         "addressPrefix": 136,
@@ -2403,10 +2359,6 @@
                 "name": "Parallel"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/parallel_heiko.json",
-            "overridesCommon": true
-        },
         "explorers": [
             {
                 "name": "Subscan",
@@ -2456,10 +2408,6 @@
                 "name": "Edgeware node"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/edgeware.json",
-            "overridesCommon": true
-        },
         "explorers": [
             {
                 "name": "Subscan",
@@ -2680,10 +2628,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/khala.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -2738,10 +2682,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/kilt_spiritnet.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -2866,10 +2806,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/calamari.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -2923,10 +2859,6 @@
                 "name": "Unique Asia node"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/quartz.json",
-            "overridesCommon": true
-        },
         "explorers": [
             {
                 "name": "Subscan",
@@ -3003,10 +2935,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/bit.country_pioneer.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -3267,10 +3195,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/acala.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -3486,10 +3410,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/astar.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -3725,10 +3645,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/parallel.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -3771,10 +3687,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/clover.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -3856,10 +3768,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/statemint.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -3910,10 +3818,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/robonomics.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -3976,10 +3880,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/encointer.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -4187,10 +4087,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/kintsugi.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -4279,10 +4175,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/picasso.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -4336,10 +4228,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/zeitgeist.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -4405,10 +4293,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/litmus.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -4453,10 +4337,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/subsocial.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -4503,10 +4383,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/crust_shadow.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -4557,10 +4433,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/Integritee.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -4611,10 +4483,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/centrifuge.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -4893,10 +4761,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/hydra_dx.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -5145,10 +5009,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/interlay.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -5199,10 +5059,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/nodle.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -5253,10 +5109,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/phala.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -5399,10 +5251,6 @@
                 "name": "Dwellir node"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/turing.json",
-            "overridesCommon": true
-        },
         "explorers": [
             {
                 "name": "Subscan",
@@ -5475,10 +5323,6 @@
                 "account": "https://alephzero.subscan.io/account/{address}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/aleph_zero.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -5573,10 +5417,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/composable.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -5683,10 +5523,6 @@
                 "account": "https://sub.id/{address}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/polkadex.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "staking": [
                 {
@@ -5744,10 +5580,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/origintrail.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -5899,10 +5731,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/bifrost_polkadot.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -5953,10 +5781,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/litentry.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -6007,10 +5831,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/unique.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -6048,10 +5868,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/dorafactory.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -6214,10 +6030,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/mangatax.json",
-            "overridesCommon": true
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/MangataX.svg",
         "addressPrefix": 42
     },
@@ -6246,10 +6058,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/kabocha.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -6314,10 +6122,6 @@
                 }
             ]
         },
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/bajun.json",
-            "overridesCommon": true
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Bajun.svg",
         "addressPrefix": 1337
     },
@@ -6346,10 +6150,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/imbue.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -6386,10 +6186,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/tinkernet.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -6452,10 +6248,6 @@
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/gm.json",
-            "overridesCommon": true
-        },
         "externalApi": {
             "history": [
                 {
@@ -6521,10 +6313,6 @@
                 }
             ]
         },
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/amplitude.json",
-            "overridesCommon": true
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Amplitude.svg",
         "addressPrefix": 57
     },
@@ -6576,10 +6364,6 @@
                 }
             ]
         },
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/ternoa.json",
-            "overridesCommon": true
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Ternoa.svg",
         "addressPrefix": 42,
         "additional": {
@@ -6620,10 +6404,6 @@
                 }
             ]
         },
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/kapex.json",
-            "overridesCommon": true
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Totem.svg",
         "addressPrefix": 2007
     },
@@ -6652,10 +6432,6 @@
                 "account": "https://polymesh.subscan.io/account/{address}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/polymesh_mainnet.json",
-            "overridesCommon": true
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polymesh.svg",
         "addressPrefix": 12
     },
@@ -6692,10 +6468,6 @@
                 }
             ]
         },
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/dao_ipci.json",
-            "overridesCommon": true
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/DAOIPCI.svg",
         "addressPrefix": 32
     },
@@ -6730,10 +6502,6 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-myriad"
                 }
             ]
-        },
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/myriad.json",
-            "overridesCommon": true
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Myriad.svg",
         "addressPrefix": 42
@@ -6787,10 +6555,6 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-xx-network"
                 }
             ]
-        },
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/xx_network.json",
-            "overridesCommon": true
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/XX_network.svg",
         "addressPrefix": 55
@@ -6850,10 +6614,6 @@
                 }
             ]
         },
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/pendulum.json",
-            "overridesCommon": true
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Pendulum.svg",
         "addressPrefix": 56
     },
@@ -6890,10 +6650,6 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-crust"
                 }
             ]
-        },
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/crust.json",
-            "overridesCommon": true
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Crust.svg",
         "addressPrefix": 88
@@ -6932,10 +6688,6 @@
                 }
             ]
         },
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/aventus.json",
-            "overridesCommon": true
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Aventus.svg",
         "addressPrefix": 42
     },
@@ -6964,10 +6716,6 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-hashed-network"
                 }
             ]
-        },
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/hashed.json",
-            "overridesCommon": true
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Hashed.svg",
         "addressPrefix": 42
@@ -7042,10 +6790,6 @@
                 }
             ]
         },
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/bittensor.json",
-            "overridesCommon": true
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Bittensor.svg",
         "addressPrefix": 42
     },
@@ -7113,10 +6857,6 @@
                 }
             ]
         },
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/equilibrium_types.json",
-            "overridesCommon": true
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Equilibrium.svg",
         "addressPrefix": 68
     },
@@ -7142,10 +6882,6 @@
                 "name": "RadiumBlock node"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/ajuna.json",
-            "overridesCommon": true
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Ajuna.svg",
         "addressPrefix": 1328
     },
@@ -7185,10 +6921,6 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-3dpass"
                 }
             ]
-        },
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/3dpass.json",
-            "overridesCommon": true
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/3DPass.svg",
         "addressPrefix": 71
@@ -7236,10 +6968,6 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---darwinia"
                 }
             ]
-        },
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/darwinia_polkadot.json",
-            "overridesCommon": true
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Darwinia.svg",
         "addressPrefix": 18,
@@ -7299,10 +7027,6 @@
                 }
             ]
         },
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/darwinia_crab.json",
-            "overridesCommon": true
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Crab.svg",
         "addressPrefix": 42,
         "options": [
@@ -7346,10 +7070,6 @@
                 }
             ]
         },
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/frequency.json",
-            "overridesCommon": true
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Frequency.svg",
         "addressPrefix": 90
     },
@@ -7386,10 +7106,6 @@
                 }
             ]
         },
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/vara.json",
-            "overridesCommon": true
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Vara.svg",
         "addressPrefix": 137
     },
@@ -7417,10 +7133,6 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---giant"
                 }
             ]
-        },
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/giant.json",
-            "overridesCommon": true
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Giant.svg",
         "addressPrefix": 42
@@ -7460,10 +7172,6 @@
                 }
             ]
         },
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/polkadot_bridge_hub.json",
-            "overridesCommon": true
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Bridge_Hub.svg",
         "addressPrefix": 0
     },
@@ -7494,10 +7202,6 @@
                 "name": "Stakeworld node"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/kusama_bridge_hub.json",
-            "overridesCommon": true
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_Bridge_Hub.svg",
         "addressPrefix": 2
     },
@@ -7536,10 +7240,6 @@
                 "name": "Onfinality node"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/collectives.json",
-            "overridesCommon": true
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Collectives.svg",
         "addressPrefix": 0
     },
@@ -7569,10 +7269,6 @@
                 "account": "https://krest.subscan.io/account/{address}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/krest.json",
-            "overridesCommon": true
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/krest.svg",
         "addressPrefix": 42
     },
@@ -7605,10 +7301,6 @@
                 "event": "https://jur.io/explorer/jur/event/{event}"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/jur.json",
-            "overridesCommon": true
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Jur.svg",
         "addressPrefix": 42
     },
@@ -7649,10 +7341,6 @@
                 }
             ]
         },
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/enjin_matrixchain.json",
-            "overridesCommon": true
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Enjin.svg",
         "addressPrefix": 1110
     },
@@ -7674,10 +7362,6 @@
                 "name": "EWX node"
             }
         ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/watr.json",
-            "overridesCommon": true
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Watr.svg",
         "addressPrefix": 19
     },
@@ -7713,10 +7397,6 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---joystream"
                 }
             ]
-        },
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/joystream.json",
-            "overridesCommon": true
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Joystream.svg",
         "addressPrefix": 126
