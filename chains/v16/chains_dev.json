@@ -31,10 +31,6 @@
                 "name": "Dwellir node"
             },
             {
-                "url": "wss://rpc.polkadot.io",
-                "name": "Parity node"
-            },
-            {
                 "url": "wss://rpc-polkadot.luckyfriday.io",
                 "name": "LuckyFriday node"
             },
@@ -117,11 +113,13 @@
         "options": [
             "crowdloans",
             "governance-v1",
-            "governance"
+            "governance",
+            "proxy"
         ],
         "additional": {
             "themeColor": "#E6007A",
-            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polkadot-dot-staking"
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polkadot-dot-staking",
+            "stakingMaxElectingVoters": 22500
         }
     },
     {
@@ -154,10 +152,6 @@
             {
                 "url": "wss://kusama-rpc.dwellir.com",
                 "name": "Dwellir node"
-            },
-            {
-                "url": "wss://kusama-rpc.polkadot.io",
-                "name": "Parity node"
             },
             {
                 "url": "wss://rpc-kusama.luckyfriday.io",
@@ -245,11 +239,13 @@
         },
         "options": [
             "crowdloans",
-            "governance"
+            "governance",
+            "proxy"
         ],
         "additional": {
             "themeColor": "#1F78FF",
-            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/kusama-ksm-staking"
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/kusama-ksm-staking",
+            "stakingMaxElectingVoters": 12500
         }
     },
     {
@@ -275,10 +271,6 @@
             {
                 "url": "wss://rpc.dotters.network/westend",
                 "name": "Dotters Net node"
-            },
-            {
-                "url": "wss://westend-rpc.polkadot.io",
-                "name": "Parity node"
             },
             {
                 "url": "wss://westend-rpc.dwellir.com",
@@ -333,11 +325,14 @@
         },
         "options": [
             "testnet",
-            "crowdloans"
+            "crowdloans",
+            "governance",
+            "proxy"
         ],
         "additional": {
             "themeColor": "#1F78FF",
-            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polkadot-and-kusama"
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polkadot-and-kusama",
+            "stakingMaxElectingVoters": 22500
         }
     },
     {
@@ -392,12 +387,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://westmint-rpc.polkadot.io",
-                "name": "Parity node"
-            },
-            {
                 "url": "wss://westmint-rpc.dwellir.com",
                 "name": "Dwellir node"
+            },
+            {
+                "url": "wss://wnd-rpc.stakeworld.io/assethub",
+                "name": "Stakeworld node"
             }
         ],
         "explorers": [
@@ -417,7 +412,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---westmint-test__bm92Y"
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---westmint-test"
                 }
             ]
         },
@@ -516,10 +511,6 @@
             {
                 "url": "wss://statemine-rpc.dwellir.com",
                 "name": "Dwellir node"
-            },
-            {
-                "url": "wss://statemine-rpc.polkadot.io",
-                "name": "Parity node"
             }
         ],
         "explorers": [
@@ -551,7 +542,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-statemine__bm92Y"
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-statemine"
                 }
             ]
         },
@@ -1261,8 +1252,8 @@
                 "name": "Blast node"
             },
             {
-                "url": "wss://moonriver.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
+                "url": "wss://moonriver-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -1363,8 +1354,8 @@
                 "name": "Moonbeam Network node"
             },
             {
-                "url": "wss://moonbeam-alpha.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
+                "url": "wss://moonbase-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -2662,6 +2653,7 @@
                 "assetId": 15,
                 "symbol": "PICA",
                 "precision": 12,
+                "priceId": "picasso",
                 "type": "statemine",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Picasso.svg",
                 "typeExtras": {
@@ -3681,10 +3673,6 @@
             {
                 "url": "wss://1rpc.io/glmr",
                 "name": "Automata 1RPC node"
-            },
-            {
-                "url": "wss://moonbeam.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -4524,10 +4512,6 @@
                 "name": "Dotters Net node"
             },
             {
-                "url": "wss://statemint-rpc.polkadot.io",
-                "name": "Parity node"
-            },
-            {
                 "url": "wss://statemint-rpc.dwellir.com",
                 "name": "Dwellir node"
             },
@@ -4711,6 +4695,7 @@
                 "assetId": 0,
                 "symbol": "PICA",
                 "precision": 12,
+                "priceId": "picasso",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Picasso.svg"
             },
             {
@@ -7095,7 +7080,8 @@
         "addressPrefix": 42,
         "options": [
             "testnet",
-            "crowdloans"
+            "crowdloans",
+            "proxy"
         ]
     },
     {
@@ -7447,56 +7433,6 @@
         ]
     },
     {
-        "chainId": "f2584690455deda322214e97edfffaf4c1233b6e4625e39478496b3e2f5a44c5",
-        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "Kylin",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "KYL",
-                "precision": 18,
-                "priceId": "kylin-network",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/KYL.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://polkadot.kylin-node.co.uk",
-                "name": "Kylin node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kylin"
-                }
-            ],
-            "governance": [
-                {
-                    "type": "polkassembly",
-                    "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                    "parameters": {
-                        "network": "kylin"
-                    }
-                }
-            ]
-        },
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/kylin.json",
-            "overridesCommon": true
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kylin.svg",
-        "addressPrefix": 42
-    },
-    {
         "chainId": "7838c3c774e887c0a53bcba9e64f702361a1a852d5550b86b58cd73827fa1e1e",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
         "name": "Kapex",
@@ -7627,7 +7563,7 @@
         ],
         "nodes": [
             {
-                "url": "wss://novasama.uz",
+                "url": "wss://novasama.co",
                 "name": "Development node"
             }
         ],
@@ -8371,10 +8307,6 @@
                 "name": "3DPass node"
             },
             {
-                "url": "wss://rpc.3dpass.org",
-                "name": "3DPass node"
-            },
-            {
                 "url": "wss://rpc2.3dpass.org",
                 "name": "3DPass node"
             }
@@ -8897,10 +8829,6 @@
                 "name": "Dotters Net node"
             },
             {
-                "url": "wss://polkadot-bridge-hub-rpc.polkadot.io",
-                "name": "Parity node"
-            },
-            {
                 "url": "wss://dot-rpc.stakeworld.io/bridgehub",
                 "name": "Stakeworld node"
             }
@@ -8943,10 +8871,6 @@
                 "name": "Dotters Net node"
             },
             {
-                "url": "wss://kusama-bridge-hub-rpc.polkadot.io",
-                "name": "Parity node"
-            },
-            {
                 "url": "wss://ksm-rpc.stakeworld.io/bridgehub",
                 "name": "Stakeworld node"
             }
@@ -8987,10 +8911,6 @@
             {
                 "url": "wss://sys.dotters.network/collectives-polkadot",
                 "name": "Dotters Net node"
-            },
-            {
-                "url": "wss://polkadot-collectives-rpc.polkadot.io",
-                "name": "Parity node"
             },
             {
                 "url": "wss://collectives.public.curie.radiumblock.co/ws",
@@ -9604,6 +9524,10 @@
         ],
         "nodes": [
             {
+                "url": "wss://rococo-asset-hub-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
                 "url": "wss://rococo-asset-hub-rpc.polkadot.io",
                 "name": "Parity node"
             }
@@ -9619,7 +9543,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---westmint__bm92Y"
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---westmint"
                 }
             ]
         },
@@ -9728,6 +9652,7 @@
             {
                 "assetId": 0,
                 "symbol": "JOY",
+                "priceId": "joystream",
                 "precision": 10,
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/JOY.svg",
                 "staking": [
@@ -9748,6 +9673,20 @@
                 "account": "https://joystream.subscan.io/account/{address}"
             }
         ],
+        "externalApi": {
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---joystream"
+                }
+            ],
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---joystream"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/joystream.json",
             "overridesCommon": true
