@@ -356,6 +356,34 @@
         },
         "instructions": "xtokensReserve"
       }
+    },
+    "BNC-Polkadot": {
+      "chainId": "262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b",
+      "multiLocation": {
+        "parachainId": 2030,
+        "generalKey": "0x0001"
+      },
+      "reserveFee": {
+        "mode": {
+          "type": "proportional",
+          "value": "7039200000000"
+        },
+        "instructions": "xtokensReserve"
+      }
+    },
+    "vDOT": {
+      "chainId": "262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b",
+      "multiLocation": {
+        "parachainId": 2030,
+        "generalKey": "0x0900"
+      },
+      "reserveFee": {
+        "mode": {
+          "type": "proportional",
+          "value": "1"
+        },
+        "instructions": "xtokensReserve"
+      }
     }
   },
   "instructions": {
