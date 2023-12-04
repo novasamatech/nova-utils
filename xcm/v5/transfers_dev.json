@@ -372,9 +372,9 @@
       }
     },
     "vDOT": {
-      "chainId": "4a12be580bb959937a1c7a61d5cf24428ed67fa571974b4007645d1886e7c89f",
+      "chainId": "262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b",
       "multiLocation": {
-        "parachainId": 2101,
+        "parachainId": 2030,
         "generalKey": "0x0900"
       },
       "reserveFee": {
@@ -386,15 +386,14 @@
       }
     },
     "SUB": {
-      "chainId": "bf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72",
+      "chainId": "4a12be580bb959937a1c7a61d5cf24428ed67fa571974b4007645d1886e7c89f",
       "multiLocation": {
-        "parachainId": 2032,
-        "generalKey": "0x0002"
+        "parachainId": 2101
       },
       "reserveFee": {
         "mode": {
           "type": "proportional",
-          "value": "24016821864"
+          "value": "1"
         },
         "instructions": "xtokensReserve"
       }
@@ -460,8 +459,8 @@
     "b3db41421702df9a7fcac62b53ffeac85f7853cc4e689e0b93aeb3db18c09d82": "200000000",
     "4ac80c99289841dd946ef92765bf659a307d39189b3ce374a92b5f0415ee17a1": "100000000",
     "f1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108": "1000000000",
-    "cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf": "150000000"
-
+    "cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf": "150000000",
+    "4a12be580bb959937a1c7a61d5cf24428ed67fa571974b4007645d1886e7c89f": "200000000"
   },
   "chains": [
     {
