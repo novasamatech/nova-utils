@@ -6925,7 +6925,7 @@
                 "fee": {
                   "mode": {
                     "type": "proportional",
-                    "value": "8000000000"
+                    "value": "800000000000"
                   },
                   "instructions": "xtokensDest"
                 }
@@ -8627,12 +8627,12 @@
                 "fee": {
                   "mode": {
                     "type": "proportional",
-                    "value": "8800000000000"
+                    "value": "9000000000"
                   },
-                  "instructions": "xtokensDest"
+                  "instructions": "xcmPalletDest"
                 }
               },
-              "type": "xtokens"
+              "type": "xcmpallet"
             }
           ]
         }
