@@ -6843,8 +6843,8 @@
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Polkadot.svg",
                 "typeExtras": {
-                    "currencyIdScale": "0x0100",
-                    "currencyIdType": "pendulum_runtime.currency.CurrencyId",
+                    "currencyIdScale": "0x040000000000000000",
+                    "currencyIdType": "spacewalk_primitives.CurrencyId",
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
                 }
@@ -6857,8 +6857,8 @@
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDT.svg",
                 "typeExtras": {
-                    "currencyIdScale": "0x0101",
-                    "currencyIdType": "pendulum_runtime.currency.CurrencyId",
+                    "currencyIdScale": "0x040100000000000000",
+                    "currencyIdType": "spacewalk_primitives.CurrencyId",
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
                 }
