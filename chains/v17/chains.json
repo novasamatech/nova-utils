@@ -7434,5 +7434,37 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Joystream.svg",
         "addressPrefix": 126
+    },
+    {
+        "chainId": "6bfe24dca2a3be10f22212678ac13a6446ec764103c0f3471c71609eac384aae",
+        "name": "Dock",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "DOCK",
+                "priceId": "dock",
+                "precision": 6,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/DOCK.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://mainnet-node.dock.io",
+                "name": "Dock Association node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://dock.subscan.io/extrinsic/{hash}",
+                "account": "https://dock.subscan.io/account/{address}"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/dock.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Dock.svg",
+        "addressPrefix": 22
     }
 ]
