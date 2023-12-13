@@ -4739,6 +4739,20 @@
                 }
             },
             {
+                "assetId": 17,
+                "symbol": "INTR",
+                "precision": 10,
+                "priceId": "interlay",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Interlay.svg",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x11000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "6164274209",
+                    "transfersEnabled": true
+                }
+            },
+            {
                 "assetId": 18,
                 "symbol": "SUB",
                 "precision": 10,
