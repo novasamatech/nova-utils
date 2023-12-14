@@ -113,7 +113,8 @@
         "additional": {
             "themeColor": "#E6007A",
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polkadot-dot-staking",
-            "stakingMaxElectingVoters": 22500
+            "stakingMaxElectingVoters": 22500,
+            "feeViewRuntimeCall": true
         }
     },
     {
@@ -306,7 +307,8 @@
         "additional": {
             "themeColor": "#1F78FF",
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polkadot-and-kusama",
-            "stakingMaxElectingVoters": 22500
+            "stakingMaxElectingVoters": 22500,
+            "feeViewRuntimeCall": true
         }
     },
     {
@@ -430,7 +432,8 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_Asset_Hub.svg",
         "addressPrefix": 2,
         "additional": {
-            "relaychainAsNative": true
+            "relaychainAsNative": true,
+            "feeViewRuntimeCall": true
         }
     },
     {
@@ -5583,7 +5586,8 @@
         "addressPrefix": 88,
         "additional": {
             "themeColor": "#1F78FF",
-            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polkadex-pdex-staking"
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polkadex-pdex-staking",
+            "feeViewRuntimeCall": true
         }
     },
     {
@@ -6410,7 +6414,8 @@
         "addressPrefix": 42,
         "additional": {
             "themeColor": "#EB2B6C",
-            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/ternoa-caps-staking"
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/ternoa-caps-staking",
+            "feeViewRuntimeCall": true
         }
     },
     {
