@@ -958,7 +958,10 @@
         "addressPrefix": 8,
         "options": [
             "governance-v1"
-        ]
+        ],
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
@@ -1544,6 +1547,9 @@
                     }
                 }
             ]
+        },
+        "additional": {
+            "feeViewRuntimeCall": true
         }
     },
     {
@@ -2372,7 +2378,10 @@
         "addressPrefix": 10041,
         "options": [
             "governance-v1"
-        ]
+        ],
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "aa3876c1dc8a1afcc2e9a685a49ff7704cfd36ad8c90bf2702b9d1b00cc40011",
@@ -2427,7 +2436,10 @@
         "addressPrefix": 136,
         "options": [
             "governance-v1"
-        ]
+        ],
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "d43540ba6d3eb4897c28a77d48cb5b729fea37603cbbfc7a86a73b72adb3be8d",
@@ -2653,7 +2665,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Khala.svg",
-        "addressPrefix": 30
+        "addressPrefix": 30,
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "411f057b9107718c9624d6aa4a3f23c1653898297f3d4d529d9bb6511a39dd21",
@@ -2942,7 +2957,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Quartz.svg",
-        "addressPrefix": 255
+        "addressPrefix": 255,
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "f22b7850cdd5a7657bbfd90ac86441275bbc57ace3d2698a740c7b0ec4de5ec3",
@@ -4564,7 +4582,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Encointer.svg",
-        "addressPrefix": 2
+        "addressPrefix": 2,
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "6811a339673c9daa897944dcdac99c6e2939cc88245ed21951a0a3c9a2be75bc",
@@ -5002,7 +5023,10 @@
         "addressPrefix": 36,
         "options": [
             "governance-v1"
-        ]
+        ],
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
@@ -5322,7 +5346,10 @@
         "addressPrefix": 63,
         "options": [
             "governance-v1"
-        ]
+        ],
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "bf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72",
@@ -6013,7 +6040,10 @@
         "addressPrefix": 50,
         "options": [
             "governance-v1"
-        ]
+        ],
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "3920bcb4960a1eef5580cd5367ff3f430eef052774f78468852f7b9cb39f8a3c",
@@ -6189,7 +6219,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/OriginTrail.svg",
-        "addressPrefix": 101
+        "addressPrefix": 101,
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b",
@@ -6685,7 +6718,10 @@
         "addressPrefix": 42,
         "options": [
             "testnet"
-        ]
+        ],
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "3c3183f6d701500766ff7d147b79c4f10014a095eaaa98e960dcef6b3ead50ee",
@@ -6851,7 +6887,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Imbue.svg",
-        "addressPrefix": 42
+        "addressPrefix": 42,
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "6408de7737c59c238890533af25896a2c20608d8b380bb01029acb392781063e",
@@ -6912,7 +6951,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Tinkernet.svg",
-        "addressPrefix": 117
+        "addressPrefix": 117,
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "19a3733beb9cb8a970a308d835599e9005e02dc007a35440e461a451466776f8",
@@ -7043,7 +7085,10 @@
         "addressPrefix": 57,
         "options": [
             "governance-v1"
-        ]
+        ],
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "6859c81ca95ef624c9dfe4dc6e3381c33e5d6509e35e147092bfbc780f777c4e",
@@ -7233,7 +7278,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Totem.svg",
-        "addressPrefix": 2007
+        "addressPrefix": 2007,
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "6fbd74e5e1d0a61d52ccfe9d4adaed16dd3a7caa37c6bc4d0c2fa12e8b2f4063",
@@ -7503,7 +7551,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/XX_network.svg",
-        "addressPrefix": 55
+        "addressPrefix": 55,
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86",
@@ -8298,7 +8349,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Giant.svg",
-        "addressPrefix": 42
+        "addressPrefix": 42,
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "eip155:97",
@@ -8479,7 +8533,10 @@
         "addressPrefix": 42,
         "options": [
             "testnet"
-        ]
+        ],
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "dcf691b5a3fbe24adc99ddc959c0561b973e329b1aef4c4b22e7bb2ddecb4464",
