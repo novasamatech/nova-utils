@@ -254,16 +254,16 @@
         ],
         "nodes": [
             {
+                "url": "wss://westend-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
                 "url": "wss://rpc.ibp.network/westend",
                 "name": "IBP network node"
             },
             {
                 "url": "wss://rpc.dotters.network/westend",
                 "name": "Dotters Net node"
-            },
-            {
-                "url": "wss://westend-rpc.dwellir.com",
-                "name": "Dwellir node"
             },
             {
                 "url": "wss://westend.api.onfinality.io/public-ws",
@@ -4312,6 +4312,7 @@
                 "assetId": 0,
                 "symbol": "SUB",
                 "precision": 10,
+                "priceId": "subsocial",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Subsocial.svg"
             }
         ],
@@ -4738,9 +4739,24 @@
                 }
             },
             {
+                "assetId": 17,
+                "symbol": "INTR",
+                "precision": 10,
+                "priceId": "interlay",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Interlay.svg",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x11000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "6164274209",
+                    "transfersEnabled": true
+                }
+            },
+            {
                 "assetId": 18,
                 "symbol": "SUB",
                 "precision": 10,
+                "priceId": "subsocial",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Subsocial.svg",
                 "type": "orml",
                 "typeExtras": {
@@ -6605,8 +6621,8 @@
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Polkadot.svg",
                 "typeExtras": {
-                    "currencyIdScale": "0x0100",
-                    "currencyIdType": "pendulum_runtime.currency.CurrencyId",
+                    "currencyIdScale": "0x040000000000000000",
+                    "currencyIdType": "spacewalk_primitives.CurrencyId",
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
                 }
@@ -6619,8 +6635,8 @@
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDT.svg",
                 "typeExtras": {
-                    "currencyIdScale": "0x0101",
-                    "currencyIdType": "pendulum_runtime.currency.CurrencyId",
+                    "currencyIdScale": "0x040100000000000000",
+                    "currencyIdType": "spacewalk_primitives.CurrencyId",
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
                 }
@@ -7432,5 +7448,37 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Joystream.svg",
         "addressPrefix": 126
+    },
+    {
+        "chainId": "6bfe24dca2a3be10f22212678ac13a6446ec764103c0f3471c71609eac384aae",
+        "name": "Dock",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "DOCK",
+                "priceId": "dock",
+                "precision": 6,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/DOCK.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://mainnet-node.dock.io",
+                "name": "Dock Association node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://dock.subscan.io/extrinsic/{hash}",
+                "account": "https://dock.subscan.io/account/{address}"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/dock.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Dock.svg",
+        "addressPrefix": 22
     }
 ]
