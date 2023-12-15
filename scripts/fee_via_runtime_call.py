@@ -4,9 +4,9 @@ from typing import Set
 from os import listdir
 from scripts.utils.work_with_data import get_data_from_file, write_data_to_file
 
-v17_path = "../chains/v17/chains_dev.json"
+v17_path = "../chains/v17/chains.json"
 
-v16_chains = get_data_from_file("../chains/v16/chains_dev.json")
+v16_chains = get_data_from_file("../chains/v16/chains.json")
 v17_chains = get_data_from_file(v17_path)
 
 
@@ -42,7 +42,7 @@ for v17_chain in v17_chains:
         continue
 
     current_additional = v17_chain.get("additional", {})
-    current_additional["feeViewRuntimeCall"] = True
+    current_additional["feeViaRuntimeCall"] = True
     v17_chain["additional"] = current_additional
     found_files.remove(v16_chain["types"]["url"])
     modified_chains+=1
