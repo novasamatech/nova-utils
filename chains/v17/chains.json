@@ -113,7 +113,8 @@
         "additional": {
             "themeColor": "#E6007A",
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polkadot-dot-staking",
-            "stakingMaxElectingVoters": 22500
+            "stakingMaxElectingVoters": 22500,
+            "feeViewRuntimeCall": true
         }
     },
     {
@@ -306,7 +307,8 @@
         "additional": {
             "themeColor": "#1F78FF",
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polkadot-and-kusama",
-            "stakingMaxElectingVoters": 22500
+            "stakingMaxElectingVoters": 22500,
+            "feeViewRuntimeCall": true
         }
     },
     {
@@ -430,7 +432,8 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_Asset_Hub.svg",
         "addressPrefix": 2,
         "additional": {
-            "relaychainAsNative": true
+            "relaychainAsNative": true,
+            "feeViewRuntimeCall": true
         }
     },
     {
@@ -837,7 +840,10 @@
         "addressPrefix": 8,
         "options": [
             "governance-v1"
-        ]
+        ],
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
@@ -1781,7 +1787,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Shiden.svg",
-        "addressPrefix": 5
+        "addressPrefix": 5,
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed",
@@ -2163,7 +2172,10 @@
         "addressPrefix": 10041,
         "options": [
             "governance-v1"
-        ]
+        ],
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "aa3876c1dc8a1afcc2e9a685a49ff7704cfd36ad8c90bf2702b9d1b00cc40011",
@@ -2218,7 +2230,10 @@
         "addressPrefix": 136,
         "options": [
             "governance-v1"
-        ]
+        ],
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "64a1c658a48b2e70a7fb1ad4c39eea35022568c20fc44a6e2e3d0a57aee6053b",
@@ -2636,7 +2651,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Khala.svg",
-        "addressPrefix": 30
+        "addressPrefix": 30,
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "411f057b9107718c9624d6aa4a3f23c1653898297f3d4d529d9bb6511a39dd21",
@@ -2883,7 +2901,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Quartz.svg",
-        "addressPrefix": 255
+        "addressPrefix": 255,
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "f22b7850cdd5a7657bbfd90ac86441275bbc57ace3d2698a740c7b0ec4de5ec3",
@@ -3888,7 +3909,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Encointer.svg",
-        "addressPrefix": 2
+        "addressPrefix": 2,
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
@@ -4501,7 +4525,10 @@
         "addressPrefix": 36,
         "options": [
             "governance-v1"
-        ]
+        ],
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
@@ -4821,7 +4848,10 @@
         "addressPrefix": 63,
         "options": [
             "governance-v1"
-        ]
+        ],
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "bf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72",
@@ -5468,7 +5498,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Composable.svg",
-        "addressPrefix": 50
+        "addressPrefix": 50,
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "3920bcb4960a1eef5580cd5367ff3f430eef052774f78468852f7b9cb39f8a3c",
@@ -5583,7 +5616,8 @@
         "addressPrefix": 88,
         "additional": {
             "themeColor": "#1F78FF",
-            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polkadex-pdex-staking"
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polkadex-pdex-staking",
+            "feeViewRuntimeCall": true
         }
     },
     {
@@ -5631,7 +5665,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/OriginTrail.svg",
-        "addressPrefix": 101
+        "addressPrefix": 101,
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b",
@@ -6201,7 +6238,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Imbue.svg",
-        "addressPrefix": 42
+        "addressPrefix": 42,
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "d42e9606a995dfe433dc7955dc2a70f495f350f373daa200098ae84437816ad2",
@@ -6237,7 +6277,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Tinkernet.svg",
-        "addressPrefix": 117
+        "addressPrefix": 117,
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "19a3733beb9cb8a970a308d835599e9005e02dc007a35440e461a451466776f8",
@@ -6356,7 +6399,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Amplitude.svg",
-        "addressPrefix": 57
+        "addressPrefix": 57,
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "6859c81ca95ef624c9dfe4dc6e3381c33e5d6509e35e147092bfbc780f777c4e",
@@ -6410,7 +6456,8 @@
         "addressPrefix": 42,
         "additional": {
             "themeColor": "#EB2B6C",
-            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/ternoa-caps-staking"
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/ternoa-caps-staking",
+            "feeViewRuntimeCall": true
         }
     },
     {
@@ -6447,7 +6494,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Totem.svg",
-        "addressPrefix": 2007
+        "addressPrefix": 2007,
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "6fbd74e5e1d0a61d52ccfe9d4adaed16dd3a7caa37c6bc4d0c2fa12e8b2f4063",
@@ -6599,7 +6649,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/XX_network.svg",
-        "addressPrefix": 55
+        "addressPrefix": 55,
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86",
@@ -7183,7 +7236,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Giant.svg",
-        "addressPrefix": 42
+        "addressPrefix": 42,
+        "additional": {
+            "feeViewRuntimeCall": true
+        }
     },
     {
         "chainId": "dcf691b5a3fbe24adc99ddc959c0561b973e329b1aef4c4b22e7bb2ddecb4464",
