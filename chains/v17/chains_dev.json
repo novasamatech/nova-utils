@@ -5640,7 +5640,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Nodle.svg",
-        "addressPrefix": 37
+        "addressPrefix": 37,
+        "additional": {
+            "feeViaRuntimeCall": true
+        }
     },
     {
         "chainId": "55b88a59dded27563391d619d805572dd6b6b89d302b0dd792d01b3c41cfe5b1",
@@ -7328,7 +7331,8 @@
         "addressPrefix": 12,
         "additional": {
             "themeColor": "#EB2B6C",
-            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/parachains-and-solochains"
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/parachains-and-solochains",
+            "feeViaRuntimeCall": true
         }
     },
     {
