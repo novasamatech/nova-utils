@@ -3292,6 +3292,9 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Acala.svg",
         "addressPrefix": 10,
+        "additional": {
+            "feeViaRuntimeCall": true
+        },
         "options": [
             "governance-v1"
         ]
