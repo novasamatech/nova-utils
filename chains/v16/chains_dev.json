@@ -9793,5 +9793,58 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polimec.svg",
         "addressPrefix": 41
+    },
+    {
+        "chainId": "5a51e04b88a4784d205091aa7bada002f3e5da3045e5b05655ee4db2589c33b5",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Energy Web X",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "EWT",
+                "priceId": "energy-web-token",
+                "precision": 18,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/EWT.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://public-rpc.mainnet.energywebx.com/",
+                "name": "Energywebx node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/ewx_parachain.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Energy_Web_X.svg",
+        "addressPrefix": 42
+    },
+    {
+        "chainId": "ac123be800b7c9a3e3449bb70edd8e3d9008d27826381451eebf94bce1db1fbe",
+        "name": "Energy Web X Rococo",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "VT",
+                "precision": 18,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/EWT.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://public-rpc.testnet.energywebx.com",
+                "name": "Energy Web X Rococo node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/ewx_rococo_testnet.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/gradient/Energy_Web_Testnet.svg",
+        "addressPrefix": 64,
+        "options": [
+            "testnet"
+        ]
     }
 ]
