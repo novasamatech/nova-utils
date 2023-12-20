@@ -9485,6 +9485,9 @@
         "addressPrefix": 64,
         "options": [
             "testnet"
-        ]
+        ],
+        "additional": {
+            "feeViaRuntimeCall": true
+        }
     }
 ]
