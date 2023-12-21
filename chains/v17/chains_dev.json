@@ -27,6 +27,18 @@
         ],
         "nodes": [
             {
+                "url": "wss://1rpc.io/dot",
+                "name": "Automata 1RPC node"
+            },
+            {
+                "url": "wss://polkadot.public.curie.radiumblock.co/ws",
+                "name": "Radium node"
+            },
+            {
+                "url": "wss://polkadot.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
                 "url": "wss://polkadot-rpc.dwellir.com",
                 "name": "Dwellir node"
             },
@@ -43,12 +55,8 @@
                 "name": "Dotters Net node"
             },
             {
-                "url": "wss://1rpc.io/dot",
-                "name": "Automata 1RPC node"
-            },
-            {
-                "url": "wss://polkadot.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
+                "url": "wss://dot-rpc.stakeworld.io",
+                "name": "Stakeworld node"
             }
         ],
         "explorers": [
