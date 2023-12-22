@@ -3681,7 +3681,8 @@
         "options": [
             "ethereumBased",
             "governance",
-            "governance-v1"
+            "governance-v1",
+            "proxy"
         ],
         "additional": {
             "themeColor": "#10B6B1",
@@ -5968,7 +5969,8 @@
             "defaultBlockTime": 1000
         },
         "options": [
-            "fullSyncByDefault"
+            "fullSyncByDefault",
+            "proxy"
         ]
     },
     {
