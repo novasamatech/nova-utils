@@ -27,6 +27,14 @@
         ],
         "nodes": [
             {
+                "url": "wss://polkadot-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://rpc.dotters.network/polkadot",
+                "name": "Dotters Net node"
+            },
+            {
                 "url": "wss://polkadot.public.curie.radiumblock.co/ws",
                 "name": "Radium node"
             },
@@ -35,24 +43,16 @@
                 "name": "Stakeworld node"
             },
             {
-                "url": "wss://polkadot-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
                 "url": "wss://1rpc.io/dot",
                 "name": "Automata 1RPC node"
-            },
-            {
-                "url": "wss://rpc-polkadot.luckyfriday.io",
-                "name": "LuckyFriday node"
             },
             {
                 "url": "wss://rpc.ibp.network/polkadot",
                 "name": "IBP network node"
             },
             {
-                "url": "wss://rpc.dotters.network/polkadot",
-                "name": "Dotters Net node"
+                "url": "wss://rpc-polkadot.luckyfriday.io",
+                "name": "LuckyFriday node"
             }
         ],
         "explorers": [
