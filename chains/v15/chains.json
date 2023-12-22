@@ -26,13 +26,13 @@
             }
         ],
         "nodes": [
-             {
-                "url": "wss://polkadot.public.curie.radiumblock.co/ws",
-                "name": "Radium node"
-            },
             {
                 "url": "wss://dot-rpc.stakeworld.io",
                 "name": "Stakeworld node"
+            },
+             {
+                "url": "wss://polkadot.public.curie.radiumblock.co/ws",
+                "name": "Radium node"
             },
             {
                 "url": "wss://polkadot-rpc.dwellir.com",
