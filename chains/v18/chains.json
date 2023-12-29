@@ -1207,34 +1207,6 @@
         "nodeSelectionStrategy": "uniform",
         "nodes": [
             {
-                "url": "https://eth.llamarpc.com",
-                "name": "llamanodes rpc node"
-            },
-            {
-                "url": "https://eth-pokt.nodies.app",
-                "name": "Pokt network rpc node"
-            },
-            {
-                "url": "https://rpc.flashbots.net",
-                "name": "Flashbots rpc node"
-            },
-            {
-                "url": "https://rpc.ankr.com/eth",
-                "name": "Ankr rpc node"
-            },
-            {
-                "url": "https://eth-mainnet.public.blastapi.io",
-                "name": "Blast rpc node"
-            },
-            {
-                "url": "https://api.securerpc.com/v1",
-                "name": "Secure rpc node"
-            },
-            {
-                "url": "https://1rpc.io/eth",
-                "name": "One rpc node"
-            },
-            {
                 "url": "wss://mainnet.infura.io/ws/v3/{INFURA_API_KEY}",
                 "name": "Infura node"
             },
