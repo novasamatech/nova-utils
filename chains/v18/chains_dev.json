@@ -5326,6 +5326,20 @@
                     "existentialDeposit": "18761726",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 20,
+                "symbol": "PHA",
+                "precision": 12,
+                "priceId": "pha",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Phala.svg",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x08000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "54945054945",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
