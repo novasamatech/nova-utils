@@ -9499,5 +9499,41 @@
         "additional": {
             "feeViaRuntimeCall": true
         }
+    },
+    {
+        "chainId": "8b404e7ed8789d813982b9cb4c8b664c05b3fbf433309f603af014ec9ce56a8c",
+        "name": "Crust",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "CRU",
+                "priceId": "crust-network",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/CRU.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc.crust.network",
+                "name": "Crust node"
+            },
+            {
+                "url": "wss://crust-mainnet-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://crust.api.onfinality.io/public-ws",
+                "name": "OnFinallity node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://crust.subscan.io/extrinsic/extrinsic/{hash}",
+                "account": "https://crust.subscan.io/account/{address}"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Crust.svg",
+        "addressPrefix": 66
     }
 ]
