@@ -26,11 +26,10 @@ def get_substrate_chains() -> list[Chain]:
     return substrate_chains
 
 
-def get_ethereum_chains():
+def get_ethereum_chain():
     eth_chains = []
     for data in network_list:
-        options = data.get('options')
-        if options is not None and 'ethereumBased' in options:
+        if data.get('chainId') == 'eip155:1':
             eth_chains.append(Chain(data))
 
     return eth_chains

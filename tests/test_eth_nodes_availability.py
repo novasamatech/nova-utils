@@ -2,14 +2,14 @@ import pytest
 import time
 from web3 import Web3
 
-from tests.data.setting_data import collect_rpc_nodes_for_chains, get_ethereum_chains
+from tests.data.setting_data import collect_rpc_nodes_for_chains, get_ethereum_chain
 
 task_ids = [
     f'Test for {task["name"]}, url: {task["url"]}'
-    for task in collect_rpc_nodes_for_chains(get_ethereum_chains())
+    for task in collect_rpc_nodes_for_chains(get_ethereum_chain())
 ]
 
-@pytest.mark.parametrize("data", collect_rpc_nodes_for_chains(get_ethereum_chains()), ids=task_ids)
+@pytest.mark.parametrize("data", collect_rpc_nodes_for_chains(get_ethereum_chain()), ids=task_ids)
 class TestETHNodesAvailability:
     def test_rpc_node_work_fast(self, data):
 

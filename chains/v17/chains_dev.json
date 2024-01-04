@@ -27,12 +27,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://polkadot.public.curie.radiumblock.co/ws",
-                "name": "Radium node"
-            },
-            {
                 "url": "wss://dot-rpc.stakeworld.io",
                 "name": "Stakeworld node"
+            },
+            {
+                "url": "wss://polkadot.public.curie.radiumblock.co/ws",
+                "name": "Radium node"
             },
             {
                 "url": "wss://polkadot-rpc.dwellir.com",
@@ -409,7 +409,8 @@
         },
         "options": [
             "testnet",
-            "swap-hub"
+            "swap-hub",
+            "proxy"
         ],
         "additional": {
             "relaychainAsNative": true,
@@ -3677,7 +3678,8 @@
         "options": [
             "ethereumBased",
             "governance",
-            "governance-v1"
+            "governance-v1",
+            "proxy"
         ],
         "additional": {
             "themeColor": "#10B6B1",
@@ -5321,6 +5323,20 @@
                     "existentialDeposit": "18761726",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 20,
+                "symbol": "PHA",
+                "precision": 12,
+                "priceId": "pha",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Phala.svg",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x08000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "54945054945",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
@@ -6137,16 +6153,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://mainnet.polkadex.trade",
-                "name": "Polkadex team node"
+                "url": "wss://polkadex.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             },
             {
                 "url": "wss://polkadex.public.curie.radiumblock.co/ws",
                 "name": "RadiumBlock node"
-            },
-            {
-                "url": "wss://polkadex.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -7416,7 +7428,8 @@
         "options": [
             "testnet",
             "governance",
-            "governance-v1"
+            "governance-v1",
+            "proxy"
         ],
         "additional": {
             "themeColor": "#1F78FF",
@@ -7708,7 +7721,7 @@
     {
         "chainId": "4319cc49ee79495b57a1fec4d2bd43f59052dcc690276de566c2691d6df4f7b8",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "Crust",
+        "name": "Crust Polkadot Parachain",
         "assets": [
             {
                 "assetId": 0,
@@ -7739,7 +7752,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Crust.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Crust_Parachain.svg",
         "addressPrefix": 88
     },
     {
@@ -7929,6 +7942,10 @@
             }
         ],
         "nodes": [
+            {
+                "url": "wss://c3.hashed.live",
+                "name": "Hashed systems 3 node"
+            },
             {
                 "url": "wss://c2.hashed.network",
                 "name": "Hashed systems 2 node"
@@ -9498,5 +9515,26 @@
         "additional": {
             "feeViaRuntimeCall": true
         }
+    },
+    {
+        "chainId": "31a7d8914fb31c249b972f18c115f1e22b4b039abbcb03c73b6774c5642f9efe",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "InvArch",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "VARCH",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/VARCH.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://invarch-rpc.dwellir.com",
+                "name": "Dwellir node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/InvArch.svg",
+        "addressPrefix": 42
     }
 ]
