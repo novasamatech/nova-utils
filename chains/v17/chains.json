@@ -1231,6 +1231,10 @@
                 "name": "One rpc node"
             },
             {
+                "url": "wss://mainnet.infura.io/ws/v3/32a2be59297444c9bcb2b61bb700c6fe",
+                "name": "Infura node 5"
+            },
+            {
                 "url": "wss://mainnet.infura.io/ws/v3/{INFURA_API_KEY}",
                 "name": "Infura node"
             },
@@ -4823,6 +4827,20 @@
                     "existentialDeposit": "18761726",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 20,
+                "symbol": "PHA",
+                "precision": 12,
+                "priceId": "pha",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Phala.svg",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x08000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "54945054945",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
@@ -6817,6 +6835,10 @@
         ],
         "nodes": [
             {
+                "url": "wss://c3.hashed.live",
+                "name": "Hashed systems 3 node"
+            },
+            {
                 "url": "wss://c2.hashed.network",
                 "name": "Hashed systems 2 node"
             }
@@ -7628,5 +7650,48 @@
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Energy_Web_X.svg",
         "addressPrefix": 42
+    },
+    {
+        "chainId": "31a7d8914fb31c249b972f18c115f1e22b4b039abbcb03c73b6774c5642f9efe",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "InvArch",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "VARCH",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/VARCH.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://invarch-rpc.dwellir.com",
+                "name": "Dwellir node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/InvArch.svg",
+        "addressPrefix": 42
+    },
+    {
+        "chainId": "7eb9354488318e7549c722669dcbdcdc526f1fef1420e7944667212f3601fdbd",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Polimec",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "PLMC",
+                "priceId": "polimec",
+                "precision": 10,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/PLMC.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc.polimec.org",
+                "name": "Polimec node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polimec.svg",
+        "addressPrefix": 41
     }
 ]

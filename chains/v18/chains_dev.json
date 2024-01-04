@@ -413,7 +413,8 @@
         },
         "options": [
             "testnet",
-            "swap-hub"
+            "swap-hub",
+            "proxy"
         ],
         "additional": {
             "relaychainAsNative": true,
@@ -5326,6 +5327,20 @@
                     "existentialDeposit": "18761726",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 20,
+                "symbol": "PHA",
+                "precision": 12,
+                "priceId": "pha",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Phala.svg",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x08000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "54945054945",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
@@ -7417,7 +7432,8 @@
         "options": [
             "testnet",
             "governance",
-            "governance-v1"
+            "governance-v1",
+            "proxy"
         ],
         "additional": {
             "themeColor": "#1F78FF",
@@ -9503,6 +9519,27 @@
         "additional": {
             "feeViaRuntimeCall": true
         }
+    },
+    {
+        "chainId": "31a7d8914fb31c249b972f18c115f1e22b4b039abbcb03c73b6774c5642f9efe",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "InvArch",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "VARCH",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/VARCH.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://invarch-rpc.dwellir.com",
+                "name": "Dwellir node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/InvArch.svg",
+        "addressPrefix": 42
     },
     {
         "chainId": "8b404e7ed8789d813982b9cb4c8b664c05b3fbf433309f603af014ec9ce56a8c",
