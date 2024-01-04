@@ -7654,5 +7654,26 @@
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Energy_Web_X.svg",
         "addressPrefix": 42
+    },
+    {
+        "chainId": "31a7d8914fb31c249b972f18c115f1e22b4b039abbcb03c73b6774c5642f9efe",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "InvArch",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "VARCH",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/VARCH.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://invarch-rpc.dwellir.com",
+                "name": "Dwellir node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/InvArch.svg",
+        "addressPrefix": 42
     }
 ]
