@@ -23,7 +23,7 @@
 |  19 | GM! Say it back                      | https://app.gmordie.com/                             | social                        |
 |  20 | Gleev                                | https://gleev.xyz/                                   | social                        |
 |  21 | Huckleberry Finance                  | https://www.huckleberry.finance/#/swap               | bridge,dex,staking,evm        |
-|  22 | HydraDX Omnipool                     | https://app.hydradx.io/#/trade                       | bridge,dex                    |
+|  22 | HydraDX Omnipool                     | https://hydradx.io/NOVA                              | bridge,dex                    |
 |  23 | Impossible Finance                   | https://app.impossible.finance/explore               | dex,evm                       |
 |  24 | Interlay Bitcoin DeFi Hub            | https://app.interlay.io/                             | bridge,staking,dex            |
 |  25 | Joystream Governance App             | https://pioneerapp.xyz/                              | governance                    |
