@@ -6281,7 +6281,7 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Moonbeam.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0801",
-                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "currencyIdType": "bifrost_primitives.currency.CurrencyId",
                     "existentialDeposit": "1000000000000",
                     "transfersEnabled": true
                 }
@@ -6295,7 +6295,7 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Polkadot.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0800",
-                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "currencyIdType": "bifrost_primitives.currency.CurrencyId",
                     "existentialDeposit": "1000000",
                     "transfersEnabled": true
                 }
@@ -6309,7 +6309,7 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDT.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0802",
-                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "currencyIdType": "bifrost_primitives.currency.CurrencyId",
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
                 }
@@ -6323,7 +6323,7 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Astar.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0803",
-                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "currencyIdType": "bifrost_primitives.currency.CurrencyId",
                     "existentialDeposit": "10000000000000000",
                     "transfersEnabled": true
                 }
@@ -6336,8 +6336,8 @@
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vDOT.svg",
                 "typeExtras": {
-                    "currencyIdScale": "0x0900",
-                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "currencyIdScale": "0x0103",
+                    "currencyIdType": "bifrost_primitives.currency.CurrencyId",
                     "existentialDeposit": "1000000",
                     "transfersEnabled": true
                 }
@@ -6350,7 +6350,7 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vGLMR.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0901",
-                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "currencyIdType": "bifrost_primitives.currency.CurrencyId",
                     "existentialDeposit": "1000000000000",
                     "transfersEnabled": true
                 }
@@ -6363,7 +6363,7 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vFIL.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0904",
-                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "currencyIdType": "bifrost_primitives.currency.CurrencyId",
                     "existentialDeposit": "1000000000000",
                     "transfersEnabled": true
                 }
@@ -6376,7 +6376,7 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vASTR.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0903",
-                    "currencyIdType": "node_primitives.currency.CurrencyId",
+                    "currencyIdType": "bifrost_primitives.currency.CurrencyId",
                     "existentialDeposit": "10000000000000000",
                     "transfersEnabled": true
                 }
