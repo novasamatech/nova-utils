@@ -4937,7 +4937,10 @@
         "addressPrefix": 66,
         "options": [
             "governance-v1"
-        ]
+        ],
+        "additional": {
+            "feeViaRuntimeCall": true
+        }
     },
     {
         "chainId": "cdedc8eadbfa209d3f207bba541e57c3c58a667b05a2e1d1e86353c9000758da",
@@ -7757,7 +7760,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Crust_Parachain.svg",
-        "addressPrefix": 88
+        "addressPrefix": 88,
+        "additional": {
+            "feeViaRuntimeCall": true
+        }
     },
     {
         "chainId": "3a5a5cd27eb15fd26c37315a0f0b938733bb798c897428448efac5e6150cad06",
