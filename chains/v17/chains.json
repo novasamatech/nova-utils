@@ -4437,7 +4437,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Crust_Shadow.svg",
-        "addressPrefix": 66
+        "addressPrefix": 66,
+        "additional": {
+            "feeViaRuntimeCall": true
+        }
     },
     {
         "chainId": "cdedc8eadbfa209d3f207bba541e57c3c58a667b05a2e1d1e86353c9000758da",
@@ -6782,7 +6785,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Crust_Parachain.svg",
-        "addressPrefix": 88
+        "addressPrefix": 88,
+        "additional": {
+            "feeViaRuntimeCall": true
+        }
     },
     {
         "chainId": "8b5c955b5c8fd7112562327e3859473df4e3dff49bd72a113dbb668d2cfa20d7",
