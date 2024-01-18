@@ -9028,7 +9028,7 @@
         "nodes": [
             {
                 "url": "wss://ws.manta.systems",
-                "name": "Manta node"
+                "name": "Manta network node"
             }
         ],
         "explorers": [
@@ -9590,5 +9590,52 @@
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Crust.svg",
         "addressPrefix": 66
+    },
+    {
+        "chainId": "eip155:169",
+        "name": "Manta EVM",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "ETH",
+                "priceId": "ethereum",
+                "type": "evmNative",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/ETH.svg",
+                "precision": 18
+            }
+        ],
+        "nodeSelectionStrategy": "uniform",
+        "nodes": [
+            {
+                "url": "https://pacific-rpc.manta.network/http",
+                "name": "Manta rpc 1 node"
+            },
+            {
+                "url": "https://1rpc.io/manta",
+                "name": "Manta rpc 2 node"
+            },
+            {
+                "url": "wss://pacific-rpc.manta.network/ws",
+                "name": "Manta wss node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "l2scan",
+                "extrinsic": "https://manta-pacific.l2scan.co/tx/{hash}",
+                "account": "https://manta-pacific.l2scan.co/address/{address}"
+            },
+            {
+                "name": "Manta Socialscan",
+                "extrinsic": "https://manta.socialscan.io/tx/{hash}",
+                "account": "https://manta.socialscan.io/address/{address}"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Manta.svg",
+        "addressPrefix": 169,
+        "options": [
+            "ethereumBased",
+            "noSubstrateRuntime"
+        ]
     }
 ]
