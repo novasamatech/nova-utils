@@ -70,7 +70,7 @@
 |  66 | Talisman Portal                      | https://app.talisman.xyz/portfolio                   | crowdloans,nft                |
 |  67 | Tensor Wallet                        | https://tensorwallet.ca/                             | utilities,staking             |
 |  68 | The Button                           | https://the-button.azero.dev/play                    | gaming                        |
-|  69 | Tinkernet Rewards Claim              | https://www.tinker.network/claim                     | crowdloans                    |
+|  69 | Tinkernet Dashboard                  | https://www.tinker.network/overview                  | staking,bridge,crowdloans     |
 |  70 | TofuNFT                              | https://tofunft.com/                                 | nft,evm                       |
 |  71 | Zeitgeist                            | https://app.zeitgeist.pm/                            | utilities                     |
 |  72 | Zenlink                              | https://app.zenlink.pro                              | dex,staking                   |
