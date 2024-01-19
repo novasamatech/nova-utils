@@ -1,4 +1,3 @@
-
 from substrateinterface import SubstrateInterface
 
 

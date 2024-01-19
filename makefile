@@ -3,12 +3,11 @@ PYTHON := python
 PYTHON_VERSION := 3.11
 VENV ?= .venv
 
-THREADS = 4
 RE_RUNS = 2
-RE_RUN_DELAY = 15
+RE_RUN_DELAY = 5
 ALLURE_DIR = allure-results
-TEST_RUN = $(VENV)/bin/python -m pytest --rootdir . --alluredir=$(ALLURE_DIR) -n $(THREADS) -v --reruns $(RE_RUNS) --reruns-delay $(RE_RUN_DELAY)
-TEST_RUN_JUNIT = $(VENV)/bin/python -m pytest --rootdir . --junit-xml=test-results.xml -n $(THREADS) -v --reruns $(RE_RUNS) --reruns-delay $(RE_RUN_DELAY)
+TEST_RUN = $(VENV)/bin/python -m pytest --rootdir . --alluredir=$(ALLURE_DIR) -n auto -v --reruns $(RE_RUNS) --reruns-delay $(RE_RUN_DELAY)
+TEST_RUN_JUNIT = $(VENV)/bin/python -m pytest --rootdir . --junit-xml=test-results.xml -n auto -v --reruns $(RE_RUNS) --reruns-delay $(RE_RUN_DELAY)
 
 CHAINS_FILES=\
 	chains
