@@ -17,7 +17,7 @@ task_ids = [
     f'Test for {task["name"]}, url: {task["url"]}'
     for task in collect_nodes_for_chains(get_substrate_chains())
 ]
-def execute_with_timeout(timeout: int, function: function, args: tuple, error_message: str):
+def execute_with_timeout(timeout: int, function, args: tuple, error_message: str):
     try:
         return func_timeout(timeout=timeout, func=function, args=args)
     except FunctionTimedOut:

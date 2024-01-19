@@ -23,8 +23,6 @@ class TestAssets:
         if chain_model.name in self.exclusions:
             chain_assets.update(
                 {ex_asset: '' for ex_asset in self.exclusions[chain_model.name]})
-        chain_model.create_connection()
-        chain_model.init_properties()
         symbols = chain_model.substrate.token_symbol if isinstance(chain_model.substrate.token_symbol, list) else [
             chain_model.properties.symbol]
 
