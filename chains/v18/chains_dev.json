@@ -9292,7 +9292,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Asset_Hub.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/AssetHub_Testnet.svg",
         "addressPrefix": 42,
         "options": [
             "testnet",
@@ -9637,6 +9637,45 @@
         "options": [
             "ethereumBased",
             "noSubstrateRuntime"
+        ]
+    },
+    {
+        "chainId": "0441383e31d1266a92b4cb2ddd4c2e3661ac476996db7e5844c52433b81fe782",
+        "name": "Westend Bridge Hub",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "WND",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Westend.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://westend-bridge-hub-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://westend-bridge-hub-rpc-tn.dwellir.com",
+                "name": "Dwellir Tunisia node"
+            },
+            {
+                "url": "wss://sys.ibp.network/bridgehub-westend",
+                "name": "IBP-GeoDNS1 node"
+            },
+            {
+                "url": "wss://sys.dotters.network/bridgehub-westend",
+                "name": "IBP-GeoDNS2 node"
+            },
+            {
+                "url": "wss://westend-bridge-hub-rpc.polkadot.io",
+                "name": "Parity node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/BridgeHub_Testnet.svg",
+        "addressPrefix": 42,
+        "options": [
+            "testnet"
         ]
     }
 ]
