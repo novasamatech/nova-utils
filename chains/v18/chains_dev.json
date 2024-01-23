@@ -7390,7 +7390,7 @@
         ]
     },
     {
-        "chainId": "f460fe68f5f34ced6b18d8e4612410e334c55521bf27714cdca654b63b685ae6",
+        "chainId": "eb9f47779a9f5033c160c03511b5e4c1b2869210d7bc78a6ad7d0f28897455a7",
         "name": "Novasama Testnet - Kusama",
         "assets": [
             {
@@ -7414,24 +7414,24 @@
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/novasama-test-kusama"
+                    "url": "https://api.subquery.network/sq/stepanLav/novasama-test-kusama"
                 }
             ],
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/novasama-test-kusama"
+                    "url": "https://api.subquery.network/sq/stepanLav/novasama-test-kusama"
                 }
             ],
             "governance-delegations": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-gov-test"
+                    "url": "https://api.subquery.network/sq/stepanLav/novasama-gov-test"
                 }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Governance2_Testnet.svg",
-        "addressPrefix": 2,
+        "addressPrefix": 42,
         "options": [
             "testnet",
             "governance",
