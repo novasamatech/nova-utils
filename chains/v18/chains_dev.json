@@ -9590,7 +9590,10 @@
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Crust.svg",
-        "addressPrefix": 66
+        "addressPrefix": 66,
+        "additional": {
+            "feeViaRuntimeCall": true
+        }
     },
     {
         "chainId": "eip155:169",
