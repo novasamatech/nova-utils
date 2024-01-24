@@ -62,22 +62,22 @@ jobs:
       - name: Generate message for PROD
         if: steps.prod.outputs.any_changed == 'true'
         run: |
-          make pr-comment-creation PR_ENV=PROD PR_FILE_NAME=${{ env.BODY_FILE }} XCM_PATH=${{ env.XCM_JSON_PATH }} CHAINS_PATH=${{ env.CHAINS_JSON_PATH }}
+          make pr-comment-creation PR_ENV=${{ env.XCM_VERSION }}-PROD PR_FILE_NAME=${{ env.BODY_FILE }} XCM_PATH=${{ env.XCM_JSON_PATH }} CHAINS_PATH=${{ env.CHAINS_JSON_PATH }}
 
       - name: Generate message for DEV
         if: steps.dev.outputs.any_changed == 'true'
         run: |
-          make pr-comment-creation PR_ENV=DEV PR_FILE_NAME=${{ env.BODY_FILE }} XCM_PATH=${{ env.DEV_XCM_JSON_PATH }} CHAINS_PATH=${{ env.DEV_CHAINS_JSON_PATH }}
+          make pr-comment-creation PR_ENV=${{ env.XCM_VERSION }}-DEV PR_FILE_NAME=${{ env.BODY_FILE }} XCM_PATH=${{ env.DEV_XCM_JSON_PATH }} CHAINS_PATH=${{ env.DEV_CHAINS_JSON_PATH }}
 
       - name: Generate message for prvious PROD
         if: steps.prev_prod.outputs.any_changed == 'true'
         run: |
-          make pr-comment-creation PR_ENV=PROD PR_FILE_NAME=${{ env.BODY_FILE }} XCM_PATH=${{ env.PREVIOUS_XCM_JSON_PATH }} CHAINS_PATH=${{ env.PREVIOUS_CHAINS_JSON_PATH }}
+          make pr-comment-creation PR_ENV=${{ env.PREVIOUS_XCM_VERSION }}-PROD PR_FILE_NAME=${{ env.BODY_FILE }} XCM_PATH=${{ env.PREVIOUS_XCM_JSON_PATH }} CHAINS_PATH=${{ env.PREVIOUS_CHAINS_JSON_PATH }}
 
       - name: Generate message for prvious DEV
         if: steps.prev_dev.outputs.any_changed == 'true'
         run: |
-          make pr-comment-creation PR_ENV=DEV PR_FILE_NAME=${{ env.BODY_FILE }} XCM_PATH=${{ env.PREVIOUS_DEV_XCM_JSON_PATH }} CHAINS_PATH=${{ env.PREVIOUS_DEV_CHAINS_JSON_PATH }}
+          make pr-comment-creation PR_ENV=${{ env.PREVIOUS_XCM_VERSION }}-DEV PR_FILE_NAME=${{ env.BODY_FILE }} XCM_PATH=${{ env.PREVIOUS_DEV_XCM_JSON_PATH }} CHAINS_PATH=${{ env.PREVIOUS_DEV_CHAINS_JSON_PATH }}
 
       - name: Find Comment
         uses: peter-evans/find-comment@v2
