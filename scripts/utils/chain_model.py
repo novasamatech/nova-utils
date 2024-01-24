@@ -42,3 +42,6 @@ class Chain():
         if (self.properties):
                 return self.substrate
         self.properties = get_properties(self.substrate)
+
+    def is_parachain(self) -> bool:
+        return self.parentId is not None

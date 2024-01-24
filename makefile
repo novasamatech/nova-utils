@@ -70,6 +70,9 @@ test-eth-availability:
 test-new-assets:
 	$(TEST_RUN) "./tests/test_check_new_assets.py"
 
+test-xcm-delivery-factor:
+	$(TEST_RUN) "./tests/test_xcm_delivery_fee.py"
+
 allure:
 	allure serve $(ALLURE_DIR)
 
