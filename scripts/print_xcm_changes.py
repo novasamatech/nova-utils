@@ -180,18 +180,8 @@ def main(argv):
     if github_base:
         nova_utils_url = f"https://raw.githubusercontent.com/novasamatech/nova-utils/{github_base}/"
 
-    if 'DEV' in argv:
-        transfers_file = os.getenv(
-            "DEV_XCM_JSON_PATH", "xcm/v4/transfers_dev.json")
-        chains_url = nova_utils_url + \
-            os.getenv("DEV_CHAINS_JSON_PATH", "chains/v13/chains_dev.json")
-    elif 'PROD' in argv:
-        transfers_file = os.getenv("XCM_JSON_PATH", "xcm/v4/transfers.json")
-        chains_url = nova_utils_url + \
-            os.getenv("CHAINS_JSON_PATH", "chains/v13/chains.json")
-    else:
-        raise Exception(
-            'Provide a string `dev` or `prod` as parameter for the script')
+    transfers_file = os.getenv("XCM_PATH", "xcm/v4/transfers_dev.json")
+    chains_url = nova_utils_url + os.getenv("CHAINS_PATH", "chains/v13/chains_dev.json")
 
     transfers_file_url = nova_utils_url + transfers_file
     transfers_from_file = get_data_from_file(transfers_file)
