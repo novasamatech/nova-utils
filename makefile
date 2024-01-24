@@ -75,7 +75,7 @@ allure:
 
 pr-comment-creation:
 	echo "## Changes for $(PR_ENV)" >> $(PR_FILE_NAME)
-	$(VENV)/bin/python scripts/print_xcm_changes.py $(PR_ENV) >> $(PR_FILE_NAME)
+	XCM_PATH=$(XCM_PATH) CHAINS_PATH=$(CHAINS_PATH) $(VENV)/bin/python scripts/print_xcm_changes.py $(PR_ENV) >> $(PR_FILE_NAME)
 
 check-chains-file:
 	$(VENV)/bin/pre-commit run --files chains/**/*.json
