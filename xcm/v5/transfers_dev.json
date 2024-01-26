@@ -397,6 +397,19 @@
         },
         "instructions": "xtokensReserve"
       }
+    },
+    "MANTA": {
+      "chainId": "f3c7ad88f6a80f366c4be216691411ef0622e8b809b1046ea297ef106058d4eb",
+      "multiLocation": {
+        "parachainId": 2104
+      },
+      "reserveFee": {
+        "mode": {
+          "type": "proportional",
+          "value": "0"
+        },
+        "instructions": "xtokensReserve"
+      }
     }
   },
   "instructions": {
