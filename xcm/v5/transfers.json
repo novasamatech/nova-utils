@@ -4003,20 +4003,6 @@
           "xcmTransfers": [
             {
               "destination": {
-                "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
-                "assetId": 0,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "3959149500"
-                  },
-                  "instructions": "xcmPalletTeleportDest"
-                }
-              },
-              "type": "xcmpallet-teleport"
-            },
-            {
-              "destination": {
                 "chainId": "00dcb981df86429de8bbacf9803401f09485366c44efbf53af9ecfab03adc7e5",
                 "assetId": 0,
                 "fee": {
