@@ -459,6 +459,14 @@
         "sizeFactor": "3333333",
         "alwaysHoldingPays": false
       }
+    },
+    "67f9723393ef76214df0118c34bbbd3dbebc8ed46a10973a8c969d48fe7598c9": {
+      "toParachain": {
+        "type": "exponential",
+        "factorPallet": "XcmpQueue",
+        "sizeBase": "30000000000",
+        "sizeFactor": "10000000"
+      }
     }
   },
   "networkBaseWeight": {
