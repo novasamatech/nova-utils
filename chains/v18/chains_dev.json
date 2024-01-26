@@ -9024,6 +9024,17 @@
                 "precision": 18,
                 "priceId": "manta-network",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/MANTA.svg"
+            },
+            {
+                "assetId": 1,
+                "symbol": "DOT",
+                "precision": 10,
+                "priceId": "polkadot",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Polkadot.svg",
+                "typeExtras": {
+                    "assetId": "8"
+                }
             }
         ],
         "nodes": [
