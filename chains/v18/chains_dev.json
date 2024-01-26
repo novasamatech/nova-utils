@@ -3611,6 +3611,17 @@
                 "typeExtras": {
                     "assetId": "204507659831918931608354793288110796652"
                 }
+            },
+            {
+                "assetId": 22,
+                "symbol": "mxcMANTA",
+                "precision": 18,
+                "type": "statemine",
+                "priceId": "manta-network",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/MANTA.svg",
+                "typeExtras": {
+                    "assetId": "166446646689194205559791995948102903873"
+                }
             }
         ],
         "nodes": [
@@ -9016,7 +9027,7 @@
     {
         "chainId": "f3c7ad88f6a80f366c4be216691411ef0622e8b809b1046ea297ef106058d4eb",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "Manta",
+        "name": "Manta Atlantic",
         "assets": [
             {
                 "assetId": 0,
@@ -9024,6 +9035,17 @@
                 "precision": 18,
                 "priceId": "manta-network",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/MANTA.svg"
+            },
+            {
+                "assetId": 1,
+                "symbol": "DOT",
+                "precision": 10,
+                "priceId": "polkadot",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Polkadot.svg",
+                "typeExtras": {
+                    "assetId": "8"
+                }
             }
         ],
         "nodes": [
