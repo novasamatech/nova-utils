@@ -9053,6 +9053,20 @@
                 "name": "Manta node"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---manta"
+                }
+            ],
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---manta"
+                }
+            ]
+        },
         "explorers": [
             {
                 "name": "Subscan",
