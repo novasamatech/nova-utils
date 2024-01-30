@@ -7723,7 +7723,10 @@
                 "symbol": "MANTA",
                 "precision": 18,
                 "priceId": "manta-network",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/MANTA.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/MANTA.svg",
+                "staking": [
+                    "parachain"
+                ]
             },
             {
                 "assetId": 1,
@@ -7740,9 +7743,23 @@
         "nodes": [
             {
                 "url": "wss://ws.manta.systems",
-                "name": "Manta network node"
+                "name": "Manta node"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---manta"
+                }
+            ],
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---manta"
+                }
+            ]
+        },
         "explorers": [
             {
                 "name": "Subscan",
@@ -7751,6 +7768,11 @@
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Manta.svg",
-        "addressPrefix": 77
+        "addressPrefix": 77,
+        "additional": {
+            "themeColor": "#1F78FF",
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/manta-manta-staking",
+            "defaultBlockTime": 12000
+        }
     }
 ]
