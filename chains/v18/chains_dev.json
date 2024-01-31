@@ -9667,7 +9667,7 @@
     },
     {
         "chainId": "eip155:169",
-        "name": "Manta EVM",
+        "name": "Manta Pacific",
         "assets": [
             {
                 "assetId": 0,
@@ -9693,11 +9693,22 @@
                 "name": "Manta wss node"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "etherscan",
+                    "url": "https://pacific-explorer.manta.network/api",
+                    "parameters": {
+                        "assetType": "evm"
+                    }
+                }
+            ]
+        },
         "explorers": [
             {
-                "name": "l2scan",
-                "extrinsic": "https://manta-pacific.l2scan.co/tx/{hash}",
-                "account": "https://manta-pacific.l2scan.co/address/{address}"
+                "name": "Manta Pacific Block Explorer",
+                "extrinsic": "https://pacific-explorer.manta.network/tx/{hash}",
+                "account": "https://pacific-explorer.manta.network/address/{address}"
             },
             {
                 "name": "Manta Socialscan",
