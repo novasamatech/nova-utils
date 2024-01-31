@@ -9751,5 +9751,33 @@
         "options": [
             "testnet"
         ]
+    },
+    {
+        "chainId": "7bbb72faf3d6d997ebe622a4e0ebfb6fdacf905b6141c86a3122cd479213a8d8",
+        "name": "Rolimec Rococo",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "RLMC",
+                "precision": 10,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/PLMC.svg",
+                "staking": [
+                    "parachain"
+                ]
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc.rolimec.org",
+                "name": "Rolimec node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/gradient/Rococo_Testnet.svg",
+        "addressPrefix": 41,
+        "additional": {
+            "themeColor": "#1F78FF",
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polimec-plmc-staking",
+            "defaultBlockTime": 12000
+        }
     }
 ]
