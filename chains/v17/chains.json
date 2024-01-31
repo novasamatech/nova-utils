@@ -7699,5 +7699,67 @@
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polimec.svg",
         "addressPrefix": 41
+    },
+    {
+        "chainId": "f3c7ad88f6a80f366c4be216691411ef0622e8b809b1046ea297ef106058d4eb",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Manta Atlantic",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "MANTA",
+                "precision": 18,
+                "priceId": "manta-network",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/MANTA.svg",
+                "staking": [
+                    "parachain"
+                ]
+            },
+            {
+                "assetId": 1,
+                "symbol": "DOT",
+                "precision": 10,
+                "priceId": "polkadot",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Polkadot.svg",
+                "typeExtras": {
+                    "assetId": "8"
+                }
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://ws.manta.systems",
+                "name": "Manta node"
+            }
+        ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---manta"
+                }
+            ],
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---manta"
+                }
+            ]
+        },
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://manta.subscan.io/extrinsic/{hash}",
+                "account": "https://manta.subscan.io/account/{address}"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Manta.svg",
+        "addressPrefix": 77,
+        "additional": {
+            "themeColor": "#1F78FF",
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/manta-manta-staking",
+            "defaultBlockTime": 12000
+        }
     }
 ]
