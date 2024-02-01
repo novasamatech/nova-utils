@@ -1,9 +1,9 @@
 
 # Supported Networks & Assets data:
 ### 🕸️ Supported networks: 89
-### 💰 All assets 363
-### 🪙 Unique assets: 181
-### 💫 Cross Chain directions: 410
+### 💰 All assets 364
+### 🪙 Unique assets: 182
+### 💫 Cross Chain directions: 412
 ### 🧾 SubQuery API projects: 76
 ### 👀 Networks with block explorers: 77
 ---
@@ -47,7 +47,7 @@
 |  35 | GIANT                    | GIANT                                                                                                                                                                                                                                                               |  -                                                 | [nova-wallet---giant](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet---giant)                   |
 |  36 | GM (PAUSED)              | FREN<br />GM<br />GN                                                                                                                                                                                                                                                | Polkaholic                                         | [nova-wallet-gm-network](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-gm-network)             |
 |  37 | Hashed Network           | HASH                                                                                                                                                                                                                                                                |  -                                                 | [nova-wallet-hashed-network](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-hashed-network)     |
-|  38 | HydraDX                  | HDX<br />DOT<br />DAI-Acala<br />LRNA<br />WETH-Acala<br />WBTC-Acala<br />iBTC<br />ZTG<br />ASTR<br />USDT<br />CFG<br />BNC<br />DAI-Moonbeam<br />WBTC-Moonbeam<br />WETH-Moonbeam<br />USDC<br />GLMR<br />INTR<br />SUB<br />vDOT<br />PHA                    | Subscan<br />Polkaholic                            | [nova-wallet-hydra](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-hydra)                       |
+|  38 | HydraDX                  | HDX<br />DOT<br />DAI-Acala<br />LRNA<br />WETH-Acala<br />WBTC-Acala<br />iBTC<br />ZTG<br />ASTR<br />USDT<br />CFG<br />BNC<br />DAI-Moonbeam<br />WBTC-Moonbeam<br />WETH-Moonbeam<br />USDC<br />GLMR<br />INTR<br />SUB<br />vDOT<br />PHA<br />USDC-Moonbeam | Subscan<br />Polkaholic                            | [nova-wallet-hydra](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-hydra)                       |
 |  39 | Imbue                    | IMBU                                                                                                                                                                                                                                                                | Polkaholic                                         | [nova-wallet-imbue](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-imbue)                       |
 |  40 | Integritee Parachain     | TEER                                                                                                                                                                                                                                                                | Subscan<br />Sub.ID<br />Polkaholic                | [nova-wallet-integritee](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-integritee)             |
 |  41 | Interlay                 | INTR<br />iBTC<br />DOT<br />KINT<br />kBTC<br />KSM<br />LDOT<br />USDT<br />LP iBTC-USDT<br />LP DOT-iBTC<br />LP INTR-USDT<br />qiBTC<br />qUSDT<br />qDOT                                                                                                       | Subscan<br />Polkaholic                            | [nova-wallet-interlay](https://explorer.subquery.network/subquery/nova-wallet/nova-wallet-interlay)                 |
