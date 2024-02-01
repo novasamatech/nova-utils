@@ -7774,5 +7774,63 @@
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/manta-manta-staking",
             "defaultBlockTime": 12000
         }
+    },
+    {
+        "chainId": "eip155:169",
+        "name": "Manta Pacific",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "ETH",
+                "priceId": "ethereum",
+                "type": "evmNative",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/ETH.svg",
+                "precision": 18
+            }
+        ],
+        "nodeSelectionStrategy": "uniform",
+        "nodes": [
+            {
+                "url": "https://pacific-rpc.manta.network/http",
+                "name": "Manta rpc 1 node"
+            },
+            {
+                "url": "https://1rpc.io/manta",
+                "name": "Manta rpc 2 node"
+            },
+            {
+                "url": "wss://pacific-rpc.manta.network/ws",
+                "name": "Manta wss node"
+            }
+        ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "etherscan",
+                    "url": "https://pacific-explorer.manta.network/api",
+                    "parameters": {
+                        "assetType": "evm"
+                    }
+                }
+            ]
+        },
+        "explorers": [
+            {
+                "name": "Manta Pacific Block Explorer",
+                "extrinsic": "https://pacific-explorer.manta.network/tx/{hash}",
+                "account": "https://pacific-explorer.manta.network/address/{address}"
+            },
+            {
+                "name": "Manta Socialscan",
+                "extrinsic": "https://manta.socialscan.io/tx/{hash}",
+                "account": "https://manta.socialscan.io/address/{address}"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Manta.svg",
+        "addressPrefix": 169,
+        "options": [
+            "ethereumBased",
+            "noSubstrateRuntime"
+        ]
     }
 ]
