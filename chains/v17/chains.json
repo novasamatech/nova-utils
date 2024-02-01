@@ -4844,6 +4844,20 @@
                     "existentialDeposit": "54945054945",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 21,
+                "symbol": "USDC-Moonbeam",
+                "precision": 6,
+                "priceId": "usd-coin",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDC-Moonbeam.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x15000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "10000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [

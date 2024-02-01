@@ -356,6 +356,21 @@
         },
         "instructions": "xtokensReserve"
       }
+    },
+    "USDC-Statemint": {
+      "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+      "multiLocation": {
+        "parachainId": 1000,
+        "palletInstance": 50,
+        "generalIndex": "1337"
+      },
+      "reserveFee": {
+        "mode": {
+          "type": "proportional",
+          "value": "175000000"
+        },
+        "instructions": "xtokensReserve"
+      }
     }
   },
   "instructions": {
@@ -1780,6 +1795,29 @@
                   "mode": {
                     "type": "proportional",
                     "value": "210000"
+                  },
+                  "instructions": "xcmPalletDest"
+                }
+              },
+              "type": "xcmpallet"
+            }
+          ]
+        },
+        {
+          "assetId": 2,
+          "assetLocation": "USDC-Statemint",
+          "assetLocationPath": {
+            "type": "relative"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+                "assetId": 15,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "8202500"
                   },
                   "instructions": "xcmPalletDest"
                 }
@@ -3368,6 +3406,29 @@
                   "mode": {
                     "type": "proportional",
                     "value": "800000000000"
+                  },
+                  "instructions": "xtokensDest"
+                }
+              },
+              "type": "xtokens"
+            }
+          ]
+        },
+        {
+          "assetId": 15,
+          "assetLocation": "USDC-Statemint",
+          "assetLocationPath": {
+            "type": "absolute"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+                "assetId": 2,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "175000000"
                   },
                   "instructions": "xtokensDest"
                 }
