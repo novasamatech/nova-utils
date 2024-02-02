@@ -7715,7 +7715,10 @@
                 "symbol": "PLMC",
                 "priceId": "polimec",
                 "precision": 10,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/PLMC.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/PLMC.svg",
+                "staking": [
+                    "parachain"
+                ]
             }
         ],
         "nodes": [
@@ -7724,8 +7727,27 @@
                 "name": "Polimec node"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---polymec"
+                }
+            ],
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---polymec"
+                }
+            ]
+        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polimec.svg",
-        "addressPrefix": 41
+        "addressPrefix": 41,
+        "additional": {
+            "themeColor": "#96CC5A",
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polimec-plmc-staking",
+            "defaultBlockTime": 12000
+        }
     },
     {
         "chainId": "f3c7ad88f6a80f366c4be216691411ef0622e8b809b1046ea297ef106058d4eb",
