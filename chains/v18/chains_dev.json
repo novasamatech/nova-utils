@@ -5406,6 +5406,32 @@
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 23,
+                "symbol": "2-Pool",
+                "precision": 18,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/LRNA.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x65000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 24,
+                "symbol": "2-Pool-Stbl",
+                "precision": 18,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/LRNA.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x66000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
