@@ -1232,10 +1232,6 @@
                 "name": "Pokt network rpc node"
             },
             {
-                "url": "https://rpc.flashbots.net",
-                "name": "Flashbots rpc node"
-            },
-            {
                 "url": "https://rpc.ankr.com/eth",
                 "name": "Ankr rpc node"
             },
@@ -1270,6 +1266,14 @@
             {
                 "url": "wss://mainnet.infura.io/ws/v3/9dddd77ac74043dc9a8dc48f82822c7d",
                 "name": "Infura node 4"
+            },
+            {
+                "url": "wss://mainnet.infura.io/ws/v3/82fd5b2925e341719f10b7ed4376a646",
+                "name": "Infura node 6"
+            },
+            {
+                "url": "wss://mainnet.infura.io/ws/v3/5717b02168b5434ba23801e1ea755afb",
+                "name": "Infura node 7"
             }
         ],
         "explorers": [
@@ -2982,8 +2986,16 @@
         ],
         "nodes": [
             {
+                "url": "wss://pioneer-rpc-1.bit.country/wss",
+                "name": "MetaverseNetwork node 1"
+            },
+            {
+                "url": "wss://pioneer-rpc-2.bit.country/wss",
+                "name": "MetaverseNetwork node 2"
+            },
+            {
                 "url": "wss://pioneer-rpc-3.bit.country/wss",
-                "name": "MetaverseNetwork node"
+                "name": "MetaverseNetwork node 3"
             }
         ],
         "explorers": [
@@ -4877,6 +4889,20 @@
                     "existentialDeposit": "54945054945",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 21,
+                "symbol": "USDC-Moonbeam",
+                "precision": 6,
+                "priceId": "usd-coin",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDC-Moonbeam.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x15000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "10000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
@@ -6538,7 +6564,7 @@
     {
         "chainId": "7838c3c774e887c0a53bcba9e64f702361a1a852d5550b86b58cd73827fa1e1e",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "Kapex",
+        "name": "Kapex (PAUSED)",
         "assets": [
             {
                 "assetId": 0,
@@ -7725,7 +7751,10 @@
                 "symbol": "PLMC",
                 "priceId": "polimec",
                 "precision": 10,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/PLMC.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/PLMC.svg",
+                "staking": [
+                    "parachain"
+                ]
             }
         ],
         "nodes": [
@@ -7734,8 +7763,27 @@
                 "name": "Polimec node"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---polymec"
+                }
+            ],
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---polymec"
+                }
+            ]
+        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polimec.svg",
-        "addressPrefix": 41
+        "addressPrefix": 41,
+        "additional": {
+            "themeColor": "#96CC5A",
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polimec-plmc-staking",
+            "defaultBlockTime": 12000
+        }
     },
     {
         "chainId": "f3c7ad88f6a80f366c4be216691411ef0622e8b809b1046ea297ef106058d4eb",

@@ -343,6 +343,34 @@
         },
         "instructions": "xtokensReserve"
       }
+    },
+    "MANTA": {
+      "chainId": "f3c7ad88f6a80f366c4be216691411ef0622e8b809b1046ea297ef106058d4eb",
+      "multiLocation": {
+        "parachainId": 2104
+      },
+      "reserveFee": {
+        "mode": {
+          "type": "proportional",
+          "value": "98974000"
+        },
+        "instructions": "xtokensReserve"
+      }
+    },
+    "USDC-Statemint": {
+      "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+      "multiLocation": {
+        "parachainId": 1000,
+        "palletInstance": 50,
+        "generalIndex": "1337"
+      },
+      "reserveFee": {
+        "mode": {
+          "type": "proportional",
+          "value": "175000000"
+        },
+        "instructions": "xtokensReserve"
+      }
     }
   },
   "instructions": {
@@ -402,7 +430,8 @@
     "b3db41421702df9a7fcac62b53ffeac85f7853cc4e689e0b93aeb3db18c09d82": "200000000",
     "f1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108": "1000000000",
     "cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf": "150000000",
-    "4a12be580bb959937a1c7a61d5cf24428ed67fa571974b4007645d1886e7c89f": "200000000"
+    "4a12be580bb959937a1c7a61d5cf24428ed67fa571974b4007645d1886e7c89f": "200000000",
+    "f3c7ad88f6a80f366c4be216691411ef0622e8b809b1046ea297ef106058d4eb": "1000000000"
   },
   "chains": [
     {
@@ -908,6 +937,29 @@
               "type": "xtokens"
             }
           ]
+        },
+        {
+          "assetId": 22,
+          "assetLocation": "MANTA",
+          "assetLocationPath": {
+            "type": "absolute"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "f3c7ad88f6a80f366c4be216691411ef0622e8b809b1046ea297ef106058d4eb",
+                "assetId": 0,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "98974000"
+                  },
+                  "instructions": "xtokensDest"
+                }
+              },
+              "type": "xtokens"
+            }
+          ]
         }
       ]
     },
@@ -1069,6 +1121,20 @@
                   "mode": {
                     "type": "proportional",
                     "value": "800000000000"
+                  },
+                  "instructions": "xcmPalletDest"
+                }
+              },
+              "type": "xcmpallet"
+            },
+            {
+              "destination": {
+                "chainId": "f3c7ad88f6a80f366c4be216691411ef0622e8b809b1046ea297ef106058d4eb",
+                "assetId": 1,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "13756927798"
                   },
                   "instructions": "xcmPalletDest"
                 }
@@ -1729,6 +1795,29 @@
                   "mode": {
                     "type": "proportional",
                     "value": "210000"
+                  },
+                  "instructions": "xcmPalletDest"
+                }
+              },
+              "type": "xcmpallet"
+            }
+          ]
+        },
+        {
+          "assetId": 2,
+          "assetLocation": "USDC-Statemint",
+          "assetLocationPath": {
+            "type": "relative"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+                "assetId": 15,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "8202500"
                   },
                   "instructions": "xcmPalletDest"
                 }
@@ -3324,6 +3413,29 @@
               "type": "xtokens"
             }
           ]
+        },
+        {
+          "assetId": 15,
+          "assetLocation": "USDC-Statemint",
+          "assetLocationPath": {
+            "type": "absolute"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+                "assetId": 2,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "175000000"
+                  },
+                  "instructions": "xtokensDest"
+                }
+              },
+              "type": "xtokens"
+            }
+          ]
         }
       ]
     },
@@ -4015,132 +4127,6 @@
                 }
               },
               "type": "xcmpallet-teleport"
-            },
-            {
-              "destination": {
-                "chainId": "00dcb981df86429de8bbacf9803401f09485366c44efbf53af9ecfab03adc7e5",
-                "assetId": 0,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "1200618133"
-                  },
-                  "instructions": "xcmPalletTeleportDest"
-                }
-              },
-              "type": "xcmpallet-teleport"
-            },
-            {
-              "destination": {
-                "chainId": "64a1c658a48b2e70a7fb1ad4c39eea35022568c20fc44a6e2e3d0a57aee6053b",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "811622433244"
-                  },
-                  "instructions": "xcmPalletDest"
-                }
-              },
-              "type": "xcmpallet"
-            },
-            {
-              "destination": {
-                "chainId": "baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "56839132328"
-                  },
-                  "instructions": "xcmPalletDest"
-                }
-              },
-              "type": "xcmpallet"
-            },
-            {
-              "destination": {
-                "chainId": "9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "80370000000"
-                  },
-                  "instructions": "xcmPalletDest"
-                }
-              },
-              "type": "xcmpallet"
-            },
-            {
-              "destination": {
-                "chainId": "d611f22d291c5b7b69f1e105cca03352984c344c4421977efaa4cbdd1834e2aa",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "871400000000"
-                  },
-                  "instructions": "xcmPalletDest"
-                }
-              },
-              "type": "xcmpallet"
-            },
-            {
-              "destination": {
-                "chainId": "a85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "287569387880"
-                  },
-                  "instructions": "xcmPalletDest"
-                }
-              },
-              "type": "xcmpallet"
-            },
-            {
-              "destination": {
-                "chainId": "f1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
-                "assetId": 6,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "1000000000"
-                  },
-                  "instructions": "xcmPalletDest"
-                }
-              },
-              "type": "xcmpallet"
-            },
-            {
-              "destination": {
-                "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "438749232815"
-                  },
-                  "instructions": "xcmPalletDest"
-                }
-              },
-              "type": "xcmpallet"
-            },
-            {
-              "destination": {
-                "chainId": "9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "203120000000"
-                  },
-                  "instructions": "xcmPalletDest"
-                }
-              },
-              "type": "xcmpallet"
             }
           ]
         }
@@ -4169,136 +4155,6 @@
                 }
               },
               "type": "xcmpallet-teleport"
-            }
-          ]
-        },
-        {
-          "assetId": 1,
-          "assetLocation": "RMRK",
-          "assetLocationPath": {
-            "type": "relative"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "66602678571"
-                  },
-                  "instructions": "xcmPalletDest"
-                }
-              },
-              "type": "xcmpallet"
-            }
-          ]
-        },
-        {
-          "assetId": 7,
-          "assetLocation": "USDT-Statemine",
-          "assetLocationPath": {
-            "type": "relative"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
-                "assetId": 7,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "21446063"
-                  },
-                  "instructions": "xcmPalletDest"
-                }
-              },
-              "type": "xcmpallet"
-            },
-            {
-              "destination": {
-                "chainId": "9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed",
-                "assetId": 7,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "7804"
-                  },
-                  "instructions": "xcmPalletDest"
-                }
-              },
-              "type": "xcmpallet"
-            },
-            {
-              "destination": {
-                "chainId": "baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b",
-                "assetId": 17,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "803215"
-                  },
-                  "instructions": "xcmPalletDest"
-                }
-              },
-              "type": "xcmpallet"
-            },
-            {
-              "destination": {
-                "chainId": "64a1c658a48b2e70a7fb1ad4c39eea35022568c20fc44a6e2e3d0a57aee6053b",
-                "assetId": 9,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "30000000"
-                  },
-                  "instructions": "xcmPalletDest"
-                }
-              },
-              "type": "xcmpallet"
-            },
-            {
-              "destination": {
-                "chainId": "a85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755",
-                "assetId": 4,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "7759376"
-                  },
-                  "instructions": "xcmPalletDest"
-                }
-              },
-              "type": "xcmpallet"
-            },
-            {
-              "destination": {
-                "chainId": "f1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
-                "assetId": 10,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "210000"
-                  },
-                  "instructions": "xcmPalletDest"
-                }
-              },
-              "type": "xcmpallet"
-            },
-            {
-              "destination": {
-                "chainId": "cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "0"
-                  },
-                  "instructions": "xcmPalletDest"
-                }
-              },
-              "type": "xcmpallet"
             }
           ]
         }
@@ -4378,141 +4234,6 @@
                   "mode": {
                     "type": "proportional",
                     "value": "8000000000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            }
-          ]
-        },
-        {
-          "assetId": 2,
-          "assetLocation": "KSM",
-          "assetLocationPath": {
-            "type": "absolute"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-                "assetId": 0,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "26729534265"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "56839132328"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "64a1c658a48b2e70a7fb1ad4c39eea35022568c20fc44a6e2e3d0a57aee6053b",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "811622433244"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "80370000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "d611f22d291c5b7b69f1e105cca03352984c344c4421977efaa4cbdd1834e2aa",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "871400000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "a85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "287569387880"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "f1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
-                "assetId": 6,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "1000000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "0"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "203120000000"
                   },
                   "instructions": "xtokensDest"
                 }
@@ -4624,37 +4345,6 @@
           ]
         },
         {
-          "assetId": 1,
-          "assetLocation": "RMRK",
-          "assetLocationPath": {
-            "type": "absolute"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "3959149500"
-                  },
-                  "instructions": "xtokensDest",
-                  "asset": {
-                    "originAssetId": 2,
-                    "destAssetId": 0,
-                    "location": "KSM-Statemine",
-                    "locationPath": {
-                      "type": "absolute"
-                    }
-                  }
-                }
-              },
-              "type": "xtokens"
-            }
-          ]
-        },
-        {
           "assetId": 11,
           "assetLocation": "HKO",
           "assetLocationPath": {
@@ -4748,29 +4438,6 @@
                   "mode": {
                     "type": "proportional",
                     "value": "270826666660"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            }
-          ]
-        },
-        {
-          "assetId": 7,
-          "assetLocation": "USDT-Statemine",
-          "assetLocationPath": {
-            "type": "absolute"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
-                "assetId": 7,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "902213"
                   },
                   "instructions": "xtokensDest"
                 }
@@ -5062,141 +4729,6 @@
           ]
         },
         {
-          "assetId": 2,
-          "assetLocation": "KSM",
-          "assetLocationPath": {
-            "type": "absolute"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-                "assetId": 0,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "26729534265"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "438749232815"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "64a1c658a48b2e70a7fb1ad4c39eea35022568c20fc44a6e2e3d0a57aee6053b",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "811622433244"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "80370000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "d611f22d291c5b7b69f1e105cca03352984c344c4421977efaa4cbdd1834e2aa",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "871400000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "a85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "287569387880"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "f1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
-                "assetId": 6,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "1000000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "0"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "203120000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            }
-          ]
-        },
-        {
           "assetId": 14,
           "assetLocation": "MOVR",
           "assetLocationPath": {
@@ -5276,29 +4808,6 @@
                   "mode": {
                     "type": "proportional",
                     "value": "55000000000000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            }
-          ]
-        },
-        {
-          "assetId": 17,
-          "assetLocation": "USDT-Statemine",
-          "assetLocationPath": {
-            "type": "absolute"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
-                "assetId": 7,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "902213"
                   },
                   "instructions": "xtokensDest"
                 }
@@ -5423,141 +4932,6 @@
           ]
         },
         {
-          "assetId": 1,
-          "assetLocation": "KSM",
-          "assetLocationPath": {
-            "type": "absolute"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-                "assetId": 0,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "26729534265"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "56839132328"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "438749232815"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "64a1c658a48b2e70a7fb1ad4c39eea35022568c20fc44a6e2e3d0a57aee6053b",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "811622433244"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "d611f22d291c5b7b69f1e105cca03352984c344c4421977efaa4cbdd1834e2aa",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "871400000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "a85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "287569387880"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "f1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
-                "assetId": 6,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "1000000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "0"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "203120000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            }
-          ]
-        },
-        {
           "assetId": 4,
           "assetLocation": "KAR",
           "assetLocationPath": {
@@ -5628,29 +5002,6 @@
                   "mode": {
                     "type": "proportional",
                     "value": "8000000000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            }
-          ]
-        },
-        {
-          "assetId": 7,
-          "assetLocation": "USDT-Statemine",
-          "assetLocationPath": {
-            "type": "absolute"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
-                "assetId": 7,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "902213"
                   },
                   "instructions": "xtokensDest"
                 }
@@ -5795,141 +5146,6 @@
           ]
         },
         {
-          "assetId": 1,
-          "assetLocation": "KSM",
-          "assetLocationPath": {
-            "type": "absolute"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-                "assetId": 0,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "26729534265"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "438749232815"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "56839132328"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "80370000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "d611f22d291c5b7b69f1e105cca03352984c344c4421977efaa4cbdd1834e2aa",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "871400000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "a85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "287569387880"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "f1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
-                "assetId": 6,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "1000000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "0"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "203120000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            }
-          ]
-        },
-        {
           "assetId": 6,
           "assetLocation": "MOVR",
           "assetLocationPath": {
@@ -5993,155 +5209,6 @@
               "type": "xtokens"
             }
           ]
-        },
-        {
-          "assetId": 9,
-          "assetLocation": "USDT-Statemine",
-          "assetLocationPath": {
-            "type": "absolute"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
-                "assetId": 7,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "902213"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "chainId": "d611f22d291c5b7b69f1e105cca03352984c344c4421977efaa4cbdd1834e2aa",
-      "assets": [
-        {
-          "assetId": 1,
-          "assetLocation": "KSM",
-          "assetLocationPath": {
-            "type": "absolute"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-                "assetId": 0,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "26729534265"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "438749232815"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "64a1c658a48b2e70a7fb1ad4c39eea35022568c20fc44a6e2e3d0a57aee6053b",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "811622433244"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "80370000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "56839132328"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "a85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "287569387880"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "f1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
-                "assetId": 6,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "1000000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "203120000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            }
-          ]
         }
       ]
     },
@@ -6172,141 +5239,6 @@
           ]
         },
         {
-          "assetId": 1,
-          "assetLocation": "KSM",
-          "assetLocationPath": {
-            "type": "absolute"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-                "assetId": 0,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "26729534265"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "56839132328"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "80370000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "438749232815"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "64a1c658a48b2e70a7fb1ad4c39eea35022568c20fc44a6e2e3d0a57aee6053b",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "811622433244"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "d611f22d291c5b7b69f1e105cca03352984c344c4421977efaa4cbdd1834e2aa",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "871400000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "f1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
-                "assetId": 6,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "1000000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "0"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "203120000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            }
-          ]
-        },
-        {
           "assetId": 3,
           "assetLocation": "TNKR",
           "assetLocationPath": {
@@ -6321,29 +5253,6 @@
                   "mode": {
                     "type": "proportional",
                     "value": "879987328182475"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            }
-          ]
-        },
-        {
-          "assetId": 4,
-          "assetLocation": "USDT-Statemine",
-          "assetLocationPath": {
-            "type": "absolute"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
-                "assetId": 7,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "902213"
                   },
                   "instructions": "xtokensDest"
                 }
@@ -6409,141 +5318,6 @@
       "chainId": "f1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
       "assets": [
         {
-          "assetId": 6,
-          "assetLocation": "KSM",
-          "assetLocationPath": {
-            "type": "absolute"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-                "assetId": 0,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "26729534265"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "a85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "287569387880"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "80370000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "56839132328"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "d611f22d291c5b7b69f1e105cca03352984c344c4421977efaa4cbdd1834e2aa",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "871400000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "438749232815"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "64a1c658a48b2e70a7fb1ad4c39eea35022568c20fc44a6e2e3d0a57aee6053b",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "811622433244"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "0"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "203120000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            }
-          ]
-        },
-        {
           "assetId": 9,
           "assetLocation": "KAR",
           "assetLocationPath": {
@@ -6600,29 +5374,6 @@
                   "mode": {
                     "type": "proportional",
                     "value": "42518725552201"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            }
-          ]
-        },
-        {
-          "assetId": 10,
-          "assetLocation": "USDT-Statemine",
-          "assetLocationPath": {
-            "type": "absolute"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
-                "assetId": 7,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "902213"
                   },
                   "instructions": "xtokensDest"
                 }
@@ -6796,155 +5547,6 @@
       ]
     },
     {
-      "chainId": "cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
-      "assets": [
-        {
-          "assetId": 1,
-          "assetLocation": "KSM",
-          "assetLocationPath": {
-            "type": "absolute"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-                "assetId": 0,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "26729534265"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "80370000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "a85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "287569387880"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "56839132328"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "438749232815"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "64a1c658a48b2e70a7fb1ad4c39eea35022568c20fc44a6e2e3d0a57aee6053b",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "811622433244"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "f1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
-                "assetId": 6,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "1000000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "203120000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            }
-          ]
-        },
-        {
-          "assetId": 2,
-          "assetLocation": "USDT-Statemine",
-          "assetLocationPath": {
-            "type": "absolute"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
-                "assetId": 7,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "902213"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "chainId": "9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
       "assets": [
         {
@@ -6990,141 +5592,6 @@
                   "mode": {
                     "type": "proportional",
                     "value": "345000000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            }
-          ]
-        },
-        {
-          "assetId": 2,
-          "assetLocation": "KSM",
-          "assetLocationPath": {
-            "type": "absolute"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-                "assetId": 0,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "26729534265"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "438749232815"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "64a1c658a48b2e70a7fb1ad4c39eea35022568c20fc44a6e2e3d0a57aee6053b",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "811622433244"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "56839132328"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "80370000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "d611f22d291c5b7b69f1e105cca03352984c344c4421977efaa4cbdd1834e2aa",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "871400000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "a85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "287569387880"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "f1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
-                "assetId": 6,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "1000000000"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
-                "assetId": 1,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "0"
                   },
                   "instructions": "xtokensDest"
                 }

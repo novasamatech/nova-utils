@@ -3022,8 +3022,16 @@
         ],
         "nodes": [
             {
+                "url": "wss://pioneer-rpc-1.bit.country/wss",
+                "name": "MetaverseNetwork node 1"
+            },
+            {
+                "url": "wss://pioneer-rpc-2.bit.country/wss",
+                "name": "MetaverseNetwork node 2"
+            },
+            {
                 "url": "wss://pioneer-rpc-3.bit.country/wss",
-                "name": "MetaverseNetwork node"
+                "name": "MetaverseNetwork node 3"
             }
         ],
         "explorers": [
@@ -3752,10 +3760,6 @@
             {
                 "url": "https://eth-pokt.nodies.app",
                 "name": "Pokt network rpc node"
-            },
-            {
-                "url": "https://rpc.flashbots.net",
-                "name": "Flashbots rpc node"
             },
             {
                 "url": "https://rpc.ankr.com/eth",
@@ -5385,6 +5389,45 @@
                     "existentialDeposit": "10000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 22,
+                "symbol": "4-Pool",
+                "precision": 18,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/4-Pool.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x64000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 23,
+                "symbol": "2-Pool",
+                "precision": 18,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/2-Pool.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x65000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 24,
+                "symbol": "2-Pool-Stbl",
+                "precision": 18,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/2-Pool-Stbl.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x66000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
@@ -5413,7 +5456,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-hydra"
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-hydra__bm92Y"
                 }
             ],
             "governance": [
@@ -5426,7 +5469,8 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/HydraDX.svg",
         "addressPrefix": 63,
         "options": [
-            "governance-v1"
+            "governance-v1",
+            "hydradx-swaps"
         ],
         "additional": {
             "feeViaRuntimeCall": true
@@ -7332,7 +7376,7 @@
     {
         "chainId": "7838c3c774e887c0a53bcba9e64f702361a1a852d5550b86b58cd73827fa1e1e",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "Kapex",
+        "name": "Kapex (PAUSED)",
         "assets": [
             {
                 "assetId": 0,
@@ -8210,7 +8254,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-ajuna"
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---ajuna"
                 }
             ]
         },
@@ -9055,6 +9099,14 @@
                 "event": "https://jur.io/explorer/jur/event/{event}"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---jur"
+                }
+            ]
+        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Jur.svg",
         "addressPrefix": 42
     },
@@ -9595,6 +9647,14 @@
                 "name": "Energywebx node"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---energy-web-x"
+                }
+            ]
+        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Energy_Web_X.svg",
         "addressPrefix": 42
     },
