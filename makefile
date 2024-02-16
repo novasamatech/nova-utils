@@ -2,12 +2,13 @@
 PYTHON := python
 PYTHON_VERSION := 3.11
 VENV ?= .venv
+RUN_PYTHON := . $(VENV)/bin/activate && set -a && . .env && set +a && python
 
 RE_RUNS = 2
 RE_RUN_DELAY = 5
 ALLURE_DIR = allure-results
-TEST_RUN = $(VENV)/bin/python -m pytest --rootdir . --alluredir=$(ALLURE_DIR) -n auto -v --reruns $(RE_RUNS) --reruns-delay $(RE_RUN_DELAY)
-TEST_RUN_JUNIT = $(VENV)/bin/python -m pytest --rootdir . --junit-xml=test-results.xml -n auto -v --reruns $(RE_RUNS) --reruns-delay $(RE_RUN_DELAY)
+TEST_RUN = $(RUN_PYTHON) -m pytest --rootdir . --alluredir=$(ALLURE_DIR) -n auto -v --reruns $(RE_RUNS) --reruns-delay $(RE_RUN_DELAY)
+TEST_RUN_JUNIT = $(RUN_PYTHON) -m pytest --rootdir . --junit-xml=test-results.xml -n auto -v --reruns $(RE_RUNS) --reruns-delay $(RE_RUN_DELAY)
 
 CHAINS_FILES=\
 	chains
@@ -18,19 +19,19 @@ CHAINS_FILES=\
 clean:
 	rm -rf *.pyc __pycache__/ **/__pycache__/
 
-init: venv .create-venv requirements .install-pre-commit
+init: venv .create-venv requirements .install-pre-commit generate-env-file
 
 generate_type_files:
-	$(VENV)/bin/python ./scripts/create_type_file.py prod
+	$(RUN_PYTHON) ./scripts/create_type_file.py prod
 
 generate_network_list:
-	$(VENV)/bin/python ./scripts/generate_network_list.py
+	$(RUN_PYTHON) ./scripts/generate_network_list.py
 
 generate_dapp_list:
-	$(VENV)/bin/python ./scripts/generate_dapps_list.py
+	$(RUN_PYTHON) ./scripts/generate_dapps_list.py
 
 generate_test_file:
-	$(VENV)/bin/python ./scripts/update_test_data.py
+	$(RUN_PYTHON) ./scripts/update_test_data.py
 
 venv:
 	$(PYTHON) -m venv .venv
@@ -75,10 +76,24 @@ allure:
 
 pr-comment-creation:
 	echo "## Changes for $(PR_ENV)" >> $(PR_FILE_NAME)
-	XCM_PATH=$(XCM_PATH) CHAINS_PATH=$(CHAINS_PATH) $(VENV)/bin/python scripts/print_xcm_changes.py $(PR_ENV) >> $(PR_FILE_NAME)
+	XCM_PATH=$(XCM_PATH) CHAINS_PATH=$(CHAINS_PATH) $(RUN_PYTHON) scripts/print_xcm_changes.py $(PR_ENV) >> $(PR_FILE_NAME)
 
 check-chains-file:
 	$(VENV)/bin/pre-commit run --files chains/**/*.json
 
 update-xcm-to-prod:
-	$(VENV)/bin/python xcm/update_to_prod.py
+	$(RUN_PYTHON) xcm/update_to_prod.py
+
+generate-env-file:
+	@echo "Generating .env file..."
+	@{ \
+	echo "DEV_CHAINS_JSON_PATH=chains/$$(bash .github/get_actual_json_path.sh chains)/chains_dev.json"; \
+	echo "CHAINS_JSON_PATH=chains/$$(bash .github/get_actual_json_path.sh chains)/chains.json"; \
+	echo "PREVIOUS_DEV_CHAINS_JSON_PATH=chains/$$(bash .github/get_actual_json_path.sh chains 1)/chains_dev.json"; \
+	echo "PREVIOUS_CHAINS_JSON_PATH=chains/$$(bash .github/get_actual_json_path.sh chains 1)/chains.json"; \
+	echo "DEV_XCM_JSON_PATH=xcm/$$(bash .github/get_actual_json_path.sh xcm)/transfers_dev.json"; \
+	echo "XCM_JSON_PATH=xcm/$$(bash .github/get_actual_json_path.sh xcm)/transfers.json"; \
+	echo "PREVIOUS_DEV_XCM_JSON_PATH=xcm/$$(bash .github/get_actual_json_path.sh xcm 1)/transfers_dev.json"; \
+	echo "PREVIOUS_XCM_JSON_PATH=xcm/$$(bash .github/get_actual_json_path.sh xcm 1)/transfers.json"; \
+	} > .env
+	@echo "Generated .env file with environment variables."
