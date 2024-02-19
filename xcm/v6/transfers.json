@@ -399,7 +399,33 @@
       "DepositAsset"
     ]
   },
-  "networkDeliveryFee": {},
+  "networkDeliveryFee": {
+    "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a": {
+      "toParent": {
+        "type": "exponential",
+        "factorPallet": "ParachainSystem",
+        "sizeBase": "1000000000",
+        "sizeFactor": "333333",
+        "alwaysHoldingPays": false
+      },
+      "toParachain": {
+        "type": "exponential",
+        "factorPallet": "XcmpQueue",
+        "sizeBase": "1000000000",
+        "sizeFactor": "333333",
+        "alwaysHoldingPays": false
+      }
+    },
+    "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe": {
+      "toParachain": {
+        "type": "exponential",
+        "factorPallet": "Dmp",
+        "sizeBase": "1000000000",
+        "sizeFactor": "3333333",
+        "alwaysHoldingPays": false
+      }
+    }
+  },
   "networkBaseWeight": {
     "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe": "1000000000",
     "baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b": "200000000",
@@ -499,6 +525,29 @@
                 }
               },
               "type": "xcmpallet-teleport"
+            }
+          ]
+        },
+        {
+          "assetId": 1,
+          "assetLocation": "RMRK",
+          "assetLocationPath": {
+            "type": "relative"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
+                "assetId": 1,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "67108792702"
+                  },
+                  "instructions": "xcmPalletDest"
+                }
+              },
+              "type": "xcmpallet"
             }
           ]
         }
@@ -861,6 +910,37 @@
                     "value": "26729534265"
                   },
                   "instructions": "xtokensDest"
+                }
+              },
+              "type": "xtokens"
+            }
+          ]
+        },
+        {
+          "assetId": 1,
+          "assetLocation": "RMRK",
+          "assetLocationPath": {
+            "type": "absolute"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
+                "assetId": 1,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "179650006"
+                  },
+                  "instructions": "xtokensDest",
+                  "asset": {
+                    "originAssetId": 2,
+                    "destAssetId": 0,
+                    "location": "KSM-Statemine",
+                    "locationPath": {
+                      "type": "absolute"
+                    }
+                  }
                 }
               },
               "type": "xtokens"
