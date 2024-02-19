@@ -438,14 +438,14 @@
         "type": "exponential",
         "factorPallet": "ParachainSystem",
         "sizeBase": "300000000",
-        "sizeFactor": "100000",
+        "sizeFactor": "1000000",
         "alwaysHoldingPays": false
       },
       "toParachain": {
         "type": "exponential",
         "factorPallet": "XcmpQueue",
         "sizeBase": "300000000",
-        "sizeFactor": "1000000",
+        "sizeFactor": "100000",
         "alwaysHoldingPays": false
       }
     }
