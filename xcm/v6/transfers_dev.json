@@ -488,6 +488,22 @@
         "sizeBase": "300000000",
         "sizeFactor": "1000000"
       }
+    },
+    "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f": {
+      "toParent": {
+        "type": "exponential",
+        "factorPallet": "ParachainSystem",
+        "sizeBase": "300000000",
+        "sizeFactor": "1000000",
+        "alwaysHoldingPays": false
+      },
+      "toParachain": {
+        "type": "exponential",
+        "factorPallet": "XcmpQueue",
+        "sizeBase": "300000000",
+        "sizeFactor": "100000",
+        "alwaysHoldingPays": false
+      }
     }
   },
   "networkBaseWeight": {
