@@ -81,7 +81,7 @@
       "reserveFee": {
         "mode": {
           "type": "proportional",
-          "value": "79336744814"
+          "value": "4994684504"
         },
         "instructions": "xtokensReserve"
       }
@@ -244,7 +244,7 @@
       "reserveFee": {
         "mode": {
           "type": "proportional",
-          "value": "175000000"
+          "value": "17500000"
         },
         "instructions": "xtokensReserve"
       }
@@ -367,7 +367,7 @@
       "reserveFee": {
         "mode": {
           "type": "proportional",
-          "value": "175000000"
+          "value": "17500000"
         },
         "instructions": "xtokensReserve"
       }
@@ -422,6 +422,30 @@
         "factorPallet": "Dmp",
         "sizeBase": "1000000000",
         "sizeFactor": "3333333",
+        "alwaysHoldingPays": false
+      }
+    },
+    "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3": {
+      "toParachain": {
+        "type": "exponential",
+        "factorPallet": "Dmp",
+        "sizeBase": "300000000",
+        "sizeFactor": "1000000"
+      }
+    },
+    "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f": {
+      "toParent": {
+        "type": "exponential",
+        "factorPallet": "ParachainSystem",
+        "sizeBase": "300000000",
+        "sizeFactor": "10000000",
+        "alwaysHoldingPays": false
+      },
+      "toParachain": {
+        "type": "exponential",
+        "factorPallet": "XcmpQueue",
+        "sizeBase": "300000000",
+        "sizeFactor": "100000",
         "alwaysHoldingPays": false
       }
     }
@@ -2253,6 +2277,196 @@
                 }
               },
               "type": "xcmpallet"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+      "assets": [
+        {
+          "assetId": 0,
+          "assetLocation": "DOT-Statemint",
+          "assetLocationPath": {
+            "type": "absolute"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+                "assetId": 0,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "5041493004"
+                  },
+                  "instructions": "xcmPalletTeleportDest"
+                }
+              },
+              "type": "xcmpallet-teleport"
+            }
+          ]
+        },
+        {
+          "assetId": 1,
+          "assetLocation": "USDT-Statemint",
+          "assetLocationPath": {
+            "type": "relative"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+                "assetId": 9,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "32810000"
+                  },
+                  "instructions": "xcmPalletDest"
+                }
+              },
+              "type": "xcmpallet"
+            }
+          ]
+        },
+        {
+          "assetId": 2,
+          "assetLocation": "USDC-Statemint",
+          "assetLocationPath": {
+            "type": "relative"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+                "assetId": 15,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "32810000"
+                  },
+                  "instructions": "xcmPalletDest"
+                }
+              },
+              "type": "xcmpallet"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chainId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+      "assets": [
+        {
+          "assetId": 0,
+          "assetLocation": "DOT",
+          "assetLocationPath": {
+            "type": "relative"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+                "assetId": 0,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "8982500000"
+                  },
+                  "instructions": "xcmPalletTeleportDest"
+                }
+              },
+              "type": "xcmpallet-teleport"
+            },
+            {
+              "destination": {
+                "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+                "assetId": 1,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "42682928123"
+                  },
+                  "instructions": "xcmPalletDest"
+                }
+              },
+              "type": "xcmpallet"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+      "assets": [
+        {
+          "assetId": 1,
+          "assetLocation": "DOT",
+          "assetLocationPath": {
+            "type": "absolute"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+                "assetId": 0,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "4994684504"
+                  },
+                  "instructions": "xtokensDest"
+                }
+              },
+              "type": "xtokens"
+            }
+          ]
+        },
+        {
+          "assetId": 9,
+          "assetLocation": "USDT-Statemint",
+          "assetLocationPath": {
+            "type": "absolute"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+                "assetId": 1,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "17500000"
+                  },
+                  "instructions": "xtokensDest"
+                }
+              },
+              "type": "xtokens"
+            }
+          ]
+        },
+        {
+          "assetId": 15,
+          "assetLocation": "USDC-Statemint",
+          "assetLocationPath": {
+            "type": "absolute"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+                "assetId": 2,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "17500000"
+                  },
+                  "instructions": "xtokensDest"
+                }
+              },
+              "type": "xtokens"
             }
           ]
         }
