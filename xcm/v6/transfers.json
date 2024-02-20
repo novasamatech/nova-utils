@@ -81,7 +81,7 @@
       "reserveFee": {
         "mode": {
           "type": "proportional",
-          "value": "79336744814"
+          "value": "4994684504"
         },
         "instructions": "xtokensReserve"
       }
@@ -2342,6 +2342,20 @@
                 }
               },
               "type": "xcmpallet-teleport"
+            },
+            {
+              "destination": {
+                "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+                "assetId": 1,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "42682928123"
+                  },
+                  "instructions": "xcmPalletDest"
+                }
+              },
+              "type": "xcmpallet"
             }
           ]
         }
