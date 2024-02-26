@@ -580,7 +580,7 @@
         ]
     },
     {
-        "symbol": "xcRMRK",
+        "symbol": "xcRMRK (old)",
         "precision": 10,
         "name": "xcRMRK",
         "priceId": "rmrk",
@@ -615,6 +615,23 @@
             {
                 "chainId": "eip155:169",
                 "contractAddress": "0x95CeF13441Be50d20cA4558CC0a27B601aC544E5"
+            }
+        ]
+    },
+    {
+        "symbol": "RMRK",
+        "precision": 18,
+        "name": "RMRK",
+        "priceId": "rmrk",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/RMRK.svg",
+        "instances": [
+            {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "contractAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3"
+            },
+            {
+                "chainId": "eip155:1",
+                "contractAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3"
             }
         ]
     }
