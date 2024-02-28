@@ -525,14 +525,30 @@
       "toParent": {
         "type": "exponential",
         "factorPallet": "ParachainSystem",
-        "sizeBase": "1000000000",
+        "sizeBase": "16912512364",
         "sizeFactor": "333333",
         "alwaysHoldingPays": false
       },
       "toParachain": {
         "type": "exponential",
         "factorPallet": "XcmpQueue",
-        "sizeBase": "1000000000",
+        "sizeBase": "16912512364",
+        "sizeFactor": "333333",
+        "alwaysHoldingPays": false
+      }
+    },
+    "46ee89aa2eedd13e988962630ec9fb7565964cf5023bb351f2b6b25c1b68b0b2": {
+      "toParent": {
+        "type": "exponential",
+        "factorPallet": "ParachainSystem",
+        "sizeBase": "16912512364",
+        "sizeFactor": "333333",
+        "alwaysHoldingPays": false
+      },
+      "toParachain": {
+        "type": "exponential",
+        "factorPallet": "XcmpQueue",
+        "sizeBase": "16912512364",
         "sizeFactor": "333333",
         "alwaysHoldingPays": false
       }
