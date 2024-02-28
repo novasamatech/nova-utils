@@ -509,14 +509,14 @@
       "toParent": {
         "type": "exponential",
         "factorPallet": "ParachainSystem",
-        "sizeBase": "56374989788",
+        "sizeBase": "1000000000",
         "sizeFactor": "333333",
         "alwaysHoldingPays": false
       },
       "toParachain": {
         "type": "exponential",
         "factorPallet": "XcmpQueue",
-        "sizeBase": "56374989788",
+        "sizeBase": "1000000000",
         "sizeFactor": "333333",
         "alwaysHoldingPays": false
       }
