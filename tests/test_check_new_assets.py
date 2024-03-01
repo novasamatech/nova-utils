@@ -5,6 +5,7 @@ from scripts.utils.chain_model import Chain
 class TestAssets:
     # workaround to differences between asset names at runtime and in our configuration
     asset_mapping = {
+        'AUSD': 'KUSD',
         'RMRK (old)': 'RMRK'
     }
     # assets that has no working cases on network
