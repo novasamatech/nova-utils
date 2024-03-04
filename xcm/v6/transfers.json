@@ -549,6 +549,20 @@
                 }
               },
               "type": "xcmpallet"
+            },
+            {
+              "destination": {
+                "chainId": "00dcb981df86429de8bbacf9803401f09485366c44efbf53af9ecfab03adc7e5",
+                "assetId": 0,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "1200618133"
+                  },
+                  "instructions": "xcmPalletTeleportDest"
+                }
+              },
+              "type": "xcmpallet-teleport"
             }
           ]
         }
@@ -2556,6 +2570,34 @@
                 }
               },
               "type": "xcmpallet"
+            },
+            {
+              "destination": {
+                "chainId": "dcf691b5a3fbe24adc99ddc959c0561b973e329b1aef4c4b22e7bb2ddecb4464",
+                "assetId": 0,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "394791750"
+                  },
+                  "instructions": "xcmPalletTeleportDest"
+                }
+              },
+              "type": "xcmpallet-teleport"
+            },
+            {
+              "destination": {
+                "chainId": "46ee89aa2eedd13e988962630ec9fb7565964cf5023bb351f2b6b25c1b68b0b2",
+                "assetId": 0,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "8799873000"
+                  },
+                  "instructions": "xcmPalletTeleportDest"
+                }
+              },
+              "type": "xcmpallet-teleport"
             }
           ]
         }
@@ -4715,6 +4757,34 @@
                 }
               },
               "type": "xtokens"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chainId": "46ee89aa2eedd13e988962630ec9fb7565964cf5023bb351f2b6b25c1b68b0b2",
+      "assets": [
+        {
+          "assetId": 0,
+          "assetLocation": "DOT",
+          "assetLocationPath": {
+            "type": "absolute"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+                "assetId": 0,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "4994684504"
+                  },
+                  "instructions": "xcmPalletTeleportDest"
+                }
+              },
+              "type": "xcmpallet-teleport"
             }
           ]
         }
