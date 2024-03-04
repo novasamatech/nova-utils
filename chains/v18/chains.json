@@ -341,7 +341,7 @@
             },
             {
                 "assetId": 1,
-                "symbol": "RMRK",
+                "symbol": "RMRK (old)",
                 "precision": 10,
                 "priceId": "rmrk",
                 "type": "statemine",
@@ -500,7 +500,7 @@
             },
             {
                 "assetId": 3,
-                "symbol": "RMRK",
+                "symbol": "RMRK (old)",
                 "precision": 10,
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/RMRK.svg",
@@ -1331,7 +1331,7 @@
             },
             {
                 "assetId": 1,
-                "symbol": "xcRMRK",
+                "symbol": "xcRMRK (old)",
                 "precision": 10,
                 "priceId": "rmrk",
                 "type": "statemine",
@@ -1873,7 +1873,7 @@
             },
             {
                 "assetId": 2,
-                "symbol": "RMRK",
+                "symbol": "RMRK (old)",
                 "precision": 10,
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/RMRK.svg",
@@ -5767,13 +5767,13 @@
     {
         "chainId": "e7e0962324a3b86c83404dbea483f25fb5dab4c224791c81b756cfc948006174",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "OriginTrail Parachain",
+        "name": "NeuroWeb",
         "assets": [
             {
                 "assetId": 0,
-                "symbol": "OTP",
+                "symbol": "NEURO",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/OriginTrail.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/NEURO.svg"
             },
             {
                 "assetId": 1,
@@ -5791,6 +5791,10 @@
             {
                 "url": "wss://parachain-rpc.origin-trail.network",
                 "name": "TraceLabs node"
+            },
+            {
+                "url": "wss://origintrail-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -5808,7 +5812,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/OriginTrail.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/NeuroWeb.svg",
         "addressPrefix": 101,
         "additional": {
             "feeViaRuntimeCall": true
@@ -5932,6 +5936,46 @@
                     "currencyIdScale": "0x0903",
                     "currencyIdType": "bifrost_primitives.currency.CurrencyId",
                     "existentialDeposit": "10000000000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 9,
+                "symbol": "vsDOT",
+                "precision": 10,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vsDOT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0a00",
+                    "currencyIdType": "bifrost_primitives.currency.CurrencyId",
+                    "existentialDeposit": "1000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 10,
+                "symbol": "MANTA",
+                "precision": 18,
+                "priceId": "manta-network",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/MANTA.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0808",
+                    "currencyIdType": "bifrost_primitives.currency.CurrencyId",
+                    "existentialDeposit": "10000000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 11,
+                "symbol": "vMANTA",
+                "precision": 18,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vMANTA.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0908",
+                    "currencyIdType": "bifrost_primitives.currency.CurrencyId",
+                    "existentialDeposit": "10000000000000",
                     "transfersEnabled": true
                 }
             }
@@ -6179,7 +6223,7 @@
             },
             {
                 "assetId": 5,
-                "symbol": "RMRK",
+                "symbol": "RMRK (old)",
                 "precision": 10,
                 "priceId": "rmrk",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/RMRK.svg",

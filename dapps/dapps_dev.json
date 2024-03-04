@@ -45,7 +45,8 @@
       "id": "test"
     }
   ],
-  "dapps": [{
+  "dapps": [
+    {
       "name": "dotappstore",
       "url": "https://dotappstore.com/",
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/ece2fff5cd559119395642f7f0aea6cd4d333af7/icons/dapps/color/dotappstore.svg",
@@ -162,14 +163,6 @@
       "url": "https://app.phala.network/",
       "categories": [
         "staking"
-      ]
-    },
-    {
-      "name": "Parallel Rewards Claim",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/color/Parallel-Heiko.svg",
-      "url": "https://crowdloan.parallel.fi/",
-      "categories": [
-        "crowdloans"
       ]
     },
     {
@@ -765,14 +758,6 @@
       ]
     },
     {
-      "name": "The Button",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Aleph_zero.svg",
-      "url": "https://the-button.azero.dev/play",
-      "categories": [
-        "gaming"
-      ]
-    },
-    {
       "name": "AZERO.ID",
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/AzeroID.svg",
       "url": "https://azero.id/",
@@ -820,6 +805,23 @@
       "categories": [
         "crowdloans",
         "governance"
+      ]
+    },
+    {
+      "name": "Ternoa HUB",
+      "url": "https://hub.ternoa.network/",
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/Ternoa.png",
+      "categories": [
+        "staking"
+      ]
+    },
+    {
+      "name": "DED Mine",
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/DED.svg",
+      "url": "https://ded.games/play/dedmine",
+      "categories": [
+        "gaming",
+        "nft"
       ]
     }
   ]
