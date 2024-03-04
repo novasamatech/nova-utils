@@ -5767,13 +5767,13 @@
     {
         "chainId": "e7e0962324a3b86c83404dbea483f25fb5dab4c224791c81b756cfc948006174",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "OriginTrail Parachain",
+        "name": "NeuroWeb",
         "assets": [
             {
                 "assetId": 0,
-                "symbol": "OTP",
+                "symbol": "NEURO",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/OriginTrail.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/NEURO.svg"
             },
             {
                 "assetId": 1,
@@ -5791,6 +5791,10 @@
             {
                 "url": "wss://parachain-rpc.origin-trail.network",
                 "name": "TraceLabs node"
+            },
+            {
+                "url": "wss://origintrail-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -5808,7 +5812,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/OriginTrail.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/NeuroWeb.svg",
         "addressPrefix": 101,
         "additional": {
             "feeViaRuntimeCall": true
