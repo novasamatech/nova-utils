@@ -341,7 +341,7 @@
             },
             {
                 "assetId": 1,
-                "symbol": "RMRK",
+                "symbol": "RMRK (old)",
                 "precision": 10,
                 "priceId": "rmrk",
                 "type": "statemine",
@@ -500,7 +500,7 @@
             },
             {
                 "assetId": 3,
-                "symbol": "RMRK",
+                "symbol": "RMRK (old)",
                 "precision": 10,
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/RMRK.svg",
@@ -1132,6 +1132,10 @@
                 "name": "Moonbeam Foundation node"
             },
             {
+                "url": "wss://moonbeam.public.curie.radiumblock.co/ws",
+                "name": "RadiumBlock node"
+            },
+            {
                 "url": "wss://moonbeam.public.blastapi.io",
                 "name": "Blast node"
             },
@@ -1327,7 +1331,7 @@
             },
             {
                 "assetId": 1,
-                "symbol": "xcRMRK",
+                "symbol": "xcRMRK (old)",
                 "precision": 10,
                 "priceId": "rmrk",
                 "type": "statemine",
@@ -1869,7 +1873,7 @@
             },
             {
                 "assetId": 2,
-                "symbol": "RMRK",
+                "symbol": "RMRK (old)",
                 "precision": 10,
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/RMRK.svg",
@@ -4903,6 +4907,45 @@
                     "existentialDeposit": "10000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 22,
+                "symbol": "4-Pool",
+                "precision": 18,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/4-Pool.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x64000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 23,
+                "symbol": "2-Pool",
+                "precision": 18,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/2-Pool.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x65000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 24,
+                "symbol": "2-Pool-Stbl",
+                "precision": 18,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/2-Pool-Stbl.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x66000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
@@ -4944,7 +4987,8 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/HydraDX.svg",
         "addressPrefix": 63,
         "options": [
-            "governance-v1"
+            "governance-v1",
+            "hydradx-swaps"
         ],
         "additional": {
             "feeViaRuntimeCall": true
@@ -5723,13 +5767,13 @@
     {
         "chainId": "e7e0962324a3b86c83404dbea483f25fb5dab4c224791c81b756cfc948006174",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "OriginTrail Parachain",
+        "name": "NeuroWeb",
         "assets": [
             {
                 "assetId": 0,
-                "symbol": "OTP",
+                "symbol": "NEURO",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/OriginTrail.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/NEURO.svg"
             },
             {
                 "assetId": 1,
@@ -5747,6 +5791,10 @@
             {
                 "url": "wss://parachain-rpc.origin-trail.network",
                 "name": "TraceLabs node"
+            },
+            {
+                "url": "wss://origintrail-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -5764,7 +5812,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/OriginTrail.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/NeuroWeb.svg",
         "addressPrefix": 101,
         "additional": {
             "feeViaRuntimeCall": true
@@ -5888,6 +5936,46 @@
                     "currencyIdScale": "0x0903",
                     "currencyIdType": "bifrost_primitives.currency.CurrencyId",
                     "existentialDeposit": "10000000000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 9,
+                "symbol": "vsDOT",
+                "precision": 10,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vsDOT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0a00",
+                    "currencyIdType": "bifrost_primitives.currency.CurrencyId",
+                    "existentialDeposit": "1000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 10,
+                "symbol": "MANTA",
+                "precision": 18,
+                "priceId": "manta-network",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/MANTA.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0808",
+                    "currencyIdType": "bifrost_primitives.currency.CurrencyId",
+                    "existentialDeposit": "10000000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 11,
+                "symbol": "vMANTA",
+                "precision": 18,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vMANTA.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0908",
+                    "currencyIdType": "bifrost_primitives.currency.CurrencyId",
+                    "existentialDeposit": "10000000000000",
                     "transfersEnabled": true
                 }
             }
@@ -6135,7 +6223,7 @@
             },
             {
                 "assetId": 5,
-                "symbol": "RMRK",
+                "symbol": "RMRK (old)",
                 "precision": 10,
                 "priceId": "rmrk",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/RMRK.svg",
@@ -7091,6 +7179,14 @@
                 "name": "RadiumBlock node"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---ajuna"
+                }
+            ]
+        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Ajuna.svg",
         "addressPrefix": 1328
     },
@@ -7513,6 +7609,14 @@
                 "event": "https://jur.io/explorer/jur/event/{event}"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---jur"
+                }
+            ]
+        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Jur.svg",
         "addressPrefix": 42
     },
