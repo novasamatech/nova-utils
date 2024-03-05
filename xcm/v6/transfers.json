@@ -707,20 +707,6 @@
                 }
               },
               "type": "xcmpallet"
-            },
-            {
-              "destination": {
-                "chainId": "cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
-                "assetId": 2,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "0"
-                  },
-                  "instructions": "xcmPalletDest"
-                }
-              },
-              "type": "xcmpallet"
             }
           ]
         }
