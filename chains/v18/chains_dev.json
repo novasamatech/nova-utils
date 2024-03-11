@@ -9859,7 +9859,7 @@
     },
     {
         "chainId": "0441383e31d1266a92b4cb2ddd4c2e3661ac476996db7e5844c52433b81fe782",
-        "parentId":  "e143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e",
+        "parentId": "e143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e",
         "name": "Westend Bridge Hub",
         "assets": [
             {
@@ -9927,5 +9927,34 @@
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polimec-plmc-staking",
             "defaultBlockTime": 12000
         }
+    },
+    {
+        "chainId": "ae1ca86c936aa252cdc45f4f436220567b2bbbcc4834f5b8f4191462baf19dfb",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Continuum",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "NUUM",
+                "priceId": "mnet-continuum",
+                "precision": 18,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/NUUM.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://continuum-rpc-1.metaverse.network/wss",
+                "name": "MNet node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://continuum.subscan.io/extrinsic/{hash}",
+                "account": "https://continuum.subscan.io/account/{address}"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Continuum.svg",
+        "addressPrefix": 268
     }
 ]
