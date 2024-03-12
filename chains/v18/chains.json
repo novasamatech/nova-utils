@@ -7622,7 +7622,7 @@
     },
     {
         "chainId": "3af4ff48ec76d2efc8476730f423ac07e25ad48f5f4c9dc39c778b164d808615",
-        "name": "Enjin",
+        "name": "Enjin Matrix",
         "assets": [
             {
                 "assetId": 0,
@@ -8037,5 +8037,37 @@
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Continuum.svg",
         "addressPrefix": 268
+    },
+    {
+        "chainId": "d8761d3c88f26dc12875c00d3165f7d67243d56fc85b4cf19937601a7916e5a9",
+        "name": "Enjin Relay",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "ENJ",
+                "precision": 18,
+                "priceId": "enjincoin",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/ENJ.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc.relay.blockchain.enjin.io",
+                "name": "Enjin node"
+            },
+            {
+                "url": "wss://enjin-relay-rpc.dwellir.com",
+                "name": "Dwellir node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://enjin.subscan.io/extrinsic/{hash}",
+                "account": "https://enjin.subscan.io/account/{address}"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Enjin.svg",
+        "addressPrefix": 2135
     }
 ]
