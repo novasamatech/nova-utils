@@ -4988,6 +4988,20 @@
                     "existentialDeposit": "7874015748",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 28,
+                "symbol": "USDT-Moonbeam",
+                "precision": 6,
+                "priceId": "tether",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x17000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "10000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
