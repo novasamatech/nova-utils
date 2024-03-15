@@ -4946,6 +4946,62 @@
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 25,
+                "symbol": "UNQ",
+                "precision": 18,
+                "priceId": "unique-network",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Unique.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x19000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1224384348939740000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 26,
+                "symbol": "NODL",
+                "precision": 11,
+                "priceId": "nodle-network",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Nodle.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x1a000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "109890109890",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 27,
+                "symbol": "CRU",
+                "precision": 12,
+                "priceId": "crust-network",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/CRU.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x1b000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "7874015748",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 28,
+                "symbol": "USDT-Moonbeam",
+                "precision": 6,
+                "priceId": "tether",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x17000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "10000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
