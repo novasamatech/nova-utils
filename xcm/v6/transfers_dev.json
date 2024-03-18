@@ -2596,6 +2596,29 @@
               "type": "xtokens"
             }
           ]
+        },
+        {
+          "assetId": 23,
+          "assetLocation": "USDC-Statemint",
+          "assetLocationPath": {
+            "type": "absolute"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+                "assetId": 2,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "17500000"
+                  },
+                  "instructions": "xtokensDest"
+                }
+              },
+              "type": "xtokens"
+            }
+          ]
         }
       ]
     },
@@ -4296,6 +4319,20 @@
                   "mode": {
                     "type": "proportional",
                     "value": "47469788"
+                  },
+                  "instructions": "xcmPalletDest"
+                }
+              },
+              "type": "xcmpallet"
+            },
+            {
+              "destination": {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "assetId": 23,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "25188744"
                   },
                   "instructions": "xcmPalletDest"
                 }
