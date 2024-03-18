@@ -5738,6 +5738,20 @@
                     "existentialDeposit": "0",
                     "transfersEnabled": false
                 }
+            },
+            {
+                "assetId": 14,
+                "symbol": "BNC",
+                "precision": 12,
+                "priceId": "bifrost-native-coin",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Bifrost.svg",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x010b000000",
+                    "currencyIdType": "interbtc_primitives.CurrencyId",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": false
+                }
             }
         ],
         "nodes": [
