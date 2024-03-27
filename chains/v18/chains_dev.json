@@ -5544,6 +5544,32 @@
                     "existentialDeposit": "10000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 29,
+                "symbol": "DED",
+                "precision": 10,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/DED.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x53420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 30,
+                "symbol": "PINK",
+                "precision": 10,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/PINK.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x55420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
