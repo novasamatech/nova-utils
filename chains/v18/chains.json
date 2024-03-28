@@ -7752,6 +7752,13 @@
                 "name": "Polimec node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Statescan",
+                "account": "https://polimec.statescan.io/#/accounts/{address}",
+                "event": "https://polimec.statescan.io/#/events/{event}"
+            }
+        ],
         "externalApi": {
             "history": [
                 {
