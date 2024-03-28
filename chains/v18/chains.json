@@ -66,11 +66,6 @@
                 "account": "https://polkadot.subscan.io/account/{address}"
             },
             {
-                "name": "Polkascan",
-                "account": "https://polkascan.io/polkadot/account/{address}",
-                "event": "https://polkascan.io/polkadot/event/{event}"
-            },
-            {
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
             }
@@ -184,11 +179,6 @@
                 "name": "Subscan",
                 "extrinsic": "https://kusama.subscan.io/extrinsic/{hash}",
                 "account": "https://kusama.subscan.io/account/{address}"
-            },
-            {
-                "name": "Polkascan",
-                "account": "https://polkascan.io/kusama/account/{address}",
-                "event": "https://polkascan.io/kusama/event/{event}"
             },
             {
                 "name": "Sub.ID",
@@ -7485,13 +7475,6 @@
             {
                 "url": "wss://jur-archive-mainnet-1.simplystaking.xyz/VX68C07AR4K2/ws",
                 "name": "Simplystaking node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Polkascan",
-                "account": "https://jur.io/explorer/jur/account/{address}",
-                "event": "https://jur.io/explorer/jur/event/{event}"
             }
         ],
         "externalApi": {
