@@ -9,7 +9,7 @@
 |   5 | Astar Portal                         | https://portal.astar.network/                        | bridge,staking,evm            |
 |   6 | Awesome Ajuna Avatars (Desktop mode) | https://aaa.ajuna.io/                                | nft,gaming                    |
 |   7 | Basilisk Snek Swap                   | https://app.basilisk.cloud/#/trade                   | bridge,dex                    |
-|   8 | Beamswap                             | https://app.beamswap.io/exchange/swap                | bridge,dex,staking,evm        |
+|   8 | Beamswap                             | https://app.beamswap.io/exchange/braindex            | bridge,dex,staking,evm        |
 |   9 | Bifrost App                          | https://bifrost.app/                                 | bridge,crowdloans,dex,staking |
 |  10 | Bit.Country Pioneer Metaverse        | https://pioneer.bit.country/                         | nft,staking,gaming            |
 |  11 | DED Mine                             | https://ded.games/play/dedmine                       | gaming,nft                    |

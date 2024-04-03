@@ -118,7 +118,8 @@
             "crowdloans",
             "governance",
             "proxy",
-            "fullSyncByDefault"
+            "fullSyncByDefault",
+            "pushSupport"
         ],
         "additional": {
             "themeColor": "#E6007A",
@@ -242,7 +243,8 @@
             "crowdloans",
             "governance",
             "proxy",
-            "fullSyncByDefault"
+            "fullSyncByDefault",
+            "pushSupport"
         ],
         "additional": {
             "themeColor": "#1F78FF",
@@ -1108,6 +1110,7 @@
                 "assetId": 21,
                 "symbol": "xcvGLMR",
                 "precision": 18,
+                "priceId": "voucher-glmr",
                 "type": "statemine",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vGLMR.svg",
                 "typeExtras": {
@@ -1123,6 +1126,17 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/MANTA.svg",
                 "typeExtras": {
                     "assetId": "166446646689194205559791995948102903873"
+                }
+            },
+            {
+                "assetId": 23,
+                "symbol": "xcUSDC",
+                "precision": 6,
+                "type": "statemine",
+                "priceId": "usd-coin",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDC.svg",
+                "typeExtras": {
+                    "assetId": "166377000701797186346254371275954761085"
                 }
             }
         ],
@@ -1519,6 +1533,7 @@
                 "assetId": 18,
                 "symbol": "xcvKSM",
                 "precision": 12,
+                "priceId": "voucher-ksm",
                 "type": "statemine",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vKSM.svg",
                 "typeExtras": {
@@ -1773,6 +1788,7 @@
                 "assetId": 11,
                 "symbol": "vKSM",
                 "precision": 12,
+                "priceId": "voucher-ksm",
                 "type": "statemine",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vKSM.svg",
                 "typeExtras": {
@@ -1986,6 +2002,7 @@
                 "assetId": 10,
                 "symbol": "vKSM",
                 "precision": 12,
+                "priceId": "voucher-ksm",
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vKSM.svg",
                 "typeExtras": {
@@ -2717,7 +2734,13 @@
                 "symbol": "KILT",
                 "priceId": "kilt-protocol",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/KILT.svg",
-                "precision": 15
+                "precision": 15,
+                "buyProviders": {
+                    "banxa": {
+                        "coinType": "KILT",
+                        "blockchain": "KILT"
+                    }
+                }
             }
         ],
         "nodes": [
@@ -2835,7 +2858,7 @@
                 "precision": 18,
                 "priceId": "dai",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/DAI.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/DAI-Karura.svg",
                 "typeExtras": {
                     "assetId": "15"
                 }
@@ -2846,7 +2869,7 @@
                 "precision": 6,
                 "priceId": "usd-coin",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDC.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDC-Karura.svg",
                 "typeExtras": {
                     "assetId": "16"
                 }
@@ -3035,7 +3058,13 @@
                 "symbol": "ACA",
                 "priceId": "acala",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Acala.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Acala.svg",
+                "buyProviders": {
+                    "banxa": {
+                        "coinType": "ACA",
+                        "blockchain": "ACA"
+                    }
+                }
             },
             {
                 "assetId": 1,
@@ -3820,6 +3849,26 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDC.svg",
                 "typeExtras": {
                     "assetId": "1337"
+                }
+            },
+            {
+                "assetId": 3,
+                "symbol": "DED",
+                "precision": 10,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/DED.svg",
+                "typeExtras": {
+                    "assetId": "30"
+                }
+            },
+            {
+                "assetId": 4,
+                "symbol": "PINK",
+                "precision": 10,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/PINK.svg",
+                "typeExtras": {
+                    "assetId": "23"
                 }
             }
         ],
@@ -4613,7 +4662,13 @@
                 "symbol": "HDX",
                 "precision": 12,
                 "priceId": "hydradx",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/HydraDX.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/HydraDX.svg",
+                "buyProviders": {
+                    "banxa": {
+                        "coinType": "HDX",
+                        "blockchain": "HDX"
+                    }
+                }
             },
             {
                 "assetId": 1,
@@ -4635,7 +4690,7 @@
                 "precision": 18,
                 "priceId": "dai",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/DAI.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/DAI-Acala.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x02000000",
                     "currencyIdType": "u32",
@@ -4774,7 +4829,7 @@
                 "precision": 18,
                 "priceId": "dai",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/DAI.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/DAI-Moonbeam.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x12000000",
                     "currencyIdType": "u32",
@@ -4995,11 +5050,37 @@
                 "precision": 6,
                 "priceId": "tether",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDT.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDT-Moonbeam.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x17000000",
                     "currencyIdType": "u32",
                     "existentialDeposit": "10000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 29,
+                "symbol": "DED",
+                "precision": 10,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/DED.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x53420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 30,
+                "symbol": "PINK",
+                "precision": 10,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/PINK.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x55420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
                     "transfersEnabled": true
                 }
             }
@@ -5618,7 +5699,8 @@
             "defaultBlockTime": 1000
         },
         "options": [
-            "fullSyncByDefault"
+            "fullSyncByDefault",
+            "pushSupport"
         ]
     },
     {
@@ -5814,6 +5896,9 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadex.svg",
         "addressPrefix": 88,
+        "options": [
+            "governance-v1"
+        ],
         "additional": {
             "themeColor": "#1F78FF",
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polkadex-pdex-staking",
@@ -5884,7 +5969,13 @@
                 "symbol": "BNC",
                 "precision": 12,
                 "priceId": "bifrost-native-coin",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Bifrost.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Bifrost.svg",
+                "buyProviders": {
+                    "banxa": {
+                        "coinType": "BNC",
+                        "blockchain": "BNCPOLKA"
+                    }
+                }
             },
             {
                 "assetId": 1,
@@ -5960,6 +6051,7 @@
                 "assetId": 6,
                 "symbol": "vGLMR",
                 "precision": 18,
+                "priceId": "voucher-glmr",
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vGLMR.svg",
                 "typeExtras": {
@@ -6322,6 +6414,7 @@
                 "assetId": 8,
                 "symbol": "vKSM",
                 "precision": 12,
+                "priceId": "voucher-ksm",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vKSM.svg",
                 "type": "orml",
                 "typeExtras": {
@@ -7638,7 +7731,7 @@
     },
     {
         "chainId": "58d1393b47b11707978fbc07e77d7b6f7d9aa88d207dc008a52385f7dba6156a",
-        "name": "Jur",
+        "name": "Jur (PAUSED)",
         "assets": [
             {
                 "assetId": 0,
