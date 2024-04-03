@@ -3192,6 +3192,19 @@
                     "existentialDeposit": "10000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 15,
+                "symbol": "PINK",
+                "precision": 10,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/PINK.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x050d00",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "1000000000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
