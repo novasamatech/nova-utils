@@ -411,7 +411,7 @@
         "instructions": "xtokensReserve"
       }
     },
-    "DED-Statemint": {
+    "DED": {
       "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
       "multiLocation": {
         "parachainId": 1000,
@@ -4355,6 +4355,29 @@
               "type": "xcmpallet"
             }
           ]
+        },
+        {
+          "assetId": 3,
+          "assetLocation": "DED",
+          "assetLocationPath": {
+            "type": "relative"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+                "assetId": 29,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "22000"
+                  },
+                  "instructions": "xtokensDest"
+                }
+              },
+              "type": "xtokens"
+            }
+          ]
         }
       ]
     },
@@ -7145,6 +7168,29 @@
                   "mode": {
                     "type": "proportional",
                     "value": "800000000000"
+                  },
+                  "instructions": "xtokensDest"
+                }
+              },
+              "type": "xtokens"
+            }
+          ]
+        },
+        {
+          "assetId": 29,
+          "assetLocation": "DED",
+          "assetLocationPath": {
+            "type": "absolute"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+                "assetId": 3,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "125000000"
                   },
                   "instructions": "xtokensDest"
                 }
