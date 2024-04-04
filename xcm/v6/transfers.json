@@ -7434,29 +7434,6 @@
               "type": "xtokens"
             }
           ]
-        },
-        {
-          "assetId": 2,
-          "assetLocation": "USDT-Statemine",
-          "assetLocationPath": {
-            "type": "absolute"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
-                "assetId": 7,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "902213"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            }
-          ]
         }
       ]
     }
