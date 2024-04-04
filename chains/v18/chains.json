@@ -3259,6 +3259,19 @@
                     "existentialDeposit": "10000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 15,
+                "symbol": "PINK",
+                "precision": 10,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/PINK.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x050d00",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "1000000000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
@@ -5856,6 +5869,37 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/interBTC.svg",
                 "typeExtras": {
                     "assetId": "226557799181424065994173367616174607641"
+                }
+            },
+            {
+                "assetId": 6,
+                "symbol": "DED",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/DED.svg",
+                "typeExtras": {
+                    "assetId": "119367686984583275840673742485354142551"
+                }
+            },
+            {
+                "assetId": 7,
+                "symbol": "PINK",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/PINK.svg",
+                "typeExtras": {
+                    "assetId": "339306133874233608313826294843504252047"
+                }
+            },
+            {
+                "assetId": 8,
+                "symbol": "GLMR",
+                "precision": 12,
+                "priceId": "moonbeam",
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Moonbeam.svg",
+                "typeExtras": {
+                    "assetId": "182269558229932594457975666948556356791"
                 }
             }
         ],
