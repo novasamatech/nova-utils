@@ -1165,6 +1165,12 @@
                     "type": "polkassembly",
                     "url": "https://api.moonbeam.polkassembly.network/v1/graphql"
                 }
+            ],
+            "governance-delegations": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonbeam-gov"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Moonbeam.svg",
