@@ -1165,13 +1165,19 @@
                     "type": "polkassembly",
                     "url": "https://api.moonbeam.polkassembly.network/v1/graphql"
                 }
+            ],
+            "governance-delegations": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonbeam-gov"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Moonbeam.svg",
         "addressPrefix": 1284,
         "options": [
             "ethereumBased",
-            "governance-v1"
+            "governance"
         ],
         "additional": {
             "themeColor": "#10B6B1",
@@ -1613,8 +1619,7 @@
         "addressPrefix": 1285,
         "options": [
             "ethereumBased",
-            "governance",
-            "governance-v1"
+            "governance"
         ],
         "additional": {
             "themeColor": "#E4A228",
