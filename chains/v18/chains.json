@@ -8023,5 +8023,31 @@
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Enjin.svg",
         "addressPrefix": 2135
+    },
+    {
+        "chainId": "1d73b9f5dc392744e0dee00a6d6254fcfa2305386cceba60315894fa4807053a",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Curio",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "CGT",
+                "precision": 18,
+                "priceId": "curio-governance",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/CGT.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://archive.parachain.curioinvest.com",
+                "name": "Curio node"
+            },
+            {
+                "url": "wss://parachain.curioinvest.com/",
+                "name": "Curio node 2"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Curio.svg",
+        "addressPrefix": 777
     }
 ]
