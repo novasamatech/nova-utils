@@ -27,12 +27,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://api-polkadot-full.dwellir.com/{DWELLIR_API_KEY}",
-                "name": "Nova Dwellir node"
-            },
-            {
                 "url": "wss://polkadot.public.curie.radiumblock.co/ws",
                 "name": "Radium node"
+            },
+            {
+                "url": "wss://api-polkadot-full.dwellir.com/{DWELLIR_API_KEY}",
+                "name": "Nova Dwellir node"
             },
             {
                 "url": "wss://dot-rpc.stakeworld.io",
