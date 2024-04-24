@@ -10318,6 +10318,14 @@
                 "name": "Parity node"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-mythos"
+                }
+            ]
+        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Mythos.svg",
         "addressPrefix": 29972,
         "options": [
