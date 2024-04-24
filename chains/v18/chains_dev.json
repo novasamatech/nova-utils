@@ -4478,7 +4478,11 @@
         "addressPrefix": 0,
         "options": [
             "swap-hub"
-        ]
+        ],
+        "additional": {
+            "relaychainAsNative": true,
+            "feeViaRuntimeCall": true
+        }
     },
     {
         "chainId": "631ccc82a078481584041656af292834e1ae6daab61d2875b4dd0c14bb9b17bc",
