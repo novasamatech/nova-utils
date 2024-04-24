@@ -10259,5 +10259,36 @@
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Curio.svg",
         "addressPrefix": 777
+    },
+    {
+        "chainId": "6f09966420b2608d1947ccfb0f2a362450d1fc7fd902c29b67c906eaa965a7ae",
+        "name": "Avail Goldberg Testnet",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "AVL",
+                "precision": 18,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AVL.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc-testnet.avail.tools/ws",
+                "name": "Avail Tool Testnet"
+            },
+            {
+                "url": "wss://goldberg-testnet-rpc.avail.tools/ws",
+                "name": "Goldberg testnet"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://avail-testnet.subscan.io/extrinsic/{hash}",
+                "account": "https://avail-testnet.subscan.io/account/{address}"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/AVAL.svg",
+        "addressPrefix": 42
     }
 ]
