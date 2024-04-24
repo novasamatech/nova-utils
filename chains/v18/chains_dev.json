@@ -10293,5 +10293,35 @@
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Avail_Testnet.svg",
         "addressPrefix": 42
+    },
+    {
+        "chainId": "f6ee56e9c5277df5b4ce6ae9983ee88f3cbed27d31beeb98f9f84f997a1ab0b9",
+        "name": "Mythos",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "MYTH",
+                "precision": 18,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/MYTH.svg",
+                "staking": [
+                    "relaychain"
+                ]
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc-testnet.avail.tools/ws",
+                "name": "Avail Tool Testnet"
+            },
+            {
+                "url": "wss://goldberg-testnet-rpc.avail.tools/ws",
+                "name": "Goldberg testnet"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/color/Mythos.svg",
+        "addressPrefix": 29972,
+        "options": [
+            "ethereumBased"
+        ]
     }
 ]
