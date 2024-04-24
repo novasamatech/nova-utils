@@ -8069,5 +8069,29 @@
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Curio.svg",
         "addressPrefix": 777
+    },
+    {
+        "chainId": "f6ee56e9c5277df5b4ce6ae9983ee88f3cbed27d31beeb98f9f84f997a1ab0b9",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Mythos",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "MYTH",
+                "precision": 18,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/MYTH.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://polkadot-mythos-rpc.polkadot.io",
+                "name": "Parity node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Mythos.svg",
+        "addressPrefix": 29972,
+        "options": [
+            "ethereumBased"
+        ]
     }
 ]
