@@ -10289,8 +10289,8 @@
         "addressPrefix": 777
     },
     {
-        "chainId": "6f09966420b2608d1947ccfb0f2a362450d1fc7fd902c29b67c906eaa965a7ae",
-        "name": "Avail Goldberg Testnet",
+        "chainId": "d3d2f3a3495dc597434a99d7d449ebad6616db45e4e4f178f31cc6fa14378b70",
+        "name": "Avail Turing Testnet",
         "assets": [
             {
                 "assetId": 0,
@@ -10305,19 +10305,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc-testnet.avail.tools/ws",
-                "name": "Avail Tool Testnet"
-            },
-            {
-                "url": "wss://goldberg-testnet-rpc.avail.tools/ws",
-                "name": "Goldberg testnet"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://avail-testnet.subscan.io/extrinsic/{hash}",
-                "account": "https://avail-testnet.subscan.io/account/{address}"
+                "url": "wss://turing-rpc.avail.so/ws",
+                "name": "Turing node"
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Avail_Testnet.svg",
