@@ -4434,6 +4434,16 @@
                 "typeExtras": {
                     "assetId": "42069"
                 }
+            },
+            {
+                "assetId": 7,
+                "symbol": "GABE",
+                "precision": 20,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/GABE.svg",
+                "typeExtras": {
+                    "assetId": "69420"
+                }
             }
         ],
         "nodes": [
@@ -5462,6 +5472,19 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/DOTA.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x66420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 33,
+                "symbol": "GABE",
+                "precision": 20,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/GABE.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x7e420f00",
                     "currencyIdType": "u32",
                     "existentialDeposit": "1",
                     "transfersEnabled": true
