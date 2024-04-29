@@ -5005,6 +5005,20 @@
                     "existentialDeposit": "1",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 34,
+                "symbol": "KILT",
+                "precision": 15,
+                "type": "orml",
+                "priceId": "kilt-protocol",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/KILT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x1c000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "21358393848783",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
