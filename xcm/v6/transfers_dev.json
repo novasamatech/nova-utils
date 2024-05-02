@@ -425,6 +425,19 @@
         },
         "instructions": "xtokensReserve"
       }
+    },
+    "KILT": {
+      "chainId": "411f057b9107718c9624d6aa4a3f23c1653898297f3d4d529d9bb6511a39dd21",
+      "multiLocation": {
+        "parachainId": 2086
+      },
+      "reserveFee": {
+        "mode": {
+          "type": "proportional",
+          "value": "1"
+        },
+        "instructions": "xtokensReserve"
+      }
     }
   },
   "instructions": {
