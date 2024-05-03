@@ -3808,6 +3808,16 @@
                 "typeExtras": {
                     "assetId": "69420"
                 }
+            },
+            {
+                "assetId": 8,
+                "symbol": "WUD",
+                "precision": 10,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/WUD.svg",
+                "typeExtras": {
+                    "assetId": "31337"
+                }
             }
         ],
         "nodes": [
@@ -5017,6 +5027,19 @@
                     "currencyIdScale": "0x1c000000",
                     "currencyIdType": "u32",
                     "existentialDeposit": "21358393848783",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 35,
+                "symbol": "WUD",
+                "precision": 10,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/WUD.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x95420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
                     "transfersEnabled": true
                 }
             }
