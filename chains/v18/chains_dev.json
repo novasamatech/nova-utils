@@ -10331,7 +10331,7 @@
         "assets": [
             {
                 "assetId": 0,
-                "symbol": "AVL",
+                "symbol": "AVAIL",
                 "precision": 18,
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AVL.svg",
                 "staking": [
@@ -10346,12 +10346,23 @@
                 "name": "Turing node"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---avail"
+                }
+            ]
+        },
         "types": {
             "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/avail_turing.json",
             "overridesCommon": true
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Avail_Testnet.svg",
-        "addressPrefix": 42
+        "addressPrefix": 42,
+        "additional": {
+            "themeColor": "#58C8F6"
+        }
     },
     {
         "chainId": "f6ee56e9c5277df5b4ce6ae9983ee88f3cbed27d31beeb98f9f84f997a1ab0b9",
