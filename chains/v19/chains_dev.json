@@ -76,13 +76,13 @@
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadot"
+                    "url": "http://localhost:3000"
                 }
             ],
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadot"
+                    "url": "http://localhost:3000"
                 }
             ],
             "crowdloans": [
