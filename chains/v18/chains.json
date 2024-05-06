@@ -27,6 +27,10 @@
         ],
         "nodes": [
             {
+                "url": "wss://apps-rpc.polkadot.io",
+                "name": "Public node"
+            },
+            {
                 "url": "wss://api-polkadot-full.dwellir.com/{DWELLIR_API_KEY}",
                 "name": "Nova Dwellir node"
             },
@@ -145,6 +149,10 @@
             }
         ],
         "nodes": [
+            {
+                "url": "wss://apps-kusama-rpc.polkadot.io",
+                "name": "Public node"
+            },
             {
                 "url": "wss://kusama-rpc.dwellir.com",
                 "name": "Dwellir node"
