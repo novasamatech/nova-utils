@@ -27,6 +27,10 @@
         ],
         "nodes": [
             {
+                "url": "wss://rpc-polkadot.novasamatech.org",
+                "name": "Novasama node"
+            },
+            {
                 "url": "wss://apps-rpc.polkadot.io",
                 "name": "Public node"
             },
@@ -149,6 +153,10 @@
             }
         ],
         "nodes": [
+            {
+                "url": "wss://rpc-kusama.novasamatech.org",
+                "name": "Novasama node"
+            },
             {
                 "url": "wss://apps-kusama-rpc.polkadot.io",
                 "name": "Public node"
