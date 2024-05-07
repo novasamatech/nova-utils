@@ -10398,6 +10398,13 @@
                 "name": "Parity node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://mythos.subscan.io/extrinsic/{hash}",
+                "account": "https://mythos.subscan.io/account/{address}"
+            }
+        ],
         "externalApi": {
             "history": [
                 {
