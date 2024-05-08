@@ -5350,12 +5350,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://eden-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
                 "url": "wss://nodle-parachain.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
+            },
+            {
+                "url": "wss://nodle-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "explorers": [
