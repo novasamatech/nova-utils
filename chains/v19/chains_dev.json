@@ -10418,5 +10418,26 @@
         "options": [
             "ethereumBased"
         ]
+    },
+    {
+        "chainId": "ce7681fb12aa8f7265d229a9074be0ea1d5e99b53eedcec2deade43857901808",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Acurast Canary",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "сACU",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/cACU.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://acurast-canarynet-ws.prod.gke.papers.tech",
+                "name": "Acurast node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Acurast_Canary.svg",
+        "addressPrefix": 42
     }
 ]
