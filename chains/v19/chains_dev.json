@@ -4470,6 +4470,26 @@
                 "typeExtras": {
                     "assetId": "31337"
                 }
+            },
+                        {
+                "assetId": 9,
+                "symbol": "WIFD",
+                "precision": 10,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/WIFD.svg",
+                "typeExtras": {
+                    "assetId": "17"
+                }
+            },
+                        {
+                "assetId": 10,
+                "symbol": "BNDT",
+                "precision": 10,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/BNDT.svg",
+                "typeExtras": {
+                    "assetId": "8889"
+                }
             }
         ],
         "nodes": [
@@ -5538,6 +5558,32 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/WUD.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x95420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
+            },
+                        {
+                "assetId": 36,
+                "symbol": "WIFD",
+                "precision": 10,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/WIFD.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x92420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
+            },
+                        {
+                "assetId": 37,
+                "symbol": "BNDT",
+                "precision": 10,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/BNDT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x9b420f00",
                     "currencyIdType": "u32",
                     "existentialDeposit": "1",
                     "transfersEnabled": true
