@@ -7101,16 +7101,16 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc-parachain.bajun.network",
-                "name": "AjunaNetwork node"
-            },
-            {
                 "url": "wss://bajun.public.curie.radiumblock.co/ws",
                 "name": "Radium node"
             },
-            {
+                        {
                 "url": "wss://bajun.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
+            },
+            {
+                "url": "wss://rpc-parachain.bajun.network",
+                "name": "AjunaNetwork node"
             }
         ],
         "explorers": [
