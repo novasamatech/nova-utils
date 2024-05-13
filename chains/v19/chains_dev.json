@@ -10489,5 +10489,36 @@
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Hyperbridge.svg",
         "addressPrefix": 42
+    },
+    {
+        "chainId": "128ea318539862c0a06b745981300d527c1041c6f3388a8c49565559e3ea3d10",
+        "name": "Avail",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "AVAIL",
+                "precision": 18,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AVL.svg",
+                "staking": [
+                    "relaychain",
+                    "nomination-pools"
+                ]
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://zeref-api.slowops.xyz/ws",
+                "name": "Turing node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/avail.json",
+            "overridesCommon": true
+        },
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Avail.svg",
+        "addressPrefix": 42,
+        "additional": {
+            "themeColor": "#58C8F6"
+        }
     }
 ]
