@@ -10439,5 +10439,31 @@
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Acurast_Canary.svg",
         "addressPrefix": 42
+    },
+    {
+        "chainId": "c710a5f16adc17bcd212cff0aedcbf1c1212a043cdc0fb2dcba861efe5305b01",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Kreivo",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "KSM",
+                "precision": 12,
+                "priceId": "kusama",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Kusama.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://kreivo.io/",
+                "name": "Virto node"
+            },
+            {
+                "url": "wss://kreivo.kippu.rocks/",
+                "name": "Kippu node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kreivo.svg",
+        "addressPrefix": 2
     }
 ]
