@@ -27,6 +27,14 @@
         ],
         "nodes": [
             {
+                "url": "wss://rpc-polkadot.novasamatech.org",
+                "name": "Novasama node"
+            },
+            {
+                "url": "wss://apps-rpc.polkadot.io",
+                "name": "Public node"
+            },
+            {
                 "url": "wss://api-polkadot-full.dwellir.com/{DWELLIR_API_KEY}",
                 "name": "Nova Dwellir node"
             },
@@ -145,6 +153,14 @@
             }
         ],
         "nodes": [
+            {
+                "url": "wss://rpc-kusama.novasamatech.org",
+                "name": "Novasama node"
+            },
+            {
+                "url": "wss://apps-kusama-rpc.polkadot.io",
+                "name": "Public node"
+            },
             {
                 "url": "wss://kusama-rpc.dwellir.com",
                 "name": "Dwellir node"
@@ -5334,12 +5350,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://eden-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
                 "url": "wss://nodle-parachain.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
+            },
+            {
+                "url": "wss://nodle-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -8149,10 +8165,38 @@
                 "name": "Parity node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://mythos.subscan.io/extrinsic/{hash}",
+                "account": "https://mythos.subscan.io/account/{address}"
+            }
+        ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Mythos.svg",
         "addressPrefix": 29972,
         "options": [
             "ethereumBased"
         ]
+    },
+    {
+        "chainId": "ce7681fb12aa8f7265d229a9074be0ea1d5e99b53eedcec2deade43857901808",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Acurast Canary",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "cACU",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/cACU.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://acurast-canarynet-ws.prod.gke.papers.tech",
+                "name": "Acurast node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Acurast_Canary.svg",
+        "addressPrefix": 42
     }
 ]
