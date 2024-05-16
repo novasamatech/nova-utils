@@ -9198,7 +9198,8 @@
         "nodes": [
             {
                 "url": "wss://kusama-people-rpc.polkadot.io",
-                "name": "Parity node"
+                "name": "Parity node",
+                "features": ["noTls12"]
             },
             {
                 "url": "wss://ksm-rpc.stakeworld.io/people",
@@ -10432,7 +10433,8 @@
         "nodes": [
             {
                 "url": "wss://polkadot-mythos-rpc.polkadot.io",
-                "name": "Parity node"
+                "name": "Parity node",
+                "features": ["noTls12"]
             }
         ],
         "explorers": [
