@@ -4353,6 +4353,20 @@
                 }
               },
               "type": "xcmpallet"
+            },
+            {
+              "destination": {
+                "chainId": "5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86",
+                "assetId": 3,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "25000000"
+                  },
+                  "instructions": "xcmPalletDest"
+                }
+              },
+              "type": "xcmpallet"
             }
           ]
         }
@@ -7462,6 +7476,29 @@
               "destination": {
                 "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
                 "assetId": 1,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "17500000"
+                  },
+                  "instructions": "xtokensDest"
+                }
+              },
+              "type": "xtokens"
+            }
+          ]
+        },
+        {
+          "assetId": 3,
+          "assetLocation": "USDC-Statemint",
+          "assetLocationPath": {
+            "type": "absolute"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+                "assetId": 2,
                 "fee": {
                   "mode": {
                     "type": "proportional",
