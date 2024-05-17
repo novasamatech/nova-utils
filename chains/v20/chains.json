@@ -446,6 +446,33 @@
         }
     },
     {
+        "chainId": "c1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Kusama People",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "KSM",
+                "precision": 12,
+                "priceId": "kusama",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Kusama.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://kusama-people-rpc.polkadot.io",
+                "name": "Parity node",
+                "features": ["noTls12"]
+            },
+            {
+                "url": "wss://ksm-rpc.stakeworld.io/people",
+                "name": "Stakeworld node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_Bridge_Hub.svg",
+        "addressPrefix": 2
+    },
+    {
         "chainId": "baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Karura",
@@ -8169,7 +8196,8 @@
         "nodes": [
             {
                 "url": "wss://polkadot-mythos-rpc.polkadot.io",
-                "name": "Parity node"
+                "name": "Parity node",
+                "features": ["noTls12"]
             }
         ],
         "explorers": [
