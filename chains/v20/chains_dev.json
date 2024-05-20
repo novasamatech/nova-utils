@@ -245,7 +245,8 @@
         "additional": {
             "themeColor": "#1F78FF",
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/kusama-ksm-staking",
-            "stakingMaxElectingVoters": 12500
+            "stakingMaxElectingVoters": 12500,
+            "identityChain": "c1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f"
         }
     },
     {
@@ -6176,7 +6177,8 @@
         "additional": {
             "themeColor": "#10B6B1",
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/aleph-zero-azero-staking",
-            "defaultBlockTime": 1000
+            "defaultBlockTime": 1000,
+            "feeViaRuntimeCall": true
         },
         "options": [
             "fullSyncByDefault",
@@ -9181,6 +9183,33 @@
         "addressPrefix": 0
     },
     {
+        "chainId": "c1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Kusama People",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "KSM",
+                "precision": 12,
+                "priceId": "kusama",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Kusama.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://kusama-people-rpc.polkadot.io",
+                "name": "Parity node",
+                "features": ["noTls12"]
+            },
+            {
+                "url": "wss://ksm-rpc.stakeworld.io/people",
+                "name": "Stakeworld node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_People.svg",
+        "addressPrefix": 2
+    },
+    {
         "chainId": "67221cd96c1551b72d55f65164d6a39f31b570c77a05c90e31931b0e2f379e13",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Amplitude Foucoco",
@@ -10404,7 +10433,8 @@
         "nodes": [
             {
                 "url": "wss://polkadot-mythos-rpc.polkadot.io",
-                "name": "Parity node"
+                "name": "Parity node",
+                "features": ["noTls12"]
             }
         ],
         "explorers": [
