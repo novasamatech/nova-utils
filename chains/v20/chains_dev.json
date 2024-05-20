@@ -10570,5 +10570,28 @@
             "themeColor": "#58C8F6",
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/avail-avail-staking"
         }
-    }
+    },
+    {
+        "chainId": "d67c91ca75c199ff1ee9555567dfad21b9033165c39977170ec8d3f6c1fa433c",
+        "name": "Ledger Novasama Testnet",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "WND",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Westend.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://westend-node.novasama.co",
+                "name": "Novasama node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
+        "addressPrefix": 42,
+        "options": [
+            "testnet"
+        ]
+    },
 ]
