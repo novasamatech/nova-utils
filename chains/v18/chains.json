@@ -7438,10 +7438,6 @@
                 "symbol": "VARA",
                 "precision": 12,
                 "priceId": "vara-network",
-                "staking": [
-                    "relaychain",
-                    "nomination-pools"
-                ],
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/VARA.svg"
             }
         ],
@@ -7475,8 +7471,7 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Vara.svg",
         "addressPrefix": 137,
         "additional": {
-            "themeColor": "#10B6B1",
-            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/vara-vara-staking"
+            "themeColor": "#10B6B1"
         }
     },
     {
