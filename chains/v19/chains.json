@@ -3779,6 +3779,7 @@
                 "assetId": 3,
                 "symbol": "DED",
                 "precision": 10,
+                "priceId": "dot-is-ded",
                 "type": "statemine",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/DED.svg",
                 "typeExtras": {
@@ -4971,6 +4972,7 @@
                 "assetId": 29,
                 "symbol": "DED",
                 "precision": 10,
+                "priceId": "dot-is-ded",
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/DED.svg",
                 "typeExtras": {
@@ -5808,6 +5810,7 @@
                 "assetId": 6,
                 "symbol": "DED",
                 "precision": 12,
+                "priceId": "dot-is-ded",
                 "type": "statemine",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/DED.svg",
                 "typeExtras": {
@@ -7439,7 +7442,7 @@
         ],
         "nodes": [
             {
-                "url": "wss://parachain-rpc.darwinia.network",
+                "url": "wss://rpc.darwinia.network",
                 "name": "Darwinia node"
             }
         ],
@@ -7564,6 +7567,10 @@
                 "symbol": "VARA",
                 "precision": 12,
                 "priceId": "vara-network",
+                "staking": [
+                    "relaychain",
+                    "nomination-pools"
+                ],
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/VARA.svg"
             }
         ],
@@ -7595,7 +7602,11 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Vara.svg",
-        "addressPrefix": 137
+        "addressPrefix": 137,
+        "additional": {
+            "themeColor": "#10B6B1",
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/vara-vara-staking"
+        }
     },
     {
         "chainId": "49f4849244114177544d73d2412289f6d73a892b9eb1ca97cef81c9c0c9ec0ff",

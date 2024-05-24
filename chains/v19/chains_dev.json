@@ -4415,6 +4415,7 @@
                 "assetId": 3,
                 "symbol": "DED",
                 "precision": 10,
+                "priceId": "dot-is-ded",
                 "type": "statemine",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/DED.svg",
                 "typeExtras": {
@@ -5455,6 +5456,7 @@
                 "assetId": 29,
                 "symbol": "DED",
                 "precision": 10,
+                "priceId": "dot-is-ded",
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/DED.svg",
                 "typeExtras": {
@@ -6349,6 +6351,7 @@
                 "assetId": 6,
                 "symbol": "DED",
                 "precision": 12,
+                "priceId": "dot-is-ded",
                 "type": "statemine",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/DED.svg",
                 "typeExtras": {
@@ -8104,6 +8107,20 @@
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 11,
+                "symbol": "USDC",
+                "precision": 6,
+                "priceId": "usd-coin",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDC.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0102",
+                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
@@ -8664,10 +8681,6 @@
             }
         ],
         "nodes": [
-            {
-                "url": "wss://parachain-rpc.darwinia.network",
-                "name": "Darwinia node"
-            },
             {
                 "url": "wss://rpc.darwinia.network",
                 "name": "Darwinia node"
