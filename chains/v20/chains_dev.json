@@ -334,8 +334,7 @@
             "themeColor": "#1F78FF",
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polkadot-and-kusama",
             "stakingMaxElectingVoters": 22500,
-            "feeViaRuntimeCall": true,
-            "supportsGenericLedgerApp": true
+            "feeViaRuntimeCall": true
         }
     },
     {
@@ -7229,10 +7228,7 @@
             "testnet",
             "crowdloans",
             "proxy"
-        ],
-        "additional": {
-            "supportsGenericLedgerApp": true
-        }
+        ]
     },
     {
         "chainId": "d42e9606a995dfe433dc7955dc2a70f495f350f373daa200098ae84437816ad2",
