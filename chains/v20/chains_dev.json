@@ -8854,6 +8854,11 @@
                 "name": "Varascan",
                 "account": "https://explorer.vara-network.io/account/{address}",
                 "event": "https://explorer.vara-network.io/event/{event}"
+            },
+            {
+                "name": "Subscan",
+                "extrinsic": "https://vara.subscan.io/extrinsic/{hash}",
+                "account": "https://vara.subscan.io/account/{address}"
             }
         ],
         "externalApi": {
