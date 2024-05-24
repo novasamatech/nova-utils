@@ -1331,12 +1331,16 @@
         ],
         "nodes": [
             {
-                "url": "wss://wss.testnet.moonbeam.network",
-                "name": "Moonbeam Network node"
+                "url": "wss://moonbase-alpha.public.blastapi.io",
+                "name": "Blast node"
             },
             {
                 "url": "wss://moonbase-rpc.dwellir.com",
                 "name": "Dwellir node"
+            },
+            {
+                "url": "wss://wss.api.moonbase.moonbeam.network",
+                "name": "Moonbase node"
             }
         ],
         "explorers": [
@@ -7005,7 +7009,7 @@
         ],
         "nodes": [
             {
-                "url": "wss://frag-moonbase-relay-rpc-ws.g.moonbase.moonbeam.network",
+                "url": "wss://fro-moon-rpc-1-moonbase-relay-rpc-1.moonbase.ol-infra.network",
                 "name": "PureStake node"
             }
         ],
