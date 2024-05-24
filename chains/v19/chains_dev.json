@@ -7998,6 +7998,20 @@
             },
             {
                 "assetId": 3,
+                "symbol": "USDC",
+                "precision": 6,
+                "priceId": "usd-coin",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDC.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0102",
+                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 4,
                 "symbol": "USDC.s",
                 "precision": 12,
                 "priceId": "usd-coin",
@@ -8011,7 +8025,7 @@
                 }
             },
             {
-                "assetId": 4,
+                "assetId": 5,
                 "symbol": "XLM.s",
                 "precision": 12,
                 "priceId": "spacewalk-xlm",
@@ -8025,7 +8039,7 @@
                 }
             },
             {
-                "assetId": 5,
+                "assetId": 6,
                 "symbol": "TZS.s",
                 "precision": 12,
                 "priceId": "spacewalk-tzs",
@@ -8039,7 +8053,7 @@
                 }
             },
             {
-                "assetId": 6,
+                "assetId": 7,
                 "symbol": "BRL.s",
                 "precision": 12,
                 "priceId": "spacewalk-brl",
@@ -8053,7 +8067,7 @@
                 }
             },
             {
-                "assetId": 7,
+                "assetId": 8,
                 "symbol": "AUDD.s",
                 "precision": 12,
                 "priceId": "spacewalk-audd",
@@ -8067,7 +8081,7 @@
                 }
             },
             {
-                "assetId": 8,
+                "assetId": 9,
                 "symbol": "EURC.s",
                 "precision": 12,
                 "priceId": "spacewalk-eurc",
@@ -8081,7 +8095,7 @@
                 }
             },
             {
-                "assetId": 9,
+                "assetId": 10,
                 "symbol": "NGNC.s",
                 "precision": 12,
                 "priceId": "spacewalk-ngnc",
@@ -8095,7 +8109,7 @@
                 }
             },
             {
-                "assetId": 10,
+                "assetId": 11,
                 "symbol": "GLMR",
                 "precision": 18,
                 "priceId": "moonbeam",
@@ -8103,20 +8117,6 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Moonbeam.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0106",
-                    "currencyIdType": "spacewalk_primitives.CurrencyId",
-                    "existentialDeposit": "1000",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "assetId": 11,
-                "symbol": "USDC",
-                "precision": 6,
-                "priceId": "usd-coin",
-                "type": "orml",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDC.svg",
-                "typeExtras": {
-                    "currencyIdScale": "0x0102",
                     "currencyIdType": "spacewalk_primitives.CurrencyId",
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
