@@ -8136,6 +8136,13 @@
                 "name": "Pendulum node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://pendulum.subscan.io/extrinsic/{hash}",
+                "account": "https://pendulum.subscan.io/account/{address}"
+            }
+        ],
         "externalApi": {
             "history": [
                 {
@@ -8653,6 +8660,13 @@
                 "name": "RadiumBlock node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://ajuna.subscan.io/extrinsic/{hash}",
+                "account": "https://ajuna.subscan.io/account/{address}"
+            }
+        ],
         "externalApi": {
             "history": [
                 {
@@ -9105,6 +9119,13 @@
                 "name": "Stakeworld node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://bridgehub-polkadot.subscan.io/extrinsic/{hash}",
+                "account": "https://bridgehub-polkadot.subscan.io/account/{address}"
+            }
+        ],
         "externalApi": {
             "history": [
                 {
@@ -9141,6 +9162,13 @@
             {
                 "url": "wss://ksm-rpc.stakeworld.io/bridgehub",
                 "name": "Stakeworld node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://bridgehub-kusama.subscan.io/extrinsic/{hash}",
+                "account": "https://bridgehub-kusama.subscan.io/account/{address}"
             }
         ],
         "externalApi": {
