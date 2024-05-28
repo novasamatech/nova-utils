@@ -6795,58 +6795,6 @@
         ]
     },
     {
-        "chainId": "f460fe68f5f34ced6b18d8e4612410e334c55521bf27714cdca654b63b685ae6",
-        "name": "Novasama Testnet - Kusama",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "KSM",
-                "precision": 12,
-                "staking": [
-                    "relaychain"
-                ],
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Kusama.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://novasama.co",
-                "name": "Development node"
-            }
-        ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/novasama_gov2_testnet.json",
-            "overridesCommon": true
-        },
-        "externalApi": {
-            "staking": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/novasama-test-kusama"
-                }
-            ],
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/novasama-test-kusama"
-                }
-            ],
-            "governance-delegations": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-gov-test"
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Governance2_Testnet.svg",
-        "addressPrefix": 2,
-        "options": [
-            "testnet",
-            "governance",
-            "governance-v1"
-        ]
-    },
-    {
         "chainId": "6f0f071506de39058fe9a95bbca983ac0e9c5da3443909574e95d52eb078d348",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "DAO IPCI",
