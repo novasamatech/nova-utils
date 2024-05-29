@@ -9479,7 +9479,7 @@
     },
     {
         "chainId": "58d1393b47b11707978fbc07e77d7b6f7d9aa88d207dc008a52385f7dba6156a",
-        "name": "Jur (PAUSED)",
+        "name": "Jur",
         "assets": [
             {
                 "assetId": 0,
@@ -9491,12 +9491,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://jur-mainnet-archive-rpc-1.icebergnodes.io",
+                "url": "wss://mainnet.jur.io/",
                 "name": "Iceberg node"
-            },
-            {
-                "url": "wss://jur-archive-mainnet-1.simplystaking.xyz/VX68C07AR4K2/ws",
-                "name": "Simplystaking node"
             }
         ],
         "externalApi": {
