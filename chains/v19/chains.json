@@ -8256,5 +8256,26 @@
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kreivo.svg",
         "addressPrefix": 2
+    },
+    {
+        "chainId": "61ea8a51fd4a058ee8c0e86df0a89cc85b8b67a0a66432893d09719050c9f540",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Hyperbridge Nexus",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "NAND",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/NAND.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://hyperbridge-nexus-rpc.blockops.network",
+                "name": "BlockOps node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Hyperbridge.svg",
+        "addressPrefix": 42
     }
 ]
