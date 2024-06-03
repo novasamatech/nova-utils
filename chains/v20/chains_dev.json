@@ -8081,6 +8081,20 @@
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 13,
+                "symbol": "HDX",
+                "precision": 12,
+                "type": "orml",
+                "priceId": "hydradx",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/HydraDX.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0108",
+                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
