@@ -7371,7 +7371,7 @@
                 "assetId": 3,
                 "symbol": "USDC.s",
                 "precision": 12,
-                "priceId": "usd-coin",
+                "priceId": "usdc",
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDC.svg",
                 "typeExtras": {
@@ -7385,7 +7385,7 @@
                 "assetId": 4,
                 "symbol": "XLM.s",
                 "precision": 12,
-                "priceId": "spacewalk-xlm",
+                "priceId": "stellar",
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/XLM.svg",
                 "typeExtras": {
@@ -7399,7 +7399,6 @@
                 "assetId": 5,
                 "symbol": "TZS.s",
                 "precision": 12,
-                "priceId": "spacewalk-tzs",
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/TZS.svg",
                 "typeExtras": {
@@ -7413,7 +7412,6 @@
                 "assetId": 6,
                 "symbol": "BRL.s",
                 "precision": 12,
-                "priceId": "spacewalk-brl",
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/BRL.svg",
                 "typeExtras": {
@@ -7427,7 +7425,7 @@
                 "assetId": 7,
                 "symbol": "AUDD.s",
                 "precision": 12,
-                "priceId": "spacewalk-audd",
+                "priceId": "novatti-australian-digital-dollar",
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AUDD.svg",
                 "typeExtras": {
@@ -7441,7 +7439,6 @@
                 "assetId": 8,
                 "symbol": "EURC.s",
                 "precision": 12,
-                "priceId": "spacewalk-eurc",
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/EUR.svg",
                 "typeExtras": {
@@ -7455,7 +7452,6 @@
                 "assetId": 9,
                 "symbol": "NGNC.s",
                 "precision": 12,
-                "priceId": "spacewalk-ngnc",
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/NGN.svg",
                 "typeExtras": {
@@ -7969,7 +7965,7 @@
                 "assetId": 4,
                 "symbol": "USDC.s",
                 "precision": 12,
-                "priceId": "usd-coin",
+                "priceId": "usdc",
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDC.svg",
                 "typeExtras": {
@@ -7983,7 +7979,7 @@
                 "assetId": 5,
                 "symbol": "XLM.s",
                 "precision": 12,
-                "priceId": "spacewalk-xlm",
+                "priceId": "stellar",
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/XLM.svg",
                 "typeExtras": {
@@ -7997,7 +7993,6 @@
                 "assetId": 6,
                 "symbol": "TZS.s",
                 "precision": 12,
-                "priceId": "spacewalk-tzs",
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/TZS.svg",
                 "typeExtras": {
@@ -8011,7 +8006,6 @@
                 "assetId": 7,
                 "symbol": "BRL.s",
                 "precision": 12,
-                "priceId": "spacewalk-brl",
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/BRL.svg",
                 "typeExtras": {
@@ -8025,7 +8019,7 @@
                 "assetId": 8,
                 "symbol": "AUDD.s",
                 "precision": 12,
-                "priceId": "spacewalk-audd",
+                "priceId": "novatti-australian-digital-dollar",
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AUDD.svg",
                 "typeExtras": {
@@ -8039,7 +8033,6 @@
                 "assetId": 9,
                 "symbol": "EURC.s",
                 "precision": 12,
-                "priceId": "spacewalk-eurc",
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/EUR.svg",
                 "typeExtras": {
@@ -8053,7 +8046,6 @@
                 "assetId": 10,
                 "symbol": "NGNC.s",
                 "precision": 12,
-                "priceId": "spacewalk-ngnc",
                 "type": "orml",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/NGN.svg",
                 "typeExtras": {
@@ -8072,6 +8064,33 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/GLMR.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0106",
+                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 12,
+                "symbol": "PINK",
+                "precision": 10,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/PINK.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0107",
+                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 13,
+                "symbol": "HDX",
+                "precision": 12,
+                "type": "orml",
+                "priceId": "hydradx",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/HydraDX.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0108",
                     "currencyIdType": "spacewalk_primitives.CurrencyId",
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
