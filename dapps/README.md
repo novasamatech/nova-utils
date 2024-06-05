@@ -28,7 +28,7 @@
 |  24 | Gleev                                | https://gleev.xyz/                                   | social                        |
 |  25 | Grill                                | https://grillapp.net                                 | social                        |
 |  26 | Huckleberry Finance                  | https://www.huckleberry.finance/#/swap               | bridge,dex,staking,evm        |
-|  27 | Hydration                            | https://hydradx.io/NOVA                              | bridge,dex                    |
+|  27 | Hydration                            | https://app.hydration.net/NOVA                       | bridge,dex                    |
 |  28 | Impossible Finance                   | https://app.impossible.finance/explore               | dex,evm                       |
 |  29 | Interlay Bitcoin DeFi Hub            | https://app.interlay.io/                             | bridge,staking,dex            |
 |  30 | InvArch Dashboard                    | https://portal.invarch.network/                      | crowdloans,governance         |
