@@ -10596,6 +10596,20 @@
                 "name": "BlockOps node"
             }
         ],
+        "externalApi": {
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-hyperbridge"
+                }
+            ],
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-hyperbridge"
+                }
+            ]
+        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Hyperbridge.svg",
         "addressPrefix": 42
     },
