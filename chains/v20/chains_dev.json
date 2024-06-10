@@ -7219,7 +7219,8 @@
         "nodes": [
             {
                 "url": "wss://rococo-rpc.polkadot.io/",
-                "name": "Rococo node"
+                "name": "Rococo node",
+                "features": ["noTls12"]
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Rococo_Testnet.svg",
@@ -9814,7 +9815,8 @@
             },
             {
                 "url": "wss://rococo-asset-hub-rpc.polkadot.io",
-                "name": "Parity node"
+                "name": "Parity node",
+                "features": ["noTls12"]
             }
         ],
         "explorers": [
