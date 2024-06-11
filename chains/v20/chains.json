@@ -1564,22 +1564,22 @@
                 "symbol": "xcMGX",
                 "precision": 18,
                 "type": "statemine",
+                "priceId": "mangata-x",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/MangataX.svg",
                 "typeExtras": {
                     "assetId": "118095707745084482624853002839493125353"
-                },
-                "priceId": "mangata-x"
+                }
             },
             {
                 "assetId": 22,
                 "symbol": "xcTUR",
                 "precision": 10,
                 "type": "statemine",
+                "priceId": "turing-network",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Turing.svg",
                 "typeExtras": {
                     "assetId": "133300872918374599700079037156071917454"
-                },
-                "priceId": "turing-network"
+                }
             }
         ],
         "nodes": [
@@ -8249,9 +8249,7 @@
             {
                 "url": "wss://polkadot-mythos-rpc.polkadot.io",
                 "name": "Parity node",
-                "features": [
-                    "noTls12"
-                ]
+                "features": ["noTls12"]
             }
         ],
         "explorers": [
