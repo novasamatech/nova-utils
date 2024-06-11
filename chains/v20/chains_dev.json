@@ -154,40 +154,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc-kusama.novasamatech.org",
-                "name": "Novasama node"
-            },
-            {
-                "url": "wss://apps-kusama-rpc.polkadot.io",
-                "name": "Public node"
-            },
-            {
-                "url": "wss://kusama-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
-                "url": "wss://rpc-kusama.luckyfriday.io",
-                "name": "LuckyFriday node"
-            },
-            {
-                "url": "wss://1rpc.io/ksm",
-                "name": "Automata 1RPC node"
-            },
-            {
-                "url": "wss://rpc.ibp.network/kusama",
-                "name": "IBP network node"
-            },
-            {
-                "url": "wss://rpc.dotters.network/kusama",
-                "name": "Dotters Net node"
-            },
-            {
-                "url": "wss://kusama.public.curie.radiumblock.co/ws",
-                "name": "Radium node"
-            },
-            {
-                "url": "wss://kusama.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
+                "url": "ws://192.168.1.54:8000",
+                "name": "Chopstics node"
             }
         ],
         "explorers": [
