@@ -5534,6 +5534,19 @@
                     "existentialDeposit": "1",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 36,
+                "symbol": "MYTH",
+                "precision": 18,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/MYTH.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x1e000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "21367521367521400",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
