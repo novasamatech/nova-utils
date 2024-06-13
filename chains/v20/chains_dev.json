@@ -9187,6 +9187,14 @@
                 "name": "Onfinality node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Statescan",
+                "account": "https://collectives.statescan.io/#/accounts/{address}",
+                "event": "https://collectives.statescan.io/#/events/{event}",
+                "extrinsic": "https://collectives.statescan.io/#/extrinsics/{hash}"
+            }
+        ],
         "externalApi": {
             "history": [
                 {
@@ -10068,6 +10076,13 @@
                 "name": "Energywebx node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://energywebx.subscan.io/extrinsic/{hash}",
+                "account": "https://energywebx.subscan.io/account/{address}"
+            }
+        ],
         "externalApi": {
             "history": [
                 {
@@ -10121,6 +10136,14 @@
             {
                 "url": "wss://invarch-rpc.dwellir.com",
                 "name": "Dwellir node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Statescan",
+                "account": "https://invarch.statescan.io/#/accounts/{address}",
+                "event": "https://invarch.statescan.io/#/events/{event}",
+                "extrinsic": "https://invarch.statescan.io/#/extrinsics/{hash}"
             }
         ],
         "externalApi": {
