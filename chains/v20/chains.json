@@ -7651,6 +7651,14 @@
                 "account": "https://bridgehub-kusama.subscan.io/account/{address}"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---kusama-bridgehub"
+                }
+            ]
+        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_Bridge_Hub.svg",
         "addressPrefix": 2
     },
@@ -7689,6 +7697,22 @@
                 "name": "Onfinality node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Statescan",
+                "account": "https://collectives.statescan.io/#/accounts/{address}",
+                "event": "https://collectives.statescan.io/#/events/{event}",
+                "extrinsic": "https://collectives.statescan.io/#/extrinsics/{hash}"
+            }
+        ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/polkadot-collectives"
+                }
+            ]
+        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Collectives.svg",
         "addressPrefix": 0
     },
@@ -7718,6 +7742,14 @@
                 "account": "https://krest.subscan.io/account/{address}"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---krest"
+                }
+            ]
+        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/krest.svg",
         "addressPrefix": 42
     },
@@ -7951,6 +7983,21 @@
                 "name": "Energywebx node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://energywebx.subscan.io/extrinsic/{hash}",
+                "account": "https://energywebx.subscan.io/account/{address}"
+            }
+        ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---energy-web-x"
+                }
+            ]
+        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Energy_Web_X.svg",
         "addressPrefix": 42
     },
@@ -7972,6 +8019,22 @@
                 "name": "Dwellir node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Statescan",
+                "account": "https://invarch.statescan.io/#/accounts/{address}",
+                "event": "https://invarch.statescan.io/#/events/{event}",
+                "extrinsic": "https://invarch.statescan.io/#/extrinsics/{hash}"
+            }
+        ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---invarch"
+                }
+            ]
+        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/InvArch.svg",
         "addressPrefix": 117
     },
@@ -8172,6 +8235,14 @@
                 "account": "https://continuum.subscan.io/account/{address}"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-continuum"
+                }
+            ]
+        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Continuum.svg",
         "addressPrefix": 268
     },
@@ -8230,6 +8301,14 @@
                 "name": "Curio node 2"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-curio"
+                }
+            ]
+        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Curio.svg",
         "addressPrefix": 777
     },
@@ -8260,6 +8339,14 @@
                 "account": "https://mythos.subscan.io/account/{address}"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-mythos"
+                }
+            ]
+        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Mythos.svg",
         "addressPrefix": 29972,
         "options": [
@@ -8310,6 +8397,14 @@
                 "name": "Kippu node"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kreivo"
+                }
+            ]
+        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kreivo.svg",
         "addressPrefix": 2
     },
@@ -8331,6 +8426,14 @@
                 "name": "BlockOps node"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-hyperbridge"
+                }
+            ]
+        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Hyperbridge.svg",
         "addressPrefix": 42
     },
