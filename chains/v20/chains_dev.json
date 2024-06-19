@@ -10033,6 +10033,42 @@
                 "staking": [
                     "parachain"
                 ]
+            },
+            {
+                "assetId": 1,
+                "symbol": "DOT",
+                "precision": 10,
+                "priceId": "polkadot",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Polkadot.svg",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "10",
+                    "palletName": "ForeignAssets"
+                }
+            },
+            {
+                "assetId": 2,
+                "symbol": "USDT",
+                "precision": 6,
+                "priceId": "tether",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDT.svg",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "1984",
+                    "palletName": "ForeignAssets"
+                }
+            },
+            {
+                "assetId": 3,
+                "symbol": "USDC",
+                "precision": 6,
+                "priceId": "usd-coin",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDC.svg",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "1337",
+                    "palletName": "ForeignAssets"
+                }
             }
         ],
         "nodes": [
