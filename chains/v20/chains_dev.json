@@ -39,10 +39,6 @@
                 "name": "Dwellir node"
             },
             {
-                "url": "wss://api-polkadot-full.dwellir.com/{DWELLIR_API_KEY}",
-                "name": "Nova Dwellir node"
-            },
-            {
                 "url": "wss://dot-rpc.stakeworld.io",
                 "name": "Stakeworld node"
             },
@@ -3629,10 +3625,6 @@
             {
                 "url": "wss://moonbeam.public.blastapi.io",
                 "name": "Blast node"
-            },
-            {
-                "url": "wss://1rpc.io/glmr",
-                "name": "Automata 1RPC node"
             }
         ],
         "explorers": [
@@ -8427,12 +8419,16 @@
         ],
         "nodes": [
             {
-                "url": "wss://c3.hashed.live",
-                "name": "Hashed systems 3 node"
+                "url": "wss://c1.hashed.network",
+                "name": "Hashed systems 1 node"
             },
             {
                 "url": "wss://c2.hashed.network",
                 "name": "Hashed systems 2 node"
+            },
+            {
+                "url": "wss://c3.hashed.network",
+                "name": "Hashed systems 3 node"
             }
         ],
         "externalApi": {
@@ -8588,10 +8584,6 @@
         "nodes": [
             {
                 "url": "wss://rpc.3dpscan.io",
-                "name": "3DPass node"
-            },
-            {
-                "url": "wss://rpc2.3dpass.org",
                 "name": "3DPass node"
             }
         ],
