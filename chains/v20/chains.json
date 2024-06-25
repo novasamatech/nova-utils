@@ -6661,6 +6661,100 @@
                     "existentialDeposit": "0",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 3,
+                "symbol": "USDC.s",
+                "precision": 12,
+                "priceId": "usdc",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDC.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0201555344433b9911380efe988ba0a8900eb1cfe44f366f7dbe946bed077240f7f624df15c5",
+                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 4,
+                "symbol": "XLM.s",
+                "precision": 12,
+                "priceId": "stellar",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/XLM.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0200",
+                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 5,
+                "symbol": "TZS.s",
+                "precision": 12,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/TZS.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0201545a530034c94b2a4ba9e8b57b22547dcbb30f443c4cb02da3829a89aa1bd4780e4466ba",
+                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 6,
+                "symbol": "BRL.s",
+                "precision": 12,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/BRL.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x020142524c00eaac68d4d0e37b4c24c2536916e830735f032d0d6b2a1c8fca3bc5a25e083e3a",
+                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 7,
+                "symbol": "AUDD.s",
+                "precision": 12,
+                "priceId": "novatti-australian-digital-dollar",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AUDD.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x020141554444c5fbe9979e240552860221f4fe2f2219f35e40458b8b58fc32da520a154a561d",
+                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 8,
+                "symbol": "EURC.s",
+                "precision": 12,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/EUR.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0201455552432112ee863867e4e219fe254c0918b00bc9ea400775bfc3ab4430971ce505877c",
+                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 9,
+                "symbol": "NGNC.s",
+                "precision": 12,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/NGN.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x02014e474e43241afadf31883f79972545fc64f3b5b0c95704c6fb4917474e42b0057841606b",
+                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
@@ -6968,6 +7062,141 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDC.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0102",
+                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 4,
+                "symbol": "USDC.s",
+                "precision": 12,
+                "priceId": "usdc",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDC.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0201555344433b9911380efe988ba0a8900eb1cfe44f366f7dbe946bed077240f7f624df15c5",
+                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 5,
+                "symbol": "XLM.s",
+                "precision": 12,
+                "priceId": "stellar",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/XLM.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0200",
+                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 6,
+                "symbol": "TZS.s",
+                "precision": 12,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/TZS.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0201545a530034c94b2a4ba9e8b57b22547dcbb30f443c4cb02da3829a89aa1bd4780e4466ba",
+                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 7,
+                "symbol": "BRL.s",
+                "precision": 12,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/BRL.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x020142524c00eaac68d4d0e37b4c24c2536916e830735f032d0d6b2a1c8fca3bc5a25e083e3a",
+                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 8,
+                "symbol": "AUDD.s",
+                "precision": 12,
+                "priceId": "novatti-australian-digital-dollar",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AUDD.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x020141554444c5fbe9979e240552860221f4fe2f2219f35e40458b8b58fc32da520a154a561d",
+                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 9,
+                "symbol": "EURC.s",
+                "precision": 12,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/EUR.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0201455552432112ee863867e4e219fe254c0918b00bc9ea400775bfc3ab4430971ce505877c",
+                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 10,
+                "symbol": "NGNC.s",
+                "precision": 12,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/NGN.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x02014e474e43241afadf31883f79972545fc64f3b5b0c95704c6fb4917474e42b0057841606b",
+                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 11,
+                "symbol": "GLMR",
+                "precision": 18,
+                "priceId": "moonbeam",
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/GLMR.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0106",
+                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 12,
+                "symbol": "PINK",
+                "precision": 10,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/PINK.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0107",
+                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 13,
+                "symbol": "HDX",
+                "precision": 12,
+                "type": "orml",
+                "priceId": "hydradx",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/HydraDX.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0108",
                     "currencyIdType": "spacewalk_primitives.CurrencyId",
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
