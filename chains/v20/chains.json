@@ -8630,7 +8630,10 @@
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Acurast_Canary.svg",
-        "addressPrefix": 42
+        "addressPrefix": 42,
+        "additional": {
+            "feeViaRuntimeCall": true
+        }
     },
     {
         "chainId": "c710a5f16adc17bcd212cff0aedcbf1c1212a043cdc0fb2dcba861efe5305b01",
