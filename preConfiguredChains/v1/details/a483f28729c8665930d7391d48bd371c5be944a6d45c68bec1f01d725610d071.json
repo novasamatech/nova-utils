@@ -1,0 +1,21 @@
+{
+    "chainId": "a483f28729c8665930d7391d48bd371c5be944a6d45c68bec1f01d725610d071",
+    "name": "Magnet",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "DOT",
+            "precision": 10,
+            "priceId": "polkadot",
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Polkadot.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://magnet-rpc.magport.io/ws",
+            "name": "Public node"
+        }
+    ],
+    "addressPrefix": 42,
+    "options": []
+}
