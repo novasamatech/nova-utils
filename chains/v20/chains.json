@@ -2408,9 +2408,14 @@
         ],
         "explorers": [
             {
-                "name": "Subscan",
-                "extrinsic": "https://parallel-heiko.subscan.io/extrinsic/{hash}",
-                "account": "https://parallel-heiko.subscan.io/account/{address}"
+                "name": "Statescan",
+                "account": "https://heiko.statescan.io/#/accounts/{address}",
+                "extrinsic": "https://heiko.statescan.io/#/extrinsics/{hash}",
+                "event": "https://heiko.statescan.io/#/events/{event}"
+            },
+            {
+                "name": "Sub.ID",
+                "account": "https://sub.id/{address}"
             }
         ],
         "externalApi": {
@@ -3692,9 +3697,10 @@
         ],
         "explorers": [
             {
-                "name": "Subscan",
-                "extrinsic": "https://parallel.subscan.io/extrinsic/{hash}",
-                "account": "https://parallel.subscan.io/account/{address}"
+                "name": "Statescan",
+                "account": "https://parallel.statescan.io/#/accounts/{address}",
+                "extrinsic": "https://parallel.statescan.io/#/extrinsics/{hash}",
+                "event": "https://parallel.statescan.io/#/events/{event}"
             },
             {
                 "name": "Sub.ID",
