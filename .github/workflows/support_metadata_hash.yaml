@@ -1,8 +1,8 @@
-name: Update Generic Ledger App Networks
+name: Update support metadata hash
 
 on:
   schedule:
-    - cron: '0 0,12 * * *'  # Runs twice a day at 00:00 and 12:00
+    - cron: '0 0,12 * * *'
   workflow_dispatch:
 
 jobs:
@@ -29,12 +29,12 @@ jobs:
           commit-files: |
             ./chains/*
             ./scripts/data/check_metadata_hash_mapping.json
-          commit-message: Update Generic Ledger App Networks
+          commit-message: Update metadata hash
           app-id: ${{ secrets.PR_APP_ID}}
           app-token: ${{ secrets.PR_APP_TOKEN}}
           pr-reviewer: 'ERussel,leohar,valentunn,stepanLav'
-          branch-name: update-generic-ledger-app-networks
-          pr-title: 📒 Ledger have got support new networks!
+          branch-name: update-metadata-hash
+          pr-title: 📒 New networks have been added metadata hash!
           pr-body: |
             This PR was generated automatically 🤖
 
@@ -49,7 +49,7 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-            📒 New networks have been added to Generic Ledger App!
+            📒 New networks have been added metadata hash!
 
             PR: ${{ steps.make-pr.outputs.pr-url }}
 
@@ -60,6 +60,6 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-            ❌ Workflow failed for Generic Ledger App update!
+            ❌ Workflow failed for metadata hash update!
 
             run-url: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
