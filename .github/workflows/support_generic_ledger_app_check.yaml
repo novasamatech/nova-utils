@@ -1,0 +1,55 @@
+name: Update Generic Ledger App Networks
+
+on:
+  schedule:
+    - cron: '0 0,12 * * *'  # Runs twice a day at 00:00 and 12:00
+  workflow_dispatch:
+  pull_request:
+
+jobs:
+  update-networks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout current repository
+        uses: actions/checkout@v4
+
+      - name: 🛠 Set up actual paths
+        uses: ./.github/workflows/setup-path
+
+      - name: Run update script
+        id: run-script
+        run: |
+          make init
+          make update-ledger-networks
+
+      - name: Make Pull Request
+        id: make-pr
+        uses: ./.github/workflows/make-pull-request
+        with:
+          commit-files: |
+            ./chains/*
+            ./scripts/data/check_metadata_hash_mapping.json
+          commit-message: Update Generic Ledger App Networks
+          app-id: ${{ secrets.PR_APP_ID}}
+          app-token: ${{ secrets.PR_APP_TOKEN}}
+          pr-reviewer: 'ERussel,leohar,valentunn,stepanLav'
+          branch-name: update-generic-ledger-app-networks
+          pr-title: 📒 Ledger have got support new networks!
+          pr-body: |
+            This PR was generated automatically 🤖
+
+            If you see empty chainId in [check_metadata_hash_mapping.json](./scripts/data/check_metadata_hash_mapping.json)
+            please checkout that branch, add chainId and run `make update-ledger-networks`
+          pr-base: master
+
+      - name: Send Telegram Notification
+        if: steps.make-pr.outputs.pr-url != ''
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            📒 New networks have been added to Generic Ledger App!
+
+            PR: ${{ steps.make-pr.outputs.pr-url }}

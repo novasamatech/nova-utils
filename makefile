@@ -82,3 +82,6 @@ check-chains-file:
 
 update-xcm-to-prod:
 	$(VENV)/bin/python xcm/update_to_prod.py
+
+update-ledger-networks:
+	$(VENV)/bin/python scripts/update_generic_ledger_app_networks.py
