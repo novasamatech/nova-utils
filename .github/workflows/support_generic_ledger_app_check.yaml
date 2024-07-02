@@ -44,7 +44,7 @@ jobs:
           pr-base: master
 
       - name: Send Telegram Notification
-        if: steps.make-pr.outputs.pr-url != ''
+        if: success() && steps.make-pr.outputs.pr-url != ''
         uses: appleboy/telegram-action@master
         with:
           to: ${{ secrets.TELEGRAM_TO }}
@@ -53,3 +53,14 @@ jobs:
             📒 New networks have been added to Generic Ledger App!
 
             PR: ${{ steps.make-pr.outputs.pr-url }}
+
+      - name: Send Telegram Notification on Failure
+        if: failure()
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            ❌ Workflow failed for Generic Ledger App update!
+
+            run-url: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
