@@ -79,6 +79,7 @@ def process_file(chains_file_path):
         update_existing_data_with_new_networks(existing_data, new_networks)
         with open(chains_file_path, 'w') as f:
             json.dump(existing_data, f, indent=4)
+            f.write('\n')
 
 def main():
     process_file(CHAINS_FILE_PATH)
