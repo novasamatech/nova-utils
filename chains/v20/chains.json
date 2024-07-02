@@ -321,7 +321,8 @@
             "themeColor": "#1F78FF",
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polkadot-and-kusama",
             "stakingMaxElectingVoters": 22500,
-            "feeViaRuntimeCall": true
+            "feeViaRuntimeCall": true,
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -441,7 +442,8 @@
         "addressPrefix": 2,
         "additional": {
             "relaychainAsNative": true,
-            "feeViaRuntimeCall": true
+            "feeViaRuntimeCall": true,
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -461,7 +463,9 @@
             {
                 "url": "wss://kusama-people-rpc.polkadot.io",
                 "name": "Parity node",
-                "features": ["noTls12"]
+                "features": [
+                    "noTls12"
+                ]
             },
             {
                 "url": "wss://ksm-rpc.stakeworld.io/people",
@@ -469,7 +473,10 @@
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_People.svg",
-        "addressPrefix": 2
+        "addressPrefix": 2,
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "chainId": "baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b",
@@ -3890,7 +3897,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Asset_Hub.svg",
-        "addressPrefix": 0
+        "addressPrefix": 0,
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "chainId": "631ccc82a078481584041656af292834e1ae6daab61d2875b4dd0c14bb9b17bc",
@@ -3994,7 +4004,8 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Encointer.svg",
         "addressPrefix": 2,
         "additional": {
-            "feeViaRuntimeCall": true
+            "feeViaRuntimeCall": true,
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -7844,7 +7855,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Bridge_Hub.svg",
-        "addressPrefix": 0
+        "addressPrefix": 0,
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "chainId": "00dcb981df86429de8bbacf9803401f09485366c44efbf53af9ecfab03adc7e5",
@@ -7889,7 +7903,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_Bridge_Hub.svg",
-        "addressPrefix": 2
+        "addressPrefix": 2,
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "chainId": "46ee89aa2eedd13e988962630ec9fb7565964cf5023bb351f2b6b25c1b68b0b2",
@@ -7943,7 +7960,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Collectives.svg",
-        "addressPrefix": 0
+        "addressPrefix": 0,
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "chainId": "b3dd5ad6a82872b30aabaede8f41dfd4ff6c32ff82f8757d034a45be63cf104c",
@@ -8595,7 +8615,9 @@
             {
                 "url": "wss://polkadot-mythos-rpc.polkadot.io",
                 "name": "Parity node",
-                "features": ["noTls12"]
+                "features": [
+                    "noTls12"
+                ]
             }
         ],
         "explorers": [
