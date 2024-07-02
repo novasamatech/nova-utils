@@ -42,6 +42,7 @@ def update_networks_with_mapping(networks, mapping_data):
 
     with open(MAPPING_FILE_PATH, 'w') as f:
         json.dump(mapping_data, f, indent=4)
+        f.write('\n')
 
 def find_new_networks(existing_data, networks):
     existing_networks = {
