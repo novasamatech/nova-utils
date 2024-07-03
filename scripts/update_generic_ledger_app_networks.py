@@ -27,7 +27,7 @@ def update_existing_data_with_new_networks(existing_data, new_networks):
         if existing_network:
             existing_network.setdefault('additional', {})['supportsGenericLedgerApp'] = True
 
-def check_metadata_exists(connection: SubstrateInterface):
+def check_metadata_hash_exist(connection: SubstrateInterface):
     try:
         metadata = connection.get_block_metadata()
         if metadata:
@@ -40,19 +40,19 @@ def check_metadata_exists(connection: SubstrateInterface):
     except:
         return False
 
-def process_files(chains_file_path, chains_file_path_dev):
-    existing_data = load_json_file(chains_file_path)
-    existing_data_dev = load_json_file(chains_file_path_dev)
+def main():
+    existing_data = load_json_file(CHAINS_FILE_PATH)
+    existing_data_dev = load_json_file(CHAINS_FILE_PATH_DEV)
 
     substrate_chains = get_substrate_chains()
-    new_networks = []
+    networks_with_metadata_hash = []
 
     for chain in substrate_chains:
-        print(chain.name)
+        print(f'Checking {chain.name}')
         try:
             connection = chain.create_connection()
-            if connection and check_metadata_exists(connection):
-                new_networks.append({
+            if connection and check_metadata_hash_exist(connection):
+                networks_with_metadata_hash.append({
                     'name': chain.name,
                     'chainId': chain.chainId
                 })
@@ -60,11 +60,11 @@ def process_files(chains_file_path, chains_file_path_dev):
         except Exception as e:
             print(f"Error creating connection for chain {chain.name}: {e}")
 
-    update_existing_data_with_new_networks(existing_data, new_networks)
-    update_existing_data_with_new_networks(existing_data_dev, new_networks)
+    update_existing_data_with_new_networks(existing_data, networks_with_metadata_hash)
+    update_existing_data_with_new_networks(existing_data_dev, networks_with_metadata_hash)
 
-    save_json_file(chains_file_path, existing_data)
-    save_json_file(chains_file_path_dev, existing_data_dev)
+    save_json_file(CHAINS_FILE_PATH, existing_data)
+    save_json_file(CHAINS_FILE_PATH_DEV, existing_data_dev)
 
 if __name__ == "__main__":
-    process_files(CHAINS_FILE_PATH, CHAINS_FILE_PATH_DEV)
+    main(CHAINS_FILE_PATH, CHAINS_FILE_PATH_DEV)
