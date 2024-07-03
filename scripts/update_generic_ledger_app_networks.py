@@ -1,9 +1,11 @@
 import json
 import os
 import sys
+from pathlib import Path
+
+from substrateinterface import SubstrateInterface
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from pathlib import Path
 from tests.data.setting_data import get_substrate_chains
 
 CHAINS_FILE_PATH = Path(os.getenv("CHAINS_JSON_PATH", 'chains/v20/chains.json'))
@@ -24,18 +26,17 @@ def update_existing_data_with_new_networks(existing_data, new_networks):
     for new_network in new_networks:
         existing_network = next((network for network in existing_data if network['chainId'] == new_network['chainId']), None)
         if existing_network:
-            if 'additional' not in existing_network:
-                existing_network['additional'] = {}
-            existing_network['additional']['supportsGenericLedgerApp'] = True
+            existing_network.setdefault('additional', {})['supportsGenericLedgerApp'] = True
 
-def check_metadata_exists(connection):
+def check_metadata_exists(connection: SubstrateInterface):
     try:
         metadata = connection.get_block_metadata()
         if metadata:
             for version in ['V14', 'V15']:
-                if version in metadata.value_serialized[1]:
-                    extrinsic = metadata.value_serialized[1][version]['extrinsic']
-                    if 'signed_extensions' in extrinsic and len(extrinsic['signed_extensions']) > 9:
+                extrinsic = metadata.value_serialized[1].get(version, {}).get('extrinsic', {})
+                signed_extensions = extrinsic.get('signed_extensions')
+                for extension in signed_extensions:
+                    if extension.get('identifier') == 'CheckMetadataHash':
                         return True
         return False
     except:
