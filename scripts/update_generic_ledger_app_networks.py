@@ -2,7 +2,6 @@ import json
 import os
 import sys
 from pathlib import Path
-
 from substrateinterface import SubstrateInterface
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -34,10 +33,9 @@ def check_metadata_exists(connection: SubstrateInterface):
         if metadata:
             for version in ['V14', 'V15']:
                 extrinsic = metadata.value_serialized[1].get(version, {}).get('extrinsic', {})
-                signed_extensions = extrinsic.get('signed_extensions')
-                for extension in signed_extensions:
-                    if extension.get('identifier') == 'CheckMetadataHash':
-                        return True
+                signed_extensions = extrinsic.get('signed_extensions', [])
+                if any(extension.get('identifier') == 'CheckMetadataHash' for extension in signed_extensions):
+                    return True
         return False
     except:
         return False
