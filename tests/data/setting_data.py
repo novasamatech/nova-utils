@@ -4,7 +4,7 @@ from typing import List
 from scripts.utils.work_with_data import get_network_list
 from scripts.utils.chain_model import Chain
 
-network_file_path = os.getenv('CHAINS_JSON_PATH', "chains/v15/chains.json")
+network_file_path = os.getenv('CHAINS_JSON_PATH', "chains/v20/chains.json")
 skipped_networks = ['Edgeware']
 network_list = get_network_list('/' + network_file_path)
 
