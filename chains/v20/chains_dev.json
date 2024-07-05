@@ -5571,6 +5571,32 @@
                     "existentialDeposit": "21367521367521400",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 37,
+                "symbol": "WETH-Snowbridge",
+                "precision": 18,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/WETH.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x06430f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 38,
+                "symbol": "WBTC-Snowbridge",
+                "precision": 18,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/WBTC.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0xfe420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
