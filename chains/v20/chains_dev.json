@@ -10645,7 +10645,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kreivo.svg",
-        "addressPrefix": 2
+        "addressPrefix": 2,
+        "additional": {
+            "feeViaRuntimeCall": true
+        }
     },
     {
         "chainId": "61ea8a51fd4a058ee8c0e86df0a89cc85b8b67a0a66432893d09719050c9f540",
