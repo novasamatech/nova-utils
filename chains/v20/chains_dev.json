@@ -4462,6 +4462,28 @@
                 "typeExtras": {
                     "assetId": "31337"
                 }
+            },
+            {
+                "assetId": 9,
+                "symbol": "WETH-Snowbridge",
+                "precision": 18,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/WETH.svg",
+                "typeExtras": {
+                    "assetId": "1000189",
+                    "palletName": "ForeignAssets"
+                }
+            },
+            {
+                "assetId": 10,
+                "symbol": "WBTC-Snowbridge",
+                "precision": 8,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/WBTC.svg",
+                "typeExtras": {
+                    "assetId": "1000190",
+                    "palletName": "ForeignAssets"
+                }
             }
         ],
         "nodes": [
