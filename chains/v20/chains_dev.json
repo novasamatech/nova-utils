@@ -4470,9 +4470,9 @@
                 "symbol": "WETH-Snowbridge",
                 "precision": 18,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/WETH.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/WETH-Snowbridge.svg",
                 "typeExtras": {
-                    "assetId": "1000189",
+                    "assetId": "0x02020907040300c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
                     "palletName": "ForeignAssets"
                 }
             },
@@ -4481,9 +4481,9 @@
                 "symbol": "WBTC-Snowbridge",
                 "precision": 8,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/WBTC.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/WBTC-Snowbridge.svg",
                 "typeExtras": {
-                    "assetId": "1000190",
+                    "assetId": "0x020209070403002260fac5e5542a773aa44fbcfedf7c193bc2c599",
                     "palletName": "ForeignAssets"
                 }
             }
@@ -5128,7 +5128,7 @@
                 "precision": 18,
                 "priceId": "ethereum-wormhole",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/WETH-worm.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/WETH-Acala.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x04000000",
                     "currencyIdType": "u32",
@@ -5142,7 +5142,7 @@
                 "precision": 8,
                 "priceId": "wrapped-bitcoin",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/WBTC.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/WBTC-Acala.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x03000000",
                     "currencyIdType": "u32",
@@ -5580,7 +5580,7 @@
                 "symbol": "WETH-Snowbridge",
                 "precision": 18,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/WETH.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/WETH-Snowbridge.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x06430f00",
                     "currencyIdType": "u32",
@@ -5593,7 +5593,7 @@
                 "symbol": "WBTC-Snowbridge",
                 "precision": 8,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/WBTC.svg",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/WBTC-Snowbridge.svg",
                 "typeExtras": {
                     "currencyIdScale": "0xfe420f00",
                     "currencyIdType": "u32",
