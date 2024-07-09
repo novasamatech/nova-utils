@@ -12,6 +12,10 @@ concurrency:
 env:
   BODY_FILE: comment-body.txt
 
+permissions:
+  pull-requests: write
+  statuses: write
+
 jobs:
   prepare-matrix:
     runs-on: ubuntu-latest
