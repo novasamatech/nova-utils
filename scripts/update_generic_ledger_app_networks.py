@@ -31,7 +31,7 @@ def check_metadata_hash_exist(connection: SubstrateInterface):
     try:
         metadata = connection.get_block_metadata()
         if metadata:
-            for version in ['V14', 'V15']:
+            for version in ['V15']:
                 extrinsic = metadata.value_serialized[1].get(version, {}).get('extrinsic', {})
                 signed_extensions = extrinsic.get('signed_extensions', [])
                 if any(extension.get('identifier') == 'CheckMetadataHash' for extension in signed_extensions):
