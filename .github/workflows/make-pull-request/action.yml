@@ -29,6 +29,10 @@ inputs:
     description: "Reviewers for creating PR, support comma delimiter"
     required: false
     default: "stepanLav,leohar"
+outputs:
+  pr-url:
+    description: "The URL of the created pull request"
+    value: ${{ steps.create-pull-request.outputs.pull-request-url }}
 
 runs:
   using: "composite"
@@ -40,6 +44,7 @@ runs:
         private_key: ${{ inputs.app-token }}
 
     - name: Create Pull Request
+      id: create-pull-request
       uses: peter-evans/create-pull-request@v5
       with:
         token: ${{ steps.generate-token.outputs.token }}
