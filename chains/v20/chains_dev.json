@@ -33,7 +33,9 @@
             {
                 "url": "wss://apps-rpc.polkadot.io",
                 "name": "Public node",
-                "features": ["noTls12"]
+                "features": [
+                    "noTls12"
+                ]
             },
             {
                 "url": "wss://polkadot-rpc.dwellir.com",
@@ -158,7 +160,9 @@
             {
                 "url": "wss://apps-kusama-rpc.polkadot.io",
                 "name": "Public node",
-                "features": ["noTls12"]
+                "features": [
+                    "noTls12"
+                ]
             },
             {
                 "url": "wss://kusama-rpc.dwellir.com",
@@ -7293,7 +7297,9 @@
             {
                 "url": "wss://rococo-rpc.polkadot.io/",
                 "name": "Rococo node",
-                "features": ["noTls12"]
+                "features": [
+                    "noTls12"
+                ]
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Rococo_Testnet.svg",
@@ -9276,7 +9282,9 @@
             {
                 "url": "wss://kusama-people-rpc.polkadot.io",
                 "name": "Parity node",
-                "features": ["noTls12"]
+                "features": [
+                    "noTls12"
+                ]
             },
             {
                 "url": "wss://ksm-rpc.stakeworld.io/people",
@@ -9880,7 +9888,9 @@
             {
                 "url": "wss://rococo-asset-hub-rpc.polkadot.io",
                 "name": "Parity node",
-                "features": ["noTls12"]
+                "features": [
+                    "noTls12"
+                ]
             }
         ],
         "explorers": [
@@ -10597,7 +10607,9 @@
             {
                 "url": "wss://polkadot-mythos-rpc.polkadot.io",
                 "name": "Parity node",
-                "features": ["noTls12"]
+                "features": [
+                    "noTls12"
+                ]
             }
         ],
         "explorers": [
