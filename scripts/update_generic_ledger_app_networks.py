@@ -7,7 +7,6 @@ from substrateinterface import SubstrateInterface
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from tests.data.setting_data import get_substrate_chains
 
-CHAINS_FILE_PATH = Path(os.getenv("CHAINS_JSON_PATH", 'chains/v20/chains.json'))
 CHAINS_FILE_PATH_DEV = Path(os.getenv("DEV_CHAINS_JSON_PATH", 'chains/v20/chains_dev.json'))
 
 def load_json_file(file_path):
@@ -41,7 +40,6 @@ def check_metadata_hash_exist(connection: SubstrateInterface):
         return False
 
 def main():
-    existing_data = load_json_file(CHAINS_FILE_PATH)
     existing_data_dev = load_json_file(CHAINS_FILE_PATH_DEV)
 
     substrate_chains = get_substrate_chains()
@@ -60,11 +58,9 @@ def main():
         except Exception as e:
             print(f"Error creating connection for chain {chain.name}: {e}")
 
-    update_existing_data_with_new_networks(existing_data, networks_with_metadata_hash)
     update_existing_data_with_new_networks(existing_data_dev, networks_with_metadata_hash)
 
-    save_json_file(CHAINS_FILE_PATH, existing_data)
     save_json_file(CHAINS_FILE_PATH_DEV, existing_data_dev)
 
 if __name__ == "__main__":
-    main(CHAINS_FILE_PATH, CHAINS_FILE_PATH_DEV)
+    main()
