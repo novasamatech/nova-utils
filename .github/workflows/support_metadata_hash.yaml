@@ -28,7 +28,6 @@ jobs:
         with:
           commit-files: |
             ./chains/*
-            ./scripts/data/check_metadata_hash_mapping.json
           commit-message: Update metadata hash
           app-id: ${{ secrets.PR_APP_ID}}
           app-token: ${{ secrets.PR_APP_TOKEN}}
