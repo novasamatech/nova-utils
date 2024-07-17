@@ -10752,7 +10752,7 @@
         "addressPrefix": 42
     },
     {
-        "chainId": "128ea318539862c0a06b745981300d527c1041c6f3388a8c49565559e3ea3d10",
+        "chainId": "b91746b45e0346cc2f815a520b9c6cb4d5c0902af848db0a80f85932d2e8276a",
         "name": "Avail",
         "assets": [
             {
@@ -10845,50 +10845,5 @@
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Cere.svg",
         "addressPrefix": 54
-    },
-    {
-        "chainId": "b91746b45e0346cc2f815a520b9c6cb4d5c0902af848db0a80f85932d2e8276a",
-        "name": "Avail",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "AVAIL",
-                "precision": 18,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AVL.svg",
-                "staking": [
-                    "relaychain",
-                    "nomination-pools"
-                ]
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://zeref-api.slowops.xyz/ws",
-                "name": "Avail node"
-            }
-        ],
-        "externalApi": {
-            "staking": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-avail"
-                }
-            ],
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-avail"
-                }
-            ]
-        },
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/avail.json",
-            "overridesCommon": true
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Avail.svg",
-        "addressPrefix": 42,
-        "additional": {
-            "themeColor": "#58C8F6"
-        }
     }
 ]
