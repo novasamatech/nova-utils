@@ -1,0 +1,64 @@
+name: Update support metadata hash
+
+on:
+  schedule:
+    - cron: '0 0,12 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-networks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout current repository
+        uses: actions/checkout@v4
+
+      - name: 🛠 Set up actual paths
+        uses: ./.github/workflows/setup-path
+
+      - name: Run update script
+        id: run-script
+        run: |
+          make init
+          make update-ledger-networks
+
+      - name: Make Pull Request
+        id: make-pr
+        uses: ./.github/workflows/make-pull-request
+        with:
+          commit-files: |
+            ./chains/*
+          commit-message: Update metadata hash
+          app-id: ${{ secrets.PR_APP_ID}}
+          app-token: ${{ secrets.PR_APP_TOKEN}}
+          pr-reviewer: 'ERussel,leohar,valentunn,stepanLav'
+          branch-name: update-metadata-hash
+          pr-title: 📒 New networks have been added metadata hash!
+          pr-body: |
+            This PR was generated automatically 🤖
+
+            If you see empty chainId in [check_metadata_hash_mapping.json](./scripts/data/check_metadata_hash_mapping.json)
+            please checkout that branch, add chainId and run `make update-ledger-networks`
+          pr-base: master
+
+      - name: Send Telegram Notification
+        if: success() && steps.make-pr.outputs.pr-url != ''
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            📒 New networks have been added metadata hash!
+
+            PR: ${{ steps.make-pr.outputs.pr-url }}
+
+      - name: Send Telegram Notification on Failure
+        if: failure()
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            ❌ Workflow failed for metadata hash update!
+
+            run-url: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}

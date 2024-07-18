@@ -10,6 +10,9 @@ on:
 env:
   BODY_FILE: body_file.txt
 
+permissions:
+  pull-requests: write
+
 jobs:
   create-comment-with-changes:
     runs-on: ubuntu-latest

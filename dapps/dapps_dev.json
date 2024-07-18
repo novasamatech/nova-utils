@@ -47,6 +47,14 @@
   ],
   "dapps": [
     {
+      "name": "Battleship",
+      "url": "https://battleship.vara.network/",
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/Battleship.svg",
+      "categories": [
+        "gaming"
+      ]
+    },
+    {
       "name": "dotappstore",
       "url": "https://dotappstore.com/",
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/ece2fff5cd559119395642f7f0aea6cd4d333af7/icons/dapps/color/dotappstore.svg",
@@ -213,7 +221,7 @@
     },
     {
       "name": "Moonbeam",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/Moonbeam.svg",
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/moonbeam.svg",
       "url": "https://apps.moonbeam.network/moonbeam",
       "categories": [
         "bridge",
@@ -224,7 +232,7 @@
     },
     {
       "name": "Moonriver",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/Moonriver.svg",
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/moonriver.svg",
       "url": "https://apps.moonbeam.network/moonriver",
       "categories": [
         "bridge",
@@ -477,7 +485,7 @@
     {
       "name": "Polkadot Staking Dashboard",
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/StakingDashboard.svg",
-      "url": "https://staking.polkadot.network/dashboard#/overview",
+      "url": "https://staking.polkadot.cloud/#/overview",
       "categories": [
         "staking",
         "utilities"
@@ -696,9 +704,9 @@
       "desktopOnly": true
     },
     {
-      "name": "HydraDX Omnipool",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/Hydradx.svg",
-      "url": "https://hydradx.io/NOVA",
+      "name": "Hydration",
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/Hydration.svg",
+      "url": "https://app.hydration.net/NOVA",
       "categories": [
         "bridge",
         "dex"
@@ -837,7 +845,7 @@
     {
       "name": "Polymesh Portal",
       "url": "https://portal.polymesh.network/",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/color/Polymesh.svg",
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/Polymesh.png",
       "categories": [
         "utilities",
         "staking",
@@ -859,6 +867,14 @@
       "categories": [
         "staking"
       ]
-    }  
+    },
+    {
+      "name": "FlappyWUD",
+      "url": "https://flappywud.lol/",
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/FlappyWUD.png",
+      "categories": [
+        "gaming"
+      ]
+    }
   ]
 }
