@@ -8788,5 +8788,50 @@
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Cere.svg",
         "addressPrefix": 54
+    },
+    {
+        "chainId": "b91746b45e0346cc2f815a520b9c6cb4d5c0902af848db0a80f85932d2e8276a",
+        "name": "Avail",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "AVAIL",
+                "precision": 18,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AVL.svg",
+                "staking": [
+                    "relaychain"
+                ]
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://zeref-api.slowops.xyz/ws",
+                "name": "Turing node"
+            }
+        ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/avail.json",
+            "overridesCommon": true
+        },
+        "externalApi": {
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-avail"
+                }
+            ],
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-avail"
+                }
+            ]
+        },
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Avail.svg",
+        "addressPrefix": 42,
+        "additional": {
+            "themeColor": "#58C8F6",
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/avail-avail-staking"
+        }
     }
 ]
