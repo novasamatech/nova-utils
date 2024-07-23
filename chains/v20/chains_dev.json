@@ -10746,6 +10746,13 @@
                 "name": "bountyblok node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://avail.subscan.io/extrinsic/{hash}",
+                "account": "https://avail.subscan.io/account/{address}"
+            }
+        ],
         "types": {
             "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/avail.json",
             "overridesCommon": true
