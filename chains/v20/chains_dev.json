@@ -10390,37 +10390,6 @@
         ]
     },
     {
-        "chainId": "7bbb72faf3d6d997ebe622a4e0ebfb6fdacf905b6141c86a3122cd479213a8d8",
-        "name": "Rolimec Rococo",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "RLMC",
-                "precision": 10,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/PLMC.svg",
-                "staking": [
-                    "parachain"
-                ]
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://rpc.rolimec.org",
-                "name": "Rolimec node"
-            }
-        ],
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polimec_Testnet.svg",
-        "addressPrefix": 41,
-        "options": [
-            "testnet"
-        ],
-        "additional": {
-            "themeColor": "#1F78FF",
-            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polimec-plmc-staking",
-            "defaultBlockTime": 12000
-        }
-    },
-    {
         "chainId": "ae1ca86c936aa252cdc45f4f436220567b2bbbcc4834f5b8f4191462baf19dfb",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
         "name": "Continuum",
