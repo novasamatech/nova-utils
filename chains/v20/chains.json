@@ -33,7 +33,9 @@
             {
                 "url": "wss://apps-rpc.polkadot.io",
                 "name": "Public node",
-                "features": ["noTls12"]
+                "features": [
+                    "noTls12"
+                ]
             },
             {
                 "url": "wss://polkadot-rpc.dwellir.com",
@@ -158,7 +160,9 @@
             {
                 "url": "wss://apps-kusama-rpc.polkadot.io",
                 "name": "Public node",
-                "features": ["noTls12"]
+                "features": [
+                    "noTls12"
+                ]
             },
             {
                 "url": "wss://kusama-rpc.dwellir.com",
@@ -464,7 +468,9 @@
             {
                 "url": "wss://kusama-people-rpc.polkadot.io",
                 "name": "Parity node",
-                "features": ["noTls12"]
+                "features": [
+                    "noTls12"
+                ]
             },
             {
                 "url": "wss://ksm-rpc.stakeworld.io/people",
@@ -1156,6 +1162,14 @@
             }
         ],
         "nodes": [
+            {
+                "url": "wss://moonbeam.ibp.network",
+                "name": "IBP1"
+            },
+            {
+                "url": "wss://moonbeam.dotters.network",
+                "name": "IBP2"
+            },
             {
                 "url": "wss://wss.api.moonbeam.network",
                 "name": "Moonbeam Foundation node"
@@ -2712,6 +2726,14 @@
             }
         ],
         "nodes": [
+            {
+                "url": "wss://kilt.ibp.network",
+                "name": "IBP1"
+            },
+            {
+                "url": "wss://kilt.dotters.network",
+                "name": "IBP2"
+            },
             {
                 "url": "wss://kilt-rpc.dwellir.com",
                 "name": "Dwellir node"
@@ -5134,20 +5156,20 @@
         ],
         "nodes": [
             {
+                "url": "wss://hydration.ibp.network",
+                "name": "IBP1"
+            },
+            {
+                "url": "wss://hydration.dotters.network",
+                "name": "IBP2"
+            },
+            {
                 "url": "wss://hydradx-rpc.dwellir.com",
                 "name": "Dwellir node"
             },
             {
                 "url": "wss://rpc.hydradx.cloud",
                 "name": "Calactic Council node"
-            },
-            {
-                "url": "wss://hydradx.paras.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://hydradx.paras.dotters.network",
-                "name": "IBP2 node"
             }
         ],
         "explorers": [
@@ -6190,6 +6212,14 @@
         ],
         "nodes": [
             {
+                "url": "wss://bifrost-polkadot.ibp.network",
+                "name": "IBP1"
+            },
+            {
+                "url": "wss://bifrost-polkadot.dotters.network",
+                "name": "IBP2"
+            },
+            {
                 "url": "wss://hk.p.bifrost-rpc.liebi.com/ws",
                 "name": "Liebi node"
             }
@@ -6277,6 +6307,14 @@
             }
         ],
         "nodes": [
+            {
+                "url": "wss://unique.ibp.network",
+                "name": "IBP1"
+            },
+            {
+                "url": "wss://unique.dotters.network",
+                "name": "IBP2"
+            },
             {
                 "url": "wss://eu-ws.unique.network/",
                 "name": "Unique Europe node"
@@ -7566,6 +7604,14 @@
         ],
         "nodes": [
             {
+                "url": "wss://ajuna.ibp.network",
+                "name": "IBP1"
+            },
+            {
+                "url": "wss://ajuna.dotters.network",
+                "name": "IBP2"
+            },
+            {
                 "url": "wss://rpc-para.ajuna.network",
                 "name": "Ajuna node"
             },
@@ -8374,6 +8420,14 @@
         ],
         "nodes": [
             {
+                "url": "wss://polimec.ibp.network",
+                "name": "IBP1"
+            },
+            {
+                "url": "wss://polimec.dotters.network",
+                "name": "IBP2"
+            },
+            {
                 "url": "wss://rpc.polimec.org",
                 "name": "Polimec node"
             }
@@ -8649,7 +8703,9 @@
             {
                 "url": "wss://polkadot-mythos-rpc.polkadot.io",
                 "name": "Parity node",
-                "features": ["noTls12"]
+                "features": [
+                    "noTls12"
+                ]
             }
         ],
         "explorers": [
@@ -8748,6 +8804,14 @@
             }
         ],
         "nodes": [
+            {
+                "url": "wss://nexus.ibp.network",
+                "name": "IBP1"
+            },
+            {
+                "url": "wss://nexus.dotters.network",
+                "name": "IBP2"
+            },
             {
                 "url": "wss://hyperbridge-nexus-rpc.blockops.network",
                 "name": "BlockOps node"
