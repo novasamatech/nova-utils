@@ -10960,7 +10960,11 @@
                 "assetId": 0,
                 "symbol": "DENTX",
                 "precision": 18,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/DENTX.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/DENTX.svg",
+                "staking": [
+                    "relaychain",
+                    "nomination-pools"
+                ]
             }
         ],
         "nodes": [
