@@ -8962,31 +8962,5 @@
             "themeColor": "#58C8F6",
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/avail-avail-staking"
         }
-    },
-    {
-        "chainId": "0313f6a011d128d22f996703cbab05162e2fdc9e031493314fe6db79979c5ca7",
-        "name": "DENTNet",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "DENTX",
-                "precision": 18,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/DENTX.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://rpc.dentnet.io/ws",
-                "name": "DENTNet node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "DENTNet Explorer",
-                "account": "https://main.dentnet.io/explorer/dentnet/account/{address}"
-            }
-        ],
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/DENTNet.svg",
-        "addressPrefix": 9807
     }
 ]
