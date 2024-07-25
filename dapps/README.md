@@ -74,11 +74,12 @@
 |  70 | SubBridge                            | https://subbridge.io/                               | bridge,evm                    |
 |  71 | Subsquare                            | https://polkadot.subsquare.io/                      | governance                    |
 |  72 | Talisman Portal                      | https://app.talisman.xyz/portfolio                  | crowdloans,nft                |
-|  73 | Tensor Wallet                        | https://tensorwallet.ca/                            | utilities,staking             |
-|  74 | Ternoa HUB                           | https://hub.ternoa.network/                         | staking                       |
-|  75 | Tinkernet Dashboard                  | https://www.tinker.network/overview                 | staking,bridge,crowdloans     |
-|  76 | TofuNFT                              | https://tofunft.com/                                | nft,evm                       |
-|  77 | Zeitgeist                            | https://app.zeitgeist.pm/                           | utilities                     |
-|  78 | Zenlink                              | https://app.zenlink.pro                             | dex,staking                   |
-|  79 | cBRIDGE                              | https://cbridge.celer.network/#/transfer            | dex,evm,nft                   |
-|  80 | xx network Hub                       | https://hub.xx.network                              | social,staking,utilities      |
+|  73 | Taostats                             | https://delegate.taostats.io                        | staking                       |
+|  74 | Tensor Wallet                        | https://tensorwallet.ca/                            | utilities,staking             |
+|  75 | Ternoa HUB                           | https://hub.ternoa.network/                         | staking                       |
+|  76 | Tinkernet Dashboard                  | https://www.tinker.network/overview                 | staking,bridge,crowdloans     |
+|  77 | TofuNFT                              | https://tofunft.com/                                | nft,evm                       |
+|  78 | Zeitgeist                            | https://app.zeitgeist.pm/                           | utilities                     |
+|  79 | Zenlink                              | https://app.zenlink.pro                             | dex,staking                   |
+|  80 | cBRIDGE                              | https://cbridge.celer.network/#/transfer            | dex,evm,nft                   |
+|  81 | xx network Hub                       | https://hub.xx.network                              | social,staking,utilities      |
