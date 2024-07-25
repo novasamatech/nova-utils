@@ -4400,10 +4400,10 @@
                     "type": "proportional",
                     "value": "65536000000000000000"
                   },
-                  "instructions": "xcmPalletDest"
+                  "instructions": "xcmPalletTeleportDest"
                 }
               },
-              "type": "xcmpallet"
+              "type": "xcmpallet-teleport"
             }
           ]
         }
