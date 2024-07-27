@@ -122,6 +122,7 @@
             "themeColor": "#E6007A",
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polkadot-dot-staking",
             "stakingMaxElectingVoters": 22500,
+            "identityChain": "67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008",
             "feeViaRuntimeCall": true,
             "supportsGenericLedgerApp": true
         }
@@ -9361,6 +9362,47 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Collectives.svg",
+        "addressPrefix": 0
+    },
+    {
+        "chainId": "67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Polkadot People",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "DOT",
+                "precision": 10,
+                "priceId": "polkadot",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Polkadot.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://polkadot-people-rpc.polkadot.io",
+                "name": "Parity node",
+                "features": [
+                    "noTls12"
+                ]
+            },
+            {
+                "url": "wss://sys.ibp.network/people-polkadot",
+                "name": "IBP network node"
+            },
+            {
+                "url": "wss://sys.dotters.network/people-polkadot",
+                "name": "Dotters Net node"
+            },
+            {
+                "url": "wss://rpc-people-polkadot.luckyfriday.io",
+                "name": "LuckyFriday node"
+            },
+            {
+                "url": "wss://people-polkadot.public.curie.radiumblock.co/ws",
+                "name": "Radium node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_People.svg",
         "addressPrefix": 0
     },
     {
