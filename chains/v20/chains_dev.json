@@ -9406,47 +9406,6 @@
         "addressPrefix": 0
     },
     {
-        "chainId": "67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008",
-        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "Polkadot People",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "DOT",
-                "precision": 10,
-                "priceId": "polkadot",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Polkadot.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://polkadot-people-rpc.polkadot.io",
-                "name": "Parity node",
-                "features": [
-                    "noTls12"
-                ]
-            },
-            {
-                "url": "wss://sys.ibp.network/people-polkadot",
-                "name": "IBP network node"
-            },
-            {
-                "url": "wss://sys.dotters.network/people-polkadot",
-                "name": "Dotters Net node"
-            },
-            {
-                "url": "wss://rpc-people-polkadot.luckyfriday.io",
-                "name": "LuckyFriday node"
-            },
-            {
-                "url": "wss://people-polkadot.public.curie.radiumblock.co/ws",
-                "name": "Radium node"
-            }
-        ],
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_People.svg",
-        "addressPrefix": 0
-    },
-    {
         "chainId": "c1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Kusama People",
