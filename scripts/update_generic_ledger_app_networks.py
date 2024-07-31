@@ -7,8 +7,7 @@ from substrateinterface import SubstrateInterface
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from tests.data.setting_data import get_substrate_chains
 
-CHAINS_FILE_PATH_DEV = Path(
-    os.getenv("DEV_CHAINS_JSON_PATH", 'chains/v20/chains_dev.json'))
+CHAINS_FILE_PATH_DEV = Path(os.getenv("DEV_CHAINS_JSON_PATH", 'chains/v20/chains_dev.json'))
 
 
 def load_json_file(file_path):
@@ -40,6 +39,7 @@ def update_network_data(network):
     additional = network.setdefault('additional', {})
     additional['supportsGenericLedgerApp'] = True
     additional.pop('disabledCheckMetadataHash', None)
+
 
 def remove_generic_ledger_app_support(existing_data, chain_id):
     existing_network = find_existing_network(existing_data, chain_id)
@@ -78,32 +78,39 @@ def check_metadata_hash_exist(connection: SubstrateInterface) -> bool:
         return False
 
 
+def process_chains(chains, existing_data):
+    networks_with_metadata_hash = []
+    for chain in chains:
+        print(f'Checking {chain.name}')
+        process_single_chain(chain, existing_data, networks_with_metadata_hash)
+    return networks_with_metadata_hash
+
+
+def process_single_chain(chain, existing_data, networks_with_metadata_hash):
+    try:
+        with chain.create_connection() as connection:
+            if connection:
+                handle_connection(connection, chain,existing_data, networks_with_metadata_hash)
+    except Exception as e:
+        print(f"Error creating connection for chain {chain.name}: {e}")
+
+
+def handle_connection(connection, chain, existing_data, networks_with_metadata_hash):
+    has_metadata_hash = check_metadata_hash_exist(connection)
+    if has_metadata_hash:
+        networks_with_metadata_hash.append({
+            'name': chain.name,
+            'chainId': chain.chainId
+        })
+    else:
+        remove_generic_ledger_app_support(existing_data, chain.chainId)
+
+
 def main():
     existing_data_dev = load_json_file(CHAINS_FILE_PATH_DEV)
-
     substrate_chains = get_substrate_chains(path=CHAINS_FILE_PATH_DEV.__str__())
-    networks_with_metadata_hash = []
-
-    for chain in substrate_chains:
-        print(f'Checking {chain.name}')
-        try:
-            connection = chain.create_connection()
-            if connection:
-                has_metadata_hash = check_metadata_hash_exist(connection)
-                if has_metadata_hash:
-                    networks_with_metadata_hash.append({
-                        'name': chain.name,
-                        'chainId': chain.chainId
-                    })
-                else:
-                    remove_generic_ledger_app_support(existing_data_dev, chain.chainId)
-            chain.close_substrate_connection()
-        except Exception as e:
-            print(f"Error creating connection for chain {chain.name}: {e}")
-
-    update_existing_data_with_new_networks(
-        existing_data_dev, networks_with_metadata_hash)
-
+    networks_with_metadata_hash = process_chains(substrate_chains, existing_data_dev)
+    update_existing_data_with_new_networks(existing_data_dev, networks_with_metadata_hash)
     save_json_file(CHAINS_FILE_PATH_DEV, existing_data_dev)
 
 
