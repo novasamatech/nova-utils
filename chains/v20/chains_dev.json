@@ -424,7 +424,8 @@
         ],
         "additional": {
             "relaychainAsNative": true,
-            "feeViaRuntimeCall": true
+            "feeViaRuntimeCall": true,
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -7191,7 +7192,8 @@
             "testnet"
         ],
         "additional": {
-            "feeViaRuntimeCall": true
+            "feeViaRuntimeCall": true,
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -7382,7 +7384,10 @@
             "testnet",
             "crowdloans",
             "proxy"
-        ]
+        ],
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "chainId": "6408de7737c59c238890533af25896a2c20608d8b380bb01029acb392781063e",
@@ -10074,7 +10079,8 @@
             "swap-hub"
         ],
         "additional": {
-            "relaychainAsNative": true
+            "relaychainAsNative": true,
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -10986,7 +10992,6 @@
             "testnet"
         ],
         "additional": {
-            "disabledCheckMetadataHash": true,
             "supportsGenericLedgerApp": true
         }
     },
