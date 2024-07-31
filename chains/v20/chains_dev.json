@@ -336,7 +336,8 @@
             "themeColor": "#1F78FF",
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polkadot-and-kusama",
             "stakingMaxElectingVoters": 22500,
-            "feeViaRuntimeCall": true
+            "feeViaRuntimeCall": true,
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -2432,7 +2433,7 @@
         ],
         "additional": {
             "feeViaRuntimeCall": true,
-            "disabledCheckMetadataHash": true
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -2887,7 +2888,8 @@
         "additional": {
             "themeColor": "#D632C1",
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/calamari-kma-staking",
-            "defaultBlockTime": 12000
+            "defaultBlockTime": 12000,
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -4704,7 +4706,8 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Encointer.svg",
         "addressPrefix": 2,
         "additional": {
-            "feeViaRuntimeCall": true
+            "feeViaRuntimeCall": true,
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -5114,7 +5117,7 @@
         ],
         "additional": {
             "feeViaRuntimeCall": true,
-            "disabledCheckMetadataHash": true
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -7441,7 +7444,8 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Tinkernet.svg",
         "addressPrefix": 117,
         "additional": {
-            "feeViaRuntimeCall": true
+            "feeViaRuntimeCall": true,
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -9263,7 +9267,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Bridge_Hub.svg",
-        "addressPrefix": 0
+        "addressPrefix": 0,
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "chainId": "00dcb981df86429de8bbacf9803401f09485366c44efbf53af9ecfab03adc7e5",
@@ -9308,7 +9315,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_Bridge_Hub.svg",
-        "addressPrefix": 2
+        "addressPrefix": 2,
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "chainId": "46ee89aa2eedd13e988962630ec9fb7565964cf5023bb351f2b6b25c1b68b0b2",
@@ -9362,7 +9372,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Collectives.svg",
-        "addressPrefix": 0
+        "addressPrefix": 0,
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "chainId": "67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008",
@@ -9403,7 +9416,10 @@
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_People.svg",
-        "addressPrefix": 0
+        "addressPrefix": 0,
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "chainId": "c1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f",
@@ -9432,7 +9448,10 @@
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_People.svg",
-        "addressPrefix": 2
+        "addressPrefix": 2,
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "chainId": "67221cd96c1551b72d55f65164d6a39f31b570c77a05c90e31931b0e2f379e13",
@@ -9792,7 +9811,7 @@
             "themeColor": "#1F78FF",
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/manta-manta-staking",
             "defaultBlockTime": 12000,
-            "disabledCheckMetadataHash": true
+            "supportsGenericLedgerApp": true
         }
     },
     {
