@@ -41,6 +41,14 @@ def update_network_data(network):
     additional['supportsGenericLedgerApp'] = True
     additional.pop('disabledCheckMetadataHash', None)
 
+def remove_generic_ledger_app_support(existing_data, chain_id):
+    existing_network = find_existing_network(existing_data, chain_id)
+    if existing_network:
+        additional = existing_network.get('additional', {})
+        if 'supportsGenericLedgerApp' in additional:
+            del additional['supportsGenericLedgerApp']
+            print(f"Removed supportsGenericLedgerApp for chain {chain_id}")
+
 
 def check_metadata_hash_exist(connection: SubstrateInterface) -> bool:
     try:
@@ -80,11 +88,15 @@ def main():
         print(f'Checking {chain.name}')
         try:
             connection = chain.create_connection()
-            if connection and check_metadata_hash_exist(connection):
-                networks_with_metadata_hash.append({
-                    'name': chain.name,
-                    'chainId': chain.chainId
-                })
+            if connection:
+                has_metadata_hash = check_metadata_hash_exist(connection)
+                if has_metadata_hash:
+                    networks_with_metadata_hash.append({
+                        'name': chain.name,
+                        'chainId': chain.chainId
+                    })
+                else:
+                    remove_generic_ledger_app_support(existing_data_dev, chain.chainId)
             chain.close_substrate_connection()
         except Exception as e:
             print(f"Error creating connection for chain {chain.name}: {e}")
