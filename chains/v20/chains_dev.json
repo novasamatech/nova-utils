@@ -10965,16 +10965,10 @@
             }
         ],
         "externalApi": {
-            "governance": [
-                {
-                    "type": "subsquare",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-test-gov"
-                }
-            ],
             "governance-delegations": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-test-gov"
+                    "url": "https://subquery-governance-testnet-stg.novasamatech.org"
                 }
             ]
         },
