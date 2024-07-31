@@ -82,12 +82,9 @@ def main():
     existing_data_dev = load_json_file(CHAINS_FILE_PATH_DEV)
 
     substrate_chains = get_substrate_chains(path=CHAINS_FILE_PATH_DEV.__str__())
-    target_chain_id = "3dbb473ae9b2b77ecf077c03546f0f8670c020e453dddb457da155e6cc7cba42"
-    filtered_chains = [chain for chain in substrate_chains if chain.chainId == target_chain_id]
-
     networks_with_metadata_hash = []
 
-    for chain in filtered_chains:
+    for chain in substrate_chains:
         print(f'Checking {chain.name}')
         try:
             connection = chain.create_connection()
