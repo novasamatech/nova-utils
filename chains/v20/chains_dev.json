@@ -337,6 +337,7 @@
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polkadot-and-kusama",
             "stakingMaxElectingVoters": 22500,
             "feeViaRuntimeCall": true,
+            "identityChain": "1eb6fb0ba5187434de017a70cb84d4f47142df1d571d0ef9e7e1407f2b80b93c",
             "supportsGenericLedgerApp": true
         }
     },
@@ -11039,5 +11040,37 @@
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/DENTNet.svg",
         "addressPrefix": 9807
+    },
+    {
+        "chainId": "1eb6fb0ba5187434de017a70cb84d4f47142df1d571d0ef9e7e1407f2b80b93c",
+        "parentId": "e143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e",
+        "name": "Westend People",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "WND",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Westend.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://people-westend-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://sys.ibp.network/people-westend",
+                "name": "IBP1 node"
+            },
+            {
+                "url": "wss://sys.dotters.network/people-westend",
+                "name": "IBP2 node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
+        "addressPrefix": 42,
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     }
 ]
