@@ -4588,7 +4588,8 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Asset_Hub.svg",
         "addressPrefix": 0,
         "options": [
-            "swap-hub"
+            "swap-hub",
+            "assethub-fees"
         ],
         "additional": {
             "relaychainAsNative": true,
@@ -5757,7 +5758,8 @@
         "addressPrefix": 63,
         "options": [
             "governance-v1",
-            "hydradx-swaps"
+            "hydradx-swaps",
+            "hydration-fees"
         ],
         "additional": {
             "feeViaRuntimeCall": true,
