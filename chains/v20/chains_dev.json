@@ -1563,7 +1563,8 @@
             ]
         },
         "additional": {
-            "feeViaRuntimeCall": true
+            "feeViaRuntimeCall": true,
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -9455,7 +9456,7 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_People.svg",
         "addressPrefix": 2,
         "additional": {
-            "disabledCheckMetadataHash": true
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -10986,7 +10987,7 @@
             "testnet"
         ],
         "additional": {
-            "disabledCheckMetadataHash": true
+            "supportsGenericLedgerApp": true
         }
     },
     {
