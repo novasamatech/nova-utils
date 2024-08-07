@@ -3,11 +3,16 @@ import os
 import sys
 from pathlib import Path
 from substrateinterface import SubstrateInterface
+from enum import Enum
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from tests.data.setting_data import get_substrate_chains
 
 CHAINS_FILE_PATH_DEV = Path(os.getenv("DEV_CHAINS_JSON_PATH", 'chains/v20/chains_dev.json'))
+
+class BlacklistedChains(Enum):
+    NOVASAMA_TESTNET = '3dbb473ae9b2b77ecf077c03546f0f8670c020e453dddb457da155e6cc7cba42'
+    KUSAMA_PEOPLE = 'c1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f' # TODO: Remove when Kusama People is supported
 
 
 def load_json_file(file_path):
@@ -81,8 +86,11 @@ def check_metadata_hash_exist(connection: SubstrateInterface) -> bool:
 def process_chains(chains, existing_data):
     networks_with_metadata_hash = []
     for chain in chains:
-        print(f'Checking {chain.name}')
-        process_single_chain(chain, existing_data, networks_with_metadata_hash)
+        if chain.chainId not in [c.value for c in BlacklistedChains]:
+            print(f'Checking {chain.name}')
+            process_single_chain(chain, existing_data, networks_with_metadata_hash)
+        else:
+            print(f'Skipping blacklisted chain: {chain.name} (chainId: {chain.chainId})')
     return networks_with_metadata_hash
 
 
