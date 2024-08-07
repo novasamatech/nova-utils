@@ -1823,7 +1823,8 @@
         "additional": {
             "themeColor": "#1F78FF",
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/parachains-and-solochains",
-            "defaultBlockTime": 12000
+            "defaultBlockTime": 12000,
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -11071,9 +11072,7 @@
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Westend_People.svg",
         "addressPrefix": 42,
-        "additional": {
-            "supportsGenericLedgerApp": true
-        },
+        "additional": {},
         "options": [
             "testnet"
         ]
