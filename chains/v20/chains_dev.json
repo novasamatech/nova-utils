@@ -31,6 +31,14 @@
                 "name": "Novasama node"
             },
             {
+                "url": "wss://rpc.ibp.network/polkadot",
+                "name": "IBP1 node"
+            },
+            {
+                "url": "wss://rpc.dotters.network/polkadot",
+                "name": "IBP2 node"
+            },
+            {
                 "url": "wss://apps-rpc.polkadot.io",
                 "name": "Public node",
                 "features": [
@@ -56,14 +64,6 @@
             {
                 "url": "wss://rpc-polkadot.luckyfriday.io",
                 "name": "LuckyFriday node"
-            },
-            {
-                "url": "wss://rpc.ibp.network/polkadot",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://rpc.dotters.network/polkadot",
-                "name": "IBP2 node"
             }
         ],
         "explorers": [
@@ -159,6 +159,14 @@
                 "name": "Novasama node"
             },
             {
+                "url": "wss://rpc.ibp.network/kusama",
+                "name": "IBP1 node"
+            },
+            {
+                "url": "wss://rpc.dotters.network/kusama",
+                "name": "IBP2 node"
+            },
+            {
                 "url": "wss://apps-kusama-rpc.polkadot.io",
                 "name": "Public node",
                 "features": [
@@ -176,14 +184,6 @@
             {
                 "url": "wss://1rpc.io/ksm",
                 "name": "Automata 1RPC node"
-            },
-            {
-                "url": "wss://rpc.ibp.network/kusama",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://rpc.dotters.network/kusama",
-                "name": "IBP2 node"
             },
             {
                 "url": "wss://kusama.public.curie.radiumblock.co/ws",
@@ -2689,20 +2689,20 @@
         ],
         "nodes": [
             {
-                "url": "wss://kilt-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
-                "url": "wss://spiritnet.kilt.io/",
-                "name": "KILT Protocol node"
-            },
-            {
                 "url": "wss://kilt.ibp.network",
                 "name": "IBP1 node"
             },
             {
                 "url": "wss://kilt.dotters.network",
                 "name": "IBP2 node"
+            },
+            {
+                "url": "wss://kilt-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://spiritnet.kilt.io/",
+                "name": "KILT Protocol node"
             },
             {
                 "url": "wss://spiritnet.api.onfinality.io/public-ws",
@@ -3646,20 +3646,20 @@
                 "name": "Moonbeam Foundation node"
             },
             {
-                "url": "wss://moonbeam.public.curie.radiumblock.co/ws",
-                "name": "RadiumBlock node"
-            },
-            {
-                "url": "wss://moonbeam.public.blastapi.io",
-                "name": "Blast node"
-            },
-            {
                 "url": "wss://moonbeam.ibp.network",
                 "name": "IBP1 node"
             },
             {
                 "url": "wss://moonbeam.dotters.network",
                 "name": "IBP2 node"
+            },
+            {
+                "url": "wss://moonbeam.public.curie.radiumblock.co/ws",
+                "name": "RadiumBlock node"
+            },
+            {
+                "url": "wss://moonbeam.public.blastapi.io",
+                "name": "Blast node"
             }
         ],
         "explorers": [
@@ -5735,20 +5735,20 @@
         ],
         "nodes": [
             {
-                "url": "wss://hydradx-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
-                "url": "wss://rpc.hydradx.cloud",
-                "name": "Galactic Council node"
-            },
-            {
                 "url": "wss://hydration.ibp.network",
                 "name": "IBP1 node"
             },
             {
                 "url": "wss://hydration.dotters.network",
                 "name": "IBP2 node"
+            },
+            {
+                "url": "wss://hydradx-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://rpc.hydradx.cloud",
+                "name": "Galactic Council node"
             }
         ],
         "explorers": [
@@ -6860,16 +6860,16 @@
         ],
         "nodes": [
             {
-                "url": "wss://hk.p.bifrost-rpc.liebi.com/ws",
-                "name": "Liebi node"
-            },
-            {
                 "url": "wss://bifrost-polkadot.ibp.network",
                 "name": "IBP1 node"
             },
             {
                 "url": "wss://bifrost-polkadot.dotters.network",
                 "name": "IBP2 node"
+            },
+            {
+                "url": "wss://hk.p.bifrost-rpc.liebi.com/ws",
+                "name": "Liebi node"
             }
         ],
         "explorers": [
@@ -8827,16 +8827,16 @@
                 "name": "Ajuna node"
             },
             {
-                "url": "wss://ajuna.public.curie.radiumblock.co/ws",
-                "name": "RadiumBlock node"
-            },
-            {
                 "url": "wss://ajuna.ibp.network",
                 "name": "IBP1 node"
             },
             {
                 "url": "wss://ajuna.dotters.network",
                 "name": "IBP2 node"
+            },
+            {
+                "url": "wss://ajuna.public.curie.radiumblock.co/ws",
+                "name": "RadiumBlock node"
             }
         ],
         "explorers": [
@@ -9494,16 +9494,16 @@
                 ]
             },
             {
-                "url": "wss://ksm-rpc.stakeworld.io/people",
-                "name": "Stakeworld node"
-            },
-            {
                 "url": "wss://sys.ibp.network/people-kusama",
                 "name": "IBP1 node"
             },
             {
                 "url": "wss://sys.dotters.network/people-kusama",
                 "name": "IBP2 node"
+            },
+            {
+                "url": "wss://ksm-rpc.stakeworld.io/people",
+                "name": "Stakeworld node"
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_People.svg",
