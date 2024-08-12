@@ -6897,7 +6897,10 @@
         "addressPrefix": 6,
         "options": [
             "governance-v1"
-        ]
+        ],
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "chainId": "2fc8bb6ed7c0051bdcf4866c322ed32b6276572713607e3297ccf411b8f14aa9",
@@ -7350,7 +7353,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Bajun.svg",
-        "addressPrefix": 1337
+        "addressPrefix": 1337,
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "chainId": "ca93a37c913a25fa8fdb33c7f738afc39379cb71d37874a16d4c091a5aef9f89",
