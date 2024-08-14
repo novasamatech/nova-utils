@@ -22,7 +22,7 @@ singlechains = 'https://raw.githubusercontent.com/polkadot-js/apps/master/packag
 testnets = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testing.ts"
 
 CHAINS_FILE_PATH_DEV = Path(os.getenv("DEV_CHAINS_JSON_PATH", 'chains/v20/chains_dev.json'))
-CHAINS_FILE_PATH_PROD = Path(os.getenv("PROD_CHAINS_JSON_PATH", 'chains/v20/preConfigured/details'))
+CHAINS_FILE_PATH_PROD = Path(os.getenv("PROD_CHAINS_JSON_PATH", 'chains/v20/chains.json'))
 
 
 def load_json_file(file_path):
@@ -66,27 +66,25 @@ def request_data_from_pjs(file):
     return data
 
 
-def get_ts_file(url):
-    ts_file_path = "downloaded_file.ts"
-
+def get_ts_file(url, output_path):
     response = requests.get(url, stream=True)
     # Check if the request was successful
     if response.status_code == 200:
         # Open the file in write-binary mode
-        with open(ts_file_path, "wb") as file:
+        with open(output_path, "wb") as file:
             # Write the content of the response to the file in chunks
             for chunk in response.iter_content(chunk_size=1024):
                 if chunk:  # filter out keep-alive new chunks
                     file.write(chunk)
-        print(f"Downloaded file saved as {ts_file_path}")
+        print(f"Downloaded file saved as {output_path}")
     else:
         print(f"Failed to download file. Status code: {response.status_code}")
 
 
-def ts_constant_to_json():
+def ts_constant_to_json(input_file_path):
     json_file_path = "output.json"
 
-    with open(json_file_path, 'r') as file:
+    with open(input_file_path, 'r') as file:
         content = file.read()
 
     # Extract the array content
@@ -138,14 +136,14 @@ def create_chain(chain_object):
         providers = chain_object.get("providers")
         chain_data = {
             "chainId": json_property.chainId,
-            "name": json_property.name,
+            "name": chain_object.get("text"),
             "assets": [{
                 "assetId": 0,
                 "symbol": json_property.symbol,
                 "precision": json_property.precision,
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Polkadot.svg"
             }],
-            "nodes": [{"nodes": [{"url": url, "name": name} for name, url in providers.items()]}],
+            "nodes": [{"url": url, "name": name} for name, url in providers.items()],
             "addressPrefix": json_property.ss58Format
         }
         return chain_data
@@ -158,9 +156,24 @@ def check_chain_id(chains, chain_id_to_check):
     return False
 
 
-def create_file(chain):
-    file_name = CHAINS_FILE_PATH_DEV.__str__() + "preConfigured/details/" + chain.get("chainId")[2:] + ".json"
+def add_chains_details_file(chain):
+    target_path = CHAINS_FILE_PATH_DEV.parent / 'preConfigured' / 'detailsDev'
+    file_name = target_path.as_posix() + "/" + chain.get("chainId")[2:] + ".json"
     save_json_file(file_name, chain)
+
+
+def add_chain_to_chains_file(chain):
+    target_path = CHAINS_FILE_PATH_DEV.parent / 'preConfigured' / 'chains_dev.json'
+    chain_data = {
+        "chainId": chain.get("chainId")[2:],
+        "name": chain.get("name")
+    }
+
+    with open(target_path, 'r') as file:
+        data = json.load(file)
+    data.append(chain_data)
+
+    save_json_file(target_path, data)
 
 
 def create_json_files(pjs_endpoints):
@@ -178,13 +191,16 @@ def create_json_files(pjs_endpoints):
             if is_present:
                 continue
             else:
-                create_file(chain)
+                add_chains_details_file(chain)
+                add_chain_to_chains_file(chain)
 
 
 def main():
-    get_ts_file(testnets)
-    pjs_json = ts_constant_to_json()
-    create_json_files(pjs_json)
+    ts_file_path = "downloaded_file.ts"
+
+    get_ts_file(testnets, ts_file_path)
+    polkadotjs_json = ts_constant_to_json(ts_file_path)
+    create_json_files(polkadotjs_json)
 
 
 if __name__ == "__main__":
