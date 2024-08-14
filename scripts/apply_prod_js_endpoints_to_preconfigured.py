@@ -160,6 +160,7 @@ def add_chains_details_file(chain):
     target_path = CHAINS_FILE_PATH_DEV.parent / 'preConfigured' / 'detailsDev'
     file_name = target_path.as_posix() + "/" + chain.get("chainId")[2:] + ".json"
     save_json_file(file_name, chain)
+    print(f"Created file for chain {chain.get('name')}")
 
 
 def add_chain_to_chains_file(chain):
@@ -174,6 +175,7 @@ def add_chain_to_chains_file(chain):
     data.append(chain_data)
 
     save_json_file(target_path, data)
+    print(f"Saved data for chain {chain.get('name')}")
 
 
 def create_json_files(pjs_endpoints):
@@ -187,6 +189,7 @@ def create_json_files(pjs_endpoints):
         else:
             chain = create_chain(item)
             chainid = chain.get("chainId")[2:]
+            # skip chains already added to config
             is_present = check_chain_id(existing_data_dev, chainid)
             if is_present:
                 continue
