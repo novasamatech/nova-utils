@@ -9,7 +9,6 @@ from scripts.utils.substrate_interface import create_connection_by_url
 from enum import Enum
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from tests.data.setting_data import get_substrate_chains
 
 
 class Endpoints(Enum):
@@ -134,7 +133,7 @@ def create_chain(chain_object):
 
         providers = chain_object.get("providers")
         chain_data = {
-            "chainId": json_property.chainId,
+            "chainId": json_property.chainId[2:],
             "name": chain_object.get("text"),
             "assets": [{
                 "assetId": 0,
@@ -157,7 +156,7 @@ def check_chain_id(chains, chain_id_to_check):
 
 def add_chains_details_file(chain):
     target_path = CHAINS_FILE_PATH_DEV.parent / 'preConfigured' / 'detailsDev'
-    file_name = chain.get("chainId")[2:] + '.json'
+    file_name = chain.get("chainId") + '.json'
     file_path = target_path / file_name
 
     if file_path.exists():
@@ -171,22 +170,20 @@ def add_chains_details_file(chain):
 def add_chain_to_chains_file(chain):
     target_path = CHAINS_FILE_PATH_DEV.parent / 'preConfigured' / 'chains_dev.json'
     chain_data = {
-        "chainId": chain.get("chainId")[2:],
+        "chainId": chain.get("chainId"),
         "name": chain.get("name")
     }
 
     with open(target_path, 'r') as file:
         data = json.load(file)
+    chain_id_exists = any(item.get("chainId") == chain_data["chainId"] for item in data)
 
-    chainId_exists = any(item.get("chainId") == chain_data["chainId"] for item in data)
-
-    if not chainId_exists:
+    if not chain_id_exists:
         data.append(chain_data)
         print(f"Added new chain data: {chain_data}")
     else:
         print(f"Chain ID {chain_data['chainId']} already exists in the file.")
     save_json_file(target_path, data)
-    print(f"Saved data for chain {chain.get('name')}")
 
 
 def create_json_files(pjs_endpoints):
@@ -199,9 +196,9 @@ def create_json_files(pjs_endpoints):
             continue
         else:
             chain = create_chain(item)
-            chainid = chain.get("chainId")[2:]
+            chain_id = chain.get("chainId")
             # skip chains already added to config
-            is_present = check_chain_id(existing_data_dev, chainid)
+            is_present = check_chain_id(existing_data_dev, chain_id)
             if is_present:
                 continue
             else:
