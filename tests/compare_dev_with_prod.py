@@ -3,7 +3,7 @@ import json
 import os
 import deepdiff
 
-CHAINS_VERISON = os.getenv('CHAINS_VERSION', default = "v9")
+CHAINS_VERISON = os.getenv('CHAINS_VERSION', default = "v20")
 
 def compare_network(prod, dev):
     for network in prod:
