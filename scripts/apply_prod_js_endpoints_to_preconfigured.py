@@ -4,22 +4,23 @@ import os
 import sys
 from pathlib import Path
 import requests
-from scripts.utils.metadata_interaction import get_metadata_param, get_properties
+from scripts.utils.metadata_interaction import get_properties
 from scripts.utils.substrate_interface import create_connection_by_url
-from substrateinterface import SubstrateInterface
 from enum import Enum
-from utils.work_with_data import get_data_from_file
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from tests.data.setting_data import get_substrate_chains
 
-polkadot = 'https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/productionRelayPolkadot.ts'
-kusama = 'https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/productionRelayKusama.ts'
-westend = 'https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testingRelayWestend.ts'
-rococo = 'https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testingRelayRococo.ts'
-paseo = 'https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testingRelayPaseo.ts'
-singlechains = 'https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/production.ts'
-testnets = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testing.ts"
+
+class Endpoints(Enum):
+    polkadot = 'https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/productionRelayPolkadot.ts'
+    kusama = 'https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/productionRelayKusama.ts'
+    westend = 'https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testingRelayWestend.ts'
+    rococo = 'https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testingRelayRococo.ts'
+    paseo = 'https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testingRelayPaseo.ts'
+    singlechains = 'https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/production.ts'
+    testnets = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testing.ts"
+
 
 CHAINS_FILE_PATH_DEV = Path(os.getenv("DEV_CHAINS_JSON_PATH", 'chains/v20/chains_dev.json'))
 CHAINS_FILE_PATH_PROD = Path(os.getenv("PROD_CHAINS_JSON_PATH", 'chains/v20/chains.json'))
@@ -97,6 +98,7 @@ def ts_constant_to_json(input_file_path):
     # Split the array content into individual objects
     objects = find_objects(array_content)
     json_objects = []
+
     for obj in objects:
         # Remove comments
         obj_lines = [line for line in obj.split('\n') if not line.strip().startswith('//')]
@@ -117,11 +119,11 @@ def ts_constant_to_json(input_file_path):
             print(f"Error parsing object: {e}")
             print(f"Problematic object: {cleaned_obj}")
 
-    return json_objects
     # Write the JSON array to the output file
     with open(json_file_path, 'w') as file:
         json.dump(json_objects, file, indent=2)
-    print(f"Conversion completed. Output written to {json_file_path}")
+        print(f"Conversion completed. Output written to {json_file_path}")
+        return json_objects
 
 
 def create_chain(chain_object):
@@ -158,9 +160,15 @@ def check_chain_id(chains, chain_id_to_check):
 
 def add_chains_details_file(chain):
     target_path = CHAINS_FILE_PATH_DEV.parent / 'preConfigured' / 'detailsDev'
-    file_name = target_path.as_posix() + "/" + chain.get("chainId")[2:] + ".json"
-    save_json_file(file_name, chain)
-    print(f"Created file for chain {chain.get('name')}")
+    file_name = chain.get("chainId")[2:] + '.json'
+    file_path = target_path / file_name
+
+    if file_path.exists():
+        print(f"Skipping file: {file_name}")
+    else:
+        print(f"File not found, continuing processing.")
+        save_json_file(file_path, chain)
+        print(f"Created file for chain {chain.get('name')}")
 
 
 def add_chain_to_chains_file(chain):
@@ -172,8 +180,15 @@ def add_chain_to_chains_file(chain):
 
     with open(target_path, 'r') as file:
         data = json.load(file)
-    data.append(chain_data)
 
+    chainId_exists = any(item.get("chainId") == chain_data["chainId"] for item in data)
+
+    # Step 4: Append the new chain data if the chainId is not found
+    if not chainId_exists:
+        data.append(chain_data)
+        print(f"Added new chain data: {chain_data}")
+    else:
+        print(f"Chain ID {chain_data['chainId']} already exists in the file.")
     save_json_file(target_path, data)
     print(f"Saved data for chain {chain.get('name')}")
 
@@ -201,7 +216,7 @@ def create_json_files(pjs_endpoints):
 def main():
     ts_file_path = "downloaded_file.ts"
 
-    get_ts_file(testnets, ts_file_path)
+    get_ts_file(Endpoints.testnets.value, ts_file_path)
     polkadotjs_json = ts_constant_to_json(ts_file_path)
     create_json_files(polkadotjs_json)
 
