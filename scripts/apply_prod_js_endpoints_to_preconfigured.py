@@ -69,13 +69,10 @@ def request_data_from_pjs(file):
 
 def get_ts_file(url, output_path):
     response = requests.get(url, stream=True)
-    # Check if the request was successful
     if response.status_code == 200:
-        # Open the file in write-binary mode
         with open(output_path, "wb") as file:
-            # Write the content of the response to the file in chunks
             for chunk in response.iter_content(chunk_size=1024):
-                if chunk:  # filter out keep-alive new chunks
+                if chunk:
                     file.write(chunk)
         print(f"Downloaded file saved as {output_path}")
     else:
@@ -183,7 +180,6 @@ def add_chain_to_chains_file(chain):
 
     chainId_exists = any(item.get("chainId") == chain_data["chainId"] for item in data)
 
-    # Step 4: Append the new chain data if the chainId is not found
     if not chainId_exists:
         data.append(chain_data)
         print(f"Added new chain data: {chain_data}")
