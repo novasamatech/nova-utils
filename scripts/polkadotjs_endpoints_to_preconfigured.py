@@ -85,35 +85,33 @@ def ts_constant_to_json(input_file_path):
         content = file.read()
 
     # Extract the array content
-    array_match = re.search(r'=\s*\[(.*?)]', content, re.DOTALL)
-    if not array_match:
+    array_matches = re.findall(r'\[\s*(\{(?:.|\n)*?})\s*]', content, re.DOTALL)
+    if not array_matches:
         raise ValueError("No array found in the input file")
-
-    array_content = array_match.group(1)
-
-    # Split the array content into individual objects
-    objects = find_objects(array_content)
     json_objects = []
+    for i, array_content in enumerate(array_matches):
+        # Split the array content into individual objects
+        objects = find_objects(array_content)
 
-    for obj in objects:
-        # Remove comments
-        obj_lines = [line for line in obj.split('\n') if not line.strip().startswith('//')]
-        cleaned_obj = '\n'.join(obj_lines)
+        for obj in objects:
+            # Remove comments
+            obj_lines = [line for line in obj.split('\n') if not line.strip().startswith('//')]
+            cleaned_obj = '\n'.join(obj_lines)
 
-        # Convert to valid JSON
-        cleaned_obj = re.sub(r"'", '"', cleaned_obj)  # Replace single quotes with double quotes
-        cleaned_obj = re.sub(r'(?<!")(\b\w+\b)(?=\s*:)', r'"\1"', cleaned_obj)  # Add quotes to keys
-        cleaned_obj = re.sub(r",\s*}", "}", cleaned_obj)  # Remove trailing commas
-        cleaned_obj = re.sub(r":\s*([a-zA-Z]\w*)", r': "\1"', cleaned_obj)  # Quote unquoted string values
-        cleaned_obj = re.sub(r"\n", '', cleaned_obj)
+            # Convert to valid JSON
+            cleaned_obj = re.sub(r"'", '"', cleaned_obj)  # Replace single quotes with double quotes
+            cleaned_obj = re.sub(r'(?<!")(\b\w+\b)(?=\s*:)', r'"\1"', cleaned_obj)  # Add quotes to keys
+            cleaned_obj = re.sub(r",\s*}", "}", cleaned_obj)  # Remove trailing commas
+            cleaned_obj = re.sub(r":\s*([a-zA-Z]\w*)", r': "\1"', cleaned_obj)  # Quote unquoted string values
+            cleaned_obj = re.sub(r"\n", '', cleaned_obj)
 
-        # Parse the cleaned object
-        try:
-            json_obj = json.loads(cleaned_obj)
-            json_objects.append(json_obj)
-        except json.JSONDecodeError as e:
-            print(f"Error parsing object: {e}")
-            print(f"Problematic object: {cleaned_obj}")
+            # Parse the cleaned object
+            try:
+                json_obj = json.loads(cleaned_obj)
+                json_objects.append(json_obj)
+            except json.JSONDecodeError as e:
+                print(f"Error parsing object: {e}")
+                print(f"Problematic object: {cleaned_obj}")
 
     # Write the JSON array to the output file
     with open(json_file_path, 'w') as file:
@@ -138,7 +136,7 @@ def create_chain_data(chain_object):
 
             chain_data = {
                 "chainId": json_property.chainId[2:],
-                "name": chain_object.get("text"),
+                "name": json_property.name,
                 "assets": [{
                     "assetId": 0,
                     "symbol": json_property.symbol,
@@ -186,7 +184,7 @@ def add_chains_details_file(chain, chains_path):
     file_path = target_path / file_name
 
     if file_path.exists():
-        print(f"File found in config, kipping file: {file_name}")
+        print(f"File found in config, skipping file: {file_name}")
     else:
         print(f"File not found, continuing processing.")
         save_json_file(file_path, chain)
@@ -242,7 +240,7 @@ def create_json_files(pjs_networks, chains_path):
 def main():
     ts_file_path = "downloaded_file.ts"
 
-    get_ts_file(Endpoints.testnets.value, ts_file_path)
+    get_ts_file(Endpoints.singlechains.value, ts_file_path)
     polkadotjs_json = ts_constant_to_json(ts_file_path)
     create_json_files(polkadotjs_json, CHAINS_FILE_PATH_DEV)
 
