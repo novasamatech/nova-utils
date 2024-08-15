@@ -122,29 +122,38 @@ def ts_constant_to_json(input_file_path):
         return json_objects
 
 
-def create_chain(chain_object):
+def create_chain_data(chain_object):
     providers = chain_object.get("providers", {})
     # Get the first provider (if any)
+    # TODO: Iterate through all nodes available until connection is established
     first_provider = None
     if providers:
         first_provider_value = next(iter(providers.values()), None)
-        substrate = create_connection_by_url(first_provider_value.strip("'"))
-        json_property = get_properties(substrate)
+        wss_url = first_provider_value.strip("'")
+        try:
+            substrate = create_connection_by_url(wss_url)
 
-        providers = chain_object.get("providers")
-        chain_data = {
-            "chainId": json_property.chainId[2:],
-            "name": chain_object.get("text"),
-            "assets": [{
-                "assetId": 0,
-                "symbol": json_property.symbol,
-                "precision": json_property.precision,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Polkadot.svg"
-            }],
-            "nodes": [{"url": url, "name": name} for name, url in providers.items()],
-            "addressPrefix": json_property.ss58Format
-        }
-        return chain_data
+            json_property = get_properties(substrate)
+            providers = chain_object.get("providers")
+
+            chain_data = {
+                "chainId": json_property.chainId[2:],
+                "name": chain_object.get("text"),
+                "assets": [{
+                    "assetId": 0,
+                    "symbol": json_property.symbol,
+                    "precision": json_property.precision,
+                    "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Polkadot.svg"
+                }],
+                "nodes": [{"url": url, "name": name} for name, url in providers.items()],
+                "addressPrefix": json_property.ss58Format
+            }
+            return chain_data
+        except Exception as err:
+            # If there's a failure, print a warning and skip the connection
+            print(f"⚠️ Can't connect by {wss_url}, check if it is available? \n {err}")
+            # Do not raise the exception; instead, return None or handle it accordingly
+            return None
 
 
 def check_chain_id(chains, chain_id_to_check):
@@ -160,7 +169,7 @@ def add_chains_details_file(chain):
     file_path = target_path / file_name
 
     if file_path.exists():
-        print(f"Skipping file: {file_name}")
+        print(f"File found in config, kipping file: {file_name}")
     else:
         print(f"File not found, continuing processing.")
         save_json_file(file_path, chain)
@@ -186,32 +195,37 @@ def add_chain_to_chains_file(chain):
     save_json_file(target_path, data)
 
 
-def create_json_files(pjs_endpoints):
-    existing_data_dev = load_json_file(CHAINS_FILE_PATH_DEV)
-    # existing_data_prod = load_json_file(CHAINS_FILE_PATH_PROD)
+def create_json_files(pjs_networks, config):
+    existing_data_dev = load_json_file(config)
 
-    for item in pjs_endpoints:
+    for pjs_network in pjs_networks:
         # skip disabled networks and networks with commented providers
-        if '"isDisabled": "true"' in item or item.get("providers") == {}:
+        pjs_chain_name = pjs_network.get("text")
+        if '"isDisabled": "true"' in pjs_network or pjs_network.get("providers") == {}:
             continue
         else:
-            chain = create_chain(item)
-            chain_id = chain.get("chainId")
-            # skip chains already added to config
-            is_present = check_chain_id(existing_data_dev, chain_id)
-            if is_present:
-                continue
+            chain = create_chain_data(pjs_network)
+            if chain:
+                chain_name = chain.get("name")
+                print(f"Connection established for {chain_name}")
+                chain_id = chain.get("chainId")
+                # skip chains already added to config
+                is_present = check_chain_id(existing_data_dev, chain_id)
+                if is_present:
+                    continue
+                else:
+                    add_chains_details_file(chain)
+                    add_chain_to_chains_file(chain)
             else:
-                add_chains_details_file(chain)
-                add_chain_to_chains_file(chain)
+                print(f"Skipped connection for chain {pjs_chain_name}")
 
 
 def main():
     ts_file_path = "downloaded_file.ts"
 
-    get_ts_file(Endpoints.testnets.value, ts_file_path)
+    get_ts_file(Endpoints.polkadot.value, ts_file_path)
     polkadotjs_json = ts_constant_to_json(ts_file_path)
-    create_json_files(polkadotjs_json)
+    create_json_files(polkadotjs_json, CHAINS_FILE_PATH_PROD)
 
 
 if __name__ == "__main__":
