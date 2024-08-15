@@ -8446,7 +8446,7 @@
         }
     },
     {
-        "chainId": "3a5a5cd27eb15fd26c37315a0f0b938733bb798c897428448efac5e6150cad06",
+        "chainId": "e3a1cf3db108e3e45c63a4841fe89ba95108b1db14fdec10c2e8a078ff322a67",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Kintsugi Testnet",
         "assets": [
@@ -8609,7 +8609,7 @@
         ],
         "nodes": [
             {
-                "url": "wss://api-dev-kintsugi.interlay.io:443/parachain",
+                "url": "wss://api-dev-kintsugi.interlay.io/parachain",
                 "name": "Kintsugi Labs"
             }
         ],
@@ -9550,7 +9550,7 @@
         ]
     },
     {
-        "chainId": "418ae94c9fce02b1ab3b5bc211cd2f2133426f2861d97482bbdfdac1bbb0fb92",
+        "chainId": "266ad38196ddff7636206f911f0658cc76e3e906e349cb83475d93ebe80d03b5",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
         "name": "Interlay Testnet",
         "assets": [
@@ -9747,7 +9747,7 @@
         ],
         "nodes": [
             {
-                "url": "wss://api-testnet.interlay.io:443/parachain",
+                "url": "wss://api-testnet.interlay.io/parachain/",
                 "name": "Kintsugi Labs node"
             }
         ],
@@ -9887,7 +9887,7 @@
         }
     },
     {
-        "chainId": "9b86ea7366584c5ddf67de243433fcc05732864933258de9467db46eb9bef8b5",
+        "chainId": "525639f713f397dcf839bd022cd821f367ebcf179de7b9253531f8adbe5436d6",
         "name": "Vara Testnet",
         "assets": [
             {
@@ -9902,7 +9902,7 @@
         ],
         "nodes": [
             {
-                "url": "wss://vit.vara-network.io",
+                "url": "wss://testnet.vara.network",
                 "name": "Gear Tech test node"
             }
         ],
