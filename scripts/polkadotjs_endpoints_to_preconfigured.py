@@ -85,7 +85,7 @@ def ts_constant_to_json(input_file_path):
         content = file.read()
 
     # Extract the array content
-    array_match = re.search(r'=\s*\[(.*?)\]', content, re.DOTALL)
+    array_match = re.search(r'=\s*\[(.*?)]', content, re.DOTALL)
     if not array_match:
         raise ValueError("No array found in the input file")
 
@@ -163,8 +163,25 @@ def check_chain_id(chains, chain_id_to_check):
     return False
 
 
-def add_chains_details_file(chain):
-    target_path = CHAINS_FILE_PATH_DEV.parent / 'preConfigured' / 'detailsDev'
+def check_node_is_present(chains_data, nodes_to_check):
+    # Iterate over each node to check
+    for node in nodes_to_check:
+        node_url = node['url']
+        found = False
+        # Iterate over each chain in the chain data
+        for chain in chains_data:
+            # Check if node URL exists in any node list of this chain
+            if any(n['url'] == node_url for n in chain['nodes']):
+                found = True
+                print(f"⚠️Node URL '{node_url}' is found in chain '{chain['name']}'.")
+                break
+        if not found:
+            return False
+    return True
+
+
+def add_chains_details_file(chain, chains_path):
+    target_path = chains_path.parent / 'preConfigured' / 'detailsDev'
     file_name = chain.get("chainId") + '.json'
     file_path = target_path / file_name
 
@@ -176,8 +193,8 @@ def add_chains_details_file(chain):
         print(f"Created file for chain {chain.get('name')}")
 
 
-def add_chain_to_chains_file(chain):
-    target_path = CHAINS_FILE_PATH_DEV.parent / 'preConfigured' / 'chains_dev.json'
+def add_chain_to_chains_file(chain, chains_path):
+    target_path = chains_path.parent / 'preConfigured' / 'chains_dev.json'
     chain_data = {
         "chainId": chain.get("chainId"),
         "name": chain.get("name")
@@ -195,8 +212,8 @@ def add_chain_to_chains_file(chain):
     save_json_file(target_path, data)
 
 
-def create_json_files(pjs_networks, config):
-    existing_data_dev = load_json_file(config)
+def create_json_files(pjs_networks, chains_path):
+    existing_data_in_chains = load_json_file(chains_path)
 
     for pjs_network in pjs_networks:
         # skip disabled networks and networks with commented providers
@@ -210,12 +227,14 @@ def create_json_files(pjs_networks, config):
                 print(f"Connection established for {chain_name}")
                 chain_id = chain.get("chainId")
                 # skip chains already added to config
-                is_present = check_chain_id(existing_data_dev, chain_id)
-                if is_present:
+                is_chain_present = check_chain_id(existing_data_in_chains, chain_id)
+                # skip chains with wss already added to config, in case they have changed chain_id
+                is_node_present = check_node_is_present(existing_data_in_chains, chain.get("nodes"))
+                if is_chain_present or is_node_present:
                     continue
                 else:
-                    add_chains_details_file(chain)
-                    add_chain_to_chains_file(chain)
+                    add_chains_details_file(chain, chains_path)
+                    add_chain_to_chains_file(chain, chains_path)
             else:
                 print(f"Skipped connection for chain {pjs_chain_name}")
 
@@ -223,9 +242,9 @@ def create_json_files(pjs_networks, config):
 def main():
     ts_file_path = "downloaded_file.ts"
 
-    get_ts_file(Endpoints.polkadot.value, ts_file_path)
+    get_ts_file(Endpoints.testnets.value, ts_file_path)
     polkadotjs_json = ts_constant_to_json(ts_file_path)
-    create_json_files(polkadotjs_json, CHAINS_FILE_PATH_PROD)
+    create_json_files(polkadotjs_json, CHAINS_FILE_PATH_DEV)
 
 
 if __name__ == "__main__":
