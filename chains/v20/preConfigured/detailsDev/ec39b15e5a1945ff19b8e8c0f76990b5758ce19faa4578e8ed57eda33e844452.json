@@ -1,0 +1,19 @@
+{
+    "chainId": "ec39b15e5a1945ff19b8e8c0f76990b5758ce19faa4578e8ed57eda33e844452",
+    "name": "Bifrost Paseo",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "BNC",
+            "precision": 12,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://bifrost-rpc.paseo.liebi.com/ws",
+            "name": "Liebi"
+        }
+    ],
+    "addressPrefix": 6
+}

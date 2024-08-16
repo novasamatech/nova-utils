@@ -1,0 +1,19 @@
+{
+    "chainId": "e0baa740e6aff1d5616cda3f16c5f51ac96bbbd9899583f028045f6ac7e86c5c",
+    "name": "Khala",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "PHA",
+            "precision": 12,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rhala-node.phala.network/ws",
+            "name": "Phala Network"
+        }
+    ],
+    "addressPrefix": 30
+}

@@ -1,0 +1,19 @@
+{
+    "chainId": "6940b1852737722c0aa768710e20105ab8c6a80b63a0339cb99892ffdce38283",
+    "name": "Litentry-rococo",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "LIT",
+            "precision": 18,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc.rococo-parachain.litentry.io",
+            "name": "Litentry"
+        }
+    ],
+    "addressPrefix": 42
+}

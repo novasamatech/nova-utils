@@ -1,0 +1,19 @@
+{
+    "chainId": "e8aecc950e82f1a375cf650fa72d07e0ad9bef7118f49b92283b63e88b1de88b",
+    "name": "Laos Network",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "LAOS",
+            "precision": 18,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc.laos.laosfoundation.io",
+            "name": "freeverse.io"
+        }
+    ],
+    "addressPrefix": 42
+}

@@ -1,0 +1,19 @@
+{
+    "chainId": "0446ab8b4c86695018b791cd3cc4481c791f56ef2b4003197568941b5a8d2f9a",
+    "name": "Jur Testnet",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "JUR",
+            "precision": 18,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://testnet.jur.io",
+            "name": "Jur"
+        }
+    ],
+    "addressPrefix": 42
+}

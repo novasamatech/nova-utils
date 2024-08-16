@@ -1,0 +1,19 @@
+{
+    "chainId": "a8d080b07f9c84465aeb9576db5a7838bcbca3ffb78dbfd7d4b56acafc1f29d1",
+    "name": "Foucoco",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "AMPE",
+            "precision": 12,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc-foucoco.pendulumchain.tech",
+            "name": "PendulumChain"
+        }
+    ],
+    "addressPrefix": 57
+}

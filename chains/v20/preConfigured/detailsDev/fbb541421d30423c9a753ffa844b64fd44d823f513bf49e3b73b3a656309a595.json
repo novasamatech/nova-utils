@@ -1,0 +1,19 @@
+{
+    "chainId": "fbb541421d30423c9a753ffa844b64fd44d823f513bf49e3b73b3a656309a595",
+    "name": "Neatcoin",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "NEAT",
+            "precision": 12,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc.neatcoin.org/ws",
+            "name": "Neatcoin"
+        }
+    ],
+    "addressPrefix": 48
+}
