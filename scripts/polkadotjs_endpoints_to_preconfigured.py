@@ -17,6 +17,7 @@ class Endpoints(Enum):
     westend = 'https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testingRelayWestend.ts'
     rococo = 'https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testingRelayRococo.ts'
     paseo = 'https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testingRelayPaseo.ts'
+    # for Paseo change array_matches = re.findall(r'=\s*\[(.*?)\]', content, re.DOTALL)
     singlechains = 'https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/production.ts'
     testnets = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testing.ts"
 
@@ -113,11 +114,10 @@ def ts_constant_to_json(input_file_path):
                 print(f"Error parsing object: {e}")
                 print(f"Problematic object: {cleaned_obj}")
 
-    # Write the JSON array to the output file
-    with open(json_file_path, 'w') as file:
-        json.dump(json_objects, file, indent=2)
-        print(f"Conversion completed. Output written to {json_file_path}")
-        return json_objects
+    save_json_file(json_file_path, json_objects)
+    print(f"Conversion completed. Output written to {json_file_path}")
+
+    return json_objects
 
 
 def create_chain_data(chain_object):
@@ -141,7 +141,7 @@ def create_chain_data(chain_object):
                     "assetId": 0,
                     "symbol": json_property.symbol,
                     "precision": json_property.precision,
-                    "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Polkadot.svg"
+                    "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
                 }],
                 "nodes": [{"url": url, "name": name} for name, url in providers.items()],
                 "addressPrefix": json_property.ss58Format
@@ -178,38 +178,6 @@ def check_node_is_present(chains_data, nodes_to_check):
     return True
 
 
-def add_chains_details_file(chain, chains_path):
-    target_path = chains_path.parent / 'preConfigured' / 'detailsDev'
-    file_name = chain.get("chainId") + '.json'
-    file_path = target_path / file_name
-
-    if file_path.exists():
-        print(f"File found in config, skipping file: {file_name}")
-    else:
-        print(f"File not found, continuing processing.")
-        save_json_file(file_path, chain)
-        print(f"Created file for chain {chain.get('name')}")
-
-
-def add_chain_to_chains_file(chain, chains_path):
-    target_path = chains_path.parent / 'preConfigured' / 'chains_dev.json'
-    chain_data = {
-        "chainId": chain.get("chainId"),
-        "name": chain.get("name")
-    }
-
-    with open(target_path, 'r') as file:
-        data = json.load(file)
-    chain_id_exists = any(item.get("chainId") == chain_data["chainId"] for item in data)
-
-    if not chain_id_exists:
-        data.append(chain_data)
-        print(f"Added new chain data: {chain_data}")
-    else:
-        print(f"Chain ID {chain_data['chainId']} already exists in the file.")
-    save_json_file(target_path, data)
-
-
 def create_json_files(pjs_networks, chains_path):
     existing_data_in_chains = load_json_file(chains_path)
 
@@ -237,12 +205,43 @@ def create_json_files(pjs_networks, chains_path):
                 print(f"Skipped connection for chain {pjs_chain_name}")
 
 
+def add_chains_details_file(chain, chains_path):
+    target_path = chains_path.parent / 'preConfigured' / 'detailsDev'
+    file_name = chain.get("chainId") + '.json'
+    file_path = target_path / file_name
+
+    if file_path.exists():
+        print(f"File found in config, skipping file: {file_name}")
+    else:
+        save_json_file(file_path, chain)
+        print(f"Created file for chain {chain.get('name')}")
+
+
+def add_chain_to_chains_file(chain, chains_path):
+    target_path = chains_path.parent / 'preConfigured' / 'chains_dev.json'
+    chain_data = {
+        "chainId": chain.get("chainId"),
+        "name": chain.get("name")
+    }
+
+    with open(target_path, 'r') as file:
+        data = json.load(file)
+    chain_id_exists = any(item.get("chainId") == chain_data["chainId"] for item in data)
+
+    if not chain_id_exists:
+        data.append(chain_data)
+        print(f"Added new chain data: {chain_data}")
+    else:
+        print(f"Chain ID {chain_data['chainId']} already exists in the file.")
+    save_json_file(target_path, data)
+
+
 def main():
     ts_file_path = "downloaded_file.ts"
 
-    get_ts_file(Endpoints.singlechains.value, ts_file_path)
-    polkadotjs_json = ts_constant_to_json(ts_file_path)
-    create_json_files(polkadotjs_json, CHAINS_FILE_PATH_DEV)
+    get_ts_file(Endpoints.polkadot.value, ts_file_path)
+    polkadotjs_data = ts_constant_to_json(ts_file_path)
+    create_json_files(polkadotjs_data, CHAINS_FILE_PATH_DEV)
 
 
 if __name__ == "__main__":
