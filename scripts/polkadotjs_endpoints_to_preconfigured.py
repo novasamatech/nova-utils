@@ -196,9 +196,8 @@ def create_json_files(pjs_networks, chains_path):
                 is_node_present = check_node_is_present(existing_data_in_chains, chain.get("nodes"))
                 if is_chain_present or is_node_present:
                     continue
-                else:
-                    add_chains_details_file(chain, chains_path)
-                    add_chain_to_chains_file(chain, chains_path)
+                add_chains_details_file(chain, chains_path)
+                add_chain_to_chains_file(chain, chains_path)
             else:
                 print(f"Skipped connection for chain {pjs_chain_name}")
 
