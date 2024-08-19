@@ -4,11 +4,11 @@ import os
 import sys
 from pathlib import Path
 import requests
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from scripts.utils.metadata_interaction import get_properties
 from scripts.utils.substrate_interface import create_connection_by_url
 from enum import Enum
-
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
 class Endpoints(Enum):
