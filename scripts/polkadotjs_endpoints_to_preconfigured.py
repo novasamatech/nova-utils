@@ -65,15 +65,16 @@ def request_data_from_pjs(file):
 
 
 def get_ts_file(url, output_path):
-    response = requests.get(url, stream=True)
-    if response.status_code == 200:
+    try:
+        response = requests.get(url, stream=True)
+        response.raise_for_status()
         with open(output_path, "wb") as file:
             for chunk in response.iter_content(chunk_size=1024):
                 if chunk:
                     file.write(chunk)
         print(f"Downloaded file saved as {output_path}")
-    else:
-        print(f"Failed to download file. Status code: {response.status_code}")
+    except Exception as e:
+        print(f"Failed to download file from {url}. Error: {e}")
 
 
 def ts_constant_to_json(input_file_path):
