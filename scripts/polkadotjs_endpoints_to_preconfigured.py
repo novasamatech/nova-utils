@@ -234,7 +234,7 @@ def add_chain_to_chains_file(chain, chains_path):
 def main():
     ts_file_path = "downloaded_file.ts"
 
-    get_ts_file(Endpoints.paseo.value, ts_file_path)
+    get_ts_file(Endpoints.polkadot.value, ts_file_path)
     polkadotjs_data = ts_constant_to_json(ts_file_path)
     create_json_files(polkadotjs_data, CHAINS_FILE_PATH_DEV)
 
