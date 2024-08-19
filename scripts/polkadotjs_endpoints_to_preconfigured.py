@@ -120,36 +120,37 @@ def ts_constant_to_json(input_file_path):
 
 def create_chain_data(chain_object):
     providers = chain_object.get("providers", {})
+    if not providers:
+        return None
+
     # Get the first provider (if any)
     # TODO: Iterate through all nodes available until connection is established
-    first_provider = None
-    if providers:
-        first_provider_value = next(iter(providers.values()), None)
-        wss_url = first_provider_value.strip("'")
-        try:
-            substrate = create_connection_by_url(wss_url)
+    first_provider_value = next(iter(providers.values()), None)
+    wss_url = first_provider_value.strip("'")
+    try:
+        substrate = create_connection_by_url(wss_url)
 
-            json_property = get_properties(substrate)
-            providers = chain_object.get("providers")
+        json_property = get_properties(substrate)
+        providers = chain_object.get("providers")
 
-            chain_data = {
-                "chainId": json_property.chainId[2:],
-                "name": json_property.name,
-                "assets": [{
-                    "assetId": 0,
-                    "symbol": json_property.symbol,
-                    "precision": json_property.precision,
-                    "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
-                }],
-                "nodes": [{"url": url, "name": name} for name, url in providers.items()],
-                "addressPrefix": json_property.ss58Format
-            }
-            return chain_data
-        except Exception as err:
-            # If there's a failure, print a warning and skip the connection
-            print(f"⚠️ Can't connect by {wss_url}, check if it is available? \n {err}")
-            # Do not raise the exception; instead, return None or handle it accordingly
-            return None
+        chain_data = {
+            "chainId": json_property.chainId[2:],
+            "name": json_property.name,
+            "assets": [{
+                "assetId": 0,
+                "symbol": json_property.symbol,
+                "precision": json_property.precision,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+            }],
+            "nodes": [{"url": url, "name": name} for name, url in providers.items()],
+            "addressPrefix": json_property.ss58Format
+        }
+        return chain_data
+    except Exception as err:
+        # If there's a failure, print a warning and skip the connection
+        print(f"⚠️ Can't connect by {wss_url}, check if it is available? \n {err}")
+        # Do not raise the exception; instead, return None or handle it accordingly
+        return None
 
 
 def check_chain_id(chains, chain_id_to_check):
