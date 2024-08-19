@@ -4,6 +4,7 @@ import os
 import sys
 from pathlib import Path
 import requests
+
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from scripts.utils.metadata_interaction import get_properties
@@ -129,9 +130,7 @@ def create_chain_data(chain_object):
     wss_url = first_provider_value.strip("'")
     try:
         substrate = create_connection_by_url(wss_url)
-
         json_property = get_properties(substrate)
-        providers = chain_object.get("providers")
 
         chain_data = {
             "chainId": json_property.chainId[2:],
@@ -185,22 +184,21 @@ def create_json_files(pjs_networks, chains_path):
         pjs_chain_name = pjs_network.get("text")
         if '"isDisabled": "true"' in pjs_network or pjs_network.get("providers") == {}:
             continue
+        chain = create_chain_data(pjs_network)
+        if chain:
+            chain_name = chain.get("name")
+            print(f"Connection established for {chain_name}")
+            chain_id = chain.get("chainId")
+            # skip chains already added to config
+            is_chain_present = check_chain_id(existing_data_in_chains, chain_id)
+            # skip chains with wss already added to config, in case they have changed chain_id
+            is_node_present = check_node_is_present(existing_data_in_chains, chain.get("nodes"))
+            if is_chain_present or is_node_present:
+                continue
+            add_chains_details_file(chain, chains_path)
+            add_chain_to_chains_file(chain, chains_path)
         else:
-            chain = create_chain_data(pjs_network)
-            if chain:
-                chain_name = chain.get("name")
-                print(f"Connection established for {chain_name}")
-                chain_id = chain.get("chainId")
-                # skip chains already added to config
-                is_chain_present = check_chain_id(existing_data_in_chains, chain_id)
-                # skip chains with wss already added to config, in case they have changed chain_id
-                is_node_present = check_node_is_present(existing_data_in_chains, chain.get("nodes"))
-                if is_chain_present or is_node_present:
-                    continue
-                add_chains_details_file(chain, chains_path)
-                add_chain_to_chains_file(chain, chains_path)
-            else:
-                print(f"Skipped connection for chain {pjs_chain_name}")
+            print(f"Skipped connection for chain {pjs_chain_name}")
 
 
 def add_chains_details_file(chain, chains_path):
@@ -212,7 +210,7 @@ def add_chains_details_file(chain, chains_path):
         print(f"File found in config, skipping file: {file_name}")
     else:
         save_json_file(file_path, chain)
-        print(f"Created file for chain {chain.get('name')}")
+        print(f"Added details file for chain: {chain.get('name')}")
 
 
 def add_chain_to_chains_file(chain, chains_path):
@@ -222,22 +220,21 @@ def add_chain_to_chains_file(chain, chains_path):
         "name": chain.get("name")
     }
 
-    with open(target_path, 'r') as file:
-        data = json.load(file)
+    data = load_json_file(target_path)
     chain_id_exists = any(item.get("chainId") == chain_data["chainId"] for item in data)
 
     if not chain_id_exists:
         data.append(chain_data)
-        print(f"Added new chain data: {chain_data}")
+        print(f"Added chain data to chains: {chain_data}")
     else:
-        print(f"Chain ID {chain_data['chainId']} already exists in the file.")
+        print(f"Chain ID {chain_data['chainId']} already exists in the file, skip adding")
     save_json_file(target_path, data)
 
 
 def main():
     ts_file_path = "downloaded_file.ts"
 
-    get_ts_file(Endpoints.polkadot.value, ts_file_path)
+    get_ts_file(Endpoints.paseo.value, ts_file_path)
     polkadotjs_data = ts_constant_to_json(ts_file_path)
     create_json_files(polkadotjs_data, CHAINS_FILE_PATH_DEV)
 
