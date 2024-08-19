@@ -54,9 +54,6 @@ def find_objects(array_content):
                 stack.pop()
                 if not stack:
                     objects.append(array_content[start:i + 1])
-            else:
-                # Mismatched braces, handle error as needed
-                pass
 
     return objects
 
