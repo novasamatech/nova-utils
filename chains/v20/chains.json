@@ -4100,7 +4100,10 @@
         "addressPrefix": 32,
         "options": [
             "governance-v1"
-        ]
+        ],
+        "additional": {
+            "feeViaRuntimeCall": true
+        }
     },
     {
         "chainId": "7dd99936c1e9e6d1ce7d90eb6f33bea8393b4bf87677d675aa63c9cb3e8c5b5b",
