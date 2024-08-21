@@ -4041,6 +4041,9 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Asset_Hub.svg",
         "addressPrefix": 0,
+        "options": [
+            "assethub-fees"
+        ],
         "additional": {
             "supportsGenericLedgerApp": true
         }
@@ -5375,7 +5378,8 @@
         "addressPrefix": 63,
         "options": [
             "governance-v1",
-            "hydradx-swaps"
+            "hydradx-swaps",
+            "hydration-fees"
         ],
         "additional": {
             "feeViaRuntimeCall": true,
