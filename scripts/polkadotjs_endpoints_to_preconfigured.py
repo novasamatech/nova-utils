@@ -13,13 +13,12 @@ from enum import Enum
 
 
 class Endpoints(Enum):
-    polkadot = 'https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/productionRelayPolkadot.ts'
-    kusama = 'https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/productionRelayKusama.ts'
-    westend = 'https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testingRelayWestend.ts'
-    rococo = 'https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testingRelayRococo.ts'
-    paseo = 'https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testingRelayPaseo.ts'
-    # for Paseo change array_matches = re.findall(r'=\s*\[(.*?)\]', content, re.DOTALL)
-    singlechains = 'https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/production.ts'
+    polkadot = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/productionRelayPolkadot.ts"
+    kusama = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/productionRelayKusama.ts"
+    westend = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testingRelayWestend.ts"
+    rococo = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testingRelayRococo.ts"
+    paseo = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testingRelayPaseo.ts"
+    singlechains = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/production.ts"
     testnets = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testing.ts"
 
 
@@ -85,7 +84,8 @@ def ts_constant_to_json(input_file_path):
         content = file.read()
 
     # Extract the array content
-    array_matches = re.findall(r'\[\s*(\{(?:.|\n)*?})\s*]', content, re.DOTALL)
+    array_matches = re.findall(r'=\s*\[(.*?)\]', content, re.DOTALL)
+    array_matches += re.findall(r'\[\s*(\{(?:.|\n)*?})\s*]', content, re.DOTALL)
     if not array_matches:
         raise ValueError("No array found in the input file")
     json_objects = []
@@ -178,6 +178,7 @@ def check_node_is_present(chains_data, nodes_to_check):
 
 def create_json_files(pjs_networks, chains_path):
     existing_data_in_chains = load_json_file(chains_path)
+    exclusion = "sora"
 
     for pjs_network in pjs_networks:
         # skip disabled networks and networks with commented providers
@@ -193,7 +194,7 @@ def create_json_files(pjs_networks, chains_path):
             is_chain_present = check_chain_id(existing_data_in_chains, chain_id)
             # skip chains with wss already added to config, in case they have changed chain_id
             is_node_present = check_node_is_present(existing_data_in_chains, chain.get("nodes"))
-            if is_chain_present or is_node_present:
+            if is_chain_present or is_node_present or exclusion.casefold() in chain_name.casefold():
                 continue
             add_chains_details_file(chain, chains_path)
             add_chain_to_chains_file(chain, chains_path)
@@ -234,9 +235,10 @@ def add_chain_to_chains_file(chain, chains_path):
 def main():
     ts_file_path = "downloaded_file.ts"
 
-    get_ts_file(Endpoints.polkadot.value, ts_file_path)
-    polkadotjs_data = ts_constant_to_json(ts_file_path)
-    create_json_files(polkadotjs_data, CHAINS_FILE_PATH_DEV)
+    for endpoint in Endpoints:
+        get_ts_file(endpoint.value, ts_file_path)
+        polkadotjs_data = ts_constant_to_json(ts_file_path)
+        create_json_files(polkadotjs_data, CHAINS_FILE_PATH_DEV)
 
 
 if __name__ == "__main__":
