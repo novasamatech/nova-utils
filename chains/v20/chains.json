@@ -4041,7 +4041,11 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Asset_Hub.svg",
         "addressPrefix": 0,
+        "options": [
+            "assethub-fees"
+        ],
         "additional": {
+            "relaychainAsNative": true,
             "supportsGenericLedgerApp": true
         }
     },
@@ -4096,11 +4100,18 @@
                 }
             ]
         },
+        "types": {
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/robonomics.json",
+            "overridesCommon": true
+        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Robonomics.svg",
         "addressPrefix": 32,
         "options": [
             "governance-v1"
-        ]
+        ],
+        "additional": {
+            "feeViaRuntimeCall": true
+        }
     },
     {
         "chainId": "7dd99936c1e9e6d1ce7d90eb6f33bea8393b4bf87677d675aa63c9cb3e8c5b5b",
@@ -5368,7 +5379,8 @@
         "addressPrefix": 63,
         "options": [
             "governance-v1",
-            "hydradx-swaps"
+            "hydradx-swaps",
+            "hydration-fees"
         ],
         "additional": {
             "feeViaRuntimeCall": true,
