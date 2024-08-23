@@ -1,0 +1,19 @@
+{
+    "chainId": "84639f2a685cb614580e29b40111ba5b5d38cf95f12442252f4b5eda719da906",
+    "name": "Curio Rococo",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "CGT",
+            "precision": 18,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://testnet.parachain.curioinvest.com/",
+            "name": "Curio"
+        }
+    ],
+    "addressPrefix": 777
+}

@@ -1,0 +1,19 @@
+{
+    "chainId": "0a7b013f0e80502cb9063c8039f0f1b6bedc4a49e7fbb2eb25d5c61c405ebdff",
+    "name": "Yerba on Rococo",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "ROC",
+            "precision": 12,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc.dev.yerba.network",
+            "name": "Yerba"
+        }
+    ],
+    "addressPrefix": 42
+}

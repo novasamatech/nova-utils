@@ -1,0 +1,19 @@
+{
+    "chainId": "0614f7b74a2e47f7c8d8e2a5335be84bdde9402a43f5decdec03200a87c8b943",
+    "name": "Analog Testnet",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "TANLOG",
+            "precision": 12,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc.testnet.analog.one",
+            "name": "Analog One"
+        }
+    ],
+    "addressPrefix": 12850
+}
