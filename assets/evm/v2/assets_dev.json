@@ -77,10 +77,6 @@
                 "contractAddress": "0xA649325Aa7C5093d12D6F98EB4378deAe68CE23F"
             },
             {
-                "chainId": "eip155:1",
-                "contractAddress": "0x4fabb145d64652a948d72533023f6e7a623c7c53"
-            },
-            {
                 "chainId": "eip155:56",
                 "contractAddress": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56"
             }
@@ -96,10 +92,6 @@
             {
                 "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
                 "contractAddress": "0x3405A1bd46B85c5C029483FbECf2F3E611026e45"
-            },
-            {
-                "chainId": "eip155:1",
-                "contractAddress": "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0"
             },
             {
                 "chainId": "eip155:56",
@@ -488,19 +480,6 @@
         ]
     },
     {
-        "symbol": "HEX",
-        "precision": 8,
-        "name": "Hex",
-        "priceId": "hex",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/HEX.svg",
-        "instances": [
-            {
-                "chainId": "eip155:1",
-                "contractAddress": "0x2b591e99afe9f32eaa6214f7b7629768c40eeb39"
-            }
-        ]
-    },
-    {
         "symbol": "stETH",
         "precision": 18,
         "name": "Lido Staked Ether",
@@ -631,10 +610,6 @@
             {
                 "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
                 "contractAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3"
-            },
-            {
-                "chainId": "eip155:1",
-                "contractAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3"
             }
         ]
     },
@@ -647,19 +622,6 @@
             {
                 "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
                 "contractAddress": "0xfFfFFfFf30478fAFBE935e466da114E14fB3563d"
-            }
-        ]
-    },
-    {
-        "symbol": "SAMA",
-        "precision": 18,
-        "name": "SAMA",
-        "priceId": "exosama-network",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/MOONSAMA.svg",
-        "instances": [
-            {
-                "chainId": "eip155:1",
-                "contractAddress": "0xE04F47FF45576249bc5083DFDf987e03d0550113"
             }
         ]
     },
