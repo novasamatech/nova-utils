@@ -2028,7 +2028,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kintsugi.svg",
-        "addressPrefix": 2092
+        "addressPrefix": 2092,
+        "additional": {
+            "feeViaRuntimeCall": true
+        }
     },
     {
         "chainId": "742a2ca70c2fda6cee4f8df98d64c4c670a052d9568058982dad9d5a7a135c5b",
@@ -6045,7 +6048,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Interlay.svg",
-        "addressPrefix": 2032
+        "addressPrefix": 2032,
+        "additional": {
+            "feeViaRuntimeCall": true
+        }
     },
     {
         "chainId": "97da7ede98d7bad4e36b4d734b6055425a3be036da2a332ea5a7037656427a21",
@@ -7191,7 +7197,10 @@
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/MangataX.svg",
-        "addressPrefix": 42
+        "addressPrefix": 42,
+        "additional": {
+            "feeViaRuntimeCall": true
+        }
     },
     {
         "chainId": "05d5279c52c484cc80396535a316add7d47b1c5b9e0398dd1f584149341460c5",
