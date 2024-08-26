@@ -14,6 +14,7 @@ class BlacklistedChains(Enum):
     NOVASAMA_TESTNET = '3dbb473ae9b2b77ecf077c03546f0f8670c020e453dddb457da155e6cc7cba42'
     KUSAMA_PEOPLE = 'c1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f' # TODO: Remove when Kusama People is supported
     ASTAR = '9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6'
+    ALTAIR = 'aa3876c1dc8a1afcc2e9a685a49ff7704cfd36ad8c90bf2702b9d1b00cc40011'
 
 
 def load_json_file(file_path):
