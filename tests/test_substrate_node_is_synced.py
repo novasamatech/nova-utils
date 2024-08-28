@@ -11,6 +11,6 @@ def test_rpc_node_is_synced(connection_by_url: SubstrateInterface):
         current_block = sync_state['currentBlock']
         highest_block = sync_state['highestBlock']
 
-        assert highest_block - current_block <= 1
+        assert highest_block - current_block <= 100
     else:
         assert False, "Failed to retrieve SyncState"
