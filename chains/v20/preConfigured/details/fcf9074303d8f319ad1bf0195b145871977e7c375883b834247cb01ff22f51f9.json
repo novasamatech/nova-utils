@@ -1,0 +1,19 @@
+{
+    "chainId": "fcf9074303d8f319ad1bf0195b145871977e7c375883b834247cb01ff22f51f9",
+    "name": "NFTMart",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "NMT",
+            "precision": 12,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://mainnet.nftmart.io/rpc/ws",
+            "name": "NFTMart"
+        }
+    ],
+    "addressPrefix": 12191
+}

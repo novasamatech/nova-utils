@@ -1,0 +1,23 @@
+{
+    "chainId": "0c121c75f4ef450f40619e1fca9d1e8e7fbabc42c895bc4790801e85d5a91c34",
+    "name": "Subspace Gemini 3h",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "tSSC",
+            "precision": 18,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc-0.gemini-3h.subspace.network/ws",
+            "name": "US"
+        },
+        {
+            "url": "wss://rpc-1.gemini-3h.subspace.network/ws",
+            "name": "US2"
+        }
+    ],
+    "addressPrefix": 2254
+}

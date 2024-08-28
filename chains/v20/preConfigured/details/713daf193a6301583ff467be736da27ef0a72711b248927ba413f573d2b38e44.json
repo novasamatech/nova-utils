@@ -1,0 +1,35 @@
+{
+    "chainId": "713daf193a6301583ff467be736da27ef0a72711b248927ba413f573d2b38e44",
+    "name": "Westend Collectives",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "WND",
+            "precision": 12,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://collectives-westend-rpc.dwellir.com",
+            "name": "Dwellir"
+        },
+        {
+            "url": "wss://westend-collectives-rpc-tn.dwellir.com",
+            "name": "Dwellir Tunisia"
+        },
+        {
+            "url": "wss://sys.ibp.network/collectives-westend",
+            "name": "IBP1"
+        },
+        {
+            "url": "wss://sys.dotters.network/collectives-westend",
+            "name": "IBP2"
+        },
+        {
+            "url": "wss://westend-collectives-rpc.polkadot.io",
+            "name": "Parity"
+        }
+    ],
+    "addressPrefix": 42
+}

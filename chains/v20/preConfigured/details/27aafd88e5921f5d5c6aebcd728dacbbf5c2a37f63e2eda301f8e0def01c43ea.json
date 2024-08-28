@@ -1,0 +1,19 @@
+{
+    "chainId": "27aafd88e5921f5d5c6aebcd728dacbbf5c2a37f63e2eda301f8e0def01c43ea",
+    "name": "Dancebox",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "DANCE",
+            "precision": 12,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://dancebox.tanssi-api.network",
+            "name": "Tanssi"
+        }
+    ],
+    "addressPrefix": 42
+}

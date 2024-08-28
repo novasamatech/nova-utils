@@ -1,0 +1,19 @@
+{
+    "chainId": "7e18728b3f890088891d03dd5b30db9f1a0e62e05bc30eb4cf53f3c4a8280d76",
+    "name": "Harmonie Testnet Live",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "HMY",
+            "precision": 18,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://harmonie-endpoint-02.allfeat.io",
+            "name": "Allfeat labs"
+        }
+    ],
+    "addressPrefix": 441
+}

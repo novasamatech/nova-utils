@@ -1,0 +1,19 @@
+{
+    "chainId": "b90cd3a37b4793c6494b78962986f4f6ed3ec2eda91a6b84fd8457d24f606b9c",
+    "name": "Battery Station",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "ZBS",
+            "precision": 10,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://bsr.zeitgeist.pm",
+            "name": "Zeitgeist"
+        }
+    ],
+    "addressPrefix": 73
+}
