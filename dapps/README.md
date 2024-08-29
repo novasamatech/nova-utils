@@ -12,7 +12,7 @@
 |   8 | Basilisk Snek Swap                   | https://app.basilisk.cloud/#/trade                  | bridge,dex                    |
 |   9 | Battleship                           | https://battleship.vara.network/                    | gaming                        |
 |  10 | Beamswap                             | https://app.beamswap.io/exchange/braindex           | bridge,dex,staking,evm        |
-|  11 | Bifrost App                          | https://bifrost.app/                                | bridge,crowdloans,dex,staking |
+|  11 | Bifrost App                          | https://bifrost.app/                                | staking                       |
 |  12 | Big Ballz of Bajun                   | https://bbb.ajuna.io/                               | nft,gaming                    |
 |  13 | Bit.Country Pioneer Metaverse        | https://pioneer.bit.country/                        | nft,staking,gaming            |
 |  14 | Capital DEX                          | https://capitaldex.exchange/                        | dex,staking,evm               |
@@ -48,7 +48,7 @@
 |  44 | Moonsama                             | https://marketplace.moonsama.com/                   | nft,evm                       |
 |  45 | Moonwell                             | https://moonwell.fi/discover                        | bridge,staking,evm            |
 |  46 | MyTrade                              | https://mytrade.org/                                | dex,staking,evm               |
-|  47 | Omni Liquid Staking                  | https://omni.ls/                                    | bridge,staking                |
+|  47 | Omni Liquid Staking                  | https://omni.ls/                                    | staking                       |
 |  48 | PABLO                                | https://app.pablo.finance/                          | dex                           |
 |  49 | Parallel Finance App                 | https://app.parallel.fi/                            | bridge,dex                    |
 |  50 | Pendulum Chain Portal                | https://portal.pendulumchain.org/pendulum/dashboard | utilities,staking             |
