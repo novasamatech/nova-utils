@@ -22,6 +22,11 @@ class Endpoints(Enum):
     testnets = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testing.ts"
 
 
+class BlacklistedChains(Enum):
+    kulupu = 'f7a99d3cb92853d00d5275c971c132c074636256583fee53b3bbe60d7b8769ba'
+    nftmart = 'fcf9074303d8f319ad1bf0195b145871977e7c375883b834247cb01ff22f51f9'
+
+
 CHAINS_FILE_PATH_DEV = Path(os.getenv("DEV_CHAINS_JSON_PATH", 'chains/v20/chains_dev.json'))
 CHAINS_FILE_PATH_PROD = Path(os.getenv("PROD_CHAINS_JSON_PATH", 'chains/v20/chains.json'))
 
@@ -196,7 +201,10 @@ def create_json_files(pjs_networks, chains_path):
             is_node_present = check_node_is_present(existing_data_in_chains, chain.get("nodes"))
             if is_chain_present is False and is_node_present:
                 print("⚠️Probably chainId is changed, check genesis for chain:" + chain_name)
-            if is_chain_present or is_node_present or exclusion.casefold() in chain_name.casefold():
+            if (is_chain_present
+                    or is_node_present
+                    or exclusion.casefold() in chain_name.casefold()
+                    or chain_id in [c.value for c in BlacklistedChains]):
                 continue
             add_chains_details_file(chain, chains_path)
             add_chain_to_chains_file(chain, chains_path)
