@@ -5325,6 +5325,19 @@
                     "existentialDeposit": "1",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 43,
+                "symbol": "vASTR",
+                "precision": 18,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vASTR.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x21000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "133689839572193000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
