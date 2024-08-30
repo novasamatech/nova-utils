@@ -23,12 +23,12 @@ class Endpoints(Enum):
 
 
 class BlacklistedChains(Enum):
-    kulupu = 'f7a99d3cb92853d00d5275c971c132c074636256583fee53b3bbe60d7b8769ba'
-    nftmart = 'fcf9074303d8f319ad1bf0195b145871977e7c375883b834247cb01ff22f51f9'
+    kulupu = 'f7a99d3cb92853d00d5275c971c132c074636256583fee53b3bbe60d7b8769ba'  # https://app.clickup.com/t/8695enz00
+    nftmart = 'fcf9074303d8f319ad1bf0195b145871977e7c375883b834247cb01ff22f51f9'  # https://app.clickup.com/t/8695enz00
 
 
 CHAINS_FILE_PATH_DEV = Path(os.getenv("DEV_CHAINS_JSON_PATH", 'chains/v20/chains_dev.json'))
-CHAINS_FILE_PATH_PROD = Path(os.getenv("PROD_CHAINS_JSON_PATH", 'chains/v20/chains.json'))
+CHAINS_FILE_PATH_PROD = Path(os.getenv("CHAINS_JSON_PATH", 'chains/v20/chains.json'))
 
 
 def load_json_file(file_path):
@@ -252,8 +252,9 @@ def main():
     ts_file_path = "downloaded_file.ts"
 
     for endpoint in Endpoints:
-        get_ts_file(endpoint.value, ts_file_path)
+        get_ts_file(endpoint.singlechains.value, ts_file_path)
         polkadotjs_data = ts_constant_to_json(ts_file_path)
+        create_json_files(polkadotjs_data, CHAINS_FILE_PATH_DEV)
         create_json_files(polkadotjs_data, CHAINS_FILE_PATH_PROD)
 
 

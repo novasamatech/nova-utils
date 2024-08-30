@@ -85,3 +85,6 @@ update-xcm-to-prod:
 
 update-ledger-networks:
 	$(VENV)/bin/python scripts/update_generic_ledger_app_networks.py
+
+update-chains-preconfigured:
+	$(VENV)/bin/python scripts/polkadotjs_endpoints_to_preconfigured.py
