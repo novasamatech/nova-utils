@@ -1,0 +1,19 @@
+{
+    "chainId": "ce663480d55121504f3faf403756ac2b2d9f9870135b6f10222c848db45ded58",
+    "name": "Darwinia Koi",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "KRING",
+            "precision": 18,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://koi-rpc.darwinia.network",
+            "name": "Darwinia"
+        }
+    ],
+    "addressPrefix": 42
+}

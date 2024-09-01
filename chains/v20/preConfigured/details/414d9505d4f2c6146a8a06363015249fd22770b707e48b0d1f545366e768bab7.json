@@ -1,0 +1,19 @@
+{
+    "chainId": "414d9505d4f2c6146a8a06363015249fd22770b707e48b0d1f545366e768bab7",
+    "name": "Subzero Development",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "ZERO",
+            "precision": 18,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc.dev.gamedao.net",
+            "name": "GameDAO"
+        }
+    ],
+    "addressPrefix": 25
+}

@@ -1,0 +1,23 @@
+{
+    "chainId": "418040fc282f5e5ddd432c46d05297636f6f75ce68d66499ff4cbda69ccd180b",
+    "name": "Subspace Gemini 3g",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "tSSC",
+            "precision": 18,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc-1.gemini-3g.subspace.network/ws",
+            "name": "Europe"
+        },
+        {
+            "url": "wss://rpc-0.gemini-3g.subspace.network/ws",
+            "name": "US"
+        }
+    ],
+    "addressPrefix": 2254
+}

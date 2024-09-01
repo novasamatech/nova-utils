@@ -1,0 +1,19 @@
+{
+    "chainId": "b53c620c41860278fa3068a5367c8eedceefce8a7c29237d830bc09a71737b5d",
+    "name": "Watr Network",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "WATRD",
+            "precision": 18,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc.dev.watr.org",
+            "name": "Watr"
+        }
+    ],
+    "addressPrefix": 19
+}

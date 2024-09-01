@@ -1,0 +1,19 @@
+{
+    "chainId": "43d10ffd50990380ffe6c9392145431d630ae67e89dbc9c014cac2a417759101",
+    "name": "Subspace Gemini 2a",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "tSSC",
+            "precision": 18,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://eu-0.gemini-2a.subspace.network/ws",
+            "name": "Europe"
+        }
+    ],
+    "addressPrefix": 2254
+}
