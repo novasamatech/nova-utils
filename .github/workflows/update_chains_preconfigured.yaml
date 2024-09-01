@@ -26,6 +26,9 @@ jobs:
 
       - name: ⚙️ Install dependencies
         run: make init
+        
+      - name: Clear old files
+        run: rm -r chains/${{ env.CHAINS_VERSION }}/preConfigured/*
 
       - name: 🦾 Update files and data in chains preconfigured
         run: make update-chains-preconfigured
