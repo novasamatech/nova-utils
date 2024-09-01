@@ -33,7 +33,7 @@ jobs:
       - name: Make Pull Request
         uses: ./.github/workflows/make-pull-request
         with:
-          commit-files: ${{ env.COMMIT_FILE }}
+          commit-files: chains/**
           commit-message: Update preconfigured chains
           app-id: ${{ secrets.PR_APP_ID}}
           app-token: ${{ secrets.PR_APP_TOKEN}}
