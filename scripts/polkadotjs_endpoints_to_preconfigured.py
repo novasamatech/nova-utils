@@ -39,6 +39,7 @@ def load_json_file(file_path):
 
 
 def save_json_file(file_path, data):
+    os.makedirs(file_path.parent, exist_ok=True)
     with open(file_path, 'w') as f:
         json.dump(data, f, indent=4)
         f.write('\n')
