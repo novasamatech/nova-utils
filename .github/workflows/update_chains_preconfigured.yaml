@@ -28,9 +28,7 @@ jobs:
         run: make init
 
       - name: 🦾 Update files and data in chains preconfigured
-        run: |
-          cd ./scripts
-          make update-chains-preconfigured
+        run: make update-chains-preconfigured
 
       - name: Make Pull Request
         uses: ./.github/workflows/make-pull-request
