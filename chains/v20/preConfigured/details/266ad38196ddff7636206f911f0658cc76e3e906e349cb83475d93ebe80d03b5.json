@@ -1,19 +1,19 @@
 {
-    "chainId": "01f15f9d48ea279640cb35267bfd33a88bb4c21ebb00b129e9bc2d2236aaafdb",
-    "name": "SoonSocial",
+    "chainId": "266ad38196ddff7636206f911f0658cc76e3e906e349cb83475d93ebe80d03b5",
+    "name": "Interlay",
     "assets": [
         {
             "assetId": 0,
-            "symbol": "SOON",
+            "symbol": "INTR",
             "precision": 10,
             "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
         }
     ],
     "nodes": [
         {
-            "url": "wss://rco-para.subsocial.network",
-            "name": "DappForce"
+            "url": "wss://api-testnet.interlay.io/parachain/",
+            "name": "Interlay"
         }
     ],
-    "addressPrefix": 28
+    "addressPrefix": 2032
 }

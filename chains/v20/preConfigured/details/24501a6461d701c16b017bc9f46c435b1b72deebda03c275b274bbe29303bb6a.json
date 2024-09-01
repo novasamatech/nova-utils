@@ -1,0 +1,19 @@
+{
+    "chainId": "24501a6461d701c16b017bc9f46c435b1b72deebda03c275b274bbe29303bb6a",
+    "name": "Bajun Paseo",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "BAJU",
+            "precision": 12,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc-paseo.bajun.network",
+            "name": "BajunNetwork"
+        }
+    ],
+    "addressPrefix": 1337
+}

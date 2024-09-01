@@ -1,0 +1,19 @@
+{
+    "chainId": "e7eafa72eb58d1fdd906202f88d68f660ea6520bdc9c9ad08d6ebf91d14b4405",
+    "name": "Encointer Testnet Gesell",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "ERT",
+            "precision": 12,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://gesell.encointer.org",
+            "name": "Encointer Association"
+        }
+    ],
+    "addressPrefix": 42
+}

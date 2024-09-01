@@ -1,0 +1,19 @@
+{
+    "chainId": "ac123be800b7c9a3e3449bb70edd8e3d9008d27826381451eebf94bce1db1fbe",
+    "name": "Energy Web X Rococo",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "VT",
+            "precision": 18,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://public-rpc.testnet.energywebx.com/",
+            "name": "Energy Web"
+        }
+    ],
+    "addressPrefix": 42
+}

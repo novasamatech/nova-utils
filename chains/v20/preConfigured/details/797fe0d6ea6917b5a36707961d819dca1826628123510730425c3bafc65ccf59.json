@@ -1,0 +1,19 @@
+{
+    "chainId": "797fe0d6ea6917b5a36707961d819dca1826628123510730425c3bafc65ccf59",
+    "name": "Mangata Public Testnet",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "MGAT",
+            "precision": 18,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://collator-01-ws-rococo.mangata.online",
+            "name": "Mangata"
+        }
+    ],
+    "addressPrefix": 42
+}
