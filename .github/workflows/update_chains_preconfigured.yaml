@@ -25,16 +25,16 @@ jobs:
 
       - name: ⚙️ Install dependencies
         run: make init
+      - name: Clear old files
+        run: rm -r chains/${{ env.CHAINS_VERSION }}/preConfigured/*
 
       - name: 🦾 Update files and data in chains preconfigured
-        run: |
-          cd ./scripts
-          make update-chains-preconfigured
+        run: make update-chains-preconfigured
 
       - name: Make Pull Request
         uses: ./.github/workflows/make-pull-request
         with:
-          commit-files: ${{ env.COMMIT_FILE }}
+          commit-files: chains/**
           commit-message: Update preconfigured chains
           app-id: ${{ secrets.PR_APP_ID}}
           app-token: ${{ secrets.PR_APP_TOKEN}}
