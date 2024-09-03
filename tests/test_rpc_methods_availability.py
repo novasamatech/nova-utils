@@ -4,12 +4,11 @@ from substrateinterface import SubstrateInterface
 # "system_syncState" can be used for test, not available on Acala, Astar
 
 rpc_methods = [
-    "state_call", "state_getStorage" "state_getStorageSize", "state_subscribeStorage", "state_getKeys",
+    "state_call", "state_getStorage", "state_subscribeStorage",
     "state_getKeysPaged", "state_getMetadata", "state_subscribeRuntimeVersion",
-    "system_chain", "system_accountNextIndex", "system_properties"
+    "system_chain", "system_accountNextIndex", "system_properties",
     "chain_getBlock", "chain_getBlockHash", "chain_getHeader", "chain_getFinalizedHead",
-    "chain_getRuntimeVersion", "chain_subscribeRuntimeVersion",
-    "childstate_getStorage", "payment_queryInfo",
+    "childstate_getStorage",
     "author_submitExtrinsic", "author_submitAndWatchExtrinsic", "author_pendingExtrinsics"
 ]
 
@@ -18,7 +17,12 @@ rpc_methods = [
 # https://github.com/search?q=repo%3Anovasamatech%2Fsubstrate-sdk-android%20RuntimeRequest(&type=code
 # https://github.com/search?q=repo%3Anovasamatech%2Fnova-wallet-android%20RuntimeRequest(&type=code
 # excluded automationTime_getTimeAutomationFees and automationTime_calculateOptimalAutostaking as used only for Turing
-# removed stakingRewards_inflationInfo as absent practically in all nodes
+# excluded stakingRewards_inflationInfo as absent practically in all nodes
+# excluded payment_queryInfo is needed only if no feeViaRuntimeCall
+# excluded chain_getRuntimeVersion as replaced with ststate_subscribeRuntimeVersion
+# excluded state_getStorageSize as required only in OpenGov
+# excluded state_getKeys as used as fallback for not getting state_getKeysPaged in pending rewards
+
 
 def test_rpc_method_is_available(connection_by_url: SubstrateInterface):
     for method in rpc_methods:
