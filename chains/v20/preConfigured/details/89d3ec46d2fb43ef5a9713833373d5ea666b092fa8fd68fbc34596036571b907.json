@@ -1,0 +1,23 @@
+{
+    "chainId": "89d3ec46d2fb43ef5a9713833373d5ea666b092fa8fd68fbc34596036571b907",
+    "name": "Equilibrium",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "EQ",
+            "precision": 9,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://node.pol.equilibrium.io",
+            "name": "Equilibrium node"
+        },
+        {
+            "url": "wss://equilibrium-rpc.dwellir.com",
+            "name": "Dwellir node"
+        }
+    ],
+    "addressPrefix": 68
+}

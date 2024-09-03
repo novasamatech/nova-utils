@@ -7572,38 +7572,6 @@
         ]
     },
     {
-        "chainId": "7838c3c774e887c0a53bcba9e64f702361a1a852d5550b86b58cd73827fa1e1e",
-        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "Kapex (PAUSED)",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "KPX",
-                "precision": 12,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/KAPEX.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://kapex-rpc.dwellir.com",
-                "name": "Dwellir node"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kapex"
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Totem.svg",
-        "addressPrefix": 2007,
-        "additional": {
-            "feeViaRuntimeCall": true
-        }
-    },
-    {
         "chainId": "6fbd74e5e1d0a61d52ccfe9d4adaed16dd3a7caa37c6bc4d0c2fa12e8b2f4063",
         "name": "Polymesh",
         "assets": [
