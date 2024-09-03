@@ -1,19 +1,19 @@
 {
-    "chainId": "01f15f9d48ea279640cb35267bfd33a88bb4c21ebb00b129e9bc2d2236aaafdb",
-    "name": "SoonSocial",
+    "chainId": "b90cd3a37b4793c6494b78962986f4f6ed3ec2eda91a6b84fd8457d24f606b9c",
+    "name": "Battery Station",
     "assets": [
         {
             "assetId": 0,
-            "symbol": "SOON",
+            "symbol": "ZBS",
             "precision": 10,
             "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
         }
     ],
     "nodes": [
         {
-            "url": "wss://rco-para.subsocial.network",
-            "name": "DappForce"
+            "url": "wss://bsr.zeitgeist.pm",
+            "name": "Zeitgeist"
         }
     ],
-    "addressPrefix": 28
+    "addressPrefix": 73
 }

@@ -1,0 +1,23 @@
+{
+    "chainId": "6de3dc58adbc525bad4ae201a8660c5be8949e10308457b176510c72a413f3a3",
+    "name": "Rococo BridgeHub",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "ROC",
+            "precision": 12,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://bridge-hub-rococo-rpc.dwellir.com",
+            "name": "Dwellir"
+        },
+        {
+            "url": "wss://rococo-bridge-hub-rpc.polkadot.io",
+            "name": "Parity"
+        }
+    ],
+    "addressPrefix": 42
+}

@@ -1,0 +1,19 @@
+{
+    "chainId": "f9dcbe5e2219a10cfad3bf5876ed41bfb49a823d80303eaa28cec2a675fc66f8",
+    "name": "RegionX Cocos",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "COCOS",
+            "precision": 12,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://cocos-node.regionx.tech",
+            "name": "RegionX"
+        }
+    ],
+    "addressPrefix": 42
+}

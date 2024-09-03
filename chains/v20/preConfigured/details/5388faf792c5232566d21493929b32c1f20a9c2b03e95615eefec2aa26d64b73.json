@@ -1,0 +1,19 @@
+{
+    "chainId": "5388faf792c5232566d21493929b32c1f20a9c2b03e95615eefec2aa26d64b73",
+    "name": "Hyperbridge (Gargantua)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "tNAND",
+            "precision": 12,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://hyperbridge-paseo-rpc.blockops.network",
+            "name": "BlockOps"
+        }
+    ],
+    "addressPrefix": 42
+}
