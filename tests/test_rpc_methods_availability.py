@@ -1,8 +1,6 @@
 import delayed_assert
 from substrateinterface import SubstrateInterface
 
-# "system_syncState" can be used for test, not available on Acala, Astar
-
 rpc_methods = [
     "state_call", "state_getStorage", "state_subscribeStorage",
     "state_getKeysPaged", "state_getMetadata", "state_subscribeRuntimeVersion",
@@ -22,6 +20,7 @@ rpc_methods = [
 # excluded chain_getRuntimeVersion as replaced with ststate_subscribeRuntimeVersion
 # excluded state_getStorageSize as required only in OpenGov
 # excluded state_getKeys as used as fallback for not getting state_getKeysPaged in pending rewards
+# system_syncState can be used for test, not available on Acala, Astar
 
 
 def test_rpc_method_is_available(connection_by_url: SubstrateInterface):
