@@ -47,7 +47,7 @@ requirements:
 	$(VENV)/bin/poetry install
 	. .venv/bin/activate
 
-test-all: test-nodes-availability test-networks-precision test-network-chain-id test-network-prefix test-eth-availability test-new-assets test-nodes-synced
+test-all: test-nodes-availability test-networks-precision test-network-chain-id test-network-prefix test-eth-availability test-new-assets test-nodes-synced test-calls-availability
 
 test-core:
 	CHAINS_JSON_PATH=$(CHAINS_JSON_PATH) $(TEST_RUN_JUNIT) -m core
@@ -72,6 +72,9 @@ test-new-assets:
 
 test-nodes-synced:
 	$(TEST_RUN) "./tests/test_substrate_node_is_synced.py"
+
+test-calls-availability:
+	$(TEST_RUN) "./tests/test_rpc_methods_availability.py"
 
 allure:
 	allure serve $(ALLURE_DIR)
