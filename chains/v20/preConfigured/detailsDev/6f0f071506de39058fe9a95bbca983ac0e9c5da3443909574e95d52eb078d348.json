@@ -1,0 +1,19 @@
+{
+    "chainId": "6f0f071506de39058fe9a95bbca983ac0e9c5da3443909574e95d52eb078d348",
+    "name": "DAO IPCI",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "MITO",
+            "precision": 12,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://kusama.rpc.ipci.io",
+            "name": "Airalab node"
+        }
+    ],
+    "addressPrefix": 32
+}
