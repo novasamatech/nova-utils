@@ -17,7 +17,7 @@ rpc_methods = [
 # excluded automationTime_getTimeAutomationFees and automationTime_calculateOptimalAutostaking as used only for Turing
 # excluded stakingRewards_inflationInfo as absent practically in all nodes
 # excluded payment_queryInfo is needed only if no feeViaRuntimeCall
-# excluded chain_getRuntimeVersion as replaced with ststate_subscribeRuntimeVersion
+# excluded chain_getRuntimeVersion as replaced with state_subscribeRuntimeVersion
 # excluded state_getStorageSize as required only in OpenGov
 # excluded state_getKeys as used as fallback for not getting state_getKeysPaged in pending rewards
 # system_syncState can be used for test, not available on Acala, Astar
