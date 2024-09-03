@@ -1,15 +1,15 @@
 import delayed_assert
 from substrateinterface import SubstrateInterface
 
-# "system_syncState" can be used for test, not available on Astar, Acala
+# "system_syncState" can be used for test, not available on Acala, Astar
 
 rpc_methods = [
-    "state_call", "state_getStorage", "state_getStorageSize", "state_getKeys",
-    "state_getKeysPaged", "state_getMetadata", "state_subscribeRuntimeVersion", "system_syncState",
-    "system_chain", "system_accountNextIndex", "state_subscribeStorage",
+    "state_call", "state_getStorage", "state_subscribeStorage", "state_getStorageSize", "state_getKeys",
+    "state_getKeysPaged", "state_getMetadata", "state_subscribeRuntimeVersion",
+    "system_chain", "system_accountNextIndex", "system_properties"
     "chain_getBlock", "chain_getBlockHash", "chain_getHeader", "chain_getFinalizedHead",
     "chain_getRuntimeVersion", "chain_subscribeRuntimeVersion",
-    "childstate_getStorage", "system_properties", "payment_queryInfo",
+    "childstate_getStorage", "payment_queryInfo",
     "author_submitExtrinsic", "author_submitAndWatchExtrinsic", "author_pendingExtrinsics"
 ]
 
