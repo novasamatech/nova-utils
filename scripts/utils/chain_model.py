@@ -19,10 +19,11 @@ class Chain():
         self.substrate = None
         self.properties = None
 
-    def create_connection(self) -> SubstrateInterface:
+    def create_connection(self, type_registry=None) -> SubstrateInterface:
         for node in self.nodes:
             try:
-                self.substrate = create_connection_by_url(node.get('url'))
+                self.substrate = create_connection_by_url(node.get('url'), type_registry=type_registry)
+                print("Connected to ", node.get('url'))
                 return self.substrate
                 # if self.substrate.websocket.connected is True:
                 #     return self.substrate
