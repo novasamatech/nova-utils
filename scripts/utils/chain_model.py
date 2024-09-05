@@ -22,6 +22,7 @@ class Chain():
     def create_connection(self, type_registry=None) -> SubstrateInterface:
         for node in self.nodes:
             try:
+                print("Connecting to ", node.get('url'))
                 self.substrate = create_connection_by_url(node.get('url'), type_registry=type_registry)
                 print("Connected to ", node.get('url'))
                 return self.substrate
@@ -34,6 +35,25 @@ class Chain():
 
         print("Can't connect to all nodes of network", self.name)
 
+    def recreate_connection(self) -> SubstrateInterface:
+        if self.substrate is None:
+            raise Exception("No connection was created before")
+
+        for node in self.nodes:
+            try:
+                print("Connecting to ", node.get('url'))
+                self.substrate.url = node.get('url')
+                self.substrate.connect_websocket()
+                print("Connected to ", node.get('url'))
+                return self.substrate
+                # if self.substrate.websocket.connected is True:
+                #     return self.substrate
+                # print(f"Can't connect to endpoint {node.get('url')} for the {self.name}")
+            except:
+                print("Can't connect to that node")
+                continue
+
+        print("Can't connect to all nodes of network", self.name)
 
     def close_substrate_connection(self):
         self.substrate.close()

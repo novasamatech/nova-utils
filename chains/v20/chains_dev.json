@@ -10119,6 +10119,46 @@
         }
     },
     {
+        "chainId": "6de3dc58adbc525bad4ae201a8660c5be8949e10308457b176510c72a413f3a3",
+        "parentId": "6408de7737c59c238890533af25896a2c20608d8b380bb01029acb392781063e",
+        "name": "Rococo BridgeHub",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "ROC",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rococo-bridge-hub-rpc.polkadot.io",
+                "name": "Parity"
+            }
+        ],
+        "addressPrefix": 42
+    },
+    {
+        "chainId": "caa036a5a771a7d6ea800c2988f4e3478b98de3ba9dab786db15e3e5e5b67886",
+        "parentId": "6408de7737c59c238890533af25896a2c20608d8b380bb01029acb392781063e",
+        "name": "Rococo BridgeHub",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "ROC",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rococo-people-rpc.polkadot.io",
+                "name": "Parity"
+            }
+        ],
+        "addressPrefix": 42
+    },
+    {
         "chainId": "eip155:595",
         "name": "Acala Mandala TC9",
         "assets": [
