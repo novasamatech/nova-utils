@@ -113,7 +113,10 @@
             "referendum-summary": [
                 {
                     "type": "polkassembly",
-                    "url": "https://polkadot.polkassembly.io/api/v1/posts/summary"
+                    "url": "https://polkadot.polkassembly.io/api/v1/posts/summary",
+                    "parameters": {
+                        "network": "polkadot"
+                    }
                 }
             ]
         },
