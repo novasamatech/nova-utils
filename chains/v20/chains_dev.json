@@ -6717,7 +6717,8 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/NeuroWeb.svg",
         "addressPrefix": 101,
         "additional": {
-            "feeViaRuntimeCall": true
+            "feeViaRuntimeCall": true,
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -8668,7 +8669,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Bittensor.svg",
-        "addressPrefix": 42
+        "addressPrefix": 42,
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "chainId": "eip155:137",
@@ -9928,7 +9932,10 @@
         "addressPrefix": 1110,
         "options": [
             "governance-v1"
-        ]
+        ],
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "chainId": "eip155:246",
@@ -10605,7 +10612,10 @@
         "addressPrefix": 42,
         "options": [
             "testnet"
-        ]
+        ],
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "chainId": "ae1ca86c936aa252cdc45f4f436220567b2bbbcc4834f5b8f4191462baf19dfb",
@@ -10697,7 +10707,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Enjin.svg",
-        "addressPrefix": 2135
+        "addressPrefix": 2135,
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "chainId": "1d73b9f5dc392744e0dee00a6d6254fcfa2305386cceba60315894fa4807053a",
