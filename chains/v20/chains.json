@@ -7655,7 +7655,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Bittensor.svg",
-        "addressPrefix": 42
+        "addressPrefix": 42,
+        "additional":{
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "chainId": "89d3ec46d2fb43ef5a9713833373d5ea666b092fa8fd68fbc34596036571b907",
