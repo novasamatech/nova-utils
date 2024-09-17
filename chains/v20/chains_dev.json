@@ -11047,6 +11047,15 @@
                     "type": "subquery",
                     "url": "https://subquery-governance-testnet-stg.novasama-tech.org"
                 }
+            ],
+            "referendum-summary": [
+                {
+                    "type": "polkassembly",
+                    "url": "https://novasama.polkassembly.io/api/v1/posts/summary",
+                    "parameters": {
+                        "network": "novasama"
+                    }
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
