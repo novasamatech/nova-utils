@@ -4908,50 +4908,6 @@
         }
     },
     {
-        "chainId": "da5831fbc8570e3c6336d0d72b8c08f8738beefec812df21ef2afc2982ede09c",
-        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Litmus",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "LIT",
-                "precision": 18,
-                "priceId": "litentry",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Litentry.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://rpc.litmus-parachain.litentry.io",
-                "name": "Litentry node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://litmus.subscan.io/extrinsic/{hash}",
-                "account": "https://litmus.subscan.io/account/{address}"
-            },
-            {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-litmus"
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Litmus.svg",
-        "addressPrefix": 131,
-        "options": [
-            "governance-v1"
-        ]
-    },
-    {
         "chainId": "4a12be580bb959937a1c7a61d5cf24428ed67fa571974b4007645d1886e7c89f",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Subsocial",
