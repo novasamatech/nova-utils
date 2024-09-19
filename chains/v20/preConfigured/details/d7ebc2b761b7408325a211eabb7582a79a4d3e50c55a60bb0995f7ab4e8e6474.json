@@ -1,0 +1,19 @@
+{
+    "chainId": "d7ebc2b761b7408325a211eabb7582a79a4d3e50c55a60bb0995f7ab4e8e6474",
+    "name": "Argon Testnet",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "ARGON",
+            "precision": 3,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc.testnet.argonprotocol.org",
+            "name": "Argon Foundation"
+        }
+    ],
+    "addressPrefix": 42
+}

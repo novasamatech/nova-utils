@@ -1,19 +1,19 @@
 {
-    "chainId": "b90cd3a37b4793c6494b78962986f4f6ed3ec2eda91a6b84fd8457d24f606b9c",
-    "name": "Battery Station",
+    "chainId": "c806038cc1d06766f23074ade7c5511326be41646deabc259970ff280c82a464",
+    "name": "Paseo Coretime",
     "assets": [
         {
             "assetId": 0,
-            "symbol": "ZBS",
+            "symbol": "PAS",
             "precision": 10,
             "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
         }
     ],
     "nodes": [
         {
-            "url": "wss://bsr.zeitgeist.pm",
-            "name": "Zeitgeist"
+            "url": "wss://paseo-coretime.paranodes.io",
+            "name": "ParaNodes"
         }
     ],
-    "addressPrefix": 73
+    "addressPrefix": 0
 }
