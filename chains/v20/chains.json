@@ -27,7 +27,7 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc-polkadot.novasamatech.org",
+                "url": "wss://rpc-polkadot.novasama-tech.org",
                 "name": "Novasama node"
             },
             {
@@ -105,7 +105,7 @@
             "governance-delegations": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-governance-polkadot-prod.novasamatech.org"
+                    "url": "https://subquery-governance-polkadot-prod.novasama-tech.org"
                 }
             ]
         },
@@ -153,7 +153,7 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc-kusama.novasamatech.org",
+                "url": "wss://rpc-kusama.novasama-tech.org",
                 "name": "Novasama node"
             },
             {
@@ -231,7 +231,7 @@
             "governance-delegations": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-governance-kusama-prod.novasamatech.org"
+                    "url": "https://subquery-governance-kusama-prod.novasama-tech.org"
                 }
             ]
         },
@@ -7983,13 +7983,13 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-history-vara-prod.novasamatech.org"
+                    "url": "https://subquery-history-vara-prod.novasama-tech.org"
                 }
             ],
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-history-vara-prod.novasamatech.org"
+                    "url": "https://subquery-history-vara-prod.novasama-tech.org"
                 }
             ]
         },
