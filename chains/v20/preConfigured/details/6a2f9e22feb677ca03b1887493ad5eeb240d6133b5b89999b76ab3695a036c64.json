@@ -1,0 +1,19 @@
+{
+    "chainId": "6a2f9e22feb677ca03b1887493ad5eeb240d6133b5b89999b76ab3695a036c64",
+    "name": "HydraDX testnet",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "HDX",
+            "precision": 12,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://paseo-rpc.play.hydration.cloud",
+            "name": "Galactic Council"
+        }
+    ],
+    "addressPrefix": 63
+}
