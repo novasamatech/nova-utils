@@ -1,18 +1,18 @@
 {
-    "chainId": "f9dcbe5e2219a10cfad3bf5876ed41bfb49a823d80303eaa28cec2a675fc66f8",
-    "name": "RegionX Cocos",
+    "chainId": "0def0ce9d55a1c9e6370042f0b8f0e07860feeca66b2e07e76cb321925ea226b",
+    "name": "Magnet Rococo",
     "assets": [
         {
             "assetId": 0,
-            "symbol": "COCOS",
-            "precision": 12,
+            "symbol": "DOT",
+            "precision": 18,
             "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
         }
     ],
     "nodes": [
         {
-            "url": "wss://cocos-node.regionx.tech",
-            "name": "RegionX"
+            "url": "wss://magnet-rpc.magport.io/ws",
+            "name": "Magnet"
         }
     ],
     "addressPrefix": 42
