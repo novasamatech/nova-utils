@@ -4906,50 +4906,6 @@
         }
     },
     {
-        "chainId": "da5831fbc8570e3c6336d0d72b8c08f8738beefec812df21ef2afc2982ede09c",
-        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Litmus",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "LIT",
-                "precision": 18,
-                "priceId": "litentry",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Litentry.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://rpc.litmus-parachain.litentry.io",
-                "name": "Litentry node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://litmus.subscan.io/extrinsic/{hash}",
-                "account": "https://litmus.subscan.io/account/{address}"
-            },
-            {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-litmus"
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Litmus.svg",
-        "addressPrefix": 131,
-        "options": [
-            "governance-v1"
-        ]
-    },
-    {
         "chainId": "4a12be580bb959937a1c7a61d5cf24428ed67fa571974b4007645d1886e7c89f",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Subsocial",
@@ -7028,36 +6984,6 @@
         "addressPrefix": 7391
     },
     {
-        "chainId": "577d331ca43646f547cdaa07ad0aa387a383a93416764480665103081f3eaf14",
-        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Dora Factory (PAUSED)",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "DORA",
-                "precision": 12,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/DoraFactory.svg",
-                "priceId": "dora-factory"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://kusama.dorafactory.org",
-                "name": "Dora node"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-dora"
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/DoraFactory.svg",
-        "addressPrefix": 128
-    },
-    {
         "chainId": "d611f22d291c5b7b69f1e105cca03352984c344c4421977efaa4cbdd1834e2aa",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Mangata X",
@@ -7849,38 +7775,6 @@
             "testnet",
             "governance"
         ]
-    },
-    {
-        "chainId": "7838c3c774e887c0a53bcba9e64f702361a1a852d5550b86b58cd73827fa1e1e",
-        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "Kapex (PAUSED)",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "KPX",
-                "precision": 12,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/KAPEX.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://kapex-rpc.dwellir.com",
-                "name": "Dwellir node"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kapex"
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Totem.svg",
-        "addressPrefix": 2007,
-        "additional": {
-            "feeViaRuntimeCall": true
-        }
     },
     {
         "chainId": "6fbd74e5e1d0a61d52ccfe9d4adaed16dd3a7caa37c6bc4d0c2fa12e8b2f4063",
@@ -10184,27 +10078,6 @@
         "options": [
             "testnet"
         ]
-    },
-    {
-        "chainId": "161db6cdc5896fe55ef12b4778fe78dd65d7af43f65c601786b88d7a93ebc58a",
-        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "Watr",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "WATR",
-                "precision": 18,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/WATR.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://watr.public.curie.radiumblock.co/ws",
-                "name": "Watr node"
-            }
-        ],
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Watr.svg",
-        "addressPrefix": 19
     },
     {
         "chainId": "6b5e488e0fa8f9821110d5c13f4c468abcd43ce5e297e62b34c53c3346465956",

@@ -251,83 +251,6 @@
         }
     },
     {
-        "chainId": "e143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e",
-        "name": "Westend",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "WND",
-                "precision": 12,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Westend.svg",
-                "staking": [
-                    "relaychain",
-                    "nomination-pools"
-                ]
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://westend-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
-                "url": "wss://rpc.ibp.network/westend",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://rpc.dotters.network/westend",
-                "name": "IBP2 node"
-            },
-            {
-                "url": "wss://westend.public.curie.radiumblock.co/ws",
-                "name": "RadiumBlock node"
-            },
-            {
-                "url": "wss://westend.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://westend.subscan.io/extrinsic/{hash}",
-                "account": "https://westend.subscan.io/account/{address}"
-            }
-        ],
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
-        "addressPrefix": 42,
-        "externalApi": {
-            "staking": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-westend"
-                }
-            ],
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-westend"
-                }
-            ],
-            "crowdloans": [
-                {
-                    "type": "github",
-                    "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/crowdloan/westend.json"
-                }
-            ]
-        },
-        "options": [
-            "testnet",
-            "crowdloans"
-        ],
-        "additional": {
-            "themeColor": "#1F78FF",
-            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polkadot-and-kusama",
-            "stakingMaxElectingVoters": 22500,
-            "feeViaRuntimeCall": true
-        }
-    },
-    {
         "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Kusama Asset Hub",
@@ -4502,47 +4425,6 @@
         }
     },
     {
-        "chainId": "da5831fbc8570e3c6336d0d72b8c08f8738beefec812df21ef2afc2982ede09c",
-        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Litmus",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "LIT",
-                "precision": 18,
-                "priceId": "litentry",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Litentry.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://rpc.litmus-parachain.litentry.io",
-                "name": "Litentry node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://litmus.subscan.io/extrinsic/{hash}",
-                "account": "https://litmus.subscan.io/account/{address}"
-            },
-            {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-litmus"
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Litmus.svg",
-        "addressPrefix": 131
-    },
-    {
         "chainId": "4a12be580bb959937a1c7a61d5cf24428ed67fa571974b4007645d1886e7c89f",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Subsocial",
@@ -5942,87 +5824,6 @@
         ]
     },
     {
-        "chainId": "daab8df776eb52ec604a5df5d388bb62a050a0aaec4556a64265b9d42755552d",
-        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "Composable Finance (PAUSED)",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "LAYR",
-                "precision": 12,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/LAYR.svg"
-            },
-            {
-                "assetId": 1,
-                "symbol": "DOT",
-                "precision": 10,
-                "priceId": "polkadot",
-                "type": "orml",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Polkadot.svg",
-                "typeExtras": {
-                    "currencyIdScale": "0x06000000000000000000000000000000",
-                    "currencyIdType": "u128",
-                    "existentialDeposit": "21430000",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "assetId": 2,
-                "symbol": "KSM",
-                "precision": 12,
-                "priceId": "kusama",
-                "type": "orml",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Kusama.svg",
-                "typeExtras": {
-                    "currencyIdScale": "0x04000000000000000000000000000000",
-                    "currencyIdType": "u128",
-                    "existentialDeposit": "375000000",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "assetId": 3,
-                "symbol": "USDT",
-                "precision": 6,
-                "priceId": "tether",
-                "type": "orml",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDT.svg",
-                "typeExtras": {
-                    "currencyIdScale": "0x82000000000000000000000000000000",
-                    "currencyIdType": "u128",
-                    "existentialDeposit": "1500",
-                    "transfersEnabled": true
-                }
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://rpc.composable.finance",
-                "name": "Composable node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://composable.subscan.io/extrinsic/{hash}",
-                "account": "https://composable.subscan.io/account/{address}"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-composable"
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Composable.svg",
-        "addressPrefix": 50,
-        "additional": {
-            "feeViaRuntimeCall": true
-        }
-    },
-    {
         "chainId": "3920bcb4960a1eef5580cd5367ff3f430eef052774f78468852f7b9cb39f8a3c",
         "name": "Polkadex",
         "assets": [
@@ -6532,36 +6333,6 @@
         "addressPrefix": 7391
     },
     {
-        "chainId": "577d331ca43646f547cdaa07ad0aa387a383a93416764480665103081f3eaf14",
-        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Dora Factory (PAUSED)",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "DORA",
-                "precision": 12,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/DoraFactory.svg",
-                "priceId": "dora-factory"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://kusama.dorafactory.org",
-                "name": "Dora node"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-dora"
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/DoraFactory.svg",
-        "addressPrefix": 128
-    },
-    {
         "chainId": "d611f22d291c5b7b69f1e105cca03352984c344c4421977efaa4cbdd1834e2aa",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Mangata X",
@@ -7064,38 +6835,6 @@
         "additional": {
             "themeColor": "#EB2B6C",
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/ternoa-caps-staking",
-            "feeViaRuntimeCall": true
-        }
-    },
-    {
-        "chainId": "7838c3c774e887c0a53bcba9e64f702361a1a852d5550b86b58cd73827fa1e1e",
-        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "Kapex (PAUSED)",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "KPX",
-                "precision": 12,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/KAPEX.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://kapex-rpc.dwellir.com",
-                "name": "Dwellir node"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kapex"
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Totem.svg",
-        "addressPrefix": 2007,
-        "additional": {
             "feeViaRuntimeCall": true
         }
     },
@@ -7653,7 +7392,7 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Bittensor.svg",
         "addressPrefix": 42,
-        "additional":{
+        "additional": {
             "supportsGenericLedgerApp": true
         }
     },
@@ -8283,27 +8022,6 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Enjin.svg",
         "addressPrefix": 1110
-    },
-    {
-        "chainId": "161db6cdc5896fe55ef12b4778fe78dd65d7af43f65c601786b88d7a93ebc58a",
-        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "Watr",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "WATR",
-                "precision": 18,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/WATR.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://watr.public.curie.radiumblock.co/ws",
-                "name": "Watr node"
-            }
-        ],
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Watr.svg",
-        "addressPrefix": 19
     },
     {
         "chainId": "6b5e488e0fa8f9821110d5c13f4c468abcd43ce5e297e62b34c53c3346465956",
