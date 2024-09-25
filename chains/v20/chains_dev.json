@@ -9405,8 +9405,8 @@
         "explorers": [
             {
                 "name": "Subscan",
-                "extrinsic": "https://people-kusama.subscan.io/{hash}",
-                "account": "https://people-kusama.subscan.io/{address}"
+                "extrinsic": "https://people-kusama.subscan.io/extrinsic/{hash}",
+                "account": "https://people-kusama.subscan.io/account/{address}"
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_People.svg",
