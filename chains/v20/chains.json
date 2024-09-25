@@ -412,6 +412,13 @@
                 "name": "Radium node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://people-polkadot.subscan.io/extrinsic/{hash}",
+                "account": "https://people-polkadot.subscan.io/account/{address}"
+            }
+        ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_People.svg",
         "addressPrefix": 0,
         "additional": {
@@ -448,6 +455,13 @@
             {
                 "url": "wss://ksm-rpc.stakeworld.io/people",
                 "name": "Stakeworld node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://people-kusama.subscan.io/extrinsic/{hash}",
+                "account": "https://people-kusama.subscan.io/account/{address}"
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_People.svg",
@@ -7904,6 +7918,11 @@
                 "account": "https://collectives.statescan.io/#/accounts/{address}",
                 "event": "https://collectives.statescan.io/#/events/{event}",
                 "extrinsic": "https://collectives.statescan.io/#/extrinsics/{hash}"
+            },
+            {
+                "name": "Subscan",
+                "extrinsic": "https://collectives-polkadot.subscan.io/extrinsic/{hash}",
+                "account": "https://collectives-polkadot.subscan.io/account/{address}"
             }
         ],
         "externalApi": {
