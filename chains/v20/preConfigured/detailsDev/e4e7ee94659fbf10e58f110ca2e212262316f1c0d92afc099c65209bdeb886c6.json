@@ -1,19 +1,19 @@
 {
-    "chainId": "7838c3c774e887c0a53bcba9e64f702361a1a852d5550b86b58cd73827fa1e1e",
-    "name": "Kapex (SHUTTING DOWN)",
+    "chainId": "e4e7ee94659fbf10e58f110ca2e212262316f1c0d92afc099c65209bdeb886c6",
+    "name": "Ideal Network",
     "assets": [
         {
             "assetId": 0,
-            "symbol": "KPX",
+            "symbol": "IDN",
             "precision": 12,
             "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
         }
     ],
     "nodes": [
         {
-            "url": "wss://kapex-rpc.dwellir.com",
-            "name": "Dwellir node"
+            "url": "wss://idn0-testnet.idealabs.network",
+            "name": "IDN Node"
         }
     ],
-    "addressPrefix": 2007
+    "addressPrefix": 42
 }

@@ -1,18 +1,18 @@
 {
-    "chainId": "e143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e",
-    "name": "Westend (TESTNET)",
+    "chainId": "e4e7ee94659fbf10e58f110ca2e212262316f1c0d92afc099c65209bdeb886c6",
+    "name": "Ideal Network",
     "assets": [
         {
             "assetId": 0,
-            "symbol": "WND",
+            "symbol": "IDN",
             "precision": 12,
             "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
         }
     ],
     "nodes": [
         {
-            "url": "wss://westend-rpc.dwellir.com",
-            "name": "Dwellir node"
+            "url": "wss://idn0-testnet.idealabs.network",
+            "name": "IDN Node"
         }
     ],
     "addressPrefix": 42
