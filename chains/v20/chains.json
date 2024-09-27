@@ -1823,7 +1823,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-shiden"
+                    "url": "https://gateway.subquery.network/query/0x40"
                 }
             ]
         },
@@ -2060,7 +2060,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bifrost"
+                    "url": "https://gateway.subquery.network/query/0x38"
                 }
             ],
             "governance": [
@@ -2190,7 +2190,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-basilisk"
+                    "url": "https://gateway.subquery.network/query/0x3f"
                 }
             ],
             "governance": [
@@ -2243,7 +2243,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-altair"
+                    "url": "https://gateway.subquery.network/query/0x37"
                 }
             ],
             "governance": [
@@ -2673,7 +2673,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-khala"
+                    "url": "https://gateway.subquery.network/query/0x3a"
                 }
             ]
         },
@@ -2735,7 +2735,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kilt"
+                    "url": "https://gateway.subquery.network/query/0x3d"
                 }
             ],
             "governance": [
@@ -2854,13 +2854,13 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-calamari"
+                    "url": "https://gateway.subquery.network/query/0x36"
                 }
             ],
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-calamari"
+                    "url": "https://gateway.subquery.network/query/0x36"
                 }
             ]
         },
@@ -2918,7 +2918,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-quartz"
+                    "url": "https://gateway.subquery.network/query/0x3e"
                 }
             ]
         },
@@ -2984,7 +2984,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bit-country"
+                    "url": "https://gateway.subquery.network/query/0x41"
                 }
             ]
         },
@@ -3265,7 +3265,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-acala"
+                    "url": "https://gateway.subquery.network/query/0x3c"
                 }
             ],
             "governance": [
@@ -3956,7 +3956,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-statemint"
+                    "url": "https://gateway.subquery.network/query/0x35"
                 }
             ]
         },
@@ -4360,7 +4360,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-picasso"
+                    "url": "https://gateway.subquery.network/query/0x3b"
                 }
             ]
         },
@@ -5960,13 +5960,13 @@
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadex"
+                    "url": "https://gateway.subquery.network/query/0x20"
                 }
             ],
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadex"
+                    "url": "https://gateway.subquery.network/query/0x20"
                 }
             ]
         },
@@ -6874,7 +6874,15 @@
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polymesh.svg",
-        "addressPrefix": 12
+        "addressPrefix": 12,
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polymesh"
+                }
+            ]
+        }
     },
     {
         "chainId": "6f0f071506de39058fe9a95bbca983ac0e9c5da3443909574e95d52eb078d348",
@@ -8509,7 +8517,15 @@
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Enjin.svg",
-        "addressPrefix": 2135
+        "addressPrefix": 2135,
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-enjin-relay"
+                }
+            ]
+        }
     },
     {
         "chainId": "1d73b9f5dc392744e0dee00a6d6254fcfa2305386cceba60315894fa4807053a",
@@ -8608,6 +8624,14 @@
         "addressPrefix": 42,
         "additional": {
             "feeViaRuntimeCall": true
+        },
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-acurast"
+                }
+            ]
         }
     },
     {
