@@ -251,9 +251,45 @@ def add_chain_to_chains_file(chain, chains_path, endpoint_type):
         print(f"Chain ID {chain_data['chainId']} already exists in the file, skip adding")
     save_json_file(target_path, data)
 
+def remove_files_except_shutting_down():
+    work_dir = CHAINS_FILE_PATH_DEV.parent / 'preConfigured'
+
+    for root, _, files in os.walk(work_dir):
+        for item in files:
+            if item.endswith('.json'):
+                process_json_file(os.path.join(root, item))
+
+def process_json_file(file_path):
+    try:
+        with open(file_path, 'r') as f:
+            data = json.load(f)
+
+        if isinstance(data, dict):
+            process_dict_data(file_path, data)
+        elif isinstance(data, list):
+            process_list_data(file_path, data)
+    except json.JSONDecodeError:
+        print(f"Skipped non-JSON file: {file_path}")
+
+def process_dict_data(file_path, data):
+    if "(SHUTTING DOWN)" not in data.get('name', ''):
+        os.remove(file_path)
+        print(f"Removed file: {file_path}")
+
+def process_list_data(file_path, data):
+    shutting_down_items = [entry for entry in data if "(SHUTTING DOWN)" in entry.get('name', '')]
+    if shutting_down_items:
+        with open(file_path, 'w') as f:
+            json.dump(shutting_down_items, f, indent=4)
+        print(f"Updated file: {file_path}")
+    else:
+        os.remove(file_path)
+        print(f"Removed file: {file_path}")
+
 
 def main():
     ts_file_path = "downloaded_file.ts"
+    remove_files_except_shutting_down()
 
     for endpoint in Endpoints:
         get_ts_file(endpoint.value, ts_file_path)
