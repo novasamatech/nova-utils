@@ -251,9 +251,21 @@ def add_chain_to_chains_file(chain, chains_path, endpoint_type):
         print(f"Chain ID {chain_data['chainId']} already exists in the file, skip adding")
     save_json_file(target_path, data)
 
+def remove_files_except_shutting_down():
+    work_dir = CHAINS_FILE_PATH_DEV.parent / 'preConfigured'
+
+    for item in os.listdir(work_dir):
+        item_path = os.path.join(work_dir, item)
+
+        if os.path.isfile(item_path):
+            if "(SHUTTING DOWN)" not in item:
+                os.remove(item_path)
+                print(f"Removed file: {item}")
+
 
 def main():
     ts_file_path = "downloaded_file.ts"
+    remove_files_except_shutting_down()
 
     for endpoint in Endpoints:
         get_ts_file(endpoint.value, ts_file_path)
