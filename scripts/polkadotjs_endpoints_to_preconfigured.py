@@ -254,7 +254,7 @@ def add_chain_to_chains_file(chain, chains_path, endpoint_type):
 def remove_files_except_shutting_down():
     work_dir = CHAINS_FILE_PATH_DEV.parent / 'preConfigured'
 
-    for root, dirs, files in os.walk(work_dir):
+    for root, _, files in os.walk(work_dir):
         for item in files:
             if item.endswith('.json'):
                 process_json_file(os.path.join(root, item))
