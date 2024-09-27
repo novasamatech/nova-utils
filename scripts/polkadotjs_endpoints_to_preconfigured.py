@@ -254,13 +254,37 @@ def add_chain_to_chains_file(chain, chains_path, endpoint_type):
 def remove_files_except_shutting_down():
     work_dir = CHAINS_FILE_PATH_DEV.parent / 'preConfigured'
 
-    for item in os.listdir(work_dir):
-        item_path = os.path.join(work_dir, item)
+    for root, dirs, files in os.walk(work_dir):
+        for item in files:
+            if item.endswith('.json'):
+                process_json_file(os.path.join(root, item))
 
-        if os.path.isfile(item_path):
-            if "(SHUTTING DOWN)" not in item:
-                os.remove(item_path)
-                print(f"Removed file: {item}")
+def process_json_file(file_path):
+    try:
+        with open(file_path, 'r') as f:
+            data = json.load(f)
+
+        if isinstance(data, dict):
+            process_dict_data(file_path, data)
+        elif isinstance(data, list):
+            process_list_data(file_path, data)
+    except json.JSONDecodeError:
+        print(f"Skipped non-JSON file: {file_path}")
+
+def process_dict_data(file_path, data):
+    if "(SHUTTING DOWN)" not in data.get('name', ''):
+        os.remove(file_path)
+        print(f"Removed file: {file_path}")
+
+def process_list_data(file_path, data):
+    shutting_down_items = [entry for entry in data if "(SHUTTING DOWN)" in entry.get('name', '')]
+    if shutting_down_items:
+        with open(file_path, 'w') as f:
+            json.dump(shutting_down_items, f, indent=4)
+        print(f"Updated file: {file_path}")
+    else:
+        os.remove(file_path)
+        print(f"Removed file: {file_path}")
 
 
 def main():
