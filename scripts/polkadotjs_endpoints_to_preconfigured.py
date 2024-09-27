@@ -251,6 +251,7 @@ def add_chain_to_chains_file(chain, chains_path, endpoint_type):
         print(f"Chain ID {chain_data['chainId']} already exists in the file, skip adding")
     save_json_file(target_path, data)
 
+
 def remove_files_except_shutting_down():
     work_dir = CHAINS_FILE_PATH_DEV.parent / 'preConfigured'
 
@@ -258,6 +259,7 @@ def remove_files_except_shutting_down():
         for item in files:
             if item.endswith('.json'):
                 process_json_file(os.path.join(root, item))
+
 
 def process_json_file(file_path):
     try:
@@ -271,10 +273,12 @@ def process_json_file(file_path):
     except json.JSONDecodeError:
         print(f"Skipped non-JSON file: {file_path}")
 
+
 def process_dict_data(file_path, data):
     if "(SHUTTING DOWN)" not in data.get('name', ''):
         os.remove(file_path)
         print(f"Removed file: {file_path}")
+
 
 def process_list_data(file_path, data):
     shutting_down_items = [entry for entry in data if "(SHUTTING DOWN)" in entry.get('name', '')]
