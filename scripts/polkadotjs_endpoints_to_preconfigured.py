@@ -259,7 +259,7 @@ def main():
         get_ts_file(endpoint.value, ts_file_path)
         polkadotjs_data = ts_constant_to_json(ts_file_path)
         create_json_files(polkadotjs_data, CHAINS_FILE_PATH_DEV, endpoint.name)
-        # create_json_files(polkadotjs_data, CHAINS_FILE_PATH_PROD, endpoint.name)
+        create_json_files(polkadotjs_data, CHAINS_FILE_PATH_PROD, endpoint.name)
 
 
 if __name__ == "__main__":
