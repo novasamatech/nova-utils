@@ -1,6 +1,6 @@
 {
     "chainId": "c806038cc1d06766f23074ade7c5511326be41646deabc259970ff280c82a464",
-    "name": "Paseo Coretime",
+    "name": "Paseo Coretime (TESTNET)",
     "assets": [
         {
             "assetId": 0,
@@ -10,6 +10,10 @@
         }
     ],
     "nodes": [
+        {
+            "url": "wss://coretime-paseo.dotters.network",
+            "name": "IBP2"
+        },
         {
             "url": "wss://paseo-coretime.paranodes.io",
             "name": "ParaNodes"

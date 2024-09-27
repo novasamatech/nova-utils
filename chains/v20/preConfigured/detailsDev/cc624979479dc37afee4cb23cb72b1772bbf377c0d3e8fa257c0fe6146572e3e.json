@@ -1,6 +1,6 @@
 {
-    "chainId": "e6c30d6e148f250b887105237bcaa5cb9f16dd203bf7b5b9d4f1da7387cb86ec",
-    "name": "Paseo People (TESTNET)",
+    "chainId": "cc624979479dc37afee4cb23cb72b1772bbf377c0d3e8fa257c0fe6146572e3e",
+    "name": "Paseo Bridge Hub (TESTNET)",
     "assets": [
         {
             "assetId": 0,
@@ -11,11 +11,11 @@
     ],
     "nodes": [
         {
-            "url": "wss://people-paseo.rpc.amforc.com",
-            "name": "Amforc"
+            "url": "wss://sys.ibp.network/bridge-hub-paseo",
+            "name": "IBP1"
         },
         {
-            "url": "wss://people-paseo.dotters.network",
+            "url": "wss://bridge-hub-paseo.dotters.network",
             "name": "IBP2"
         }
     ],

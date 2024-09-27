@@ -15,10 +15,10 @@ from enum import Enum
 class Endpoints(Enum):
     polkadot = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/productionRelayPolkadot.ts"
     kusama = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/productionRelayKusama.ts"
-    westend = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testingRelayWestend.ts"
-    rococo = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testingRelayRococo.ts"
-    paseo = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testingRelayPaseo.ts"
     singlechains = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/production.ts"
+    testnet_westend = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testingRelayWestend.ts"
+    testnet_rococo = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testingRelayRococo.ts"
+    testnet_paseo = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testingRelayPaseo.ts"
     testnets = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testing.ts"
 
 
@@ -125,7 +125,7 @@ def ts_constant_to_json(input_file_path):
     return json_objects
 
 
-def create_chain_data(chain_object):
+def create_chain_data(chain_object, endpoint_type):
     providers = chain_object.get("providers", {})
     if not providers:
         return None
@@ -150,6 +150,9 @@ def create_chain_data(chain_object):
             "nodes": [{"url": url, "name": name} for name, url in providers.items()],
             "addressPrefix": json_property.ss58Format
         }
+
+        if "testnet" in endpoint_type:
+            chain_data["name"] = chain_data.get("name") + " (TESTNET)"
         return chain_data
     except Exception as err:
         # If there's a failure, print a warning and skip the connection
@@ -182,7 +185,7 @@ def check_node_is_present(chains_data, nodes_to_check):
     return True
 
 
-def create_json_files(pjs_networks, chains_path):
+def create_json_files(pjs_networks, chains_path, endpoint_name):
     existing_data_in_chains = load_json_file(chains_path)
     exclusion = "sora"
 
@@ -191,11 +194,11 @@ def create_json_files(pjs_networks, chains_path):
         pjs_chain_name = pjs_network.get("text")
         if '"isDisabled": "true"' in pjs_network or pjs_network.get("providers") == {}:
             continue
-        chain = create_chain_data(pjs_network)
+        chain = create_chain_data(pjs_network, endpoint_name)
         if chain:
+            chain_id = chain.get("chainId")
             chain_name = chain.get("name")
             print(f"Connection established for {chain_name}")
-            chain_id = chain.get("chainId")
             # skip chains already added to config
             is_chain_present = check_chain_id(existing_data_in_chains, chain_id)
             # skip chains with wss already added to config, in case they have changed chain_id
@@ -208,7 +211,7 @@ def create_json_files(pjs_networks, chains_path):
                     or chain_id in [c.value for c in BlacklistedChains]):
                 continue
             add_chains_details_file(chain, chains_path)
-            add_chain_to_chains_file(chain, chains_path)
+            add_chain_to_chains_file(chain, chains_path, endpoint_name)
         else:
             print(f"Skipped connection for chain {pjs_chain_name}")
 
@@ -228,7 +231,7 @@ def add_chains_details_file(chain, chains_path):
         print(f"Added details file for chain: {chain.get('name')}")
 
 
-def add_chain_to_chains_file(chain, chains_path):
+def add_chain_to_chains_file(chain, chains_path, endpoint_type):
     if chains_path == CHAINS_FILE_PATH_DEV:
         target_path = chains_path.parent / 'preConfigured' / 'chains_dev.json'
     else:
@@ -249,14 +252,54 @@ def add_chain_to_chains_file(chain, chains_path):
     save_json_file(target_path, data)
 
 
+def remove_files_except_shutting_down():
+    work_dir = CHAINS_FILE_PATH_DEV.parent / 'preConfigured'
+
+    for root, _, files in os.walk(work_dir):
+        for item in files:
+            if item.endswith('.json'):
+                process_json_file(os.path.join(root, item))
+
+
+def process_json_file(file_path):
+    try:
+        with open(file_path, 'r') as f:
+            data = json.load(f)
+
+        if isinstance(data, dict):
+            process_dict_data(file_path, data)
+        elif isinstance(data, list):
+            process_list_data(file_path, data)
+    except json.JSONDecodeError:
+        print(f"Skipped non-JSON file: {file_path}")
+
+
+def process_dict_data(file_path, data):
+    if "(SHUTTING DOWN)" not in data.get('name', ''):
+        os.remove(file_path)
+        print(f"Removed file: {file_path}")
+
+
+def process_list_data(file_path, data):
+    shutting_down_items = [entry for entry in data if "(SHUTTING DOWN)" in entry.get('name', '')]
+    if shutting_down_items:
+        with open(file_path, 'w') as f:
+            json.dump(shutting_down_items, f, indent=4)
+        print(f"Updated file: {file_path}")
+    else:
+        os.remove(file_path)
+        print(f"Removed file: {file_path}")
+
+
 def main():
     ts_file_path = "downloaded_file.ts"
+    remove_files_except_shutting_down()
 
     for endpoint in Endpoints:
         get_ts_file(endpoint.value, ts_file_path)
         polkadotjs_data = ts_constant_to_json(ts_file_path)
-        create_json_files(polkadotjs_data, CHAINS_FILE_PATH_DEV)
-        create_json_files(polkadotjs_data, CHAINS_FILE_PATH_PROD)
+        create_json_files(polkadotjs_data, CHAINS_FILE_PATH_DEV, endpoint.name)
+        create_json_files(polkadotjs_data, CHAINS_FILE_PATH_PROD, endpoint.name)
 
 
 if __name__ == "__main__":
