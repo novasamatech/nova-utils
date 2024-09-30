@@ -11119,16 +11119,16 @@
         ],
         "explorers": [
             {
-                "name": "Etherscan",
-                "extrinsic": "https://etherscan.io/tx/{hash}",
-                "account": "https://etherscan.io/address/{address}"
+                "name": "Basescan",
+                "extrinsic": "https://basescan.org/tx/{hash}",
+                "account": "https://basescan.org/address/{address}"
             }
         ],
         "externalApi": {
             "history": [
                 {
                     "type": "etherscan",
-                    "url": "https://basescan.org/api",
+                    "url": "https://api.basescan.org/api",
                     "parameters": {
                         "assetType": "evm"
                     }
