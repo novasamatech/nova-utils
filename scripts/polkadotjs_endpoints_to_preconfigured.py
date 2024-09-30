@@ -275,8 +275,7 @@ def process_json_file(file_path):
 
 
 def process_dict_data(file_path, data):
-    chain_name = data.get('name', '')
-    if '(SHUTTING DOWN)' in chain_name or 'Westend' in chain_name:
+    if "(SHUTTING DOWN)" in data.get('name', '') or "Westend" in data.get('name', ''):
         pass
     else:
         os.remove(file_path)
