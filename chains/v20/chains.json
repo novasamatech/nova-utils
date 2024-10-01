@@ -2205,6 +2205,10 @@
         "options": [
             "governance-v1"
         ],
+        "types": {
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/basilisk.json",
+            "overridesCommon": true
+        },
         "additional": {
             "feeViaRuntimeCall": true
         }
