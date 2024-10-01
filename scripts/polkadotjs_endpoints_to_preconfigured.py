@@ -283,10 +283,10 @@ def process_dict_data(file_path, data):
 
 
 def process_list_data(file_path, data):
-    shutting_down_items = [entry for entry in data if "(SHUTTING DOWN)" in entry.get('name', '') or "Westend" in entry.get('name', '')]
-    if shutting_down_items:
+    skipped_items = [entry for entry in data if "(SHUTTING DOWN)" in entry.get('name', '') or "Westend" in entry.get('name', '')]
+    if skipped_items:
         with open(file_path, 'w') as f:
-            json.dump(shutting_down_items, f, indent=4)
+            json.dump(skipped_items, f, indent=4)
         print(f"Updated file: {file_path}")
     else:
         os.remove(file_path)
