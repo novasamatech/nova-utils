@@ -29,6 +29,7 @@ class BlacklistedChains(Enum):
 
 CHAINS_FILE_PATH_DEV = Path(os.getenv("DEV_CHAINS_JSON_PATH", 'chains/v20/chains_dev.json'))
 CHAINS_FILE_PATH_PROD = Path(os.getenv("CHAINS_JSON_PATH", 'chains/v20/chains.json'))
+SKIP_PATTERNS = ["(SHUTTING DOWN)", "Westend (TESTNET)"]
 
 
 def load_json_file(file_path):
@@ -275,16 +276,19 @@ def process_json_file(file_path):
 
 
 def process_dict_data(file_path, data):
-    if "(SHUTTING DOWN)" not in data.get('name', ''):
+    if any(pattern in data.get('name', '') for pattern in SKIP_PATTERNS):
+        pass
+        print(f"Skipped file: {file_path}")
+    else:
         os.remove(file_path)
         print(f"Removed file: {file_path}")
 
 
 def process_list_data(file_path, data):
-    shutting_down_items = [entry for entry in data if "(SHUTTING DOWN)" in entry.get('name', '')]
-    if shutting_down_items:
+    skipped_items = [entry for entry in data if any(pattern in entry.get('name', '') for pattern in SKIP_PATTERNS)]
+    if skipped_items:
         with open(file_path, 'w') as f:
-            json.dump(shutting_down_items, f, indent=4)
+            json.dump(skipped_items, f, indent=4)
         print(f"Updated file: {file_path}")
     else:
         os.remove(file_path)
