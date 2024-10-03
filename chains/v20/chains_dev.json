@@ -8951,8 +8951,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc-anchor-1-giant-mainnet-ue1.giantprotocol.org:443",
-                "name": "Anchor node"
+                "url": "wss://rpc-anchor-1-mainnet-az-ue1.giantprotocol.org:443",
+                "name": "Anchor node 1"
+            },
+            {
+                "url": "wss://rpc-anchor-2-mainnet-az-ue1.giantprotocol.org:443",
+                "name": "Anchor node 2"
             }
         ],
         "externalApi": {
