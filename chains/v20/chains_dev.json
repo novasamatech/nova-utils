@@ -112,11 +112,8 @@
             ],
             "referendum-summary": [
                 {
-                    "type": "polkassembly",
-                    "url": "https://polkadot.polkassembly.io/api/v1/posts/summary",
-                    "parameters": {
-                        "network": "polkadot"
-                    }
+                    "type": "novasama",
+                    "url": "https://opengov-backend-dev.novasama-tech.org/not-secure/api/v1/referendum-summaries/list"
                 }
             ]
         },
