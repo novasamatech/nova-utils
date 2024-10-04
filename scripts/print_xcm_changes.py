@@ -162,7 +162,40 @@ def compare_files(actual_json, new_json, chains_json):
     compare_destinations(changed_values, prod_chain_dict,
                          new_chain_dict, chains_json_dict)
 
+    compare_network_delivery_fee(
+        changed_values,
+        actual_json.get('networkDeliveryFee', {}),
+        new_json.get('networkDeliveryFee', {}),
+        chains_json_dict
+    )
+
     return changed_values
+
+
+def compare_network_delivery_fee(object_accumulator, actual_network_delivery_fee, new_network_delivery_fee, chains_json_dict):
+    """Compare network delivery fee between production and changed json
+
+    Args:
+        object_accumulator (dict): This object accumulate all changes
+        actual_network_delivery_fee (dict): Dictionary with actual network delivery fee
+        new_network_delivery_fee (dict): Dictionary with changed network delivery fee
+        chains_json_dict (dict): Dictionary with chains.json
+    """
+    for chain_id, fee_data in new_network_delivery_fee.items():
+        chain_name = chains_json_dict[chain_id].get('name', chain_id)
+        if chain_id not in actual_network_delivery_fee:
+            object_accumulator['networkDeliveryFee'][chain_name] = 'Added'
+        else:
+            if fee_data != actual_network_delivery_fee[chain_id]:
+                object_accumulator['networkDeliveryFee'][chain_name] = {
+                    'old_value': actual_network_delivery_fee[chain_id],
+                    'new_value': fee_data
+                }
+
+    for chain_id in actual_network_delivery_fee:
+        chain_name = chains_json_dict[chain_id].get('name', chain_id)
+        if chain_id not in new_network_delivery_fee:
+            object_accumulator['networkDeliveryFee'][chain_name] = 'Removed'
 
 
 def main(argv):
