@@ -243,6 +243,12 @@
                     "type": "subquery",
                     "url": "https://subquery-governance-kusama-prod.novasama-tech.org"
                 }
+            ],
+            "referendum-summary": [
+                {
+                    "type": "novasama",
+                    "url": "https://opengov-backend-dev.novasama-tech.org/not-secure/api/v1/referendum-summaries/list"
+                }
             ]
         },
         "options": [
