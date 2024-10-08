@@ -3800,6 +3800,51 @@
         ]
     },
     {
+        "chainId": "eip155:11155111",
+        "name": "Ethereum - Sepolia",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "ETH",
+                "priceId": "ethereum",
+                "type": "evmNative",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/ETH.svg",
+                "precision": 18
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://ethereum-sepolia-rpc.publicnode.com",
+                "name": "Public Test Node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Etherscan",
+                "extrinsic": "https://sepolia.etherscan.io/tx/{hash}",
+                "account": "https://sepolia.etherscan.io/address/{address}"
+            }
+        ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "etherscan",
+                    "url": "https://sepolia.etherscan.io/api",
+                    "parameters": {
+                        "assetType": "evm"
+                    }
+                }
+            ]
+        },
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Ethereum_Goerli.svg",
+        "addressPrefix": 11155111,
+        "options": [
+            "testnet",
+            "ethereumBased",
+            "noSubstrateRuntime"
+        ]
+    },
+    {
         "chainId": "eip155:5",
         "name": "Ethereum - Goerli",
         "assets": [
