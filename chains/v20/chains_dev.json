@@ -11226,6 +11226,11 @@
         ],
         "explorers": [
             {
+                "name": "ZKsync Era explorer",
+                "extrinsic": "https://era.zksync.network/tx/{hash}",
+                "account": "https://era.zksync.network/address/{address}"
+            },
+            {
                 "name": "Block explorer",
                 "extrinsic": "https://explorer.zksync.io/tx/{hash}",
                 "account": "https://explorer.zksync.io/address/{address}"
@@ -11235,7 +11240,7 @@
             "history": [
                 {
                     "type": "etherscan",
-                    "url": "https://block-explorer-api.mainnet.zksync.io/api",
+                    "url": "https://api-era.zksync.network/api",
                     "parameters": {
                         "assetType": "evm"
                     }
