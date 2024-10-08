@@ -11199,5 +11199,54 @@
             "ethereumBased",
             "noSubstrateRuntime"
         ]
+    },
+    {
+        "chainId": "eip155:324",
+        "name": "ZKsync Era Mainnet",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "ETH",
+                "priceId": "ethereum",
+                "type": "evmNative",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/ETH.svg",
+                "precision": 18
+            }
+        ],
+        "nodeSelectionStrategy": "uniform",
+        "nodes": [
+            {
+                "url": "https://mainnet.era.zksync.io",
+                "name": "http node"
+            },
+            {
+                "url": "wss://mainnet.era.zksync.io/ws",
+                "name": "wss node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Block explorer",
+                "extrinsic": "https://explorer.zksync.io/tx/{hash}",
+                "account": "https://explorer.zksync.io/address/{address}"
+            }
+        ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "etherscan",
+                    "url": "https://block-explorer-api.mainnet.zksync.io/api",
+                    "parameters": {
+                        "assetType": "evm"
+                    }
+                }
+            ]
+        },
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/ZKsync_Mainnet.svg",
+        "addressPrefix": 324,
+        "options": [
+            "ethereumBased",
+            "noSubstrateRuntime"
+        ]
     }
 ]
