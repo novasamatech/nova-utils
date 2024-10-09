@@ -7725,7 +7725,13 @@
                     "relaychain",
                     "nomination-pools"
                 ],
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/VARA.svg"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/VARA.svg",
+                "buyProviders": {
+                    "banxa": {
+                        "coinType": "VARA",
+                        "blockchain": "VARA"
+                    }
+                }
             }
         ],
         "nodes": [
