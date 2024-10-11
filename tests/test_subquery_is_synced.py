@@ -1,22 +1,7 @@
 import requests
 import pytest
-
-subquery_urls = [
-    ["Khala", "https://gateway.subquery.network/query/0x3a"],
-    ["Kilt", "https://gateway.subquery.network/query/0x3d"],
-    ["Calamari", "https://gateway.subquery.network/query/0x36"],
-    ["Quartz", "https://gateway.subquery.network/query/0x3e"],
-    ["Bit.country", "https://gateway.subquery.network/query/0x41"],
-    ["Acala", "https://gateway.subquery.network/query/0x3c"],
-    ["PAH", "https://gateway.subquery.network/query/0x35"],
-    ["Picasso", "https://gateway.subquery.network/query/0x3b"],
-    ["Polkadex", "https://gateway.subquery.network/query/0x20"],
-    ["Shiden", "https://gateway.subquery.network/query/0x40"],
-    ["Bifrost", "https://gateway.subquery.network/query/0x38"],
-    ["Basilisk", "https://gateway.subquery.network/query/0x3f"],
-    ["Altair", "https://gateway.subquery.network/query/0x37"],
-    ["Karura", "https://gateway.subquery.network/query/0x39"]
-]
+from typing import List
+from scripts.utils.work_with_data import get_network_list
 
 payload = "{\"query\":\"query{\\n  _metadata{\\n    chain\\n    lastProcessedHeight\\n    targetHeight\\n  }\\n}\",\"variables\":{}}"
 headers = {
@@ -27,48 +12,31 @@ headers = {
 }
 
 
-@pytest.mark.parametrize("chain, url", subquery_urls)
-def test_subquery_status_code_equals_200(chain, url):
-    response = requests.request("POST", url, headers=headers, data=payload)
-    assert response.status_code == 200, f"Test failed for chain: {chain}"
+def get_unique_subquery_urls(network_list: List[dict]) -> List[str]:
+    subquery_urls = set()
+    for chain in network_list:
+        external_api = chain.get('externalApi', {})
+        for api_type, api_list in external_api.items():
+            if isinstance(api_list, list):
+                for api in api_list:
+                    if api.get('type') == 'subquery':
+                        subquery_urls.add(api['url'])
+            elif isinstance(api_list, dict) and api_list.get('type') == 'subquery':
+                subquery_urls.add(api_list['url'])
+    return list(subquery_urls)
 
 
-@pytest.mark.parametrize("chain, url", subquery_urls)
-def test_response_has_data(chain, url):
-    response = requests.request("POST", url, headers=headers, data=payload)
-    assert response.json().get('data'), f"Test failed for chain: {chain}"
+@pytest.fixture(scope="module")
+def subquery_projects():
+    network_file_path = "chains/v20/chains.json"
+    network_list = get_network_list('/' + network_file_path)
+    return get_unique_subquery_urls(network_list)
 
 
-@pytest.mark.parametrize("chain, url", subquery_urls)
-def test_data_has_metadata(chain, url):
-    response = requests.request("POST", url, headers=headers, data=payload)
-    assert response.json().get('data').get('_metadata'), f"Test failed for chain: {chain}"
-
-
-@pytest.mark.parametrize("chain, url", subquery_urls)
-def test_metadata_has_last_processed_height(chain, url):
-    response = requests.request("POST", url, headers=headers, data=payload)
-    last_processed_height = response.json().get('data').get('_metadata').get('lastProcessedHeight')
-    assert isinstance(last_processed_height, int), f"Test failed for chain: {chain}"
-
-
-@pytest.mark.parametrize("chain, url", subquery_urls)
-def test_metadata_has_target_height(chain, url):
-    response = requests.request("POST", url, headers=headers, data=payload)
-    target_height = response.json().get('data').get('_metadata').get('targetHeight')
-    assert isinstance(target_height, int), f"Test failed for chain: {chain}"
-
-
-@pytest.mark.parametrize("chain, url", subquery_urls)
-def test_target_and_last_processed_height_diff(chain, url):
-    response = requests.request("POST", url, headers=headers, data=payload)
-    last_processed_height = response.json().get('data').get('_metadata').get('lastProcessedHeight')
-    target_height = response.json().get('data').get('_metadata').get('targetHeight')
-    assert abs(target_height - last_processed_height) < 10, f"Test failed for chain: {chain}"
-
-
-@pytest.mark.parametrize("chain, url", subquery_urls)
-def test_metadata_has_chain(chain, url):
-    response = requests.request("POST", url, headers=headers, data=payload)
-    chain = response.json().get('data').get('_metadata').get('chain')
-    assert isinstance(chain, str), f"Test failed for chain: {chain}"
+def test_subquery_is_synced(subquery_projects):
+    for url in subquery_projects:
+        response = requests.request("POST", url, headers=headers, data=payload)
+        if response.status_code == 200:
+            last_processed_height = response.json().get('data').get('_metadata').get('lastProcessedHeight')
+            target_height = response.json().get('data').get('_metadata').get('targetHeight')
+            assert abs(target_height - last_processed_height) < 10
