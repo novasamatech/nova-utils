@@ -1,5 +1,6 @@
-import requests
+import os
 import pytest
+import requests
 from typing import List
 from scripts.utils.work_with_data import get_network_list
 
@@ -28,7 +29,7 @@ def get_unique_subquery_urls(network_list: List[dict]) -> List[str]:
 
 @pytest.fixture(scope="module")
 def subquery_projects():
-    network_file_path = "chains/v20/chains.json"
+    network_file_path = os.getenv('CHAINS_JSON_PATH', "chains/v20/chains.json")
     network_list = get_network_list('/' + network_file_path)
     return get_unique_subquery_urls(network_list)
 
