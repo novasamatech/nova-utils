@@ -77,7 +77,7 @@ test-calls-availability:
 	$(TEST_RUN) "./tests/test_rpc_methods_availability.py"
 
 test-subquery-synced:
-    $(TEST_RUN) "./tests/test_subquery_is_synced.py"
+	$(TEST_RUN) "./tests/test_subquery_is_synced.py"
 
 allure:
 	allure serve $(ALLURE_DIR)
