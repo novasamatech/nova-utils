@@ -3,6 +3,7 @@ import os
 import re
 import shutil
 
+remove_unnecessary_icons = False
 # Load the chains.json file
 chains_file = 'chains/v21/chains.json'
 with open(chains_file, 'r') as f:
@@ -61,7 +62,7 @@ for chain in chains_data:
           new_path = os.path.join(output_dir, new_filename)
 
           # If the found file is different from the new filename, rename it
-          if found_file.lower() != new_filename.lower():
+          if found_file != new_filename:
             try:
               shutil.move(old_path, new_path)
             except shutil.SameFileError:
@@ -83,3 +84,20 @@ with open(chains_file, 'w') as f:
   json.dump(chains_data, f, indent=4)
 
 print("Process completed. chains.json has been updated.")
+
+
+if remove_unnecessary_icons:
+  # Collect all referenced icon filenames
+  referenced_icons = set()
+  for chain in chains_data:
+    if 'assets' in chain:
+      for asset in chain['assets']:
+        if 'icon' in asset:
+          referenced_icons.add(asset['icon'])
+
+  # Remove unreferenced files from the output directory
+  for filename in os.listdir(output_dir):
+    if filename not in referenced_icons:
+      file_path = os.path.join(output_dir, filename)
+      os.remove(file_path)
+      print(f"Removed unreferenced file: {filename}")
