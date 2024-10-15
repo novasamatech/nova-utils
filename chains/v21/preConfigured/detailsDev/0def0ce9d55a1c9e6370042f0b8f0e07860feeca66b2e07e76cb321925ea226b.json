@@ -1,0 +1,19 @@
+{
+    "chainId": "0def0ce9d55a1c9e6370042f0b8f0e07860feeca66b2e07e76cb321925ea226b",
+    "name": "Magnet Rococo (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "DOT",
+            "precision": 18,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://magnet-rpc.magport.io/ws",
+            "name": "Magnet"
+        }
+    ],
+    "addressPrefix": 42
+}
