@@ -1,0 +1,19 @@
+{
+    "chainId": "46cf80723cc200d17dbe12f54d42803150d7dd921d5fbb09866cfc6f6147ebdc",
+    "name": "RegionX (Paseo) (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "REGX",
+            "precision": 12,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://regionx-paseo.regionx.tech",
+            "name": "RegionX"
+        }
+    ],
+    "addressPrefix": 42
+}
