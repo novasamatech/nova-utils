@@ -5,7 +5,7 @@ import shutil
 
 remove_unnecessary_icons = False
 # Load the chains.json file
-chains_file = 'chains/v21/chains.json'
+chains_file = 'chains/v21/chains_dev.json'
 with open(chains_file, 'r') as f:
     chains_data = json.load(f)
 
