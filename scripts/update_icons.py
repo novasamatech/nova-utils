@@ -1,3 +1,8 @@
+# That script was built to update icons for asset into chain from CHAINS_FILE
+# Basically this script find icon for each token in OUTPUT_DIR format it based on symbol
+# and then update CHAINS_FILE with new icon filename
+# In order to clear unnecessary icons from OUTPUT_DIR folder, set REMOVE_UNNECESSARY_ICONS to True
+
 import json
 import os
 import re
