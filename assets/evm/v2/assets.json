@@ -548,5 +548,18 @@
                 "contractAddress": "0xBA41Ddf06B7fFD89D1267b5A93BFeF2424eb2003"
             }
         ]
+    },
+    {
+        "symbol": "NODL",
+        "precision": 18,
+        "name": "Nodle token",
+        "priceId": "nodle-network",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Nodle.svg",
+        "instances": [
+            {
+                "chainId": "eip155:324",
+                "contractAddress": "0xBD4372e44c5eE654dd838304006E1f0f69983154"
+            }
+        ]
     }
 ]
