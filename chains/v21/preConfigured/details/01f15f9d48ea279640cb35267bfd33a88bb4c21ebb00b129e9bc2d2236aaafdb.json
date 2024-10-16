@@ -1,0 +1,19 @@
+{
+    "chainId": "01f15f9d48ea279640cb35267bfd33a88bb4c21ebb00b129e9bc2d2236aaafdb",
+    "name": "SoonSocial (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "SOON",
+            "precision": 10,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rco-para.subsocial.network",
+            "name": "DappForce"
+        }
+    ],
+    "addressPrefix": 28
+}

@@ -1,0 +1,19 @@
+{
+    "chainId": "4436a7d64e363df85e065a894721002a86643283f9707338bf195d360ba2ee71",
+    "name": "Creditcoin3",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "CTC",
+            "precision": 18,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://mainnet3.creditcoin.network",
+            "name": "Creditcoin Foundation"
+        }
+    ],
+    "addressPrefix": 42
+}
