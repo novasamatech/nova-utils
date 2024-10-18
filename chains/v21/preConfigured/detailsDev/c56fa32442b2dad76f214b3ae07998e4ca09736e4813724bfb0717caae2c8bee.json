@@ -1,0 +1,19 @@
+{
+    "chainId": "c56fa32442b2dad76f214b3ae07998e4ca09736e4813724bfb0717caae2c8bee",
+    "name": "Humanode Mainnet",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "HMND",
+            "precision": 18,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://explorer-rpc-ws.mainnet.stages.humanode.io",
+            "name": "Humanode"
+        }
+    ],
+    "addressPrefix": 5234
+}

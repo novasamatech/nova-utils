@@ -1,0 +1,19 @@
+{
+    "chainId": "caa036a5a771a7d6ea800c2988f4e3478b98de3ba9dab786db15e3e5e5b67886",
+    "name": "Rococo People (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "ROC",
+            "precision": 12,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rococo-people-rpc.polkadot.io",
+            "name": "Parity"
+        }
+    ],
+    "addressPrefix": 42
+}
