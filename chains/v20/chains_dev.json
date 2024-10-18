@@ -11407,36 +11407,5 @@
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/DENTNet.svg",
         "addressPrefix": 42
-    },
-    {
-        "chainId": "0313f6a011d128d22f996703cbab05162e2fdc9e031493314fe6db79979c5ca7",
-        "name": "Stafi",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "FIS",
-                "precision": 18,
-                 "priceId": "stafi",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/DENTX.svg",
-                "staking": [
-                    "relaychain"
-                ]
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://rpc.dentnet.io/ws",
-                "name": "Stafi node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://stafi.subscan.io/extrinsic/{hash}",
-                "account": "https://stafi.subscan.io/account/{address}"
-            }
-        ],
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/DENTNet.svg",
-        "addressPrefix": 9807
     }
 ]
