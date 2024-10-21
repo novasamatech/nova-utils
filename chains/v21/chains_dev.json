@@ -10040,68 +10040,6 @@
         ]
     },
     {
-        "chainId": "7c34d42fc815d392057c78b49f2755c753440ccd38bcb0405b3bcfb601d08734",
-        "parentId": "6408de7737c59c238890533af25896a2c20608d8b380bb01029acb392781063e",
-        "name": "Rococo Asset Hub",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "ROC",
-                "precision": 12,
-                "icon": "ROC.svg"
-            },
-            {
-                "assetId": 1,
-                "symbol": "HOP",
-                "precision": 12,
-                "type": "statemine",
-                "icon": "Default.svg",
-                "typeExtras": {
-                    "assetId": "0x010100b11c",
-                    "palletName": "ForeignAssets"
-                }
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://rococo-asset-hub-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
-                "url": "wss://rococo-asset-hub-rpc.polkadot.io",
-                "name": "Parity node",
-                "features": [
-                    "noTls12"
-                ]
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://assethub-rococo.subscan.io/extrinsic/{hash}",
-                "account": "https://assethub-rococo.subscan.io/account/{address}"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---westmint"
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/AssetHub_Testnet.svg",
-        "addressPrefix": 42,
-        "options": [
-            "testnet",
-            "swap-hub"
-        ],
-        "additional": {
-            "relaychainAsNative": true,
-            "supportsGenericLedgerApp": true
-        }
-    },
-    {
         "chainId": "eip155:595",
         "name": "Acala Mandala TC9",
         "assets": [
