@@ -1,0 +1,19 @@
+{
+    "chainId": "996800af345b3109acdada9913e36d1efa98b89e7dcd0b61b70fdbfc13b2fa50",
+    "name": "DeBio",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "DBIO",
+            "precision": 18,
+            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://gateway.mainnet.octopus.network/debionetwork/ae48005a0c7ecb4053394559a7f4069e",
+            "name": "Octopus"
+        }
+    ],
+    "addressPrefix": 42
+}
