@@ -1,18 +1,18 @@
 {
-    "chainId": "c079ad1435652801e6789aa485ca8b13616716bcefb7f77395e889dc6d98e8c5",
-    "name": "Rococo Coretime (TESTNET)",
+    "chainId": "46cf80723cc200d17dbe12f54d42803150d7dd921d5fbb09866cfc6f6147ebdc",
+    "name": "RegionX (Paseo) (TESTNET)",
     "assets": [
         {
             "assetId": 0,
-            "symbol": "ROC",
+            "symbol": "REGX",
             "precision": 12,
             "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
         }
     ],
     "nodes": [
         {
-            "url": "wss://rococo-coretime-rpc.polkadot.io",
-            "name": "Parity"
+            "url": "wss://regionx-paseo.regionx.tech",
+            "name": "RegionX"
         }
     ],
     "addressPrefix": 42

@@ -1,18 +1,18 @@
 {
-    "chainId": "797fe0d6ea6917b5a36707961d819dca1826628123510730425c3bafc65ccf59",
-    "name": "Mangata Public Testnet (TESTNET)",
+    "chainId": "40d175caba06c99521d5cd1bea3d1495b14d28b59eef1d5ffc2688cbb7e3dd76",
+    "name": "Litentry-paseo (TESTNET)",
     "assets": [
         {
             "assetId": 0,
-            "symbol": "MGAT",
+            "symbol": "LIT",
             "precision": 18,
             "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
         }
     ],
     "nodes": [
         {
-            "url": "wss://collator-01-ws-rococo.mangata.online",
-            "name": "Mangata"
+            "url": "wss://rpc.paseo-parachain.litentry.io",
+            "name": "Litentry"
         }
     ],
     "addressPrefix": 42
