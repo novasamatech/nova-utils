@@ -8230,6 +8230,76 @@
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 14,
+                "symbol": "ASTR",
+                "precision": 18,
+                "type": "orml",
+                "priceId": "astar",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Astar.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0109",
+                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "existentialDeposit": "1000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 15,
+                "symbol": "vDOT",
+                "precision": 10,
+                "type": "orml",
+                "priceId": "voucher-dot",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vDOT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x010a",
+                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 16,
+                "symbol": "BNC",
+                "precision": 12,
+                "type": "orml",
+                "priceId": "bifrost-native-coin",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Bifrost.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x010b",
+                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 17,
+                "symbol": "USDC.axl",
+                "precision": 6,
+                "type": "orml",
+                "priceId": "axlusdc",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDC.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x010c",
+                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 18,
+                "symbol": "EURC.s",
+                "precision": 12,
+                "type": "orml",
+                "priceId": "euro-coin",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/EUR.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x020145555243cf4f5a26e2090bb3adcf02c7a9d73dbfe6659cc690461475b86437fa49c71136",
+                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
