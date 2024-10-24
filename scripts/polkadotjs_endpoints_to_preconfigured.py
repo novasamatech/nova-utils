@@ -128,8 +128,8 @@ def ts_constant_to_json(input_file_path):
 
 def get_token_icon(symbol):
     file_name = symbol + ".svg"
-    work_dir = "../icons/tokens/white/" + file_name
-    if os.path.isfile(work_dir):
+    file_path = CHAINS_FILE_PATH_DEV.parent.parent.parent / 'icons/tokens/white' / file_name
+    if os.path.isfile(file_path):
         return file_name
     else:
         return "Default.svg"
