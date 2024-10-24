@@ -13,12 +13,12 @@ from enum import Enum
 
 
 class Endpoints(Enum):
-    # polkadot = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/productionRelayPolkadot.ts"
-    # kusama = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/productionRelayKusama.ts"
-    # singlechains = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/production.ts"
-    # testnet_westend = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testingRelayWestend.ts"
-    # testnet_rococo = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testingRelayRococo.ts"
-    # testnet_paseo = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testingRelayPaseo.ts"
+    polkadot = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/productionRelayPolkadot.ts"
+    kusama = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/productionRelayKusama.ts"
+    singlechains = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/production.ts"
+    testnet_westend = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testingRelayWestend.ts"
+    testnet_rococo = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testingRelayRococo.ts"
+    testnet_paseo = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testingRelayPaseo.ts"
     testnets = "https://raw.githubusercontent.com/polkadot-js/apps/master/packages/apps-config/src/endpoints/testing.ts"
 
 
@@ -314,7 +314,7 @@ def main():
         get_ts_file(endpoint.value, ts_file_path)
         polkadotjs_data = ts_constant_to_json(ts_file_path)
         create_json_files(polkadotjs_data, CHAINS_FILE_PATH_DEV, endpoint.name)
-        # create_json_files(polkadotjs_data, CHAINS_FILE_PATH_PROD, endpoint.name)
+        create_json_files(polkadotjs_data, CHAINS_FILE_PATH_PROD, endpoint.name)
 
 
 if __name__ == "__main__":
