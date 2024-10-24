@@ -6,17 +6,13 @@
             "assetId": 0,
             "symbol": "C",
             "precision": 9,
-            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+            "icon": "Default.svg"
         }
     ],
     "nodes": [
         {
             "url": "wss://commune-api-node-1.communeai.net",
             "name": "Bitconnect"
-        },
-        {
-            "url": "wss://commune.api.onfinality.io/public-ws",
-            "name": "OnFinality"
         }
     ],
     "addressPrefix": 42
