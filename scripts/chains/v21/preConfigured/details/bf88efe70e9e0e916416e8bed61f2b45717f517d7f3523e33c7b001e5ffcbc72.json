@@ -1,0 +1,27 @@
+{
+    "chainId": "bf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72",
+    "name": "Interlay",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "INTR",
+            "precision": 10,
+            "icon": "INTR.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://interlay-rpc.dwellir.com",
+            "name": "Dwellir"
+        },
+        {
+            "url": "wss://api.interlay.io/parachain",
+            "name": "Kintsugi Labs"
+        },
+        {
+            "url": "wss://rpc-interlay.luckyfriday.io/",
+            "name": "LuckyFriday"
+        }
+    ],
+    "addressPrefix": 2032
+}

@@ -1,0 +1,19 @@
+{
+    "chainId": "4ac80c99289841dd946ef92765bf659a307d39189b3ce374a92b5f0415ee17a1",
+    "name": "Calamari Parachain",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "KMA",
+            "precision": 12,
+            "icon": "KMA.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://calamari.systems",
+            "name": "Manta Network"
+        }
+    ],
+    "addressPrefix": 78
+}

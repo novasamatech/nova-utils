@@ -1,0 +1,19 @@
+{
+    "chainId": "6c5894837ad89b6d92b114a2fb3eafa8fe3d26a54848e3447015442cd6ef4e66",
+    "name": "3dpass - The Ledger of Things",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "P3D",
+            "precision": 12,
+            "icon": "P3D.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc.3dpscan.io",
+            "name": "3dpass"
+        }
+    ],
+    "addressPrefix": 71
+}

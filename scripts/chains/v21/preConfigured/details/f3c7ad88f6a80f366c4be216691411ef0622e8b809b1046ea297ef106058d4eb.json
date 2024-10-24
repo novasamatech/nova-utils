@@ -1,0 +1,19 @@
+{
+    "chainId": "f3c7ad88f6a80f366c4be216691411ef0622e8b809b1046ea297ef106058d4eb",
+    "name": "Manta Parachain",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "MANTA",
+            "precision": 18,
+            "icon": "MANTA.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://ws.manta.systems",
+            "name": "Manta Network"
+        }
+    ],
+    "addressPrefix": 77
+}

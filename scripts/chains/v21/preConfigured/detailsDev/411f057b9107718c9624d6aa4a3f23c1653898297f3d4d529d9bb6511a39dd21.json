@@ -1,0 +1,31 @@
+{
+    "chainId": "411f057b9107718c9624d6aa4a3f23c1653898297f3d4d529d9bb6511a39dd21",
+    "name": "KILT Spiritnet",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "KILT",
+            "precision": 15,
+            "icon": "KILT.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://spiritnet.kilt.io/",
+            "name": "BOTLabs"
+        },
+        {
+            "url": "wss://kilt-rpc.dwellir.com",
+            "name": "Dwellir"
+        },
+        {
+            "url": "wss://kilt.ibp.network",
+            "name": "IBP1"
+        },
+        {
+            "url": "wss://kilt.dotters.network",
+            "name": "IBP2"
+        }
+    ],
+    "addressPrefix": 38
+}

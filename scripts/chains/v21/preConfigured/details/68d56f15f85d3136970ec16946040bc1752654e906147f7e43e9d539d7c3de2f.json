@@ -1,0 +1,51 @@
+{
+    "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+    "name": "Polkadot Asset Hub",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "DOT",
+            "precision": 10,
+            "icon": "DOT.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://asset-hub-polkadot-rpc.dwellir.com",
+            "name": "Dwellir"
+        },
+        {
+            "url": "wss://statemint-rpc-tn.dwellir.com",
+            "name": "Dwellir Tunisia"
+        },
+        {
+            "url": "wss://sys.ibp.network/asset-hub-polkadot",
+            "name": "IBP1"
+        },
+        {
+            "url": "wss://asset-hub-polkadot.dotters.network",
+            "name": "IBP2"
+        },
+        {
+            "url": "wss://rpc-asset-hub-polkadot.luckyfriday.io",
+            "name": "LuckyFriday"
+        },
+        {
+            "url": "wss://statemint.api.onfinality.io/public-ws",
+            "name": "OnFinality"
+        },
+        {
+            "url": "wss://polkadot-asset-hub-rpc.polkadot.io",
+            "name": "Parity"
+        },
+        {
+            "url": "wss://statemint.public.curie.radiumblock.co/ws",
+            "name": "RadiumBlock"
+        },
+        {
+            "url": "wss://dot-rpc.stakeworld.io/assethub",
+            "name": "Stakeworld"
+        }
+    ],
+    "addressPrefix": 0
+}

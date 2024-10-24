@@ -1,0 +1,31 @@
+{
+    "chainId": "7dd99936c1e9e6d1ce7d90eb6f33bea8393b4bf87677d675aa63c9cb3e8c5b5b",
+    "name": "Encointer on Kusama",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "KSM",
+            "precision": 12,
+            "icon": "KSM.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://encointer-kusama-rpc.dwellir.com",
+            "name": "Dwellir"
+        },
+        {
+            "url": "wss://kusama.api.encointer.org",
+            "name": "Encointer Association"
+        },
+        {
+            "url": "wss://sys.ibp.network/encointer-kusama",
+            "name": "IBP1"
+        },
+        {
+            "url": "wss://encointer-kusama.dotters.network",
+            "name": "IBP2"
+        }
+    ],
+    "addressPrefix": 2
+}

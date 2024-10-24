@@ -1,0 +1,19 @@
+{
+    "chainId": "5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86",
+    "name": "Pendulum",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "PEN",
+            "precision": 12,
+            "icon": "PEN.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc-pendulum.prd.pendulumchain.tech",
+            "name": "PendulumChain"
+        }
+    ],
+    "addressPrefix": 56
+}

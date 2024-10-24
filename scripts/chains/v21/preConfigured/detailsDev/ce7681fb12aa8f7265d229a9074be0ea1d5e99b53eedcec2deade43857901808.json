@@ -1,0 +1,19 @@
+{
+    "chainId": "ce7681fb12aa8f7265d229a9074be0ea1d5e99b53eedcec2deade43857901808",
+    "name": "Acurast Canary",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "cACU",
+            "precision": 12,
+            "icon": "cACU.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://public-rpc.canary.acurast.com",
+            "name": "Acurast"
+        }
+    ],
+    "addressPrefix": 42
+}

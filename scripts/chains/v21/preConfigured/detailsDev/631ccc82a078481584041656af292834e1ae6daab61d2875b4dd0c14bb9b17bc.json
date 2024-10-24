@@ -1,0 +1,19 @@
+{
+    "chainId": "631ccc82a078481584041656af292834e1ae6daab61d2875b4dd0c14bb9b17bc",
+    "name": "Robonomics Kusama",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "XRT",
+            "precision": 9,
+            "icon": "XRT.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://kusama.rpc.robonomics.network/",
+            "name": "Airalab"
+        }
+    ],
+    "addressPrefix": 32
+}

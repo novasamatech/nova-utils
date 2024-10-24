@@ -1,0 +1,47 @@
+{
+    "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
+    "name": "Kusama Asset Hub",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "KSM",
+            "precision": 12,
+            "icon": "KSM.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://asset-hub-kusama-rpc.dwellir.com",
+            "name": "Dwellir"
+        },
+        {
+            "url": "wss://statemine-rpc-tn.dwellir.com",
+            "name": "Dwellir Tunisia"
+        },
+        {
+            "url": "wss://sys.ibp.network/statemine",
+            "name": "IBP1"
+        },
+        {
+            "url": "wss://asset-hub-kusama.dotters.network",
+            "name": "IBP2"
+        },
+        {
+            "url": "wss://rpc-asset-hub-kusama.luckyfriday.io",
+            "name": "LuckyFriday"
+        },
+        {
+            "url": "wss://kusama-asset-hub-rpc.polkadot.io",
+            "name": "Parity"
+        },
+        {
+            "url": "wss://statemine.public.curie.radiumblock.co/ws",
+            "name": "RadiumBlock"
+        },
+        {
+            "url": "wss://ksm-rpc.stakeworld.io/assethub",
+            "name": "Stakeworld"
+        }
+    ],
+    "addressPrefix": 2
+}

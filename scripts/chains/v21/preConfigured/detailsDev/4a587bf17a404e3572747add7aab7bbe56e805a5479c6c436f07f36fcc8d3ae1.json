@@ -1,0 +1,31 @@
+{
+    "chainId": "4a587bf17a404e3572747add7aab7bbe56e805a5479c6c436f07f36fcc8d3ae1",
+    "name": "Frequency",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "FRQCY",
+            "precision": 8,
+            "icon": "FRQCY.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://frequency-rpc.dwellir.com",
+            "name": "Dwellir"
+        },
+        {
+            "url": "wss://0.rpc.frequency.xyz",
+            "name": "Frequency 0"
+        },
+        {
+            "url": "wss://1.rpc.frequency.xyz",
+            "name": "Frequency 1"
+        },
+        {
+            "url": "wss://frequency-polkadot.api.onfinality.io/public-ws",
+            "name": "OnFinality"
+        }
+    ],
+    "addressPrefix": 90
+}

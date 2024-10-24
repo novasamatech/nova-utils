@@ -1,0 +1,23 @@
+{
+    "chainId": "cdedc8eadbfa209d3f207bba541e57c3c58a667b05a2e1d1e86353c9000758da",
+    "name": "Integritee Network (Kusama)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "TEER",
+            "precision": 12,
+            "icon": "TEER.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://kusama.api.integritee.network",
+            "name": "Integritee"
+        },
+        {
+            "url": "wss://integritee-kusama.api.onfinality.io/public-ws",
+            "name": "OnFinality"
+        }
+    ],
+    "addressPrefix": 13
+}

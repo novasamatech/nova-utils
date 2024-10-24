@@ -1,0 +1,51 @@
+{
+    "chainId": "dcf691b5a3fbe24adc99ddc959c0561b973e329b1aef4c4b22e7bb2ddecb4464",
+    "name": "Polkadot BridgeHub",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "DOT",
+            "precision": 10,
+            "icon": "DOT.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://bridge-hub-polkadot-rpc.dwellir.com",
+            "name": "Dwellir"
+        },
+        {
+            "url": "wss://polkadot-bridge-hub-rpc-tn.dwellir.com",
+            "name": "Dwellir Tunisia"
+        },
+        {
+            "url": "wss://sys.ibp.network/bridgehub-polkadot",
+            "name": "IBP1"
+        },
+        {
+            "url": "wss://bridge-hub-polkadot.dotters.network",
+            "name": "IBP2"
+        },
+        {
+            "url": "wss://rpc-bridge-hub-polkadot.luckyfriday.io",
+            "name": "LuckyFriday"
+        },
+        {
+            "url": "wss://bridgehub-polkadot.api.onfinality.io/public-ws",
+            "name": "OnFinality"
+        },
+        {
+            "url": "wss://polkadot-bridge-hub-rpc.polkadot.io",
+            "name": "Parity"
+        },
+        {
+            "url": "wss://bridgehub-polkadot.public.curie.radiumblock.co/ws",
+            "name": "RadiumBlock"
+        },
+        {
+            "url": "wss://dot-rpc.stakeworld.io/bridgehub",
+            "name": "Stakeworld"
+        }
+    ],
+    "addressPrefix": 0
+}

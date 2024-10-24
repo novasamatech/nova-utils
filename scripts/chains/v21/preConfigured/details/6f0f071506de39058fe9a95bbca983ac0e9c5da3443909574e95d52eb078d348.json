@@ -1,0 +1,19 @@
+{
+    "chainId": "6f0f071506de39058fe9a95bbca983ac0e9c5da3443909574e95d52eb078d348",
+    "name": "Ipci",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "MITO",
+            "precision": 12,
+            "icon": "MITO.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://ipci.rpc.robonomics.network",
+            "name": "Airalab"
+        }
+    ],
+    "addressPrefix": 32
+}

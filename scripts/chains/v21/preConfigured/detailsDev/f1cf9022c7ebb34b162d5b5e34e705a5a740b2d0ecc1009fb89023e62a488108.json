@@ -1,0 +1,39 @@
+{
+    "chainId": "f1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
+    "name": "Shiden",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "SDN",
+            "precision": 18,
+            "icon": "SDN.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc.shiden.astar.network",
+            "name": "Astar"
+        },
+        {
+            "url": "wss://shiden.public.blastapi.io",
+            "name": "Blast"
+        },
+        {
+            "url": "wss://shiden-rpc.dwellir.com",
+            "name": "Dwellir"
+        },
+        {
+            "url": "wss://shiden.api.onfinality.io/public-ws",
+            "name": "OnFinality"
+        },
+        {
+            "url": "wss://shiden.public.curie.radiumblock.co/ws",
+            "name": "RadiumBlock"
+        },
+        {
+            "url": "light://substrate-connect/kusama/shiden",
+            "name": "light client"
+        }
+    ],
+    "addressPrefix": 5
+}

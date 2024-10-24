@@ -1,0 +1,31 @@
+{
+    "chainId": "b3db41421702df9a7fcac62b53ffeac85f7853cc4e689e0b93aeb3db18c09d82",
+    "name": "Centrifuge",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "CFG",
+            "precision": 18,
+            "icon": "CFG.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://fullnode.centrifuge.io",
+            "name": "Centrifuge"
+        },
+        {
+            "url": "wss://centrifuge-rpc.dwellir.com",
+            "name": "Dwellir"
+        },
+        {
+            "url": "wss://rpc-centrifuge.luckyfriday.io",
+            "name": "LuckyFriday"
+        },
+        {
+            "url": "wss://centrifuge-parachain.api.onfinality.io/public-ws",
+            "name": "OnFinality"
+        }
+    ],
+    "addressPrefix": 36
+}

@@ -1,0 +1,39 @@
+{
+    "chainId": "baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b",
+    "name": "Karura",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "KAR",
+            "precision": 12,
+            "icon": "KAR.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://karura-rpc-0.aca-api.network",
+            "name": "Acala Foundation 0"
+        },
+        {
+            "url": "wss://karura-rpc-1.aca-api.network",
+            "name": "Acala Foundation 1"
+        },
+        {
+            "url": "wss://karura-rpc-2.aca-api.network/ws",
+            "name": "Acala Foundation 2"
+        },
+        {
+            "url": "wss://karura-rpc-3.aca-api.network/ws",
+            "name": "Acala Foundation 3"
+        },
+        {
+            "url": "wss://karura-rpc.dwellir.com",
+            "name": "Dwellir"
+        },
+        {
+            "url": "wss://karura.api.onfinality.io/public-ws",
+            "name": "OnFinality"
+        }
+    ],
+    "addressPrefix": 8
+}

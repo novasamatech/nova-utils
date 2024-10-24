@@ -1,0 +1,23 @@
+{
+    "chainId": "d611f22d291c5b7b69f1e105cca03352984c344c4421977efaa4cbdd1834e2aa",
+    "name": "Mangata Kusama Mainnet",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "MGX",
+            "precision": 18,
+            "icon": "MGX.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://kusama-archive.mangata.online",
+            "name": "Mangata Archive"
+        },
+        {
+            "url": "wss://kusama-rpc.mangata.online",
+            "name": "Mangata RPC"
+        }
+    ],
+    "addressPrefix": 42
+}

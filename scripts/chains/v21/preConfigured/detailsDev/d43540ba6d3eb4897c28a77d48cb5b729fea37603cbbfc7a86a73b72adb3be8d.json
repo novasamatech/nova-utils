@@ -1,0 +1,35 @@
+{
+    "chainId": "d43540ba6d3eb4897c28a77d48cb5b729fea37603cbbfc7a86a73b72adb3be8d",
+    "name": "Khala",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "PHA",
+            "precision": 12,
+            "icon": "PHA.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://khala-rpc.dwellir.com",
+            "name": "Dwellir"
+        },
+        {
+            "url": "wss://rpc.helikon.io/khala",
+            "name": "Helikon"
+        },
+        {
+            "url": "wss://khala.api.onfinality.io/public-ws",
+            "name": "OnFinality"
+        },
+        {
+            "url": "wss://khala-api.phala.network/ws",
+            "name": "Phala"
+        },
+        {
+            "url": "wss://khala.public.curie.radiumblock.co/ws",
+            "name": "RadiumBlock"
+        }
+    ],
+    "addressPrefix": 30
+}

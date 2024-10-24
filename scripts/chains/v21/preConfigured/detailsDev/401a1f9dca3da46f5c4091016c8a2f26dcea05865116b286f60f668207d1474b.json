@@ -1,0 +1,43 @@
+{
+    "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
+    "name": "Moonriver",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "MOVR",
+            "precision": 18,
+            "icon": "MOVR.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://moonriver-rpc.publicnode.com",
+            "name": "Allnodes"
+        },
+        {
+            "url": "wss://moonriver.public.blastapi.io",
+            "name": "Blast"
+        },
+        {
+            "url": "wss://moonriver-rpc.dwellir.com",
+            "name": "Dwellir"
+        },
+        {
+            "url": "wss://wss.api.moonriver.moonbeam.network",
+            "name": "Moonbeam Foundation"
+        },
+        {
+            "url": "wss://moonriver.api.onfinality.io/public-ws",
+            "name": "OnFinality"
+        },
+        {
+            "url": "wss://moonriver.public.curie.radiumblock.co/ws",
+            "name": "RadiumBlock"
+        },
+        {
+            "url": "wss://moonriver.unitedbloc.com",
+            "name": "UnitedBloc"
+        }
+    ],
+    "addressPrefix": 1285
+}

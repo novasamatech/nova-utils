@@ -1,0 +1,19 @@
+{
+    "chainId": "8b5c955b5c8fd7112562327e3859473df4e3dff49bd72a113dbb668d2cfa20d7",
+    "name": "AvN Polkadot",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "AVT",
+            "precision": 18,
+            "icon": "AVT.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://public-rpc.mainnet.aventus.network",
+            "name": "Aventus"
+        }
+    ],
+    "addressPrefix": 42
+}

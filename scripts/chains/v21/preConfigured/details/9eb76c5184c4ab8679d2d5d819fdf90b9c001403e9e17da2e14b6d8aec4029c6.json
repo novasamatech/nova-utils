@@ -1,0 +1,43 @@
+{
+    "chainId": "9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6",
+    "name": "Astar",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "ASTR",
+            "precision": 18,
+            "icon": "ASTR.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc.astar.network",
+            "name": "Astar"
+        },
+        {
+            "url": "wss://1rpc.io/astr",
+            "name": "Automata 1RPC"
+        },
+        {
+            "url": "wss://astar.public.blastapi.io",
+            "name": "Blast"
+        },
+        {
+            "url": "wss://astar-rpc.dwellir.com",
+            "name": "Dwellir"
+        },
+        {
+            "url": "wss://astar.api.onfinality.io/public-ws",
+            "name": "OnFinality"
+        },
+        {
+            "url": "wss://astar.public.curie.radiumblock.co/ws",
+            "name": "RadiumBlock"
+        },
+        {
+            "url": "light://substrate-connect/polkadot/astar",
+            "name": "light client"
+        }
+    ],
+    "addressPrefix": 5
+}

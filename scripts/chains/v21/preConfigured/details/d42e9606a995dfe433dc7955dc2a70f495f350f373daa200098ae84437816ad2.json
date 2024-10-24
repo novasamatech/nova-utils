@@ -1,0 +1,23 @@
+{
+    "chainId": "d42e9606a995dfe433dc7955dc2a70f495f350f373daa200098ae84437816ad2",
+    "name": "InvArch Tinker Network",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "TNKR",
+            "precision": 12,
+            "icon": "TNKR.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://tinkernet-rpc.dwellir.com",
+            "name": "Dwellir"
+        },
+        {
+            "url": "light://substrate-connect/kusama/tinkernet",
+            "name": "light client"
+        }
+    ],
+    "addressPrefix": 117
+}

@@ -1,0 +1,35 @@
+{
+    "chainId": "fc41b9bd8ef8fe53d58c7ea67c794c7ec9a73daf05e6d54b14ff6342c99ba64c",
+    "name": "Acala",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "ACA",
+            "precision": 12,
+            "icon": "ACA.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://acala-rpc-0.aca-api.network",
+            "name": "Acala Foundation 0"
+        },
+        {
+            "url": "wss://acala-rpc-1.aca-api.network",
+            "name": "Acala Foundation 1"
+        },
+        {
+            "url": "wss://acala-rpc-3.aca-api.network/ws",
+            "name": "Acala Foundation 3"
+        },
+        {
+            "url": "wss://acala-rpc.dwellir.com",
+            "name": "Dwellir"
+        },
+        {
+            "url": "wss://acala-polkadot.api.onfinality.io/public-ws",
+            "name": "OnFinality"
+        }
+    ],
+    "addressPrefix": 10
+}

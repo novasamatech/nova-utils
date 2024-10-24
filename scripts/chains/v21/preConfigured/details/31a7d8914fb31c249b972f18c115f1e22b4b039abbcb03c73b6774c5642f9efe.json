@@ -1,0 +1,19 @@
+{
+    "chainId": "31a7d8914fb31c249b972f18c115f1e22b4b039abbcb03c73b6774c5642f9efe",
+    "name": "InvArch Network",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "VARCH",
+            "precision": 12,
+            "icon": "VARCH.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://invarch-rpc.dwellir.com",
+            "name": "Dwellir"
+        }
+    ],
+    "addressPrefix": 117
+}

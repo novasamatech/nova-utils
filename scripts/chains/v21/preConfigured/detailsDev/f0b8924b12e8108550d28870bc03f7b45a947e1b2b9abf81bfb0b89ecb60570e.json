@@ -1,0 +1,31 @@
+{
+    "chainId": "f0b8924b12e8108550d28870bc03f7b45a947e1b2b9abf81bfb0b89ecb60570e",
+    "name": "Darwinia2",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "RING",
+            "precision": 18,
+            "icon": "RING.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc.darwinia.network",
+            "name": "Darwinia"
+        },
+        {
+            "url": "wss://darwinia-rpc.dcdao.box",
+            "name": "Dcdao"
+        },
+        {
+            "url": "wss://darwinia-rpc.dwellir.com",
+            "name": "Dwellir"
+        },
+        {
+            "url": "wss://darwinia.rpc.subquery.network/public/ws",
+            "name": "Subquery"
+        }
+    ],
+    "addressPrefix": 18
+}

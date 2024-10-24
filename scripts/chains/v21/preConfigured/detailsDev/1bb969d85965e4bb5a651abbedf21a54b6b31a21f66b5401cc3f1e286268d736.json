@@ -1,0 +1,35 @@
+{
+    "chainId": "1bb969d85965e4bb5a651abbedf21a54b6b31a21f66b5401cc3f1e286268d736",
+    "name": "Phala",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "PHA",
+            "precision": 12,
+            "icon": "PHA.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://phala-rpc.dwellir.com",
+            "name": "Dwellir"
+        },
+        {
+            "url": "wss://rpc.helikon.io/phala",
+            "name": "Helikon"
+        },
+        {
+            "url": "wss://phala.api.onfinality.io/public-ws",
+            "name": "OnFinality"
+        },
+        {
+            "url": "wss://api.phala.network/ws",
+            "name": "Phala"
+        },
+        {
+            "url": "wss://phala.public.curie.radiumblock.co/ws",
+            "name": "RadiumBlock"
+        }
+    ],
+    "addressPrefix": 30
+}

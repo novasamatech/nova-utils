@@ -1,0 +1,51 @@
+{
+    "chainId": "46ee89aa2eedd13e988962630ec9fb7565964cf5023bb351f2b6b25c1b68b0b2",
+    "name": "Collectives",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "DOT",
+            "precision": 10,
+            "icon": "DOT.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://collectives-polkadot-rpc.dwellir.com",
+            "name": "Dwellir"
+        },
+        {
+            "url": "wss://polkadot-collectives-rpc-tn.dwellir.com",
+            "name": "Dwellir Tunisia"
+        },
+        {
+            "url": "wss://sys.ibp.network/collectives-polkadot",
+            "name": "IBP1"
+        },
+        {
+            "url": "wss://collectives-polkadot.dotters.network",
+            "name": "IBP2"
+        },
+        {
+            "url": "wss://rpc-collectives-polkadot.luckyfriday.io",
+            "name": "LuckyFriday"
+        },
+        {
+            "url": "wss://collectives.api.onfinality.io/public-ws",
+            "name": "OnFinality"
+        },
+        {
+            "url": "wss://polkadot-collectives-rpc.polkadot.io",
+            "name": "Parity"
+        },
+        {
+            "url": "wss://collectives.public.curie.radiumblock.co/ws",
+            "name": "RadiumBlock"
+        },
+        {
+            "url": "wss://dot-rpc.stakeworld.io/collectives",
+            "name": "Stakeworld"
+        }
+    ],
+    "addressPrefix": 0
+}

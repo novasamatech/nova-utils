@@ -1,0 +1,27 @@
+{
+    "chainId": "35a06bfec2edf0ff4be89a6428ccd9ff5bd0167d618c5a0d4341f9600a458d14",
+    "name": "Bajun Kusama",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "BAJU",
+            "precision": 12,
+            "icon": "BAJU.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc-parachain.bajun.network",
+            "name": "AjunaNetwork"
+        },
+        {
+            "url": "wss://bajun.api.onfinality.io/public-ws",
+            "name": "OnFinality"
+        },
+        {
+            "url": "wss://bajun.public.curie.radiumblock.co/ws",
+            "name": "RadiumBlock"
+        }
+    ],
+    "addressPrefix": 1337
+}

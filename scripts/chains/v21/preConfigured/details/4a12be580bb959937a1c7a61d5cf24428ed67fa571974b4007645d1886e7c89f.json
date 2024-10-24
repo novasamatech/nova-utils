@@ -1,0 +1,23 @@
+{
+    "chainId": "4a12be580bb959937a1c7a61d5cf24428ed67fa571974b4007645d1886e7c89f",
+    "name": "Subsocial",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "SUB",
+            "precision": 10,
+            "icon": "SUB.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://para.subsocial.network",
+            "name": "Dappforce"
+        },
+        {
+            "url": "wss://subsocial-rpc.dwellir.com",
+            "name": "Dwellir"
+        }
+    ],
+    "addressPrefix": 28
+}

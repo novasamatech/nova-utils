@@ -1,0 +1,23 @@
+{
+    "chainId": "6b5e488e0fa8f9821110d5c13f4c468abcd43ce5e297e62b34c53c3346465956",
+    "name": "Joystream",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "JOY",
+            "precision": 10,
+            "icon": "JOY.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc.joyutils.org",
+            "name": "Joyutils"
+        },
+        {
+            "url": "wss://rpc.joystream.org",
+            "name": "Jsgenesis"
+        }
+    ],
+    "addressPrefix": 126
+}

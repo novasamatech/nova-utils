@@ -1,0 +1,19 @@
+{
+    "chainId": "535f8421af34dfbb87736b3b2231ddb3c598b0b2cd73a4c5e93b13bf6e65f4c0",
+    "name": "Ternoa Alphanet (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "CAPS",
+            "precision": 18,
+            "icon": "CAPS.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://alphanet.ternoa.com",
+            "name": "CapsuleCorp"
+        }
+    ],
+    "addressPrefix": 42
+}

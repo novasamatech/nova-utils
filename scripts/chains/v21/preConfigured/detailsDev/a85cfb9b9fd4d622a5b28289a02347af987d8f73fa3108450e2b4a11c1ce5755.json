@@ -1,0 +1,23 @@
+{
+    "chainId": "a85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755",
+    "name": "Basilisk",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "BSX",
+            "precision": 12,
+            "icon": "BSX.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc.basilisk.cloud",
+            "name": "Basilisk"
+        },
+        {
+            "url": "wss://basilisk-rpc.dwellir.com",
+            "name": "Dwellir"
+        }
+    ],
+    "addressPrefix": 10041
+}

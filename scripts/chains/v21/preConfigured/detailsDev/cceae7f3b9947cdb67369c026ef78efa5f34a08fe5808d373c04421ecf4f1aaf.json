@@ -1,0 +1,23 @@
+{
+    "chainId": "cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
+    "name": "Amplitude",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "AMPE",
+            "precision": 12,
+            "icon": "AMPE.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://amplitude-rpc.dwellir.com",
+            "name": "Dwellir"
+        },
+        {
+            "url": "wss://rpc-amplitude.pendulumchain.tech",
+            "name": "PendulumChain"
+        }
+    ],
+    "addressPrefix": 57
+}

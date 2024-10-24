@@ -1,0 +1,35 @@
+{
+    "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+    "name": "Hydration",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "HDX",
+            "precision": 12,
+            "icon": "HDX.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://hydradx-rpc.dwellir.com",
+            "name": "Dwellir"
+        },
+        {
+            "url": "wss://rpc.hydradx.cloud",
+            "name": "Galactic Council"
+        },
+        {
+            "url": "wss://rpc.helikon.io/hydradx",
+            "name": "Helikon"
+        },
+        {
+            "url": "wss://hydradx.paras.ibp.network",
+            "name": "IBP1"
+        },
+        {
+            "url": "wss://hydration.dotters.network",
+            "name": "IBP2"
+        }
+    ],
+    "addressPrefix": 63
+}
