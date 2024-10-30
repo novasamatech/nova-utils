@@ -11193,5 +11193,125 @@
             "ethereumBased",
             "noSubstrateRuntime"
         ]
+    },
+    {
+        "chainId": "dd954cbf4000542ef1a15bca509cd89684330bee5e23766c527cdb0d7275e9c2",
+        "name": "CC Enterprise",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "CTC",
+                "precision": 18,
+                "priceId": "creditcoin-2",
+                "icon": "CTC.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://mainnet.creditcoin.network/ws",
+                "name": "Creditcoin Foundation node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://cc-enterprise.subscan.io/extrinsic/{hash}",
+                "account": "https://cc-enterprise.subscan.io/account/{address}"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Creditcoin.svg",
+        "addressPrefix": 42
+    },
+    {
+        "chainId": "4436a7d64e363df85e065a894721002a86643283f9707338bf195d360ba2ee71",
+        "name": "Creditcoin",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "CTC",
+                "precision": 18,
+                "priceId": "creditcoin-2",
+                "icon": "CTC.svg",
+                "staking": [
+                    "relaychain",
+                    "nomination-pools"
+                ]
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://mainnet3.creditcoin.network",
+                "name": "Creditcoin Foundation node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://creditcoin.subscan.io/extrinsic/{hash}",
+                "account": "https://creditcoin.subscan.io/account/{address}"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Creditcoin.svg",
+        "addressPrefix": 42
+    },
+    {
+        "chainId": "c56fa32442b2dad76f214b3ae07998e4ca09736e4813724bfb0717caae2c8bee",
+        "name": "Humanode",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "HMND",
+                "precision": 18,
+                "priceId": "humanode",
+                "icon": "HMND.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://explorer-rpc-ws.mainnet.stages.humanode.io",
+                "name": "Humanode node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://humanode.subscan.io/extrinsic/{hash}",
+                "account": "https://humanode.subscan.io/account/{address}"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Humanode.svg",
+        "addressPrefix": 5234
+    },
+    {
+        "chainId": "d523fa2e0581f069b4f0c7b5944c21e9abc72305a08067868c91b898d1bf1dff",
+        "name": "DeepBrain",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "DBC",
+                "precision": 15,
+                "priceId": "deepbrain-chain",
+                "icon": "DBC.svg",
+                "staking": [
+                    "relaychain",
+                    "nomination-pools"
+                ]
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://info.dbcwallet.io",
+                "name": "DBC node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://dbc.subscan.io/extrinsic/{hash}",
+                "account": "https://dbc.subscan.io/account/{address}"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/DeepBrain.svg",
+        "addressPrefix": 42
     }
 ]
