@@ -6,7 +6,7 @@
             "assetId": 0,
             "symbol": "WND",
             "precision": 12,
-            "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+            "icon": "WND.svg"
         }
     ],
     "nodes": [
@@ -30,10 +30,6 @@
             "url": "wss://westend-collectives-rpc.polkadot.io",
             "name": "Parity"
         }
-    ],
-    "options": [
-        "testnet",
-        "proxy"
     ],
     "addressPrefix": 42
 }

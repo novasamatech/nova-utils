@@ -27,8 +27,8 @@ class BlacklistedChains(Enum):
     nftmart = 'fcf9074303d8f319ad1bf0195b145871977e7c375883b834247cb01ff22f51f9'  # https://app.clickup.com/t/8695enz00
 
 
-CHAINS_FILE_PATH_DEV = Path(os.getenv("DEV_CHAINS_JSON_PATH", 'chains/v20/chains_dev.json'))
-CHAINS_FILE_PATH_PROD = Path(os.getenv("CHAINS_JSON_PATH", 'chains/v20/chains.json'))
+CHAINS_FILE_PATH_DEV = Path(os.getenv("DEV_CHAINS_JSON_PATH", 'chains/v21/chains_dev.json'))
+CHAINS_FILE_PATH_PROD = Path(os.getenv("CHAINS_JSON_PATH", 'chains/v21/chains.json'))
 SKIP_PATTERNS = ["(SHUTTING DOWN)", "Westend (TESTNET)"]
 
 
@@ -126,6 +126,15 @@ def ts_constant_to_json(input_file_path):
     return json_objects
 
 
+def get_token_icon(symbol):
+    file_name = symbol + ".svg"
+    file_path = CHAINS_FILE_PATH_DEV.parent.parent.parent / 'icons/tokens/white' / file_name
+    if os.path.isfile(file_path):
+        return file_name
+    else:
+        return "Default.svg"
+
+
 def create_chain_data(chain_object, endpoint_type):
     providers = chain_object.get("providers", {})
     if not providers:
@@ -135,9 +144,11 @@ def create_chain_data(chain_object, endpoint_type):
     # TODO: Iterate through all nodes available until connection is established
     first_provider_value = next(iter(providers.values()), None)
     wss_url = first_provider_value.strip("'")
+
     try:
         substrate = create_connection_by_url(wss_url)
         json_property = get_properties(substrate)
+        token_icon = get_token_icon(json_property.symbol)
 
         chain_data = {
             "chainId": json_property.chainId[2:],
@@ -146,7 +157,7 @@ def create_chain_data(chain_object, endpoint_type):
                 "assetId": 0,
                 "symbol": json_property.symbol,
                 "precision": json_property.precision,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/Default.svg"
+                "icon": token_icon
             }],
             "nodes": [{"url": url, "name": name} for name, url in providers.items()],
             "addressPrefix": json_property.ss58Format

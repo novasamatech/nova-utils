@@ -83,13 +83,13 @@
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadot"
+                    "url": "https://gateway.subquery.network/query/0x1a"
                 }
             ],
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadot"
+                    "url": "https://gateway.subquery.network/query/0x1a"
                 }
             ],
             "crowdloans": [
@@ -217,13 +217,13 @@
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kusama"
+                    "url": "https://gateway.subquery.network/query/0x1b"
                 }
             ],
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kusama"
+                    "url": "https://gateway.subquery.network/query/0x1b"
                 }
             ],
             "crowdloans": [
@@ -873,7 +873,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-karura"
+                    "url": "https://gateway.subquery.network/query/0x39"
                 }
             ],
             "governance": [
@@ -1194,7 +1194,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonbeam"
+                    "url": "https://gateway.subquery.network/query/0x1e"
                 },
                 {
                     "type": "etherscan",
@@ -1207,7 +1207,7 @@
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonbeam"
+                    "url": "https://gateway.subquery.network/query/0x1e"
                 }
             ],
             "governance": [
@@ -1622,7 +1622,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonriver"
+                    "url": "https://gateway.subquery.network/query/0x1d"
                 },
                 {
                     "type": "etherscan",
@@ -1635,7 +1635,7 @@
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonriver"
+                    "url": "https://gateway.subquery.network/query/0x1d"
                 }
             ],
             "governance": [
@@ -2057,10 +2057,6 @@
             {
                 "url": "wss://bifrost-rpc.dwellir.com",
                 "name": "Dwellir node"
-            },
-            {
-                "url": "wss://bifrost-parachain.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -2838,7 +2834,7 @@
                 "precision": 18,
                 "priceId": "dai",
                 "type": "statemine",
-                "icon": "DAI.svg",
+                "icon": "DAI-Karura.svg",
                 "typeExtras": {
                     "assetId": "15"
                 }
@@ -2849,7 +2845,7 @@
                 "precision": 6,
                 "priceId": "usd-coin",
                 "type": "statemine",
-                "icon": "USDC.svg",
+                "icon": "USDC-Karura.svg",
                 "typeExtras": {
                     "assetId": "16"
                 }
@@ -3240,10 +3236,6 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc-acala.luckyfriday.io",
-                "name": "LuckyFriday node"
-            },
-            {
                 "url": "wss://acala-polkadot.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
             },
@@ -3504,7 +3496,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-astar"
+                    "url": "https://gateway.subquery.network/query/0x1f"
                 }
             ]
         },
@@ -3512,7 +3504,7 @@
         "addressPrefix": 5,
         "additional": {
             "defaultTip": "1000000",
-            "disabledCheckMetadataHash": true
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -3713,10 +3705,6 @@
             {
                 "url": "wss://polkadot-parallel-rpc.parallel.fi",
                 "name": "Parallel node"
-            },
-            {
-                "url": "wss://parallel-rpc.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -3890,7 +3878,7 @@
                 "symbol": "WBTC-Snowbridge",
                 "precision": 8,
                 "type": "statemine",
-                "icon": "WBTC.svg",
+                "icon": "WBTC-Snowbridge.svg",
                 "typeExtras": {
                     "assetId": "0x020209070403002260fac5e5542a773aa44fbcfedf7c193bc2c599",
                     "palletName": "ForeignAssets"
@@ -4014,10 +4002,6 @@
             {
                 "url": "wss://kusama.rpc.robonomics.network/",
                 "name": "Airalab node"
-            },
-            {
-                "url": "wss://robonomics.0xsamsara.com",
-                "name": "Samsara node"
             }
         ],
         "explorers": [
@@ -4498,7 +4482,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-subsocial"
+                    "url": "https://gateway.subquery.network/query/0x34"
                 }
             ]
         },
@@ -4690,7 +4674,7 @@
                 "precision": 18,
                 "priceId": "dai",
                 "type": "orml",
-                "icon": "DAI.svg",
+                "icon": "DAI-Acala.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x02000000",
                     "currencyIdType": "u32",
@@ -4731,7 +4715,7 @@
                 "precision": 8,
                 "priceId": "wrapped-bitcoin",
                 "type": "orml",
-                "icon": "WBTC.svg",
+                "icon": "WBTC-Acala.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x03000000",
                     "currencyIdType": "u32",
@@ -4829,7 +4813,7 @@
                 "precision": 18,
                 "priceId": "dai",
                 "type": "orml",
-                "icon": "DAI.svg",
+                "icon": "DAI-Moonbeam.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x12000000",
                     "currencyIdType": "u32",
@@ -4843,7 +4827,7 @@
                 "precision": 8,
                 "priceId": "wrapped-bitcoin",
                 "type": "orml",
-                "icon": "WBTC.svg",
+                "icon": "WBTC-Moonbeam.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x13000000",
                     "currencyIdType": "u32",
@@ -4955,7 +4939,7 @@
                 "precision": 6,
                 "priceId": "usd-coin",
                 "type": "orml",
-                "icon": "USDC.svg",
+                "icon": "USDC-Moonbeam.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x15000000",
                     "currencyIdType": "u32",
@@ -5050,7 +5034,7 @@
                 "precision": 6,
                 "priceId": "tether",
                 "type": "orml",
-                "icon": "USDT.svg",
+                "icon": "USDT-Moonbeam.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x17000000",
                     "currencyIdType": "u32",
@@ -5183,7 +5167,7 @@
                 "symbol": "WBTC-Snowbridge",
                 "precision": 8,
                 "type": "orml",
-                "icon": "WBTC.svg",
+                "icon": "WBTC-Snowbridge.svg",
                 "typeExtras": {
                     "currencyIdScale": "0xfe420f00",
                     "currencyIdType": "u32",
@@ -5838,13 +5822,13 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-aleph-zero"
+                    "url": "https://gateway.subquery.network/query/0x1c"
                 }
             ],
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-aleph-zero"
+                    "url": "https://gateway.subquery.network/query/0x1c"
                 }
             ]
         },
