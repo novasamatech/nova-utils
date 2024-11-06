@@ -12,7 +12,7 @@ from scripts.utils.chain_model import Chain
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-CHAINS_FILE_PATH_DEV = Path(os.getenv("DEV_CHAINS_JSON_PATH", '../chains/v20/chains_dev.json'))
+CHAINS_FILE_PATH_DEV = Path(os.getenv("DEV_CHAINS_JSON_PATH", '../chains/v21/chains_dev.json'))
 
 
 def load_json_file(file_path):
