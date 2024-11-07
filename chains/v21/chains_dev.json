@@ -987,7 +987,8 @@
             "governance-v1"
         ],
         "additional": {
-            "feeViaRuntimeCall": true
+            "feeViaRuntimeCall": true,
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -1348,7 +1349,8 @@
         "additional": {
             "themeColor": "#20A0B6",
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/moonriver-movr-staking",
-            "defaultBlockTime": 12000
+            "defaultBlockTime": 12000,
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -1407,7 +1409,8 @@
         "additional": {
             "themeColor": "#1F78FF",
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/parachains-and-solochains",
-            "feeViaRuntimeCall": true
+            "feeViaRuntimeCall": true,
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -3803,7 +3806,8 @@
         "additional": {
             "themeColor": "#9968CE",
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/moonbeam-glmr-staking",
-            "defaultBlockTime": 6000
+            "defaultBlockTime": 6000,
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -7790,7 +7794,8 @@
             "governance-v1"
         ],
         "additional": {
-            "feeViaRuntimeCall": true
+            "feeViaRuntimeCall": true,
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -8375,7 +8380,10 @@
         "addressPrefix": 56,
         "options": [
             "governance-v1"
-        ]
+        ],
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "chainId": "a6ffcef7fb8caadf7f6c5ad8ada65e3eaa90d1604f3eabda546ff1d486865a0c",
@@ -8725,9 +8733,7 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Bittensor.svg",
         "addressPrefix": 42,
-        "additional": {
-            "supportsGenericLedgerApp": true
-        }
+        "additional": {}
     },
     {
         "chainId": "eip155:137",
@@ -9049,7 +9055,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Frequency.svg",
-        "addressPrefix": 90
+        "addressPrefix": 90,
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "chainId": "fe1b4c55fd4d668101126434206571a7838a8b6b93a6d1b95d607e78e6c53763",
@@ -10213,7 +10222,10 @@
         "addressPrefix": 42,
         "options": [
             "testnet"
-        ]
+        ],
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "chainId": "6b5e488e0fa8f9821110d5c13f4c468abcd43ce5e297e62b34c53c3346465956",
@@ -10450,7 +10462,8 @@
             "testnet"
         ],
         "additional": {
-            "feeViaRuntimeCall": true
+            "feeViaRuntimeCall": true,
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -10488,7 +10501,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/InvArch.svg",
-        "addressPrefix": 117
+        "addressPrefix": 117,
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "chainId": "8b404e7ed8789d813982b9cb4c8b664c05b3fbf433309f603af014ec9ce56a8c",
@@ -10964,7 +10980,10 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Hyperbridge.svg",
-        "addressPrefix": 42
+        "addressPrefix": 42,
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "chainId": "b91746b45e0346cc2f815a520b9c6cb4d5c0902af848db0a80f85932d2e8276a",
