@@ -8852,6 +8852,68 @@
         "addressPrefix": 9807
     },
     {
+        "chainId": "eip155:324",
+        "name": "ZKsync Era",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "ETH",
+                "priceId": "ethereum",
+                "type": "evmNative",
+                "icon": "ETH.svg",
+                "precision": 18
+            }
+        ],
+        "nodeSelectionStrategy": "uniform",
+        "nodes": [
+            {
+                "url": "https://mainnet.era.zksync.io",
+                "name": "http node"
+            },
+            {
+                "url": "https://1rpc.io/zksync2-era",
+                "name": "http node 2"
+            },
+            {
+                "url": "https://endpoints.omniatech.io/v1/zksync-era/mainnet/public",
+                "name": "http node 3"
+            },
+            {
+                "url": "wss://mainnet.era.zksync.io/ws",
+                "name": "wss node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "ZKsync Era explorer",
+                "extrinsic": "https://era.zksync.network/tx/{hash}",
+                "account": "https://era.zksync.network/address/{address}"
+            },
+            {
+                "name": "Block explorer",
+                "extrinsic": "https://explorer.zksync.io/tx/{hash}",
+                "account": "https://explorer.zksync.io/address/{address}"
+            }
+        ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "etherscan",
+                    "url": "https://api-era.zksync.network/api",
+                    "parameters": {
+                        "assetType": "evm"
+                    }
+                }
+            ]
+        },
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/ZKsync_Mainnet.svg",
+        "addressPrefix": 324,
+        "options": [
+            "ethereumBased",
+            "noSubstrateRuntime"
+        ]
+    },
+    {
         "chainId": "dd954cbf4000542ef1a15bca509cd89684330bee5e23766c527cdb0d7275e9c2",
         "name": "CC Enterprise",
         "assets": [
