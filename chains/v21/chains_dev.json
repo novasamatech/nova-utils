@@ -9048,6 +9048,10 @@
                 }
             ]
         },
+        "types": {
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/frequency.json",
+            "overridesCommon": true
+        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Frequency.svg",
         "addressPrefix": 90
     },
@@ -10405,7 +10409,7 @@
         ],
         "nodes": [
             {
-                "url": "wss://public-rpc.mainnet.energywebx.com/",
+                "url": "wss://wnp-rpc.mainnet.energywebx.com/",
                 "name": "Energywebx node"
             }
         ],
