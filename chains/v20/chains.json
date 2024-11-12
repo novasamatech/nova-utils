@@ -9032,5 +9032,42 @@
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/DeepBrain.svg",
         "addressPrefix": 42
+    },
+    {
+        "chainId": "d2a5d385932d1f650dae03ef8e2748983779ee342c614f80854d32b8cd8fa48c",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "peaq",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "PEAQ",
+                "precision": 18,
+                "priceId": "peaq-2",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/PEAQ.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://peaq.api.onfinality.io/public",
+                "name": "Onfinality node"
+            },
+            {
+                "url": "wss://peaq-rpc.publicnode.com",
+                "name": "Peaq node"
+            },
+            {
+                "url": "wss://peaq-rpc.dwellir.com",
+                "name": "Dwellir node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://peaq.subscan.io/extrinsic/{hash}",
+                "account": "https://peaq.subscan.io/account/{address}"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/peaq.svg",
+        "addressPrefix": 42
     }
 ]
