@@ -89,6 +89,6 @@ def chain_model(request) -> Chain:
 
 @pytest.fixture(scope="module")
 def subquery_projects():
-    network_file_path = os.getenv('CHAINS_JSON_PATH', "chains/v20/chains.json")
+    network_file_path = os.getenv('CHAINS_JSON_PATH', "chains/v21/chains.json")
     network_list = get_network_list('/' + network_file_path)
     return get_unique_subquery_urls(network_list)

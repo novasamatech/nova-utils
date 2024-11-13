@@ -16,4 +16,4 @@ def test_subquery_is_synced(subquery_projects):
         if response.status_code == 200:
             last_processed_height = response.json().get('data').get('_metadata').get('lastProcessedHeight')
             target_height = response.json().get('data').get('_metadata').get('targetHeight')
-            assert abs(target_height - last_processed_height) < 10
+            assert abs(target_height - last_processed_height) < 10, "Failed on: " + url
