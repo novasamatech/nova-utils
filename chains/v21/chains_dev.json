@@ -8287,7 +8287,8 @@
                 "symbol": "EURC.s",
                 "precision": 12,
                 "type": "orml",
-                "icon": "EURC.svg",
+                "icon": "EURM.svg",
+                "priceId": "euro-coin",
                 "typeExtras": {
                     "currencyIdScale": "0x0201455552432112ee863867e4e219fe254c0918b00bc9ea400775bfc3ab4430971ce505877c",
                     "currencyIdType": "spacewalk_primitives.CurrencyId",
@@ -8355,7 +8356,7 @@
                 "precision": 18,
                 "type": "orml",
                 "priceId": "astar",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Astar.svg",
+                "icon": "ASTR.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0109",
                     "currencyIdType": "spacewalk_primitives.CurrencyId",
@@ -8369,7 +8370,7 @@
                 "precision": 10,
                 "type": "orml",
                 "priceId": "voucher-dot",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/vDOT.svg",
+                "icon": "vDOT.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x010a",
                     "currencyIdType": "spacewalk_primitives.CurrencyId",
@@ -8383,7 +8384,7 @@
                 "precision": 12,
                 "type": "orml",
                 "priceId": "bifrost-native-coin",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Bifrost.svg",
+                "icon": "BNC.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x010b",
                     "currencyIdType": "spacewalk_primitives.CurrencyId",
@@ -8397,7 +8398,7 @@
                 "precision": 6,
                 "type": "orml",
                 "priceId": "axlusdc",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/USDC.svg",
+                "icon": "USDC.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x010c",
                     "currencyIdType": "spacewalk_primitives.CurrencyId",
@@ -8411,7 +8412,7 @@
                 "precision": 12,
                 "type": "orml",
                 "priceId": "euro-coin",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/EURc.svg",
+                "icon": "EURC.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x020145555243cf4f5a26e2090bb3adcf02c7a9d73dbfe6659cc690461475b86437fa49c71136",
                     "currencyIdType": "spacewalk_primitives.CurrencyId",
