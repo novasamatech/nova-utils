@@ -56,6 +56,47 @@ def compare_reserve_fee(object_accumulator, actual_assets_location, changed_asse
             object_accumulator['reserveFee'][assets] = "That asset was removed"
 
 
+def compare_transfer_metadata(destination_in_new_chain_dict, destination, object_accumulator, chain_name, asset_symbol, destination_name):
+    """Compare transfer metadata (instructions and type) between destinations
+
+    Args:
+        destination_in_new_chain_dict (dict): Destination from new chain dictionary
+        destination (dict): Destination from actual chain dictionary
+        object_accumulator (dict): Object to accumulate changes
+        chain_name (str): Name of the chain
+        asset_symbol (str): Symbol of the asset
+        destination_name (str): Name of the destination
+    """
+    new_instructions = destination_in_new_chain_dict.get('fee', {}).get('instructions')
+    old_instructions = destination.get('fee', {}).get('instructions')
+    if new_instructions != old_instructions:
+        if chain_name not in object_accumulator['chains']:
+            object_accumulator['chains'][chain_name] = {}
+        if asset_symbol not in object_accumulator['chains'][chain_name]:
+            object_accumulator['chains'][chain_name][asset_symbol] = {}
+        if destination_name not in object_accumulator['chains'][chain_name][asset_symbol]:
+            object_accumulator['chains'][chain_name][asset_symbol][destination_name] = {}
+
+        object_accumulator['chains'][chain_name][asset_symbol][destination_name]['instructions'] = {
+            'old_value': old_instructions,
+            'new_value': new_instructions
+        }
+
+    new_type = destination_in_new_chain_dict.get('type')
+    old_type = destination.get('type')
+    if new_type != old_type:
+        if chain_name not in object_accumulator['chains']:
+            object_accumulator['chains'][chain_name] = {}
+        if asset_symbol not in object_accumulator['chains'][chain_name]:
+            object_accumulator['chains'][chain_name][asset_symbol] = {}
+        if destination_name not in object_accumulator['chains'][chain_name][asset_symbol]:
+            object_accumulator['chains'][chain_name][asset_symbol][destination_name] = {}
+
+        object_accumulator['chains'][chain_name][asset_symbol][destination_name]['type'] = {
+            'old_value': old_type,
+            'new_value': new_type
+        }
+
 
 def find_new_destinations(object_accumulator, actual_chain_dict, new_cahin_dict, chain_json_dict):
     for chain_id, chain_data in new_cahin_dict.items():
@@ -123,6 +164,15 @@ def compare_destinations(object_accumulator, actual_chain_dict, new_chain_dict, 
                 if new_destination_value != old_destination_value:
                     object_accumulator['chains'][chain_name][asset_symbol][destination_name] = {
                         'old_value': old_destination_value, 'new_value': new_destination_value}
+
+                compare_transfer_metadata(
+                    destination_in_new_chain_dict,
+                    destination,
+                    object_accumulator,
+                    chain_name,
+                    asset_symbol,
+                    destination_name
+                )
 
 
 def compare_files(actual_json, new_json, chains_json):
