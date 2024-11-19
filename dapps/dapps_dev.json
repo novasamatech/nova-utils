@@ -47,15 +47,6 @@
   ],
   "dapps": [
     {
-      "name": "ChessOnChain",
-      "url": "https://play.chessonchain.io"
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/chessonchain.png",
-      "categories": [
-        "gaming",
-        "nft"
-      ]
-    },
-    {
       "name": "Battleship",
       "url": "https://battleship.vara.network/",
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/Battleship.svg",
@@ -934,8 +925,8 @@
     },
     {
       "name": "Incognitee Privacy Sidechains Dapp",
-      "url": "https://app.incognitee.io/?forceLive=true",
-      "icon": "https://app.incognitee.io/logo.svg",
+      "url": "https://app.incognitee.io",
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/Incognitee.svg",
       "categories": [
         "utilities"
       ]
@@ -946,6 +937,24 @@
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/Hyperbridge.svg",
       "categories": [
         "bridge"
+      ]
+    },
+    {
+      "name": "ChessOnChain",
+      "url": "https://play.chessonchain.io",
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/ChessOnChain.svg",
+      "categories": [
+        "gaming",
+        "nft"
+      ]
+    },
+    {
+      "name": "Mosaic Alpha",
+      "url": "https://app.mosaicalpha.com/",
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/MosaicAlpha.svg",
+      "categories": [
+        "dex",
+        "staking"
       ]
     }
   ]
