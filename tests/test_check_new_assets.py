@@ -12,7 +12,8 @@ class TestAssets:
     exclusions = {
         'Bifrost Kusama': {'DOT': ''},
         'Kintsugi': {'INTR': '', 'IBTC': '', 'DOT': ''},
-        'Equilibrium': {'TOKEN': ''}
+        'Equilibrium': {'TOKEN': ''},
+        'Hyperbridge': {'BRIDGE'}
     }
 
     def test_has_new_assets(self, chain_model: Chain):
