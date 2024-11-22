@@ -2699,20 +2699,24 @@
         ],
         "nodes": [
             {
-                "url": "wss://khala-api.phala.network/ws",
-                "name": "Phala node"
-            },
-            {
                 "url": "wss://khala-rpc.dwellir.com",
                 "name": "Dwellir node"
             },
             {
-                "url": "wss://khala.public.curie.radiumblock.co/ws",
-                "name": "RadiumBlock node"
+                "url": "wss://rpc.helikon.io/khala",
+                "name": "Helikon node"
             },
             {
                 "url": "wss://khala.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
+            },
+            {
+                "url": "wss://khala-api.phala.network/ws",
+                "name": "Phala node"
+            },
+            {
+                "url": "wss://khala.public.curie.radiumblock.co/ws",
+                "name": "RadiumBlock node"
             }
         ],
         "explorers": [
@@ -6285,16 +6289,20 @@
                 "name": "Dwellir node"
             },
             {
+                "url": "wss://rpc.helikon.io/phala",
+                "name": "Helikon node"
+            },
+            {
+                "url": "wss://phala.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
                 "url": "wss://api.phala.network/ws",
                 "name": "Phala node"
             },
             {
                 "url": "wss://phala.public.curie.radiumblock.co/ws",
                 "name": "RadiumBlock node"
-            },
-            {
-                "url": "wss://phala.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "explorers": [
