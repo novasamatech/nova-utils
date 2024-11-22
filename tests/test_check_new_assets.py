@@ -13,7 +13,7 @@ class TestAssets:
         'Bifrost Kusama': {'DOT': ''},
         'Kintsugi': {'INTR': '', 'IBTC': '', 'DOT': ''},
         'Equilibrium': {'TOKEN': ''},
-        'Hyperbridge': {'BRIDGE'}
+        'Hyperbridge Nexus': {'BRIDGE': ''}
     }
 
     def test_has_new_assets(self, chain_model: Chain):
