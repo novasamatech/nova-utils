@@ -11656,5 +11656,30 @@
         "options": [
             "ethereumBased"
         ]
+    },
+    {
+        "chainId": "28cc1df52619f4edd9f0389a7e910a636276075ecc429600f1dd434e281a04e9",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Xode",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "XON",
+                "precision": 12,
+                "icon": "XON.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc-kr.xode.net",
+                "name": "Xode archive node"
+            },
+            {
+                "url": "wss://rpcnodea01.xode.net/n7yoxCmcIrCF6VziCcDmYTwL8R03a/rpc",
+                "name": "XodeCommunity node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Xode.svg",
+        "addressPrefix": 42
     }
 ]
