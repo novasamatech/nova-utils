@@ -11625,6 +11625,7 @@
                 "assetId": 0,
                 "symbol": "LAOS",
                 "precision": 18,
+                "priceId": "laos-network",
                 "icon": "LAOS.svg"
             }
         ],
@@ -11705,6 +11706,16 @@
                 "type": "statemine",
                 "typeExtras": {
                     "assetId": "4"
+                }
+            },
+            {
+                "assetId": 5,
+                "symbol": "IXAV",
+                "precision": 12,
+                "icon": "IXAV.svg",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "5"
                 }
             }
         ],

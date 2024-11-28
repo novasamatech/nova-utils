@@ -382,6 +382,7 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_Asset_Hub.svg",
         "addressPrefix": 2,
         "options": [
+            "swap-hub",
             "assethub-fees"
         ],
         "additional": {
@@ -3984,6 +3985,7 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Asset_Hub.svg",
         "addressPrefix": 0,
         "options": [
+            "swap-hub",
             "assethub-fees"
         ],
         "additional": {
@@ -9180,6 +9182,7 @@
                 "assetId": 0,
                 "symbol": "LAOS",
                 "precision": 18,
+                "priceId": "laos-network",
                 "icon": "LAOS.svg"
             }
         ],
