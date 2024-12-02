@@ -1,0 +1,19 @@
+{
+    "chainId": "1b69c462cd7dfea0e855c2008b66490cc8bbe90bc80b297ec0896a1c0941ce15",
+    "name": "Integritee Testnet on Paseo (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "TEER",
+            "precision": 12,
+            "icon": "TEER.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://paseo.api.integritee.network",
+            "name": "Integritee"
+        }
+    ],
+    "addressPrefix": 13
+}

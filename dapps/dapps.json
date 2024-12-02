@@ -1,6 +1,10 @@
 {
   "categories": [
     {
+      "name": "Art",
+      "id": "art"
+    },
+    {
       "name": "Bridge",
       "id": "bridge"
     },
@@ -90,6 +94,14 @@
       ]
     },
     {
+      "name": "KodaDot",
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/KodaDot.svg",
+      "url": "https://kodadot.xyz/",
+      "categories": [
+        "art"
+      ]
+    },
+    {
       "name": "Dotmarketcap",
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/Dotmarketcap.svg",
       "url": "https://dotmarketcap.com/",
@@ -111,6 +123,14 @@
       "url": "https://app.talisman.xyz/portfolio",
       "categories": [
         "crowdloans"
+      ]
+    },
+    {
+      "name": "Phala App",
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/color/Phala.svg",
+      "url": "https://app.phala.network/",
+      "categories": [
+        "staking"
       ]
     },
     {
@@ -273,6 +293,15 @@
       ]
     },
     {
+      "name": "cBRIDGE",
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/cBRIDGE.png",
+      "url": "https://cbridge.celer.network/#/transfer",
+      "categories": [
+        "dex",
+        "evm"
+      ]
+    },
+    {
       "name": "Moonwell",
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/Moonwell.svg",
       "url": "https://moonwell.fi/discover",
@@ -292,11 +321,31 @@
       ]
     },
     {
+      "name": "Skybreach",
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/Skybreach.png",
+      "url": "https://skybreach.app/",
+      "categories": [
+        "art",
+        "evm",
+        "gaming"
+      ]
+    },
+    {
       "name": "Polkawatch",
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/Polkawatch.svg",
       "url": "https://polkawatch.app/",
       "categories": [
         "staking"
+      ]
+    },
+    {
+      "name": "Damned Pirates Society",
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/Damnedpiratessociety.svg",
+      "url": "https://damnedpiratessociety.io/",
+      "categories": [
+        "art",
+        "evm",
+        "gaming"
       ]
     },
     {
@@ -309,6 +358,15 @@
       ]
     },
     {
+      "name": "Moonsama",
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/Moonsama.svg",
+      "url": "https://marketplace.moonsama.com/",
+      "categories": [
+        "art",
+        "evm"
+      ]
+    },
+    {
       "name": "Downtown Moonbeam",
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/DowntownMoonbeam.png",
       "url": "https://dtmb.xyz",
@@ -318,11 +376,30 @@
       ]
     },
     {
+      "name": "EVRLOOT",
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/EVRLOOT.svg",
+      "url": "https://game.evrloot.com/game",
+      "categories": [
+        "art",
+        "gaming"
+      ]
+    },
+    {
       "name": "Darwinia App",
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/Darwinia.svg",
       "url": "https://apps.darwinia.network/",
       "categories": [
         "staking"
+      ]
+    },
+    {
+      "name": "Evolution Land. Columbus",
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/Evolutionland.png",
+      "url": "https://portal.evolution.land/land/3/market/land",
+      "categories": [
+        "art",
+        "evm",
+        "gaming"
       ]
     },
     {
@@ -345,6 +422,24 @@
       ]
     },
     {
+      "name": "Raresama",
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/Raresama.svg",
+      "url": "https://raresama.com/",
+      "categories": [
+        "art"
+      ]
+    },
+    {
+      "name": "Bit.Country Pioneer Metaverse",
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/Bit.Country.svg",
+      "url": "https://pioneer.bit.country/",
+      "categories": [
+        "art",
+        "staking",
+        "gaming"
+      ]
+    },
+    {
       "name": "Zeitgeist",
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/Zeitgeist.svg",
       "url": "https://app.zeitgeist.pm/",
@@ -358,6 +453,15 @@
       "url": "https://ace.web3go.xyz/#/",
       "categories": [
         "utilities"
+      ]
+    },
+    {
+      "name": "Proof of Chaos",
+      "url": "https://proofofchaos.app",
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/Proof_of_Chaos.png",
+      "categories": [
+        "art",
+        "governance"
       ]
     },
     {
@@ -456,6 +560,15 @@
       "desktopOnly": true
     },
     {
+      "name": "Secret Stash",
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/secret_stash.png",
+      "url": "https://secret-stash.io/",
+      "categories": [
+        "art",
+        "utilities"
+      ]
+    },
+    {
       "name": "GIANTProtocol",
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/Giant.svg",
       "url": "https://app.giantprotocol.org/shop",
@@ -479,6 +592,16 @@
       "categories": [
         "utilities"
       ]
+    },
+    {
+      "name": "Awesome Ajuna Avatars (Desktop mode)",
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/AwesomeAjunaAvatars.svg",
+      "url": "https://aaa.ajuna.io/",
+      "categories": [
+        "art",
+        "gaming"
+      ],
+      "desktopOnly": true
     },
     {
       "name": "Tensor Wallet",
@@ -611,6 +734,63 @@
       "url": "https://bbb.ajuna.io/",
       "categories": [
         "gaming"
+      ]
+    },
+    {
+      "name": "MYTHical Forest",
+      "url": "https://quests.mythical.games/",
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/MythicalGames.svg",
+      "categories": [
+        "gaming"
+      ]
+    },
+    {
+      "name": "Mentat Minds",
+      "url": "https://mentatminds.com/delegate",
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/MentatMinds.svg",
+      "categories": [
+        "staking"
+      ]
+    },
+    {
+      "name": "Mythos Claim",
+      "url": "https://airdrop.mythos.foundation/",
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/MYTH.svg",
+      "categories": [
+        "utilities"
+      ]
+    },
+    {
+      "name": "Snowbridge",
+      "url": "https://app.snowbridge.network/",
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/Snowbridge.svg",
+      "categories": [
+        "bridge"
+      ]
+    },
+    {
+      "name": "Nodle client",
+      "url": "https://client.nodle.com/",
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Nodle.svg",
+      "categories": [
+        "utilities"
+      ],
+      "desktopOnly": true
+    },
+    {
+      "name": "Hyperbridge",
+      "url": "https://app.hyperbridge.network",
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/Hyperbridge.svg",
+      "categories": [
+        "bridge"
+      ]
+    },
+    {
+      "name": "Incognitee Privacy Sidechains Dapp",
+      "url": "https://app.incognitee.io",
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/color/Incognitee.svg",
+      "categories": [
+        "utilities"
       ]
     }
   ]

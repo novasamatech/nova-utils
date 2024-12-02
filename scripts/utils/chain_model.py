@@ -16,6 +16,7 @@ class Chain():
         self.explorers = arg.get("explorers")
         self.addressPrefix = arg.get("addressPrefix")
         self.externalApi = arg.get("externalApi")
+        self.options = arg.get("options")
         self.substrate = None
         self.properties = None
 
