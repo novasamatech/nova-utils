@@ -230,7 +230,14 @@
     },
     "WND-Westmint": {
       "chainId": "67f9723393ef76214df0118c34bbbd3dbebc8ed46a10973a8c969d48fe7598c9",
-      "multiLocation": {}
+      "multiLocation": {},
+      "reserveFee": {
+        "mode": {
+          "type": "proportional",
+          "value": "1"
+        },
+        "instructions": "xtokensReserve"
+      }
     },
     "TNKR": {
       "chainId": "d42e9606a995dfe433dc7955dc2a70f495f350f373daa200098ae84437816ad2",
