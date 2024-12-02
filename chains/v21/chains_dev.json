@@ -4737,16 +4737,16 @@
         ],
         "nodes": [
             {
+                "url": "wss://statemint-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
                 "url": "wss://sys.ibp.network/asset-hub-polkadot",
                 "name": "IBP1 node"
             },
             {
                 "url": "wss://asset-hub-polkadot.dotters.network",
                 "name": "IBP2 node"
-            },
-            {
-                "url": "wss://statemint-rpc.dwellir.com",
-                "name": "Dwellir node"
             },
             {
                 "url": "wss://statemint.api.onfinality.io/public-ws",
@@ -9455,6 +9455,10 @@
             }
         ],
         "nodes": [
+            {
+                "url": "wss://bridge-hub-polkadot-rpc.dwellir.com",
+                "name": "Dwellir Node"
+            },
             {
                 "url": "wss://sys.ibp.network/bridgehub-polkadot",
                 "name": "IBP1 node"
