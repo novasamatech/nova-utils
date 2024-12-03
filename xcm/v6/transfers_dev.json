@@ -535,22 +535,6 @@
         "alwaysHoldingPays": false
       }
     },
-    "67f9723393ef76214df0118c34bbbd3dbebc8ed46a10973a8c969d48fe7598c9": {
-      "toParachain": {
-        "type": "exponential",
-        "factorPallet": "XcmpQueue",
-        "sizeBase": "30000000000",
-        "sizeFactor": "10000000"
-      }
-    },
-    "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3": {
-      "toParachain": {
-        "type": "exponential",
-        "factorPallet": "Dmp",
-        "sizeBase": "300000000",
-        "sizeFactor": "1000000"
-      }
-    },
     "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f": {
       "toParent": {
         "type": "exponential",
@@ -616,6 +600,22 @@
       }
     },
     "f6ee56e9c5277df5b4ce6ae9983ee88f3cbed27d31beeb98f9f84f997a1ab0b9": {
+      "toParent": {
+        "type": "exponential",
+        "factorPallet": "ParachainSystem",
+        "sizeBase": "300000000",
+        "sizeFactor": "100000",
+        "alwaysHoldingPays": false
+      },
+      "toParachain": {
+        "type": "exponential",
+        "factorPallet": "XcmpQueue",
+        "sizeBase": "300000000",
+        "sizeFactor": "100000",
+        "alwaysHoldingPays": false
+      }
+    },
+    "67f9723393ef76214df0118c34bbbd3dbebc8ed46a10973a8c969d48fe7598c9": {
       "toParent": {
         "type": "exponential",
         "factorPallet": "ParachainSystem",
