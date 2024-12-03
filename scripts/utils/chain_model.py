@@ -82,7 +82,7 @@ class Chain():
         self.properties = get_properties(self.substrate)
 
     def has_evm_addresses(self):
-        return "ethereumBased" in self.options
+        return self.options is not None and "ethereumBased" in self.options
 
     def get_asset(self, symbol: str) -> ChainAsset:
         return next((a for a in self.assets if a.symbol == symbol))
@@ -105,12 +105,14 @@ class ChainAsset:
 
     symbol: str
     type: AssetType
+    precision: int
 
     def __init__(self, data: dict, chain: Chain, chain_cache: dict):
         self._data = data
 
         self.symbol = data["symbol"]
         self.type = self._construct_type(data, chain, chain_cache)
+        self.precision = data["precision"]
 
     # Backward-compatible override for code that still thinks this is a dict
     def __getitem__(self, item):
@@ -118,6 +120,9 @@ class ChainAsset:
 
     def unified_symbol(self) -> str:
         return self.symbol.removeprefix("xc")
+
+    def planks(self, amount: int | float) -> int:
+        return amount * 10**self.precision
 
     @staticmethod
     def _construct_type(data: dict, chain: Chain, chain_cache: dict) -> AssetType:
