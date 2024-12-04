@@ -11758,5 +11758,25 @@
             "url": "https://raw.githubusercontent.com/leohar/nova-utils/master/chains/v2/types/jamton.json",
             "overridesCommon": true
         }
+    },
+    {
+        "chainId": "a35b4d0bf5767fcc3a4795aca93ef3b152c7c280d558d49eea535cae56a3a93e",
+        "name": "Novasama Testnet - Fellowship",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "WND",
+                "precision": 12,
+                "icon": "WND.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://westend-collectives-a-parachain.novasama-tech.org",
+                "name": "Novasama node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
+        "addressPrefix": 42
     }
 ]
