@@ -11781,5 +11781,33 @@
         "options": [
             "testnet"
         ]
+    },
+    {
+        "chainId": "713daf193a6301583ff467be736da27ef0a72711b248927ba413f573d2b38e44",
+        "parentId": "e143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e",
+        "name": "Westend Collectives",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "WND",
+                "precision": 12,
+                "icon": "WND.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://collectives-westend-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://westend-collectives-rpc.polkadot.io",
+                "name": "Parity node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
+        "addressPrefix": 42,
+        "options": [
+            "testnet"
+        ]
     }
 ]
