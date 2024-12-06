@@ -5897,6 +5897,20 @@
                     "existentialDeposit": "100786131828",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 45,
+                "symbol": "AAVE",
+                "precision": 18,
+                "priceId": "aave",
+                "type": "orml",
+                "icon": "AAVE.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0xb0440f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "59084194977843",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
