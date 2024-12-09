@@ -2678,6 +2678,29 @@
               "type": "xcmpallet-transferAssets"
             }
           ]
+        },
+        {
+          "assetId": 19,
+          "assetLocation": "vDOT",
+          "assetLocationPath": {
+            "type": "relative"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+                "assetId": 19,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "27911692308"
+                  },
+                  "instructions": "xcmPalletDest"
+                }
+              },
+              "type": "xcmpallet-transferAssets"
+            }
+          ]
         }
       ]
     },
@@ -6510,6 +6533,20 @@
                   "mode": {
                     "type": "proportional",
                     "value": "932506"
+                  },
+                  "instructions": "xtokensDest"
+                }
+              },
+              "type": "xtokens"
+            },
+            {
+              "destination": {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "assetId": 19,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "70175328986529379112714240"
                   },
                   "instructions": "xtokensDest"
                 }
