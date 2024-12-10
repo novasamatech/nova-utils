@@ -275,6 +275,19 @@
         },
         "instructions": "xtokensReserve"
       }
+    },
+    "MYTH": {
+      "chainId": "f6ee56e9c5277df5b4ce6ae9983ee88f3cbed27d31beeb98f9f84f997a1ab0b9",
+      "multiLocation": {
+        "parachainId": 3369
+      },
+      "reserveFee": {
+        "mode": {
+          "type": "proportional",
+          "value": "65536000000000000000"
+        },
+        "instructions": "xtokensReserve"
+      }
     }
   },
   "instructions": {
@@ -330,7 +343,8 @@
     "00dcb981df86429de8bbacf9803401f09485366c44efbf53af9ecfab03adc7e5": "1000000000",
     "dcf691b5a3fbe24adc99ddc959c0561b973e329b1aef4c4b22e7bb2ddecb4464": "1000000000",
     "46ee89aa2eedd13e988962630ec9fb7565964cf5023bb351f2b6b25c1b68b0b2": "1000000000",
-    "b3db41421702df9a7fcac62b53ffeac85f7853cc4e689e0b93aeb3db18c09d82": "200000000"
+    "b3db41421702df9a7fcac62b53ffeac85f7853cc4e689e0b93aeb3db18c09d82": "200000000",
+    "f6ee56e9c5277df5b4ce6ae9983ee88f3cbed27d31beeb98f9f84f997a1ab0b9": "1000000000"
   },
   "chains": [
     {
@@ -1016,6 +1030,43 @@
                   "mode": {
                     "type": "proportional",
                     "value": "210000"
+                  },
+                  "instructions": "xcmPalletDest"
+                }
+              },
+              "type": "xcmpallet"
+            }
+          ]
+        },
+        {
+          "assetId": 15,
+          "assetLocation": "MYTH",
+          "assetLocationPath": {
+            "type": "absolute"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "f6ee56e9c5277df5b4ce6ae9983ee88f3cbed27d31beeb98f9f84f997a1ab0b9",
+                "assetId": 0,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "81920000000000016384"
+                  },
+                  "instructions": "xcmPalletTeleportDest"
+                }
+              },
+              "type": "xcmpallet-teleport"
+            },
+            {
+              "destination": {
+                "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+                "assetId": 36,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "7822222222222225408"
                   },
                   "instructions": "xcmPalletDest"
                 }
@@ -2280,6 +2331,43 @@
                   "mode": {
                     "type": "proportional",
                     "value": "10016025641025640448"
+                  },
+                  "instructions": "xtokensDest"
+                }
+              },
+              "type": "xtokens"
+            }
+          ]
+        },
+        {
+          "assetId": 36,
+          "assetLocation": "MYTH",
+          "assetLocationPath": {
+            "type": "absolute"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "f6ee56e9c5277df5b4ce6ae9983ee88f3cbed27d31beeb98f9f84f997a1ab0b9",
+                "assetId": 0,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "65536000000000000000"
+                  },
+                  "instructions": "xtokensDest"
+                }
+              },
+              "type": "xtokens"
+            },
+            {
+              "destination": {
+                "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+                "assetId": 15,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "19052138160000000000"
                   },
                   "instructions": "xtokensDest"
                 }
@@ -4261,6 +4349,48 @@
                 }
               },
               "type": "xtokens"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chainId": "f6ee56e9c5277df5b4ce6ae9983ee88f3cbed27d31beeb98f9f84f997a1ab0b9",
+      "assets": [
+        {
+          "assetId": 0,
+          "assetLocation": "MYTH",
+          "assetLocationPath": {
+            "type": "relative"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+                "assetId": 36,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "7822222222222225408"
+                  },
+                  "instructions": "xcmPalletDest"
+                }
+              },
+              "type": "xcmpallet"
+            },
+            {
+              "destination": {
+                "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+                "assetId": 15,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "19052138160000000000"
+                  },
+                  "instructions": "xcmPalletTeleportDest"
+                }
+              },
+              "type": "xcmpallet-teleport"
             }
           ]
         }
