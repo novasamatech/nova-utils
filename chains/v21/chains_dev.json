@@ -2775,16 +2775,16 @@
         ],
         "nodes": [
             {
+                "url": "wss://kilt-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
                 "url": "wss://kilt.ibp.network",
                 "name": "IBP1 node"
             },
             {
                 "url": "wss://kilt.dotters.network",
                 "name": "IBP2 node"
-            },
-            {
-                "url": "wss://kilt-rpc.dwellir.com",
-                "name": "Dwellir node"
             },
             {
                 "url": "wss://spiritnet.kilt.io/",
@@ -4227,12 +4227,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc.astar.network",
-                "name": "Astar node"
-            },
-            {
                 "url": "wss://astar.public.curie.radiumblock.co/ws",
                 "name": "RadiumBlock node"
+            },
+            {
+                "url": "wss://rpc.astar.network",
+                "name": "Astar node"
             },
             {
                 "url": "wss://astar.api.onfinality.io/public-ws",
@@ -4738,16 +4738,16 @@
         ],
         "nodes": [
             {
+                "url": "wss://statemint-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
                 "url": "wss://sys.ibp.network/asset-hub-polkadot",
                 "name": "IBP1 node"
             },
             {
                 "url": "wss://asset-hub-polkadot.dotters.network",
                 "name": "IBP2 node"
-            },
-            {
-                "url": "wss://statemint-rpc.dwellir.com",
-                "name": "Dwellir node"
             },
             {
                 "url": "wss://statemint.api.onfinality.io/public-ws",
@@ -7054,6 +7054,10 @@
             }
         ],
         "nodes": [
+            {
+                "url": "wss://bifrost-polkadot-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
             {
                 "url": "wss://bifrost-polkadot.ibp.network",
                 "name": "IBP1 node"
@@ -9470,6 +9474,10 @@
             }
         ],
         "nodes": [
+            {
+                "url": "wss://bridge-hub-polkadot-rpc.dwellir.com",
+                "name": "Dwellir Node"
+            },
             {
                 "url": "wss://sys.ibp.network/bridgehub-polkadot",
                 "name": "IBP1 node"

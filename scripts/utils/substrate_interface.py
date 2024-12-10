@@ -13,7 +13,7 @@ default_ws_options = {
     "headers": {"Origin": "polkadot.js.org"}
 }
 
-def create_connection_by_url(url, use_remote_preset=False, ws_otpions=default_ws_options) -> SubstrateInterface:
+def create_connection_by_url(url, use_remote_preset=False, ws_otpions=default_ws_options, type_registry=None) -> SubstrateInterface:
     """Returns substrate interface object
 
     Args:
@@ -28,7 +28,8 @@ def create_connection_by_url(url, use_remote_preset=False, ws_otpions=default_ws
     """
     try:
         substrate = SubstrateInterface(
-                url=url, use_remote_preset=use_remote_preset, ws_options=ws_otpions
+                url=url, use_remote_preset=use_remote_preset, ws_options=ws_otpions,
+                type_registry=type_registry
             )
     except Exception as err:
         print(f"⚠️ Can't connect by {url}, check it is available? \n {err}")
