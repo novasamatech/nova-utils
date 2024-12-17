@@ -4731,7 +4731,7 @@
                     "palletName": "ForeignAssets"
                 }
             },
-                        {
+            {
                 "assetId": 16,
                 "symbol": "MYTH-Snowbridge",
                 "precision": 18,
@@ -4742,7 +4742,7 @@
                     "palletName": "ForeignAssets"
                 }
             },
-                        {
+            {
                 "assetId": 17,
                 "symbol": "USDC-Snowbridge",
                 "precision": 6,
@@ -4753,7 +4753,7 @@
                     "palletName": "ForeignAssets"
                 }
             },
-                        {
+            {
                 "assetId": 18,
                 "symbol": "USDT-Snowbridge",
                 "precision": 6,
@@ -4764,7 +4764,7 @@
                     "palletName": "ForeignAssets"
                 }
             },
-                        {
+            {
                 "assetId": 19,
                 "symbol": "DAI-Snowbridge",
                 "precision": 18,
@@ -4773,6 +4773,16 @@
                 "typeExtras": {
                     "assetId": "0x020209070403006b175474e89094c44da98b954eedeac495271d0f",
                     "palletName": "ForeignAssets"
+                }
+            },
+            {
+                "assetId": 20,
+                "symbol": "BASTI",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "BASTI.svg",
+                "typeExtras": {
+                    "assetId": "22222015"
                 }
             }
         ],
@@ -5949,6 +5959,19 @@
                     "currencyIdScale": "0xb0440f00",
                     "currencyIdType": "u32",
                     "existentialDeposit": "59084194977843",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 46,
+                "symbol": "BASTI",
+                "precision": 18,
+                "type": "orml",
+                "icon": "BASTI.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x64430f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
                     "transfersEnabled": true
                 }
             }
