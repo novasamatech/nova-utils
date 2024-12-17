@@ -5907,7 +5907,20 @@
                     "existentialDeposit": "59084194977843",
                     "transfersEnabled": true
                 }
-            }
+            }, 
+            {
+                "assetId": 47,
+                "symbol": "LOVA",
+                "precision": 12,
+                "type": "orml",
+                "icon": "LOVA.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x66420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
+            },
         ],
         "nodes": [
             {
