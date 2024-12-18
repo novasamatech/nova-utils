@@ -3849,16 +3849,12 @@
                 "name": "One rpc node"
             },
             {
-                "url": "wss://mainnet.infura.io/ws/v3/1e69544301064ef19edb194a14fb75f3",
-                "name": "Infura node 2"
-            },
-            {
                 "url": "wss://mainnet.infura.io/ws/v3/25bd0a6e359240529b237e5dd8b19e1f",
                 "name": "Infura node 3"
             },
             {
-                "url": "wss://mainnet.infura.io/ws/v3/32a2be59297444c9bcb2b61bb700c6fe",
-                "name": "Infura node 4"
+                "url": "wss://mainnet.infura.io/ws/v3/1e69544301064ef19edb194a14fb75f3",
+                "name": "Infura node 2"
             },
             {
                 "url": "wss://mainnet.infura.io/ws/v3/{INFURA_API_KEY}",
@@ -4733,6 +4729,70 @@
                 "typeExtras": {
                     "assetId": "0x010100a534",
                     "palletName": "ForeignAssets"
+                }
+            },
+            {
+                "assetId": 16,
+                "symbol": "MYTH-Snowbridge",
+                "precision": 18,
+                "type": "statemine",
+                "icon": "MYTH-Snowbridge.svg",
+                "typeExtras": {
+                    "assetId": "0x02020907040300ba41ddf06b7ffd89d1267b5a93bfef2424eb2003",
+                    "palletName": "ForeignAssets"
+                }
+            },
+            {
+                "assetId": 17,
+                "symbol": "USDC-Snowbridge",
+                "precision": 6,
+                "type": "statemine",
+                "icon": "USDC-Snowbridge.svg",
+                "typeExtras": {
+                    "assetId": "0x02020907040300a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+                    "palletName": "ForeignAssets"
+                }
+            },
+            {
+                "assetId": 18,
+                "symbol": "USDT-Snowbridge",
+                "precision": 6,
+                "type": "statemine",
+                "icon": "USDT-Snowbridge.svg",
+                "typeExtras": {
+                    "assetId": "0x02020907040300dac17f958d2ee523a2206206994597c13d831ec7",
+                    "palletName": "ForeignAssets"
+                }
+            },
+            {
+                "assetId": 19,
+                "symbol": "DAI-Snowbridge",
+                "precision": 18,
+                "type": "statemine",
+                "icon": "DAI-Snowbridge.svg",
+                "typeExtras": {
+                    "assetId": "0x020209070403006b175474e89094c44da98b954eedeac495271d0f",
+                    "palletName": "ForeignAssets"
+                }
+            },
+            {
+                "assetId": 20,
+                "symbol": "BASTI",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "Default.svg",
+                "typeExtras": {
+                    "assetId": "22222015"
+                }
+            },
+            {
+                "assetId": 21,
+                "symbol": "DAMN",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "Default.svg",
+                "typeExtras": {
+                    "assetId": "22222012"
                 }
             }
         ],
@@ -5909,6 +5969,32 @@
                     "currencyIdScale": "0xb0440f00",
                     "currencyIdType": "u32",
                     "existentialDeposit": "59084194977843",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 46,
+                "symbol": "BASTI",
+                "precision": 12,
+                "type": "orml",
+                "icon": "Default.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x64430f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 47,
+                "symbol": "DAMN",
+                "precision": 12,
+                "type": "orml",
+                "icon": "Default.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x5e430f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
                     "transfersEnabled": true
                 }
             }
