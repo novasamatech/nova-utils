@@ -9456,54 +9456,5 @@
             "url": "https://raw.githubusercontent.com/leohar/nova-utils/master/chains/v2/types/jamton.json",
             "overridesCommon": true
         }
-    },
-    {
-        "chainId": "eip155:41455",
-        "name": "Aleph Zero EVM",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "AZERO",
-                "priceId": "aleph-zero",
-                "type": "evmNative",
-                "icon": "AZERO.svg",
-                "precision": 18
-            }
-        ],
-        "nodeSelectionStrategy": "uniform",
-        "nodes": [
-            {
-                "url": "https://rpc.alephzero.raas.gelato.cloud",
-                "name": "Aleph Zero EVM rpc node"
-            },
-            {
-                "url": "wss://ws.alephzero.raas.gelato.cloud",
-                "name": "Aleph Zero EVM wss node"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "etherscan",
-                    "url": "https://evm-explorer.alephzero.org/api",
-                    "parameters": {
-                        "assetType": "evm"
-                    }
-                }
-            ]
-        },
-        "explorers": [
-            {
-                "name": "Aleph Zero EVM Explorer",
-                "extrinsic": "https://evm-explorer.alephzero.org/tx/{hash}",
-                "account": "https://evm-explorer.alephzero.org/address/{address}"
-            }
-        ],
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/AlephZero.svg",
-        "addressPrefix": 41455,
-        "options": [
-            "ethereumBased",
-            "noSubstrateRuntime"
-        ]
     }
 ]
