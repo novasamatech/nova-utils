@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from abc import ABC, abstractmethod
-from typing import List, Union, Callable, TypeVar
+from typing import List, Union, Callable, TypeVar, Tuple
 
 from scalecodec import ScaleBytes
 
@@ -84,8 +84,14 @@ class Chain():
     def has_evm_addresses(self):
         return self.options is not None and "ethereumBased" in self.options
 
-    def get_asset(self, symbol: str) -> ChainAsset:
+    def get_asset_by_symbol(self, symbol: str) -> ChainAsset:
         return next((a for a in self.assets if a.symbol == symbol))
+
+    def get_asset_by_id(self, id: int) -> ChainAsset:
+        return next((a for a in self.assets if a.id == id))
+
+    def get_utility_asset(self) -> ChainAsset:
+        return self.get_asset_by_id(0)
 
     def access_substrate(self, action: Callable[[SubstrateInterface], T]) -> T:
         if self.substrate is None:
@@ -107,12 +113,18 @@ class ChainAsset:
     type: AssetType
     precision: int
 
+    id: int
+
+    chain: Chain
+
     def __init__(self, data: dict, chain: Chain, chain_cache: dict):
         self._data = data
 
+        self.id = data["assetId"]
         self.symbol = data["symbol"]
         self.type = self._construct_type(data, chain, chain_cache)
         self.precision = data["precision"]
+        self.chain = chain
 
     # Backward-compatible override for code that still thinks this is a dict
     def __getitem__(self, item):
@@ -123,6 +135,9 @@ class ChainAsset:
 
     def planks(self, amount: int | float) -> int:
         return amount * 10**self.precision
+
+    def full_chain_asset_id(self) -> Tuple[str, int]:
+        return self.chain.chainId, self.id
 
     @staticmethod
     def _construct_type(data: dict, chain: Chain, chain_cache: dict) -> AssetType:

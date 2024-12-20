@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 
 from substrateinterface import SubstrateInterface
+from substrateinterface.exceptions import SubstrateRequestException
 
 from scripts.utils.chain_model import Chain
 from utils.work_with_data import get_data_from_file, write_data_to_file
@@ -31,28 +32,55 @@ def get_runtime_prefix(substrate: SubstrateInterface) -> str | None:
     return None
 
 
-for idx, chain in enumerate(polkadot_chains):
-    print(f"\n{idx+1}/{len(polkadot_parachains)}. Starting fetching data for {chain.name}")
+def chain_has_dry_run_api(substrate: SubstrateInterface) -> bool:
+    try:
+        substrate.rpc_request(method="state_call", params=["DryRunApi_dry_run_xcm", "0x"])
+    except SubstrateRequestException as e:
+        return "DryRunApi_dry_run_xcm is not found" not in e.args[0]["message"]
+
+    # We don't form a valid dry run params so successfully execution should not be possible but still return True in
+    # case it somehow happened
+    return True
+
+
+def process_chain(idx, chain):
+    print(f"\n{idx + 1}/{len(polkadot_chains)}. Starting fetching data for {chain.name}")
+
+    chain.create_connection()
+
+    if not chain_has_dry_run_api(chain.substrate):
+        print(f"{chain.name} does not yet have dry run Api, skipping")
+
+        return
 
     parachainId = None
 
     if chain.parentId is not None:
         try:
-            parachainId = chain.access_substrate(lambda s: s.query("ParachainInfo", "ParachainId").value)
+            parachainId = chain.substrate.query("ParachainInfo", "ParachainId").value
         except Exception as e:
             print(f"Failed to fetch ParachainId for {chain.name} due to {e}, skipping")
-            continue
+            return
 
     try:
-        runtime_prefix = chain.access_substrate(lambda s: get_runtime_prefix(s))
+        runtime_prefix = get_runtime_prefix(chain.substrate)
         if runtime_prefix is None:
             print(f"Runtime prefix in {chain.name} was not found, skipping")
     except Exception as e:
         print(f"Failed to fetch runtime prefix for {chain.name} due to {e}, skipping")
-        continue
+        return
 
-    parachain_info = {"parachainId": parachainId, "runtimePrefix": runtime_prefix}
+    parachain_info = {"parachainId": parachainId, "runtimePrefix": runtime_prefix, "name": chain.name}
     data[chain.chainId] = parachain_info
 
     print(f"Finished fetching data for {chain.name}: {parachain_info}")
     write_data_to_file('xcm_additional_data.json', json.dumps(data, indent=4))
+
+
+for idx, chain in enumerate(polkadot_chains):
+    try:
+        process_chain(idx, chain)
+    except Exception as e:
+        print(f"Error happened when processing {chain.name}, skipping: {e}")
+
+        continue
