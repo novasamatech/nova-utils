@@ -267,6 +267,93 @@
         }
     },
     {
+        "chainId": "e143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e",
+        "name": "Westend (TESTNET)",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "WND",
+                "precision": 12,
+                "icon": "WND.svg",
+                "staking": [
+                    "relaychain",
+                    "nomination-pools"
+                ]
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://westend-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://rpc.ibp.network/westend",
+                "name": "IBP1 node"
+            },
+            {
+                "url": "wss://westend.dotters.network",
+                "name": "IBP2 node"
+            },
+            {
+                "url": "wss://westend.public.curie.radiumblock.co/ws",
+                "name": "RadiumBlock node"
+            },
+            {
+                "url": "wss://westend.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://westend.subscan.io/extrinsic/{hash}",
+                "account": "https://westend.subscan.io/account/{address}"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
+        "addressPrefix": 42,
+        "externalApi": {
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-westend"
+                }
+            ],
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-westend"
+                }
+            ],
+            "crowdloans": [
+                {
+                    "type": "github",
+                    "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/crowdloan/westend.json"
+                }
+            ],
+            "governance": [
+                {
+                    "type": "subsquare",
+                    "url": "https://westend.subsquare.io/api"
+                }
+            ]
+        },
+        "options": [
+            "testnet",
+            "crowdloans",
+            "governance",
+            "proxy"
+        ],
+        "additional": {
+            "themeColor": "#1F78FF",
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polkadot-and-kusama",
+            "stakingMaxElectingVoters": 22500,
+            "feeViaRuntimeCall": true,
+            "identityChain": "1eb6fb0ba5187434de017a70cb84d4f47142df1d571d0ef9e7e1407f2b80b93c",
+            "supportsGenericLedgerApp": true
+        }
+    },
+    {
         "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Kusama Asset Hub",
