@@ -1286,7 +1286,7 @@
                 }
             }
         ],
-        "nodeSelectionStrategy": "uniform",
+        "nodeSelectionStrategy": "roundRobin",
         "nodes": [
             {
                 "url": "https://rpc.ankr.com/eth",
@@ -1309,20 +1309,12 @@
                 "name": "Infura node 2"
             },
             {
-                "url": "wss://mainnet.infura.io/ws/v3/25bd0a6e359240529b237e5dd8b19e1f",
-                "name": "Infura node 3"
-            },
-            {
                 "url": "wss://mainnet.infura.io/ws/v3/9dddd77ac74043dc9a8dc48f82822c7d",
                 "name": "Infura node 4"
             },
             {
                 "url": "wss://mainnet.infura.io/ws/v3/82fd5b2925e341719f10b7ed4376a646",
                 "name": "Infura node 6"
-            },
-            {
-                "url": "wss://mainnet.infura.io/ws/v3/5717b02168b5434ba23801e1ea755afb",
-                "name": "Infura node 7"
             }
         ],
         "explorers": [
@@ -4068,6 +4060,10 @@
         ],
         "nodes": [
             {
+                "url": "wss://rpc-assethub.novasama-tech.org",
+                "name": "Novasama node"
+            },
+            {
                 "url": "wss://sys.ibp.network/asset-hub-polkadot",
                 "name": "IBP1 node"
             },
@@ -5383,9 +5379,27 @@
                     "existentialDeposit": "100786131828",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 45,
+                "symbol": "AAVE",
+                "precision": 18,
+                "priceId": "aave",
+                "type": "orml",
+                "icon": "AAVE.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0xb0440f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "59084194977843",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
+            {
+                "url": "wss://rpc-hydra.novasama-tech.org",
+                "name": "Novasama node"
+            },
             {
                 "url": "wss://rpc.hydradx.cloud",
                 "name": "Galactic Council node"
@@ -9246,7 +9260,7 @@
         "addressPrefix": 5234
     },
     {
-        "chainId": "d523fa2e0581f069b4f0c7b5944c21e9abc72305a08067868c91b898d1bf1dff",
+        "chainId": "03aa6b475a03f8baf7f83e448513b00eaab03aefa4ed64bd1d31160dce028add",
         "name": "DeepBrain",
         "assets": [
             {
@@ -9425,5 +9439,79 @@
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Xode.svg",
         "addressPrefix": 42
+    },
+    {
+        "chainId": "bb9233e202ec014707f82ddb90e84ee9efece8fefee287ad4ad646d869a6c24a",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "JAMTON",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "DOTON",
+                "precision": 18,
+                "icon": "DOTON.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc.jamton.network",
+                "name": "Jamton node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Jamton.svg",
+        "addressPrefix": 5589,
+        "types": {
+            "url": "https://raw.githubusercontent.com/leohar/nova-utils/master/chains/v2/types/jamton.json",
+            "overridesCommon": true
+        }
+    },
+    {
+        "chainId": "eip155:41455",
+        "name": "Aleph Zero EVM",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "AZERO",
+                "priceId": "aleph-zero",
+                "type": "evmNative",
+                "icon": "AZERO.svg",
+                "precision": 18
+            }
+        ],
+        "nodeSelectionStrategy": "uniform",
+        "nodes": [
+            {
+                "url": "https://rpc.alephzero.raas.gelato.cloud",
+                "name": "Aleph Zero EVM rpc node"
+            },
+            {
+                "url": "wss://ws.alephzero.raas.gelato.cloud",
+                "name": "Aleph Zero EVM wss node"
+            }
+        ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "etherscan",
+                    "url": "https://evm-explorer.alephzero.org/api",
+                    "parameters": {
+                        "assetType": "evm"
+                    }
+                }
+            ]
+        },
+        "explorers": [
+            {
+                "name": "Aleph Zero EVM Explorer",
+                "extrinsic": "https://evm-explorer.alephzero.org/tx/{hash}",
+                "account": "https://evm-explorer.alephzero.org/address/{address}"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/AlephZero.svg",
+        "addressPrefix": 41455,
+        "options": [
+            "ethereumBased",
+            "noSubstrateRuntime"
+        ]
     }
 ]

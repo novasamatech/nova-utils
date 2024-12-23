@@ -440,7 +440,7 @@
         "additional": {
             "relaychainAsNative": true,
             "feeViaRuntimeCall": true,
-            "disabledCheckMetadataHash": true
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -562,7 +562,8 @@
         "addressPrefix": 2,
         "options": [
             "swap-hub",
-            "assethub-fees"
+            "assethub-fees",
+            "proxy"
         ],
         "additional": {
             "relaychainAsNative": true,
@@ -2449,7 +2450,7 @@
             "overridesCommon": true
         },
         "additional": {
-            "feeViaRuntimeCall": true
+            "feeViaRuntimeCall": false
         }
     },
     {
@@ -2774,16 +2775,16 @@
         ],
         "nodes": [
             {
-                "url": "wss://kilt-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
                 "url": "wss://kilt.ibp.network",
                 "name": "IBP1 node"
             },
             {
                 "url": "wss://kilt.dotters.network",
                 "name": "IBP2 node"
+            },
+            {
+                "url": "wss://kilt-rpc.dwellir.com",
+                "name": "Dwellir node"
             },
             {
                 "url": "wss://spiritnet.kilt.io/",
@@ -3848,16 +3849,12 @@
                 "name": "One rpc node"
             },
             {
-                "url": "wss://mainnet.infura.io/ws/v3/1e69544301064ef19edb194a14fb75f3",
-                "name": "Infura node 2"
-            },
-            {
                 "url": "wss://mainnet.infura.io/ws/v3/25bd0a6e359240529b237e5dd8b19e1f",
                 "name": "Infura node 3"
             },
             {
-                "url": "wss://mainnet.infura.io/ws/v3/32a2be59297444c9bcb2b61bb700c6fe",
-                "name": "Infura node 4"
+                "url": "wss://mainnet.infura.io/ws/v3/1e69544301064ef19edb194a14fb75f3",
+                "name": "Infura node 2"
             },
             {
                 "url": "wss://mainnet.infura.io/ws/v3/{INFURA_API_KEY}",
@@ -4226,12 +4223,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://astar.public.curie.radiumblock.co/ws",
-                "name": "RadiumBlock node"
-            },
-            {
                 "url": "wss://rpc.astar.network",
                 "name": "Astar node"
+            },
+            {
+                "url": "wss://astar.public.curie.radiumblock.co/ws",
+                "name": "RadiumBlock node"
             },
             {
                 "url": "wss://astar.api.onfinality.io/public-ws",
@@ -4733,12 +4730,76 @@
                     "assetId": "0x010100a534",
                     "palletName": "ForeignAssets"
                 }
+            },
+            {
+                "assetId": 16,
+                "symbol": "MYTH-Snowbridge",
+                "precision": 18,
+                "type": "statemine",
+                "icon": "MYTH-Snowbridge.svg",
+                "typeExtras": {
+                    "assetId": "0x02020907040300ba41ddf06b7ffd89d1267b5a93bfef2424eb2003",
+                    "palletName": "ForeignAssets"
+                }
+            },
+            {
+                "assetId": 17,
+                "symbol": "USDC-Snowbridge",
+                "precision": 6,
+                "type": "statemine",
+                "icon": "USDC-Snowbridge.svg",
+                "typeExtras": {
+                    "assetId": "0x02020907040300a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+                    "palletName": "ForeignAssets"
+                }
+            },
+            {
+                "assetId": 18,
+                "symbol": "USDT-Snowbridge",
+                "precision": 6,
+                "type": "statemine",
+                "icon": "USDT-Snowbridge.svg",
+                "typeExtras": {
+                    "assetId": "0x02020907040300dac17f958d2ee523a2206206994597c13d831ec7",
+                    "palletName": "ForeignAssets"
+                }
+            },
+            {
+                "assetId": 19,
+                "symbol": "DAI-Snowbridge",
+                "precision": 18,
+                "type": "statemine",
+                "icon": "DAI-Snowbridge.svg",
+                "typeExtras": {
+                    "assetId": "0x020209070403006b175474e89094c44da98b954eedeac495271d0f",
+                    "palletName": "ForeignAssets"
+                }
+            },
+            {
+                "assetId": 20,
+                "symbol": "BASTI",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "Default.svg",
+                "typeExtras": {
+                    "assetId": "22222015"
+                }
+            },
+            {
+                "assetId": 21,
+                "symbol": "DAMN",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "Default.svg",
+                "typeExtras": {
+                    "assetId": "22222012"
+                }
             }
         ],
         "nodes": [
             {
-                "url": "wss://statemint-rpc.dwellir.com",
-                "name": "Dwellir node"
+                "url": "wss://rpc-assethub.novasama-tech.org",
+                "name": "Novasama node"
             },
             {
                 "url": "wss://sys.ibp.network/asset-hub-polkadot",
@@ -4747,6 +4808,10 @@
             {
                 "url": "wss://asset-hub-polkadot.dotters.network",
                 "name": "IBP2 node"
+            },
+            {
+                "url": "wss://statemint-rpc.dwellir.com",
+                "name": "Dwellir node"
             },
             {
                 "url": "wss://statemint.api.onfinality.io/public-ws",
@@ -5896,9 +5961,53 @@
                     "existentialDeposit": "100786131828",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 45,
+                "symbol": "AAVE",
+                "precision": 18,
+                "priceId": "aave",
+                "type": "orml",
+                "icon": "AAVE.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0xb0440f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "59084194977843",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 46,
+                "symbol": "BASTI",
+                "precision": 12,
+                "type": "orml",
+                "icon": "Default.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x64430f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 47,
+                "symbol": "DAMN",
+                "precision": 12,
+                "type": "orml",
+                "icon": "Default.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x5e430f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
+            {
+                "url": "wss://rpc-hydra.novasama-tech.org",
+                "name": "Novasama node"
+            },
             {
                 "url": "wss://rpc.hydradx.cloud",
                 "name": "Galactic Council node"
@@ -7039,10 +7148,6 @@
             }
         ],
         "nodes": [
-            {
-                "url": "wss://bifrost-polkadot-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
             {
                 "url": "wss://bifrost-polkadot.ibp.network",
                 "name": "IBP1 node"
@@ -9460,10 +9565,6 @@
         ],
         "nodes": [
             {
-                "url": "wss://bridge-hub-polkadot-rpc.dwellir.com",
-                "name": "Dwellir Node"
-            },
-            {
                 "url": "wss://sys.ibp.network/bridgehub-polkadot",
                 "name": "IBP1 node"
             },
@@ -11317,11 +11418,11 @@
         "nodeSelectionStrategy": "uniform",
         "nodes": [
             {
-                "url": "https://rpc.alephzero.raas.gelato.cloud",
+                "url": "https://alephzero.drpc.org",
                 "name": "Aleph Zero EVM rpc node"
             },
             {
-                "url": "wss://ws.alephzero.raas.gelato.cloud",
+                "url": "wss://alephzero.drpc.org",
                 "name": "Aleph Zero EVM wss node"
             }
         ],
@@ -11554,7 +11655,7 @@
         "addressPrefix": 5234
     },
     {
-        "chainId": "d523fa2e0581f069b4f0c7b5944c21e9abc72305a08067868c91b898d1bf1dff",
+        "chainId": "03aa6b475a03f8baf7f83e448513b00eaab03aefa4ed64bd1d31160dce028add",
         "name": "DeepBrain",
         "assets": [
             {
@@ -11765,5 +11866,56 @@
             "url": "https://raw.githubusercontent.com/leohar/nova-utils/master/chains/v2/types/jamton.json",
             "overridesCommon": true
         }
+    },
+    {
+        "chainId": "a35b4d0bf5767fcc3a4795aca93ef3b152c7c280d558d49eea535cae56a3a93e",
+        "name": "Novasama Testnet - Fellowship",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "WND",
+                "precision": 12,
+                "icon": "WND.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://westend-collectives-a-parachain.novasama-tech.org",
+                "name": "Novasama node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
+        "addressPrefix": 42,
+        "options": [
+            "testnet"
+        ]
+    },
+    {
+        "chainId": "713daf193a6301583ff467be736da27ef0a72711b248927ba413f573d2b38e44",
+        "parentId": "e143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e",
+        "name": "Westend Collectives",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "WND",
+                "precision": 12,
+                "icon": "WND.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://collectives-westend-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://westend-collectives-rpc.polkadot.io",
+                "name": "Parity node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
+        "addressPrefix": 42,
+        "options": [
+            "testnet"
+        ]
     }
 ]
