@@ -13,6 +13,12 @@ class GlobalMultiLocation:
         return RelativeMultiLocation(parents=0, junctions=self.junctions)
 
     # reanchor given location to a point of view of given `target` location
+    # Basic algorithm idea:
+    # We find the last common ancestor and consider the target location to be "up to ancestor and down to self":
+    # 1. Find last common ancestor between `self` and `target`
+    # 2. Use all junctions after common ancestor as result junctions
+    # 3. Use difference between len(target.junctions) and common_ancestor_idx
+    # to termine how many "up" hops are needed to reach common ancestor
     def reanchor(self, target: GlobalMultiLocation) -> RelativeMultiLocation:
         common_ancestor_idx = self.find_last_common_junction_idx(target)
         if common_ancestor_idx is None:
