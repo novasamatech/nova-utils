@@ -45,7 +45,7 @@ jobs:
           files: |
             ${{ env.DEV_CHAINS_JSON_PATH }}
 
-      - name: Was xcm list changed?
+      - name: Was xcm_transfers list changed?
         id: xcm_chains
         uses: tj-actions/changed-files@v18.2
         with:

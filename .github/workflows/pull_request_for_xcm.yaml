@@ -16,7 +16,7 @@ permissions:
 jobs:
   create-comment-with-changes:
     runs-on: ubuntu-latest
-    name: Create a comment with xcm changed data
+    name: Create a comment with xcm_transfers changed data
 
     steps:
       - name: Checkout

@@ -6,9 +6,9 @@ from substrateinterface import SubstrateInterface
 from substrateinterface.exceptions import SubstrateRequestException
 
 from scripts.utils.chain_model import Chain
-from utils.work_with_data import get_data_from_file, write_data_to_file
+from scripts.utils.work_with_data import get_data_from_file, write_data_to_file
 
-chains_file = get_data_from_file("../chains/v21/chains_dev.json")
+chains_file = get_data_from_file("../../chains/v21/chains_dev.json")
 
 chains = [Chain(it) for it in chains_file]
 
@@ -74,7 +74,7 @@ def process_chain(idx, chain):
     data[chain.chainId] = parachain_info
 
     print(f"Finished fetching data for {chain.name}: {parachain_info}")
-    write_data_to_file('xcm_additional_data.json', json.dumps(data, indent=4))
+    write_data_to_file('xcm_registry_additional_data.json', json.dumps(data, indent=4))
 
 
 for idx, chain in enumerate(polkadot_chains):
