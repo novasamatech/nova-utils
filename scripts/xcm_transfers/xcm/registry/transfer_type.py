@@ -91,5 +91,3 @@ class RemoteReserve(TransferType):
 
     def transfer_type_call_param(self) -> dict | str:
         return {"RemoteReserve": self._origin_chain.sibling_location_of(self._reserve_chain).versioned}
-
-

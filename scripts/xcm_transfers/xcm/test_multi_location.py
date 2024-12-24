@@ -3,7 +3,7 @@ from scripts.xcm_transfers.xcm.versioned_xcm_builder import parachain_junction
 
 
 def test_reanchor_global_pov_should_remain_unchanged():
-    
+
     initial = GlobalMultiLocation(junctions=[parachain_junction(1000)])
     pov = GlobalMultiLocation(junctions=[])
     expected = initial.as_relative()

@@ -47,4 +47,3 @@ class XcmConfigTraversal:
                     direction = XcmTransferDirection(origin_chain, origin_chain_asset, destination_chain, destination_asset)
 
                     yield direction
-
