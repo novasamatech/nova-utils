@@ -31,7 +31,7 @@ class VerionsedXcm:
 
     def _init_from_versioned(self, message: dict):
         if type(message) is not dict:
-            raise Exception(f"Already versioned xcm_transfers must be a dict with a single version key, got: {message}")
+            raise Exception(f"Already versioned xcm must be a dict with a single version key, got: {message}")
 
         version_key = next(iter(message))
 

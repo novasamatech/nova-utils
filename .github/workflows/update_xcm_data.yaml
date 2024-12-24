@@ -1,4 +1,4 @@
-name: Update xcm_transfers coefficients
+name: Update xcm coefficients
 
 on:
   schedule:
@@ -52,7 +52,7 @@ jobs:
           cd ./support
           make install
 
-      - name: 🦾 Generate new xcm_transfers coefficients
+      - name: 🦾 Generate new xcm coefficients
         run: |
           cd ./support
           make update-xcm
@@ -73,11 +73,11 @@ jobs:
         uses: ./.github/workflows/make-pull-request
         with:
           commit-files: ${{ env.COMMIT_FILE }}
-          commit-message: Update xcm_transfers coefficients
+          commit-message: Update xcm coefficients
           app-id: ${{ secrets.PR_APP_ID}}
           app-token: ${{ secrets.PR_APP_TOKEN}}
           pr-reviewer: ${{ env.PR_REVIEWER }}
-          branch-name: update-xcm_transfers-coefficients
+          branch-name: update-xcm-coefficients
           pr-title: 🆙 Update XCM coefficients for ${{ env.ENVIRONMENT }} env
           pr-body: This PR was generated automatically 🤖
           pr-base: master

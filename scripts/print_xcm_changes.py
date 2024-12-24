@@ -263,7 +263,7 @@ def main(argv):
     if github_base:
         nova_utils_url = f"https://raw.githubusercontent.com/novasamatech/nova-utils/{github_base}/"
 
-    transfers_file = os.getenv("XCM_PATH", "xcm_transfers/v4/transfers_dev.json")
+    transfers_file = os.getenv("XCM_PATH", "xcm/v4/transfers_dev.json")
     chains_url = nova_utils_url + os.getenv("CHAINS_PATH", "chains/v13/chains_dev.json")
 
     transfers_file_url = nova_utils_url + transfers_file

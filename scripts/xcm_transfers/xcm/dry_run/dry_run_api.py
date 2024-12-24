@@ -13,7 +13,7 @@ def dry_run_xcm(chain: XcmChain, xcm: VerionsedXcm, origin: VerionsedXcm) -> dic
     dry_run_effects = chain.access_substrate(
         lambda substrate: substrate.runtime_call(api="DryRunApi", method="dry_run_xcm",
                                                  params={"origin_location": origin.versioned,
-                                                         "xcm_transfers": xcm.versioned})).value["Ok"]
+                                                         "xcm": xcm.versioned})).value["Ok"]
     execution_result = dry_run_effects["execution_result"]
 
     if is_xcm_run_error(execution_result):

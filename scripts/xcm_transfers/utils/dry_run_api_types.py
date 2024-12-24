@@ -21,14 +21,14 @@ def dry_run_api_types(runtime_types_prefix: str | None) -> dict | None:
                         "type": "CallDryRunEffectsResult"
                     },
                     "dry_run_xcm": {
-                        "description": "Dry run xcm_transfers program",
+                        "description": "Dry run xcm program",
                         "params": [
                             {
                                 "name": "origin_location",
                                 "type": "xcm::VersionedLocation"
                             },
                             {
-                                "name": "xcm_transfers",
+                                "name": "xcm",
                                 "type": "xcm::VersionedXcm"
                             }
                         ],

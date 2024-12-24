@@ -92,7 +92,7 @@ def build_xcm_registry(
         additional_xcm_chain_data = additional_xcm_data.get(chain_config["chainId"], None)
 
         if additional_xcm_chain_data is None:
-            debug_log(f"No additional xcm_transfers data found for {chain_config["name"]}, skipping")
+            debug_log(f"No additional xcm data found for {chain_config["name"]}, skipping")
             continue
 
         runtime_prefix = additional_xcm_chain_data["runtimePrefix"]

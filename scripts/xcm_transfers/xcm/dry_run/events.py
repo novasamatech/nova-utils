@@ -31,19 +31,19 @@ def find_sent_xcm(
     emitted_events = success_dry_run_effects["emitted_events"]
     xcm_sent_event = _find_xcm_sent_event(origin, emitted_events)
     if xcm_sent_event is not None:
-        debug_log(f"Found sent xcm_transfers in XcmSent event")
+        debug_log(f"Found sent xcm in XcmSent event")
         return xcm_sent_event.sent_message
 
     forwarded_xcm = _find_forwarded_xcm(success_dry_run_effects, final_destination_account)
     if forwarded_xcm is not None:
-        debug_log(f"Found sent xcm_transfers in forwarded xcms")
+        debug_log(f"Found sent xcm in forwarded xcms")
         return forwarded_xcm
 
     error = _search_for_error_in_events(origin, emitted_events)
     if error is not None:
         raise Exception(f"Execution failed with {error}")
 
-    raise Exception(f"Sent xcm_transfers was not found, got: {success_dry_run_effects}")
+    raise Exception(f"Sent xcm was not found, got: {success_dry_run_effects}")
 
 
 def _find_xcm_sent_event(chain: XcmChain, events: List) -> XcmSentEvent | None:
