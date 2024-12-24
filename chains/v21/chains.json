@@ -4193,6 +4193,26 @@
                     "assetId": "0x020209070403006b175474e89094c44da98b954eedeac495271d0f",
                     "palletName": "ForeignAssets"
                 }
+            },
+            {
+                "assetId": 20,
+                "symbol": "BASTI",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "Default.svg",
+                "typeExtras": {
+                    "assetId": "22222015"
+                }
+            },
+            {
+                "assetId": 21,
+                "symbol": "DAMN",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "Default.svg",
+                "typeExtras": {
+                    "assetId": "22222012"
+                }
             }
         ],
         "nodes": [
@@ -5530,6 +5550,32 @@
                     "currencyIdScale": "0xb0440f00",
                     "currencyIdType": "u32",
                     "existentialDeposit": "59084194977843",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 46,
+                "symbol": "BASTI",
+                "precision": 12,
+                "type": "orml",
+                "icon": "Default.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x64430f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 47,
+                "symbol": "DAMN",
+                "precision": 12,
+                "type": "orml",
+                "icon": "Default.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x5e430f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
                     "transfersEnabled": true
                 }
             }
