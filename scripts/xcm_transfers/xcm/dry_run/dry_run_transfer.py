@@ -20,7 +20,7 @@ class TransferDryRunner:
 
     def __init__(self, registry: XcmRegistry):
         self._registry = registry
-        
+
         fix_scale_codec()
 
     def dry_run_transfer(self, transfer_direction: XcmTransferDirection):
@@ -114,4 +114,3 @@ def _dry_run_account_for_chain(chain: XcmChain) -> str:
         return _evm_account
     else:
         return _substrate_account
-

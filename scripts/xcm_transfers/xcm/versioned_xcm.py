@@ -57,4 +57,3 @@ class VerionsedXcm:
 
     def is_v4(self) -> bool:
         return self.version == 4
-

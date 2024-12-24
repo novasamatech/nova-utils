@@ -29,4 +29,3 @@ enable_debug_log()
 
 runner = TransferDryRunner(registry)
 runner.dry_run_transfer(direction)
-
