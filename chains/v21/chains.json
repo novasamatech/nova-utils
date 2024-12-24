@@ -4073,6 +4073,7 @@
                 "assetId": 9,
                 "symbol": "WETH-Snowbridge",
                 "precision": 18,
+                "priceId": "ethereum-wormhole",
                 "type": "statemine",
                 "icon": "WETH-Snowbridge.svg",
                 "typeExtras": {
@@ -4085,6 +4086,7 @@
                 "assetId": 10,
                 "symbol": "WBTC-Snowbridge",
                 "precision": 8,
+                "priceId": "wrapped-bitcoin",
                 "type": "statemine",
                 "icon": "WBTC-Snowbridge.svg",
                 "typeExtras": {
@@ -4141,6 +4143,54 @@
                 "icon": "MYTH.svg",
                 "typeExtras": {
                     "assetId": "0x010100a534",
+                    "palletName": "ForeignAssets"
+                }
+            },
+            {
+                "assetId": 16,
+                "symbol": "MYTH-Snowbridge",
+                "precision": 18,
+                "priceId": "mythos",
+                "type": "statemine",
+                "icon": "MYTH-Snowbridge.svg",
+                "typeExtras": {
+                    "assetId": "0x02020907040300ba41ddf06b7ffd89d1267b5a93bfef2424eb2003",
+                    "palletName": "ForeignAssets"
+                }
+            },
+            {
+                "assetId": 17,
+                "symbol": "USDC-Snowbridge",
+                "precision": 6,
+                "priceId": "usd-coin",
+                "type": "statemine",
+                "icon": "USDC-Snowbridge.svg",
+                "typeExtras": {
+                    "assetId": "0x02020907040300a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+                    "palletName": "ForeignAssets"
+                }
+            },
+            {
+                "assetId": 18,
+                "symbol": "USDT-Snowbridge",
+                "precision": 6,
+                "priceId": "tether",
+                "type": "statemine",
+                "icon": "USDT-Snowbridge.svg",
+                "typeExtras": {
+                    "assetId": "0x02020907040300dac17f958d2ee523a2206206994597c13d831ec7",
+                    "palletName": "ForeignAssets"
+                }
+            },
+            {
+                "assetId": 19,
+                "symbol": "DAI-Snowbridge",
+                "precision": 18,
+                "priceId": "dai",
+                "type": "statemine",
+                "icon": "DAI-Snowbridge.svg",
+                "typeExtras": {
+                    "assetId": "0x020209070403006b175474e89094c44da98b954eedeac495271d0f",
                     "palletName": "ForeignAssets"
                 }
             }
@@ -5366,6 +5416,7 @@
                 "assetId": 37,
                 "symbol": "WETH-Snowbridge",
                 "precision": 18,
+                "priceId": "ethereum-wormhole",
                 "type": "orml",
                 "icon": "WETH-Snowbridge.svg",
                 "typeExtras": {
@@ -5379,6 +5430,7 @@
                 "assetId": 38,
                 "symbol": "WBTC-Snowbridge",
                 "precision": 8,
+                "priceId": "wrapped-bitcoin",
                 "type": "orml",
                 "icon": "WBTC-Snowbridge.svg",
                 "typeExtras": {
