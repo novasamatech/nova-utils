@@ -1,12 +1,11 @@
-from typing import Tuple, Callable, List
+from collections import defaultdict
+from typing import Tuple, Callable
 
 from scripts.utils.chain_model import ChainAsset
 from scripts.xcm_transfers.xcm.multi_location import GlobalMultiLocation
 from scripts.xcm_transfers.xcm.registry.xcm_chain import XcmChain
 from scripts.xcm_transfers.xcm.versioned_xcm import VerionsedXcm
 from scripts.xcm_transfers.xcm.versioned_xcm_builder import multi_location_from
-
-from collections import defaultdict
 
 
 class ReserveLocation:

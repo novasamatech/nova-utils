@@ -1,14 +1,13 @@
 from __future__ import annotations
 
 from abc import ABC, abstractmethod
-from typing import List, Union, Callable, TypeVar, Tuple
+from typing import List, Callable, TypeVar, Tuple
 
 from scalecodec import ScaleBytes
-
-from .substrate_interface import create_connection_by_url
-from .metadata_interaction import get_properties
-
 from substrateinterface import SubstrateInterface
+
+from .metadata_interaction import get_properties
+from .substrate_interface import create_connection_by_url
 
 T = TypeVar('T')
 
@@ -38,43 +37,43 @@ class Chain():
         self._type_registry = type_registry
 
     def create_connection(self) -> SubstrateInterface:
-        for node in self.nodes:
-            try:
-                print("Connecting to ", node.get('url'))
-                self.substrate = create_connection_by_url(node.get('url'), type_registry=self._type_registry)
-                print("Connected to ", node.get('url'))
-                return self.substrate
-                # if self.substrate.websocket.connected is True:
-                #     return self.substrate
-                # print(f"Can't connect to endpoint {node.get('url')} for the {self.name}")
-            except:
-                print("Can't connect to that node")
-                continue
+        def create_node_connection(node_url: str):
+            self.substrate = create_connection_by_url(node_url, type_registry=self._type_registry)
 
-        print("Can't connect to all nodes of network", self.name)
+        self._try_connect_over_all_nodes(create_node_connection)
+
+        return self.substrate
 
     def recreate_connection(self) -> SubstrateInterface:
         if self.substrate is None:
             raise Exception("No connection was created before")
 
+        def recreate_node_connection(node_url: str):
+            self.substrate.url = node_url
+            self.substrate.connect_websocket()
+
+        self._try_connect_over_all_nodes(recreate_node_connection)
+
+        return self.substrate
+
+    def _try_connect_over_all_nodes(self, connect_to_node: Callable[[str], None]):
         for node in self.nodes:
+            node_url = node.get('url')
+
             try:
-                print("Connecting to ", node.get('url'))
-                self.substrate.url = node.get('url')
-                self.substrate.connect_websocket()
-                print("Connected to ", node.get('url'))
-                return self.substrate
-                # if self.substrate.websocket.connected is True:
-                #     return self.substrate
-                # print(f"Can't connect to endpoint {node.get('url')} for the {self.name}")
+                print("Connecting to ", node_url)
+                connect_to_node(node_url)
+                print("Connected to ", node_url)
+                return
             except:
-                print("Can't connect to that node")
+                print("Can't connect to", node_url)
                 continue
 
-        print("Can't connect to all nodes of network", self.name)
+        raise Exception("Can't connect to all nodes of network")
 
     def close_substrate_connection(self):
         self.substrate.close()
+        self.substrate = None
 
     def init_properties(self):
         if (self.properties):
@@ -134,7 +133,7 @@ class ChainAsset:
         return self.symbol.removeprefix("xc")
 
     def planks(self, amount: int | float) -> int:
-        return amount * 10**self.precision
+        return amount * 10 ** self.precision
 
     def full_chain_asset_id(self) -> Tuple[str, int]:
         return self.chain.chainId, self.id

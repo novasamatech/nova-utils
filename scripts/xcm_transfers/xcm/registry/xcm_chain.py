@@ -7,7 +7,8 @@ from substrateinterface import SubstrateInterface
 from scripts.utils.chain_model import Chain
 from scripts.xcm_transfers.xcm.multi_location import GlobalMultiLocation
 from scripts.xcm_transfers.xcm.versioned_xcm import VerionsedXcm
-from scripts.xcm_transfers.xcm.versioned_xcm_builder import parachain_junction, multi_location, account_junction
+from scripts.xcm_transfers.xcm.versioned_xcm_builder import parachain_junction, multi_location, account_junction, \
+    multi_location_from
 
 T = TypeVar('T')
 
@@ -29,14 +30,9 @@ class XcmChain:
         return self.chain.access_substrate(action)
 
     def sibling_location_of(self, destination_chain: XcmChain) -> VerionsedXcm:
-        parents = 1 if self.parachain_id is not None else 0
+        relative_location = destination_chain.global_location().reanchor(self.global_location())
 
-        junctions = []
-
-        if destination_chain.parachain_id is not None:
-            junctions.append(parachain_junction(destination_chain.parachain_id))
-
-        return multi_location(parents=parents, junctions=junctions)
+        return multi_location_from(relative_location)
 
     def global_location(self, ) -> GlobalMultiLocation:
         if self.parachain_id is not None:

@@ -1,4 +1,4 @@
-from typing import Callable, List, Iterator
+from typing import List, Iterator
 
 from scripts.xcm_transfers.xcm.registry.xcm_registry import XcmRegistry
 from scripts.xcm_transfers.xcm.xcm_transfer_direction import XcmTransferDirection

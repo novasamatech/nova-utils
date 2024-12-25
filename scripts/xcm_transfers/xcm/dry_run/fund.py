@@ -1,7 +1,8 @@
 from scalecodec import GenericCall
 from substrateinterface import SubstrateInterface
 
-from scripts.utils.chain_model import StatemineAssetType, OrmlAssetType, ChainAsset, NativeAssetType
+from scripts.utils.chain_model import StatemineAssetType, OrmlAssetType, ChainAsset, NativeAssetType, \
+    UnsupportedAssetType
 from scripts.xcm_transfers.utils.account_id import multi_address
 from scripts.xcm_transfers.xcm.dry_run.dispatch_as import compose_dispatch_as
 from scripts.xcm_transfers.xcm.dry_run.origins import signed_origin

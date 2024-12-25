@@ -87,17 +87,6 @@ def _search_for_error_in_events(chain: XcmChain, events: List) -> str | None:
     return None
 
 
-def _extract_destination_asset(xcm_message: List[dict]) -> dict:
-    first_instruction = xcm_message[0]
-
-    if "ReceiveTeleportedAsset" in first_instruction:
-        return first_instruction["ReceiveTeleportedAsset"][0]
-    elif "ReserveAssetDeposited" in first_instruction:
-        return first_instruction["ReserveAssetDeposited"][0]
-
-    raise Exception("Found no destination assets")
-
-
 def _extract_final_beneficiary_from_program(program: VerionsedXcm) -> str | None:
     for instruction in program.unversioned:
         from_instruction = _extract_final_beneficiary_from_instruction(instruction)
