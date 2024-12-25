@@ -86,7 +86,6 @@ def compose_fund_call(
             return compose_assets_fund(substrate, chain, statemineType, account, amount_planks)
         case OrmlAssetType() as ormlType:
             return compose_orml_fund(substrate, chain, ormlType, account, amount_planks)
-
         case UnsupportedAssetType():
             raise Exception("Unsupported asset type")
 

@@ -3,6 +3,7 @@ from typing import List
 from scripts.xcm_transfers.utils.account_id import decode_account_id
 from scripts.xcm_transfers.utils.log import debug_log
 from scripts.xcm_transfers.xcm.dry_run.errors import extract_dispatch_error_message
+from scripts.xcm_transfers.xcm.dry_run.events.base import find_event, find_events
 from scripts.xcm_transfers.xcm.registry.xcm_chain import XcmChain
 from scripts.xcm_transfers.xcm.versioned_xcm import VerionsedXcm
 from scripts.xcm_transfers.xcm.versioned_xcm_builder import xcm_program
@@ -15,13 +16,6 @@ class XcmSentEvent:
         self._attributes = event_data["attributes"]
         self.sent_message = xcm_program(self._attributes["message"])
 
-
-def find_event(events: List, event_module: str, event_name: str) -> dict | None:
-    matching_events = find_events(events, event_module, event_name)
-    return next(iter(matching_events), None)
-
-def find_events(events: List, event_module: str, event_name: str) -> List[dict]:
-    return [event for event in events if event["module_id"] == event_module and event["event_id"] == event_name]
 
 def find_sent_xcm(
         origin: XcmChain,

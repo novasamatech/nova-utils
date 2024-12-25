@@ -4,7 +4,7 @@ from scalecodec import GenericCall, GenericEvent
 
 from scripts.xcm_transfers.xcm.dry_run.errors import is_xcm_run_error, handle_xcm_run_error_execution_result, \
     is_call_run_error, handle_call_run_error_execution_result
-from scripts.xcm_transfers.xcm.dry_run.events import find_sent_xcm
+from scripts.xcm_transfers.xcm.dry_run.events.xcm import find_sent_xcm
 from scripts.xcm_transfers.xcm.registry.xcm_chain import XcmChain
 from scripts.xcm_transfers.xcm.versioned_xcm import VerionsedXcm
 
@@ -33,7 +33,7 @@ def dry_run_intermediate_xcm(
     return find_sent_xcm(chain, dry_run_effects, final_destination_account)
 
 # Returns emitted events if successful. Throws otherwise
-def dry_run_final_xcm(chain: XcmChain, xcm: VerionsedXcm, origin: VerionsedXcm) -> List[GenericEvent]:
+def dry_run_final_xcm(chain: XcmChain, xcm: VerionsedXcm, origin: VerionsedXcm) -> List[dict]:
     dry_run_effects = dry_run_xcm(chain, xcm, origin)
 
     return dry_run_effects["emitted_events"]

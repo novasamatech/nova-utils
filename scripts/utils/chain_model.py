@@ -133,7 +133,10 @@ class ChainAsset:
         return self.symbol.removeprefix("xc")
 
     def planks(self, amount: int | float) -> int:
-        return amount * 10 ** self.precision
+        return int(amount * 10 ** self.precision)
+
+    def amount(self, planks: int) -> float:
+        return planks / 10 ** self.precision
 
     def full_chain_asset_id(self) -> Tuple[str, int]:
         return self.chain.chainId, self.id

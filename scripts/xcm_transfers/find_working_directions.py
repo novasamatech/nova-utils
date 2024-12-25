@@ -1,13 +1,14 @@
 import json
 from collections import defaultdict
+from dataclasses import dataclass
 from typing import List
 
-from scripts.utils.chain_model import ChainAsset
 from scripts.utils.work_with_data import get_data_from_file, write_data_to_file
 from scripts.xcm_transfers.utils.xcm_config_files import XCMConfigFiles
-from scripts.xcm_transfers.xcm.dry_run.dry_run_transfer import TransferDryRunner
+from scripts.xcm_transfers.xcm.dry_run.dry_run_transfer import TransferDryRunner, DryRunTransferResult
 from scripts.xcm_transfers.xcm.graph.xcm_connectivity_graph import XcmChainConnectivityGraph
 from scripts.xcm_transfers.xcm.registry.xcm_registry_builder import build_polkadot_xcm_registry
+from scripts.xcm_transfers.xcm.xcm_transfer_direction import XcmTransferDirection
 
 config_files = XCMConfigFiles(
     chains="../../chains/v21/chains_dev.json",
@@ -27,7 +28,12 @@ failed = []
 
 dynamic_config: dict = get_data_from_file(config_files.xcm_dynamic_config)
 
-transfers_dict: dict[str, dict[int, List[ChainAsset]]] = defaultdict(lambda : defaultdict(list))
+@dataclass
+class WorkingDirection:
+    direction: XcmTransferDirection
+    dry_run_result: DryRunTransferResult
+
+transfers_dict: dict[str, dict[int, List[WorkingDirection]]] = defaultdict(lambda : defaultdict(list))
 
 dynamic_config.pop("chains", None)
 
@@ -37,13 +43,18 @@ def save_config():
     for chain_id, chain_transfers in transfers_dict.items():
         assets = []
 
-        for asset_id, destinations in chain_transfers.items():
+        for asset_id, working_directions in chain_transfers.items():
             asset_transfers = []
 
-            for destination in destinations:
+            for working_direction in working_directions:
+                origin_asset = working_direction.direction.origin_asset
+                destination_asset = working_direction.direction.destination_asset
+                execution_fee_in_origin_planks = origin_asset.planks(working_direction.dry_run_result.execution_fee)
+
                 destination_config = {
-                    "chainId": destination.chain.chainId,
-                    "assetId": destination.id,
+                    "chainId": destination_asset.chain.chainId,
+                    "assetId": destination_asset.id,
+                    "execution_fee": execution_fee_in_origin_planks
                 }
                 asset_transfers.append(destination_config)
 
@@ -67,12 +78,14 @@ def save_config():
 for idx, potential_direction in enumerate(potential_directions):
     try:
         print(f"{idx+1}/{len(potential_directions)}. Checking {potential_direction}")
-        transfers_runner.dry_run_transfer(potential_direction)
+        result = transfers_runner.dry_run_transfer(potential_direction)
         passed.append(potential_direction)
+
+        working_direction = WorkingDirection(potential_direction, result)
 
         chain_transfers = transfers_dict[potential_direction.origin_chain.chain.chainId]
         asset_transfers = chain_transfers[potential_direction.origin_asset.id]
-        asset_transfers.append(potential_direction.destination_asset)
+        asset_transfers.append(working_direction)
         save_config()
 
         print("Result: Success")

@@ -14,7 +14,7 @@ config_files = XCMConfigFiles(
 registry = build_polkadot_xcm_registry(config_files)
 
 origin_chain_name = "Polkadot"
-destination_chain_name = "Polkadot Asset Hub"
+destination_chain_name = "Bifrost Polkadot"
 origin_token = "DOT"
 destination_token = "DOT"
 

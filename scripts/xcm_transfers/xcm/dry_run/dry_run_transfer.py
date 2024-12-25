@@ -1,3 +1,5 @@
+from dataclasses import dataclass
+
 from scalecodec import GenericCall
 from substrateinterface import SubstrateInterface
 
@@ -5,6 +7,7 @@ from scripts.xcm_transfers.utils.fix_scale_codec import fix_scale_codec
 from scripts.xcm_transfers.xcm.dry_run.dry_run_api import dry_run_xcm_call, dry_run_final_xcm
 from scripts.xcm_transfers.utils.log import debug_log
 from scripts.xcm_transfers.xcm.dry_run.dry_run_api import dry_run_intermediate_xcm
+from scripts.xcm_transfers.xcm.dry_run.events.deposit import find_deposit_amount
 from scripts.xcm_transfers.xcm.dry_run.fund import fund_account_and_then
 from scripts.xcm_transfers.xcm.dry_run.origins import root_origin
 from scripts.xcm_transfers.xcm.registry.transfer_type import determine_transfer_type
@@ -24,7 +27,7 @@ class TransferDryRunner:
         fix_scale_codec()
 
     def dry_run_transfer(self, transfer_direction: XcmTransferDirection):
-        origin_chain, chain_asset, destination_chain = transfer_direction.origin_chain, transfer_direction.origin_asset, transfer_direction.destination_chain
+        origin_chain, chain_asset, destination_chain, destination_asset = transfer_direction.origin_chain, transfer_direction.origin_asset, transfer_direction.destination_chain, transfer_direction.destination_asset
 
         print(
             f"Dry running transfer of {chain_asset.symbol} from {origin_chain.chain.name} to {destination_chain.chain.name}")
@@ -101,10 +104,20 @@ class TransferDryRunner:
         debug_log("\n------------------\n")
 
         destination_events = dry_run_final_xcm(destination_chain, message_to_destination, origin_on_destination)
+        deposited_amount = find_deposit_amount(destination_events, destination_asset, recipient)
+        if deposited_amount is None:
+            raise Exception(f"Deposited amount was not found, final events: {destination_events}")
+
+        result = DryRunTransferResult(execution_fee=amount - deposited_amount)
 
         debug_log(
-            f"Transfer successfully finished on {destination_chain.chain.name}, final events: {destination_events}")
+            f"Transfer successfully finished on {destination_chain.chain.name}, result: {result}")
 
+        return result
+
+@dataclass
+class DryRunTransferResult:
+    execution_fee: float
 
 _substrate_account = "13mp1WEs72kbCBF3WKcoK6Hfhu2HHZGpQ4jsKCZbfd6FoRvH"
 _evm_account = "0x0c7485f4AA235347BDE0168A59f6c73C7A42ff2C"
