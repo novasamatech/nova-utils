@@ -44,7 +44,7 @@ venv:
 	$(VENV)/bin/poetry run pre-commit install
 
 requirements:
-	$(VENV)/bin/poetry install
+	$(VENV)/bin/poetry install --no-root
 	. .venv/bin/activate
 
 test-all: test-nodes-availability test-networks-precision test-network-chain-id test-network-prefix test-eth-availability test-new-assets test-nodes-synced test-calls-availability test-subquery-synced
