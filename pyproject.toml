@@ -5,6 +5,7 @@ description = "Config project for Nova Wallet"
 authors = ["Your Name <you@example.com>"]
 license = "apache 2.0"
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.10"
