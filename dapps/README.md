@@ -38,7 +38,7 @@
 |  34 | Kanaria                              | https://kanaria.rmrk.app/                           | nft                      |
 |  35 | Karura App (Desktop mode)            | https://apps.karura.network/                        | bridge,dex,staking       |
 |  36 | Kintsugi Hub                         | https://kintsugi.interlay.io/                       | bridge,staking           |
-|  37 | KodaDot                              | https://kodadot.xyz/                                | nft                      |
+|  37 | KodaDot                              | https://koda.art/                                | nft                      |
 |  38 | Litentry App                         | https://apps.litentry.com/                          | bridge,evm               |
 |  39 | MULTIX                               | https://multix.chainsafe.io/                        | utilities                |
 |  40 | MYTHical Forest                      | https://quests.mythical.games/                      | gaming,nft               |
