@@ -2526,7 +2526,7 @@
     {
         "chainId": "d43540ba6d3eb4897c28a77d48cb5b729fea37603cbbfc7a86a73b72adb3be8d",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Khala",
+        "name": "Khala (PAUSED)",
         "assets": [
             {
                 "assetId": 0,
@@ -7759,39 +7759,6 @@
         ],
         "additional": {
             "supportsGenericLedgerApp": true
-        }
-    },
-    {
-        "chainId": "d42e9606a995dfe433dc7955dc2a70f495f350f373daa200098ae84437816ad2",
-        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Tinkernet",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "TNKR",
-                "precision": 12,
-                "icon": "TNKR.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://tinkernet-rpc.dwellir.com",
-                "name": "Dwellir node"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-tinkernet"
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Tinkernet.svg",
-        "addressPrefix": 117,
-        "additional": {
-            "feeViaRuntimeCall": true,
-            "disabledCheckMetadataHash": true
         }
     },
     {
