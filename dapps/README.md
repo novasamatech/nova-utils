@@ -80,9 +80,8 @@
 |  76 | Taostats                             | https://delegate.taostats.io/                       | staking                  |
 |  77 | Tensor Wallet                        | https://tensorwallet.ca/                            | utilities,staking        |
 |  78 | Ternoa HUB                           | https://hub.ternoa.network/                         | staking                  |
-|  79 | Tinkernet Dashboard                  | https://www.tinker.network/overview                 | staking,bridge           |
-|  80 | TofuNFT                              | https://tofunft.com/                                | nft,evm                  |
-|  81 | Zeitgeist                            | https://app.zeitgeist.pm/                           | utilities                |
-|  82 | Zenlink                              | https://app.zenlink.pro                             | dex,staking              |
-|  83 | cBRIDGE                              | https://cbridge.celer.network/                      | dex,evm,nft              |
-|  84 | xx network Hub                       | https://hub.xx.network/                             | social,staking,utilities |
+|  79 | TofuNFT                              | https://tofunft.com/                                | nft,evm                  |
+|  80 | Zeitgeist                            | https://app.zeitgeist.pm/                           | utilities                |
+|  81 | Zenlink                              | https://app.zenlink.pro                             | dex,staking              |
+|  82 | cBRIDGE                              | https://cbridge.celer.network/                      | dex,evm,nft              |
+|  83 | xx network Hub                       | https://hub.xx.network/                             | social,staking,utilities |
