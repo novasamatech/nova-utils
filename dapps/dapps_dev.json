@@ -60,25 +60,9 @@
       ]
     },
     {
-      "name": "dotappstore",
-      "url": "https://dotappstore.com/",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/ece2fff5cd559119395642f7f0aea6cd4d333af7/icons/dapps/color/dotappstore.svg",
-      "categories": [
-        "utilities"
-      ]
-    },
-    {
       "name": "Singular",
       "url": "https://singular.app/",
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Singular_2.0.svg",
-      "categories": [
-        "art"
-      ]
-    },
-    {
-      "name": "Kanaria",
-      "url": "https://kanaria.rmrk.app/",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Kanaria.svg",
       "categories": [
         "art"
       ]
@@ -96,9 +80,7 @@
       "url": "https://portal.astar.network/",
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Astar.png",
       "categories": [
-        "bridge",
-        "staking",
-        "evm"
+        "staking"
       ]
     },
     {
@@ -144,10 +126,9 @@
     {
       "name": "Parallel Finance App",
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/color/Parallel-Heiko.svg",
-      "url": "https://app.parallel.fi/parallel/apps/wallet",
+      "url": "https://app-polkadot.parallel.fi",
       "categories": [
-        "bridge",
-        "dex"
+        "utilities"
       ]
     },
     {
@@ -180,8 +161,6 @@
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/color/Karura.svg",
       "url": "https://apps.karura.network/",
       "categories": [
-        "bridge",
-        "dex",
         "staking"
       ],
       "desktopOnly": true
@@ -212,45 +191,12 @@
       ]
     },
     {
-      "name": "Moonbeam",
+      "name": "Moonbeam App",
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/moonbeam.svg",
       "url": "https://apps.moonbeam.network/moonbeam",
       "categories": [
-        "bridge",
         "staking",
-        "evm"
-      ]
-    },
-    {
-      "name": "Moonriver",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/moonriver.svg",
-      "url": "https://apps.moonbeam.network/moonriver",
-      "categories": [
-        "bridge",
-        "staking",
-        "evm"
-      ]
-    },
-    {
-      "name": "Solarflare",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Solarflare.png",
-      "url": "https://app.solarflare.io/exchange/swap",
-      "categories": [
-        "bridge",
-        "dex",
-        "staking",
-        "evm"
-      ]
-    },
-    {
-      "name": "Solarbeam",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Solarbeam.png",
-      "url": "https://app.solarbeam.io/exchange/swap",
-      "categories": [
-        "bridge",
-        "dex",
-        "staking",
-        "evm"
+        "utilities"
       ]
     },
     {
@@ -258,9 +204,7 @@
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Beamswap.svg",
       "url": "https://app.beamswap.io/exchange/braindex",
       "categories": [
-        "bridge",
         "dex",
-        "staking",
         "evm"
       ]
     },
@@ -271,72 +215,6 @@
       "categories": [
         "bridge",
         "dex",
-        "staking",
-        "evm"
-      ]
-    },
-    {
-      "name": "Impossible Finance",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/ImpossibleFinance.svg",
-      "url": "https://app.impossible.finance/explore",
-      "categories": [
-        "dex",
-        "evm"
-      ]
-    },
-    {
-      "name": "Huckleberry Finance",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Huckleberry.svg",
-      "url": "https://www.huckleberry.finance/#/swap",
-      "categories": [
-        "bridge",
-        "dex",
-        "staking",
-        "evm"
-      ]
-    },
-    {
-      "name": "MyTrade",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/MyTrade.svg",
-      "url": "https://mytrade.org/",
-      "categories": [
-        "dex",
-        "staking",
-        "evm"
-      ]
-    },
-    {
-      "name": "Kintsugi TESTNET",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/color/Kintsugi.svg",
-      "url": "https://bridge.interlay.io/bridge?tab=issue",
-      "categories": [
-        "test"
-      ]
-    },
-    {
-      "name": "Singular",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Singular_2.0.svg",
-      "url": "https://singular-rmrk2-dev.vercel.app/",
-      "categories": [
-        "test"
-      ]
-    },
-    {
-      "name": "DappRadar",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/DappRadar.svg",
-      "url": "https://dappradar.com/",
-      "categories": [
-        "social"
-      ]
-    },
-    {
-      "name": "PolkaEx",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/PolkaEx.svg",
-      "url": "https://app.polkaex.io/swap",
-      "categories": [
-        "bridge",
-        "dex",
-        "staking",
         "evm"
       ]
     },
@@ -346,16 +224,7 @@
       "url": "https://www.tinker.network/overview",
       "categories": [
         "staking",
-        "bridge"
-      ]
-    },
-    {
-      "name": "TofuNFT",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/TofuNFT.svg",
-      "url": "https://tofunft.com/",
-      "categories": [
-        "art",
-        "evm"
+        "utilities"
       ]
     },
     {
@@ -364,7 +233,6 @@
       "url": "https://app.arthswap.org/#/swap",
       "categories": [
         "dex",
-        "staking",
         "evm"
       ]
     },
@@ -374,14 +242,13 @@
       "url": "https://cbridge.celer.network/",
       "categories": [
         "dex",
-        "evm",
-        "art"
+        "evm"
       ]
     },
     {
       "name": "XDAO",
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/XDAO.svg",
-      "url": "https://www.xdao.app/137",
+      "url": "https://www.xdao.app/1284",
       "categories": [
         "bridge",
         "dex",
@@ -389,31 +256,11 @@
       ]
     },
     {
-      "name": "SiriusFinance",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/SiriusFinance.svg",
-      "url": "https://app.sirius.finance/#/swap",
-      "categories": [
-        "dex",
-        "staking",
-        "evm"
-      ]
-    },
-    {
-      "name": "Moonwell",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Moonwell.svg",
-      "url": "https://moonwell.fi/discover",
-      "categories": [
-        "bridge",
-        "staking",
-        "evm"
-      ]
-    },
-    {
-      "name": "Darwinia App",
+      "name": "Darwinia Portal",
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Darwinia.svg",
       "url": "https://apps.darwinia.network/",
       "categories": [
-        "staking"
+        "utilities"
       ]
     },
     {
@@ -430,7 +277,6 @@
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Skybreach.png",
       "url": "https://skybreach.app/",
       "categories": [
-        "art",
         "evm",
         "gaming"
       ]
@@ -444,30 +290,12 @@
       ]
     },
     {
-      "name": "Damned Pirates Society",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Damnedpiratessociety.svg",
-      "url": "https://damnedpiratessociety.io/",
-      "categories": [
-        "art",
-        "evm",
-        "gaming"
-      ]
-    },
-    {
       "name": "Polkadot Staking Dashboard",
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/StakingDashboard.svg",
       "url": "https://staking.polkadot.cloud/#/overview",
       "categories": [
         "staking",
         "utilities"
-      ]
-    },
-    {
-      "name": "Polkadot Staking Pools",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/StakingDashboard.svg",
-      "url": "https://staking.polkadot.network/#/pools",
-      "categories": [
-        "staking"
       ]
     },
     {
@@ -480,49 +308,12 @@
       ]
     },
     {
-      "name": "Downtown Moonbeam",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/DowntownMoonbeam.png",
-      "url": "https://www.dtmb.xyz/",
-      "categories": [
-        "evm",
-        "social"
-      ]
-    },
-    {
-      "name": "Evolution Land. Columbus",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Evolutionland.png",
-      "url": "https://portal.evolution.land/land/3/market/land",
-      "categories": [
-        "art",
-        "evm",
-        "gaming"
-      ]
-    },
-    {
       "name": "Basilisk Snek Swap",
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/SnekSwap.svg",
-      "url": "https://app.basilisk.cloud/",
+      "url": "https://app.basilisk.cloud/trade",
       "categories": [
         "bridge",
         "dex"
-      ]
-    },
-    {
-      "name": "Moonbeam Curve",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/MoonbeamCurve.svg",
-      "url": "https://moonbeam.curve.fi/",
-      "categories": [
-        "dex",
-        "evm"
-      ]
-    },
-    {
-      "name": "Nomad",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Nomad.svg",
-      "url": "https://app.nomad.xyz/",
-      "categories": [
-        "bridge",
-        "evm"
       ]
     },
     {
