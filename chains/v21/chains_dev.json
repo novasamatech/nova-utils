@@ -7762,39 +7762,6 @@
         }
     },
     {
-        "chainId": "d42e9606a995dfe433dc7955dc2a70f495f350f373daa200098ae84437816ad2",
-        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Tinkernet",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "TNKR",
-                "precision": 12,
-                "icon": "TNKR.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://tinkernet-rpc.dwellir.com",
-                "name": "Dwellir node"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-tinkernet"
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Tinkernet.svg",
-        "addressPrefix": 117,
-        "additional": {
-            "feeViaRuntimeCall": true,
-            "disabledCheckMetadataHash": true
-        }
-    },
-    {
         "chainId": "cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Amplitude",

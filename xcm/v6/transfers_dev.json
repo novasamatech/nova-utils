@@ -239,20 +239,6 @@
         "instructions": "xtokensReserve"
       }
     },
-    "TNKR": {
-      "chainId": "d42e9606a995dfe433dc7955dc2a70f495f350f373daa200098ae84437816ad2",
-      "multiLocation": {
-        "parachainId": 2125,
-        "generalIndex": "0"
-      },
-      "reserveFee": {
-        "mode": {
-          "type": "proportional",
-          "value": "803768064687254"
-        },
-        "instructions": "xtokensReserve"
-      }
-    },
     "USDT-Statemine": {
       "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
       "multiLocation": {
@@ -677,7 +663,6 @@
     "a85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755": "100000000",
     "e143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e": "1000000000",
     "67f9723393ef76214df0118c34bbbd3dbebc8ed46a10973a8c969d48fe7598c9": "1000000000",
-    "d42e9606a995dfe433dc7955dc2a70f495f350f373daa200098ae84437816ad2": "100000000",
     "262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b": "200000000",
     "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d": "100000000",
     "631ccc82a078481584041656af292834e1ae6daab61d2875b4dd0c14bb9b17bc": "1000000000",
@@ -5647,29 +5632,6 @@
           ]
         },
         {
-          "assetId": 3,
-          "assetLocation": "TNKR",
-          "assetLocationPath": {
-            "type": "absolute"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "d42e9606a995dfe433dc7955dc2a70f495f350f373daa200098ae84437816ad2",
-                "assetId": 0,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "803768064687254"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            }
-          ]
-        },
-        {
           "assetId": 4,
           "assetLocation": "USDT-Statemine",
           "assetLocationPath": {
@@ -5782,34 +5744,6 @@
                 }
               },
               "type": "xcmpallet-teleport"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "chainId": "d42e9606a995dfe433dc7955dc2a70f495f350f373daa200098ae84437816ad2",
-      "assets": [
-        {
-          "assetId": 0,
-          "assetLocation": "TNKR",
-          "assetLocationPath": {
-            "type": "absolute"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "a85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755",
-                "assetId": 3,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "128546741605299"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
             }
           ]
         }
