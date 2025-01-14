@@ -7508,6 +7508,34 @@
         }
     },
     {
+        "chainId": "15f6788bcf1d1a3b7e1c36074584e1a3f3d07e0a46e362a102c3c3df1a93669f",
+        "name": "Muse Testnet",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "MUSE",
+                "staking": [
+                    "mythos"
+                ],
+                "precision": 18
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://paseo-muse-rpc.polkadot.io",
+                "name": "Muse node"
+            }
+        ],
+        "addressPrefix": 29972,
+        "options": [
+            "testnet",
+            "ethereumBased"
+        ],
+        "additional": {
+            "feeViaRuntimeCall": true
+        }
+    },
+    {
         "chainId": "e1ea3ab1d46ba8f4898b6b4b9c54ffc05282d299f89e84bd0fd08067758c9443",
         "name": "Moonbase Relay Testnet",
         "assets": [
