@@ -196,7 +196,8 @@
       "url": "https://apps.moonbeam.network/moonbeam",
       "categories": [
         "staking",
-        "utilities"
+        "utilities",
+        "evm"
       ]
     },
     {
@@ -277,7 +278,7 @@
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Polkawatch.svg",
       "url": "https://polkawatch.app/",
       "categories": [
-        "staking"
+        "utilities"
       ]
     },
     {
@@ -312,7 +313,8 @@
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Raresama.svg",
       "url": "https://raresama.com/",
       "categories": [
-        "art"
+        "art",
+        "evm"
       ]
     },
     {
@@ -357,17 +359,7 @@
       "url": "https://app.interlay.io/",
       "categories": [
         "bridge",
-        "staking",
-        "dex"
-      ]
-    },
-    {
-      "name": "Litentry App",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Litentry.svg",
-      "url": "https://apps.litentry.com/",
-      "categories": [
-        "bridge",
-        "evm"
+        "staking"
       ]
     },
     {
@@ -375,8 +367,6 @@
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/xx.svg",
       "url": "https://hub.xx.network/",
       "categories": [
-        "social",
-        "staking",
         "utilities"
       ]
     },
@@ -385,8 +375,6 @@
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Acala.png",
       "url": "https://apps.acala.network/",
       "categories": [
-        "bridge",
-        "dex",
         "staking"
       ],
       "desktopOnly": true
@@ -396,7 +384,7 @@
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/MangataX.svg",
       "url": "https://app.mangata.finance/",
       "categories": [
-        "bridge"
+        "staking"
       ],
       "desktopOnly": true
     },
@@ -405,31 +393,8 @@
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Zenlink.svg",
       "url": "https://app.zenlink.pro",
       "categories": [
-        "dex",
-        "staking"
+        "dex"
       ]
-    },
-    {
-      "name": "Gensiro (Desktop mode)",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Genshiro.svg",
-      "url": "https://genshiro.equilibrium.io/gateway/en/market",
-      "categories": [
-        "dex",
-        "staking",
-        "test"
-      ],
-      "desktopOnly": true
-    },
-    {
-      "name": "Equilibrium (Desktop mode)",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Equilibrium.svg",
-      "url": "https://app.equilibrium.io/",
-      "categories": [
-        "dex",
-        "staking",
-        "test"
-      ],
-      "desktopOnly": true
     },
     {
       "name": "Hydration",
@@ -437,15 +402,8 @@
       "url": "https://app.hydration.net/NOVA",
       "categories": [
         "bridge",
-        "dex"
-      ]
-    },
-    {
-      "name": "PABLO",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Pablo.svg",
-      "url": "https://app.pablo.finance/",
-      "categories": [
-        "dex"
+        "dex",
+        "staking"
       ]
     },
     {
@@ -453,8 +411,7 @@
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/secret_stash.png",
       "url": "https://secret-stash.io/",
       "categories": [
-        "art",
-        "utilities"
+        "art"
       ]
     },
     {
@@ -505,7 +462,7 @@
     {
       "name": "AZERO.ID",
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/AzeroID.svg",
-      "url": "https://azero.id/",
+      "url": "https://azero.id/dashboard",
       "categories": [
         "utilities"
       ]
@@ -515,7 +472,8 @@
       "url": "https://omni.ls/",
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/OmniLS.svg",
       "categories": [
-        "staking"
+        "staking",
+        "evm"
       ]
     },
     {
@@ -547,7 +505,7 @@
       "url": "https://portal.invarch.network/",
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/InvArch.svg",
       "categories": [
-        "governance"
+        "staking"
       ]
     },
     {
@@ -559,13 +517,11 @@
       ]
     },
     {
-      "name": "Capital DEX",
-      "url": "https://capitaldex.exchange/swap",
+      "name": "Capital Curio",
+      "url": "https://capitaldex.exchange/staking",
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/CapitalDEX.svg",
       "categories": [
-        "dex",
-        "staking",
-        "evm"
+        "staking"
       ]
     },
     {
@@ -574,16 +530,7 @@
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Polymesh.png",
       "categories": [
         "utilities",
-        "staking",
-        "art"
-      ]
-    },
-    {
-      "name": "Acurast Console",
-      "url": "https://console.acurast.com/",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/cACU.svg",
-      "categories": [
-        "utilities"
+        "staking"
       ]
     },
     {
@@ -603,28 +550,11 @@
       ]
     },
     {
-      "name": "MYTHical Forest",
-      "url": "https://quests.mythical.games/",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/MythicalGames.svg",
-      "categories": [
-        "gaming",
-        "art"
-      ]
-    },
-    {
       "name": "Mentat Minds",
       "url": "https://mentatminds.com/delegate/",
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/MentatMinds.svg",
       "categories": [
         "staking"
-      ]
-    },
-    {
-      "name": "Mythos Claim",
-      "url": "https://airdrop.mythos.foundation/",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/MYTH.svg",
-      "categories": [
-        "utilities"
       ]
     },
     {
