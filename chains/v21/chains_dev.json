@@ -7622,16 +7622,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc-parachain.bajun.network",
+                "url": "wss://rpc-para.bajun.network",
                 "name": "AjunaNetwork node"
-            },
-            {
-                "url": "wss://bajun.public.curie.radiumblock.co/ws",
-                "name": "Radium node"
-            },
-            {
-                "url": "wss://bajun.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -11732,7 +11724,7 @@
             {
                 "name": "LAOS explorer",
                 "account": "https://explorer.laosnetwork.io/address/{address}",
-                "event": "https://explorer.laosnetwork.io/tx/{hash}"
+                "extrinsic": "https://explorer.laosnetwork.io/tx/{hash}"
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/LAOS.svg",
@@ -11890,6 +11882,46 @@
         "addressPrefix": 42,
         "options": [
             "testnet"
+        ]
+    },
+    {
+        "chainId": "44f68476df71ebf765b630bf08dc1e0fedb2bf614a1aa0563b3f74f20e47b3e0",
+        "name": "Tangle",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "TNT",
+                "precision": 18,
+                "priceId": "tangle-network",
+                "icon": "TNT.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc.tangle.tools",
+                "name": "Parity node"
+            },
+            {
+                "url": "wss://tangle-mainnet-rpc.dwellir.com",
+                "name": "Dwellir node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Statescan",
+                "account": "https://tangle.statescan.io/#/accounts/{address}",
+                "event": "https://tangle.statescan.io/#/events/{event}"
+            },
+            {
+                "name": "EVM Explorer",
+                "account": "https://explorer.tangle.tools/address/{address}",
+                "extrinsic": "https://explorer.tangle.tools/tx/{hash}"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Tangle.svg",
+        "addressPrefix": 5845,
+        "options": [
+            "ethereumBased"
         ]
     }
 ]

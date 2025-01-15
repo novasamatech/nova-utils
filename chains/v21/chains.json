@@ -6936,16 +6936,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc-parachain.bajun.network",
+                "url": "wss://rpc-para.bajun.network",
                 "name": "AjunaNetwork node"
-            },
-            {
-                "url": "wss://bajun.public.curie.radiumblock.co/ws",
-                "name": "Radium node"
-            },
-            {
-                "url": "wss://bajun.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -9507,7 +9499,7 @@
             {
                 "name": "LAOS explorer",
                 "account": "https://explorer.laosnetwork.io/address/{address}",
-                "event": "https://explorer.laosnetwork.io/tx/{hash}"
+                "extrinsic": "https://explorer.laosnetwork.io/tx/{hash}"
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/LAOS.svg",
