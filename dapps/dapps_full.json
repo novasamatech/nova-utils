@@ -1,40 +1,49 @@
 {
   "categories": [
     {
-      "name": "Bridge",
-      "id": "bridge"
-    },
-    {
-      "name": "DEX",
-      "id": "dex"
-    },
-    {
-      "name": "EVM",
-      "id": "evm"
-    },
-    {
-      "name": "Gaming",
-      "id": "gaming"
-    },
-    {
-      "name": "Governance",
-      "id": "governance"
-    },
-    {
-      "name": "NFT",
-      "id": "nft"
-    },
-    {
-      "name": "Social",
-      "id": "social"
-    },
-    {
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/categories/color/Staking.svg",
       "name": "Staking",
       "id": "staking"
     },
     {
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/categories/color/Dex.svg",
+      "name": "DEX",
+      "id": "dex"
+    },
+    {
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/categories/color/Bridge.svg",
+      "name": "Bridge",
+      "id": "bridge"
+    },
+    {
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/categories/color/Governance.svg",
+      "name": "Governance",
+      "id": "governance"
+    },
+    {
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/categories/color/Art.svg",
+      "name": "Art",
+      "id": "art"
+    },
+    {
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/categories/color/Gaming.svg",
+      "name": "Gaming",
+      "id": "gaming"
+    },
+    {
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/categories/color/Social.svg",
+      "name": "Social",
+      "id": "social"
+    },
+    {
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/categories/color/Utilities.svg",
       "name": "Utilities",
       "id": "utilities"
+    },
+    {
+      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/categories/color/Evm.svg",
+      "name": "EVM",
+      "id": "evm"
     }
   ],
   "dapps": [
@@ -43,7 +52,7 @@
       "url": "https://singular.app/",
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Singular_2.0.svg",
       "categories": [
-        "nft"
+        "art"
       ]
     },
     {
@@ -51,7 +60,7 @@
       "url": "https://singular.rmrk.app/",
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Singular.svg",
       "categories": [
-        "nft"
+        "art"
       ]
     },
     {
@@ -59,7 +68,7 @@
       "url": "https://kanaria.rmrk.app/",
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Kanaria.svg",
       "categories": [
-        "nft"
+        "art"
       ]
     },
     {
@@ -109,7 +118,7 @@
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/KodaDot.svg",
       "url": "https://kodadot.xyz/",
       "categories": [
-        "nft"
+        "art"
       ]
     },
     {
@@ -257,15 +266,6 @@
       ]
     },
     {
-      "name": "TofuNFT",
-      "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/TofuNFT.svg",
-      "url": "https://tofunft.com/",
-      "categories": [
-        "nft",
-        "evm"
-      ]
-    },
-    {
       "name": "Subsquare",
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/color/SubSquare.svg",
       "url": "https://polkadot.subsquare.io/",
@@ -290,7 +290,7 @@
       "categories": [
         "dex",
         "evm",
-        "nft"
+        "art"
       ]
     },
     {
@@ -317,7 +317,7 @@
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Skybreach.png",
       "url": "https://skybreach.app/",
       "categories": [
-        "nft",
+        "art",
         "evm",
         "gaming"
       ]
@@ -335,7 +335,7 @@
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Damnedpiratessociety.svg",
       "url": "https://damnedpiratessociety.io/",
       "categories": [
-        "nft",
+        "art",
         "evm",
         "gaming"
       ]
@@ -354,7 +354,7 @@
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Moonsama.svg",
       "url": "https://marketplace.moonsama.com/",
       "categories": [
-        "nft",
+        "art",
         "evm"
       ]
     },
@@ -380,7 +380,7 @@
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Evolutionland.png",
       "url": "https://portal.evolution.land/land/3/market/land",
       "categories": [
-        "nft",
+        "art",
         "evm",
         "gaming"
       ]
@@ -399,7 +399,7 @@
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Raresama.svg",
       "url": "https://raresama.com/",
       "categories": [
-        "nft"
+        "art"
       ]
     },
     {
@@ -407,7 +407,7 @@
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Bit.Country.svg",
       "url": "https://pioneer.bit.country/",
       "categories": [
-        "nft",
+        "art",
         "staking",
         "gaming"
       ]
@@ -425,7 +425,7 @@
       "url": "https://www.proofofchaos.app/",
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Proof_of_Chaos.png",
       "categories": [
-        "nft",
+        "art",
         "governance"
       ]
     },
@@ -538,7 +538,7 @@
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/secret_stash.png",
       "url": "https://secret-stash.io/",
       "categories": [
-        "nft",
+        "art",
         "utilities"
       ]
     },
@@ -572,7 +572,7 @@
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/AwesomeAjunaAvatars.svg",
       "url": "https://aaa.ajuna.io/",
       "categories": [
-        "nft",
+        "art",
         "gaming"
       ],
       "desktopOnly": true
@@ -667,7 +667,7 @@
       "categories": [
         "utilities",
         "staking",
-        "nft"
+        "art"
       ]
     },
     {
@@ -699,7 +699,7 @@
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/BigBallzOfBajun.png",
       "url": "https://bbb.ajuna.io/",
       "categories": [
-        "nft",
+        "art",
         "gaming"
       ]
     },
@@ -709,7 +709,7 @@
       "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/MythicalGames.svg",
       "categories": [
         "gaming",
-        "nft"
+        "art"
       ]
     },
     {
