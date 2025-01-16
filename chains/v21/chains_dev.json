@@ -11911,17 +11911,9 @@
                 "name": "Statescan",
                 "account": "https://tangle.statescan.io/#/accounts/{address}",
                 "event": "https://tangle.statescan.io/#/events/{event}"
-            },
-            {
-                "name": "EVM Explorer",
-                "account": "https://explorer.tangle.tools/address/{address}",
-                "extrinsic": "https://explorer.tangle.tools/tx/{hash}"
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Tangle.svg",
-        "addressPrefix": 5845,
-        "options": [
-            "ethereumBased"
-        ]
+        "addressPrefix": 5845
     }
 ]
