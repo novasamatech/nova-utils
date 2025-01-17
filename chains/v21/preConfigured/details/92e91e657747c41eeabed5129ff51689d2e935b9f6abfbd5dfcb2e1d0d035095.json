@@ -1,0 +1,19 @@
+{
+    "chainId": "92e91e657747c41eeabed5129ff51689d2e935b9f6abfbd5dfcb2e1d0d035095",
+    "name": "Subspace Gemini 3f (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "tSSC",
+            "precision": 18,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc-1.gemini-3f.subspace.network/ws",
+            "name": "Europe"
+        }
+    ],
+    "addressPrefix": 2254
+}

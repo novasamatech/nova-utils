@@ -1,0 +1,27 @@
+{
+    "chainId": "e6c30d6e148f250b887105237bcaa5cb9f16dd203bf7b5b9d4f1da7387cb86ec",
+    "name": "Paseo People (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "PAS",
+            "precision": 10,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://people-paseo.rpc.amforc.com",
+            "name": "Amforc"
+        },
+        {
+            "url": "wss://sys.ibp.network/people-paseo",
+            "name": "IBP1"
+        },
+        {
+            "url": "wss://people-paseo.dotters.network",
+            "name": "IBP2"
+        }
+    ],
+    "addressPrefix": 0
+}

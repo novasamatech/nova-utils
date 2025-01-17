@@ -1,0 +1,23 @@
+{
+    "chainId": "295aeafca762a304d92ee1505548695091f6082d3f0aa4d092ac3cd6397a6c5e",
+    "name": "Autonomys Taurus Testnet (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "tAI3",
+            "precision": 18,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc-0.taurus.subspace.network/ws",
+            "name": "Labs 1"
+        },
+        {
+            "url": "wss://rpc-1.taurus.subspace.network/ws",
+            "name": "Labs 2"
+        }
+    ],
+    "addressPrefix": 6094
+}

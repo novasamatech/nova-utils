@@ -75,10 +75,6 @@
             {
                 "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
                 "contractAddress": "0xA649325Aa7C5093d12D6F98EB4378deAe68CE23F"
-            },
-            {
-                "chainId": "eip155:1",
-                "contractAddress": "0x4fabb145d64652a948d72533023f6e7a623c7c53"
             }
         ]
     },
@@ -202,7 +198,7 @@
         "precision": 18,
         "name": "Wrapped GLMR",
         "priceId": "wrapped-moonbeam",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Moonbeam.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/GLMR.svg",
         "instances": [
             {
                 "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
@@ -291,7 +287,7 @@
         "symbol": "WMOVR",
         "precision": 18,
         "name": "Wrapped MOVR",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Moonriver.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/MOVR.svg",
         "instances": [
             {
                 "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
@@ -425,19 +421,6 @@
         ]
     },
     {
-        "symbol": "HEX",
-        "precision": 8,
-        "name": "Hex",
-        "priceId": "hex",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/HEX.svg",
-        "instances": [
-            {
-                "chainId": "eip155:1",
-                "contractAddress": "0x2b591e99afe9f32eaa6214f7b7629768c40eeb39"
-            }
-        ]
-    },
-    {
         "symbol": "stETH",
         "precision": 18,
         "name": "Lido Staked Ether",
@@ -538,10 +521,6 @@
             {
                 "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
                 "contractAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3"
-            },
-            {
-                "chainId": "eip155:1",
-                "contractAddress": "0x524d524B4c9366be706D3A90dcf70076ca037aE3"
             }
         ]
     },
@@ -558,19 +537,6 @@
         ]
     },
     {
-        "symbol": "SAMA",
-        "precision": 18,
-        "name": "SAMA",
-        "priceId": "exosama-network",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/MOONSAMA.svg",
-        "instances": [
-            {
-                "chainId": "eip155:1",
-                "contractAddress": "0xE04F47FF45576249bc5083DFDf987e03d0550113"
-            }
-        ]
-    },
-    {
         "symbol": "MYTH",
         "precision": 18,
         "name": "MYTH",
@@ -580,6 +546,19 @@
             {
                 "chainId": "eip155:1",
                 "contractAddress": "0xBA41Ddf06B7fFD89D1267b5A93BFeF2424eb2003"
+            }
+        ]
+    },
+    {
+        "symbol": "NODL",
+        "precision": 18,
+        "name": "Nodle token",
+        "priceId": "nodle-network",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Nodle.svg",
+        "instances": [
+            {
+                "chainId": "eip155:324",
+                "contractAddress": "0xBD4372e44c5eE654dd838304006E1f0f69983154"
             }
         ]
     }
