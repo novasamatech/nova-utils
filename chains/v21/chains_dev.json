@@ -3353,6 +3353,19 @@
                     "existentialDeposit": "1000000000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 16,
+                "symbol": "NEMO",
+                "precision": 18,
+                "type": "orml",
+                "icon": "Default.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x02fa904c86b73fd041d6cc2aeed9e6ec0148fd51da",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
@@ -4746,7 +4759,7 @@
                 "symbol": "DAMN",
                 "precision": 12,
                 "type": "statemine",
-                "icon": "Default.svg",
+                "icon": "DAMN.svg",
                 "typeExtras": {
                     "assetId": "22222012"
                 }
@@ -5953,7 +5966,7 @@
                 "symbol": "DAMN",
                 "precision": 12,
                 "type": "orml",
-                "icon": "Default.svg",
+                "icon": "DAMN.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x5e430f00",
                     "currencyIdType": "u32",
