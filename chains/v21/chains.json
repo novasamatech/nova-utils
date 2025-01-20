@@ -2650,7 +2650,7 @@
     {
         "chainId": "d43540ba6d3eb4897c28a77d48cb5b729fea37603cbbfc7a86a73b72adb3be8d",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Khala",
+        "name": "Khala (PAUSED)",
         "assets": [
             {
                 "assetId": 0,
@@ -6936,16 +6936,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc-parachain.bajun.network",
+                "url": "wss://rpc-para.bajun.network",
                 "name": "AjunaNetwork node"
-            },
-            {
-                "url": "wss://bajun.public.curie.radiumblock.co/ws",
-                "name": "Radium node"
-            },
-            {
-                "url": "wss://bajun.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -6996,39 +6988,6 @@
         "addressPrefix": 42,
         "additional": {
             "feeViaRuntimeCall": true
-        }
-    },
-    {
-        "chainId": "d42e9606a995dfe433dc7955dc2a70f495f350f373daa200098ae84437816ad2",
-        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Tinkernet",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "TNKR",
-                "precision": 12,
-                "icon": "TNKR.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://tinkernet-rpc.dwellir.com",
-                "name": "Dwellir node"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-tinkernet"
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Tinkernet.svg",
-        "addressPrefix": 117,
-        "additional": {
-            "feeViaRuntimeCall": true,
-            "disabledCheckMetadataHash": true
         }
     },
     {
@@ -7876,73 +7835,6 @@
         "additional": {
             "supportsGenericLedgerApp": true
         }
-    },
-    {
-        "chainId": "89d3ec46d2fb43ef5a9713833373d5ea666b092fa8fd68fbc34596036571b907",
-        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "Equilibrium (PAUSED)",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "EQ",
-                "precision": 9,
-                "priceId": "equilibrium-token",
-                "icon": "EQ.svg",
-                "type": "equilibrium",
-                "typeExtras": {
-                    "assetId": "25969"
-                }
-            },
-            {
-                "assetId": 1,
-                "symbol": "DOT",
-                "precision": 10,
-                "priceId": "polkadot",
-                "icon": "DOT.svg",
-                "type": "equilibrium",
-                "typeExtras": {
-                    "assetId": "6582132"
-                }
-            },
-            {
-                "assetId": 2,
-                "symbol": "EQD",
-                "precision": 9,
-                "priceId": "tether",
-                "icon": "EQD.svg",
-                "type": "equilibrium",
-                "typeExtras": {
-                    "assetId": "6648164"
-                }
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://node.pol.equilibrium.io",
-                "name": "Equilibrium node"
-            },
-            {
-                "url": "wss://equilibrium-rpc.dwellir.com",
-                "name": "Dwellir node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://equilibrium.subscan.io/extrinsic/{hash}",
-                "account": "https://equilibrium.subscan.io/account/{address}"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-equilibrium"
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Equilibrium.svg",
-        "addressPrefix": 68
     },
     {
         "chainId": "e358eb1d11b31255a286c12e44fe6780b7edb171d657905a97e39f71d9c6c3ee",
@@ -9540,7 +9432,7 @@
             {
                 "name": "LAOS explorer",
                 "account": "https://explorer.laosnetwork.io/address/{address}",
-                "event": "https://explorer.laosnetwork.io/tx/{hash}"
+                "extrinsic": "https://explorer.laosnetwork.io/tx/{hash}"
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/LAOS.svg",

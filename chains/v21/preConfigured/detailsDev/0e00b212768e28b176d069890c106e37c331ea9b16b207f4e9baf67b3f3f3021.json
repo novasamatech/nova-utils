@@ -1,0 +1,19 @@
+{
+    "chainId": "0e00b212768e28b176d069890c106e37c331ea9b16b207f4e9baf67b3f3f3021",
+    "name": "Torus mainnet torus-node 0.1.0-e59e8eb02bd",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "TORUS",
+            "precision": 18,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://api.torus.network",
+            "name": "mainnet"
+        }
+    ],
+    "addressPrefix": 42
+}
