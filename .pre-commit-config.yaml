@@ -1,8 +1,9 @@
 repos:
 -   repo: https://github.com/novasamatech/pre-commit-hooks
-    rev: c1b66a8fa80dfc7e21aa3c0261fbe190fe68970b
+    rev: b38916fd009b59c10ad70c2955f72df4d95515fc
     hooks:
     -   id: check-chains-json
+    -   id: check-dapps-json
     -   id: end-of-file-fixer
     -   id: trailing-whitespace
     -   id: check-json
