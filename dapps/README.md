@@ -45,7 +45,7 @@
 |  41 | Parallel Finance App                 | https://app-polkadot.parallel.fi                    | utilities             |
 |  42 | Pendulum Chain Portal                | https://portal.pendulumchain.org/pendulum/dashboard | utilities,staking     |
 |  43 | Phala App                            | https://app.phala.network/                          | staking               |
-|  44 | PolkaIdentity                        | https://polkaidentity.com                           | social,utilities      |
+|  44 | PolkaIdentity                        | https://app.polkaidentity.com                       | social,utilities      |
 |  45 | Polkadex Orderbook                   | https://orderbook.polkadex.trade/                   | dex,utilities         |
 |  46 | Polkadot Staking Dashboard           | https://staking.polkadot.cloud/#/overview           | staking,utilities     |
 |  47 | Polkadot.js                          | https://polkadot.js.org/apps/                       | utilities             |
