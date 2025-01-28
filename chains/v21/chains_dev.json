@@ -5980,6 +5980,32 @@
                     "existentialDeposit": "1",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 48,
+                "symbol": "SOL-Moonbeam",
+                "precision": 9,
+                "type": "orml",
+                "icon": "SOL-Moonbeam.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x30450f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "46339",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 49,
+                "symbol": "SUI-Moonbeam",
+                "precision": 9,
+                "type": "orml",
+                "icon": "SUI-Moonbeam.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x31450f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "2652520",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
