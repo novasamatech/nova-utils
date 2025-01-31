@@ -35,10 +35,6 @@
                 "name": "Novasama node"
             },
             {
-                "url": "wss://rpc-polkadot.novasama-tech.org",
-                "name": "Novasama node"
-            },
-            {
                 "url": "wss://rpc.ibp.network/polkadot",
                 "name": "IBP1 node"
             },
@@ -174,10 +170,6 @@
             },
             {
                 "url": "wss://rpc-kusama-2.novasama-tech.org",
-                "name": "Novasama node"
-            },
-            {
-                "url": "wss://rpc-kusama.novasama-tech.org",
                 "name": "Novasama node"
             },
             {
@@ -5980,6 +5972,32 @@
                     "existentialDeposit": "1",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 48,
+                "symbol": "SOL-Moonbeam",
+                "precision": 9,
+                "type": "orml",
+                "icon": "SOL-Moonbeam.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x30450f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "46339",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 49,
+                "symbol": "SUI-Moonbeam",
+                "precision": 9,
+                "type": "orml",
+                "icon": "SUI-Moonbeam.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x31450f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "2652520",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
@@ -11253,7 +11271,10 @@
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Cere.svg",
-        "addressPrefix": 54
+        "addressPrefix": 54,
+        "additional": {
+            "disabledCheckMetadataHash": true
+        }
     },
     {
         "chainId": "0313f6a011d128d22f996703cbab05162e2fdc9e031493314fe6db79979c5ca7",
@@ -11827,7 +11848,7 @@
         }
     },
     {
-        "chainId": "a35b4d0bf5767fcc3a4795aca93ef3b152c7c280d558d49eea535cae56a3a93e",
+        "chainId": "5647d37b8ac3ea2259c6697ec255347d6f473d052bfec59c641d751538d43442",
         "name": "Novasama Testnet - Fellowship",
         "assets": [
             {
