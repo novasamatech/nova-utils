@@ -5604,6 +5604,19 @@
                     "existentialDeposit": "1",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 48,
+                "symbol": "SOL-Wormhole",
+                "precision": 9,
+                "type": "orml",
+                "icon": "SOL-Wormhole.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x30450f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "46339",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
