@@ -11932,5 +11932,38 @@
         "additional": {
             "disabledCheckMetadataHash": true
         }
+    },
+    {
+        "chainId": "15f6788bcf1d1a3b7e1c36074584e1a3f3d07e0a46e362a102c3c3df1a93669f",
+        "name": "Muse Testnet",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "MUSE",
+                "staking": [
+                    "mythos"
+                ],
+                "precision": 18,
+                "icon": "Default.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://paseo-muse-rpc.polkadot.io",
+                "name": "Muse node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
+        "addressPrefix": 29972,
+        "options": [
+            "testnet",
+            "ethereumBased"
+        ],
+        "additional": {
+            "themeColor": "#1F78FF",
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/parachains-and-solochains",
+            "feeViaRuntimeCall": true,
+            "sessionLength": 25
+        }
     }
 ]
