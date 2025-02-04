@@ -5975,10 +5975,10 @@
             },
             {
                 "assetId": 48,
-                "symbol": "SOL-Moonbeam",
+                "symbol": "SOL-Wormhole",
                 "precision": 9,
                 "type": "orml",
-                "icon": "SOL-Moonbeam.svg",
+                "icon": "SOL-Wormhole.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x30450f00",
                     "currencyIdType": "u32",
@@ -5988,10 +5988,10 @@
             },
             {
                 "assetId": 49,
-                "symbol": "SUI-Moonbeam",
+                "symbol": "SUI-Wormhole",
                 "precision": 9,
                 "type": "orml",
-                "icon": "SUI-Moonbeam.svg",
+                "icon": "SUI-Wormhole.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x31450f00",
                     "currencyIdType": "u32",
@@ -11271,7 +11271,10 @@
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Cere.svg",
-        "addressPrefix": 54
+        "addressPrefix": 54,
+        "additional": {
+            "disabledCheckMetadataHash": true
+        }
     },
     {
         "chainId": "0313f6a011d128d22f996703cbab05162e2fdc9e031493314fe6db79979c5ca7",
@@ -11763,6 +11766,46 @@
                 "type": "statemine",
                 "typeExtras": {
                     "assetId": "5"
+                }
+            },
+            {
+                "assetId": 6,
+                "symbol": "IDON",
+                "precision": 12,
+                "icon": "IDON.png",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "6"
+                }
+            },
+            {
+                "assetId": 7,
+                "symbol": "MPC",
+                "precision": 12,
+                "icon": "MPC.png",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "7"
+                }
+            },
+            {
+                "assetId": 8,
+                "symbol": "IMPC",
+                "precision": 12,
+                "icon": "IMPC.png",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "8"
+                }
+            },
+            {
+                "assetId": 9,
+                "symbol": "DON",
+                "precision": 12,
+                "icon": "DON.png",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "9"
                 }
             }
         ],
