@@ -11965,5 +11965,36 @@
             "feeViaRuntimeCall": true,
             "sessionLength": 25
         }
+    },
+    {
+        "chainId": "0x8c24aac175a803c999b25e1cdd89fefcf2ce6af24e27aa9b773463a7fa88c385",
+        "name": "5ireChain Mainnet",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "5IRE",
+                "precision": 18,
+                "priceId": "5ire",
+                "icon": "5ire.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc.5ire.network",
+                "name": "5ire Mainnet Node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "5irescan",
+                "account": "https://5irescan.io/address/0xdF863adbeab7626dCeb9cC2D837E91072d394080",
+                "extrinsic": "https://5irescan.io/extrinsic/0xb3f69f9d34ab91fc0183e5225a103d6f5f598edb39262e8f1b59b91fae4667d8"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/5ire.svg",
+        "addressPrefix": 42,
+        "additional": {
+            "disabledCheckMetadataHash": true
+        }
     }
 ]
