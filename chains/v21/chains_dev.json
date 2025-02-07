@@ -5998,6 +5998,19 @@
                     "existentialDeposit": "2652520",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 50,
+                "symbol": "tBTC",
+                "precision": 18,
+                "type": "orml",
+                "icon": "tBTC.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x3d450f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "106803374987",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
