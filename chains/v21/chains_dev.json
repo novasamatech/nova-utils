@@ -11966,6 +11966,20 @@
                 "name": "Muse node"
             }
         ],
+        "externalApi": {
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "http://10.0.2.2:3000"
+                }
+            ],
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "http://10.0.2.2:3000"
+                }
+            ]
+        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
         "addressPrefix": 29972,
         "options": [
