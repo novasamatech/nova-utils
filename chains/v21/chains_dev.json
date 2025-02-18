@@ -11968,6 +11968,20 @@
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
         "addressPrefix": 29972,
+        "externalApi": {
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-mythos-testnet-stg.novasama-tech.org"
+                }
+            ],
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-mythos-testnet-stg.novasama-tech.org"
+                }
+            ]
+        },
         "options": [
             "testnet",
             "ethereumBased"
