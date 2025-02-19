@@ -13,10 +13,10 @@ config_files = XCMConfigFiles(
 
 registry = build_polkadot_xcm_registry(config_files)
 
-origin_chain_name = "Polkadot"
-destination_chain_name = "Bifrost Polkadot"
-origin_token = "DOT"
-destination_token = "DOT"
+origin_chain_name = "Polkadot Asset Hub"
+destination_chain_name = "Polimec"
+origin_token = "USDC"
+destination_token = "USDC"
 
 origin_chain = registry.get_chain_by_name(origin_chain_name)
 destination_chain = registry.get_chain_by_name(destination_chain_name)

@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from dataclasses import dataclass
 
 from scalecodec import GenericCall
@@ -26,7 +28,7 @@ class TransferDryRunner:
 
         fix_scale_codec()
 
-    def dry_run_transfer(self, transfer_direction: XcmTransferDirection):
+    def dry_run_transfer(self, transfer_direction: XcmTransferDirection) -> DryRunTransferResult:
         origin_chain, chain_asset, destination_chain, destination_asset = transfer_direction.origin_chain, transfer_direction.origin_asset, transfer_direction.destination_chain, transfer_direction.destination_asset
 
         print(
@@ -77,8 +79,13 @@ class TransferDryRunner:
                                             next_call=transfer_assets_call(s))
         )
 
-        message_to_next_hop = dry_run_xcm_call(origin_chain, call, root_origin(), final_destination_account=recipient)
-        debug_log(f"Transfer successfully initiated on {origin_chain.chain.name}, message: {message_to_next_hop}")
+        origin_dry_run_result = dry_run_xcm_call(origin_chain, call, root_origin(), final_destination_account=recipient)
+        message_to_next_hop = origin_dry_run_result.forwarded_xcm
+        paid_delivery_fee = origin_dry_run_result.paid_delivery_fee
+
+        debug_log(f"Transfer successfully initiated on {origin_chain.chain.name},"
+                  f" paid delivery: {paid_delivery_fee},"
+                  f" message: {message_to_next_hop}")
         debug_log("\n------------------\n\n")
 
         message_to_destination: VerionsedXcm
@@ -90,11 +97,18 @@ class TransferDryRunner:
 
             debug_log(f"{origin_on_reserve.versioned=}")
 
-            message_to_destination = dry_run_intermediate_xcm(chain=remote_reserve_chain, xcm=message_to_reserve,
+            reserve_dry_run_result = dry_run_intermediate_xcm(chain=remote_reserve_chain, xcm=message_to_reserve,
                                                               origin=origin_on_reserve,
                                                               final_destination_account=recipient)
+
+            message_to_destination = reserve_dry_run_result.forwarded_xcm
+            paid_delivery_fee = paid_delivery_fee or reserve_dry_run_result.paid_delivery_fee
+
             debug_log(
-                f"Transfer successfully handled by reserve chain {remote_reserve_chain.chain.name}, message: {message_to_reserve.unversioned}\n")
+                f"Transfer successfully handled by reserve chain {remote_reserve_chain.chain.name},"
+                f"paid delivery: {reserve_dry_run_result.paid_delivery_fee}"
+                f" message: {message_to_reserve.unversioned}\n"
+            )
 
             origin_on_destination = destination_chain.sibling_location_of(remote_reserve_chain)
         else:
@@ -108,7 +122,10 @@ class TransferDryRunner:
         if deposited_amount is None:
             raise Exception(f"Deposited amount was not found, final events: {destination_events}")
 
-        result = DryRunTransferResult(execution_fee=amount - deposited_amount)
+        result = DryRunTransferResult(
+            execution_fee=amount - deposited_amount,
+            paid_delivery_fee=paid_delivery_fee
+        )
 
         debug_log(
             f"Transfer successfully finished on {destination_chain.chain.name}, result: {result}")
@@ -118,6 +135,7 @@ class TransferDryRunner:
 @dataclass
 class DryRunTransferResult:
     execution_fee: float
+    paid_delivery_fee: bool
 
 _substrate_account = "13mp1WEs72kbCBF3WKcoK6Hfhu2HHZGpQ4jsKCZbfd6FoRvH"
 _evm_account = "0x0c7485f4AA235347BDE0168A59f6c73C7A42ff2C"

@@ -54,8 +54,12 @@ def save_config():
                 destination_config = {
                     "chainId": destination_asset.chain.chainId,
                     "assetId": destination_asset.id,
-                    "execution_fee": execution_fee_in_origin_planks
+                    "executionFee": execution_fee_in_origin_planks,
                 }
+
+                if working_direction.dry_run_result.paid_delivery_fee:
+                    destination_config["hasDeliveryFee"] = True
+
                 asset_transfers.append(destination_config)
 
             asset_config = {

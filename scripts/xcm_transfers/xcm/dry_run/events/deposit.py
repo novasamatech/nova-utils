@@ -16,8 +16,8 @@ def find_deposit_amount(
     match deposited_asset.type:
         case NativeAssetType():
             planks = _find_native_deposit_amount(events, deposit_account)
-        case StatemineAssetType():
-            planks = _find_statemine_deposit_amount(events, deposit_account)
+        case StatemineAssetType() as asset_type:
+            planks = _find_statemine_deposit_amount(asset_type, events, deposit_account)
         case OrmlAssetType():
             planks = _find_orml_deposit_amount(events, deposit_account)
         case UnsupportedAssetType():
@@ -40,12 +40,13 @@ def _find_native_deposit_amount(
     return event["attributes"]["amount"]
 
 def _find_statemine_deposit_amount(
+        asset_type: StatemineAssetType,
         events: List[dict],
         deposit_account: str,
 ) -> int | None:
     # TODO matching asset id is quite cumbersome here so we dont do it since
     # there should only be one "Issued" event to a recipient account, in the receiving token
-    event = find_event_with_attributes(events, "Assets", "Issued",
+    event = find_event_with_attributes(events, asset_type.pallet_name(), "Issued",
                                        lambda attrs: decode_account_id(attrs["owner"]) == decode_account_id(deposit_account))
     if event is None:
         return None
