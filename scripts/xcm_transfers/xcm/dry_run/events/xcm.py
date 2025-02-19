@@ -39,6 +39,19 @@ def find_sent_xcm(
 
     raise Exception(f"Sent xcm was not found, got: {success_dry_run_effects}")
 
+def check_paid_delivery_fee(
+    origin: XcmChain,
+    success_dry_run_effects: dict,
+) -> bool:
+    emitted_events = success_dry_run_effects["emitted_events"]
+    event_data = find_event(emitted_events, event_module=origin.xcm_pallet_alias(), event_name="FeesPaid")
+
+    if event_data is None:
+        return False
+
+    fees_multi_assets = event_data['attributes']['fees']
+    return len(fees_multi_assets) > 0
+
 
 def _find_xcm_sent_event(chain: XcmChain, events: List) -> XcmSentEvent | None:
     event_data = find_event(events, event_module=chain.xcm_pallet_alias(), event_name="Sent")

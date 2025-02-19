@@ -4,11 +4,6 @@
         "runtimePrefix": "polkadot_runtime",
         "name": "Polkadot"
     },
-    "411f057b9107718c9624d6aa4a3f23c1653898297f3d4d529d9bb6511a39dd21": {
-        "parachainId": 2086,
-        "runtimePrefix": "spiritnet_runtime",
-        "name": "KILT"
-    },
     "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d": {
         "parachainId": 2004,
         "runtimePrefix": "moonbeam_runtime",
@@ -29,6 +24,11 @@
         "runtimePrefix": "bifrost_polkadot_runtime",
         "name": "Bifrost Polkadot"
     },
+    "f0b8924b12e8108550d28870bc03f7b45a947e1b2b9abf81bfb0b89ecb60570e": {
+        "parachainId": 2046,
+        "runtimePrefix": "darwinia_runtime",
+        "name": "Darwinia"
+    },
     "dcf691b5a3fbe24adc99ddc959c0561b973e329b1aef4c4b22e7bb2ddecb4464": {
         "parachainId": 1002,
         "runtimePrefix": "bridge_hub_polkadot_runtime",
@@ -43,5 +43,15 @@
         "parachainId": 1004,
         "runtimePrefix": "people_polkadot_runtime",
         "name": "Polkadot People"
+    },
+    "7eb9354488318e7549c722669dcbdcdc526f1fef1420e7944667212f3601fdbd": {
+        "parachainId": 3344,
+        "runtimePrefix": "polimec_runtime",
+        "name": "Polimec"
+    },
+    "e8aecc950e82f1a375cf650fa72d07e0ad9bef7118f49b92283b63e88b1de88b": {
+        "parachainId": 3370,
+        "runtimePrefix": "laos_runtime",
+        "name": "Laos"
     }
 }
