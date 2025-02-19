@@ -27,6 +27,14 @@
         ],
         "nodes": [
             {
+                "url": "wss://rpc-polkadot-1.novasama-tech.org",
+                "name": "Novasama node"
+            },
+            {
+                "url": "wss://rpc-polkadot-2.novasama-tech.org",
+                "name": "Novasama node"
+            },
+            {
                 "url": "wss://rpc-polkadot.novasama-tech.org",
                 "name": "Novasama node"
             },
@@ -161,6 +169,14 @@
         ],
         "nodes": [
             {
+                "url": "wss://rpc-kusama-1.novasama-tech.org",
+                "name": "Novasama node"
+            },
+            {
+                "url": "wss://rpc-kusama-2.novasama-tech.org",
+                "name": "Novasama node"
+            },
+            {
                 "url": "wss://rpc-kusama.novasama-tech.org",
                 "name": "Novasama node"
             },
@@ -263,6 +279,93 @@
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/kusama-ksm-staking",
             "stakingMaxElectingVoters": 12500,
             "identityChain": "c1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f",
+            "supportsGenericLedgerApp": true
+        }
+    },
+    {
+        "chainId": "e143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e",
+        "name": "Westend (TESTNET)",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "WND",
+                "precision": 12,
+                "icon": "WND.svg",
+                "staking": [
+                    "relaychain",
+                    "nomination-pools"
+                ]
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://westend-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://rpc.ibp.network/westend",
+                "name": "IBP1 node"
+            },
+            {
+                "url": "wss://westend.dotters.network",
+                "name": "IBP2 node"
+            },
+            {
+                "url": "wss://westend.public.curie.radiumblock.co/ws",
+                "name": "RadiumBlock node"
+            },
+            {
+                "url": "wss://westend.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://westend.subscan.io/extrinsic/{hash}",
+                "account": "https://westend.subscan.io/account/{address}"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
+        "addressPrefix": 42,
+        "externalApi": {
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-westend"
+                }
+            ],
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-westend"
+                }
+            ],
+            "crowdloans": [
+                {
+                    "type": "github",
+                    "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/crowdloan/westend.json"
+                }
+            ],
+            "governance": [
+                {
+                    "type": "subsquare",
+                    "url": "https://westend.subsquare.io/api"
+                }
+            ]
+        },
+        "options": [
+            "testnet",
+            "crowdloans",
+            "governance",
+            "proxy"
+        ],
+        "additional": {
+            "themeColor": "#1F78FF",
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polkadot-and-kusama",
+            "stakingMaxElectingVoters": 22500,
+            "feeViaRuntimeCall": true,
+            "identityChain": "1eb6fb0ba5187434de017a70cb84d4f47142df1d571d0ef9e7e1407f2b80b93c",
             "supportsGenericLedgerApp": true
         }
     },
@@ -2137,7 +2240,7 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Bifrost_Kusama.svg",
-        "addressPrefix": 6,
+        "addressPrefix": 0,
         "options": [
             "governance-v1",
             "governance"
@@ -2547,7 +2650,7 @@
     {
         "chainId": "d43540ba6d3eb4897c28a77d48cb5b729fea37603cbbfc7a86a73b72adb3be8d",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Khala",
+        "name": "Khala (PAUSED)",
         "assets": [
             {
                 "assetId": 0,
@@ -3976,6 +4079,7 @@
                 "assetId": 8,
                 "symbol": "WUD",
                 "precision": 10,
+                "priceId": "gavun-wud",
                 "type": "statemine",
                 "icon": "WUD.svg",
                 "typeExtras": {
@@ -3986,6 +4090,7 @@
                 "assetId": 9,
                 "symbol": "WETH-Snowbridge",
                 "precision": 18,
+                "priceId": "ethereum-wormhole",
                 "type": "statemine",
                 "icon": "WETH-Snowbridge.svg",
                 "typeExtras": {
@@ -3998,6 +4103,7 @@
                 "assetId": 10,
                 "symbol": "WBTC-Snowbridge",
                 "precision": 8,
+                "priceId": "wrapped-bitcoin",
                 "type": "statemine",
                 "icon": "WBTC-Snowbridge.svg",
                 "typeExtras": {
@@ -4055,6 +4161,74 @@
                 "typeExtras": {
                     "assetId": "0x010100a534",
                     "palletName": "ForeignAssets"
+                }
+            },
+            {
+                "assetId": 16,
+                "symbol": "MYTH-Snowbridge",
+                "precision": 18,
+                "priceId": "mythos",
+                "type": "statemine",
+                "icon": "MYTH-Snowbridge.svg",
+                "typeExtras": {
+                    "assetId": "0x02020907040300ba41ddf06b7ffd89d1267b5a93bfef2424eb2003",
+                    "palletName": "ForeignAssets"
+                }
+            },
+            {
+                "assetId": 17,
+                "symbol": "USDC-Snowbridge",
+                "precision": 6,
+                "priceId": "usd-coin",
+                "type": "statemine",
+                "icon": "USDC-Snowbridge.svg",
+                "typeExtras": {
+                    "assetId": "0x02020907040300a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+                    "palletName": "ForeignAssets"
+                }
+            },
+            {
+                "assetId": 18,
+                "symbol": "USDT-Snowbridge",
+                "precision": 6,
+                "priceId": "tether",
+                "type": "statemine",
+                "icon": "USDT-Snowbridge.svg",
+                "typeExtras": {
+                    "assetId": "0x02020907040300dac17f958d2ee523a2206206994597c13d831ec7",
+                    "palletName": "ForeignAssets"
+                }
+            },
+            {
+                "assetId": 19,
+                "symbol": "DAI-Snowbridge",
+                "precision": 18,
+                "priceId": "dai",
+                "type": "statemine",
+                "icon": "DAI-Snowbridge.svg",
+                "typeExtras": {
+                    "assetId": "0x020209070403006b175474e89094c44da98b954eedeac495271d0f",
+                    "palletName": "ForeignAssets"
+                }
+            },
+            {
+                "assetId": 20,
+                "symbol": "BASTI",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "Default.svg",
+                "typeExtras": {
+                    "assetId": "22222015"
+                }
+            },
+            {
+                "assetId": 21,
+                "symbol": "DAMN",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "Default.svg",
+                "typeExtras": {
+                    "assetId": "22222012"
                 }
             }
         ],
@@ -5252,6 +5426,7 @@
                 "assetId": 35,
                 "symbol": "WUD",
                 "precision": 10,
+                "priceId": "gavun-wud",
                 "type": "orml",
                 "icon": "WUD.svg",
                 "typeExtras": {
@@ -5279,6 +5454,7 @@
                 "assetId": 37,
                 "symbol": "WETH-Snowbridge",
                 "precision": 18,
+                "priceId": "ethereum-wormhole",
                 "type": "orml",
                 "icon": "WETH-Snowbridge.svg",
                 "typeExtras": {
@@ -5292,6 +5468,7 @@
                 "assetId": 38,
                 "symbol": "WBTC-Snowbridge",
                 "precision": 8,
+                "priceId": "wrapped-bitcoin",
                 "type": "orml",
                 "icon": "WBTC-Snowbridge.svg",
                 "typeExtras": {
@@ -5393,6 +5570,32 @@
                     "existentialDeposit": "59084194977843",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 46,
+                "symbol": "BASTI",
+                "precision": 12,
+                "type": "orml",
+                "icon": "Default.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x64430f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 47,
+                "symbol": "DAMN",
+                "precision": 12,
+                "type": "orml",
+                "icon": "Default.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x5e430f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
@@ -5441,6 +5644,7 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Hydration.svg",
         "addressPrefix": 63,
         "options": [
+            "governance",
             "governance-v1",
             "hydradx-swaps",
             "hydration-fees"
@@ -6124,6 +6328,14 @@
             {
                 "url": "wss://polkadex.public.curie.radiumblock.co/ws",
                 "name": "RadiumBlock node"
+            },
+            {
+                "url": "wss://polkadex-mainnet-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://polkadex.api.onfinality.io/public-ws",
+                "name": "RadiumBlock node"
             }
         ],
         "explorers": [
@@ -6423,7 +6635,7 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Bifrost_Polkadot.svg",
-        "addressPrefix": 6,
+        "addressPrefix": 0,
         "options": [
             "governance-v1"
         ]
@@ -6784,39 +6996,6 @@
         "addressPrefix": 42,
         "additional": {
             "feeViaRuntimeCall": true
-        }
-    },
-    {
-        "chainId": "d42e9606a995dfe433dc7955dc2a70f495f350f373daa200098ae84437816ad2",
-        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Tinkernet",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "TNKR",
-                "precision": 12,
-                "icon": "TNKR.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://tinkernet-rpc.dwellir.com",
-                "name": "Dwellir node"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-tinkernet"
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Tinkernet.svg",
-        "addressPrefix": 117,
-        "additional": {
-            "feeViaRuntimeCall": true,
-            "disabledCheckMetadataHash": true
         }
     },
     {
@@ -8247,35 +8426,6 @@
         "addressPrefix": 42
     },
     {
-        "chainId": "58d1393b47b11707978fbc07e77d7b6f7d9aa88d207dc008a52385f7dba6156a",
-        "name": "Jur",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "JUR",
-                "precision": 18,
-                "priceId": "jur",
-                "icon": "JUR.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://mainnet.jur.io/",
-                "name": "Iceberg node"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---jur"
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Jur.svg",
-        "addressPrefix": 42
-    },
-    {
         "chainId": "3af4ff48ec76d2efc8476730f423ac07e25ad48f5f4c9dc39c778b164d808615",
         "name": "Enjin Matrix",
         "assets": [
@@ -8612,7 +8762,8 @@
         "additional": {
             "themeColor": "#96CC5A",
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polimec-plmc-staking",
-            "defaultBlockTime": 12000
+            "defaultBlockTime": 12000,
+            "supportsGenericLedgerApp": true
         }
     },
     {

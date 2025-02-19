@@ -9147,42 +9147,6 @@
         "addressPrefix": 42
     },
     {
-        "chainId": "58d1393b47b11707978fbc07e77d7b6f7d9aa88d207dc008a52385f7dba6156a",
-        "name": "Jur",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "JUR",
-                "precision": 18,
-                "priceId": "jur",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/JUR.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://jur-mainnet-archive-rpc-1.icebergnodes.io",
-                "name": "Iceberg node"
-            },
-            {
-                "url": "wss://jur-archive-mainnet-1.simplystaking.xyz/VX68C07AR4K2/ws",
-                "name": "Simplystaking node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Polkascan",
-                "account": "https://jur.io/explorer/jur/account/{address}",
-                "event": "https://jur.io/explorer/jur/event/{event}"
-            }
-        ],
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/jur.json",
-            "overridesCommon": true
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Jur.svg",
-        "addressPrefix": 42
-    },
-    {
         "chainId": "f3c7ad88f6a80f366c4be216691411ef0622e8b809b1046ea297ef106058d4eb",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
         "name": "Manta",
