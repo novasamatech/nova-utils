@@ -4241,6 +4241,16 @@
                 "typeExtras": {
                     "assetId": "22222012"
                 }
+            },
+            {
+                "assetId": 22,
+                "symbol": "BILLCOIN",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "BILLCOIN.svg",
+                "typeExtras": {
+                    "assetId": "50000075"
+                }
             }
         ],
         "nodes": [
@@ -5630,6 +5640,19 @@
                     "currencyIdScale": "0x3d450f00",
                     "currencyIdType": "u32",
                     "existentialDeposit": "106803374987",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 51,
+                "symbol": "BILLCOIN",
+                "precision": 12,
+                "type": "orml",
+                "icon": "BILLCOIN.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x3a450f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
                     "transfersEnabled": true
                 }
             }
