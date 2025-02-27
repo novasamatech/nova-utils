@@ -4762,6 +4762,16 @@
                 "typeExtras": {
                     "assetId": "22222012"
                 }
+            },
+            {
+                "assetId": 22,
+                "symbol": "BILLCOIN",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "BILLCOIN.svg",
+                "typeExtras": {
+                    "assetId": "50000075"
+                }
             }
         ],
         "nodes": [
@@ -5975,10 +5985,10 @@
             },
             {
                 "assetId": 48,
-                "symbol": "SOL-Moonbeam",
+                "symbol": "SOL-Wormhole",
                 "precision": 9,
                 "type": "orml",
-                "icon": "SOL-Moonbeam.svg",
+                "icon": "SOL-Wormhole.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x30450f00",
                     "currencyIdType": "u32",
@@ -5988,14 +5998,40 @@
             },
             {
                 "assetId": 49,
-                "symbol": "SUI-Moonbeam",
+                "symbol": "SUI-Wormhole",
                 "precision": 9,
                 "type": "orml",
-                "icon": "SUI-Moonbeam.svg",
+                "icon": "SUI-Wormhole.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x31450f00",
                     "currencyIdType": "u32",
                     "existentialDeposit": "2652520",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 50,
+                "symbol": "tBTC",
+                "precision": 18,
+                "type": "orml",
+                "icon": "tBTC.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x3d450f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "106803374987",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 51,
+                "symbol": "BILLCOIN",
+                "precision": 12,
+                "type": "orml",
+                "icon": "BILLCOIN.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x3a450f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
                     "transfersEnabled": true
                 }
             }
@@ -7200,13 +7236,13 @@
     {
         "chainId": "2fc8bb6ed7c0051bdcf4866c322ed32b6276572713607e3297ccf411b8f14aa9",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "Litentry",
+        "name": "Heima",
         "assets": [
             {
                 "assetId": 0,
-                "symbol": "LIT",
+                "symbol": "HEI",
                 "precision": 18,
-                "icon": "LIT.svg",
+                "icon": "HEI.svg",
                 "priceId": "litentry"
             }
         ],
@@ -7223,9 +7259,9 @@
         "explorers": [
             {
                 "name": "Statescan",
-                "account": "https://litentry.statescan.io/#/accounts/{address}",
-                "extrinsic": "https://litentry.statescan.io/#/extrinsics/{hash}",
-                "event": "https://litentry.statescan.io/#/events/{event}"
+                "account": "https://heima.statescan.io/#/accounts/{address}",
+                "extrinsic": "https://heima.statescan.io/#/extrinsics/{hash}",
+                "event": "https://heima.statescan.io/#/events/{event}"
             }
         ],
         "externalApi": {
@@ -7236,7 +7272,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Litentry.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Heima.svg",
         "addressPrefix": 31
     },
     {
@@ -8142,7 +8178,7 @@
     },
     {
         "chainId": "74ed91fbc18497f011290f9119a2217908649170337b6414a2d44923ade07063",
-        "name": "Myriad",
+        "name": "Myriad (PAUSED)",
         "assets": [
             {
                 "assetId": 0,
@@ -9670,6 +9706,7 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Collectives.svg",
         "addressPrefix": 0,
         "additional": {
+            "identityChain": "67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008",
             "supportsGenericLedgerApp": true
         }
     },
@@ -10997,7 +11034,13 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-mythos"
+                    "url": "https://subquery-history-mythos-prod.novasama-tech.org"
+                }
+            ],
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-mythos-prod.novasama-tech.org"
                 }
             ]
         },
@@ -11772,7 +11815,7 @@
                 "assetId": 6,
                 "symbol": "IDON",
                 "precision": 12,
-                "icon": "IDON.svg",
+                "icon": "IDON.png",
                 "type": "statemine",
                 "typeExtras": {
                     "assetId": "6"
@@ -11782,7 +11825,7 @@
                 "assetId": 7,
                 "symbol": "MPC",
                 "precision": 12,
-                "icon": "MPC.svg",
+                "icon": "MPC.png",
                 "type": "statemine",
                 "typeExtras": {
                     "assetId": "7"
@@ -11792,7 +11835,7 @@
                 "assetId": 8,
                 "symbol": "IMPC",
                 "precision": 12,
-                "icon": "IMPC.svg",
+                "icon": "IMPC.png",
                 "type": "statemine",
                 "typeExtras": {
                     "assetId": "8"
@@ -11802,7 +11845,7 @@
                 "assetId": 9,
                 "symbol": "DON",
                 "precision": 12,
-                "icon": "DON.svg",
+                "icon": "DON.png",
                 "type": "statemine",
                 "typeExtras": {
                     "assetId": "9"
@@ -11931,6 +11974,54 @@
         "addressPrefix": 5845,
         "additional": {
             "disabledCheckMetadataHash": true
+        }
+    },
+    {
+        "chainId": "15f6788bcf1d1a3b7e1c36074584e1a3f3d07e0a46e362a102c3c3df1a93669f",
+        "name": "Muse Testnet",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "MUSE",
+                "staking": [
+                    "mythos"
+                ],
+                "precision": 18,
+                "icon": "Default.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://paseo-muse-rpc.polkadot.io",
+                "name": "Muse node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
+        "addressPrefix": 29972,
+        "externalApi": {
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-mythos-testnet-stg.novasama-tech.org"
+                }
+            ],
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-mythos-testnet-stg.novasama-tech.org"
+                }
+            ]
+        },
+        "options": [
+            "testnet",
+            "ethereumBased"
+        ],
+        "additional": {
+            "themeColor": "#1F78FF",
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/parachains-and-solochains",
+            "feeViaRuntimeCall": true,
+            "sessionLength": 25,
+            "defaultBlockTime": 6000
         }
     }
 ]
