@@ -4762,6 +4762,16 @@
                 "typeExtras": {
                     "assetId": "22222012"
                 }
+            },
+            {
+                "assetId": 22,
+                "symbol": "BILLCOIN",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "BILLCOIN.svg",
+                "typeExtras": {
+                    "assetId": "50000075"
+                }
             }
         ],
         "nodes": [
@@ -6011,6 +6021,19 @@
                     "existentialDeposit": "106803374987",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 51,
+                "symbol": "BILLCOIN",
+                "precision": 12,
+                "type": "orml",
+                "icon": "BILLCOIN.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x3a450f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
@@ -7219,8 +7242,8 @@
                 "assetId": 0,
                 "symbol": "HEI",
                 "precision": 18,
-                "icon": "LIT.svg",
-                "priceId": "litentry"
+                "icon": "HEI.svg",
+                "priceId": "heima"
             }
         ],
         "nodes": [
@@ -7249,7 +7272,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Litentry.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Heima.svg",
         "addressPrefix": 31
     },
     {

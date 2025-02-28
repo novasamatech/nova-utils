@@ -1,16 +1,24 @@
 [
     {
+       "id": "0b7d5fa9-ca74-40a1-a25b-1573ebe77586",
+       "background": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/banners/resources/backgrounds/indigo_promo_banner_background.png",
+       "image": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/banners/resources/images/staking_astar_banner_picture_1.png",
+       "clipsToBounds": false,
+       "action": "novawallet://nova/open/dapp?url=https://portal.astar.network/astar/dapp-staking/vote?dappAddress=0x40b261ed3816f5cd6b548857cf6e78d5ca101bdb"
+    },
+    {
        "id": "9464681d-ad80-479a-b2f7-4ab1e9ed9e58",
        "background": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/banners/resources/backgrounds/rainbow_promo_banner_background.png",
        "image": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/banners/resources/images/staking_promo_banner_picture.png",
        "clipsToBounds": false,
-       "action": "https://dev.novawallet.io/open/staking"
+       "action": "novawallet://nova/open/staking"
     },
     {
        "id": "0d2f8e1d-017d-4b07-aba6-ea2012354de0",
        "background": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/banners/resources/backgrounds/blue_promo_banner_background.png",
        "image": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/banners/resources/images/browser_promo_banner_picture.png",
-       "clipsToBounds": true
+       "clipsToBounds": true,
+       "action": "https://docs.novawallet.io/nova-wallet-wiki/dapps/dapp-catalog"
     },
     {
        "id": "88788788-cf90-4171-9514-9d7474d5c765",
