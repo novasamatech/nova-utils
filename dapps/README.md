@@ -69,9 +69,10 @@
 |  65 | Tensor Wallet                        | https://tensorwallet.ca/                            | utilities,staking     |
 |  66 | Ternoa HUB                           | https://hub.ternoa.network/                         | staking               |
 |  67 | Turtle                               | https://app.turtle.cool/                            | bridge                |
-|  68 | Unique PlayX                         | https://playx.unique.network                        | gaming                |
-|  69 | XDAO                                 | https://www.xdao.app/1284                           | bridge,dex,evm        |
-|  70 | Zeitgeist                            | https://app.zeitgeist.pm/                           | utilities             |
-|  71 | Zenlink                              | https://app.zenlink.pro                             | dex                   |
-|  72 | cBRIDGE                              | https://cbridge.celer.network/                      | dex,evm               |
-|  73 | xx network Hub                       | https://hub.xx.network/                             | utilities             |
+|  68 | Unique Marketplace                   | https://unqnft.io                                   | gaming,art            |
+|  69 | Unique PlayX                         | https://playx.unique.network                        | gaming                |
+|  70 | XDAO                                 | https://www.xdao.app/1284                           | bridge,dex,evm        |
+|  71 | Zeitgeist                            | https://app.zeitgeist.pm/                           | utilities             |
+|  72 | Zenlink                              | https://app.zenlink.pro                             | dex                   |
+|  73 | cBRIDGE                              | https://cbridge.celer.network/                      | dex,evm               |
+|  74 | xx network Hub                       | https://hub.xx.network/                             | utilities             |
