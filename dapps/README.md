@@ -5,7 +5,7 @@
 |   1 | .MEMO                                | https://dotmemo.xyz/                                | art                   |
 |   2 | AZERO.ID                             | https://azero.id/dashboard                          | utilities             |
 |   3 | Acala App (Desktop mode)             | https://apps.acala.network/                         | staking               |
-|   4 | AirLyft Campaigns                    | https://polkadot.airlyft.one/campaigns              | social                |
+|   4 | AirLyft Campaigns                    | https://airlyft.one/                                | social                |
 |   5 | Aleph Zero MOST                      | https://mo.st/                                      | bridge,dex            |
 |   6 | ArthSwap                             | https://app.arthswap.org/#/swap                     | dex,evm               |
 |   7 | Astar Portal                         | https://portal.astar.network/                       | staking               |
