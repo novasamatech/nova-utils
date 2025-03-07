@@ -8829,7 +8829,10 @@
                 "symbol": "MYTH",
                 "precision": 18,
                 "priceId": "mythos",
-                "icon": "MYTH.svg"
+                "icon": "MYTH.svg",
+                "staking": [
+                    "mythos"
+                ]
             }
         ],
         "nodes": [
@@ -8852,7 +8855,13 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-mythos"
+                    "url": "https://subquery-history-mythos-prod.novasama-tech.org"
+                }
+            ],
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-mythos-prod.novasama-tech.org"
                 }
             ]
         },
@@ -8860,7 +8869,14 @@
         "addressPrefix": 29972,
         "options": [
             "ethereumBased"
-        ]
+        ],
+        "additional": {
+            "themeColor": "#ED3A47",
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/mythos-myth-staking",
+            "feeViaRuntimeCall": true,
+            "sessionLength": 14400,
+            "defaultBlockTime": 6000
+        }
     },
     {
         "chainId": "ce7681fb12aa8f7265d229a9074be0ea1d5e99b53eedcec2deade43857901808",
