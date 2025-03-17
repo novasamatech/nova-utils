@@ -520,6 +520,18 @@
                     "assetId": "1984",
                     "isSufficient": true
                 }
+            },
+            {
+                "assetId": 8,
+                "symbol": "DOT",
+                "precision": 10,
+                "priceId": "polkadot",
+                "type": "statemine",
+                "icon": "DOT.svg",
+                "typeExtras": {
+                    "assetId": "0x02010902",
+                    "palletName": "ForeignAssets"
+                }
             }
         ],
         "nodes": [
@@ -4588,6 +4600,18 @@
                 "icon": "BILLCOIN.svg",
                 "typeExtras": {
                     "assetId": "50000075"
+                }
+            },
+            {
+                "assetId": 23,
+                "symbol": "KSM",
+                "precision": 12,
+                "priceId": "kusama",
+                "type": "statemine",
+                "icon": "KSM.svg",
+                "typeExtras": {
+                    "assetId": "0x02010903",
+                    "palletName": "ForeignAssets"
                 }
             }
         ],
