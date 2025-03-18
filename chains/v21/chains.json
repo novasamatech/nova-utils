@@ -434,6 +434,18 @@
                     "assetId": "1984",
                     "isSufficient": true
                 }
+            },
+            {
+                "assetId": 8,
+                "symbol": "DOT",
+                "precision": 10,
+                "priceId": "polkadot",
+                "type": "statemine",
+                "icon": "DOT.svg",
+                "typeExtras": {
+                    "assetId": "0x02010902",
+                    "palletName": "ForeignAssets"
+                }
             }
         ],
         "nodes": [
@@ -4075,6 +4087,18 @@
                 "typeExtras": {
                     "assetId": "50000075"
                 }
+            },
+            {
+                "assetId": 23,
+                "symbol": "KSM",
+                "precision": 12,
+                "priceId": "kusama",
+                "type": "statemine",
+                "icon": "KSM.svg",
+                "typeExtras": {
+                    "assetId": "0x02010903",
+                    "palletName": "ForeignAssets"
+                }
             }
         ],
         "nodes": [
@@ -5474,6 +5498,34 @@
                     "currencyIdScale": "0x3a450f00",
                     "currencyIdType": "u32",
                     "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 52,
+                "symbol": "KSM",
+                "precision": 12,
+                "priceId": "kusama",
+                "type": "orml",
+                "icon": "KSM.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x43450f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "313283208",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 53,
+                "symbol": "EWT",
+                "precision": 18,
+                "priceId": "energy-web-token",
+                "type": "orml",
+                "icon": "EWT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x6dda0300",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "3244646333550",
                     "transfersEnabled": true
                 }
             }
