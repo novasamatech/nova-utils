@@ -5952,6 +5952,20 @@
                     "existentialDeposit": "211685012701101000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 57,
+                "symbol": "ETH-Snowbridge",
+                "precision": 18,
+                "priceId": "ethereum-wormhole",
+                "type": "orml",
+                "icon": "WETH-Snowbridge.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x20000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "5373455131650",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
