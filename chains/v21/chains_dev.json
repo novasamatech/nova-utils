@@ -4613,6 +4613,18 @@
                     "assetId": "0x02010903",
                     "palletName": "ForeignAssets"
                 }
+            },
+            {
+                "assetId": 24,
+                "symbol": "ETH-Snowbridge",
+                "precision": 12,
+                "priceId": "ethereum-wormhole",
+                "type": "statemine",
+                "icon": "WETH-Snowbridge.svg",
+                "typeExtras": {
+                    "assetId": "0x0201090704",
+                    "palletName": "ForeignAssets"
+                }
             }
         ],
         "nodes": [
