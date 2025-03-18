@@ -164,7 +164,7 @@ def create_chain_data(chain_object, endpoint_type):
         }
 
         if "testnet" in endpoint_type:
-            chain_data["name"] = chain_data.get("name") + " (TESTNET)"
+            chain_data["name"] = json_property.name + " (TESTNET)"
         return chain_data
     except Exception as err:
         # If there's a failure, print a warning and skip the connection
