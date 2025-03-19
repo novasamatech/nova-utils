@@ -1394,12 +1394,16 @@
         "nodeSelectionStrategy": "roundRobin",
         "nodes": [
             {
-                "url": "https://rpc.ankr.com/eth",
-                "name": "Ankr rpc node"
+                "url": "https://ethereum-rpc.publicnode.com",
+                "name": "Allnodes rpc node"
             },
             {
                 "url": "https://1rpc.io/eth",
                 "name": "One rpc node"
+            },
+            {
+                "url": "https://rpc.ankr.com/eth",
+                "name": "Ankr rpc node"
             },
             {
                 "url": "wss://mainnet.infura.io/ws/v3/32a2be59297444c9bcb2b61bb700c6fe",
