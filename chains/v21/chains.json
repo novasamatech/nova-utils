@@ -4103,6 +4103,18 @@
                     "assetId": "0x02010903",
                     "palletName": "ForeignAssets"
                 }
+            },
+            {
+                "assetId": 24,
+                "symbol": "ETH-Snowbridge",
+                "precision": 18,
+                "priceId": "ethereum",
+                "type": "statemine",
+                "icon": "WETH-Snowbridge.svg",
+                "typeExtras": {
+                    "assetId": "0x0201090704",
+                    "palletName": "ForeignAssets"
+                }
             }
         ],
         "nodes": [
@@ -5530,6 +5542,20 @@
                     "currencyIdScale": "0x6dda0300",
                     "currencyIdType": "u32",
                     "existentialDeposit": "3244646333550",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 57,
+                "symbol": "ETH-Snowbridge",
+                "precision": 18,
+                "priceId": "ethereum",
+                "type": "orml",
+                "icon": "WETH-Snowbridge.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x20000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "5373455131650",
                     "transfersEnabled": true
                 }
             }
