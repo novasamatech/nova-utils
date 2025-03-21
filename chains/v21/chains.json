@@ -6923,38 +6923,6 @@
         "addressPrefix": 1337
     },
     {
-        "chainId": "ca93a37c913a25fa8fdb33c7f738afc39379cb71d37874a16d4c091a5aef9f89",
-        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Imbue (PAUSED)",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "IMBU",
-                "precision": 12,
-                "icon": "IMBU.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://kusama.imbuenetwork.com",
-                "name": "Imbue node"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-imbue"
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Imbue.svg",
-        "addressPrefix": 42,
-        "additional": {
-            "feeViaRuntimeCall": true
-        }
-    },
-    {
         "chainId": "cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Amplitude",
