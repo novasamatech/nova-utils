@@ -2216,8 +2216,8 @@
                 "name": "Liebi node"
             },
             {
-                "url": "wss://bifrost-rpc.dwellir.com",
-                "name": "Dwellir node"
+                "url": "wss://us.bifrost-rpc.liebi.com/ws",
+                "name": "LiebiUS node"
             }
         ],
         "explorers": [
@@ -6573,6 +6573,10 @@
             {
                 "url": "wss://hk.p.bifrost-rpc.liebi.com/ws",
                 "name": "Liebi node"
+            },
+            {
+                "url": "wss://eu.bifrost-polkadot-rpc.liebi.com/ws",
+                "name": "LiebiEU node"
             }
         ],
         "explorers": [
