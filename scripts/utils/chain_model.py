@@ -11,8 +11,10 @@ from .substrate_interface import create_connection_by_url
 
 T = TypeVar('T')
 
+ChainId = str
 
-class Chain():
+
+class Chain:
     substrate: SubstrateInterface | None
 
     assets: List[ChainAsset]

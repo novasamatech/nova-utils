@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Callable, TypeVar
+from typing import Callable, TypeVar, Optional
 
 from substrateinterface import SubstrateInterface
 
@@ -11,17 +11,18 @@ from scripts.xcm_transfers.xcm.versioned_xcm_builder import parachain_junction, 
     multi_location_from
 
 T = TypeVar('T')
+ParachainId = int
 
 xcm_pallet_aliases = ["PolkadotXcm", "XcmPallet"]
 
 class XcmChain:
     chain: Chain
-    parachain_id: int | None
+    parachain_id: Optional[ParachainId]
 
     def __init__(
             self,
             chain: Chain,
-            parachain_id: int | None,
+            parachain_id: Optional[ParachainId],
     ):
         self.chain = chain
         self.parachain_id = parachain_id
@@ -34,7 +35,7 @@ class XcmChain:
 
         return multi_location_from(relative_location)
 
-    def global_location(self, ) -> GlobalMultiLocation:
+    def global_location(self) -> GlobalMultiLocation:
         if self.parachain_id is not None:
             return GlobalMultiLocation([parachain_junction(self.parachain_id)])
         else:

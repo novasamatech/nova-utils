@@ -2,7 +2,7 @@ import json
 
 from scripts.utils.work_with_data import get_data_from_file, write_data_to_file
 from scripts.xcm_transfers.utils.xcm_config_files import XCMConfigFiles
-from scripts.xcm_transfers.xcm.registry.xcm_registry_builder import build_polkadot_xcm_registry
+from scripts.xcm_transfers.xcm.registry.xcm_registry_builder import build_xcm_registry
 
 config_files = XCMConfigFiles(
     chains="../../chains/v21/chains_dev.json",
@@ -11,7 +11,7 @@ config_files = XCMConfigFiles(
     xcm_dynamic_config="../../xcm/v7/transfers_dynamic_dev.json",
 )
 
-registry = build_polkadot_xcm_registry(config_files)
+registry = build_xcm_registry(config_files)
 
 config = get_data_from_file(config_files.xcm_legacy_config)
 

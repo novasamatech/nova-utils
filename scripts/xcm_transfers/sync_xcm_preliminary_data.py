@@ -1,26 +1,16 @@
 from __future__ import annotations
 
 import json
+from typing import List
 
 from substrateinterface import SubstrateInterface
 from substrateinterface.exceptions import SubstrateRequestException
 
 from scripts.utils.chain_model import Chain
 from scripts.utils.work_with_data import get_data_from_file, write_data_to_file
-
-chains_file = get_data_from_file("../../chains/v21/chains_dev.json")
-
-chains = [Chain(it) for it in chains_file]
-
-polkadot_id = "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3"
-
-polkadot = next((chain for chain in chains if chain.chainId == polkadot_id))
-polkadot_parachains = [chain for chain in chains if chain.parentId == polkadot_id]
-
-polkadot_chains = [polkadot] + polkadot_parachains
+from scripts.xcm_transfers.utils.chain_ids import RELAYS
 
 data = {}
-
 
 def get_runtime_prefix(substrate: SubstrateInterface) -> str | None:
     registry = substrate.get_type_registry(substrate.block_hash)
@@ -43,8 +33,8 @@ def chain_has_dry_run_api(substrate: SubstrateInterface) -> bool:
     return True
 
 
-def process_chain(idx, chain):
-    print(f"\n{idx + 1}/{len(polkadot_chains)}. Starting fetching data for {chain.name}")
+def process_chain(idx, chain, len):
+    print(f"\n{idx + 1}/{len}. Starting fetching data for {chain.name}")
 
     chain.create_connection()
 
@@ -77,10 +67,32 @@ def process_chain(idx, chain):
     write_data_to_file('xcm_registry_additional_data.json', json.dumps(data, indent=4))
 
 
-for idx, chain in enumerate(polkadot_chains):
+def find_xcm_chains(chains: List[Chain], relay_ids: list[str] = RELAYS) -> List[Chain]:
+    result = []
+
+    for relay_id in relay_ids:
+        relay = next((chain for chain in chains if chain.chainId == relay_id), None)
+        if relay is None:
+            continue
+
+        parachains = [chain for chain in chains if chain.parentId == relay_id]
+        if len(parachains) == 0:
+            continue
+
+        result.extend([relay] + parachains)
+
+    return result
+
+chains_file = get_data_from_file("../../chains/v21/chains_dev.json")
+chains = [Chain(it) for it in chains_file]
+
+xcm_chains = find_xcm_chains(chains)
+
+for idx, chain in enumerate(xcm_chains):
     try:
-        process_chain(idx, chain)
+        process_chain(idx, chain, len(xcm_chains))
     except Exception as e:
         print(f"Error happened when processing {chain.name}, skipping: {e}")
 
         continue
+

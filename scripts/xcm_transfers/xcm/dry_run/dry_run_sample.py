@@ -1,7 +1,7 @@
 from scripts.xcm_transfers.utils.log import enable_debug_log
 from scripts.xcm_transfers.utils.xcm_config_files import XCMConfigFiles
 from scripts.xcm_transfers.xcm.dry_run.dry_run_transfer import TransferDryRunner
-from scripts.xcm_transfers.xcm.registry.xcm_registry_builder import build_polkadot_xcm_registry
+from scripts.xcm_transfers.xcm.registry.xcm_registry_builder import build_xcm_registry
 from scripts.xcm_transfers.xcm.xcm_transfer_direction import XcmTransferDirection
 
 config_files = XCMConfigFiles(
@@ -11,7 +11,7 @@ config_files = XCMConfigFiles(
     xcm_dynamic_config="../../../../xcm/v7/transfers_dynamic_dev.json",
 )
 
-registry = build_polkadot_xcm_registry(config_files)
+registry = build_xcm_registry(config_files)
 
 origin_chain_name = "Polkadot Asset Hub"
 destination_chain_name = "Polimec"
