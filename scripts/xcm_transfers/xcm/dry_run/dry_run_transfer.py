@@ -79,7 +79,13 @@ class TransferDryRunner:
                                             next_call=transfer_assets_call(s))
         )
 
-        origin_dry_run_result = dry_run_xcm_call(origin_chain, call, root_origin(), final_destination_account=recipient)
+        origin_dry_run_result = dry_run_xcm_call(
+            chain=origin_chain,
+            call=call,
+            origin=root_origin(),
+            result_xcms_version=VerionsedXcm.default_xcm_version(),
+            final_destination_account=recipient
+        )
         message_to_next_hop = origin_dry_run_result.forwarded_xcm
         paid_delivery_fee = origin_dry_run_result.paid_delivery_fee
 

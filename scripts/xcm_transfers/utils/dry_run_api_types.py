@@ -1,4 +1,10 @@
-def dry_run_api_types(runtime_types_prefix: str | None) -> dict | None:
+from typing import List
+
+dry_run_v1 = 1
+dry_run_v2 = 2
+
+
+def dry_run_api_types(runtime_types_prefix: str | None, dry_run_version: int) -> dict | None:
     if runtime_types_prefix is None:
         return None
 
@@ -8,16 +14,7 @@ def dry_run_api_types(runtime_types_prefix: str | None) -> dict | None:
                 "methods": {
                     "dry_run_call": {
                         "description": "Dry run runtime call",
-                        "params": [
-                            {
-                                "name": "origin_caller",
-                                "type": f"{runtime_types_prefix}::OriginCaller"
-                            },
-                            {
-                                "name": "call",
-                                "type": "GenericCall"
-                            }
-                        ],
+                        "params": determine_dry_run_call_args(runtime_types_prefix, dry_run_version),
                         "type": "CallDryRunEffectsResult"
                     },
                     "dry_run_xcm": {
@@ -95,7 +92,7 @@ def dry_run_api_types(runtime_types_prefix: str | None) -> dict | None:
                         "type_mapping": [
                             [
                                 "execution_result",
-                                "staging_xcm::v4::traits::Outcome"
+                                determine_xcm_outcome_type(dry_run_version)
                             ],
                             [
                                 "emitted_events",
@@ -150,3 +147,30 @@ def dry_run_api_types(runtime_types_prefix: str | None) -> dict | None:
             },
         }
     }
+
+def determine_xcm_outcome_type(dry_run_version: int) -> str:
+    match dry_run_version:
+        case 1:
+            return "staging_xcm::v4::traits::Outcome"
+        case _:
+            return "staging_xcm::v5::traits::Outcome"
+
+def determine_dry_run_call_args(runtime_types_prefix: str | None, dry_run_version: int) -> List:
+    origin_caller = {
+        "name": "origin_caller",
+        "type": f"{runtime_types_prefix}::OriginCaller"
+    }
+    call = {
+        "name": "call",
+        "type": "GenericCall"
+    }
+    xcm_versions_result = {
+        "name": "result_xcms_version",
+        "type": "u32"
+    }
+
+    match dry_run_version:
+        case 1:
+            return [origin_caller, call]
+        case _:
+            return [origin_caller, call, xcm_versions_result]

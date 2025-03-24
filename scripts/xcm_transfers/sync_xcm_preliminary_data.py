@@ -9,6 +9,7 @@ from substrateinterface.exceptions import SubstrateRequestException
 from scripts.utils.chain_model import Chain
 from scripts.utils.work_with_data import get_data_from_file, write_data_to_file
 from scripts.xcm_transfers.utils.chain_ids import RELAYS
+from scripts.xcm_transfers.utils.dry_run_api_types import dry_run_v1, dry_run_v2
 
 data = {}
 
@@ -22,25 +23,55 @@ def get_runtime_prefix(substrate: SubstrateInterface) -> str | None:
     return None
 
 
-def chain_has_dry_run_api(substrate: SubstrateInterface) -> bool:
+def determine_dry_run_version(substrate: SubstrateInterface, runtime_prefix: str) -> int | None:
     try:
-        substrate.rpc_request(method="state_call", params=["DryRunApi_dry_run_xcm", "0x"])
+        # TODO we should migrate to inspecting v15 metadata which is ready at
+        # https://github.com/polkascan/py-substrate-interface/pull/358/files
+        # probably by forking the py-substrate-interface
+        method_data = construct_v1_dry_run_method_data(substrate, runtime_prefix)
+        substrate.rpc_request(method="state_call", params=["DryRunApi_dry_run_call", method_data])
+
+        return dry_run_v1
     except SubstrateRequestException as e:
-        return "DryRunApi_dry_run_xcm is not found" not in e.args[0]["message"]
+        error_message = e.args[0]["message"]
 
-    # We don't form a valid dry run params so successfully execution should not be possible but still return True in
-    # case it somehow happened
-    return True
+        if "DryRunApi_dry_run_xcm is not found" in error_message:
+            return None
+        # Dry run v2 has additional argument so it will result in a trap
+        elif "Execution aborted due to trap" in error_message:
+            return dry_run_v2
+        # Something unknown went wrong so we skip
+        else:
+            return None
 
+def construct_v1_dry_run_method_data(substrate: SubstrateInterface, runtime_prefix: str)-> str:
+    origin_caller = substrate.encode_scale(f"{runtime_prefix}::OriginCaller", {"system": "Root"})
+    call = substrate.compose_call(
+        call_module="System",
+        call_function="remark",
+        call_params={
+            "remark": "0x"
+        }
+    ).encode()
+    method_data = origin_caller + call
+    return method_data.to_hex()
 
 def process_chain(idx, chain, len):
     print(f"\n{idx + 1}/{len}. Starting fetching data for {chain.name}")
 
     chain.create_connection()
 
-    if not chain_has_dry_run_api(chain.substrate):
-        print(f"{chain.name} does not yet have dry run Api, skipping")
+    try:
+        runtime_prefix = get_runtime_prefix(chain.substrate)
+        if runtime_prefix is None:
+            print(f"Runtime prefix in {chain.name} was not found, skipping")
+    except Exception as e:
+        print(f"Failed to fetch runtime prefix for {chain.name} due to {e}, skipping")
+        return
 
+    chain_dry_run_api_version = determine_dry_run_version(chain.substrate, runtime_prefix)
+    print(f"{chain.name} dry run version: {chain_dry_run_api_version}")
+    if chain_dry_run_api_version is None:
         return
 
     parachainId = None
@@ -52,15 +83,8 @@ def process_chain(idx, chain, len):
             print(f"Failed to fetch ParachainId for {chain.name} due to {e}, skipping")
             return
 
-    try:
-        runtime_prefix = get_runtime_prefix(chain.substrate)
-        if runtime_prefix is None:
-            print(f"Runtime prefix in {chain.name} was not found, skipping")
-    except Exception as e:
-        print(f"Failed to fetch runtime prefix for {chain.name} due to {e}, skipping")
-        return
-
-    parachain_info = {"parachainId": parachainId, "runtimePrefix": runtime_prefix, "name": chain.name}
+    parachain_info = {"parachainId": parachainId, "runtimePrefix": runtime_prefix, "name": chain.name,
+                      "dryRunVersion": chain_dry_run_api_version}
     data[chain.chainId] = parachain_info
 
     print(f"Finished fetching data for {chain.name}: {parachain_info}")
@@ -95,4 +119,3 @@ for idx, chain in enumerate(xcm_chains):
         print(f"Error happened when processing {chain.name}, skipping: {e}")
 
         continue
-
