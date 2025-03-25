@@ -35,10 +35,6 @@
                 "name": "Novasama node"
             },
             {
-                "url": "wss://rpc-polkadot.novasama-tech.org",
-                "name": "Novasama node"
-            },
-            {
                 "url": "wss://rpc.ibp.network/polkadot",
                 "name": "IBP1 node"
             },
@@ -174,10 +170,6 @@
             },
             {
                 "url": "wss://rpc-kusama-2.novasama-tech.org",
-                "name": "Novasama node"
-            },
-            {
-                "url": "wss://rpc-kusama.novasama-tech.org",
                 "name": "Novasama node"
             },
             {
@@ -357,7 +349,6 @@
         "options": [
             "testnet",
             "crowdloans",
-            "governance",
             "proxy"
         ],
         "additional": {
@@ -365,7 +356,6 @@
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polkadot-and-kusama",
             "stakingMaxElectingVoters": 22500,
             "feeViaRuntimeCall": true,
-            "identityChain": "1eb6fb0ba5187434de017a70cb84d4f47142df1d571d0ef9e7e1407f2b80b93c",
             "supportsGenericLedgerApp": true
         }
     },
@@ -443,6 +433,18 @@
                 "typeExtras": {
                     "assetId": "1984",
                     "isSufficient": true
+                }
+            },
+            {
+                "assetId": 8,
+                "symbol": "DOT",
+                "precision": 10,
+                "priceId": "polkadot",
+                "type": "statemine",
+                "icon": "DOT.svg",
+                "typeExtras": {
+                    "assetId": "0x02010902",
+                    "palletName": "ForeignAssets"
                 }
             }
         ],
@@ -1392,12 +1394,16 @@
         "nodeSelectionStrategy": "roundRobin",
         "nodes": [
             {
-                "url": "https://rpc.ankr.com/eth",
-                "name": "Ankr rpc node"
+                "url": "https://ethereum-rpc.publicnode.com",
+                "name": "Allnodes rpc node"
             },
             {
                 "url": "https://1rpc.io/eth",
                 "name": "One rpc node"
+            },
+            {
+                "url": "https://rpc.ankr.com/eth",
+                "name": "Ankr rpc node"
             },
             {
                 "url": "wss://mainnet.infura.io/ws/v3/32a2be59297444c9bcb2b61bb700c6fe",
@@ -2210,8 +2216,8 @@
                 "name": "Liebi node"
             },
             {
-                "url": "wss://bifrost-rpc.dwellir.com",
-                "name": "Dwellir node"
+                "url": "wss://us.bifrost-rpc.liebi.com/ws",
+                "name": "LiebiUS node"
             }
         ],
         "explorers": [
@@ -2241,10 +2247,14 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Bifrost_Kusama.svg",
         "addressPrefix": 0,
+        "legacyAddressPrefix": 6,
         "options": [
             "governance-v1",
             "governance"
-        ]
+        ],
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "chainId": "a85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755",
@@ -2435,177 +2445,6 @@
             "feeViaRuntimeCall": true,
             "disabledCheckMetadataHash": true
         }
-    },
-    {
-        "chainId": "64a1c658a48b2e70a7fb1ad4c39eea35022568c20fc44a6e2e3d0a57aee6053b",
-        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Parallel Heiko",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "HKO",
-                "precision": 12,
-                "icon": "HKO.svg"
-            },
-            {
-                "assetId": 1,
-                "symbol": "KSM",
-                "precision": 12,
-                "priceId": "kusama",
-                "type": "statemine",
-                "icon": "KSM.svg",
-                "typeExtras": {
-                    "assetId": "100",
-                    "isSufficient": true
-                }
-            },
-            {
-                "assetId": 2,
-                "symbol": "aSEEDk",
-                "precision": 12,
-                "priceId": "ausd-seed-karura",
-                "type": "statemine",
-                "icon": "aSEEDk.svg",
-                "typeExtras": {
-                    "assetId": "103",
-                    "isSufficient": true
-                }
-            },
-            {
-                "assetId": 3,
-                "symbol": "LKSM",
-                "precision": 12,
-                "priceId": "liquid-ksm",
-                "type": "statemine",
-                "icon": "LKSM.svg",
-                "typeExtras": {
-                    "assetId": "109",
-                    "isSufficient": true
-                }
-            },
-            {
-                "assetId": 4,
-                "symbol": "sKSM",
-                "precision": 12,
-                "type": "statemine",
-                "icon": "sKSM.svg",
-                "typeExtras": {
-                    "assetId": "1000",
-                    "isSufficient": true
-                }
-            },
-            {
-                "assetId": 5,
-                "symbol": "KAR",
-                "precision": 12,
-                "priceId": "karura",
-                "type": "statemine",
-                "icon": "KAR.svg",
-                "typeExtras": {
-                    "assetId": "107",
-                    "isSufficient": true
-                }
-            },
-            {
-                "assetId": 6,
-                "symbol": "MOVR",
-                "precision": 18,
-                "priceId": "moonriver",
-                "type": "statemine",
-                "icon": "MOVR.svg",
-                "typeExtras": {
-                    "assetId": "113",
-                    "isSufficient": true
-                }
-            },
-            {
-                "assetId": 7,
-                "symbol": "PHA",
-                "precision": 12,
-                "priceId": "pha",
-                "type": "statemine",
-                "icon": "PHA.svg",
-                "typeExtras": {
-                    "assetId": "115",
-                    "isSufficient": true
-                }
-            },
-            {
-                "assetId": 8,
-                "symbol": "GENS",
-                "precision": 9,
-                "priceId": "genshiro",
-                "type": "statemine",
-                "icon": "GENS.svg",
-                "typeExtras": {
-                    "assetId": "123"
-                }
-            },
-            {
-                "assetId": 9,
-                "symbol": "USDT",
-                "precision": 6,
-                "priceId": "tether",
-                "type": "statemine",
-                "icon": "USDT.svg",
-                "typeExtras": {
-                    "assetId": "102",
-                    "isSufficient": true
-                }
-            },
-            {
-                "assetId": 10,
-                "symbol": "KINT",
-                "precision": 12,
-                "priceId": "kintsugi",
-                "type": "statemine",
-                "icon": "KINT.svg",
-                "typeExtras": {
-                    "assetId": "119",
-                    "isSufficient": true
-                }
-            },
-            {
-                "assetId": 11,
-                "symbol": "kBTC",
-                "precision": 8,
-                "priceId": "bitcoin",
-                "type": "statemine",
-                "icon": "kBTC.svg",
-                "typeExtras": {
-                    "assetId": "121",
-                    "isSufficient": true
-                }
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://heiko-rpc.parallel.fi",
-                "name": "Parallel node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Statescan",
-                "account": "https://heiko.statescan.io/#/accounts/{address}",
-                "extrinsic": "https://heiko.statescan.io/#/extrinsics/{hash}",
-                "event": "https://heiko.statescan.io/#/events/{event}"
-            },
-            {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-parallel-heiko"
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/ParallelHeiko.svg",
-        "addressPrefix": 110
     },
     {
         "chainId": "742a2ca70c2fda6cee4f8df98d64c4c670a052d9568058982dad9d5a7a135c5b",
@@ -2956,7 +2795,7 @@
     {
         "chainId": "4ac80c99289841dd946ef92765bf659a307d39189b3ce374a92b5f0415ee17a1",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Calamari",
+        "name": "Calamari (PAUSED)",
         "assets": [
             {
                 "assetId": 0,
@@ -3420,6 +3259,19 @@
                     "currencyIdScale": "0x050d00",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
                     "existentialDeposit": "1000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 16,
+                "symbol": "NEMO",
+                "precision": 18,
+                "type": "orml",
+                "icon": "Default.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x02fa904c86b73fd041d6cc2aeed9e6ec0148fd51da",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "0",
                     "transfersEnabled": true
                 }
             }
@@ -3924,8 +3776,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://polkadot-parallel-rpc.parallel.fi",
-                "name": "Parallel node"
+                "url": "wss://parallel.gatotech.network",
+                "name": "Gatotech node"
             }
         ],
         "explorers": [
@@ -4226,9 +4078,43 @@
                 "symbol": "DAMN",
                 "precision": 12,
                 "type": "statemine",
-                "icon": "Default.svg",
+                "icon": "DAMN.svg",
                 "typeExtras": {
                     "assetId": "22222012"
+                }
+            },
+            {
+                "assetId": 22,
+                "symbol": "BILLCOIN",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "BILLCOIN.svg",
+                "typeExtras": {
+                    "assetId": "50000075"
+                }
+            },
+            {
+                "assetId": 23,
+                "symbol": "KSM",
+                "precision": 12,
+                "priceId": "kusama",
+                "type": "statemine",
+                "icon": "KSM.svg",
+                "typeExtras": {
+                    "assetId": "0x02010903",
+                    "palletName": "ForeignAssets"
+                }
+            },
+            {
+                "assetId": 24,
+                "symbol": "ETH-Snowbridge",
+                "precision": 18,
+                "priceId": "ethereum",
+                "type": "statemine",
+                "icon": "WETH-Snowbridge.svg",
+                "typeExtras": {
+                    "assetId": "0x0201090704",
+                    "palletName": "ForeignAssets"
                 }
             }
         ],
@@ -4598,7 +4484,7 @@
     {
         "chainId": "6811a339673c9daa897944dcdac99c6e2939cc88245ed21951a0a3c9a2be75bc",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Picasso",
+        "name": "Picasso (PAUSED)",
         "assets": [
             {
                 "assetId": 0,
@@ -4698,10 +4584,6 @@
             {
                 "url": "wss://zeitgeist.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
-            },
-            {
-                "url": "wss://main.rpc.zeitgeist.pm/ws",
-                "name": "Zeitgeist node"
             }
         ],
         "explorers": [
@@ -5589,11 +5471,92 @@
                 "symbol": "DAMN",
                 "precision": 12,
                 "type": "orml",
-                "icon": "Default.svg",
+                "icon": "DAMN.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x5e430f00",
                     "currencyIdType": "u32",
                     "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 48,
+                "symbol": "SOL-Wormhole",
+                "precision": 9,
+                "type": "orml",
+                "icon": "SOL-Wormhole.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x30450f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "46339",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 50,
+                "symbol": "tBTC",
+                "precision": 18,
+                "type": "orml",
+                "icon": "tBTC.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x3d450f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "106803374987",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 51,
+                "symbol": "BILLCOIN",
+                "precision": 12,
+                "type": "orml",
+                "icon": "BILLCOIN.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x3a450f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 52,
+                "symbol": "KSM",
+                "precision": 12,
+                "priceId": "kusama",
+                "type": "orml",
+                "icon": "KSM.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x43450f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "313283208",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 53,
+                "symbol": "EWT",
+                "precision": 18,
+                "priceId": "energy-web-token",
+                "type": "orml",
+                "icon": "EWT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x6dda0300",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "3244646333550",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 57,
+                "symbol": "ETH-Snowbridge",
+                "precision": 18,
+                "priceId": "ethereum",
+                "type": "orml",
+                "icon": "WETH-Snowbridge.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x20000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "5373455131650",
                     "transfersEnabled": true
                 }
             }
@@ -5996,7 +5959,10 @@
         "addressPrefix": 30,
         "options": [
             "governance-v1"
-        ]
+        ],
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "chainId": "0f62b701fb12d02237a33b84818c11f621653d2b1614c777973babf4652b535d",
@@ -6111,10 +6077,6 @@
             }
         ],
         "nodes": [
-            {
-                "url": "wss://rpc.turing.oak.tech",
-                "name": "Turing node"
-            },
             {
                 "url": "wss://turing-rpc.dwellir.com",
                 "name": "Dwellir node"
@@ -6611,6 +6573,10 @@
             {
                 "url": "wss://hk.p.bifrost-rpc.liebi.com/ws",
                 "name": "Liebi node"
+            },
+            {
+                "url": "wss://eu.bifrost-polkadot-rpc.liebi.com/ws",
+                "name": "LiebiEU node"
             }
         ],
         "explorers": [
@@ -6638,19 +6604,22 @@
         "addressPrefix": 0,
         "options": [
             "governance-v1"
-        ]
+        ],
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "chainId": "2fc8bb6ed7c0051bdcf4866c322ed32b6276572713607e3297ccf411b8f14aa9",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "Litentry",
+        "name": "Heima",
         "assets": [
             {
                 "assetId": 0,
-                "symbol": "LIT",
+                "symbol": "HEI",
                 "precision": 18,
-                "icon": "LIT.svg",
-                "priceId": "litentry"
+                "icon": "HEI.svg",
+                "priceId": "heima"
             }
         ],
         "nodes": [
@@ -6666,9 +6635,9 @@
         "explorers": [
             {
                 "name": "Statescan",
-                "account": "https://litentry.statescan.io/#/accounts/{address}",
-                "extrinsic": "https://litentry.statescan.io/#/extrinsics/{hash}",
-                "event": "https://litentry.statescan.io/#/events/{event}"
+                "account": "https://heima.statescan.io/#/accounts/{address}",
+                "extrinsic": "https://heima.statescan.io/#/extrinsics/{hash}",
+                "event": "https://heima.statescan.io/#/events/{event}"
             }
         ],
         "externalApi": {
@@ -6679,7 +6648,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Litentry.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Heima.svg",
         "addressPrefix": 31
     },
     {
@@ -6936,16 +6905,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc-parachain.bajun.network",
+                "url": "wss://rpc-para.bajun.network",
                 "name": "AjunaNetwork node"
-            },
-            {
-                "url": "wss://bajun.public.curie.radiumblock.co/ws",
-                "name": "Radium node"
-            },
-            {
-                "url": "wss://bajun.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -6965,38 +6926,6 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Bajun.svg",
         "addressPrefix": 1337
-    },
-    {
-        "chainId": "ca93a37c913a25fa8fdb33c7f738afc39379cb71d37874a16d4c091a5aef9f89",
-        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Imbue",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "IMBU",
-                "precision": 12,
-                "icon": "IMBU.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://kusama.imbuenetwork.com",
-                "name": "Imbue node"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-imbue"
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Imbue.svg",
-        "addressPrefix": 42,
-        "additional": {
-            "feeViaRuntimeCall": true
-        }
     },
     {
         "chainId": "cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
@@ -7276,7 +7205,7 @@
     },
     {
         "chainId": "74ed91fbc18497f011290f9119a2217908649170337b6414a2d44923ade07063",
-        "name": "Myriad",
+        "name": "Myriad (PAUSED)",
         "assets": [
             {
                 "assetId": 0,
@@ -7843,73 +7772,6 @@
         "additional": {
             "supportsGenericLedgerApp": true
         }
-    },
-    {
-        "chainId": "89d3ec46d2fb43ef5a9713833373d5ea666b092fa8fd68fbc34596036571b907",
-        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "Equilibrium (PAUSED)",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "EQ",
-                "precision": 9,
-                "priceId": "equilibrium-token",
-                "icon": "EQ.svg",
-                "type": "equilibrium",
-                "typeExtras": {
-                    "assetId": "25969"
-                }
-            },
-            {
-                "assetId": 1,
-                "symbol": "DOT",
-                "precision": 10,
-                "priceId": "polkadot",
-                "icon": "DOT.svg",
-                "type": "equilibrium",
-                "typeExtras": {
-                    "assetId": "6582132"
-                }
-            },
-            {
-                "assetId": 2,
-                "symbol": "EQD",
-                "precision": 9,
-                "priceId": "tether",
-                "icon": "EQD.svg",
-                "type": "equilibrium",
-                "typeExtras": {
-                    "assetId": "6648164"
-                }
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://node.pol.equilibrium.io",
-                "name": "Equilibrium node"
-            },
-            {
-                "url": "wss://equilibrium-rpc.dwellir.com",
-                "name": "Dwellir node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://equilibrium.subscan.io/extrinsic/{hash}",
-                "account": "https://equilibrium.subscan.io/account/{address}"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-equilibrium"
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Equilibrium.svg",
-        "addressPrefix": 68
     },
     {
         "chainId": "e358eb1d11b31255a286c12e44fe6780b7edb171d657905a97e39f71d9c6c3ee",
@@ -8689,7 +8551,7 @@
                 "icon": "DOT.svg",
                 "type": "statemine",
                 "typeExtras": {
-                    "assetId": "10",
+                    "assetId": "0x0100",
                     "palletName": "ForeignAssets",
                     "isSufficient": true
                 }
@@ -8702,7 +8564,7 @@
                 "icon": "USDT.svg",
                 "type": "statemine",
                 "typeExtras": {
-                    "assetId": "1984",
+                    "assetId": "0x010300a10f043205011f",
                     "palletName": "ForeignAssets",
                     "isSufficient": true
                 }
@@ -8715,7 +8577,7 @@
                 "icon": "USDC.svg",
                 "type": "statemine",
                 "typeExtras": {
-                    "assetId": "1337",
+                    "assetId": "0x010300a10f043205e514",
                     "palletName": "ForeignAssets",
                     "isSufficient": true
                 }
@@ -9012,7 +8874,10 @@
                 "symbol": "MYTH",
                 "precision": 18,
                 "priceId": "mythos",
-                "icon": "MYTH.svg"
+                "icon": "MYTH.svg",
+                "staking": [
+                    "mythos"
+                ]
             }
         ],
         "nodes": [
@@ -9022,6 +8887,14 @@
                 "features": [
                     "noTls12"
                 ]
+            },
+            {
+                "url": "wss://mythos.ibp.network",
+                "name": "IBP1 node"
+            },
+            {
+                "url": "wss://mythos.dotters.network",
+                "name": "IBP2 node"
             }
         ],
         "explorers": [
@@ -9035,7 +8908,13 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-mythos"
+                    "url": "https://subquery-history-mythos-prod.novasama-tech.org"
+                }
+            ],
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-mythos-prod.novasama-tech.org"
                 }
             ]
         },
@@ -9043,7 +8922,14 @@
         "addressPrefix": 29972,
         "options": [
             "ethereumBased"
-        ]
+        ],
+        "additional": {
+            "themeColor": "#ED3A47",
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/mythos-myth-staking",
+            "feeViaRuntimeCall": true,
+            "sessionLength": 14400,
+            "defaultBlockTime": 6000
+        }
     },
     {
         "chainId": "ce7681fb12aa8f7265d229a9074be0ea1d5e99b53eedcec2deade43857901808",
@@ -9122,7 +9008,7 @@
         "assets": [
             {
                 "assetId": 0,
-                "symbol": "NAND",
+                "symbol": "BRIDGE",
                 "precision": 12,
                 "icon": "NAND.svg"
             }
@@ -9150,7 +9036,7 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Hyperbridge.svg",
-        "addressPrefix": 42
+        "addressPrefix": 0
     },
     {
         "chainId": "81443836a9a24caaa23f1241897d1235717535711d1d3fe24eae4fdc942c092c",
@@ -9171,7 +9057,10 @@
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Cere.svg",
-        "addressPrefix": 54
+        "addressPrefix": 54,
+        "additional": {
+            "disabledCheckMetadataHash": true
+        }
     },
     {
         "chainId": "b91746b45e0346cc2f815a520b9c6cb4d5c0902af848db0a80f85932d2e8276a",
@@ -9507,7 +9396,7 @@
             {
                 "name": "LAOS explorer",
                 "account": "https://explorer.laosnetwork.io/address/{address}",
-                "event": "https://explorer.laosnetwork.io/tx/{hash}"
+                "extrinsic": "https://explorer.laosnetwork.io/tx/{hash}"
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/LAOS.svg",
@@ -9551,7 +9440,7 @@
                 "assetId": 3,
                 "symbol": "AZK",
                 "precision": 12,
-                "icon": "AZK.svg",
+                "icon": "AZK.png",
                 "type": "statemine",
                 "typeExtras": {
                     "assetId": "3"
@@ -9575,6 +9464,46 @@
                 "type": "statemine",
                 "typeExtras": {
                     "assetId": "5"
+                }
+            },
+            {
+                "assetId": 6,
+                "symbol": "IDON",
+                "precision": 12,
+                "icon": "IDON.png",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "6"
+                }
+            },
+            {
+                "assetId": 7,
+                "symbol": "MPC",
+                "precision": 12,
+                "icon": "MPC.png",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "7"
+                }
+            },
+            {
+                "assetId": 8,
+                "symbol": "IMPC",
+                "precision": 12,
+                "icon": "IMPC.png",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "8"
+                }
+            },
+            {
+                "assetId": 9,
+                "symbol": "DON",
+                "precision": 12,
+                "icon": "DON.png",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "9"
                 }
             }
         ],
@@ -9664,5 +9593,40 @@
             "ethereumBased",
             "noSubstrateRuntime"
         ]
+    },
+    {
+        "chainId": "44f68476df71ebf765b630bf08dc1e0fedb2bf614a1aa0563b3f74f20e47b3e0",
+        "name": "Tangle",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "TNT",
+                "precision": 18,
+                "priceId": "tangle-network",
+                "icon": "TNT.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc.tangle.tools",
+                "name": "Parity node"
+            },
+            {
+                "url": "wss://tangle-mainnet-rpc.dwellir.com",
+                "name": "Dwellir node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Statescan",
+                "account": "https://tangle.statescan.io/#/accounts/{address}",
+                "event": "https://tangle.statescan.io/#/events/{event}"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Tangle.svg",
+        "addressPrefix": 5845,
+        "additional": {
+            "disabledCheckMetadataHash": true
+        }
     }
 ]

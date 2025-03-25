@@ -650,5 +650,55 @@
                 "contractAddress": "0xBD4372e44c5eE654dd838304006E1f0f69983154"
             }
         ]
+    },
+    {
+        "symbol": "PHA",
+        "precision": 18,
+        "name": "PHA token",
+        "priceId": "pha",
+        "icon": "PHA.svg",
+        "instances": [
+            {
+                "chainId": "eip155:1",
+                "contractAddress": "0x6c5bA91642F10282b576d91922Ae6448C9d52f4E"
+            }
+        ]
+    },
+    {
+        "symbol": "SOL-Wormhole",
+        "precision": 9,
+        "name": "Wrapped SOL",
+        "icon": "SOL-Wormhole.svg",
+        "instances": [
+            {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "contractAddress": "0x99fec54a5ad36d50a4bba3a41cab983a5bb86a7d"
+            }
+        ]
+    },
+    {
+        "symbol": "SUI-Wormhole",
+        "precision": 9,
+        "name": "Sui",
+        "icon": "SUI-Wormhole.svg",
+        "instances": [
+            {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "contractAddress": "0x484eCCE6775143D3335Ed2C7bCB22151C53B9F49"
+            }
+        ]
+    },
+    {
+        "symbol": "KMA",
+        "precision": 18,
+        "name": "KMA",
+        "priceId": "calamari-network",
+        "icon": "KMA.svg",
+        "instances": [
+            {
+                "chainId": "eip155:169",
+                "contractAddress": "0x6745CF7A0aAca457F451a4b8c60c8504320F69d0"
+            }
+        ]
     }
 ]

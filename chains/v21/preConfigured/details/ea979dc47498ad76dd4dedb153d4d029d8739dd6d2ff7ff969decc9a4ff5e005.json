@@ -1,0 +1,19 @@
+{
+    "chainId": "ea979dc47498ad76dd4dedb153d4d029d8739dd6d2ff7ff969decc9a4ff5e005",
+    "name": "Xcavate dev (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "XCAV",
+            "precision": 12,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc2-paseo.xcavate.io",
+            "name": "Xcavate"
+        }
+    ],
+    "addressPrefix": 42
+}
