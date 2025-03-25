@@ -102,14 +102,15 @@ def fund_account_and_then(
 
     calls = []
 
-    fund_sending_asset_call = compose_fund_call(substrate, chain, chain_asset, account, planks_in_sending_asset)
-    calls.append(fund_sending_asset_call)
-
+    # Do the utility asset fund first so we can later mint potentially non-sufficient sending asset
     utility_asset = chain.chain.get_utility_asset()
     if utility_asset.id != chain_asset.id:
         planks_in_utility_asset = utility_asset.planks(amount)
         fund_utility_asset_call = compose_fund_call(substrate, chain, utility_asset, account, planks_in_utility_asset)
         calls.append(fund_utility_asset_call)
+
+    fund_sending_asset_call = compose_fund_call(substrate, chain, chain_asset, account, planks_in_sending_asset)
+    calls.append(fund_sending_asset_call)
 
     wrapped_next_call = compose_dispatch_as(
         substrate=substrate,
