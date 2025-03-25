@@ -4,19 +4,13 @@ from dataclasses import dataclass
 from typing import List
 
 from scripts.utils.work_with_data import get_data_from_file, write_data_to_file
-from scripts.xcm_transfers.utils.xcm_config_files import XCMConfigFiles
+from scripts.xcm_transfers.config_setup import get_xcm_config_files
 from scripts.xcm_transfers.xcm.dry_run.dry_run_transfer import TransferDryRunner, DryRunTransferResult
 from scripts.xcm_transfers.xcm.graph.xcm_connectivity_graph import XcmChainConnectivityGraph
 from scripts.xcm_transfers.xcm.registry.xcm_registry_builder import build_xcm_registry
 from scripts.xcm_transfers.xcm.xcm_transfer_direction import XcmTransferDirection
 
-config_files = XCMConfigFiles(
-    chains="../../chains/v21/chains_dev.json",
-    xcm_legacy_config="../../xcm/v7/transfers_dev.json",
-    xcm_additional_data="xcm_registry_additional_data.json",
-    xcm_dynamic_config="../../xcm/v7/transfers_dynamic_dev.json",
-)
-
+config_files = get_xcm_config_files()
 registry = build_xcm_registry(config_files)
 connectivity_graph = XcmChainConnectivityGraph.construct_default(registry)
 transfers_runner = TransferDryRunner(registry)
@@ -33,9 +27,11 @@ class WorkingDirection:
     direction: XcmTransferDirection
     dry_run_result: DryRunTransferResult
 
-transfers_dict: dict[str, dict[int, List[WorkingDirection]]] = defaultdict(lambda : defaultdict(list))
+
+transfers_dict: dict[str, dict[int, List[WorkingDirection]]] = defaultdict(lambda: defaultdict(list))
 
 dynamic_config.pop("chains", None)
+
 
 def save_config():
     transfers_in_config_format = []
@@ -78,7 +74,7 @@ def save_config():
 
 for idx, potential_direction in enumerate(potential_directions):
     try:
-        print(f"{idx+1}/{len(potential_directions)}. Checking {potential_direction}")
+        print(f"{idx + 1}/{len(potential_directions)}. Checking {potential_direction}")
         result = transfers_runner.dry_run_transfer(potential_direction)
         passed.append(potential_direction)
 
@@ -93,8 +89,6 @@ for idx, potential_direction in enumerate(potential_directions):
     except Exception as exception:
         failed.append(potential_direction)
         print(f"Result: Failure {exception}")
-
-
 
 print(f"Passed ({len(passed)}): {passed}")
 print(f"Failed ({len(failed)}): {failed}")

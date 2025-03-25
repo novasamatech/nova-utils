@@ -73,7 +73,7 @@ def _build_reserve_overrides(reserve_id_overrides: dict) -> dict[Tuple[str, int]
 
 def _build_reserves(xcm_config: dict, xcm_registry: XcmRegistry) -> ReserveLocations:
     reserve_locations = _build_reserve_locations_map(xcm_config["assetsLocation"], xcm_registry)
-    asset_reserve_overrides = _build_reserve_overrides(xcm_config["reserveIdOverrides"])
+    asset_reserve_overrides = _build_reserve_overrides(xcm_config.get("reserveIdOverrides"))
 
     return ReserveLocations(reserve_locations, asset_reserve_overrides)
 
