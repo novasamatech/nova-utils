@@ -29,7 +29,7 @@ class BlacklistedChains(Enum):
 
 CHAINS_FILE_PATH_DEV = Path(os.getenv("DEV_CHAINS_JSON_PATH", 'chains/v21/chains_dev.json'))
 CHAINS_FILE_PATH_PROD = Path(os.getenv("CHAINS_JSON_PATH", 'chains/v21/chains.json'))
-SKIP_PATTERNS = ["(SHUTTING DOWN)", "Westend (TESTNET)"]
+SKIP_PATTERNS = ["(SHUTTING DOWN)", "Westend (TESTNET)", "Paseo Testnet (TESTNET)", "5ireChain Mainnet"]
 
 
 def load_json_file(file_path):
@@ -164,7 +164,7 @@ def create_chain_data(chain_object, endpoint_type):
         }
 
         if "testnet" in endpoint_type:
-            chain_data["name"] = chain_data.get("name") + " (TESTNET)"
+            chain_data["name"] = json_property.name + " (TESTNET)"
         return chain_data
     except Exception as err:
         # If there's a failure, print a warning and skip the connection
