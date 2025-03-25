@@ -129,7 +129,6 @@ class TransferDryRunner:
             raise Exception(f"Deposited amount was not found, final events: {destination_events}")
 
         result = DryRunTransferResult(
-            execution_fee=amount - deposited_amount,
             paid_delivery_fee=paid_delivery_fee
         )
 
@@ -140,7 +139,6 @@ class TransferDryRunner:
 
 @dataclass
 class DryRunTransferResult:
-    execution_fee: float
     paid_delivery_fee: bool
 
 _substrate_account = "13mp1WEs72kbCBF3WKcoK6Hfhu2HHZGpQ4jsKCZbfd6FoRvH"

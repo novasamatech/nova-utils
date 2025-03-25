@@ -47,14 +47,11 @@ def save_config():
             asset_transfers = []
 
             for working_direction in working_directions:
-                origin_asset = working_direction.direction.origin_asset
                 destination_asset = working_direction.direction.destination_asset
-                execution_fee_in_origin_planks = origin_asset.planks(working_direction.dry_run_result.execution_fee)
 
                 destination_config = {
                     "chainId": destination_asset.chain.chainId,
                     "assetId": destination_asset.id,
-                    "executionFee": execution_fee_in_origin_planks,
                 }
 
                 if working_direction.dry_run_result.paid_delivery_fee:

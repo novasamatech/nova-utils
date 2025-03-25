@@ -22,6 +22,13 @@ def get_runtime_prefix(substrate: SubstrateInterface) -> str | None:
 
     return None
 
+def get_xcm_outcome_type(substrate: SubstrateInterface) -> str | None:
+    registry = substrate.get_type_registry(substrate.block_hash)
+
+    for type_name in registry:
+        if "xcm" in type_name and type_name.endswith("Outcome"):
+            return type_name
+
 
 def determine_dry_run_version(substrate: SubstrateInterface, runtime_prefix: str) -> int | None:
     try:
@@ -65,8 +72,18 @@ def process_chain(idx, chain, len):
         runtime_prefix = get_runtime_prefix(chain.substrate)
         if runtime_prefix is None:
             print(f"Runtime prefix in {chain.name} was not found, skipping")
+            return
     except Exception as e:
         print(f"Failed to fetch runtime prefix for {chain.name} due to {e}, skipping")
+        return
+
+    try:
+        xcm_outcome_type = get_xcm_outcome_type(chain.substrate)
+        if xcm_outcome_type is None:
+            print(f"Xcm outcome type in {chain.name} was not found, skipping")
+            return
+    except Exception as e:
+        print(f"Failed to fetch xcm outcome type for {chain.name} due to {e}, skipping")
         return
 
     chain_dry_run_api_version = determine_dry_run_version(chain.substrate, runtime_prefix)
@@ -83,8 +100,13 @@ def process_chain(idx, chain, len):
             print(f"Failed to fetch ParachainId for {chain.name} due to {e}, skipping")
             return
 
-    parachain_info = {"parachainId": parachainId, "runtimePrefix": runtime_prefix, "name": chain.name,
-                      "dryRunVersion": chain_dry_run_api_version}
+    parachain_info = {
+        "parachainId": parachainId,
+        "runtimePrefix": runtime_prefix,
+        "name": chain.name,
+        "dryRunVersion": chain_dry_run_api_version,
+        "xcmOutcomeType": xcm_outcome_type
+    }
     data[chain.chainId] = parachain_info
 
     print(f"Finished fetching data for {chain.name}: {parachain_info}")

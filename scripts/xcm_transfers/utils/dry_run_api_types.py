@@ -4,7 +4,11 @@ dry_run_v1 = 1
 dry_run_v2 = 2
 
 
-def dry_run_api_types(runtime_types_prefix: str | None, dry_run_version: int) -> dict | None:
+def dry_run_api_types(
+        runtime_types_prefix: str | None,
+        dry_run_version: int,
+        xcm_outcome_type: str
+) -> dict | None:
     if runtime_types_prefix is None:
         return None
 
@@ -92,7 +96,7 @@ def dry_run_api_types(runtime_types_prefix: str | None, dry_run_version: int) ->
                         "type_mapping": [
                             [
                                 "execution_result",
-                                determine_xcm_outcome_type(dry_run_version)
+                                xcm_outcome_type
                             ],
                             [
                                 "emitted_events",
@@ -147,13 +151,6 @@ def dry_run_api_types(runtime_types_prefix: str | None, dry_run_version: int) ->
             },
         }
     }
-
-def determine_xcm_outcome_type(dry_run_version: int) -> str:
-    match dry_run_version:
-        case 1:
-            return "staging_xcm::v4::traits::Outcome"
-        case _:
-            return "staging_xcm::v5::traits::Outcome"
 
 def determine_dry_run_call_args(runtime_types_prefix: str | None, dry_run_version: int) -> List:
     origin_caller = {

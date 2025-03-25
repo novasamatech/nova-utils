@@ -98,7 +98,8 @@ def build_all_xcm_capable_chains(files: XCMConfigFiles) -> List[XcmChain]:
 
         runtime_prefix = additional_xcm_chain_data["runtimePrefix"]
         dry_run_version = additional_xcm_chain_data["dryRunVersion"]
-        type_registry = dry_run_api_types(runtime_prefix, dry_run_version)
+        xcm_outcome_type = additional_xcm_chain_data["xcmOutcomeType"]
+        type_registry = dry_run_api_types(runtime_prefix, dry_run_version, xcm_outcome_type)
 
         chain = Chain(chain_config, type_registry)
 
