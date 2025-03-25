@@ -3,7 +3,6 @@ from substrateinterface import SubstrateInterface
 
 from scripts.utils.chain_model import StatemineAssetType, OrmlAssetType, ChainAsset, NativeAssetType, \
     UnsupportedAssetType
-from scripts.xcm_transfers.utils.account_id import multi_address
 from scripts.xcm_transfers.xcm.dry_run.dispatch_as import compose_dispatch_as
 from scripts.xcm_transfers.xcm.dry_run.origins import signed_origin
 from scripts.xcm_transfers.xcm.registry.xcm_chain import XcmChain
@@ -19,7 +18,7 @@ def compose_native_fund(
         call_module="Balances",
         call_function="force_set_balance",
         call_params={
-            "who": multi_address(account, chain.chain.has_evm_addresses()),
+            "who":chain.chain.encodable_address(account),
             "new_free": amount_planks
         }
     )
@@ -41,7 +40,7 @@ def compose_assets_fund(
         call_function="mint",
         call_params={
             "id": statemine_type.encodable_asset_id(),
-            "beneficiary": multi_address(account, chain.chain.has_evm_addresses()),
+            "beneficiary": chain.chain.encodable_address(account),
             "amount": amount_planks
         }
     )
@@ -64,7 +63,7 @@ def compose_orml_fund(
         call_module=orml_type.pallet_name(),
         call_function="set_balance",
         call_params={
-            "who": multi_address(account, chain.chain.has_evm_addresses()),
+            "who": chain.chain.encodable_address(account),
             "currency_id": orml_type.encodable_asset_id(),
             "new_free": amount_planks,
             "new_reserved": 0,

@@ -106,6 +106,18 @@ class Chain:
             self.recreate_connection()
             return action(self.substrate)
 
+    def encodable_address(self, account_id: str):
+        if self.has_evm_addresses():
+            return account_id
+        elif self._uses_multi_address():
+            return {"Id": account_id }
+        else:
+            return account_id
+
+    def _uses_multi_address(self) -> bool:
+        type_def = self.substrate.get_type_definition("Address")
+        return type_def is dict
+
 
 class ChainAsset:
     _data: dict
