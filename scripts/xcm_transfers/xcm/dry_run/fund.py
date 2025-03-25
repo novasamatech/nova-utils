@@ -3,7 +3,6 @@ from substrateinterface import SubstrateInterface
 
 from scripts.utils.chain_model import StatemineAssetType, OrmlAssetType, ChainAsset, NativeAssetType, \
     UnsupportedAssetType
-from scripts.xcm_transfers.utils.account_id import multi_address
 from scripts.xcm_transfers.xcm.dry_run.dispatch_as import compose_dispatch_as
 from scripts.xcm_transfers.xcm.dry_run.origins import signed_origin
 from scripts.xcm_transfers.xcm.registry.xcm_chain import XcmChain
@@ -19,7 +18,7 @@ def compose_native_fund(
         call_module="Balances",
         call_function="force_set_balance",
         call_params={
-            "who": multi_address(account, chain.chain.has_evm_addresses()),
+            "who":chain.chain.encodable_address(account),
             "new_free": amount_planks
         }
     )
@@ -41,7 +40,7 @@ def compose_assets_fund(
         call_function="mint",
         call_params={
             "id": statemine_type.encodable_asset_id(),
-            "beneficiary": multi_address(account, chain.chain.has_evm_addresses()),
+            "beneficiary": chain.chain.encodable_address(account),
             "amount": amount_planks
         }
     )
@@ -64,7 +63,7 @@ def compose_orml_fund(
         call_module=orml_type.pallet_name(),
         call_function="set_balance",
         call_params={
-            "who": multi_address(account, chain.chain.has_evm_addresses()),
+            "who": chain.chain.encodable_address(account),
             "currency_id": orml_type.encodable_asset_id(),
             "new_free": amount_planks,
             "new_reserved": 0,
@@ -102,14 +101,15 @@ def fund_account_and_then(
 
     calls = []
 
-    fund_sending_asset_call = compose_fund_call(substrate, chain, chain_asset, account, planks_in_sending_asset)
-    calls.append(fund_sending_asset_call)
-
+    # Do the utility asset fund first so we can later mint potentially non-sufficient sending asset
     utility_asset = chain.chain.get_utility_asset()
     if utility_asset.id != chain_asset.id:
         planks_in_utility_asset = utility_asset.planks(amount)
         fund_utility_asset_call = compose_fund_call(substrate, chain, utility_asset, account, planks_in_utility_asset)
         calls.append(fund_utility_asset_call)
+
+    fund_sending_asset_call = compose_fund_call(substrate, chain, chain_asset, account, planks_in_sending_asset)
+    calls.append(fund_sending_asset_call)
 
     wrapped_next_call = compose_dispatch_as(
         substrate=substrate,

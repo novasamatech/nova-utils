@@ -11,8 +11,10 @@ from .substrate_interface import create_connection_by_url
 
 T = TypeVar('T')
 
+ChainId = str
 
-class Chain():
+
+class Chain:
     substrate: SubstrateInterface | None
 
     assets: List[ChainAsset]
@@ -104,6 +106,18 @@ class Chain():
             self.recreate_connection()
             return action(self.substrate)
 
+    def encodable_address(self, account_id: str):
+        if self.has_evm_addresses():
+            return account_id
+        elif self._uses_multi_address():
+            return {"Id": account_id }
+        else:
+            return account_id
+
+    def _uses_multi_address(self) -> bool:
+        type_def = self.substrate.get_type_definition("Address")
+        return type_def is dict
+
 
 class ChainAsset:
     _data: dict
@@ -150,7 +164,7 @@ class ChainAsset:
             case "native":
                 return NativeAssetType()
             case "statemine":
-                return StatemineAssetType(type_extras)
+                return StatemineAssetType(type_extras, chain)
             case "orml":
                 return OrmlAssetType(type_extras, chain, chain_cache)
             case _:
@@ -180,18 +194,28 @@ class StatemineAssetType(AssetType):
     _pallet_name: str
     _asset_id: str
 
-    def __init__(self, type_extras: dict):
+    _chain: Chain
+
+    def __init__(self, type_extras: dict, chain: Chain):
         self._pallet_name = type_extras.get("palletName", "Assets")
         self._asset_id = type_extras["assetId"]
+
+        self._chain = chain
 
     def pallet_name(self) -> str:
         return self._pallet_name
 
     def encodable_asset_id(self) -> object | None:
         if self._asset_id.startswith("0x"):
-            return ScaleBytes(self._asset_id)
+            return self._chain.access_substrate(self._encodable_id_from_hex)
         else:
             return int(self._asset_id)
+
+    def _encodable_id_from_hex(self, substrate: SubstrateInterface):
+        type_index = substrate.get_metadata_call_function(self._pallet_name, "transfer").args[0]["type"].value
+        type_name = "scale_info::" + str(type_index)
+        asset_id_bytes = ScaleBytes(self._asset_id)
+        return substrate.create_scale_object(type_name, asset_id_bytes).process()
 
 
 _orml_pallet_candidates = ["Tokens", "Currencies"]

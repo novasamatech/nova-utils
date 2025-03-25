@@ -1,22 +1,16 @@
+from scripts.xcm_transfers.config_setup import get_xcm_config_files
 from scripts.xcm_transfers.utils.log import enable_debug_log
-from scripts.xcm_transfers.utils.xcm_config_files import XCMConfigFiles
 from scripts.xcm_transfers.xcm.dry_run.dry_run_transfer import TransferDryRunner
-from scripts.xcm_transfers.xcm.registry.xcm_registry_builder import build_polkadot_xcm_registry
+from scripts.xcm_transfers.xcm.registry.xcm_registry_builder import build_xcm_registry
 from scripts.xcm_transfers.xcm.xcm_transfer_direction import XcmTransferDirection
 
-config_files = XCMConfigFiles(
-    chains="../../../../chains/v21/chains_dev.json",
-    xcm_legacy_config="../../../../xcm/v6/transfers_dev.json",
-    xcm_additional_data="../../xcm_registry_additional_data.json",
-    xcm_dynamic_config="../../../../xcm/v7/transfers_dynamic_dev.json",
-)
+config_files = get_xcm_config_files()
+registry = build_xcm_registry(config_files)
 
-registry = build_polkadot_xcm_registry(config_files)
-
-origin_chain_name = "Polkadot Asset Hub"
-destination_chain_name = "Polimec"
-origin_token = "USDC"
-destination_token = "USDC"
+origin_chain_name = "Hydration"
+destination_chain_name = "Polkadot"
+origin_token = "DOT"
+destination_token = "DOT"
 
 origin_chain = registry.get_chain_by_name(origin_chain_name)
 destination_chain = registry.get_chain_by_name(destination_chain_name)
