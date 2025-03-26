@@ -13,4 +13,4 @@ class TestChainId:
 
 class TestPrecision:
     def test_precision(self, chain_model: Chain):
-        assert chain_model.properties.precision == chain_model.assets[0].get('precision')
+        assert chain_model.properties.precision == chain_model.assets[0].precision
