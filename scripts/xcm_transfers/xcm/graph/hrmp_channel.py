@@ -12,7 +12,7 @@ class HrmpChannel:
 
     def __init__(self, data: dict[str, int]):
         self.sender = data.get("sender")
-        self.recipient = data.get("receiver")
+        self.recipient = data.get("recipient")
 
 
 HrmpChannelsByConsensus = dict[ChainId, List[HrmpChannel]]
