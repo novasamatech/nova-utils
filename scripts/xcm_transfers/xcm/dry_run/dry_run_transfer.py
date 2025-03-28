@@ -6,8 +6,9 @@ from scalecodec import GenericCall
 from substrateinterface import SubstrateInterface
 
 from scripts.xcm_transfers.utils.fix_scale_codec import fix_scale_codec
+from scripts.xcm_transfers.xcm.call_payment.call_payment_api import calculate_call_weight
 from scripts.xcm_transfers.xcm.dry_run.dry_run_api import dry_run_xcm_call, dry_run_final_xcm
-from scripts.xcm_transfers.utils.log import debug_log
+from scripts.xcm_transfers.utils.log import debug_log, warn_log
 from scripts.xcm_transfers.xcm.dry_run.dry_run_api import dry_run_intermediate_xcm
 from scripts.xcm_transfers.xcm.dry_run.events.deposit import find_deposit_amount
 from scripts.xcm_transfers.xcm.dry_run.fund import fund_account_and_then
@@ -79,6 +80,8 @@ class TransferDryRunner:
                                             next_call=transfer_assets_call(s))
         )
 
+        _check_origin_call_weight(call, origin_chain)
+
         origin_dry_run_result = dry_run_xcm_call(
             chain=origin_chain,
             call=call,
@@ -136,6 +139,20 @@ class TransferDryRunner:
             f"Transfer successfully finished on {destination_chain.chain.name}, result: {result}")
 
         return result
+
+def _check_origin_call_weight(
+        call: GenericCall,
+        xcm_chain: XcmChain,
+):
+    try:
+        weight = calculate_call_weight(call, xcm_chain)
+    except Exception as e:
+        warn_log(f"Could not calculate call weight. Exception message: {e}")
+        return
+
+    if weight.is_max_by_any_dimension():
+        raise Exception(f"Call weight {weight} exceeds maximum by some dimension")
+
 
 @dataclass
 class DryRunTransferResult:
