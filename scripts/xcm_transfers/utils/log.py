@@ -18,4 +18,3 @@ def enable_debug_log():
 
 def disable_debug_log():
     set_debug_log_enabled(False)
-
