@@ -5,7 +5,7 @@ from dataclasses import dataclass
 from scalecodec import GenericCall
 from substrateinterface import SubstrateInterface
 
-from scripts.xcm_transfers.utils.fix_scale_codec import fix_scale_codec
+from scripts.xcm_transfers.utils.fix_scale_codec import fix_tuple_encoding, fix_substrate_interface
 from scripts.xcm_transfers.xcm.call_payment.call_payment_api import calculate_call_weight
 from scripts.xcm_transfers.xcm.dry_run.dry_run_api import dry_run_xcm_call, dry_run_final_xcm
 from scripts.xcm_transfers.utils.log import debug_log, warn_log
@@ -27,7 +27,7 @@ class TransferDryRunner:
     def __init__(self, registry: XcmRegistry):
         self._registry = registry
 
-        fix_scale_codec()
+        fix_substrate_interface()
 
     def dry_run_transfer(self, transfer_direction: XcmTransferDirection) -> DryRunTransferResult:
         origin_chain, chain_asset, destination_chain, destination_asset = transfer_direction.origin_chain, transfer_direction.origin_asset, transfer_direction.destination_chain, transfer_direction.destination_asset

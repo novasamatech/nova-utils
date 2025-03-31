@@ -12,6 +12,7 @@ from .substrate_interface import create_connection_by_url
 T = TypeVar('T')
 
 ChainId = str
+ChainAssetId = int
 
 
 class Chain:
@@ -126,7 +127,7 @@ class ChainAsset:
     type: AssetType
     precision: int
 
-    id: int
+    id: ChainAssetId
 
     chain: Chain
 

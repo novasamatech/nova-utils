@@ -9,21 +9,13 @@ def is_call_run_error(execution_result: dict):
 
 def get_module_error(substrate: SubstrateInterface, module_index: int, error_index: int):
     debug_log(f"Error index: {module_index}-{error_index}")
-
-    try:
-        return substrate.metadata.get_module_error(module_index=module_index, error_index=error_index)
-    except:
-        # TODO there is some weird behavior that substrate returns out of range (by exactly one) index for a last polkadot xcm error
-        return substrate.metadata.get_module_error(module_index=module_index, error_index=error_index-1)
-
+    return substrate.metadata.get_module_error(module_index=module_index, error_index=error_index)
 
 def extract_dispatch_error_message(chain: XcmChain, dispatch_error) -> str:
     error_description: str
 
     if "Module" in dispatch_error:
         module_error = dispatch_error["Module"]
-
-        debug_log(f"Error index raw: {module_error["error"]}")
 
         error_index = int(module_error["error"][2:4], 16)
 
