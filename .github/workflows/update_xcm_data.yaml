@@ -26,6 +26,10 @@ jobs:
       - name: 🛠 Set up actual paths
         uses: ./.github/workflows/setup-path
 
+      - name: ⚙️ Install dependencies
+        run: |
+          make init
+
       - name: 🦾 Update xcm config
         env:
           ENVIRONMENT: ${{ matrix.environment }}
