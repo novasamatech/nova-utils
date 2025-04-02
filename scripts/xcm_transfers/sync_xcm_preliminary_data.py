@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+
 from typing import List
 
 from substrateinterface import SubstrateInterface
@@ -8,8 +9,11 @@ from substrateinterface.exceptions import SubstrateRequestException
 
 from scripts.utils.chain_model import Chain
 from scripts.utils.work_with_data import get_data_from_file, write_data_to_file
+from scripts.xcm_transfers.config_setup import get_xcm_config_files
 from scripts.xcm_transfers.utils.chain_ids import RELAYS
 from scripts.xcm_transfers.utils.dry_run_api_types import dry_run_v1, dry_run_v2
+
+config_files = get_xcm_config_files()
 
 data = {}
 
@@ -110,7 +114,7 @@ def process_chain(idx, chain, len):
     data[chain.chainId] = parachain_info
 
     print(f"Finished fetching data for {chain.name}: {parachain_info}")
-    write_data_to_file('xcm_registry_additional_data.json', json.dumps(data, indent=4))
+    write_data_to_file(config_files.xcm_additional_data, json.dumps(data, indent=4))
 
 
 def find_xcm_chains(chains: List[Chain], relay_ids: list[str] = RELAYS) -> List[Chain]:
@@ -129,7 +133,7 @@ def find_xcm_chains(chains: List[Chain], relay_ids: list[str] = RELAYS) -> List[
 
     return result
 
-chains_file = get_data_from_file("../../chains/v21/chains_dev.json")
+chains_file = get_data_from_file(config_files.chains)
 chains = [Chain(it) for it in chains_file]
 
 xcm_chains = find_xcm_chains(chains)

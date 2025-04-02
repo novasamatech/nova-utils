@@ -45,6 +45,6 @@ def get_module_error(self, module_index, error_index):
                     if error['index'] == error_index:
                         return error
 
-                raise Exception(f"Error {error_index} was not found in module ${module["name"]}")
+                raise Exception(f"Error {error_index} was not found in module {module['name']}")
     else:
         return self.value_object[1].error_index.get(f'{module_index}-{error_index}')
