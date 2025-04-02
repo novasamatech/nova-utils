@@ -27,61 +27,22 @@ PYTHON_SCRIPT := PYTHONPATH=. $(VENV)/bin/python
 # =============================================================================
 
 .PHONY: help
-help: ## Show this help message
+
+help: ## Display this help message
 	@echo 'Usage:'
 	@echo '  make <target>'
 	@echo ''
-	@echo 'Main targets:'
-	@awk '/^## Clean build artifacts/ { \
-		helpMessage = substr($$0, 4); \
-		printf "  %-20s %s\n", "clean", helpMessage; \
+	@echo 'Targets:'
+	@awk '/^[a-zA-Z\-_0-9]+:/ { \
+		helpMessage = match(lastLine, /^## (.*)/); \
+		if (helpMessage) { \
+			helpCommand = substr($$1, 0, index($$1, ":")-1); \
+			helpMessage = substr(lastLine, RSTART + 3, RLENGTH); \
+			printf "  %-20s %s\n", helpCommand, helpMessage; \
+		} \
 	} \
-	/^## Initialize development environment/ { \
-		helpMessage = substr($$0, 4); \
-		printf "  %-20s %s\n", "init", helpMessage; \
-	}' $(MAKEFILE_LIST)
+	{ lastLine = $$0 }' $(MAKEFILE_LIST)
 	@echo ''
-	@echo 'Generation targets:'
-	@awk '/^## Generate/ { \
-		helpMessage = substr($$0, 4); \
-		helpCommand = substr($$0, 4, index($$0, ":")-4); \
-		printf "  %-20s %s\n", helpCommand, helpMessage; \
-	}' $(MAKEFILE_LIST)
-	@echo ''
-	@echo 'Environment setup targets:'
-	@awk '/^## (Create virtual environment|Create and setup virtual environment|Install pre-commit hooks|Install project dependencies)/ { \
-		helpMessage = substr($$0, 4); \
-		helpCommand = substr($$0, 4, index($$0, ":")-4); \
-		printf "  %-20s %s\n", helpCommand, helpMessage; \
-	}' $(MAKEFILE_LIST)
-	@echo ''
-	@echo 'Test targets:'
-	@awk '/^## (Run all tests|Run core tests|Test)/ { \
-		helpMessage = substr($$0, 4); \
-		helpCommand = substr($$0, 4, index($$0, ":")-4); \
-		printf "  %-20s %s\n", helpCommand, helpMessage; \
-	}' $(MAKEFILE_LIST)
-	@echo ''
-	@echo 'Reporting and documentation targets:'
-	@awk '/^## (Serve Allure test reports|Create PR comment with changes)/ { \
-		helpMessage = substr($$0, 4); \
-		helpCommand = substr($$0, 4, index($$0, ":")-4); \
-		printf "  %-20s %s\n", helpCommand, helpMessage; \
-	}' $(MAKEFILE_LIST)
-	@echo ''
-	@echo 'Chain management targets:'
-	@awk '/^## (Check chains file format|Update XCM configuration to production|Update Ledger networks|Update chains preconfigured settings)/ { \
-		helpMessage = substr($$0, 4); \
-		helpCommand = substr($$0, 4, index($$0, ":")-4); \
-		printf "  %-20s %s\n", helpCommand, helpMessage; \
-	}' $(MAKEFILE_LIST)
-	@echo ''
-	@echo 'XCM configuration targets:'
-	@awk '/^## (Update all XCM configurations|Update XCM preliminary data|Update XCM dynamic configuration|Clean up legacy XCM configuration)/ { \
-		helpMessage = substr($$0, 4); \
-		helpCommand = substr($$0, 4, index($$0, ":")-4); \
-		printf "  %-20s %s\n", helpCommand, helpMessage; \
-	}' $(MAKEFILE_LIST)
 
 # =============================================================================
 # Main targets
