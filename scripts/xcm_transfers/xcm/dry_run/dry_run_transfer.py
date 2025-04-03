@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import functools
 from dataclasses import dataclass
+from time import sleep
 
 from scalecodec import GenericCall
 from substrateinterface import SubstrateInterface
@@ -162,9 +163,15 @@ def _check_origin_call_weight(
 
 @functools.cache
 def _detect_supports_xcm_execute(xcm_chain: XcmChain) -> bool:
-    print("detect_supports_xcm_execute invoked")
+    dry_run_result: dict
 
-    dry_run_result = xcm_chain.chain.access_substrate(lambda s: _dry_run_empty_xcm_execute(xcm_chain, s))
+    try:
+        dry_run_result = xcm_chain.chain.access_substrate(lambda s: _dry_run_empty_xcm_execute(xcm_chain, s))
+    except Exception as e:
+        warn_log(f"Could not detect support xcm execute status: {e}")
+        # Something unexpected happened during our fake dry run
+        # Return False here to allow main dry run process to run in any case
+        return False
 
     execution_result = dry_run_result["Ok"]['execution_result']
     error = extract_xcm_execute_error(execution_result, xcm_chain)
