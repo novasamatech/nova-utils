@@ -25,4 +25,3 @@ class Weight:
     @staticmethod
     def zero() -> Weight:
         return Weight(0, 0)
-
