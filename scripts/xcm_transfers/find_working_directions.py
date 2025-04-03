@@ -53,6 +53,9 @@ def save_config():
                 if working_direction.dry_run_result.paid_delivery_fee:
                     destination_config["hasDeliveryFee"] = True
 
+                if working_direction.dry_run_result.supports_xcm_execute:
+                    destination_config["supportsXcmExecute"] = True
+
                 asset_transfers.append(destination_config)
 
             asset_config = {

@@ -7,7 +7,7 @@ from scripts.xcm_transfers.xcm.registry.xcm_chain import XcmChain
 
 def calculate_call_weight(call: GenericCall, chain: XcmChain) -> Weight:
     call_info = chain.chain.access_substrate(lambda s: _query_call_info(call, s))
-    return Weight(call_info["weight"])
+    return Weight.from_sdk_value(call_info["weight"])
 
 def _query_call_info(call: GenericCall, substrate: SubstrateInterface):
     call_length = substrate.encode_scale("GenericCall", call).length
