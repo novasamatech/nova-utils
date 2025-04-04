@@ -11,7 +11,7 @@ def get_xcm_config_files() -> XCMConfigFiles:
             chains=f"chains/{CHAINS_VERSION}/chains.json",
             xcm_legacy_config=f"xcm/v7/transfers.json",
             xcm_stable_legacy_config=f"xcm/v6/transfers.json",
-            xcm_additional_data="xcm_registry_additional_data.json",
+            xcm_additional_data="scripts/xcm_transfers/xcm_registry_additional_data.json",
             xcm_dynamic_config=f"xcm/v7/transfers_dynamic.json",
         )
     else:
@@ -20,6 +20,6 @@ def get_xcm_config_files() -> XCMConfigFiles:
             chains=f"chains/{CHAINS_VERSION}/chains_dev.json",
             xcm_legacy_config=f"xcm/v7/transfers_dev.json",
             xcm_stable_legacy_config=f"xcm/v6/transfers_dev.json",
-            xcm_additional_data="xcm_registry_additional_data.json",
+            xcm_additional_data="scripts/xcm_transfers/xcm_registry_additional_data.json",
             xcm_dynamic_config=f"xcm/v7/transfers_dynamic_dev.json",
         )
