@@ -125,7 +125,11 @@ class Chain:
     @staticmethod
     def _is_connection_broken_error(e: Exception) -> bool:
         message = str(e)
-        return message in {"Expecting value: line 1 column 1 (char 0)", "Failure Connection to remote host was lost."}
+        return message in {
+            "Expecting value: line 1 column 1 (char 0)",
+            "Failure Connection to remote host was lost.",
+            "Failure EOF occurred in violation of protocol (_ssl.c:2406)"
+        }
 
 
 class ChainAsset:
