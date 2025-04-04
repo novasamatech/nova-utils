@@ -9625,5 +9625,101 @@
         "additional": {
             "disabledCheckMetadataHash": true
         }
+    },
+    {
+        "chainId": "efb56e30d9b4a24099f88820987d0f45fb645992416535d87650d98e00f46fc4",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Polkadot Coretime",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "DOT",
+                "precision": 10,
+                "priceId": "polkadot",
+                "icon": "DOT.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://sys.ibp.network/coretime-polkadot",
+                "name": "IBP1 node"
+            },
+            {
+                "url": "wss://coretime-polkadot.dotters.network",
+                "name": "IBP2 node"
+            },
+            {
+                "url": "wss://rpc-coretime-polkadot.luckyfriday.io",
+                "name": "LuckyFriday node"
+            },
+            {
+                "url": "wss://polkadot-coretime-rpc.polkadot.io",
+                "name": "Parity node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://coretime-polkadot.subscan.io/extrinsic/{hash}",
+                "account": "https://coretime-polkadot.subscan.io/account/{address}"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Coretime.svg",
+        "addressPrefix": 0,
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
+    },
+    {
+        "chainId": "638cd2b9af4b3bb54b8c1f0d22711fc89924ca93300f0caf25a580432b29d050",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "Kusama Coretime",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "KSM",
+                "precision": 12,
+                "priceId": "kusama",
+                "icon": "KSM.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://coretime-kusama-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://sys.ibp.network/coretime-kusama",
+                "name": "IBP1 node"
+            },
+            {
+                "url": "wss://coretime-kusama.dotters.network",
+                "name": "IBP2 node"
+            },
+            {
+                "url": "wss://rpc-coretime-kusama.luckyfriday.io",
+                "name": "LuckyFriday node"
+            },
+            {
+                "url": "wss://kusama-coretime-rpc.polkadot.io",
+                "name": "Parity node"
+            },
+            {
+                "url": "wss://ksm-rpc.stakeworld.io/coretime",
+                "name": "Stakeworld node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://coretime-kusama.subscan.io/extrinsic/{hash}",
+                "account": "https://coretime-kusama.subscan.io/account/{address}"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_Coretime.svg",
+        "addressPrefix": 2,
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     }
 ]
