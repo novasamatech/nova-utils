@@ -102,10 +102,13 @@ class Chain:
         try:
             return action(self.substrate)
         except Exception as e:
-            print("Attempting to re-create connection after receiving error", e)
-            # try re-connecting socket and performing action once again
-            self.recreate_connection()
-            return action(self.substrate)
+            if self._is_connection_broken_error(e):
+                print("Attempting to re-create connection after broken connection", e)
+                # try re-connecting socket and performing action once again
+                self.recreate_connection()
+                return action(self.substrate)
+            else:
+                raise e
 
     def encodable_address(self, account_id: str):
         if self.has_evm_addresses():
@@ -118,6 +121,11 @@ class Chain:
     def _uses_multi_address(self) -> bool:
         type_def = self.substrate.get_type_definition("Address")
         return type_def is dict
+
+    @staticmethod
+    def _is_connection_broken_error(e: Exception) -> bool:
+        message = str(e)
+        return message in {"Expecting value: line 1 column 1 (char 0)", "Failure Connection to remote host was lost."}
 
 
 class ChainAsset:

@@ -1,15 +1,19 @@
 from __future__ import annotations
 
+import functools
 from dataclasses import dataclass
+from time import sleep
 
 from scalecodec import GenericCall
 from substrateinterface import SubstrateInterface
 
 from scripts.xcm_transfers.utils.fix_scale_codec import fix_tuple_encoding, fix_substrate_interface
+from scripts.xcm_transfers.utils.weight import Weight
 from scripts.xcm_transfers.xcm.call_payment.call_payment_api import calculate_call_weight
-from scripts.xcm_transfers.xcm.dry_run.dry_run_api import dry_run_xcm_call, dry_run_final_xcm
+from scripts.xcm_transfers.xcm.dry_run.dry_run_api import dry_run_xcm_call, dry_run_final_xcm, dry_run_call
 from scripts.xcm_transfers.utils.log import debug_log, warn_log
 from scripts.xcm_transfers.xcm.dry_run.dry_run_api import dry_run_intermediate_xcm
+from scripts.xcm_transfers.xcm.dry_run.errors import extract_dispatch_error_message
 from scripts.xcm_transfers.xcm.dry_run.events.deposit import find_deposit_amount
 from scripts.xcm_transfers.xcm.dry_run.fund import fund_account_and_then
 from scripts.xcm_transfers.xcm.dry_run.origins import root_origin
@@ -17,11 +21,11 @@ from scripts.xcm_transfers.xcm.registry.transfer_type import determine_transfer_
 from scripts.xcm_transfers.xcm.registry.xcm_chain import XcmChain
 from scripts.xcm_transfers.xcm.registry.xcm_registry import XcmRegistry
 from scripts.xcm_transfers.xcm.versioned_xcm import VerionsedXcm
-from scripts.xcm_transfers.xcm.versioned_xcm_builder import assets
+from scripts.xcm_transfers.xcm.versioned_xcm_builder import assets, xcm_program
 from scripts.xcm_transfers.xcm.xcm_transfer_direction import XcmTransferDirection
 
-class TransferDryRunner:
 
+class TransferDryRunner:
     _registry: XcmRegistry
 
     def __init__(self, registry: XcmRegistry):
@@ -81,6 +85,7 @@ class TransferDryRunner:
         )
 
         _check_origin_call_weight(call, origin_chain)
+        supports_xcm_execute = _detect_supports_xcm_execute(origin_chain)
 
         origin_dry_run_result = dry_run_xcm_call(
             chain=origin_chain,
@@ -132,13 +137,15 @@ class TransferDryRunner:
             raise Exception(f"Deposited amount was not found, final events: {destination_events}")
 
         result = DryRunTransferResult(
-            paid_delivery_fee=paid_delivery_fee
+            paid_delivery_fee=paid_delivery_fee,
+            supports_xcm_execute=supports_xcm_execute
         )
 
         debug_log(
             f"Transfer successfully finished on {destination_chain.chain.name}, result: {result}")
 
         return result
+
 
 def _check_origin_call_weight(
         call: GenericCall,
@@ -154,12 +161,65 @@ def _check_origin_call_weight(
         raise Exception(f"Call weight {weight} exceeds maximum by some dimension")
 
 
+@functools.cache
+def _detect_supports_xcm_execute(xcm_chain: XcmChain) -> bool:
+    dry_run_result: dict
+
+    try:
+        dry_run_result = xcm_chain.chain.access_substrate(lambda s: _dry_run_empty_xcm_execute(xcm_chain, s))
+    except Exception as e:
+        warn_log(f"Could not detect support xcm execute status: {e}")
+        # Something unexpected happened during our fake dry run
+        # Return False here to allow main dry run process to run in any case
+        return False
+
+    execution_result = dry_run_result["Ok"]['execution_result']
+    error = extract_xcm_execute_error(execution_result, xcm_chain)
+
+    if error is None:
+        print(f"Xcm execute status OK")
+    else:
+        print(f"Xcm execute status error: {error}")
+
+    return error is not None
+
+
+def extract_xcm_execute_error(execution_result: dict, xcm_chain: XcmChain) -> str | None:
+    if "Ok" in execution_result:
+        return None
+
+    error = execution_result["Error"]["error"]
+    error_message = extract_dispatch_error_message(xcm_chain, error)
+    # There is some error, but it is not related to xcm execute filter. Probably because we are using empty xcm message
+    # dry run from an empty account. Consider such cases as Ok
+    if "Filtered" not in error_message:
+        return None
+
+    return error_message
+
+
+def _dry_run_empty_xcm_execute(xcm_chain: XcmChain, substrate: SubstrateInterface) -> dict:
+    call = substrate.compose_call(
+        call_module=xcm_chain.xcm_pallet_alias(),
+        call_function="execute",
+        call_params={
+            "message": xcm_program([]).versioned,
+            "max_weight": Weight.zero().to_sdk_value()
+        }
+    )
+
+    return dry_run_call(xcm_chain, call, VerionsedXcm.default_xcm_version(), root_origin())
+
+
 @dataclass
 class DryRunTransferResult:
     paid_delivery_fee: bool
+    supports_xcm_execute: bool
+
 
 _substrate_account = "13mp1WEs72kbCBF3WKcoK6Hfhu2HHZGpQ4jsKCZbfd6FoRvH"
 _evm_account = "0x0c7485f4AA235347BDE0168A59f6c73C7A42ff2C"
+
 
 def _dry_run_account_for_chain(chain: XcmChain) -> str:
     if chain.chain.has_evm_addresses():
