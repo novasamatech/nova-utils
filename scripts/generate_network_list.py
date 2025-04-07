@@ -140,14 +140,12 @@ def calculate_number_of_xcms():
         accumulator = 0
         for network in transfers_data.get('chains'):
             for asset in network.get('assets'):
-                for _ in asset.get('xcmTransfers'):
-                    accumulator += 1
+                accumulator += len(asset.get('xcmTransfers', []))
     with open(os.getcwd()+f"/xcm/{XCM_VERSION}/transfers_dynamic.json", 'r') as json_file:
         dynamic_transfers_data = json.load(json_file)
         for network in dynamic_transfers_data.get('chains'):
             for asset in network.get('assets'):
-                for _ in asset.get('xcmTransfers'):
-                    accumulator += 1
+                accumulator += len(asset.get('xcmTransfers', []))
     return accumulator
 
 
