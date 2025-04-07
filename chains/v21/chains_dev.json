@@ -7492,7 +7492,13 @@
                 "icon": "POLYX.svg",
                 "staking": [
                     "relaychain"
-                ]
+                ],
+                "buyProviders": {
+                    "banxa": {
+                        "coinType": "POLYX",
+                        "blockchain": "Polimesh"
+                    }
+                }
             }
         ],
         "nodes": [
@@ -10406,7 +10412,13 @@
                 "icon": "PLMC.svg",
                 "staking": [
                     "parachain"
-                ]
+                ],
+                "buyProviders": {
+                    "banxa": {
+                        "coinType": "PLMC",
+                        "blockchain": "Polimec"
+                    }
+                }
             },
             {
                 "assetId": 1,
