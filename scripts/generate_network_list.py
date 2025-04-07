@@ -136,13 +136,18 @@ def calculate_parameters(list_of_arrays, element_name):
 
 def calculate_number_of_xcms():
     with open(os.getcwd()+f"/xcm/{XCM_VERSION}/transfers.json", 'r') as json_file:
-        data = json.load(json_file)
+        transfers_data = json.load(json_file)
         accumulator = 0
-        for network in data.get('chains'):
+        for network in transfers_data.get('chains'):
             for asset in network.get('assets'):
-                for _ in asset.get('xcmTransfers'):
-                    accumulator += 1
+                accumulator += len(asset.get('xcmTransfers', []))
+    with open(os.getcwd()+f"/xcm/{XCM_VERSION}/transfers_dynamic.json", 'r') as json_file:
+        dynamic_transfers_data = json.load(json_file)
+        for network in dynamic_transfers_data.get('chains'):
+            for asset in network.get('assets'):
+                accumulator += len(asset.get('xcmTransfers', []))
     return accumulator
+
 
 
 if __name__ == '__main__':
