@@ -4,6 +4,7 @@ on:
   schedule:
     - cron: '0 */6 * * *' # every 6 hours
   workflow_dispatch:
+  pull_request:
 
 permissions:
   contents: write
