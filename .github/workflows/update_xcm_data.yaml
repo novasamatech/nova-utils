@@ -38,7 +38,7 @@ jobs:
       - name: Make Pull Request
         uses: ./.github/workflows/make-pull-request
         with:
-          commit-files: xcm/**/*.json
+          commit-files: xcm/**/*.json, scripts/xcm_transfers/**/*.json
           commit-message: Update xcm config for ${{ matrix.environment }} env
           app-id: ${{ secrets.PR_APP_ID}}
           app-token: ${{ secrets.PR_APP_TOKEN}}
