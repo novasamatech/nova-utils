@@ -27,7 +27,11 @@
                     "transak": {
                         "network": "MAINNET"
                     },
-                    "mercuryo": {}
+                    "mercuryo": {},
+                    "banxa": {
+                        "coinType": "DOT",
+                        "blockchain": "DOT"
+                    }
                 }
             }
         ],
@@ -171,7 +175,11 @@
                     "transak": {
                         "network": "MAINNET"
                     },
-                    "mercuryo": {}
+                    "mercuryo": {},
+                    "banxa": {
+                        "coinType": "KSM",
+                        "blockchain": "KSM"
+                    }
                 }
             }
         ],
@@ -298,7 +306,13 @@
                 "staking": [
                     "relaychain",
                     "nomination-pools"
-                ]
+                ],
+                "sellProviders": {
+                    "banxa": {
+                        "coinType": "WND",
+                        "blockchain": "WND"
+                    }
+                }
             }
         ],
         "nodes": [
@@ -609,6 +623,12 @@
                 "icon": "KAR.svg",
                 "priceId": "karura",
                 "buyProviders": {
+                    "banxa": {
+                        "coinType": "KAR",
+                        "blockchain": "KAR"
+                    }
+                },
+                "sellProviders": {
                     "banxa": {
                         "coinType": "KAR",
                         "blockchain": "KAR"
@@ -1036,6 +1056,12 @@
                     "transak": {
                         "network": "MOONRIVER"
                     },
+                    "banxa": {
+                        "coinType": "MOVR",
+                        "blockchain": "MOVR"
+                    }
+                },
+                "sellProviders": {
                     "banxa": {
                         "coinType": "MOVR",
                         "blockchain": "MOVR"
@@ -1667,6 +1693,12 @@
                         "coinType": "BNC",
                         "blockchain": "BNC"
                     }
+                },
+                "sellProviders": {
+                    "banxa": {
+                        "coinType": "BNC",
+                        "blockchain": "BNC"
+                    }
                 }
             },
             {
@@ -1926,6 +1958,12 @@
                         "coinType": "KINT",
                         "blockchain": "KINT"
                     }
+                },
+                "sellProviders": {
+                    "banxa": {
+                        "coinType": "KINT",
+                        "blockchain": "KINT"
+                    }
                 }
             },
             {
@@ -2181,6 +2219,12 @@
                 "priceId": "basilisk",
                 "icon": "BSX.svg",
                 "buyProviders": {
+                    "banxa": {
+                        "coinType": "BSX",
+                        "blockchain": "BSX"
+                    }
+                },
+                "sellProviders": {
                     "banxa": {
                         "coinType": "BSX",
                         "blockchain": "BSX"
@@ -2622,6 +2666,12 @@
                         "coinType": "KILT",
                         "blockchain": "KILT"
                     }
+                },
+                "sellProviders": {
+                    "banxa": {
+                        "coinType": "KILT",
+                        "blockchain": "KILT"
+                    }
                 }
             }
         ],
@@ -2985,6 +3035,12 @@
                         "coinType": "ACA",
                         "blockchain": "ACA"
                     }
+                },
+                "sellProviders": {
+                    "banxa": {
+                        "coinType": "ACA",
+                        "blockchain": "ACA"
+                    }
                 }
             },
             {
@@ -3341,6 +3397,10 @@
                 "sellProviders": {
                     "transak": {
                         "network": "MAINNET"
+                    },
+                    "banxa": {
+                        "coinType": "GLMR",
+                        "blockchain": "GLMR"
                     }
                 }
             },
@@ -3715,6 +3775,10 @@
                     },
                     "mercuryo": {
                         "network": "ETHEREUM"
+                    },
+                    "banxa": {
+                        "coinType": "ETH",
+                        "blockchain": "ETH"
                     }
                 }
             }
@@ -3872,6 +3936,12 @@
                     "transak": {
                         "network": "ASTAR"
                     },
+                    "banxa": {
+                        "coinType": "ASTR",
+                        "blockchain": "ASTR"
+                    }
+                },
+                "sellProviders": {
                     "banxa": {
                         "coinType": "ASTR",
                         "blockchain": "ASTR"
@@ -5211,6 +5281,12 @@
                         "coinType": "HDX",
                         "blockchain": "HDX"
                     }
+                },
+                "sellProviders": {
+                    "banxa": {
+                        "coinType": "HDX",
+                        "blockchain": "HDX"
+                    }
                 }
             },
             {
@@ -6072,6 +6148,12 @@
                         "coinType": "INTR",
                         "blockchain": "INTR"
                     }
+                },
+                "sellProviders": {
+                    "banxa": {
+                        "coinType": "INTR",
+                        "blockchain": "INTR"
+                    }
                 }
             },
             {
@@ -6614,6 +6696,12 @@
                         "coinType": "AZERO",
                         "blockchain": "AZERO"
                     }
+                },
+                "sellProviders": {
+                    "banxa": {
+                        "coinType": "AZERO",
+                        "blockchain": "AZERO"
+                    }
                 }
             }
         ],
@@ -6988,6 +7076,12 @@
                 "priceId": "bifrost-native-coin",
                 "icon": "BNC.svg",
                 "buyProviders": {
+                    "banxa": {
+                        "coinType": "BNC",
+                        "blockchain": "BNCPOLKA"
+                    }
+                },
+                "sellProviders": {
                     "banxa": {
                         "coinType": "BNC",
                         "blockchain": "BNCPOLKA"
@@ -7523,6 +7617,12 @@
                         "coinType": "POLYX",
                         "blockchain": "Polymesh"
                     }
+                },
+                "sellProviders": {
+                    "banxa": {
+                        "coinType": "POLYX",
+                        "blockchain": "Polymesh"
+                    }
                 }
             }
         ],
@@ -7590,6 +7690,12 @@
                 "priceId": "ajuna-network",
                 "icon": "BAJU.svg",
                 "buyProviders": {
+                    "banxa": {
+                        "coinType": "BAJU",
+                        "blockchain": "BAJU"
+                    }
+                },
+                "sellProviders": {
                     "banxa": {
                         "coinType": "BAJU",
                         "blockchain": "BAJU"
@@ -7879,6 +7985,12 @@
                 "precision": 18,
                 "icon": "CAPS.svg",
                 "buyProviders": {
+                    "banxa": {
+                        "coinType": "CAPS",
+                        "blockchain": "TERNOA"
+                    }
+                },
+                "sellProviders": {
                     "banxa": {
                         "coinType": "CAPS",
                         "blockchain": "TERNOA"
@@ -9220,6 +9332,12 @@
                         "coinType": "VARA",
                         "blockchain": "VARA"
                     }
+                },
+                "sellProviders": {
+                    "banxa": {
+                        "coinType": "VARA",
+                        "blockchain": "VARA"
+                    }
                 }
             }
         ],
@@ -10435,6 +10553,12 @@
                     "parachain"
                 ],
                 "buyProviders": {
+                    "banxa": {
+                        "coinType": "PLMC",
+                        "blockchain": "Polimec"
+                    }
+                },
+                "sellProviders": {
                     "banxa": {
                         "coinType": "PLMC",
                         "blockchain": "Polimec"
