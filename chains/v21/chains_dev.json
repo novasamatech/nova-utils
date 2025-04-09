@@ -298,7 +298,12 @@
                 "staking": [
                     "relaychain",
                     "nomination-pools"
-                ]
+                ],
+                "sellProviders": {
+                    "transak": {
+                        "network": "MAINNET"
+                    }
+                }
             }
         ],
         "nodes": [
