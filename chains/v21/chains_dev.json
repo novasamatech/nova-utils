@@ -26,7 +26,8 @@
                 "sellProviders": {
                     "transak": {
                         "network": "MAINNET"
-                    }
+                    },
+                    "mercuryo": {}
                 }
             }
         ],
@@ -169,7 +170,8 @@
                 "sellProviders": {
                     "transak": {
                         "network": "MAINNET"
-                    }
+                    },
+                    "mercuryo": {}
                 }
             }
         ],
@@ -3709,6 +3711,9 @@
                 },
                 "sellProviders": {
                     "transak": {
+                        "network": "ETHEREUM"
+                    },
+                    "mercuryo": {
                         "network": "ETHEREUM"
                     }
                 }
