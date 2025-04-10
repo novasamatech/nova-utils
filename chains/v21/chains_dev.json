@@ -22,6 +22,12 @@
                         "coinType": "DOT",
                         "blockchain": "DOT"
                     }
+                },
+                "sellProviders": {
+                    "transak": {
+                        "network": "MAINNET"
+                    },
+                    "mercuryo": {}
                 }
             }
         ],
@@ -160,6 +166,12 @@
                         "coinType": "KSM",
                         "blockchain": "KSM"
                     }
+                },
+                "sellProviders": {
+                    "transak": {
+                        "network": "MAINNET"
+                    },
+                    "mercuryo": {}
                 }
             }
         ],
@@ -286,7 +298,12 @@
                 "staking": [
                     "relaychain",
                     "nomination-pools"
-                ]
+                ],
+                "sellProviders": {
+                    "transak": {
+                        "network": "MAINNET"
+                    }
+                }
             }
         ],
         "nodes": [
@@ -3325,6 +3342,11 @@
                         "coinType": "GLMR",
                         "blockchain": "GLMR"
                     }
+                },
+                "sellProviders": {
+                    "transak": {
+                        "network": "MAINNET"
+                    }
                 }
             },
             {
@@ -3690,6 +3712,14 @@
                     "banxa": {
                         "coinType": "ETH",
                         "blockchain": "ETH"
+                    }
+                },
+                "sellProviders": {
+                    "transak": {
+                        "network": "ETHEREUM"
+                    },
+                    "mercuryo": {
+                        "network": "ETHEREUM"
                     }
                 }
             }
