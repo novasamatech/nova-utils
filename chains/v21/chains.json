@@ -19,6 +19,9 @@
                         "coinType": "DOT",
                         "blockchain": "DOT"
                     }
+                },
+                "sellProviders": {
+                    "mercuryo": {}
                 }
             }
         ],
@@ -154,6 +157,9 @@
                         "coinType": "KSM",
                         "blockchain": "KSM"
                     }
+                },
+                "sellProviders": {
+                    "mercuryo": {}
                 }
             }
         ],
@@ -1378,6 +1384,14 @@
                     "banxa": {
                         "coinType": "ETH",
                         "blockchain": "ETH"
+                    }
+                },
+                "sellProviders": {
+                    "transak": {
+                        "network": "ETHEREUM"
+                    },
+                    "mercuryo": {
+                        "network": "ETHEREUM"
                     }
                 }
             }
