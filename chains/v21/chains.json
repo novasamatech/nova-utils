@@ -8483,6 +8483,14 @@
         ],
         "nodes": [
             {
+                "url": "wss://invarch.ibp.network",
+                "name": "IBP1 node"
+            },
+            {
+                "url": "wss://invarch.dotters.network",
+                "name": "IBP2 node"
+            },
+            {
                 "url": "wss://invarch-rpc.dwellir.com",
                 "name": "Dwellir node"
             }
@@ -9069,8 +9077,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://zeref-api.slowops.xyz/ws",
-                "name": "Turing node"
+                "url": "wss://mainnet-rpc.avail.so/ws",
+                "name": "Avail node"
             },
             {
                 "url": "wss://avail-mainnet.public.blastapi.io/",
