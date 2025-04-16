@@ -5997,6 +5997,19 @@
                     "existentialDeposit": "1",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 60,
+                "symbol": "aDOT",
+                "precision": 10,
+                "type": "orml",
+                "icon": "DOT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0xe9030000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
