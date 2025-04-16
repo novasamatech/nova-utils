@@ -5984,6 +5984,19 @@
                     "existentialDeposit": "0",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 59,
+                "symbol": "2-Pool-GDOT",
+                "precision": 18,
+                "type": "orml",
+                "icon": "GIGADOT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0xb2020000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
