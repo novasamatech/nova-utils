@@ -14,6 +14,9 @@
                     "nomination-pools"
                 ],
                 "buyProviders": {
+                    "transak": {
+                        "network": "MAINNET"
+                    },
                     "mercuryo": {},
                     "banxa": {
                         "coinType": "DOT",
@@ -21,6 +24,9 @@
                     }
                 },
                 "sellProviders": {
+                    "transak": {
+                        "network": "MAINNET"
+                    },
                     "mercuryo": {}
                 }
             }
@@ -152,6 +158,9 @@
                     "nomination-pools"
                 ],
                 "buyProviders": {
+                    "transak": {
+                        "network": "MAINNET"
+                    },
                     "mercuryo": {},
                     "banxa": {
                         "coinType": "KSM",
@@ -159,6 +168,9 @@
                     }
                 },
                 "sellProviders": {
+                    "transak": {
+                        "network": "MAINNET"
+                    },
                     "mercuryo": {}
                 }
             }
@@ -3315,9 +3327,17 @@
                     "parachain"
                 ],
                 "buyProviders": {
+                    "transak": {
+                        "network": "MAINNET"
+                    },
                     "banxa": {
                         "coinType": "GLMR",
                         "blockchain": "GLMR"
+                    }
+                },
+                "sellProviders": {
+                    "transak": {
+                        "network": "MAINNET"
                     }
                 }
             },
