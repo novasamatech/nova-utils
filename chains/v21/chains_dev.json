@@ -4623,6 +4623,16 @@
                     "assetId": "0x0201090704",
                     "palletName": "ForeignAssets"
                 }
+            },
+            {
+                "assetId": 25,
+                "symbol": "GIGADOT",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "GIGADOT.svg",
+                "typeExtras": {
+                    "assetId": "50000092"
+                }
             }
         ],
         "nodes": [
@@ -5959,6 +5969,45 @@
                     "currencyIdScale": "0x20000000",
                     "currencyIdType": "u32",
                     "existentialDeposit": "5373455131650",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 58,
+                "symbol": "GIGADOT",
+                "precision": 18,
+                "type": "orml",
+                "icon": "GIGADOT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x45000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 59,
+                "symbol": "2-Pool-GDOT",
+                "precision": 18,
+                "type": "orml",
+                "icon": "GIGADOT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0xb2020000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 60,
+                "symbol": "aDOT",
+                "precision": 10,
+                "type": "orml",
+                "icon": "DOT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0xe9030000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "0",
                     "transfersEnabled": true
                 }
             }
