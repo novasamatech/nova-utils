@@ -24,6 +24,9 @@
                     }
                 },
                 "sellProviders": {
+                    "transak": {
+                        "network": "MAINNET"
+                    },
                     "mercuryo": {}
                 }
             }
@@ -165,6 +168,9 @@
                     }
                 },
                 "sellProviders": {
+                    "transak": {
+                        "network": "MAINNET"
+                    },
                     "mercuryo": {}
                 }
             }
@@ -1028,6 +1034,11 @@
                     "banxa": {
                         "coinType": "GLMR",
                         "blockchain": "GLMR"
+                    }
+                },
+                "sellProviders": {
+                    "transak": {
+                        "network": "MAINNET"
                     }
                 }
             },
