@@ -22,6 +22,12 @@
                         "coinType": "DOT",
                         "blockchain": "DOT"
                     }
+                },
+                "sellProviders": {
+                    "transak": {
+                        "network": "MAINNET"
+                    },
+                    "mercuryo": {}
                 }
             }
         ],
@@ -160,6 +166,12 @@
                         "coinType": "KSM",
                         "blockchain": "KSM"
                     }
+                },
+                "sellProviders": {
+                    "transak": {
+                        "network": "MAINNET"
+                    },
+                    "mercuryo": {}
                 }
             }
         ],
@@ -286,7 +298,12 @@
                 "staking": [
                     "relaychain",
                     "nomination-pools"
-                ]
+                ],
+                "sellProviders": {
+                    "transak": {
+                        "network": "MAINNET"
+                    }
+                }
             }
         ],
         "nodes": [
@@ -1021,9 +1038,6 @@
                     "parachain"
                 ],
                 "buyProviders": {
-                    "transak": {
-                        "network": "MOONRIVER"
-                    },
                     "banxa": {
                         "coinType": "MOVR",
                         "blockchain": "MOVR"
@@ -2888,7 +2902,8 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Quartz.svg",
         "addressPrefix": 255,
         "additional": {
-            "feeViaRuntimeCall": true
+            "feeViaRuntimeCall": true,
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -2901,12 +2916,7 @@
                 "symbol": "NEER",
                 "precision": 18,
                 "priceId": "metaverse-network-pioneer",
-                "icon": "NEER.svg",
-                "buyProviders": {
-                    "transak": {
-                        "network": "PIONEER"
-                    }
-                }
+                "icon": "NEER.svg"
             },
             {
                 "assetId": 1,
@@ -3325,6 +3335,11 @@
                         "coinType": "GLMR",
                         "blockchain": "GLMR"
                     }
+                },
+                "sellProviders": {
+                    "transak": {
+                        "network": "MAINNET"
+                    }
                 }
             },
             {
@@ -3691,6 +3706,14 @@
                         "coinType": "ETH",
                         "blockchain": "ETH"
                     }
+                },
+                "sellProviders": {
+                    "transak": {
+                        "network": "ETHEREUM"
+                    },
+                    "mercuryo": {
+                        "network": "ETHEREUM"
+                    }
                 }
             }
         ],
@@ -3844,9 +3867,6 @@
                 "icon": "ASTR.svg",
                 "precision": 18,
                 "buyProviders": {
-                    "transak": {
-                        "network": "ASTAR"
-                    },
                     "banxa": {
                         "coinType": "ASTR",
                         "blockchain": "ASTR"
@@ -4627,6 +4647,16 @@
             },
             {
                 "assetId": 25,
+                "symbol": "GIGADOT",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "GIGADOT.svg",
+                "typeExtras": {
+                    "assetId": "50000092"
+                }
+            },
+            {
+                "assetId": 26,
                 "symbol": "MPC",
                 "precision": 12,
                 "icon": "MPC.png",
@@ -4636,7 +4666,7 @@
                 }
             },
             {
-                "assetId": 26,
+                "assetId": 27,
                 "symbol": "DON",
                 "precision": 12,
                 "icon": "DON.png",
@@ -4644,7 +4674,7 @@
                 "typeExtras": {
                     "assetId": "50000111"
                 }
-            }
+            },
         ],
         "nodes": [
             {
@@ -4692,7 +4722,8 @@
         "addressPrefix": 0,
         "options": [
             "swap-hub",
-            "assethub-fees"
+            "assethub-fees",
+            "proxy"
         ],
         "additional": {
             "relaychainAsNative": true,
@@ -4824,7 +4855,7 @@
     {
         "chainId": "6811a339673c9daa897944dcdac99c6e2939cc88245ed21951a0a3c9a2be75bc",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Picasso (PAUSED)",
+        "name": "Picasso",
         "assets": [
             {
                 "assetId": 0,
@@ -4878,12 +4909,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://picasso-rpc.composable.finance",
-                "name": "Composable 1 node"
-            },
-            {
                 "url": "wss://rpc.composablenodes.tech",
-                "name": "Composable 2 node"
+                "name": "Composable node"
             }
         ],
         "explorers": [
@@ -5934,7 +5961,7 @@
             {
                 "assetId": 54,
                 "symbol": "LINK",
-                "precision": 12,
+                "precision": 18,
                 "priceId": "chainlink",
                 "type": "orml",
                 "icon": "LINK.svg",
@@ -5983,6 +6010,45 @@
                     "currencyIdScale": "0x20000000",
                     "currencyIdType": "u32",
                     "existentialDeposit": "5373455131650",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 58,
+                "symbol": "GIGADOT",
+                "precision": 18,
+                "type": "orml",
+                "icon": "GIGADOT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x45000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 59,
+                "symbol": "2-Pool-GDOT",
+                "precision": 18,
+                "type": "orml",
+                "icon": "GIGADOT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0xb2020000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 60,
+                "symbol": "aDOT",
+                "precision": 10,
+                "type": "orml",
+                "icon": "DOT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0xe9030000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "0",
                     "transfersEnabled": true
                 }
             }
@@ -6602,9 +6668,6 @@
                 "precision": 12,
                 "icon": "AZERO.svg",
                 "buyProviders": {
-                    "transak": {
-                        "network": "ALEPHZERO"
-                    },
                     "banxa": {
                         "coinType": "AZERO",
                         "blockchain": "AZERO"
@@ -6861,12 +6924,12 @@
                 "name": "RadiumBlock node"
             },
             {
-                "url": "wss://polkadex-mainnet-rpc.dwellir.com",
-                "name": "Dwellir node"
+                "url": "wss://polkadex.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             },
             {
-                "url": "wss://polkadex.api.onfinality.io/public-ws",
-                "name": "RadiumBlock node"
+                "url": "wss://polkadex-mainnet-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -10602,6 +10665,14 @@
         ],
         "nodes": [
             {
+                "url": "wss://invarch.ibp.network",
+                "name": "IBP1 node"
+            },
+            {
+                "url": "wss://invarch.dotters.network",
+                "name": "IBP2 node"
+            },
+            {
                 "url": "wss://invarch-rpc.dwellir.com",
                 "name": "Dwellir node"
             }
@@ -11151,8 +11222,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://zeref-api.slowops.xyz/ws",
-                "name": "Turing node"
+                "url": "wss://mainnet-rpc.avail.so/ws",
+                "name": "Avail node"
             },
             {
                 "url": "wss://avail-mainnet.public.blastapi.io/",
