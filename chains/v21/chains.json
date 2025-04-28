@@ -214,10 +214,6 @@
             {
                 "url": "wss://kusama.public.curie.radiumblock.co/ws",
                 "name": "Radium node"
-            },
-            {
-                "url": "wss://kusama.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -317,10 +313,6 @@
             {
                 "url": "wss://westend.public.curie.radiumblock.co/ws",
                 "name": "RadiumBlock node"
-            },
-            {
-                "url": "wss://westend.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -974,8 +966,24 @@
         ],
         "nodes": [
             {
-                "url": "wss://karura.api.onfinality.io/public-ws",
-                "name": "Onfinality node"
+                "url": "wss://karura-rpc-0.aca-api.network",
+                "name": "Acala Foundation 0 node"
+            },
+            {
+                "url": "wss://karura-rpc-1.aca-api.network",
+                "name": "Acala Foundation 1 node"
+            },
+            {
+                "url": "wss://karura-rpc-2.aca-api.network/ws",
+                "name": "Acala Foundation 2 node"
+            },
+            {
+                "url": "wss://karura-rpc-3.aca-api.network/ws",
+                "name": "Acala Foundation 3 node"
+            },
+            {
+                "url": "wss://karura-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -1999,10 +2007,6 @@
             {
                 "url": "wss://shiden.public.curie.radiumblock.co/ws",
                 "name": "RadiumBlock node"
-            },
-            {
-                "url": "wss://shiden.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -2424,8 +2428,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://altair.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
+                "url": "wss://fullnode.altair.centrifuge.io",
+                "name": "Centrifuge node"
             }
         ],
         "explorers": [
@@ -2702,10 +2706,6 @@
             {
                 "url": "wss://rpc.helikon.io/khala",
                 "name": "Helikon node"
-            },
-            {
-                "url": "wss://khala.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             },
             {
                 "url": "wss://khala-api.phala.network/ws",
@@ -3290,10 +3290,6 @@
         ],
         "nodes": [
             {
-                "url": "wss://acala-polkadot.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://acala-rpc-0.aca-api.network",
                 "name": "Acala Foundation 0 node"
             },
@@ -3540,10 +3536,6 @@
             {
                 "url": "wss://astar.public.curie.radiumblock.co/ws",
                 "name": "RadiumBlock node"
-            },
-            {
-                "url": "wss://astar.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -4143,10 +4135,6 @@
             {
                 "url": "wss://asset-hub-polkadot-rpc.dwellir.com",
                 "name": "Dwellir node"
-            },
-            {
-                "url": "wss://statemint.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -4573,7 +4561,7 @@
     {
         "chainId": "1bf2a2ecb4a868de66ea8610f2ce7c8c43706561b6476031315f6640fe38e060",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Zeitgeist",
+        "name": "Zeitgeist (PAUSED)",
         "assets": [
             {
                 "assetId": 0,
@@ -4738,10 +4726,6 @@
             {
                 "url": "wss://kusama.api.integritee.network",
                 "name": "Integritee node"
-            },
-            {
-                "url": "wss://integritee-kusama.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -4781,12 +4765,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://centrifuge-rpc.dwellir.com",
-                "name": "Dwellir node"
+                "url": "wss://fullnode.centrifuge.io",
+                "name": "Centrifuge node"
             },
             {
-                "url": "wss://centrifuge-parachain.api.onfinality.io/public-ws",
-                "name": "Onfinality node"
+                "url": "wss://rpc-centrifuge.luckyfriday.io",
+                "name": "LuckyFriday node"
             }
         ],
         "explorers": [
@@ -5926,10 +5910,6 @@
         ],
         "nodes": [
             {
-                "url": "wss://nodle-parachain.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://nodle-rpc.dwellir.com",
                 "name": "Dwellir node"
             }
@@ -5980,10 +5960,6 @@
             {
                 "url": "wss://rpc.helikon.io/phala",
                 "name": "Helikon node"
-            },
-            {
-                "url": "wss://phala.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             },
             {
                 "url": "wss://api.phala.network/ws",
@@ -6347,10 +6323,6 @@
             {
                 "url": "wss://polkadex.public.curie.radiumblock.co/ws",
                 "name": "RadiumBlock node"
-            },
-            {
-                "url": "wss://polkadex.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -8272,10 +8244,6 @@
             {
                 "url": "wss://dot-rpc.stakeworld.io/collectives",
                 "name": "Stakeworld node"
-            },
-            {
-                "url": "wss://collectives.api.onfinality.io/public-ws",
-                "name": "Onfinality node"
             }
         ],
         "explorers": [
@@ -8317,8 +8285,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://krest.api.onfinality.io/public-ws",
-                "name": "Onfinality node"
+                "url": "wss://wss-krest.peaq.network/",
+                "name": "Krest node"
             }
         ],
         "explorers": [
@@ -9405,10 +9373,6 @@
             }
         ],
         "nodes": [
-            {
-                "url": "wss://peaq.api.onfinality.io/public",
-                "name": "Onfinality node"
-            },
             {
                 "url": "wss://peaq-rpc.publicnode.com",
                 "name": "Peaq node"
