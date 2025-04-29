@@ -53,6 +53,21 @@ class CallDryRunResult:
     forwarded_xcm: VerionsedXcm
     paid_delivery_fee: bool
 
+def dry_run_call(
+        chain: XcmChain,
+        call: GenericCall,
+        result_xcms_version: int,
+        origin: dict
+) -> dict:
+    return chain.access_substrate(
+        lambda substrate: substrate.runtime_call(api="DryRunApi", method="dry_run_call",
+                                                 params={
+                                                     "origin_caller": origin,
+                                                     "call": call,
+                                                     "result_xcms_version": result_xcms_version
+                                                 })).value
+
+
 def dry_run_xcm_call(
         chain: XcmChain,
         call: GenericCall,
@@ -60,13 +75,7 @@ def dry_run_xcm_call(
         origin: dict,
         final_destination_account: str
 ) -> CallDryRunResult:
-    dry_run_result = chain.access_substrate(
-        lambda substrate: substrate.runtime_call(api="DryRunApi", method="dry_run_call",
-                                                 params={
-                                                     "origin_caller": origin,
-                                                     "call": call,
-                                                     "result_xcms_version": result_xcms_version
-                                                 })).value
+    dry_run_result = dry_run_call(chain, call, result_xcms_version, origin)
 
     dry_run_effects = dry_run_result["Ok"]
     execution_result = dry_run_effects["execution_result"]

@@ -28,6 +28,14 @@
                         "coinType": "USDT",
                         "blockchain": "ETH"
                     }
+                },
+                "sellProviders": {
+                    "transak": {
+                        "network": "ETHEREUM"
+                    },
+                    "mercuryo": {
+                        "network": "ETHEREUM"
+                    }
                 }
             }
         ]
@@ -60,6 +68,14 @@
                     "banxa": {
                         "coinType": "USDC",
                         "blockchain": "ETH"
+                    }
+                },
+                "sellProviders": {
+                    "transak": {
+                        "network": "ETHEREUM"
+                    },
+                    "mercuryo": {
+                        "network": "ETHEREUM"
                     }
                 }
             }

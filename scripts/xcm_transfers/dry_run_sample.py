@@ -7,8 +7,8 @@ from scripts.xcm_transfers.xcm.xcm_transfer_direction import XcmTransferDirectio
 config_files = get_xcm_config_files()
 registry = build_xcm_registry(config_files)
 
-origin_chain_name = "Polimec"
-destination_chain_name = "Polkadot"
+origin_chain_name = "Polkadot Asset Hub"
+destination_chain_name = "Hydration"
 origin_token = "DOT"
 destination_token = "DOT"
 
@@ -23,3 +23,4 @@ enable_debug_log()
 
 runner = TransferDryRunner(registry)
 runner.dry_run_transfer(direction)
+print(direction)

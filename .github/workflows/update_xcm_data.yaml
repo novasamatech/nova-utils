@@ -2,17 +2,8 @@ name: Update xcm coefficients
 
 on:
   schedule:
-    - cron: '0 8 1/3 * *'
+    - cron: '0 */6 * * *' # every 6 hours
   workflow_dispatch:
-    inputs:
-      environment:
-        required: true
-        description: Which file will be updated DEV or PROD
-        type: choice
-        default: PROD
-        options:
-          - DEV
-          - PROD
 
 permissions:
   contents: write
@@ -21,6 +12,9 @@ permissions:
 jobs:
   update-xcm:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        environment: ['DEV', 'PROD']
 
     steps:
       - name: Checkout current repository to Master branch
@@ -28,74 +22,42 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Set environment
-        run: |
-          if [ "${{ github.event.inputs.environment }}" = "PROD" ]; then
-              echo "ENVIRONMENT=PROD" >> "$GITHUB_ENV"
-          else
-              echo "ENVIRONMENT=DEV" >> "$GITHUB_ENV"
-          fi
-
-      - name: Checkout support repo
-        uses: actions/checkout@v2
-        with:
-          path: ./support
-          repository: nova-wallet/support-utils
-          ref: master
-          token: ${{ secrets.PAT_TOKEN }}
-
       - name: 🛠 Set up actual paths
         uses: ./.github/workflows/setup-path
 
       - name: ⚙️ Install dependencies
         run: |
-          cd ./support
-          make install
+          make init
 
-      - name: 🦾 Generate new xcm coefficients
+      - name: 🦾 Update xcm config
+        env:
+          ENVIRONMENT: ${{ matrix.environment }}
         run: |
-          cd ./support
-          make update-xcm
-
-      - name: Move generated file
-        run: |
-          if [ "${{ github.event.inputs.environment }}" = "PROD" ]; then
-              mv support/transfers.json ${{ env.XCM_JSON_PATH }}
-              echo "COMMIT_FILE=${{ env.XCM_JSON_PATH }}" >> "$GITHUB_ENV"
-              echo "PR_REVIEWER=ERussel,leohar,valentunn,stepanLav" >> "$GITHUB_ENV"
-          else
-              mv support/transfers_dev.json ${{ env.DEV_XCM_JSON_PATH }}
-              echo "COMMIT_FILE=${{ env.DEV_XCM_JSON_PATH }}" >> "$GITHUB_ENV"
-              echo "PR_REVIEWER=leohar,stepanLav" >> "$GITHUB_ENV"
-          fi
+          make update-xcm-config
 
       - name: Make Pull Request
         uses: ./.github/workflows/make-pull-request
         with:
-          commit-files: ${{ env.COMMIT_FILE }}
-          commit-message: Update xcm coefficients
+          commit-files: xcm/**/*.json${{ matrix.environment == 'DEV' && ', scripts/**/*.json' || '' }}
+          commit-message: Update xcm config for ${{ matrix.environment }} env
           app-id: ${{ secrets.PR_APP_ID}}
           app-token: ${{ secrets.PR_APP_TOKEN}}
-          pr-reviewer: ${{ env.PR_REVIEWER }}
-          branch-name: update-xcm-coefficients
-          pr-title: 🆙 Update XCM coefficients for ${{ env.ENVIRONMENT }} env
+          pr-reviewer: 'leohar,stepanLav'
+          branch-name: update-xcm-coefficients-${{ matrix.environment }}
+          pr-title: 🆙 Update XCM config for ${{ matrix.environment }} env
           pr-body: This PR was generated automatically 🤖
           pr-base: master
 
-  alert:
-    runs-on: ubuntu-latest
-    needs: update-xcm
-    if: always() && (needs.update-xcm.result == 'failure')
-    env:
-      GITHUB_WORKFLOW_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
-    steps:
-      - name: Report
+      - name: Alert
+        if: failure()
+        env:
+          GITHUB_WORKFLOW_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
         uses: appleboy/telegram-action@master
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-            XCM update workflow failed, lets check:
+            XCM update workflow failed for ${{ matrix.environment }}, lets check:
 
             Failed run:
             ${{ env.GITHUB_WORKFLOW_URL }}

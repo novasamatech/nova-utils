@@ -8,6 +8,7 @@ from substrateinterface import SubstrateInterface
 
 from .metadata_interaction import get_properties
 from .substrate_interface import create_connection_by_url
+from ..xcm_transfers.utils.log import debug_log
 
 T = TypeVar('T')
 
@@ -23,6 +24,8 @@ class Chain:
     _type_registry: dict
 
     _type_cache: dict = {}
+
+    _access_substrate_counter: int = 0
 
     def __init__(self, arg, type_registry=None):
         self.chainId = arg.get("chainId")
@@ -100,12 +103,19 @@ class Chain:
             self.create_connection()
 
         try:
+            self._access_substrate_counter += 1
             return action(self.substrate)
         except Exception as e:
-            print("Attempting to re-create connection after receiving error", e)
-            # try re-connecting socket and performing action once again
-            self.recreate_connection()
-            return action(self.substrate)
+            if self._access_substrate_counter == 1:
+                print("Attempting to re-create connection after broken connection:", e)
+                # try re-connecting socket and performing action once again
+                self.recreate_connection()
+                return action(self.substrate)
+            else:
+                debug_log("Nested access_substrate - propagate error to the outer-most level")
+                raise e
+        finally:
+            self._access_substrate_counter -= 1
 
     def encodable_address(self, account_id: str):
         if self.has_evm_addresses():
@@ -118,7 +128,6 @@ class Chain:
     def _uses_multi_address(self) -> bool:
         type_def = self.substrate.get_type_definition("Address")
         return type_def is dict
-
 
 class ChainAsset:
     _data: dict
