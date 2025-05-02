@@ -76,8 +76,9 @@
 |  72 | Unique Marketplace                   | https://unqnft.io                                   | gaming,art            |
 |  73 | Unique PlayX                         | https://playx.unique.network                        | gaming                |
 |  74 | Unlock Polkadot                      | https://unlockpolkadot.com                          | social                |
-|  75 | XDAO                                 | https://www.xdao.app/1284                           | bridge,dex,evm        |
-|  76 | Zeitgeist                            | https://app.zeitgeist.pm/                           | utilities             |
-|  77 | Zenlink                              | https://app.zenlink.pro                             | dex                   |
-|  78 | cBRIDGE                              | https://cbridge.celer.network/                      | dex,evm               |
-|  79 | xx network Hub                       | https://hub.xx.network/                             | utilities             |
+|  75 | Vortex Finance                       | https://app.vortexfinance.co/                       | evm,utilities         |
+|  76 | XDAO                                 | https://www.xdao.app/1284                           | bridge,dex,evm        |
+|  77 | Zeitgeist                            | https://app.zeitgeist.pm/                           | utilities             |
+|  78 | Zenlink                              | https://app.zenlink.pro                             | dex                   |
+|  79 | cBRIDGE                              | https://cbridge.celer.network/                      | dex,evm               |
+|  80 | xx network Hub                       | https://hub.xx.network/                             | utilities             |
