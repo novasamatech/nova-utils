@@ -6884,7 +6884,7 @@
     {
         "chainId": "feb426ca713f0f46c96465b8f039890370cf6bfd687c9076ea2843f58a6ae8a7",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Kabocha",
+        "name": "Kabocha (PAUSED)",
         "assets": [
             {
                 "assetId": 0,
@@ -6909,49 +6909,6 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kabocha.svg",
         "addressPrefix": 27
-    },
-    {
-        "chainId": "35a06bfec2edf0ff4be89a6428ccd9ff5bd0167d618c5a0d4341f9600a458d14",
-        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Bajun",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "BAJU",
-                "precision": 12,
-                "priceId": "ajuna-network",
-                "icon": "BAJU.svg",
-                "buyProviders": {
-                    "banxa": {
-                        "coinType": "BAJU",
-                        "blockchain": "BAJU"
-                    }
-                }
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://rpc-para.bajun.network",
-                "name": "AjunaNetwork node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://bajun.subscan.io/extrinsic/{hash}",
-                "account": "https://bajun.subscan.io/account/{address}"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bajun"
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Bajun.svg",
-        "addressPrefix": 1337
     },
     {
         "chainId": "cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
@@ -8515,7 +8472,7 @@
     {
         "chainId": "31a7d8914fb31c249b972f18c115f1e22b4b039abbcb03c73b6774c5642f9efe",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "InvArch",
+        "name": "InvArch (PAUSED)",
         "assets": [
             {
                 "assetId": 0,
