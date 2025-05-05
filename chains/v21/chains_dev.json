@@ -7569,52 +7569,6 @@
         "addressPrefix": 27
     },
     {
-        "chainId": "35a06bfec2edf0ff4be89a6428ccd9ff5bd0167d618c5a0d4341f9600a458d14",
-        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Bajun",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "BAJU",
-                "precision": 12,
-                "priceId": "ajuna-network",
-                "icon": "BAJU.svg",
-                "buyProviders": {
-                    "banxa": {
-                        "coinType": "BAJU",
-                        "blockchain": "BAJU"
-                    }
-                }
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://rpc-para.bajun.network",
-                "name": "AjunaNetwork node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://bajun.subscan.io/extrinsic/{hash}",
-                "account": "https://bajun.subscan.io/account/{address}"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bajun"
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Bajun.svg",
-        "addressPrefix": 1337,
-        "additional": {
-            "supportsGenericLedgerApp": true
-        }
-    },
-    {
         "chainId": "77afd6190f1554ad45fd0d31aee62aacc33c6db0ea801129acb813f913e0764f",
         "name": "Paseo Testnet",
         "assets": [
