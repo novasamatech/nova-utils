@@ -55,8 +55,8 @@ jobs:
           app-id: ${{ secrets.PR_APP_ID}}
           app-token: ${{ secrets.PR_APP_TOKEN}}
           pr-reviewer: ${{ env.PR_REVIEWER }}
-          branch-name: update-preconfigured-chains
-          pr-title: 🆙 Update preconfigured chains
+          branch-name: update-prefix-chains-${{ matrix.json_path }}
+          pr-title: 🆙 Update legacyAddressPrefix - ${{ matrix.json_path }}
           pr-body: This PR was generated automatically 🤖
           pr-base: master
 
