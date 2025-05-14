@@ -57,9 +57,8 @@ def process_single_chain(chain: Chain, existing_data: list[dict[str, any]]) -> b
 
         with chain.create_connection() as connection:
             if connection:
-                properties = connection.properties
-                if properties and 'ss58Format' in properties:
-                    return update_network_address_prefix(network, properties['ss58Format'])
+                onchain_prefix = connection.get_constant('System', 'SS58Prefix').serialize()
+                return update_network_address_prefix(network, onchain_prefix)
         return False
     except Exception as e:
         print(f"Error processing chain {chain.name}: {e}")
