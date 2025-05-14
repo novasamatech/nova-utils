@@ -8,7 +8,6 @@ It preserves the old address prefix as legacyAddressPrefix when making updates.
 
 import os
 import sys
-from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -16,7 +15,7 @@ from scripts.utils.chain_model import Chain
 from scripts.utils.json_utils import load_json_file, save_json_file
 from tests.data.setting_data import get_substrate_chains
 
-CHAINS_FILE_PATH = Path(os.getenv("CHAIN_ADDRESS_PREFIX_FILE_PATH", 'chains/v21/chains_dev.json'))
+CHAINS_FILE_PATH = Path(os.getenv("CHAIN_ADDRESS_PREFIX_FILE_PATH", 'chains/v21/chains.json'))
 
 def update_network_address_prefix(network: Chain, prefix_from_prop: int) -> bool:
     """
@@ -29,9 +28,6 @@ def update_network_address_prefix(network: Chain, prefix_from_prop: int) -> bool
     Returns:
         bool: True if the prefix was updated, False otherwise
     """
-    if network['legacyAddressPrefix'] is not None:
-        return False
-
     current_prefix = network['addressPrefix']
     if current_prefix != prefix_from_prop:
         if current_prefix is not None and 'legacyAddressPrefix' not in network:
@@ -69,31 +65,14 @@ def process_single_chain(chain: Chain, existing_data: list[dict[str, any]]) -> b
         print(f"Error processing chain {chain.name}: {e}")
         return False
 
-def process_chains_parallel(chains: list[Chain], existing_data: list[dict[str, any]], max_workers: int = 5) -> bool:
-    """
-    Process multiple chains in parallel to update their address prefixes.
-
-    Args:
-        chains: List of Chain objects to process
-        existing_data: List of existing network configurations
-        max_workers: Maximum number of parallel workers (default: 5)
-
-    Returns:
-        bool: True if any chain was updated, False otherwise
-    """
-    updated = False
-    with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        future_to_chain = {executor.submit(process_single_chain, chain, existing_data): chain for chain in chains}
-        for future in as_completed(future_to_chain):
-            if future.result():
-                updated = True
-    return updated
-
 def main() -> None:
     existing_data = load_json_file(CHAINS_FILE_PATH)
     substrate_chains = get_substrate_chains(path=str(CHAINS_FILE_PATH))
 
-    updated = process_chains_parallel(substrate_chains, existing_data)
+    updated = False
+    for chain in substrate_chains:
+        if process_single_chain(chain, existing_data):
+            updated = True
 
     if updated:
         save_json_file(CHAINS_FILE_PATH, existing_data)
