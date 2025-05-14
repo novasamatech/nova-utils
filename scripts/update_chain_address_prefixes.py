@@ -1,3 +1,11 @@
+"""
+Script to update address prefixes in the chains configuration file.
+
+This script connects to Substrate chains, retrieves their SS58 address format from the properties,
+and updates the corresponding chain configuration in the CHAINS_FILE_PATH file.
+It preserves the old address prefix as legacyAddressPrefix when making updates.
+"""
+
 import os
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -8,23 +16,43 @@ from scripts.utils.chain_model import Chain
 from scripts.utils.json_utils import load_json_file, save_json_file
 from tests.data.setting_data import get_substrate_chains
 
-CHAINS_FILE_PATH_DEV = Path(os.getenv("CHAIN_ADDRESS_PREFIX_FILE_PATH", 'chains/v21/chains_dev.json'))
+CHAINS_FILE_PATH = Path(os.getenv("CHAIN_ADDRESS_PREFIX_FILE_PATH", 'chains/v21/chains_dev.json'))
 
-def update_network_address_prefix(network, new_prefix):
+def update_network_address_prefix(network: Chain, prefix_from_prop: int) -> bool:
+    """
+    Update the address prefix for a network if needed.
+
+    Args:
+        network: Chain object
+        prefix_from_prop: Address prefix from the properties
+
+    Returns:
+        bool: True if the prefix was updated, False otherwise
+    """
     if network['legacyAddressPrefix'] is not None:
         return False
 
     current_prefix = network['addressPrefix']
-    if current_prefix != new_prefix:
+    if current_prefix != prefix_from_prop:
         if current_prefix is not None and 'legacyAddressPrefix' not in network:
             network['legacyAddressPrefix'] = current_prefix
 
-        network['addressPrefix'] = new_prefix
-        print(f"Updated address prefix for chain {network.get('name')}: {current_prefix} -> {new_prefix}")
+        network['addressPrefix'] = prefix_from_prop
+        print(f"Updated address prefix for chain {network.get('name')}: {current_prefix} -> {prefix_from_prop}")
         return True
     return False
 
-def process_single_chain(chain: Chain, existing_data):
+def process_single_chain(chain: Chain, existing_data: list[dict[str, any]]) -> bool:
+    """
+    Process a single chain to update its address prefix.
+
+    Args:
+        chain: Chain object to process
+        existing_data: List of existing network configurations
+
+    Returns:
+        bool: True if the chain was updated, False otherwise
+    """
     try:
         print(f'Checking {chain.name}')
         network = next((network for network in existing_data if network['chainId'] == chain.chainId), None)
@@ -41,7 +69,18 @@ def process_single_chain(chain: Chain, existing_data):
         print(f"Error processing chain {chain.name}: {e}")
         return False
 
-def process_chains_parallel(chains, existing_data, max_workers=5):
+def process_chains_parallel(chains: list[Chain], existing_data: list[dict[str, any]], max_workers: int = 5) -> bool:
+    """
+    Process multiple chains in parallel to update their address prefixes.
+
+    Args:
+        chains: List of Chain objects to process
+        existing_data: List of existing network configurations
+        max_workers: Maximum number of parallel workers (default: 5)
+
+    Returns:
+        bool: True if any chain was updated, False otherwise
+    """
     updated = False
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         future_to_chain = {executor.submit(process_single_chain, chain, existing_data): chain for chain in chains}
@@ -50,14 +89,14 @@ def process_chains_parallel(chains, existing_data, max_workers=5):
                 updated = True
     return updated
 
-def main():
-    existing_data_dev = load_json_file(CHAINS_FILE_PATH_DEV)
-    substrate_chains = get_substrate_chains(path=str(CHAINS_FILE_PATH_DEV))
+def main() -> None:
+    existing_data = load_json_file(CHAINS_FILE_PATH)
+    substrate_chains = get_substrate_chains(path=str(CHAINS_FILE_PATH))
 
-    updated = process_chains_parallel(substrate_chains, existing_data_dev)
+    updated = process_chains_parallel(substrate_chains, existing_data)
 
     if updated:
-        save_json_file(CHAINS_FILE_PATH_DEV, existing_data_dev)
+        save_json_file(CHAINS_FILE_PATH, existing_data)
         print("Chain address prefixes updated successfully")
     else:
         print("No changes were made to address prefixes")
