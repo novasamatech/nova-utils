@@ -7585,7 +7585,7 @@
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Paseo_Testnet.svg",
-        "addressPrefix": 42,
+        "addressPrefix": 0,
         "options": [
             "testnet",
             "crowdloans",
@@ -7593,7 +7593,8 @@
         ],
         "additional": {
             "supportsGenericLedgerApp": true
-        }
+        },
+        "legacyAddressPrefix": 42
     },
     {
         "chainId": "6408de7737c59c238890533af25896a2c20608d8b380bb01029acb392781063e",
@@ -8008,10 +8009,11 @@
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Beresheet.svg",
-        "addressPrefix": 7,
+        "addressPrefix": 42,
         "options": [
             "testnet"
-        ]
+        ],
+        "legacyAddressPrefix": 7
     },
     {
         "chainId": "6f0f071506de39058fe9a95bbca983ac0e9c5da3443909574e95d52eb078d348",
