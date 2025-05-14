@@ -1,0 +1,78 @@
+name: Check and update legacyAddressPrefix
+
+on:
+  schedule:
+    - cron: '0 9 1/3 * *'
+  workflow_dispatch:
+
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  setup-paths:
+    runs-on: ubuntu-latest
+    outputs:
+      chains_path: ${{ env.CHAINS_JSON_PATH }}
+      dev_chains_path: ${{ env.DEV_CHAINS_JSON_PATH }}
+    steps:
+      - name: Checkout current repository to Master branch
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: 🛠 Set up actual paths
+        uses: ./.github/workflows/setup-path
+
+  check-legacy-address-prefix:
+    needs: setup-paths
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        json_path:
+          - ${{ needs.setup-paths.outputs.chains_path }}
+          - ${{ needs.setup-paths.outputs.dev_chains_path }}
+
+    steps:
+      - name: Checkout current repository to Master branch
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: ⚙️ Install dependencies
+        run: make init
+
+      - name: 🦾 Check legacyAddressPrefix
+        run: make check-legacy-address-prefix JSON_PATH=${{ matrix.json_path }}
+
+      - name: Make Pull Request
+        uses: ./.github/workflows/make-pull-request
+        with:
+          commit-files: chains/**
+          commit-message: Update legacyAddressPrefix
+          app-id: ${{ secrets.PR_APP_ID}}
+          app-token: ${{ secrets.PR_APP_TOKEN}}
+          pr-reviewer: ${{ env.PR_REVIEWER }}
+          branch-name: update-preconfigured-chains
+          pr-title: 🆙 Update preconfigured chains
+          pr-body: This PR was generated automatically 🤖
+          pr-base: master
+
+  alert:
+    runs-on: ubuntu-latest
+    needs: check-legacy-address-prefix
+    if: always() && (needs.check-legacy-address-prefix.result == 'failure')
+    env:
+      GITHUB_WORKFLOW_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+    steps:
+      - name: Report
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            LegacyAddressPrefix check workflow failed, lets check:
+
+            Failed run:
+            ${{ env.GITHUB_WORKFLOW_URL }}

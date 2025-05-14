@@ -8,7 +8,7 @@ from scripts.utils.chain_model import Chain
 from scripts.utils.json_utils import load_json_file, save_json_file
 from tests.data.setting_data import get_substrate_chains
 
-CHAINS_FILE_PATH_DEV = Path(os.getenv("DEV_CHAINS_JSON_PATH", 'chains/v20/chains_dev.json'))
+CHAINS_FILE_PATH_DEV = Path(os.getenv("CHAIN_ADDRESS_PREFIX_FILE_PATH", 'chains/v21/chains_dev.json'))
 
 def update_network_address_prefix(network, new_prefix):
     if network['legacyAddressPrefix'] is not None:
