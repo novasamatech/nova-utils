@@ -367,64 +367,40 @@
     {
         "chainId": "67f9723393ef76214df0118c34bbbd3dbebc8ed46a10973a8c969d48fe7598c9",
         "parentId": "e143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e",
-        "name": "Westmint",
+        "name": "Westend Asset Hub (TESTNET)",
         "assets": [
-            {
-                "assetId": 0,
-                "symbol": "WND",
-                "precision": 12,
-                "icon": "WND.svg",
-                "buyProviders": {
-                    "banxa": {
-                        "coinType": "WND",
-                        "blockchain": "WND"
-                    }
-                }
-            },
-            {
-                "assetId": 1,
-                "symbol": "SIRI",
-                "precision": 10,
-                "icon": "Default.svg",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "81"
-                }
-            },
-            {
-                "assetId": 2,
-                "symbol": "DOT",
-                "precision": 10,
-                "priceId": "polkadot",
-                "icon": "DOT.svg",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "0x02010902",
-                    "palletName": "ForeignAssets",
-                    "isSufficient": true
-                }
-            },
-            {
-                "assetId": 3,
-                "symbol": "JOE",
-                "precision": 3,
-                "icon": "Default.svg",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "8",
-                    "isSufficient": true
-                }
-            }
+          {
+              "assetId": 0,
+              "symbol": "WND",
+              "precision": 12,
+              "icon": "WND.svg"
+          }
         ],
         "nodes": [
-            {
-                "url": "wss://westmint-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
-                "url": "wss://wnd-rpc.stakeworld.io/assethub",
-                "name": "Stakeworld node"
-            }
+          {
+              "url": "wss://asset-hub-westend-rpc.dwellir.com",
+              "name": "Dwellir"
+          },
+          {
+              "url": "wss://westmint-rpc-tn.dwellir.com",
+              "name": "Dwellir Tunisia"
+          },
+          {
+              "url": "wss://sys.ibp.network/asset-hub-westend",
+              "name": "IBP1"
+          },
+          {
+              "url": "wss://asset-hub-westend.dotters.network",
+              "name": "IBP2"
+          },
+          {
+              "url": "wss://westend-asset-hub-rpc.polkadot.io",
+              "name": "Parity"
+          },
+          {
+              "url": "wss://asset-hub-westend.rpc.permanence.io",
+              "name": "Permanence DAO EU"
+          }
         ],
         "explorers": [
             {
@@ -433,16 +409,8 @@
                 "event": "https://westmint.statescan.io/#/events/{event}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Westmint_Testnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
         "addressPrefix": 42,
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---westmint-test"
-                }
-            ]
-        },
         "options": [
             "testnet",
             "swap-hub",
