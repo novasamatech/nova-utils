@@ -10,6 +10,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from scripts.utils.metadata_interaction import get_properties
 from scripts.utils.substrate_interface import create_connection_by_url
 from enum import Enum
+from scripts.utils.json_utils import load_json_file, save_json_file
 
 
 class Endpoints(Enum):
@@ -30,20 +31,6 @@ class BlacklistedChains(Enum):
 CHAINS_FILE_PATH_DEV = Path(os.getenv("DEV_CHAINS_JSON_PATH", 'chains/v21/chains_dev.json'))
 CHAINS_FILE_PATH_PROD = Path(os.getenv("CHAINS_JSON_PATH", 'chains/v21/chains.json'))
 SKIP_PATTERNS = ["(SHUTTING DOWN)", "Westend (TESTNET)", "Paseo Testnet (TESTNET)", "5ireChain Mainnet"]
-
-
-def load_json_file(file_path):
-    if file_path.exists():
-        with open(file_path, 'r') as f:
-            return json.load(f)
-    return []
-
-
-def save_json_file(file_path, data):
-    os.makedirs(Path(file_path).parent, exist_ok=True)
-    with open(file_path, 'w') as f:
-        json.dump(data, f, indent=4)
-        f.write('\n')
 
 
 def find_objects(array_content):

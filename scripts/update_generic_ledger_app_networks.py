@@ -1,4 +1,3 @@
-import json
 import os
 import sys
 from pathlib import Path
@@ -8,6 +7,7 @@ from enum import Enum
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from scripts.utils.chain_model import Chain
 from tests.data.setting_data import get_substrate_chains
+from scripts.utils.json_utils import load_json_file, save_json_file
 
 CHAINS_FILE_PATH_DEV = Path(os.getenv("DEV_CHAINS_JSON_PATH", 'chains/v20/chains_dev.json'))
 
@@ -20,19 +20,6 @@ class BlacklistedChains(Enum):
     ENJIN_RELAY_CHAIN = 'd8761d3c88f26dc12875c00d3165f7d67243d56fc85b4cf19937601a7916e5a9'
     TANGLE = '44f68476df71ebf765b630bf08dc1e0fedb2bf614a1aa0563b3f74f20e47b3e0'
     CERE = '81443836a9a24caaa23f1241897d1235717535711d1d3fe24eae4fdc942c092c'
-
-
-def load_json_file(file_path):
-    if file_path.exists():
-        with open(file_path, 'r') as f:
-            return json.load(f)
-    return []
-
-
-def save_json_file(file_path, data):
-    with open(file_path, 'w') as f:
-        json.dump(data, f, indent=4)
-        f.write('\n')
 
 
 def update_existing_data_with_new_networks(existing_data, new_networks):

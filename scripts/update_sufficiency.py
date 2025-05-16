@@ -1,4 +1,3 @@
-import json
 import os
 import sys
 from pathlib import Path
@@ -9,23 +8,11 @@ from substrateinterface import SubstrateInterface
 from substrateinterface.storage import StorageKey
 
 from scripts.utils.chain_model import Chain
+from scripts.utils.json_utils import load_json_file, save_json_file
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 CHAINS_FILE_PATH_DEV = Path(os.getenv("DEV_CHAINS_JSON_PATH", '../chains/v21/chains_dev.json'))
-
-
-def load_json_file(file_path):
-    if file_path.exists():
-        with open(file_path, 'r') as f:
-            return json.load(f)
-    return []
-
-
-def save_json_file(file_path, data):
-    with open(file_path, 'w') as f:
-        json.dump(data, f, indent=4)
-        f.write('\n')
 
 
 def update_sufficiency(chains, data):
