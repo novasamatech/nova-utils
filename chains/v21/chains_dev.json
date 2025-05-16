@@ -7556,7 +7556,7 @@
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Paseo_Testnet.svg",
-        "addressPrefix": 42,
+        "addressPrefix": 0,
         "options": [
             "testnet",
             "crowdloans",
@@ -7564,7 +7564,8 @@
         ],
         "additional": {
             "supportsGenericLedgerApp": true
-        }
+        },
+        "legacyAddressPrefix": 42
     },
     {
         "chainId": "6408de7737c59c238890533af25896a2c20608d8b380bb01029acb392781063e",
