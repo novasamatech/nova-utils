@@ -369,38 +369,38 @@
         "parentId": "e143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e",
         "name": "Westend Asset Hub (TESTNET)",
         "assets": [
-          {
-              "assetId": 0,
-              "symbol": "WND",
-              "precision": 12,
-              "icon": "WND.svg"
-          }
+            {
+                "assetId": 0,
+                "symbol": "WND",
+                "precision": 12,
+                "icon": "WND.svg"
+            }
         ],
         "nodes": [
-          {
-              "url": "wss://asset-hub-westend-rpc.dwellir.com",
-              "name": "Dwellir"
-          },
-          {
-              "url": "wss://westmint-rpc-tn.dwellir.com",
-              "name": "Dwellir Tunisia"
-          },
-          {
-              "url": "wss://sys.ibp.network/asset-hub-westend",
-              "name": "IBP1"
-          },
-          {
-              "url": "wss://asset-hub-westend.dotters.network",
-              "name": "IBP2"
-          },
-          {
-              "url": "wss://westend-asset-hub-rpc.polkadot.io",
-              "name": "Parity"
-          },
-          {
-              "url": "wss://asset-hub-westend.rpc.permanence.io",
-              "name": "Permanence DAO EU"
-          }
+            {
+                "url": "wss://asset-hub-westend-rpc.dwellir.com",
+                "name": "Dwellir"
+            },
+            {
+                "url": "wss://westmint-rpc-tn.dwellir.com",
+                "name": "Dwellir Tunisia"
+            },
+            {
+                "url": "wss://sys.ibp.network/asset-hub-westend",
+                "name": "IBP1"
+            },
+            {
+                "url": "wss://asset-hub-westend.dotters.network",
+                "name": "IBP2"
+            },
+            {
+                "url": "wss://westend-asset-hub-rpc.polkadot.io",
+                "name": "Parity"
+            },
+            {
+                "url": "wss://asset-hub-westend.rpc.permanence.io",
+                "name": "Permanence DAO EU"
+            }
         ],
         "explorers": [
             {
@@ -7234,7 +7234,7 @@
             "fullSyncByDefault"
         ],
         "additional": {
-            "disabledCheckMetadataHash": true
+            "supportsGenericLedgerApp": true
         }
     },
     {
