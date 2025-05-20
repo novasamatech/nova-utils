@@ -373,7 +373,11 @@
               "assetId": 0,
               "symbol": "WND",
               "precision": 12,
-              "icon": "WND.svg"
+              "icon": "WND.svg",
+              "staking": [
+                  "relaychain",
+                  "nomination-pools"
+              ]
           }
         ],
         "nodes": [
@@ -414,7 +418,8 @@
         "options": [
             "testnet",
             "swap-hub",
-            "proxy"
+            "proxy",
+            "governance"
         ],
         "additional": {
             "relaychainAsNative": true,
