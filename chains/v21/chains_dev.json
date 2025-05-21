@@ -3660,6 +3660,12 @@
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonbeam-gov"
                 }
+            ],
+            "multisig": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-proxy-moonbeam-stg.novasama-tech.org"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/moonbeam.svg",
