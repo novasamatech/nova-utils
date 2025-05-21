@@ -8,8 +8,11 @@ import os
 import re
 import shutil
 
+from scripts.utils.chain_model import Chain
+
 # Configuration
-CHAINS_FILE = 'chains/v21/chains.json'
+CHAINS_VERSION = Chain.latest_config_version()
+CHAINS_FILE = f'chains/{CHAINS_VERSION}/chains.json'
 OUTPUT_DIR = 'icons/tokens/colored'
 REMOVE_UNNECESSARY_ICONS = False
 

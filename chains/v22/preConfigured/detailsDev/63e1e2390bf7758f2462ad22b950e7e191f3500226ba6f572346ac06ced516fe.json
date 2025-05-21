@@ -1,0 +1,23 @@
+{
+    "chainId": "63e1e2390bf7758f2462ad22b950e7e191f3500226ba6f572346ac06ced516fe",
+    "name": "BIFROST Mainnet",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "BFC",
+            "precision": 18,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://public-01.mainnet.bifrostnetwork.com/wss",
+            "name": "Pilab #1"
+        },
+        {
+            "url": "wss://public-02.mainnet.bifrostnetwork.com/wss",
+            "name": "Pilab #2"
+        }
+    ],
+    "addressPrefix": 42
+}

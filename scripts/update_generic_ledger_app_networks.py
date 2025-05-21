@@ -9,7 +9,8 @@ from scripts.utils.chain_model import Chain
 from tests.data.setting_data import get_substrate_chains
 from scripts.utils.json_utils import load_json_file, save_json_file
 
-CHAINS_FILE_PATH_DEV = Path(os.getenv("DEV_CHAINS_JSON_PATH", 'chains/v20/chains_dev.json'))
+CHAINS_VERSION = Chain.latest_config_version()
+CHAINS_FILE_PATH_DEV = Path(os.getenv("DEV_CHAINS_JSON_PATH", f'chains/{CHAINS_VERSION}/chains_dev.json'))
 
 class BlacklistedChains(Enum):
     NOVASAMA_TESTNET = '3dbb473ae9b2b77ecf077c03546f0f8670c020e453dddb457da155e6cc7cba42'

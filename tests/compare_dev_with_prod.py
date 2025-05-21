@@ -1,9 +1,11 @@
-from pprint import pprint
 import json
-import os
+from pprint import pprint
+
 import deepdiff
 
-CHAINS_VERISON = os.getenv('CHAINS_VERSION', default = "v9")
+from scripts.utils.chain_model import Chain
+
+CHAINS_VERISON = Chain.latest_config_version()
 
 def compare_network(prod, dev):
     for network in prod:

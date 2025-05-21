@@ -1,9 +1,11 @@
 import json
 import os
 
-CHAINS_VERISON = os.getenv('CHAINS_VERSION')
+from scripts.utils.chain_model import Chain
 
-with open(f"chains/{CHAINS_VERISON}/chains_dev.json") as fin:
+CHAINS_VERSION = Chain.latest_config_version()
+
+with open(f"chains/{CHAINS_VERSION}/chains_dev.json") as fin:
     dev_chains = json.load(fin)
     # Skip paused networks
     dev_chains = [chain for chain in dev_chains if 'PAUSED' not in chain['name']]

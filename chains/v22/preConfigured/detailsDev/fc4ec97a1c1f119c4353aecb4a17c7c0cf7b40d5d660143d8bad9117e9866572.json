@@ -1,0 +1,19 @@
+{
+    "chainId": "fc4ec97a1c1f119c4353aecb4a17c7c0cf7b40d5d660143d8bad9117e9866572",
+    "name": "Creditcoin3 Testnet (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "CTC",
+            "precision": 18,
+            "icon": "CTC.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc.cc3-testnet.creditcoin.network/ws",
+            "name": "Creditcoin Foundation"
+        }
+    ],
+    "addressPrefix": 42
+}
