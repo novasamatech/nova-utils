@@ -7087,6 +7087,19 @@
                     "existentialDeposit": "10000000000000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 12,
+                "symbol": "vBNC",
+                "precision": 12,
+                "type": "orml",
+                "icon": "vBNC.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0101",
+                    "currencyIdType": "bifrost_primitives.currency.CurrencyId",
+                    "existentialDeposit": "10000000000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
