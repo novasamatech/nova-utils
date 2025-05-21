@@ -182,6 +182,10 @@ update-ledger-networks:
 update-chains-preconfigured:
 	$(PYTHON_SCRIPT) scripts/polkadotjs_endpoints_to_preconfigured.py
 
+## Check legacyAddressPrefix
+check-legacy-address-prefix:
+	CHAIN_ADDRESS_PREFIX_FILE_PATH=$(JSON_PATH) $(PYTHON_SCRIPT) scripts/update_chain_address_prefixes.py
+
 # =============================================================================
 # XCM configuration targets
 # =============================================================================
