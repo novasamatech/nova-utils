@@ -1343,7 +1343,8 @@
         "additional": {
             "themeColor": "#20A0B6",
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/moonriver-movr-staking",
-            "defaultBlockTime": 12000
+            "defaultBlockTime": 12000,
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -3626,7 +3627,8 @@
         "additional": {
             "themeColor": "#9968CE",
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/moonbeam-glmr-staking",
-            "defaultBlockTime": 6000
+            "defaultBlockTime": 6000,
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -10921,7 +10923,8 @@
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/mythos-myth-staking",
             "feeViaRuntimeCall": true,
             "sessionLength": 14400,
-            "defaultBlockTime": 6000
+            "defaultBlockTime": 6000,
+            "supportsGenericLedgerApp": true
         }
     },
     {
