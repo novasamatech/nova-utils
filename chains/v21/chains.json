@@ -5638,7 +5638,7 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Hydration.svg",
-        "addressPrefix": 63,
+        "addressPrefix": 0,
         "options": [
             "governance",
             "governance-v1",
@@ -5648,7 +5648,8 @@
         "additional": {
             "feeViaRuntimeCall": true,
             "supportsGenericLedgerApp": true
-        }
+        },
+        "legacyAddressPrefix": 63
     },
     {
         "chainId": "bf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72",
