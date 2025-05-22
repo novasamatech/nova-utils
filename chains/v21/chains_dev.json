@@ -125,6 +125,12 @@
                     "type": "novasama",
                     "url": "https://opengov-backend-dev.novasama-tech.org/api/v1/referendum-summaries/list"
                 }
+            ],
+            "multisig": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-proxy-polkadot-stg.novasama-tech.org"
+                }
             ]
         },
         "options": [
@@ -346,6 +352,12 @@
                 {
                     "type": "github",
                     "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/crowdloan/westend.json"
+                }
+            ],
+            "multisig": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-proxy-westend-stg.novasama-tech.org"
                 }
             ]
         },
@@ -3613,6 +3625,12 @@
                 {
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonbeam-gov"
+                }
+            ],
+            "multisig": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-proxy-moonbeam-stg.novasama-tech.org"
                 }
             ]
         },
