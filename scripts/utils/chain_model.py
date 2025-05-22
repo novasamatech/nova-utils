@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 from abc import ABC, abstractmethod
 from typing import List, Callable, TypeVar, Tuple
 
@@ -41,6 +42,10 @@ class Chain:
         self.properties = None
 
         self._type_registry = type_registry
+
+    @staticmethod
+    def latest_config_version():
+        return os.getenv('CHAINS_VERSION', default="v22")
 
     def create_connection(self) -> SubstrateInterface:
         def create_node_connection(node_url: str):

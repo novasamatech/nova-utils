@@ -12,7 +12,8 @@ from scripts.utils.json_utils import load_json_file, save_json_file
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-CHAINS_FILE_PATH_DEV = Path(os.getenv("DEV_CHAINS_JSON_PATH", '../chains/v21/chains_dev.json'))
+CHAINS_VERSION = Chain.latest_config_version()
+CHAINS_FILE_PATH_DEV = Path(os.getenv("DEV_CHAINS_JSON_PATH", f"../chains/{CHAINS_VERSION}/chains_dev.json"))
 
 
 def update_sufficiency(chains, data):

@@ -15,7 +15,8 @@ from scripts.utils.chain_model import Chain
 from scripts.utils.json_utils import load_json_file, save_json_file
 from tests.data.setting_data import get_substrate_chains
 
-CHAINS_FILE_PATH = Path(os.getenv("CHAIN_ADDRESS_PREFIX_FILE_PATH", 'chains/v21/chains.json'))
+CHAINS_VERSION = Chain.latest_config_version()
+CHAINS_FILE_PATH = Path(os.getenv("CHAIN_ADDRESS_PREFIX_FILE_PATH", f'chains/{CHAINS_VERSION}/chains.json'))
 
 def update_network_address_prefix(network: Chain, prefix_from_prop: int) -> bool:
     """

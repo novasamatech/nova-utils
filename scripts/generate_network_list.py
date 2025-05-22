@@ -6,6 +6,7 @@ import os
 from jinja2 import Template
 from pytablewriter import MarkdownTableWriter
 
+from scripts.utils.chain_model import Chain
 
 readme = Template("""
 # Supported Networks & Assets data:
@@ -19,7 +20,7 @@ readme = Template("""
 {{networks_table}}
 """)
 
-CHAINS_VERSION = os.getenv('CHAINS_VERSION')
+CHAINS_VERSION = Chain.latest_config_version()
 XCM_VERSION = os.getenv('XCM_VERSION')
 
 

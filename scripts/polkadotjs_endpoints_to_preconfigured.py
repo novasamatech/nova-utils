@@ -5,6 +5,8 @@ import sys
 from pathlib import Path
 import requests
 
+from scripts.utils.chain_model import Chain
+
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from scripts.utils.metadata_interaction import get_properties
@@ -28,8 +30,9 @@ class BlacklistedChains(Enum):
     nftmart = 'fcf9074303d8f319ad1bf0195b145871977e7c375883b834247cb01ff22f51f9'  # https://app.clickup.com/t/8695enz00
 
 
-CHAINS_FILE_PATH_DEV = Path(os.getenv("DEV_CHAINS_JSON_PATH", 'chains/v21/chains_dev.json'))
-CHAINS_FILE_PATH_PROD = Path(os.getenv("CHAINS_JSON_PATH", 'chains/v21/chains.json'))
+CHAINS_VERSION = Chain.latest_config_version()
+CHAINS_FILE_PATH_DEV = Path(os.getenv("DEV_CHAINS_JSON_PATH", f'chains/{CHAINS_VERSION}/chains_dev.json'))
+CHAINS_FILE_PATH_PROD = Path(os.getenv("CHAINS_JSON_PATH", f'chains/{CHAINS_VERSION}/chains.json'))
 SKIP_PATTERNS = ["(SHUTTING DOWN)", "Westend (TESTNET)", "Paseo Testnet (TESTNET)", "5ireChain Mainnet"]
 
 

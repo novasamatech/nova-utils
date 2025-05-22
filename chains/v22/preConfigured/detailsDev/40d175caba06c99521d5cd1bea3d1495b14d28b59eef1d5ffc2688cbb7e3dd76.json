@@ -1,0 +1,19 @@
+{
+    "chainId": "40d175caba06c99521d5cd1bea3d1495b14d28b59eef1d5ffc2688cbb7e3dd76",
+    "name": "Heima-paseo (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "HEI",
+            "precision": 18,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc.paseo-parachain.heima.network",
+            "name": "Heima"
+        }
+    ],
+    "addressPrefix": 42
+}

@@ -6,6 +6,8 @@ import sys
 import os
 import json
 from collections import defaultdict
+
+from scripts.utils.chain_model import Chain
 from utils.work_with_data import get_data_from_file, get_request_via_https
 
 
@@ -264,7 +266,8 @@ def main(argv):
         nova_utils_url = f"https://raw.githubusercontent.com/novasamatech/nova-utils/{github_base}/"
 
     transfers_file = os.getenv("XCM_PATH", "xcm/v4/transfers_dev.json")
-    chains_url = nova_utils_url + os.getenv("CHAINS_PATH", "chains/v13/chains_dev.json")
+    chains_version = Chain.latest_config_version()
+    chains_url = nova_utils_url + os.getenv("CHAINS_PATH", f"chains/{chains_version}/chains_dev.json")
 
     transfers_file_url = nova_utils_url + transfers_file
     transfers_from_file = get_data_from_file(transfers_file)

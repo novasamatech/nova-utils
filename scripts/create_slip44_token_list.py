@@ -5,9 +5,10 @@ import os
 from collections import defaultdict
 from typing import Dict, Tuple
 
+from scripts.utils.chain_model import Chain
 from utils.work_with_data import write_data_to_file
 
-CHAINS_VERISON = os.getenv('CHAINS_VERSION', default = "v8")
+CHAINS_VERISON = Chain.latest_config_version()
 
 with open(f"chains/{CHAINS_VERISON}/chains_dev.json") as fin:
     dev_chains = json.load(fin)
