@@ -17,8 +17,8 @@
         "parachainId": 2006,
         "runtimePrefix": "astar_runtime",
         "name": "Astar",
-        "dryRunVersion": 1,
-        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome"
+        "dryRunVersion": 2,
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
     },
     "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f": {
         "parachainId": 1000,
@@ -122,8 +122,8 @@
         "parachainId": 2007,
         "runtimePrefix": "shiden_runtime",
         "name": "Shiden",
-        "dryRunVersion": 1,
-        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome"
+        "dryRunVersion": 2,
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
     },
     "9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed": {
         "parachainId": 2001,
