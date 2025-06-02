@@ -1388,7 +1388,8 @@
         "additional": {
             "themeColor": "#9968CE",
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/moonbeam-glmr-staking",
-            "defaultBlockTime": 6000
+            "defaultBlockTime": 6000,
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -1835,7 +1836,8 @@
         "additional": {
             "themeColor": "#20A0B6",
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/moonriver-movr-staking",
-            "defaultBlockTime": 12000
+            "defaultBlockTime": 12000,
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -5869,9 +5871,10 @@
         ],
         "explorers": [
             {
-                "name": "Subscan",
-                "extrinsic": "https://interlay.subscan.io/extrinsic/{hash}",
-                "account": "https://interlay.subscan.io/account/{address}"
+                "name": "Statescan",
+                "account": "https://interlay.statescan.io/#/accounts/{address}",
+                "event": "https://interlay.statescan.io/#/events/{event}",
+                "extrinsic": "https://interlay.statescan.io/#/extrinsics/{hash}"
             }
         ],
         "externalApi": {
@@ -8595,10 +8598,10 @@
         ],
         "explorers": [
             {
-                "name": "Polimec explorer",
-                "account": "https://explorer.polimec.org/polimec/account/{address}",
-                "event": "https://explorer.polimec.org/polimec/event/{event}",
-                "extrinsic": "https://explorer.polimec.org/polimec/extrinsic/{hash}"
+                "name": "Statescan",
+                "account": "https://polimec.statescan.io/#/accounts/{address}",
+                "event": "https://polimec.statescan.io/#/events/{event}",
+                "extrinsic": "https://polimec.statescan.io/#/extrinsics/{hash}"
             }
         ],
         "externalApi": {
@@ -8925,7 +8928,8 @@
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/mythos-myth-staking",
             "feeViaRuntimeCall": true,
             "sessionLength": 14400,
-            "defaultBlockTime": 6000
+            "defaultBlockTime": 6000,
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -9003,7 +9007,7 @@
                 "assetId": 0,
                 "symbol": "BRIDGE",
                 "precision": 12,
-                "icon": "NAND.svg"
+                "icon": "BRIDGE.svg"
             }
         ],
         "nodes": [
@@ -9020,6 +9024,14 @@
                 "name": "BlockOps node"
             }
         ],
+        "explorers": [
+            {
+                "name": "Statescan",
+                "account": "https://nexus.statescan.io/#/accounts/{address}",
+                "event": "https://nexus.statescan.io/#/events/{event}",
+                "extrinsic": "https://nexus.statescan.io/#/extrinsics/{hash}"
+            }
+        ],
         "externalApi": {
             "history": [
                 {
@@ -9028,7 +9040,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Hyperbridge.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Hyperbridge_Nexus.svg",
         "addressPrefix": 0,
         "legacyAddressPrefix": 42
     },
@@ -9048,6 +9060,14 @@
             {
                 "url": "wss://rpc.mainnet.cere.network/ws",
                 "name": "Cere node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Statescan",
+                "account": "https://cere.statescan.io/#/accounts/{address}",
+                "event": "https://cere.statescan.io/#/events/{event}",
+                "extrinsic": "https://cere.statescan.io/#/extrinsics/{hash}"
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Cere.svg",
