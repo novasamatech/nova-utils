@@ -3,8 +3,8 @@
         "parachainId": null,
         "runtimePrefix": "polkadot_runtime",
         "name": "Polkadot",
-        "dryRunVersion": 1,
-        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome"
+        "dryRunVersion": 2,
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
     },
     "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d": {
         "parachainId": 2004,
@@ -17,15 +17,15 @@
         "parachainId": 2006,
         "runtimePrefix": "astar_runtime",
         "name": "Astar",
-        "dryRunVersion": 1,
-        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome"
+        "dryRunVersion": 2,
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
     },
     "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f": {
         "parachainId": 1000,
         "runtimePrefix": "asset_hub_polkadot_runtime",
         "name": "Polkadot Asset Hub",
-        "dryRunVersion": 1,
-        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome"
+        "dryRunVersion": 2,
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
     },
     "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d": {
         "parachainId": 2034,
@@ -53,34 +53,27 @@
         "runtimePrefix": "bridge_hub_polkadot_runtime",
         "name": "Polkadot Bridge Hub",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
     },
     "46ee89aa2eedd13e988962630ec9fb7565964cf5023bb351f2b6b25c1b68b0b2": {
         "parachainId": 1001,
         "runtimePrefix": "collectives_polkadot_runtime",
         "name": "Polkadot Collectives",
-        "dryRunVersion": 1,
-        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome"
+        "dryRunVersion": 2,
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
     },
     "67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008": {
         "parachainId": 1004,
         "runtimePrefix": "people_polkadot_runtime",
         "name": "Polkadot People",
-        "dryRunVersion": 1,
-        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome"
+        "dryRunVersion": 2,
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
     },
     "7eb9354488318e7549c722669dcbdcdc526f1fef1420e7944667212f3601fdbd": {
         "parachainId": 3344,
         "runtimePrefix": "polimec_runtime",
         "name": "Polimec",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
-    },
-    "f6ee56e9c5277df5b4ce6ae9983ee88f3cbed27d31beeb98f9f84f997a1ab0b9": {
-        "parachainId": 3369,
-        "runtimePrefix": "mainnet_runtime",
-        "name": "Mythos",
-        "dryRunVersion": 1,
         "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
     },
     "e8aecc950e82f1a375cf650fa72d07e0ad9bef7118f49b92283b63e88b1de88b": {
@@ -94,8 +87,8 @@
         "parachainId": 1005,
         "runtimePrefix": "coretime_polkadot_runtime",
         "name": "Polkadot Coretime",
-        "dryRunVersion": 1,
-        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome"
+        "dryRunVersion": 2,
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
     },
     "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe": {
         "parachainId": null,
@@ -109,7 +102,7 @@
         "runtimePrefix": "asset_hub_kusama_runtime",
         "name": "Kusama Asset Hub",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
     },
     "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b": {
         "parachainId": 2023,
@@ -122,8 +115,8 @@
         "parachainId": 2007,
         "runtimePrefix": "shiden_runtime",
         "name": "Shiden",
-        "dryRunVersion": 1,
-        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome"
+        "dryRunVersion": 2,
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
     },
     "9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed": {
         "parachainId": 2001,
@@ -143,8 +136,8 @@
         "parachainId": 1001,
         "runtimePrefix": "encointer_kusama_runtime",
         "name": "Encointer",
-        "dryRunVersion": 1,
-        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome"
+        "dryRunVersion": 2,
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
     },
     "86e49c195aeae7c5c4a86ced251f1a28c67b3c35d8289c387ede1776cdd88b24": {
         "parachainId": 2105,
@@ -157,22 +150,22 @@
         "parachainId": 1002,
         "runtimePrefix": "bridge_hub_kusama_runtime",
         "name": "Kusama Bridge Hub",
-        "dryRunVersion": 1,
-        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome"
+        "dryRunVersion": 2,
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
     },
     "c1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f": {
         "parachainId": 1004,
         "runtimePrefix": "people_kusama_runtime",
         "name": "Kusama People",
-        "dryRunVersion": 1,
-        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome"
+        "dryRunVersion": 2,
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
     },
     "638cd2b9af4b3bb54b8c1f0d22711fc89924ca93300f0caf25a580432b29d050": {
         "parachainId": 1005,
         "runtimePrefix": "coretime_kusama_runtime",
         "name": "Kusama Coretime",
-        "dryRunVersion": 1,
-        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome"
+        "dryRunVersion": 2,
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
     },
     "e143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e": {
         "parachainId": null,
