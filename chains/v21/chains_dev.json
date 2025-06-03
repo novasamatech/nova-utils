@@ -4615,6 +4615,16 @@
                 "typeExtras": {
                     "assetId": "50000092"
                 }
+            },
+            {
+                "assetId": 26,
+                "symbol": "DON",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "DON.svg",
+                "typeExtras": {
+                    "assetId": "22222054",
+                }
             }
         ],
         "nodes": [
@@ -5985,7 +5995,20 @@
                     "existentialDeposit": "0",
                     "transfersEnabled": true
                 }
-            }
+            },
+            {
+                "assetId": 61,
+                "symbol": "DON",
+                "precision": 12,
+                "type": "orml",
+                "icon": "DON.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x5e730f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
+            },
         ],
         "nodes": [
             {
