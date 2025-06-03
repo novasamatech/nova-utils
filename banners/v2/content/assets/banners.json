@@ -1,15 +1,22 @@
 [
     {
-       "id": "e682511d-1afb-4144-bd3e-85d661d8a887",
-       "background": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/banners/v2/resources/backgrounds/red_promo_banner_background.png",
-       "image": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/banners/v2/resources/images/myth_staking_promo_banner_picture.png",
+       "id": "50271bee-81f6-4f64-88af-936a31af83f6",
+       "background": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/banners/v2/resources/backgrounds/nova_card_promo_banner_background.png",
+       "image": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/banners/v2/resources/images/nova_card_promo_banner_picture.png",
        "clipsToBounds": false,
-       "action": "novawallet://nova/open/staking"
+       "action": "novawallet://nova/open/card"
     },
     {
        "id": "9464681d-ad80-479a-b2f7-4ab1e9ed9e58",
        "background": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/banners/v2/resources/backgrounds/rainbow_promo_banner_background.png",
        "image": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/banners/v2/resources/images/staking_promo_banner_picture.png",
+       "clipsToBounds": false,
+       "action": "novawallet://nova/open/staking"
+    },
+    {
+       "id": "e682511d-1afb-4144-bd3e-85d661d8a887",
+       "background": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/banners/v2/resources/backgrounds/red_promo_banner_background.png",
+       "image": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/banners/v2/resources/images/myth_staking_promo_banner_picture.png",
        "clipsToBounds": false,
        "action": "novawallet://nova/open/staking"
     }
