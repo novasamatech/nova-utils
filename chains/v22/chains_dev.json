@@ -9689,13 +9689,14 @@
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Amplitude_foucoco.svg",
-        "addressPrefix": 57,
+        "addressPrefix": 0,
         "options": [
             "testnet"
         ],
         "additional": {
             "supportsGenericLedgerApp": true
-        }
+        },
+        "legacyAddressPrefix": 57
     },
     {
         "chainId": "266ad38196ddff7636206f911f0658cc76e3e906e349cb83475d93ebe80d03b5",
