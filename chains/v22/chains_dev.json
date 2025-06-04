@@ -1026,11 +1026,10 @@
                 "symbol": "xcRMRK (old)",
                 "precision": 10,
                 "priceId": "rmrk",
-                "type": "statemine",
+                "type": "evm",
                 "icon": "RMRK.svg",
                 "typeExtras": {
-                    "assetId": "182365888117048807484804376330534607370",
-                    "isSufficient": true
+                    "contractAddress": "0xffffffFF893264794d9d57E1E0E21E0042aF5A0A"
                 }
             },
             {
@@ -1038,11 +1037,10 @@
                 "symbol": "xcKSM",
                 "precision": 12,
                 "priceId": "kusama",
-                "type": "statemine",
+                "type": "evm",
                 "icon": "KSM.svg",
                 "typeExtras": {
-                    "assetId": "42259045809535163221576417993425387648",
-                    "isSufficient": true
+                    "contractAddress": "0xFfFFfFff1FcaCBd218EDc0EbA20Fc2308C778080"
                 }
             },
             {
@@ -1050,11 +1048,10 @@
                 "symbol": "xcKINT",
                 "precision": 12,
                 "priceId": "kintsugi",
-                "type": "statemine",
+                "type": "evm",
                 "icon": "KINT.svg",
                 "typeExtras": {
-                    "assetId": "175400718394635817552109270754364440562",
-                    "isSufficient": true
+                    "contractAddress": "0xfffFFFFF83F4f317d3cbF6EC6250AeC3697b3fF2"
                 }
             },
             {
@@ -1062,11 +1059,10 @@
                 "symbol": "xcKAR",
                 "precision": 12,
                 "priceId": "karura",
-                "type": "statemine",
+                "type": "evm",
                 "icon": "KAR.svg",
                 "typeExtras": {
-                    "assetId": "10810581592933651521121702237638664357",
-                    "isSufficient": true
+                    "contractAddress": "0xFfFFFFfF08220AD2E6e157f26eD8bD22A336A0A5"
                 }
             },
             {
@@ -1074,11 +1070,10 @@
                 "symbol": "xcBNC",
                 "precision": 12,
                 "priceId": "bifrost-native-coin",
-                "type": "statemine",
+                "type": "evm",
                 "icon": "BNC.svg",
                 "typeExtras": {
-                    "assetId": "319623561105283008236062145480775032445",
-                    "isSufficient": true
+                    "contractAddress": "0xFFfFFfFFF075423be54811EcB478e911F22dDe7D"
                 }
             },
             {
@@ -1086,11 +1081,10 @@
                 "symbol": "xckBTC",
                 "precision": 8,
                 "priceId": "bitcoin",
-                "type": "statemine",
+                "type": "evm",
                 "icon": "kBTC.svg",
                 "typeExtras": {
-                    "assetId": "328179947973504579459046439826496046832",
-                    "isSufficient": true
+                    "contractAddress": "0xFFFfFfFfF6E528AD57184579beeE00c5d5e646F0"
                 }
             },
             {
@@ -1098,11 +1092,10 @@
                 "symbol": "xcUSDT",
                 "precision": 6,
                 "priceId": "tether",
-                "type": "statemine",
+                "type": "evm",
                 "icon": "USDT.svg",
                 "typeExtras": {
-                    "assetId": "311091173110107856861649819128533077277",
-                    "isSufficient": true
+                    "contractAddress": "0xFFFFFFfFea09FB06d082fd1275CD48b191cbCD1d"
                 }
             },
             {
@@ -1122,11 +1115,10 @@
                 "symbol": "xcCSM",
                 "precision": 12,
                 "priceId": "crust-storage-market",
-                "type": "statemine",
+                "type": "evm",
                 "icon": "CSM.svg",
                 "typeExtras": {
-                    "assetId": "108457044225666871745333730479173774551",
-                    "isSufficient": true
+                    "contractAddress": "0xffFfFFFf519811215E05eFA24830Eebe9c43aCD7"
                 }
             },
             {
@@ -1134,22 +1126,20 @@
                 "symbol": "xcPHA",
                 "precision": 12,
                 "priceId": "pha",
-                "type": "statemine",
+                "type": "evm",
                 "icon": "PHA.svg",
                 "typeExtras": {
-                    "assetId": "189307976387032586987344677431204943363",
-                    "isSufficient": true
+                    "contractAddress": "0xffFfFFff8E6b63d9e447B6d4C45BDA8AF9dc9603"
                 }
             },
             {
                 "assetId": 11,
                 "symbol": "xcHKO",
                 "precision": 12,
-                "type": "statemine",
+                "type": "evm",
                 "icon": "HKO.svg",
                 "typeExtras": {
-                    "assetId": "76100021443485661246318545281171740067",
-                    "isSufficient": true
+                    "contractAddress": "0xffffffFF394054BCDa1902B6A6436840435655a3"
                 }
             },
             {
@@ -1157,11 +1147,10 @@
                 "symbol": "xcKMA",
                 "precision": 12,
                 "priceId": "calamari-network",
-                "type": "statemine",
+                "type": "evm",
                 "icon": "KMA.svg",
                 "typeExtras": {
-                    "assetId": "213357169630950964874127107356898319277",
-                    "isSufficient": true
+                    "contractAddress": "0xFFffFffFA083189f870640b141ae1E882c2b5bad"
                 }
             },
             {
@@ -1169,11 +1158,10 @@
                 "symbol": "xcCRAB",
                 "precision": 18,
                 "priceId": "darwinia-crab-network",
-                "type": "statemine",
+                "type": "evm",
                 "icon": "CRAB.svg",
                 "typeExtras": {
-                    "assetId": "173481220575862801646329923366065693029",
-                    "isSufficient": true
+                    "contractAddress": "0xFFFffFfF8283448b3cB519Ca4732F2ddDC6A6165"
                 }
             },
             {
@@ -1181,11 +1169,10 @@
                 "symbol": "xcTEER",
                 "precision": 12,
                 "priceId": "integritee",
-                "type": "statemine",
+                "type": "evm",
                 "icon": "TEER.svg",
                 "typeExtras": {
-                    "assetId": "105075627293246237499203909093923548958",
-                    "isSufficient": true
+                    "contractAddress": "0xFfFfffFf4F0CD46769550E5938F6beE2F5d4ef1e"
                 }
             },
             {
@@ -1240,22 +1227,20 @@
                 "assetId": 19,
                 "symbol": "xcvBNC",
                 "precision": 12,
-                "type": "statemine",
+                "type": "evm",
                 "icon": "vBNC.svg",
                 "typeExtras": {
-                    "assetId": "72145018963825376852137222787619937732",
-                    "isSufficient": true
+                    "contractAddress": "0xFFffffff3646A00f78caDf8883c5A2791BfCDdc4"
                 }
             },
             {
                 "assetId": 20,
                 "symbol": "xcvMOVR",
                 "precision": 18,
-                "type": "statemine",
+                "type": "evm",
                 "icon": "vMOVR.svg",
                 "typeExtras": {
-                    "assetId": "203223821023327994093278529517083736593",
-                    "isSufficient": true
+                    "contractAddress": "0xfFfffFfF98e37bF6a393504b5aDC5B53B4D0ba11"
                 }
             },
             {
@@ -3301,6 +3286,17 @@
                 }
             },
             {
+                "assetId": 1,
+                "symbol": "xcDOT",
+                "precision": 10,
+                "type": "evm",
+                "priceId": "polkadot",
+                "icon": "DOT.svg",
+                "typeExtras": {
+                    "contractAddress": "0xFfFFfFff1FcaCBd218EDc0EbA20Fc2308C778080"
+                }
+            },
+            {
                 "assetId": 2,
                 "symbol": "xcaSEEDp",
                 "precision": 12,
@@ -3316,167 +3312,153 @@
                 "assetId": 3,
                 "symbol": "xcACA",
                 "precision": 12,
-                "type": "statemine",
+                "type": "evm",
                 "priceId": "acala",
                 "icon": "ACA.svg",
                 "typeExtras": {
-                    "assetId": "224821240862170613278369189818311486111",
-                    "isSufficient": true
+                    "contractAddress": "0xffffFFffa922Fef94566104a6e5A35a4fCDDAA9f"
                 }
             },
             {
                 "assetId": 4,
                 "symbol": "xcPARA",
                 "precision": 12,
-                "type": "statemine",
+                "type": "evm",
                 "icon": "PARA.svg",
                 "typeExtras": {
-                    "assetId": "32615670524745285411807346420584982855",
-                    "isSufficient": true
+                    "contractAddress": "0xFfFffFFF18898CB5Fe1E88E668152B4f4052A947"
                 }
             },
             {
                 "assetId": 5,
                 "symbol": "xcINTR",
                 "precision": 10,
-                "type": "statemine",
+                "type": "evm",
                 "priceId": "interlay",
                 "icon": "INTR.svg",
                 "typeExtras": {
-                    "assetId": "101170542313601871197860408087030232491",
-                    "isSufficient": true
+                    "contractAddress": "0xFffFFFFF4C1cbCd97597339702436d4F18a375Ab"
                 }
             },
             {
                 "assetId": 6,
                 "symbol": "xciBTC",
                 "precision": 8,
-                "type": "statemine",
+                "type": "evm",
                 "priceId": "bitcoin",
                 "icon": "iBTC.svg",
                 "typeExtras": {
-                    "assetId": "120637696315203257380661607956669368914",
-                    "isSufficient": true
+                    "contractAddress": "0xFFFFFfFf5AC1f9A51A93F5C527385edF7Fe98A52"
                 }
             },
             {
                 "assetId": 8,
                 "symbol": "xcASTR",
                 "precision": 18,
-                "type": "statemine",
+                "type": "evm",
                 "priceId": "astar",
                 "icon": "ASTR.svg",
                 "typeExtras": {
-                    "assetId": "224077081838586484055667086558292981199",
-                    "isSufficient": true
+                    "contractAddress": "0xFfFFFfffA893AD19e540E172C10d78D4d479B5Cf"
                 }
             },
             {
                 "assetId": 9,
                 "symbol": "xcPHA",
                 "precision": 12,
-                "type": "statemine",
+                "type": "evm",
                 "priceId": "pha",
                 "icon": "PHA.svg",
                 "typeExtras": {
-                    "assetId": "132685552157663328694213725410064821485",
-                    "isSufficient": true
+                    "contractAddress": "0xFFFfFfFf63d24eCc8eB8a7b5D0803e900F7b6cED"
                 }
             },
             {
                 "assetId": 10,
                 "symbol": "xcUSDT",
                 "precision": 6,
-                "type": "statemine",
+                "type": "evm",
                 "priceId": "tether",
                 "icon": "USDT.svg",
                 "typeExtras": {
-                    "assetId": "311091173110107856861649819128533077277",
-                    "isSufficient": true
+                    "contractAddress": "0xFFFFFFfFea09FB06d082fd1275CD48b191cbCD1d"
                 }
             },
             {
                 "assetId": 11,
                 "symbol": "xcCFG",
                 "precision": 18,
-                "type": "statemine",
+                "type": "evm",
                 "priceId": "centrifuge",
                 "icon": "CFG.svg",
                 "typeExtras": {
-                    "assetId": "91372035960551235635465443179559840483",
-                    "isSufficient": true
+                    "contractAddress": "0xFffFFfFf8f6267e040D8a0638C576dfBa4F0F6D6"
                 }
             },
             {
                 "assetId": 12,
                 "symbol": "xcBNC",
                 "precision": 12,
-                "type": "statemine",
+                "type": "evm",
                 "priceId": "bifrost-native-coin",
                 "icon": "BNC.svg",
                 "typeExtras": {
-                    "assetId": "165823357460190568952172802245839421906",
-                    "isSufficient": true
+                    "contractAddress": "0xFFffffFf7cC06abdF7201b350A1265c62C8601d2"
                 }
             },
             {
                 "assetId": 13,
                 "symbol": "xcEQ",
                 "precision": 9,
-                "type": "statemine",
+                "type": "evm",
                 "priceId": "equilibrium-token",
                 "icon": "EQ.svg",
                 "typeExtras": {
-                    "assetId": "190590555344745888270686124937537713878",
-                    "isSufficient": true
+                    "contractAddress": "0xFffFFfFf8f6267e040D8a0638C576dfBa4F0F6D6"
                 }
             },
             {
                 "assetId": 14,
                 "symbol": "xcEQD",
                 "precision": 9,
-                "type": "statemine",
+                "type": "evm",
                 "priceId": "tether",
                 "icon": "EQD.svg",
                 "typeExtras": {
-                    "assetId": "187224307232923873519830480073807488153",
-                    "isSufficient": true
+                    "contractAddress": "0xFFffFfFF8cdA1707bAF23834d211B08726B1E499"
                 }
             },
             {
                 "assetId": 15,
                 "symbol": "xcHDX",
                 "precision": 12,
-                "type": "statemine",
+                "type": "evm",
                 "priceId": "hydradx",
                 "icon": "HDX.svg",
                 "typeExtras": {
-                    "assetId": "69606720909260275826784788104880799692",
-                    "isSufficient": true
+                    "contractAddress": "0xFFFfFfff345Dc44DDAE98Df024Eb494321E73FcC"
                 }
             },
             {
                 "assetId": 16,
                 "symbol": "xcNODL",
                 "precision": 11,
-                "type": "statemine",
+                "type": "evm",
                 "priceId": "nodle-network",
                 "icon": "NODL.svg",
                 "typeExtras": {
-                    "assetId": "309163521958167876851250718453738106865",
-                    "isSufficient": true
+                    "contractAddress": "0xfffffffFe896ba7Cb118b9Fa571c6dC0a99dEfF1"
                 }
             },
             {
                 "assetId": 17,
                 "symbol": "xcRING",
                 "precision": 18,
-                "type": "statemine",
+                "type": "evm",
                 "priceId": "darwinia-network-native-token",
                 "icon": "RING.svg",
                 "typeExtras": {
-                    "assetId": "125699734534028342599692732320197985871",
-                    "isSufficient": true
+                    "contractAddress": "0xFfffFfff5e90e365eDcA87fB4c8306Df1E91464f"
                 }
             },
             {
@@ -3494,23 +3476,21 @@
                 "assetId": 19,
                 "symbol": "xcvDOT",
                 "precision": 10,
-                "type": "statemine",
+                "type": "evm",
                 "priceId": "voucher-dot",
                 "icon": "vDOT.svg",
                 "typeExtras": {
-                    "assetId": "29085784439601774464560083082574142143",
-                    "isSufficient": true
+                    "contractAddress": "0xFFFfffFf15e1b7E3dF971DD813Bc394deB899aBf"
                 }
             },
             {
                 "assetId": 20,
                 "symbol": "xcvFIL",
                 "precision": 18,
-                "type": "statemine",
+                "type": "evm",
                 "icon": "vFIL.svg",
                 "typeExtras": {
-                    "assetId": "272547899416482196831721420898811311297",
-                    "isSufficient": true
+                    "contractAddress": "0xFffffFffCd0aD0EA6576B7b285295c85E94cf4c1"
                 }
             },
             {
@@ -3518,35 +3498,32 @@
                 "symbol": "xcvGLMR",
                 "precision": 18,
                 "priceId": "voucher-glmr",
-                "type": "statemine",
+                "type": "evm",
                 "icon": "vGLMR.svg",
                 "typeExtras": {
-                    "assetId": "204507659831918931608354793288110796652",
-                    "isSufficient": true
+                    "contractAddress": "0xFfFfFFff99dABE1a8De0EA22bAa6FD48fdE96F6c"
                 }
             },
             {
                 "assetId": 22,
                 "symbol": "xcMANTA",
                 "precision": 18,
-                "type": "statemine",
+                "type": "evm",
                 "priceId": "manta-network",
                 "icon": "MANTA.svg",
                 "typeExtras": {
-                    "assetId": "166446646689194205559791995948102903873",
-                    "isSufficient": true
+                    "contractAddress": "0xfFFffFFf7D3875460d4509eb8d0362c611B4E841"
                 }
             },
             {
                 "assetId": 23,
                 "symbol": "xcUSDC",
                 "precision": 6,
-                "type": "statemine",
+                "type": "evm",
                 "priceId": "usd-coin",
                 "icon": "USDC.svg",
                 "typeExtras": {
-                    "assetId": "166377000701797186346254371275954761085",
-                    "isSufficient": true
+                    "contractAddress": "0xFFfffffF7D2B0B761Af01Ca8e25242976ac0aD7D"
                 }
             }
         ],
