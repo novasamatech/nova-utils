@@ -2625,7 +2625,10 @@
         "addressPrefix": 38,
         "options": [
             "governance-v1"
-        ]
+        ],
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "chainId": "a0c6e3bac382b316a68bca7141af1fba507207594c761076847ce358aeedcc21",
@@ -7263,7 +7266,7 @@
             "fullSyncByDefault"
         ],
         "additional": {
-            "disabledCheckMetadataHash": true
+            "supportsGenericLedgerApp": true
         }
     },
     {
