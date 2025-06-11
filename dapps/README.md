@@ -71,7 +71,7 @@
 |  67 | Sub.ID                               | https://sub.id/                                     | utilities             |
 |  68 | SubBridge                            | https://subbridge.io/                               | bridge,evm            |
 |  69 | Subsquare                            | https://polkadot.subsquare.io/                      | governance            |
-|  70 | Taostats                             | https://delegate.taostats.io/                       | staking               |
+|  70 | Taostats                             | https://dash.taostats.io/                           | staking               |
 |  71 | Tensor Wallet                        | https://tensorwallet.ca/                            | utilities,staking     |
 |  72 | Ternoa HUB                           | https://hub.ternoa.network/                         | staking               |
 |  73 | Turtle                               | https://app.turtle.cool/                            | bridge                |
