@@ -12069,5 +12069,33 @@
         "additional": {
             "supportsGenericLedgerApp": true
         }
+    },
+    {
+        "chainId": "dffb39a66d80b9adb6bdbd7564a9215a1606596062578bf536480de6cc780c2d",
+        "name": "Argoсhain",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "AGC",
+                "precision": 18,
+                "priceId": "argocoin-2",
+                "icon": "AGC.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc.devolvedai.com",
+                "name": "ArgoChain node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Argochain Scanner",
+                "account": "https://scanner.argoscan.net/address/{address}",
+                "extrinsic": "https://scanner.argoscan.net/tx/{hash}"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Argoсhain.svg",
+        "addressPrefix": 42
     }
 ]
