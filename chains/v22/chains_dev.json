@@ -11222,6 +11222,12 @@
                         "network": "novasama"
                     }
                 }
+            ],
+            "multisig": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-proxy-testnet-stg.novasama-tech.org"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
@@ -11229,7 +11235,8 @@
         "options": [
             "governance",
             "proxy",
-            "testnet"
+            "testnet",
+            "multisig"
         ],
         "additional": {
             "disabledCheckMetadataHash": true
