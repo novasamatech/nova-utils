@@ -271,6 +271,12 @@
                     "type": "novasama",
                     "url": "https://opengov-backend-dev.novasama-tech.org/api/v1/referendum-summaries/list"
                 }
+            ],
+            "multisig": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-proxy-kusama-stg.novasama-tech.org"
+                }
             ]
         },
         "options": [
