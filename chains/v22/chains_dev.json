@@ -138,7 +138,8 @@
             "governance",
             "proxy",
             "fullSyncByDefault",
-            "pushSupport"
+            "pushSupport",
+            "multisig"
         ],
         "additional": {
             "themeColor": "#E6007A",
@@ -284,7 +285,8 @@
             "governance",
             "proxy",
             "fullSyncByDefault",
-            "pushSupport"
+            "pushSupport",
+            "multisig"
         ],
         "additional": {
             "themeColor": "#1F78FF",
@@ -371,7 +373,8 @@
             "testnet",
             "crowdloans",
             "governance",
-            "proxy"
+            "proxy",
+            "multisig"
         ],
         "additional": {
             "themeColor": "#1F78FF",
@@ -570,6 +573,12 @@
                     "type": "subquery",
                     "url": "https://subquery-history-kusama-ah-prod.novasama-tech.org"
                 }
+            ],
+            "multisig": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-proxy-kusama-ah-stg.novasama-tech.org"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_Asset_Hub.svg",
@@ -577,7 +586,8 @@
         "options": [
             "swap-hub",
             "assethub-fees",
-            "proxy"
+            "proxy",
+            "multisig"
         ],
         "additional": {
             "relaychainAsNative": true,
@@ -1335,13 +1345,21 @@
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonriver-gov"
                 }
+            ],
+            "multisig": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-proxy-moonriver-stg.novasama-tech.org"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/moonriver.svg",
         "addressPrefix": 1285,
         "options": [
             "ethereumBased",
-            "governance"
+            "governance",
+            "proxy",
+            "multisig"
         ],
         "additional": {
             "themeColor": "#20A0B6",
@@ -3614,7 +3632,8 @@
         "options": [
             "ethereumBased",
             "governance",
-            "proxy"
+            "proxy",
+            "multisig"
         ],
         "additional": {
             "themeColor": "#9968CE",
@@ -4662,7 +4681,8 @@
         "options": [
             "swap-hub",
             "assethub-fees",
-            "proxy"
+            "proxy",
+            "multisig"
         ],
         "additional": {
             "relaychainAsNative": true,
@@ -6030,6 +6050,12 @@
                     "type": "subsquare",
                     "url": "https://hydradx.subsquare.io/api"
                 }
+            ],
+            "multisig": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-proxy-hydradx-stg.novasama-tech.org"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Hydration.svg",
@@ -6039,7 +6065,8 @@
             "governance-v1",
             "hydradx-swaps",
             "hydration-fees",
-            "proxy"
+            "proxy",
+            "multisig"
         ],
         "additional": {
             "feeViaRuntimeCall": true,
@@ -10936,13 +10963,21 @@
                     "type": "subquery",
                     "url": "https://subquery-history-mythos-prod.novasama-tech.org"
                 }
+            ],
+            "multisig": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-proxy-mythos-stg.novasama-tech.org"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Mythos.svg",
         "addressPrefix": 29972,
         "options": [
             "ethereumBased",
-            "governance-v1"
+            "governance-v1",
+            "proxy",
+            "multisig"
         ],
         "additional": {
             "themeColor": "#ED3A47",
@@ -11187,6 +11222,12 @@
                         "network": "novasama"
                     }
                 }
+            ],
+            "multisig": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-proxy-testnet-stg.novasama-tech.org"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
@@ -11194,7 +11235,8 @@
         "options": [
             "governance",
             "proxy",
-            "testnet"
+            "testnet",
+            "multisig"
         ],
         "additional": {
             "disabledCheckMetadataHash": true
