@@ -7069,11 +7069,12 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Amplitude.svg",
-        "addressPrefix": 57,
+        "addressPrefix": 0,
         "additional": {
             "feeViaRuntimeCall": true,
             "supportsGenericLedgerApp": true
-        }
+        },
+        "legacyAddressPrefix": 57
     },
     {
         "chainId": "6859c81ca95ef624c9dfe4dc6e3381c33e5d6509e35e147092bfbc780f777c4e",
