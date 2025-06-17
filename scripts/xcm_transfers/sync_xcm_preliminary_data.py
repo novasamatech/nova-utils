@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import json
-
 from typing import List
 
 from substrateinterface import SubstrateInterface
@@ -12,7 +11,6 @@ from scripts.utils.work_with_data import get_data_from_file, write_data_to_file
 from scripts.xcm_transfers.config_setup import get_xcm_config_files
 from scripts.xcm_transfers.utils.chain_ids import RELAYS
 from scripts.xcm_transfers.utils.dry_run_api_types import dry_run_v1, dry_run_v2
-from scripts.xcm_transfers.utils.log import debug_log, enable_debug_log
 
 config_files = get_xcm_config_files()
 
