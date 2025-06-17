@@ -12,6 +12,7 @@ from scripts.utils.work_with_data import get_data_from_file, write_data_to_file
 from scripts.xcm_transfers.config_setup import get_xcm_config_files
 from scripts.xcm_transfers.utils.chain_ids import RELAYS
 from scripts.xcm_transfers.utils.dry_run_api_types import dry_run_v1, dry_run_v2
+from scripts.xcm_transfers.utils.log import debug_log, enable_debug_log
 
 config_files = get_xcm_config_files()
 
@@ -49,10 +50,12 @@ def determine_dry_run_version(substrate: SubstrateInterface, runtime_prefix: str
         if "DryRunApi_dry_run_xcm is not found" in error_message:
             return None
         # Dry run v2 has additional argument so it will result in a trap
-        elif "Execution aborted due to trap" in error_message:
+        elif "Execution aborted due to trap" in error_message or "Client error: Execution failed: Execution aborted due to panic" in error_message:
             return dry_run_v2
         # Something unknown went wrong so we skip
         else:
+            print("Unknown error:", e)
+
             return None
 
 def construct_v1_dry_run_method_data(substrate: SubstrateInterface, runtime_prefix: str)-> str:
