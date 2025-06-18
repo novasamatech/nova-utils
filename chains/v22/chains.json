@@ -362,19 +362,12 @@
                     "type": "subsquare",
                     "url": "https://westend.subsquare.io/api"
                 }
-            ],
-            "multisig": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-proxy-westend-stg.novasama-tech.org"
-                }
             ]
         },
         "options": [
             "testnet",
             "crowdloans",
-            "proxy",
-            "multisig"
+            "proxy"
         ],
         "additional": {
             "themeColor": "#1F78FF",
