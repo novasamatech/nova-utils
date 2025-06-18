@@ -1835,12 +1835,6 @@
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonriver-gov"
                 }
-            ],
-            "multisig": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-proxy-moonriver-stg.novasama-tech.org"
-                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/moonriver.svg",
@@ -1848,8 +1842,7 @@
         "options": [
             "ethereumBased",
             "governance",
-            "proxy",
-            "multisig"
+            "proxy"
         ],
         "additional": {
             "themeColor": "#20A0B6",
