@@ -125,6 +125,12 @@
                     "type": "novasama",
                     "url": "https://opengov-backend.novasama-tech.org/api/v1/referendum-summaries/list"
                 }
+            ],
+            "multisig": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-proxy-polkadot-stg.novasama-tech.org"
+                }
             ]
         },
         "options": [
@@ -132,7 +138,8 @@
             "governance",
             "proxy",
             "fullSyncByDefault",
-            "pushSupport"
+            "pushSupport",
+            "multisig"
         ],
         "additional": {
             "themeColor": "#E6007A",
@@ -265,6 +272,12 @@
                     "type": "novasama",
                     "url": "https://opengov-backend.novasama-tech.org/api/v1/referendum-summaries/list"
                 }
+            ],
+            "multisig": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-proxy-kusama-stg.novasama-tech.org"
+                }
             ]
         },
         "options": [
@@ -272,7 +285,8 @@
             "governance",
             "proxy",
             "fullSyncByDefault",
-            "pushSupport"
+            "pushSupport",
+            "multisig"
         ],
         "additional": {
             "themeColor": "#1F78FF",
@@ -488,13 +502,21 @@
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-statemine"
                 }
+            ],
+            "multisig": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-proxy-kusama-ah-stg.novasama-tech.org"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_Asset_Hub.svg",
         "addressPrefix": 2,
         "options": [
             "swap-hub",
-            "assethub-fees"
+            "assethub-fees",
+            "proxy",
+            "multisig"
         ],
         "additional": {
             "relaychainAsNative": true,
@@ -1357,13 +1379,21 @@
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonbeam-gov"
                 }
+            ],
+            "multisig": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-proxy-moonbeam-stg.novasama-tech.org"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/moonbeam.svg",
         "addressPrefix": 1284,
         "options": [
             "ethereumBased",
-            "governance"
+            "governance",
+            "proxy",
+            "multisig"
         ],
         "additional": {
             "themeColor": "#9968CE",
@@ -1811,7 +1841,8 @@
         "addressPrefix": 1285,
         "options": [
             "ethereumBased",
-            "governance"
+            "governance",
+            "proxy"
         ],
         "additional": {
             "themeColor": "#20A0B6",
@@ -4151,6 +4182,12 @@
                     "type": "subquery",
                     "url": "https://gateway.subquery.network/query/0x35"
                 }
+            ],
+            "multisig": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-proxy-polkadot-ah-stg.novasama-tech.org"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Asset_Hub.svg",
@@ -4158,7 +4195,8 @@
         "options": [
             "swap-hub",
             "assethub-fees",
-            "proxy"
+            "proxy",
+            "multisig"
         ],
         "additional": {
             "relaychainAsNative": true,
@@ -5643,6 +5681,12 @@
                     "type": "subsquare",
                     "url": "https://hydradx.subsquare.io/api"
                 }
+            ],
+            "multisig": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-proxy-hydradx-stg.novasama-tech.org"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Hydration.svg",
@@ -5651,7 +5695,9 @@
             "governance",
             "governance-v1",
             "hydradx-swaps",
-            "hydration-fees"
+            "hydration-fees",
+            "proxy",
+            "multisig"
         ],
         "additional": {
             "feeViaRuntimeCall": true,
@@ -8918,13 +8964,21 @@
                     "type": "subquery",
                     "url": "https://subquery-history-mythos-prod.novasama-tech.org"
                 }
+            ],
+            "multisig": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-proxy-mythos-stg.novasama-tech.org"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Mythos.svg",
         "addressPrefix": 29972,
         "options": [
             "ethereumBased",
-            "governance-v1"
+            "governance-v1",
+            "proxy",
+            "multisig"
         ],
         "additional": {
             "themeColor": "#ED3A47",
