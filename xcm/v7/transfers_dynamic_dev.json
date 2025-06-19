@@ -890,6 +890,16 @@
               "hasDeliveryFee": true
             }
           ]
+        },
+        {
+          "assetId": 15,
+          "xcmTransfers": [
+            {
+              "chainId": "f6ee56e9c5277df5b4ce6ae9983ee88f3cbed27d31beeb98f9f84f997a1ab0b9",
+              "assetId": 0,
+              "hasDeliveryFee": true
+            }
+          ]
         }
       ]
     },
@@ -974,6 +984,15 @@
             {
               "chainId": "7eb9354488318e7549c722669dcbdcdc526f1fef1420e7944667212f3601fdbd",
               "assetId": 3
+            }
+          ]
+        },
+        {
+          "assetId": 36,
+          "xcmTransfers": [
+            {
+              "chainId": "f6ee56e9c5277df5b4ce6ae9983ee88f3cbed27d31beeb98f9f84f997a1ab0b9",
+              "assetId": 0
             }
           ]
         }
@@ -1128,6 +1147,21 @@
             {
               "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
               "assetId": 0,
+              "hasDeliveryFee": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chainId": "f6ee56e9c5277df5b4ce6ae9983ee88f3cbed27d31beeb98f9f84f997a1ab0b9",
+      "assets": [
+        {
+          "assetId": 0,
+          "xcmTransfers": [
+            {
+              "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+              "assetId": 36,
               "hasDeliveryFee": true
             }
           ]
