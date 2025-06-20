@@ -9226,6 +9226,63 @@
         "addressPrefix": 9807
     },
     {
+        "chainId": "eip155:8453",
+        "name": "Base",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "ETH",
+                "priceId": "ethereum",
+                "type": "evmNative",
+                "icon": "ETH.svg",
+                "precision": 18
+            }
+        ],
+        "nodeSelectionStrategy": "uniform",
+        "nodes": [
+            {
+                "url": "https://base-rpc.publicnode.com",
+                "name": "Base http node"
+            },
+            {
+                "url": "https://base-pokt.nodies.app",
+                "name": "Pokt node"
+            },
+            {
+                "url": "wss://base-rpc.publicnode.com",
+                "name": "Base public node"
+            },
+            {
+                "url": "wss://base-mainnet.infura.io/ws/v3/82fd5b2925e341719f10b7ed4376a646",
+                "name": "Ifura node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Basescan",
+                "extrinsic": "https://basescan.org/tx/{hash}",
+                "account": "https://basescan.org/address/{address}"
+            }
+        ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "etherscan",
+                    "url": "https://api.basescan.org/api",
+                    "parameters": {
+                        "assetType": "evm"
+                    }
+                }
+            ]
+        },
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Base.svg",
+        "addressPrefix": 8453,
+        "options": [
+            "ethereumBased",
+            "noSubstrateRuntime"
+        ]
+    },
+    {
         "chainId": "eip155:324",
         "name": "ZKsync Era",
         "assets": [
