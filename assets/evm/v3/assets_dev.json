@@ -729,5 +729,35 @@
                 "contractAddress": "0xcccCCCcCCC33D538DBC2EE4fEab0a7A1FF4e8A94"
             }
         ]
+    },
+    {
+        "symbol": "KILT",
+        "precision": 15,
+        "name": "KILT",
+        "priceId": "kilt-protocol",
+        "icon": "KILT.svg",
+        "instances": [
+            {
+                "chainId": "eip155:1",
+                "contractAddress": "0x5d3D01FD6d2Ad1169b17918eB4f153C6616288eB"
+            },
+            {
+                "chainId": "eip155:8453",
+                "contractAddress": "0x9E5189a77f698305Ef76510AFF1C528cff48779c"
+            }
+        ]
+    },
+    {
+        "symbol": "KILT (new)",
+        "precision": 18,
+        "name": "KILT Protocol",
+        "priceId": "kilt-protocol-2",
+        "icon": "KILT.svg",
+        "instances": [
+            {
+                "chainId": "eip155:8453",
+                "contractAddress": "0x5D0DD05bB095fdD6Af4865A1AdF97c39C85ad2d8"
+            }
+        ]
     }
 ]
