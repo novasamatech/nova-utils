@@ -7623,13 +7623,14 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Pendulum.svg",
-        "addressPrefix": 56,
+        "addressPrefix": 0,
         "options": [
             "governance-v1"
         ],
         "additional": {
             "supportsGenericLedgerApp": true
-        }
+        },
+        "legacyAddressPrefix": 56
     },
     {
         "chainId": "4319cc49ee79495b57a1fec4d2bd43f59052dcc690276de566c2691d6df4f7b8",
