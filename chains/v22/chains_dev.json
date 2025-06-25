@@ -434,6 +434,20 @@
                 "event": "https://westmint.statescan.io/#/events/{event}"
             }
         ],
+        "externalApi": {
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-westend-ah-prod.novasama-tech.org"
+                }
+            ],
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-westend-ah-prod.novasama-tech.org"
+                }
+            ]
+        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
         "addressPrefix": 42,
         "options": [
