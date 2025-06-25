@@ -181,7 +181,7 @@ def _detect_supports_xcm_execute(xcm_chain: XcmChain) -> bool:
     else:
         print(f"Xcm execute status error: {error}")
 
-    return error is not None
+    return error is None
 
 
 def extract_xcm_execute_error(execution_result: dict, xcm_chain: XcmChain) -> str | None:
