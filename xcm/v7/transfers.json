@@ -5102,34 +5102,6 @@
       ]
     },
     {
-      "chainId": "411f057b9107718c9624d6aa4a3f23c1653898297f3d4d529d9bb6511a39dd21",
-      "assets": [
-        {
-          "assetId": 0,
-          "assetLocation": "KILT",
-          "assetLocationPath": {
-            "type": "relative"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
-                "assetId": 34,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "92928220845792352"
-                  },
-                  "instructions": "xcmPalletDest"
-                }
-              },
-              "type": "xcmpallet"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "chainId": "f6ee56e9c5277df5b4ce6ae9983ee88f3cbed27d31beeb98f9f84f997a1ab0b9",
       "assets": [
         {
