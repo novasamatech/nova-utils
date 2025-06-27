@@ -4948,48 +4948,6 @@
       ]
     },
     {
-      "chainId": "b3db41421702df9a7fcac62b53ffeac85f7853cc4e689e0b93aeb3db18c09d82",
-      "assets": [
-        {
-          "assetId": 0,
-          "assetLocation": "CFG",
-          "assetLocationPath": {
-            "type": "absolute"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
-                "assetId": 11,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "23888832078357995520"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            },
-            {
-              "destination": {
-                "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
-                "assetId": 10,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "24087860729545437184"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "chainId": "f6ee56e9c5277df5b4ce6ae9983ee88f3cbed27d31beeb98f9f84f997a1ab0b9",
       "assets": [
         {
