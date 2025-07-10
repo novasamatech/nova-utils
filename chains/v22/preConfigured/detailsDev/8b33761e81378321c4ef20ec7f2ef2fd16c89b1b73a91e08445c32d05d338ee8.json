@@ -1,0 +1,19 @@
+{
+    "chainId": "8b33761e81378321c4ef20ec7f2ef2fd16c89b1b73a91e08445c32d05d338ee8",
+    "name": "IDN Testnet (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "PAS",
+            "precision": 10,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://idn0-testnet.idealabs.network",
+            "name": "IDN Node"
+        }
+    ],
+    "addressPrefix": 42
+}
