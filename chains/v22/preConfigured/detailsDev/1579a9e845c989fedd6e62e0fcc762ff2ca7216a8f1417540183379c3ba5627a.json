@@ -1,0 +1,19 @@
+{
+    "chainId": "1579a9e845c989fedd6e62e0fcc762ff2ca7216a8f1417540183379c3ba5627a",
+    "name": "QF Parachain (Paseo) (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "UNIT",
+            "precision": 12,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://para-test.qfnetwork.xyz",
+            "name": "Quantum Fusion"
+        }
+    ],
+    "addressPrefix": 42
+}
