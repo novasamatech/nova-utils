@@ -78,10 +78,11 @@
 |  74 | Turtle                               | https://app.turtle.cool/                            | bridge                |
 |  75 | Unique Marketplace                   | https://unqnft.io                                   | gaming,art            |
 |  76 | Unique PlayX                         | https://playx.unique.network                        | gaming                |
-|  77 | Unlock Polkadot                      | https://unlockpolkadot.com                          | social                |
-|  78 | Vortex Finance                       | https://app.vortexfinance.co/                       | evm,utilities         |
-|  79 | XDAO                                 | https://www.xdao.app/1284                           | bridge,dex,evm        |
-|  80 | Zeitgeist                            | https://app.zeitgeist.pm/                           | utilities             |
-|  81 | Zenlink                              | https://app.zenlink.pro                             | dex                   |
-|  82 | cBRIDGE                              | https://cbridge.celer.network/                      | dex,evm               |
-|  83 | xx network Hub                       | https://hub.xx.network/                             | utilities             |
+|  77 | Unique Staking                       | https://unique.network/staking                      | staking               |
+|  78 | Unlock Polkadot                      | https://unlockpolkadot.com                          | social                |
+|  79 | Vortex Finance                       | https://app.vortexfinance.co/                       | evm,utilities         |
+|  80 | XDAO                                 | https://www.xdao.app/1284                           | bridge,dex,evm        |
+|  81 | Zeitgeist                            | https://app.zeitgeist.pm/                           | utilities             |
+|  82 | Zenlink                              | https://app.zenlink.pro                             | dex                   |
+|  83 | cBRIDGE                              | https://cbridge.celer.network/                      | dex,evm               |
+|  84 | xx network Hub                       | https://hub.xx.network/                             | utilities             |
