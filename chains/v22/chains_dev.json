@@ -1211,11 +1211,10 @@
                 "symbol": "xcLIT",
                 "precision": 12,
                 "priceId": "litentry",
-                "type": "statemine",
+                "type": "evm",
                 "icon": "LIT.svg",
                 "typeExtras": {
-                    "assetId": "65216491554813189869575508812319036608",
-                    "isSufficient": true
+                    "contractAddress": "0xfffFFfFF31103d490325BB0a8E40eF62e2F614C0"
                 }
             },
             {
@@ -1223,11 +1222,10 @@
                 "symbol": "xcSDN",
                 "precision": 18,
                 "priceId": "shiden",
-                "type": "statemine",
+                "type": "evm",
                 "icon": "SDN.svg",
                 "typeExtras": {
-                    "assetId": "16797826370226091782818345603793389938",
-                    "isSufficient": true
+                    "contractAddress": "0xFFFfffFF0Ca324C842330521525E7De111F38972"
                 }
             },
             {
@@ -1235,11 +1233,10 @@
                 "symbol": "xcXRT",
                 "precision": 9,
                 "priceId": "robonomics-network",
-                "type": "statemine",
+                "type": "evm",
                 "icon": "XRT.svg",
                 "typeExtras": {
-                    "assetId": "108036400430056508975016746969135344601",
-                    "isSufficient": true
+                    "contractAddress": "0xFffFFffF51470Dca3dbe535bD2880a9CcDBc6Bd9"
                 }
             },
             {
@@ -1247,11 +1244,10 @@
                 "symbol": "xcvKSM",
                 "precision": 12,
                 "priceId": "voucher-ksm",
-                "type": "statemine",
+                "type": "evm",
                 "icon": "vKSM.svg",
                 "typeExtras": {
-                    "assetId": "264344629840762281112027368930249420542",
-                    "isSufficient": true
+                    "contractAddress": "0xFFffffFFC6DEec7Fc8B11A2C8ddE9a59F8c62EFe"
                 }
             },
             {
@@ -1278,24 +1274,22 @@
                 "assetId": 21,
                 "symbol": "xcMGX",
                 "precision": 18,
-                "type": "statemine",
+                "type": "evm",
                 "priceId": "mangata-x",
                 "icon": "MGX.svg",
                 "typeExtras": {
-                    "assetId": "118095707745084482624853002839493125353",
-                    "isSufficient": true
+                    "contractAddress": "0xffFfFffF58d867EEa1Ce5126A4769542116324e9"
                 }
             },
             {
                 "assetId": 22,
                 "symbol": "xcTUR",
                 "precision": 10,
-                "type": "statemine",
+                "type": "evm",
                 "priceId": "turing-network",
                 "icon": "TUR.svg",
                 "typeExtras": {
-                    "assetId": "133300872918374599700079037156071917454",
-                    "isSufficient": true
+                    "contractAddress": "0xfFffffFf6448d0746f2a66342B67ef9CAf89478E"
                 }
             }
         ],
