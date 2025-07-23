@@ -1035,7 +1035,8 @@
           "xcmTransfers": [
             {
               "chainId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-              "assetId": 0
+              "assetId": 0,
+              "supportsXcmExecute": true
             }
           ]
         },
@@ -1044,15 +1045,18 @@
           "xcmTransfers": [
             {
               "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
-              "assetId": 0
+              "assetId": 0,
+              "supportsXcmExecute": true
             },
             {
               "chainId": "9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6",
-              "assetId": 2
+              "assetId": 2,
+              "supportsXcmExecute": true
             },
             {
               "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
-              "assetId": 16
+              "assetId": 16,
+              "supportsXcmExecute": true
             }
           ]
         },
@@ -1061,19 +1065,23 @@
           "xcmTransfers": [
             {
               "chainId": "9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6",
-              "assetId": 9
+              "assetId": 9,
+              "supportsXcmExecute": true
             },
             {
               "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
-              "assetId": 1
+              "assetId": 1,
+              "supportsXcmExecute": true
             },
             {
               "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
-              "assetId": 9
+              "assetId": 9,
+              "supportsXcmExecute": true
             },
             {
               "chainId": "7eb9354488318e7549c722669dcbdcdc526f1fef1420e7944667212f3601fdbd",
-              "assetId": 2
+              "assetId": 2,
+              "supportsXcmExecute": true
             }
           ]
         },
@@ -1082,11 +1090,13 @@
           "xcmTransfers": [
             {
               "chainId": "9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6",
-              "assetId": 0
+              "assetId": 0,
+              "supportsXcmExecute": true
             },
             {
               "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
-              "assetId": 8
+              "assetId": 8,
+              "supportsXcmExecute": true
             }
           ]
         }
