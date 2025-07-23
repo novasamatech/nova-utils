@@ -5643,6 +5643,60 @@
                     "existentialDeposit": "5373455131650",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 59,
+                "symbol": "2-Pool-GDOT",
+                "precision": 18,
+                "type": "orml",
+                "icon": "2-Pool-GDOT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0xb2020000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 61,
+                "symbol": "TRAC",
+                "precision": 18,
+                "priceId": "origintrail",
+                "type": "orml",
+                "icon": "TRAC.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x23000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "27777777777777800",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 62,
+                "symbol": "NEURO",
+                "precision": 12,
+                "priceId": "neurowebai",
+                "type": "orml",
+                "icon": "NEURO.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x24000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "588235294118",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 64,
+                "symbol": "2-Pool-GETH",
+                "precision": 18,
+                "type": "orml",
+                "icon": "2-Pool-GETH.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x68100000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
