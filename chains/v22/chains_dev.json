@@ -322,12 +322,8 @@
                 "name": "Dwellir node"
             },
             {
-                "url": "wss://rpc.ibp.network/westend",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://westend.dotters.network",
-                "name": "IBP2 node"
+                "url": "wss://westend-rpc.polkadot.io",
+                "name": "Parity node"
             },
             {
                 "url": "wss://westend.public.curie.radiumblock.co/ws",
@@ -8232,20 +8228,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://xxnetwork-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
                 "url": "wss://rpc.xx.network",
                 "name": "xx Foundation 1 node"
             },
             {
                 "url": "wss://rpc-hetzner.xx.network",
                 "name": "xx Foundation 2 node"
-            },
-            {
-                "url": "wss://rpc-do.xx.network",
-                "name": "xx Foundation 3 node"
             }
         ],
         "explorers": [
@@ -11719,10 +11707,6 @@
             {
                 "url": "wss://peaq-rpc.publicnode.com",
                 "name": "Peaq node"
-            },
-            {
-                "url": "wss://peaq-rpc.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "explorers": [
