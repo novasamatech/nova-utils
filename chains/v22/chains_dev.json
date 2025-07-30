@@ -1007,7 +1007,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x39"
+                    "url": "https://subquery-history-karura-prod.novasama-tech.org"
                 }
             ],
             "governance": [
@@ -1323,7 +1323,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x1d"
+                    "url": "https://subquery-history-moonriver-prod.novasama-tech.org"
                 },
                 {
                     "type": "etherscan",
@@ -1861,18 +1861,6 @@
             }
         ],
         "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x38"
-                }
-            ],
-            "staking": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x38"
-                }
-            ],
             "governance": [
                 {
                     "type": "subsquare",
@@ -2138,20 +2126,6 @@
                 "account": "https://sub.id/{address}"
             }
         ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-edgeware"
-                }
-            ],
-            "staking": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-edgeware"
-                }
-            ]
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Edgeware.svg",
         "addressPrefix": 7,
         "additional": {
@@ -3597,7 +3571,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x1e"
+                    "url": "https://subquery-history-moonbeam-prod.novasama-tech.org"
                 },
                 {
                     "type": "etherscan",
@@ -4268,12 +4242,6 @@
             }
         ],
         "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-parallel"
-                }
-            ],
             "governance": [
                 {
                     "type": "polkassembly",
@@ -4316,14 +4284,6 @@
                 "account": "https://clv.subscan.io/account/{address}"
             }
         ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-clover"
-                }
-            ]
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/CLV_Parachain.svg",
         "addressPrefix": 128
     },
@@ -4741,7 +4701,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-robonomics"
+                    "url": "https://TODO"
                 }
             ],
             "governance": [
@@ -4884,14 +4844,6 @@
                 "account": "https://picasso.subscan.io/account/{address}"
             }
         ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x3b"
-                }
-            ]
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Picasso.svg",
         "addressPrefix": 49,
         "options": [
@@ -4949,13 +4901,13 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-zeitgeist"
+                    "url": "https://subquery-history-zeitgeist-prod.novasama-tech.org"
                 }
             ],
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-zeitgeist"
+                    "url": "https://subquery-history-zeitgeist-prod.novasama-tech.org"
                 }
             ],
             "governance": [
@@ -6639,18 +6591,6 @@
             }
         ],
         "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-turing"
-                }
-            ],
-            "staking": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-turing"
-                }
-            ],
             "governance": [
                 {
                     "type": "subsquare",
@@ -6799,12 +6739,6 @@
             }
         ],
         "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-composable"
-                }
-            ],
             "governance": [
                 {
                     "type": "polkassembly",
@@ -7023,14 +6957,6 @@
                 "extrinsic": "https://neuroweb.subscan.io/extrinsic/{hash}"
             }
         ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-origin-trail"
-                }
-            ]
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/NeuroWeb.svg",
         "addressPrefix": 101,
         "additional": {
@@ -7649,14 +7575,6 @@
                 "name": "JelliedOwl node"
             }
         ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kabocha"
-                }
-            ]
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kabocha.svg",
         "addressPrefix": 27
     },
@@ -8176,14 +8094,6 @@
                 "account": "https://explorer.mainnet.oct.network/myriad/accounts/{address}"
             }
         ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-myriad"
-                }
-            ]
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Myriad.svg",
         "addressPrefix": 42
     },
@@ -8248,14 +8158,6 @@
                 "account": "https://xx.polkastats.io/account/{address}"
             }
         ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-xx-network"
-                }
-            ]
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/XX_network.svg",
         "addressPrefix": 55,
         "additional": {
@@ -8853,14 +8755,6 @@
                 "name": "Hashed systems 1 node"
             }
         ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-hashed-network"
-                }
-            ]
-        },
         "types": {
             "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/hashed.json",
             "overridesCommon": true
@@ -9123,14 +9017,6 @@
                 "account": "https://darwinia.subscan.io/account/{address}"
             }
         ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---darwinia"
-                }
-            ]
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Darwinia.svg",
         "addressPrefix": 18,
         "options": [
@@ -10032,14 +9918,6 @@
                 "account": "https://krest.subscan.io/account/{address}"
             }
         ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---krest"
-                }
-            ]
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/krest.svg",
         "addressPrefix": 42
     },
@@ -10652,14 +10530,6 @@
                 "extrinsic": "https://invarch.statescan.io/#/extrinsics/{hash}"
             }
         ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---invarch"
-                }
-            ]
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/InvArch.svg",
         "addressPrefix": 117,
         "additional": {
@@ -10825,20 +10695,6 @@
                 "account": "https://continuum.subscan.io/account/{address}"
             }
         ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-continuum"
-                }
-            ],
-            "staking": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-continuum"
-                }
-            ]
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Continuum.svg",
         "addressPrefix": 268
     },
@@ -10884,7 +10740,7 @@
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-enjin-relay"
+                    "url": "https://subquery-history-enjin-relaychain-prod.novasama-tech.org"
                 }
             ]
         },
@@ -10949,14 +10805,6 @@
                 "name": "Turing node"
             }
         ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---avail"
-                }
-            ]
-        },
         "types": {
             "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/avail_turing.json",
             "overridesCommon": true
@@ -11069,13 +10917,13 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-acurast"
+                    "url": "https://subquery-history-acurast-prod.novasama-tech.org"
                 }
             ],
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-acurast"
+                    "url": "https://subquery-history-acurast-prod.novasama-tech.org"
                 }
             ]
         },
@@ -11114,7 +10962,7 @@
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kreivo"
+                    "url": "https://subquery-history-kreivo-prod.novasama-tech.org"
                 }
             ]
         },
@@ -11159,20 +11007,6 @@
                 "extrinsic": "https://nexus.statescan.io/#/extrinsics/{hash}"
             }
         ],
-        "externalApi": {
-            "staking": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-hyperbridge"
-                }
-            ],
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-hyperbridge"
-                }
-            ]
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Hyperbridge_Nexus.svg",
         "addressPrefix": 0,
         "legacyAddressPrefix": 42,
