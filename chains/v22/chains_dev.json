@@ -96,6 +96,12 @@
                     "url": "https://subquery-history-polkadot-prod.novasama-tech.org"
                 }
             ],
+            "staking-payouts": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-polkadot-prod.novasama-tech.org"
+                }
+            ],
             "history": [
                 {
                     "type": "subquery",
@@ -243,6 +249,12 @@
                     "url": "https://subquery-history-kusama-prod.novasama-tech.org"
                 }
             ],
+            "staking-payouts": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-kusama-prod.novasama-tech.org"
+                }
+            ],
             "history": [
                 {
                     "type": "subquery",
@@ -346,6 +358,12 @@
                     "url": "https://subquery-history-westend-prod.novasama-tech.org/"
                 }
             ],
+            "staking-payouts": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-westend-prod.novasama-tech.org/"
+                }
+            ],
             "history": [
                 {
                     "type": "subquery",
@@ -435,6 +453,16 @@
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-westend-ah-prod.novasama-tech.org"
+                },
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-westend-prod.novasama-tech.org/"
+                }
+            ],
+            "staking-payouts": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-westend-prod.novasama-tech.org/"
                 }
             ],
             "history": [
@@ -1339,6 +1367,12 @@
                     "url": "https://subquery-history-moonriver-prod.novasama-tech.org"
                 }
             ],
+            "staking-payouts": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-moonriver-prod.novasama-tech.org"
+                }
+            ],
             "governance": [
                 {
                     "type": "subsquare",
@@ -1873,6 +1907,12 @@
                     "url": "https://gateway.subquery.network/query/0x38"
                 }
             ],
+            "staking-payouts": [
+                {
+                    "type": "subquery",
+                    "url": "https://gateway.subquery.network/query/0x38"
+                }
+            ],
             "governance": [
                 {
                     "type": "subsquare",
@@ -2146,6 +2186,12 @@
                 }
             ],
             "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-edgeware"
+                }
+            ],
+            "staking-payouts": [
                 {
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-edgeware"
@@ -2805,6 +2851,12 @@
                 }
             ],
             "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://gateway.subquery.network/query/0x36"
+                }
+            ],
+            "staking-payouts": [
                 {
                     "type": "subquery",
                     "url": "https://gateway.subquery.network/query/0x36"
@@ -3608,6 +3660,12 @@
                 }
             ],
             "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-moonbeam-prod.novasama-tech.org"
+                }
+            ],
+            "staking-payouts": [
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-moonbeam-prod.novasama-tech.org"
@@ -4953,6 +5011,12 @@
                 }
             ],
             "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-zeitgeist"
+                }
+            ],
+            "staking-payouts": [
                 {
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-zeitgeist"
@@ -6651,6 +6715,12 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-turing"
                 }
             ],
+            "staking-payouts": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-turing"
+                }
+            ],
             "governance": [
                 {
                     "type": "subsquare",
@@ -6712,6 +6782,12 @@
                 }
             ],
             "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-aleph-zero-prod.novasama-tech.org"
+                }
+            ],
+            "staking-payouts": [
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-aleph-zero-prod.novasama-tech.org"
@@ -6959,6 +7035,12 @@
         ],
         "externalApi": {
             "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-polkadex-prod.novasama-tech.org"
+                }
+            ],
+            "staking-payouts": [
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-polkadex-prod.novasama-tech.org"
@@ -7945,6 +8027,12 @@
         ],
         "externalApi": {
             "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-ternoa-prod.novasama-tech.org"
+                }
+            ],
+            "staking-payouts": [
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-ternoa-prod.novasama-tech.org"
@@ -9290,6 +9378,12 @@
                     "type": "subquery",
                     "url": "https://subquery-history-vara-prod.novasama-tech.org"
                 }
+            ],
+            "staking-payouts": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-vara-prod.novasama-tech.org"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Vara.svg",
@@ -10111,6 +10205,12 @@
                     "type": "subquery",
                     "url": "https://subquery-history-manta-prod.novasama-tech.org"
                 }
+            ],
+            "staking-payouts": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-manta-prod.novasama-tech.org"
+                }
             ]
         },
         "explorers": [
@@ -10430,6 +10530,12 @@
                     "url": "https://subquery-history-joystream-prod.novasama-tech.org"
                 }
             ],
+            "staking-payouts": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-joystream-prod.novasama-tech.org"
+                }
+            ],
             "history": [
                 {
                     "type": "subquery",
@@ -10562,6 +10668,12 @@
                 }
             ],
             "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-polimec-prod.novasama-tech.org"
+                }
+            ],
+            "staking-payouts": [
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-polimec-prod.novasama-tech.org"
@@ -10859,6 +10971,12 @@
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-continuum"
                 }
+            ],
+            "staking-payouts": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-continuum"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Continuum.svg",
@@ -10904,6 +11022,12 @@
                 }
             ],
             "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-enjin-relay"
+                }
+            ],
+            "staking-payouts": [
                 {
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-enjin-relay"
@@ -11045,6 +11169,12 @@
                     "url": "https://subquery-history-mythos-prod.novasama-tech.org"
                 }
             ],
+            "staking-payouts": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-mythos-prod.novasama-tech.org"
+                }
+            ],
             "multisig": [
                 {
                     "type": "subquery",
@@ -11099,6 +11229,12 @@
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-acurast"
                 }
+            ],
+            "staking-payouts": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-acurast"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Acurast_Canary.svg",
@@ -11134,6 +11270,12 @@
                 }
             ],
             "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kreivo"
+                }
+            ],
+            "staking-payouts": [
                 {
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kreivo"
@@ -11183,6 +11325,12 @@
         ],
         "externalApi": {
             "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-hyperbridge"
+                }
+            ],
+            "staking-payouts": [
                 {
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-hyperbridge"
@@ -11245,6 +11393,12 @@
         },
         "externalApi": {
             "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-avail-prod.novasama-tech.org"
+                }
+            ],
+            "staking-payouts": [
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-avail-prod.novasama-tech.org"
@@ -12037,6 +12191,12 @@
         "addressPrefix": 29972,
         "externalApi": {
             "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-mythos-testnet-stg.novasama-tech.org"
+                }
+            ],
+            "staking-payouts": [
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-mythos-testnet-stg.novasama-tech.org"
