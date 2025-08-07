@@ -1,0 +1,19 @@
+{
+    "chainId": "086319b29662e34a4f7a3de034afe64c93e3ed477e3aed3ab3ef6e31d33bc179",
+    "name": "RegionX Kusama",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "KSM",
+            "precision": 12,
+            "icon": "KSM.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://regionx-kusama-rpc-lb.zeeve.net/ld940yl9c6/rpc",
+            "name": "RegionX"
+        }
+    ],
+    "addressPrefix": 74
+}
