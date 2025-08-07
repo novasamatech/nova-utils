@@ -346,6 +346,12 @@
               "supportsXcmExecute": true
             },
             {
+              "chainId": "f1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
+              "assetId": 6,
+              "hasDeliveryFee": true,
+              "supportsXcmExecute": true
+            },
+            {
               "chainId": "9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed",
               "assetId": 1,
               "hasDeliveryFee": true,
@@ -455,15 +461,8 @@
           "xcmTransfers": [
             {
               "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-              "assetId": 0
-            },
-            {
-              "chainId": "f1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
-              "assetId": 6
-            },
-            {
-              "chainId": "a85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755",
-              "assetId": 1
+              "assetId": 0,
+              "supportsXcmExecute": true
             }
           ]
         },
@@ -472,7 +471,8 @@
           "xcmTransfers": [
             {
               "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
-              "assetId": 7
+              "assetId": 7,
+              "supportsXcmExecute": true
             }
           ]
         },
@@ -481,11 +481,13 @@
           "xcmTransfers": [
             {
               "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
-              "assetId": 0
+              "assetId": 0,
+              "supportsXcmExecute": true
             },
             {
               "chainId": "f1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
-              "assetId": 3
+              "assetId": 3,
+              "supportsXcmExecute": true
             }
           ]
         }
@@ -500,16 +502,6 @@
             {
               "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
               "assetId": 0,
-              "supportsXcmExecute": true
-            },
-            {
-              "chainId": "f1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
-              "assetId": 6,
-              "supportsXcmExecute": true
-            },
-            {
-              "chainId": "9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed",
-              "assetId": 1,
               "supportsXcmExecute": true
             }
           ]
@@ -819,16 +811,6 @@
               "chainId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
               "assetId": 0,
               "supportsXcmExecute": true
-            },
-            {
-              "chainId": "9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6",
-              "assetId": 1,
-              "supportsXcmExecute": true
-            },
-            {
-              "chainId": "262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b",
-              "assetId": 2,
-              "supportsXcmExecute": true
             }
           ]
         },
@@ -927,15 +909,8 @@
           "xcmTransfers": [
             {
               "chainId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-              "assetId": 0
-            },
-            {
-              "chainId": "9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6",
-              "assetId": 1
-            },
-            {
-              "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
-              "assetId": 1
+              "assetId": 0,
+              "supportsXcmExecute": true
             }
           ]
         },
@@ -944,15 +919,18 @@
           "xcmTransfers": [
             {
               "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
-              "assetId": 0
+              "assetId": 0,
+              "supportsXcmExecute": true
             },
             {
               "chainId": "9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6",
-              "assetId": 2
+              "assetId": 2,
+              "supportsXcmExecute": true
             },
             {
               "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
-              "assetId": 16
+              "assetId": 16,
+              "supportsXcmExecute": true
             }
           ]
         },
@@ -961,19 +939,23 @@
           "xcmTransfers": [
             {
               "chainId": "9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6",
-              "assetId": 9
+              "assetId": 9,
+              "supportsXcmExecute": true
             },
             {
               "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
-              "assetId": 1
+              "assetId": 1,
+              "supportsXcmExecute": true
             },
             {
               "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
-              "assetId": 9
+              "assetId": 9,
+              "supportsXcmExecute": true
             },
             {
               "chainId": "7eb9354488318e7549c722669dcbdcdc526f1fef1420e7944667212f3601fdbd",
-              "assetId": 2
+              "assetId": 2,
+              "supportsXcmExecute": true
             }
           ]
         },
@@ -982,11 +964,13 @@
           "xcmTransfers": [
             {
               "chainId": "9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6",
-              "assetId": 0
+              "assetId": 0,
+              "supportsXcmExecute": true
             },
             {
               "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
-              "assetId": 8
+              "assetId": 8,
+              "supportsXcmExecute": true
             }
           ]
         }
