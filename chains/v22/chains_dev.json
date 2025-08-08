@@ -452,23 +452,23 @@
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-history-westend-ah-prod.novasama-tech.org"
+                    "url": "https://subquery-history-westend-ah-stg.novasama-tech.org"
                 },
                 {
                     "type": "subquery",
-                    "url": "https://subquery-history-westend-prod.novasama-tech.org/"
+                    "url": "https://subquery-history-westend-stg.novasama-tech.org/"
                 }
             ],
             "staking-payouts": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-history-westend-prod.novasama-tech.org/"
+                    "url": "https://subquery-history-westend-stg.novasama-tech.org/"
                 }
             ],
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-history-westend-ah-prod.novasama-tech.org"
+                    "url": "https://subquery-history-westend-ah-stg.novasama-tech.org"
                 }
             ]
         },
