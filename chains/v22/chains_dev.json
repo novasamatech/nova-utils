@@ -1645,12 +1645,6 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Shiden.svg",
         "addressPrefix": 5,
         "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x40"
-                }
-            ],
             "governance": [
                 {
                     "type": "polkassembly",
@@ -2263,12 +2257,6 @@
             }
         ],
         "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x3f"
-                }
-            ],
             "governance": [
                 {
                     "type": "subsquare",
@@ -2320,12 +2308,6 @@
             }
         ],
         "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x37"
-                }
-            ],
             "governance": [
                 {
                     "type": "subsquare",
@@ -2564,12 +2546,6 @@
             }
         ],
         "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x3a"
-                }
-            ],
             "governance": [
                 {
                     "type": "polkassembly",
@@ -2631,12 +2607,6 @@
             }
         ],
         "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x3d"
-                }
-            ],
             "governance": [
                 {
                     "type": "polkassembly",
@@ -2792,24 +2762,6 @@
             }
         ],
         "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x36"
-                }
-            ],
-            "staking": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x36"
-                }
-            ],
-            "staking-payouts": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x36"
-                }
-            ],
             "governance": [
                 {
                     "type": "polkassembly",
@@ -2874,14 +2826,6 @@
                 "account": "https://sub.id/{address}"
             }
         ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x3e"
-                }
-            ]
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Quartz.svg",
         "addressPrefix": 255,
         "additional": {
@@ -2936,14 +2880,6 @@
                 "account": "https://pioneer.subscan.io/account/{address}"
             }
         ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x41"
-                }
-            ]
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Bit.Country_Pioneer.svg",
         "addressPrefix": 268,
         "options": [
@@ -3222,12 +3158,6 @@
             }
         ],
         "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x3c"
-                }
-            ],
             "governance": [
                 {
                     "type": "subsquare",
