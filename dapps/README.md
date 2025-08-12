@@ -54,7 +54,7 @@
 |  50 | Polimec                              | https://app.polimec.org/                            | utilities             |
 |  51 | PolkaIdentity                        | https://app.polkaidentity.com                       | social,utilities      |
 |  52 | Polkadex Orderbook                   | https://orderbook.polkadex.trade/                   | dex,utilities         |
-|  53 | Polkadot Bounties                    | https://bounties.usepapi.app/                       | utilities             |
+|  53 | Polkadot Bounties                    | https://bounties.usepapi.app/                       | utilities,governance  |
 |  54 | Polkadot Pop-Up Summer               | https://popupsummer.unique.network/                 | social                |
 |  55 | Polkadot Staking Dashboard           | https://staking.polkadot.cloud/#/overview           | staking,utilities     |
 |  56 | Polkadot.js                          | https://polkadot.js.org/apps/                       | utilities             |
