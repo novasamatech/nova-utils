@@ -7,8 +7,8 @@ xcm_version_mode_consts.DefaultVersion = "DefaultVersion"
 
 
 class VerionsedXcm:
-    unversioned: dict
-    versioned: dict | List
+    unversioned: dict | List
+    versioned: dict
     version: int
 
     @staticmethod

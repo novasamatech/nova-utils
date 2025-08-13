@@ -96,9 +96,11 @@ class TransferDryRunner:
         )
         message_to_next_hop = origin_dry_run_result.forwarded_xcm
         paid_delivery_fee = origin_dry_run_result.paid_delivery_fee
+        uses_teleport = origin_dry_run_result.uses_teleport()
 
         debug_log(f"Transfer successfully initiated on {origin_chain.chain.name},"
                   f" paid delivery: {paid_delivery_fee},"
+                  f" uses teleport: {uses_teleport},"
                   f" message: {message_to_next_hop}")
         debug_log("\n------------------\n\n")
 
@@ -138,7 +140,8 @@ class TransferDryRunner:
 
         result = DryRunTransferResult(
             paid_delivery_fee=paid_delivery_fee,
-            supports_xcm_execute=supports_xcm_execute
+            supports_xcm_execute=supports_xcm_execute,
+            uses_teleport=uses_teleport
         )
 
         debug_log(
@@ -215,6 +218,7 @@ def _dry_run_empty_xcm_execute(xcm_chain: XcmChain, substrate: SubstrateInterfac
 class DryRunTransferResult:
     paid_delivery_fee: bool
     supports_xcm_execute: bool
+    uses_teleport: bool
 
 
 _substrate_account = "13mp1WEs72kbCBF3WKcoK6Hfhu2HHZGpQ4jsKCZbfd6FoRvH"
