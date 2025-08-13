@@ -5680,6 +5680,20 @@
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 65,
+                "symbol": "GDOT",
+                "precision": 18,
+                "type": "orml",
+                "icon": "DOT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x45000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "5290724013368937",
+                    "transfersEnabled": true,
+                    "subtype": "HydrationEvm"
+                }
             }
         ],
         "nodes": [
