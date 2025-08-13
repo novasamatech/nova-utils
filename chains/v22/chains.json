@@ -5693,6 +5693,19 @@
                     "existentialDeposit": "5290724013368937",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 66,
+                "symbol": "aDOT",
+                "precision": 18,
+                "type": "orml-hydration-evm",
+                "icon": "DOT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "e9030000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "54125333",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
