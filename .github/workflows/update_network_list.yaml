@@ -56,7 +56,7 @@ jobs:
   chains_update:
     runs-on: ubuntu-latest
     needs: check
-    if: always() && (needs.check.outputs.chains == 'true')
+    # if: always() && (needs.check.outputs.chains == 'true')
     steps:
       - name: Checkout current repository to Master branch
         uses: actions/checkout@v1
