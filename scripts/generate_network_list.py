@@ -67,7 +67,7 @@ def parse_parameters(key_param, parsing_object):
             for item in data:
                 if key_param == "history":
                     if item.get('type') == 'subquery':
-                        return subquery_url_formator(item.get('url'))
+                        return item.get('url')
                     if item.get('type') == 'etherscan':
                         return item.get('url')
                     return ", ".join(data)
@@ -83,20 +83,6 @@ def parse_parameters(key_param, parsing_object):
     if return_data is None:
         return " - "
     return return_data
-
-
-def subquery_url_formator(url):
-    explorer_base_url = "https://explorer.subquery.network/subquery/nova-wallet/"
-
-    if "gapi" in url:
-        organisation = "nova-"
-        injecting_part = url.split("-")[1].split(".")[0]
-        final_explorer_url = f"[{organisation+injecting_part}]({explorer_base_url + organisation + injecting_part})"
-        return final_explorer_url
-    else:
-        injecting_part = url.split("/")[-1]
-        final_explorer_url = f"[{injecting_part}]({explorer_base_url + injecting_part})"
-        return final_explorer_url
 
 
 def calculate_parameters(list_of_arrays, element_name):
