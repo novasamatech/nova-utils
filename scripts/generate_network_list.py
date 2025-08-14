@@ -68,8 +68,6 @@ def parse_parameters(key_param, parsing_object):
                 if key_param == "history":
                     if item.get('type') == 'subquery':
                         return item.get('url')
-                    if item.get('type') == 'etherscan':
-                        return item.get('url')
                     return ", ".join(data)
                 else:
                     raise Exception(F"Unknown key_param: {key_param}")
