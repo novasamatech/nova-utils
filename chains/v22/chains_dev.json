@@ -5818,12 +5818,12 @@
                 "symbol": "GIGADOT",
                 "precision": 18,
                 "priceId": "gigadot",
-                "type": "orml",
+                "type": "orml-hydration-evm",
                 "icon": "GIGADOT.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x45000000",
                     "currencyIdType": "u32",
-                    "existentialDeposit": "0",
+                    "existentialDeposit": "5290724013368937",
                     "transfersEnabled": true
                 }
             },
@@ -5844,12 +5844,12 @@
                 "assetId": 60,
                 "symbol": "aDOT",
                 "precision": 10,
-                "type": "orml",
+                "type": "orml-hydration-evm",
                 "icon": "DOT.svg",
                 "typeExtras": {
                     "currencyIdScale": "0xe9030000",
                     "currencyIdType": "u32",
-                    "existentialDeposit": "0",
+                    "existentialDeposit": "54125333",
                     "transfersEnabled": true
                 }
             },
@@ -5886,7 +5886,7 @@
                 "symbol": "GIGAETH",
                 "precision": 18,
                 "priceId": "gigaeth",
-                "type": "orml",
+                "type": "orml-hydration-evm",
                 "icon": "GIGAETH.svg",
                 "typeExtras": {
                     "currencyIdScale": "0xa4010000",
