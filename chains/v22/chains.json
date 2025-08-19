@@ -4015,6 +4015,17 @@
                 }
             },
             {
+                "assetId": 25,
+                "symbol": "GDOT",
+                "precision": 12,
+                "priceId": "gigadot",
+                "type": "statemine",
+                "icon": "GIGADOT.svg",
+                "typeExtras": {
+                    "assetId": "50000092"
+                }
+            },
+            {
                 "assetId": 26,
                 "symbol": "MPC",
                 "precision": 12,
@@ -5518,6 +5529,20 @@
                 }
             },
             {
+                "assetId": 58,
+                "symbol": "GDOT",
+                "precision": 18,
+                "priceId": "gigadot",
+                "type": "orml-hydration-evm",
+                "icon": "GIGADOT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x45000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "5290724013368937",
+                    "transfersEnabled": true
+                }
+            },
+            {
                 "assetId": 59,
                 "symbol": "2-Pool-GDOT",
                 "precision": 18,
@@ -5527,6 +5552,19 @@
                     "currencyIdScale": "0xb2020000",
                     "currencyIdType": "u32",
                     "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 60,
+                "symbol": "aDOT",
+                "precision": 10,
+                "type": "orml-hydration-evm",
+                "icon": "DOT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0xe9030000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "54125333",
                     "transfersEnabled": true
                 }
             },
@@ -5559,6 +5597,20 @@
                 }
             },
             {
+                "assetId": 63,
+                "symbol": "GETH",
+                "precision": 18,
+                "priceId": "gigaeth",
+                "type": "orml-hydration-evm",
+                "icon": "GIGAETH.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0xa4010000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "8202803876747",
+                    "transfersEnabled": true
+                }
+            },
+            {
                 "assetId": 64,
                 "symbol": "2-Pool-GETH",
                 "precision": 18,
@@ -5568,32 +5620,6 @@
                     "currencyIdScale": "0x68100000",
                     "currencyIdType": "u32",
                     "existentialDeposit": "1000",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "assetId": 65,
-                "symbol": "GDOT",
-                "precision": 18,
-                "type": "orml-hydration-evm",
-                "icon": "DOT.svg",
-                "typeExtras": {
-                    "currencyIdScale": "0x45000000",
-                    "currencyIdType": "u32",
-                    "existentialDeposit": "5290724013368937",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "assetId": 66,
-                "symbol": "aDOT",
-                "precision": 18,
-                "type": "orml-hydration-evm",
-                "icon": "DOT.svg",
-                "typeExtras": {
-                    "currencyIdScale": "e9030000",
-                    "currencyIdType": "u32",
-                    "existentialDeposit": "54125333",
                     "transfersEnabled": true
                 }
             }
