@@ -6563,7 +6563,8 @@
         },
         "options": [
             "fullSyncByDefault",
-            "pushSupport"
+            "pushSupport",
+            "multisig"
         ]
     },
     {
@@ -11075,7 +11076,8 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Avail.svg",
         "addressPrefix": 42,
         "options": [
-            "pushSupport"
+            "pushSupport",
+            "multisig"
         ],
         "additional": {
             "themeColor": "#58C8F6",
@@ -11951,6 +11953,9 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Coretime.svg",
         "addressPrefix": 0,
+        "options": [
+            "multisig"
+        ],
         "additional": {
             "supportsGenericLedgerApp": true
         }
@@ -12017,6 +12022,9 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_Coretime.svg",
         "addressPrefix": 2,
+        "options": [
+            "multisig"
+        ],
         "additional": {
             "supportsGenericLedgerApp": true
         }
