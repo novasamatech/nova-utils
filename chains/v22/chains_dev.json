@@ -6563,7 +6563,8 @@
         },
         "options": [
             "fullSyncByDefault",
-            "pushSupport"
+            "pushSupport",
+            "multisig"
         ]
     },
     {
@@ -9533,6 +9534,9 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_People.svg",
         "addressPrefix": 0,
+        "options": [
+            "multisig"
+        ],
         "additional": {
             "supportsGenericLedgerApp": true,
             "identityChain": "67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008"
@@ -9595,6 +9599,9 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_People.svg",
         "addressPrefix": 2,
+        "options": [
+            "multisig"
+        ],
         "additional": {
             "disabledCheckMetadataHash": true
         }
@@ -11069,7 +11076,8 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Avail.svg",
         "addressPrefix": 42,
         "options": [
-            "pushSupport"
+            "pushSupport",
+            "multisig"
         ],
         "additional": {
             "themeColor": "#58C8F6",
@@ -11945,6 +11953,9 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Coretime.svg",
         "addressPrefix": 0,
+        "options": [
+            "multisig"
+        ],
         "additional": {
             "supportsGenericLedgerApp": true
         }
@@ -12011,6 +12022,9 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_Coretime.svg",
         "addressPrefix": 2,
+        "options": [
+            "multisig"
+        ],
         "additional": {
             "supportsGenericLedgerApp": true
         }
