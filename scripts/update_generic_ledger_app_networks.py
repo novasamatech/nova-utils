@@ -21,6 +21,7 @@ class BlacklistedChains(Enum):
     ENJIN_RELAY_CHAIN = 'd8761d3c88f26dc12875c00d3165f7d67243d56fc85b4cf19937601a7916e5a9'
     TANGLE = '44f68476df71ebf765b630bf08dc1e0fedb2bf614a1aa0563b3f74f20e47b3e0'
     CERE = '81443836a9a24caaa23f1241897d1235717535711d1d3fe24eae4fdc942c092c'
+    ZEITGEIST = '1bf2a2ecb4a868de66ea8610f2ce7c8c43706561b6476031315f6640fe38e060'
 
 
 def update_existing_data_with_new_networks(existing_data, new_networks):
