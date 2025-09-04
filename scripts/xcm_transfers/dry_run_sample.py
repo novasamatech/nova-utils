@@ -9,8 +9,8 @@ registry = build_xcm_registry(config_files)
 
 origin_chain_name = "Hydration"
 destination_chain_name = "Moonbeam"
-origin_token = "DOT"
-destination_token = "xcDOT"
+origin_token = "GLMR"
+destination_token = "GLMR"
 
 origin_chain = registry.get_chain_by_name(origin_chain_name)
 destination_chain = registry.get_chain_by_name(destination_chain_name)

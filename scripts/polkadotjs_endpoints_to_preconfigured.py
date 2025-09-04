@@ -131,7 +131,7 @@ def create_chain_data(chain_object, endpoint_type):
         return None
 
     # Get the first provider (if any)
-    # TODO: Iterate through all nodes available until connection is established
+    # READ_WHEN_CREATING_V8: Iterate through all nodes available until connection is established
     first_provider_value = next(iter(providers.values()), None)
     wss_url = first_provider_value.strip("'")
 

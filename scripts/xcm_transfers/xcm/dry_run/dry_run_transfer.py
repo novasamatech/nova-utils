@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import functools
 from dataclasses import dataclass
-from time import sleep
 
 from scalecodec import GenericCall
 from substrateinterface import SubstrateInterface
@@ -17,7 +16,7 @@ from scripts.xcm_transfers.xcm.dry_run.errors import extract_dispatch_error_mess
 from scripts.xcm_transfers.xcm.dry_run.events.deposit import find_deposit_amount
 from scripts.xcm_transfers.xcm.dry_run.fund import fund_account_and_then
 from scripts.xcm_transfers.xcm.dry_run.origins import root_origin
-from scripts.xcm_transfers.xcm.registry.transfer_type import determine_transfer_type
+from scripts.xcm_transfers.xcm.registry.transfer_type import Teleport
 from scripts.xcm_transfers.xcm.registry.xcm_chain import XcmChain
 from scripts.xcm_transfers.xcm.registry.xcm_registry import XcmRegistry
 from scripts.xcm_transfers.xcm.versioned_xcm import VerionsedXcm
@@ -43,7 +42,7 @@ class TransferDryRunner:
         sender = _dry_run_account_for_chain(origin_chain)
         recipient = _dry_run_account_for_chain(destination_chain)
 
-        transfer_type = determine_transfer_type(self._registry, origin_chain, destination_chain, chain_asset)
+        transfer_type = self._registry.determine_transfer_type(origin_chain, destination_chain, chain_asset)
 
         token_location_origin = self._registry.reserves.relative_reserve_location(chain_asset, pov_chain=origin_chain)
 
@@ -101,7 +100,7 @@ class TransferDryRunner:
         )
         message_to_next_hop = origin_dry_run_result.forwarded_xcm
         paid_delivery_fee = origin_dry_run_result.paid_delivery_fee
-        uses_teleport = origin_dry_run_result.uses_teleport()
+        uses_teleport = isinstance(transfer_type, Teleport)
 
         debug_log(f"Transfer successfully initiated on {origin_chain.chain.name},"
                   f" paid delivery: {paid_delivery_fee},"

@@ -44,7 +44,7 @@ def _find_statemine_deposit_amount(
         events: List[dict],
         deposit_account: str,
 ) -> int | None:
-    # TODO matching asset id is quite cumbersome here so we dont do it since
+    # READ_WHEN_CREATING_V8 matching asset id is quite cumbersome here so we dont do it since
     # there should only be one "Issued" event to a recipient account, in the receiving token
     event = find_event_with_attributes(events, asset_type.pallet_name(), "Issued",
                                        lambda attrs: decode_account_id(attrs["owner"]) == decode_account_id(deposit_account))
@@ -57,7 +57,7 @@ def _find_orml_deposit_amount(
         events: List[dict],
         deposit_account: str,
 ) -> int | None:
-    # TODO matching asset id is quite cumbersome here so we dont do it since
+    # READ_WHEN_CREATING_V8 matching asset id is quite cumbersome here so we dont do it since
     # there should only be one "Issued" event to a recipient account, in the receiving token
     event = find_event_with_attributes(events, "Tokens", "Deposited",
                                        lambda attrs: decode_account_id(attrs["who"]) == decode_account_id(deposit_account))

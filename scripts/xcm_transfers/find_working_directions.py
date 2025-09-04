@@ -56,6 +56,8 @@ def save_config():
                 if working_direction.dry_run_result.supports_xcm_execute:
                     destination_config["supportsXcmExecute"] = True
 
+                # TODO we keep usesTeleport solely for compatibility purposes
+                # Remove it when migrating to v8
                 if working_direction.dry_run_result.uses_teleport:
                     destination_config["usesTeleport"] = True
 
