@@ -34,7 +34,7 @@ def compare_type_files_for_all_networks(chains_file):
 
         if chain_options is not None:
             if skip_options.intersection(chain_options):
-                # READ_WHEN_CREATING_V8 need to implement creation type file for EVM networks
+                # TODO need to implement creation type file for EVM networks
                 print(f"Temporary can't generate type files for EVM networks, {chain['name']} was skipped")
                 continue
 

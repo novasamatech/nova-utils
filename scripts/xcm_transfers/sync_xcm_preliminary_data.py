@@ -35,7 +35,7 @@ def get_xcm_outcome_type(substrate: SubstrateInterface) -> str | None:
 
 def determine_dry_run_version(substrate: SubstrateInterface, runtime_prefix: str) -> int | None:
     try:
-        # READ_WHEN_CREATING_V8 we should migrate to inspecting v15 metadata which is ready at
+        # TODO we should migrate to inspecting v15 metadata which is ready at
         # https://github.com/polkascan/py-substrate-interface/pull/358/files
         # probably by forking the py-substrate-interface
         method_data = construct_v1_dry_run_method_data(substrate, runtime_prefix)
