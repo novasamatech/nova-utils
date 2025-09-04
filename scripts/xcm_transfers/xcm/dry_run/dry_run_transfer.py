@@ -145,7 +145,6 @@ class TransferDryRunner:
         result = DryRunTransferResult(
             paid_delivery_fee=paid_delivery_fee,
             supports_xcm_execute=supports_xcm_execute,
-            uses_teleport=uses_teleport
         )
 
         debug_log(
@@ -222,7 +221,6 @@ def _dry_run_empty_xcm_execute(xcm_chain: XcmChain, substrate: SubstrateInterfac
 class DryRunTransferResult:
     paid_delivery_fee: bool
     supports_xcm_execute: bool
-    uses_teleport: bool
 
 
 _substrate_account = "13mp1WEs72kbCBF3WKcoK6Hfhu2HHZGpQ4jsKCZbfd6FoRvH"
