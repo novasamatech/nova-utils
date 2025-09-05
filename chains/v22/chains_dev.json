@@ -12080,5 +12080,59 @@
         "additional": {
             "supportsGenericLedgerApp": true
         }
+    },
+    {
+        "chainId": "b2985e778bb748c70e450dcc084cc7da79fe742cc23d3b040abd7028187de69c",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Xode",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "XON",
+                "precision": 12,
+                "icon": "XON.svg"
+            },
+            {
+                "assetId": 1984,
+                "symbol": "USDT",
+                "precision": 6,
+               "priceId": "tether",
+                "type": "statemine",
+                "icon": "USDT.svg",
+                "typeExtras": {
+                    "assetId": "1984",
+                    "transfersEnabled": true,
+                    "isSufficient": true
+                }
+            },
+            {
+                "assetId": 100000000,
+                "symbol": "DOT",
+                "precision": 10,
+                "priceId": "polkadot",
+                "type": "statemine",
+                "icon": "DOT.svg",
+                "typeExtras": {
+                    "assetId": "100000000",
+                    "transfersEnabled": true,
+                    "isSufficient": true
+                }
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://polkadot-rpcnode.xode.net",
+                "name": "XodeCommunity node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Xode Explorer",
+                "extrinsic": "https://node.xode.net/polkadot-chain-transaction?search={hash}",
+                "account": "https://node.xode.net/polkadot-chain-transaction?search={address}"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Xode.svg",
+        "addressPrefix": 280
     }
 ]
