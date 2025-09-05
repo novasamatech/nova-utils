@@ -10,7 +10,6 @@ from scripts.xcm_transfers.xcm.dry_run.errors import is_xcm_run_error, handle_xc
 from scripts.xcm_transfers.xcm.dry_run.events.xcm import find_sent_xcm, check_paid_delivery_fee
 from scripts.xcm_transfers.xcm.registry.xcm_chain import XcmChain
 from scripts.xcm_transfers.xcm.versioned_xcm import VerionsedXcm
-from scripts.xcm_transfers.xcm.versioned_xcm_builder import is_receive_teleported_asset
 
 
 # Returns dry run effects if successful. Throws otherwise
@@ -54,11 +53,6 @@ def dry_run_final_xcm(chain: XcmChain, xcm: VerionsedXcm, origin: VerionsedXcm) 
 class CallDryRunResult:
     forwarded_xcm: VerionsedXcm
     paid_delivery_fee: bool
-
-    def uses_teleport(self) -> bool:
-        instructions: List[dict] = self.forwarded_xcm.unversioned
-
-        return any((instruction for instruction in instructions if is_receive_teleported_asset(instruction)))
 
 
 def dry_run_call(

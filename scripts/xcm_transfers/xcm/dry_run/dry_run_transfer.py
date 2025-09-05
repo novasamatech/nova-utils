@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import functools
 from dataclasses import dataclass
-from time import sleep
 
 from scalecodec import GenericCall
 from substrateinterface import SubstrateInterface
@@ -17,11 +16,11 @@ from scripts.xcm_transfers.xcm.dry_run.errors import extract_dispatch_error_mess
 from scripts.xcm_transfers.xcm.dry_run.events.deposit import find_deposit_amount
 from scripts.xcm_transfers.xcm.dry_run.fund import fund_account_and_then
 from scripts.xcm_transfers.xcm.dry_run.origins import root_origin
-from scripts.xcm_transfers.xcm.registry.transfer_type import determine_transfer_type
+from scripts.xcm_transfers.xcm.registry.transfer_type import Teleport
 from scripts.xcm_transfers.xcm.registry.xcm_chain import XcmChain
 from scripts.xcm_transfers.xcm.registry.xcm_registry import XcmRegistry
 from scripts.xcm_transfers.xcm.versioned_xcm import VerionsedXcm
-from scripts.xcm_transfers.xcm.versioned_xcm_builder import assets, xcm_program
+from scripts.xcm_transfers.xcm.versioned_xcm_builder import assets, xcm_program, asset_id, deposit_asset
 from scripts.xcm_transfers.xcm.xcm_transfer_direction import XcmTransferDirection
 
 
@@ -43,39 +42,44 @@ class TransferDryRunner:
         sender = _dry_run_account_for_chain(origin_chain)
         recipient = _dry_run_account_for_chain(destination_chain)
 
-        transfer_type = determine_transfer_type(self._registry, origin_chain, destination_chain, chain_asset)
+        transfer_type = self._registry.determine_transfer_type(origin_chain, destination_chain, chain_asset)
 
         token_location_origin = self._registry.reserves.relative_reserve_location(chain_asset, pov_chain=origin_chain)
 
         dest = origin_chain.sibling_location_of(destination_chain).versioned
         assets_param = assets(token_location_origin, amount=chain_asset.planks(amount)).versioned
+        assets_transfer_type = transfer_type.transfer_type_call_param()
+        remote_fees_id_param = asset_id(token_location_origin).versioned
 
         remote_reserve_chain = transfer_type.check_remote_reserve()
 
-        beneficiary = destination_chain.account_location(recipient).versioned
+        custom_xcm_on_dest = xcm_program([
+            deposit_asset(recipient, evm=destination_chain.chain.has_evm_addresses())
+        ]).versioned
 
-        fee_asset_item = 0
         weight_limit = "Unlimited"
 
-        debug_log(f"{transfer_type=}")
         debug_log(f"{dest=}")
-        debug_log(f"{beneficiary=}")
         debug_log(f"{assets_param=}")
-        debug_log(f"{fee_asset_item=}")
+        debug_log(f"{assets_transfer_type=}")
+        debug_log(f"{remote_fees_id_param=}")
         debug_log(f"{weight_limit=}")
+        debug_log(f"{custom_xcm_on_dest=}")
 
         debug_log("\n------------------\n")
 
         def transfer_assets_call(substrate: SubstrateInterface) -> GenericCall:
             return substrate.compose_call(
                 call_module=origin_chain.xcm_pallet_alias(),
-                call_function="transfer_assets",
+                call_function="transfer_assets_using_type_and_then",
                 call_params={
                     "dest": dest,
                     "assets": assets_param,
-                    "beneficiary": beneficiary,
-                    "fee_asset_item": fee_asset_item,
-                    "weight_limit": weight_limit
+                    "assets_transfer_type": assets_transfer_type,
+                    "remote_fees_id": remote_fees_id_param,
+                    "fees_transfer_type": assets_transfer_type,
+                    "weight_limit": weight_limit,
+                    "custom_xcm_on_dest": custom_xcm_on_dest
                 }
             )
 
@@ -96,7 +100,7 @@ class TransferDryRunner:
         )
         message_to_next_hop = origin_dry_run_result.forwarded_xcm
         paid_delivery_fee = origin_dry_run_result.paid_delivery_fee
-        uses_teleport = origin_dry_run_result.uses_teleport()
+        uses_teleport = isinstance(transfer_type, Teleport)
 
         debug_log(f"Transfer successfully initiated on {origin_chain.chain.name},"
                   f" paid delivery: {paid_delivery_fee},"
@@ -141,7 +145,6 @@ class TransferDryRunner:
         result = DryRunTransferResult(
             paid_delivery_fee=paid_delivery_fee,
             supports_xcm_execute=supports_xcm_execute,
-            uses_teleport=uses_teleport
         )
 
         debug_log(
@@ -218,7 +221,6 @@ def _dry_run_empty_xcm_execute(xcm_chain: XcmChain, substrate: SubstrateInterfac
 class DryRunTransferResult:
     paid_delivery_fee: bool
     supports_xcm_execute: bool
-    uses_teleport: bool
 
 
 _substrate_account = "13mp1WEs72kbCBF3WKcoK6Hfhu2HHZGpQ4jsKCZbfd6FoRvH"
