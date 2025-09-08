@@ -56,9 +56,6 @@ def save_config():
                 if working_direction.dry_run_result.supports_xcm_execute:
                     destination_config["supportsXcmExecute"] = True
 
-                if working_direction.dry_run_result.uses_teleport:
-                    destination_config["usesTeleport"] = True
-
                 asset_transfers.append(destination_config)
 
             asset_config = {

@@ -7,10 +7,10 @@ from scripts.xcm_transfers.xcm.xcm_transfer_direction import XcmTransferDirectio
 config_files = get_xcm_config_files()
 registry = build_xcm_registry(config_files)
 
-origin_chain_name = "Polkadot Asset Hub"
-destination_chain_name = "Hydration"
-origin_token = "DOT"
-destination_token = "DOT"
+origin_chain_name = "Hydration"
+destination_chain_name = "Moonbeam"
+origin_token = "GLMR"
+destination_token = "GLMR"
 
 origin_chain = registry.get_chain_by_name(origin_chain_name)
 destination_chain = registry.get_chain_by_name(destination_chain_name)

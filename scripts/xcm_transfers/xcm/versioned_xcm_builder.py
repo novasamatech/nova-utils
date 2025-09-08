@@ -75,7 +75,3 @@ def account_junction(
 
 def parachain_junction(parachain_id: int) -> dict:
     return {"Parachain": parachain_id}
-
-
-def is_receive_teleported_asset(instruction: dict) ->bool:
-    return "ReceiveTeleportedAsset" in instruction
