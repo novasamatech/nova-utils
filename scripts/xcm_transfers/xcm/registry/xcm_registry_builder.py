@@ -9,7 +9,6 @@ from scripts.xcm_transfers.utils.dry_run_api_types import dry_run_api_types
 from scripts.xcm_transfers.utils.log import debug_log
 from scripts.xcm_transfers.utils.xcm_config_files import XCMConfigFiles
 from scripts.xcm_transfers.xcm.multi_location import GlobalMultiLocation
-from scripts.xcm_transfers.xcm.registry.TrustedTeleporters import TrustedTeleporters, CustomTeleportsEntry
 from scripts.xcm_transfers.xcm.registry.reserve_location import ReserveLocation, ReserveLocations
 from scripts.xcm_transfers.xcm.registry.xcm_chain import XcmChain
 from scripts.xcm_transfers.xcm.registry.xcm_registry import XcmRegistry
@@ -76,27 +75,11 @@ def _build_reserves(xcm_config: dict, xcm_registry: XcmRegistry) -> ReserveLocat
 
     return ReserveLocations(reserve_locations, asset_reserve_overrides)
 
-def _build_teleports(xcm_config: dict) -> TrustedTeleporters:
-    custom_teleports: set[CustomTeleportsEntry] = set()
-
-    for custom_teleport in xcm_config.get("customTeleports", []):
-        origin_chain_id = custom_teleport["originChain"]
-        destination_chain_id = custom_teleport["destChain"]
-        origin_asset_id = custom_teleport["originAsset"]
-
-        custom_teleports.add((origin_chain_id, destination_chain_id, origin_asset_id))
-
-    return TrustedTeleporters(custom_teleports)
-
 def build_xcm_registry(files: XCMConfigFiles) -> XcmRegistry:
     all_xcm_capable_chains = build_all_xcm_capable_chains(files)
     xcm_config = get_data_from_file(files.xcm_dynamic_config)
 
-    return XcmRegistry(
-        all_chains=all_xcm_capable_chains,
-        reserves_constructor=functools.partial(_build_reserves, xcm_config),
-        teleports=_build_teleports(xcm_config)
-    )
+    return XcmRegistry(all_xcm_capable_chains, functools.partial(_build_reserves, xcm_config))
 
 def build_all_xcm_capable_chains(files: XCMConfigFiles) -> List[XcmChain]:
     additional_xcm_data = get_data_from_file(files.xcm_additional_data)

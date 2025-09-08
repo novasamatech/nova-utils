@@ -16,8 +16,6 @@ T = TypeVar('T')
 ChainId = str
 ChainAssetId = int
 
-FullChainAssetId = (ChainId, ChainAssetId)
-
 
 class Chain:
     substrate: SubstrateInterface | None
