@@ -11714,7 +11714,7 @@
                 "name": "Xode archive node"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Xode.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Xode_Kusama.svg",
         "addressPrefix": 42
     },
     {
@@ -12083,5 +12083,50 @@
         "additional": {
             "supportsGenericLedgerApp": true
         }
+    },
+    {
+        "chainId": "b2985e778bb748c70e450dcc084cc7da79fe742cc23d3b040abd7028187de69c",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Xode",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "XON",
+                "precision": 12,
+                "icon": "XON.svg"
+            },
+            {
+                "assetId": 1,
+                "symbol": "USDT",
+                "precision": 6,
+                "icon": "USDT.svg",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "1984"
+                }
+            },
+            {
+                "assetId": 2,
+                "symbol": "DOT",
+                "precision": 10,
+                "icon": "DOT.svg",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "100000000"
+                }
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://polkadot-rpcnode.xode.net",
+                "name": "XodeCommunity node"
+            },
+            {
+                "url": "wss://xode-polkadot-rpc-01.zeeve.net/y0yxg038wn1fncc/rpc",
+                "name": "Zeeve node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Xode-Polkadot.svg",
+        "addressPrefix": 280
     }
 ]
