@@ -132,6 +132,13 @@
         "dryRunVersion": 2,
         "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
     },
+    "9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed": {
+        "parachainId": 2001,
+        "runtimePrefix": "bifrost_kusama_runtime",
+        "name": "Bifrost Kusama",
+        "dryRunVersion": 2,
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
+    },
     "a85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755": {
         "parachainId": 2090,
         "runtimePrefix": "basilisk_runtime",
@@ -143,6 +150,13 @@
         "parachainId": 1001,
         "runtimePrefix": "encointer_kusama_runtime",
         "name": "Encointer",
+        "dryRunVersion": 2,
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
+    },
+    "cdedc8eadbfa209d3f207bba541e57c3c58a667b05a2e1d1e86353c9000758da": {
+        "parachainId": 2015,
+        "runtimePrefix": "integritee_kusama_runtime",
+        "name": "Integritee Parachain",
         "dryRunVersion": 2,
         "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
     },
