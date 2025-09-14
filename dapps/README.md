@@ -2,26 +2,26 @@
 # List of supported dapps
 | --  |                 DApp                 |                         Url                         |         Tags          |
 | --: | ------------------------------------ | --------------------------------------------------- | --------------------- |
-|   1 | .MEMO                                | https://dotmemo.xyz/                                | art                   |
-|   2 | AZERO.ID                             | https://azero.id/dashboard                          | utilities             |
-|   3 | Acala App (Desktop mode)             | https://apps.acala.network/                         | staking               |
-|   4 | AirLyft Campaigns                    | https://airlyft.one/                                | social                |
-|   5 | Aleph Zero MOST                      | https://mo.st/                                      | bridge,dex            |
-|   6 | ArthSwap                             | https://app.arthswap.org/#/swap                     | dex,evm               |
-|   7 | Astar Portal                         | https://portal.astar.network/                       | staking               |
-|   8 | Awesome Ajuna Avatars (Desktop mode) | https://aaa.ajuna.io/                               | art,gaming            |
-|   9 | Basilisk Snek Swap                   | https://app.basilisk.cloud/trade                    | bridge,dex            |
-|  10 | Battleship                           | https://battleship.vara.network/                    | gaming                |
-|  11 | Bifrost App                          | https://app.bifrost.io/                             | staking               |
-|  12 | Big Ballz of Bajun                   | https://bbb.ajuna.io/                               | art,gaming            |
-|  13 | Bit.Country Pioneer Metaverse        | https://pioneer.bit.country/                        | art,staking,gaming    |
-|  14 | Capital Curio                        | https://capitaldex.exchange/staking                 | staking               |
-|  15 | Centrifuge CFG Migration App         | https://app.centrifuge.io/#/portfolio/migrate/cent  | utilities             |
-|  16 | ChessOnChain                         | https://play.chessonchain.io                        | gaming                |
-|  17 | DOT Yappers                          | https://dotyappers.com                              | social                |
-|  18 | DOTNIGHT - TOKEN2049                 | https://dotnight.unique.network/                    | social                |
-|  19 | Darwinia Portal                      | https://apps.darwinia.network/                      | utilities             |
-|  20 | Dotmarketcap                         | https://dotmarketcap.com/                           | social                |
+|   1 | AZERO.ID                             | https://azero.id/dashboard                          | utilities             |
+|   2 | Acala App (Desktop mode)             | https://apps.acala.network/                         | staking               |
+|   3 | AirLyft Campaigns                    | https://airlyft.one/                                | social                |
+|   4 | Aleph Zero MOST                      | https://mo.st/                                      | bridge,dex            |
+|   5 | ArthSwap                             | https://app.arthswap.org/#/swap                     | dex,evm               |
+|   6 | Astar Portal                         | https://portal.astar.network/                       | staking               |
+|   7 | Awesome Ajuna Avatars (Desktop mode) | https://aaa.ajuna.io/                               | art,gaming            |
+|   8 | Basilisk Snek Swap                   | https://app.basilisk.cloud/trade                    | bridge,dex            |
+|   9 | Battleship                           | https://battleship.vara.network/                    | gaming                |
+|  10 | Bifrost App                          | https://app.bifrost.io/                             | staking               |
+|  11 | Big Ballz of Bajun                   | https://bbb.ajuna.io/                               | art,gaming            |
+|  12 | Bit.Country Pioneer Metaverse        | https://pioneer.bit.country/                        | art,staking,gaming    |
+|  13 | Capital Curio                        | https://capitaldex.exchange/staking                 | staking               |
+|  14 | Centrifuge CFG Migration App         | https://app.centrifuge.io/#/portfolio/migrate/cent  | utilities             |
+|  15 | ChessOnChain                         | https://play.chessonchain.io                        | gaming                |
+|  16 | DOT Yappers                          | https://dotyappers.com                              | social                |
+|  17 | DOTNIGHT - TOKEN2049                 | https://dotnight.unique.network/                    | social                |
+|  18 | Darwinia Portal                      | https://apps.darwinia.network/                      | utilities             |
+|  19 | Dotmarketcap                         | https://dotmarketcap.com/                           | social                |
+|  20 | Dotmemo                              | https://dotmemo.xyz/                                | art,social,gaming     |
 |  21 | Euphrates (Desktop mode)             | https://farm.acala.network/                         | staking               |
 |  22 | FlappyWUD                            | https://flappywud.lol/                              | gaming                |
 |  23 | GIANTProtocol                        | https://app.giantprotocol.org/shop                  | utilities             |
