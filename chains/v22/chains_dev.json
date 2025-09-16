@@ -7537,36 +7537,6 @@
         }
     },
     {
-        "chainId": "d54f0988402deb4548538626ce37e4a318441ea0529ca369400ebec4e04dfe4b",
-        "name": "Turing Staging",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "TUR",
-                "staking": [
-                    "turing"
-                ],
-                "precision": 10,
-                "icon": "TUR.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://rpc.turing-staging.oak.tech",
-                "name": "OAK node"
-            }
-        ],
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Turing_Staging.svg",
-        "addressPrefix": 51,
-        "options": [
-            "testnet"
-        ],
-        "additional": {
-            "themeColor": "#1F78FF",
-            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/parachains-and-solochains"
-        }
-    },
-    {
         "chainId": "a2ee5a1f55a23dccd0c35e36512f9009e6e50a5654e8e5e469445d0748632aa8",
         "name": "Governance2 Testnet",
         "assets": [
