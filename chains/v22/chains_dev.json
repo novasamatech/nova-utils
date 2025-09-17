@@ -12814,5 +12814,26 @@
             "supportsGenericLedgerApp": true,
             "defaultBlockTime": 6000
         }
+    },
+    {
+        "chainId": "086319b29662e34a4f7a3de034afe64c93e3ed477e3aed3ab3ef6e31d33bc179",
+        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "name": "RegionX",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "KSM",
+                "precision": 12,
+                "icon": "KSM.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://regionx-kusama-archive-01.zeeve.net/x9rg5n6tcaosq4t/rpc",
+                "name": "RegionX node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/RegionX_Kusama.svg",
+        "addressPrefix": 74
     }
 ]
