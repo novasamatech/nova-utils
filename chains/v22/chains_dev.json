@@ -13061,6 +13061,32 @@
                     "existentialDeposit": "22409",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 68,
+                "symbol": "2-Pool-HUSDC",
+                "precision": 18,
+                "type": "orml",
+                "icon": "2-Pool.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x6e000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 69,
+                "symbol": "2-Pool-HUSDT",
+                "precision": 18,
+                "type": "orml",
+                "icon": "2-Pool.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x6f000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
