@@ -11476,7 +11476,10 @@
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Creditcoin.svg",
-        "addressPrefix": 42
+        "addressPrefix": 42,
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "chainId": "c56fa32442b2dad76f214b3ae07998e4ca09736e4813724bfb0717caae2c8bee",
