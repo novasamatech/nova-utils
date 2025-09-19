@@ -5437,6 +5437,74 @@
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 65,
+                "symbol": "HOLLAR",
+                "precision": 18,
+                "priceId": "tether",
+                "type": "orml-hydration-evm",
+                "icon": "HOLLAR.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0xde000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 66,
+                "symbol": "aUSDT",
+                "precision": 6,
+                "priceId": "tether",
+                "type": "orml-hydration-evm",
+                "icon": "USDT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0xea030000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "22409",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 67,
+                "symbol": "aUSDC",
+                "precision": 6,
+                "priceId": "usd-coin",
+                "type": "orml-hydration-evm",
+                "icon": "USDC.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0xeb030000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "22409",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 68,
+                "symbol": "2-Pool-HUSDC",
+                "precision": 18,
+                "type": "orml",
+                "icon": "2-Pool-HUSDC.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x6e000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 69,
+                "symbol": "2-Pool-HUSDT",
+                "precision": 18,
+                "type": "orml",
+                "icon": "2-Pool-HUSDT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x6f000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
