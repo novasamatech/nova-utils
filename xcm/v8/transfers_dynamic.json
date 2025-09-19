@@ -829,6 +829,17 @@
               "supportsXcmExecute": true
             }
           ]
+        },
+        {
+          "assetId": 15,
+          "xcmTransfers": [
+            {
+              "chainId": "f6ee56e9c5277df5b4ce6ae9983ee88f3cbed27d31beeb98f9f84f997a1ab0b9",
+              "assetId": 0,
+              "hasDeliveryFee": true,
+              "supportsXcmExecute": true
+            }
+          ]
         }
       ]
     },
@@ -1093,7 +1104,7 @@
               "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
               "assetId": 36,
               "hasDeliveryFee": true,
-              "supportsXcmExecute": false
+              "supportsXcmExecute": true
             }
           ]
         }
