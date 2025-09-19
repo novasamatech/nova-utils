@@ -8,6 +8,7 @@ readme = "README.md"
 package-mode = false
 
 [tool.poetry.dependencies]
+eth_typing = "2.3.0"
 packaging = ">=23.2"
 python = "^3.10"
 allure-pytest = "2.12.0"
