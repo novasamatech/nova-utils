@@ -1,6 +1,6 @@
 {
-    "chainId": "295aeafca762a304d92ee1505548695091f6082d3f0aa4d092ac3cd6397a6c5e",
-    "name": "Autonomys Taurus Testnet (TESTNET)",
+    "chainId": "264d868b1999c6fc3c8d53f6d6b0c0969cc7f0f31e846793b9585fa3019a0132",
+    "name": "Autonomys Chronos Testnet Domain 0 (TESTNET)",
     "assets": [
         {
             "assetId": 0,
@@ -11,11 +11,11 @@
     ],
     "nodes": [
         {
-            "url": "wss://rpc-0.taurus.subspace.network/ws",
+            "url": "wss://auto-evm.chronos.autonomys.xyz/ws",
             "name": "Labs 1"
         },
         {
-            "url": "wss://rpc-1.taurus.subspace.network/ws",
+            "url": "wss://auto-evm-1.chronos.autonomys.xyz/ws",
             "name": "Labs 2"
         }
     ],
