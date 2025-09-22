@@ -4,7 +4,7 @@
 
 # Python environment
 PYTHON := python
-PYTHON_VERSION := 3.11
+PYTHON_VERSION := 3.10
 VENV ?= .venv
 
 # Test configuration
