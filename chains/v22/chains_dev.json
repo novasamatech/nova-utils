@@ -5777,6 +5777,74 @@
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 65,
+                "symbol": "HOLLAR",
+                "precision": 18,
+                "priceId": "tether",
+                "type": "orml-hydration-evm",
+                "icon": "HOLLAR.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0xde000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 66,
+                "symbol": "aUSDT",
+                "precision": 6,
+                "priceId": "tether",
+                "type": "orml-hydration-evm",
+                "icon": "USDT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0xea030000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "22409",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 67,
+                "symbol": "aUSDC",
+                "precision": 6,
+                "priceId": "usd-coin",
+                "type": "orml-hydration-evm",
+                "icon": "USDC.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0xeb030000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "22409",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 68,
+                "symbol": "2-Pool-HUSDC",
+                "precision": 18,
+                "type": "orml",
+                "icon": "2-Pool-HUSDC.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x6e000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 69,
+                "symbol": "2-Pool-HUSDT",
+                "precision": 18,
+                "type": "orml",
+                "icon": "2-Pool-HUSDT.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x6f000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
@@ -11840,7 +11908,7 @@
         }
     },
     {
-        "chainId": "745c87ea13f2de6792e41bf885c3720bdf2727c6e04cfc0cb38b06b51de68d69",
+        "chainId": "4de660c7530d0f46968b5a243d10092ca9a55e3575fc5d83b91e24c20d994502",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
         "name": "Lark Hydration (TESTNET)",
         "assets": [
