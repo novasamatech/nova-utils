@@ -1061,21 +1061,23 @@ test = ["eth-hash[pycryptodome]", "pytest (>=7.0.0)", "pytest-xdist (>=2.4.0)"]
 
 [[package]]
 name = "eth-typing"
-version = "3.0.0"
+version = "5.2.1"
 description = "eth-typing: Common type annotations for ethereum python packages"
 optional = false
-python-versions = ">=3.6, <3.11"
+python-versions = "<4,>=3.8"
 groups = ["main"]
 files = [
-    {file = "eth-typing-3.0.0.tar.gz", hash = "sha256:079e4c41e98cf2635d3830a99f3cbd7b1d73d2368464d4493c002bece545184a"},
-    {file = "eth_typing-3.0.0-py3-none-any.whl", hash = "sha256:fb96f5eaa844b8be7727d590a54a952a42e5021426f98074b06b23ae43de5867"},
+    {file = "eth_typing-5.2.1-py3-none-any.whl", hash = "sha256:b0c2812ff978267563b80e9d701f487dd926f1d376d674f3b535cfe28b665d3d"},
+    {file = "eth_typing-5.2.1.tar.gz", hash = "sha256:7557300dbf02a93c70fa44af352b5c4a58f94e997a0fd6797fb7d1c29d9538ee"},
 ]
 
+[package.dependencies]
+typing_extensions = ">=4.5.0"
+
 [package.extras]
-dev = ["Sphinx (>=1.6.5,<2)", "bumpversion (>=0.5.3,<1)", "flake8 (==3.8.3)", "ipython", "isort (>=4.2.15,<5)", "mypy (==0.782)", "pydocstyle (>=3.0.0,<4)", "pytest (>=6.2.5,<7)", "pytest-watch (>=4.1.0,<5)", "pytest-xdist", "sphinx-rtd-theme (>=0.1.9)", "tox (>=2.9.1,<3)", "twine", "wheel"]
-doc = ["Sphinx (>=1.6.5,<2)", "sphinx-rtd-theme (>=0.1.9)"]
-lint = ["flake8 (==3.8.3)", "isort (>=4.2.15,<5)", "mypy (==0.782)", "pydocstyle (>=3.0.0,<4)"]
-test = ["pytest (>=6.2.5,<7)", "pytest-xdist", "tox (>=2.9.1,<3)"]
+dev = ["build (>=0.9.0)", "bump_my_version (>=0.19.0)", "ipython", "mypy (==1.10.0)", "pre-commit (>=3.4.0)", "pytest (>=7.0.0)", "pytest-xdist (>=2.4.0)", "sphinx (>=6.0.0)", "sphinx-autobuild (>=2021.3.14)", "sphinx_rtd_theme (>=1.0.0)", "towncrier (>=24,<25)", "tox (>=4.0.0)", "twine", "wheel"]
+docs = ["sphinx (>=6.0.0)", "sphinx-autobuild (>=2021.3.14)", "sphinx_rtd_theme (>=1.0.0)", "towncrier (>=24,<25)"]
+test = ["pytest (>=7.0.0)", "pytest-xdist (>=2.4.0)"]
 
 [[package]]
 name = "eth-utils"
@@ -3797,4 +3799,4 @@ propcache = ">=0.2.1"
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10,<3.11"
-content-hash = "e2657118cb8b63fbb363e82e58df13b2929915018c4028e6e6800ddadfb4d0fe"
+content-hash = "7215c9b7794f166a3954fefa38b4993f960de7109836538ac6af9e9e2091bfa0"
