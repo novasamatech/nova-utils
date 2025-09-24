@@ -1,8 +1,8 @@
 name: Check and update legacyAddressPrefix
 
 on:
-  pull_request:
-  workflow_dispatch:
+  schedule:
+    - cron: '0 9 * * *'
 
 
 permissions:
