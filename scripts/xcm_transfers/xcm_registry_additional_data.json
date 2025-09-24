@@ -4,223 +4,255 @@
         "runtimePrefix": "polkadot_runtime",
         "name": "Polkadot",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
     },
     "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d": {
         "parachainId": 2004,
         "runtimePrefix": "moonbeam_runtime",
         "name": "Moonbeam",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
     },
     "9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6": {
         "parachainId": 2006,
         "runtimePrefix": "astar_runtime",
         "name": "Astar",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
     },
     "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f": {
         "parachainId": 1000,
         "runtimePrefix": "asset_hub_polkadot_runtime",
         "name": "Polkadot Asset Hub",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
     },
     "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d": {
         "parachainId": 2034,
         "runtimePrefix": "hydradx_runtime",
         "name": "Hydration",
         "dryRunVersion": 1,
-        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome",
+        "hasXcmPaymentApi": true
     },
     "262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b": {
         "parachainId": 2030,
         "runtimePrefix": "bifrost_polkadot_runtime",
         "name": "Bifrost Polkadot",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
     },
     "f0b8924b12e8108550d28870bc03f7b45a947e1b2b9abf81bfb0b89ecb60570e": {
         "parachainId": 2046,
         "runtimePrefix": "darwinia_runtime",
         "name": "Darwinia",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome",
+        "hasXcmPaymentApi": true
     },
     "dcf691b5a3fbe24adc99ddc959c0561b973e329b1aef4c4b22e7bb2ddecb4464": {
         "parachainId": 1002,
         "runtimePrefix": "bridge_hub_polkadot_runtime",
         "name": "Polkadot Bridge Hub",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
     },
     "46ee89aa2eedd13e988962630ec9fb7565964cf5023bb351f2b6b25c1b68b0b2": {
         "parachainId": 1001,
         "runtimePrefix": "collectives_polkadot_runtime",
         "name": "Polkadot Collectives",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
     },
     "67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008": {
         "parachainId": 1004,
         "runtimePrefix": "people_polkadot_runtime",
         "name": "Polkadot People",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
     },
     "7eb9354488318e7549c722669dcbdcdc526f1fef1420e7944667212f3601fdbd": {
         "parachainId": 3344,
         "runtimePrefix": "polimec_runtime",
         "name": "Polimec",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
     },
     "f6ee56e9c5277df5b4ce6ae9983ee88f3cbed27d31beeb98f9f84f997a1ab0b9": {
         "parachainId": 3369,
         "runtimePrefix": "mainnet_runtime",
         "name": "Mythos",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": false
     },
     "e8aecc950e82f1a375cf650fa72d07e0ad9bef7118f49b92283b63e88b1de88b": {
         "parachainId": 3370,
         "runtimePrefix": "laos_runtime",
         "name": "Laos",
         "dryRunVersion": 1,
-        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome",
+        "hasXcmPaymentApi": true
     },
     "bb9233e202ec014707f82ddb90e84ee9efece8fefee287ad4ad646d869a6c24a": {
         "parachainId": 3397,
         "runtimePrefix": "jamton_parachain_runtime",
         "name": "JAMTON",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome",
+        "hasXcmPaymentApi": true
     },
     "efb56e30d9b4a24099f88820987d0f45fb645992416535d87650d98e00f46fc4": {
         "parachainId": 1005,
         "runtimePrefix": "coretime_polkadot_runtime",
         "name": "Polkadot Coretime",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
     },
     "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe": {
         "parachainId": null,
         "runtimePrefix": "staging_kusama_runtime",
         "name": "Kusama",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
     },
     "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a": {
         "parachainId": 1000,
         "runtimePrefix": "asset_hub_kusama_runtime",
         "name": "Kusama Asset Hub",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
     },
     "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b": {
         "parachainId": 2023,
         "runtimePrefix": "moonriver_runtime",
         "name": "Moonriver",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
     },
     "f1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108": {
         "parachainId": 2007,
         "runtimePrefix": "shiden_runtime",
         "name": "Shiden",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
     },
     "9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed": {
         "parachainId": 2001,
         "runtimePrefix": "bifrost_kusama_runtime",
         "name": "Bifrost Kusama",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
     },
     "a85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755": {
         "parachainId": 2090,
         "runtimePrefix": "basilisk_runtime",
         "name": "Basilisk",
         "dryRunVersion": 1,
-        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome",
+        "hasXcmPaymentApi": true
     },
     "7dd99936c1e9e6d1ce7d90eb6f33bea8393b4bf87677d675aa63c9cb3e8c5b5b": {
         "parachainId": 1001,
         "runtimePrefix": "encointer_kusama_runtime",
         "name": "Encointer",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
     },
     "cdedc8eadbfa209d3f207bba541e57c3c58a667b05a2e1d1e86353c9000758da": {
         "parachainId": 2015,
         "runtimePrefix": "integritee_kusama_runtime",
         "name": "Integritee Parachain",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
     },
     "86e49c195aeae7c5c4a86ced251f1a28c67b3c35d8289c387ede1776cdd88b24": {
         "parachainId": 2105,
         "runtimePrefix": "crab_runtime",
         "name": "Crab",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome",
+        "hasXcmPaymentApi": true
     },
     "00dcb981df86429de8bbacf9803401f09485366c44efbf53af9ecfab03adc7e5": {
         "parachainId": 1002,
         "runtimePrefix": "bridge_hub_kusama_runtime",
         "name": "Kusama Bridge Hub",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
     },
     "c1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f": {
         "parachainId": 1004,
         "runtimePrefix": "people_kusama_runtime",
         "name": "Kusama People",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
     },
     "638cd2b9af4b3bb54b8c1f0d22711fc89924ca93300f0caf25a580432b29d050": {
         "parachainId": 1005,
         "runtimePrefix": "coretime_kusama_runtime",
         "name": "Kusama Coretime",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
     },
     "e143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e": {
         "parachainId": null,
         "runtimePrefix": "westend_runtime",
         "name": "Westend",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
     },
     "67f9723393ef76214df0118c34bbbd3dbebc8ed46a10973a8c969d48fe7598c9": {
         "parachainId": 1000,
         "runtimePrefix": "asset_hub_westend_runtime",
         "name": "Westend Asset Hub (TESTNET)",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
     },
     "0441383e31d1266a92b4cb2ddd4c2e3661ac476996db7e5844c52433b81fe782": {
         "parachainId": 1002,
         "runtimePrefix": "bridge_hub_westend_runtime",
         "name": "Westend Bridge Hub",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
     },
     "1eb6fb0ba5187434de017a70cb84d4f47142df1d571d0ef9e7e1407f2b80b93c": {
         "parachainId": 1004,
         "runtimePrefix": "people_westend_runtime",
         "name": "Westend People",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
     },
     "713daf193a6301583ff467be736da27ef0a72711b248927ba413f573d2b38e44": {
         "parachainId": 1001,
         "runtimePrefix": "collectives_westend_runtime",
         "name": "Westend Collectives",
         "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome"
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
     }
 }

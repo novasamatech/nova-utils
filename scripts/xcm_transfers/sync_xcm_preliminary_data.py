@@ -56,6 +56,24 @@ def determine_dry_run_version(substrate: SubstrateInterface, runtime_prefix: str
 
             return None
 
+def determine_xcm_payment_api_presence(substrate: SubstrateInterface) -> bool:
+    try:
+        # TODO we should migrate to inspecting v15 metadata which is ready at
+        # https://github.com/polkascan/py-substrate-interface/pull/358/files
+        # probably by forking the py-substrate-interface
+        substrate.rpc_request(method="state_call", params=["XcmPaymentApi_query_xcm_weight", "0x00"])
+
+        return True
+    except SubstrateRequestException as e:
+        error_message = e.args[0]["message"]
+
+        if "XcmPaymentApi_query_xcm_weight is not found" in error_message:
+            return False
+        # Dry run v2 has additional argument so it will result in a trap
+        else:
+            return True
+
+
 def construct_v1_dry_run_method_data(substrate: SubstrateInterface, runtime_prefix: str)-> str:
     origin_caller = substrate.encode_scale(f"{runtime_prefix}::OriginCaller", {"system": "Root"})
     call = substrate.compose_call(
@@ -96,6 +114,9 @@ def process_chain(idx, chain, len):
     if chain_dry_run_api_version is None:
         return
 
+    xcm_payment_api_presence = determine_xcm_payment_api_presence(chain.substrate)
+    print(f"{chain.name} xcm payment api presence: {xcm_payment_api_presence}")
+
     parachainId = None
 
     if chain.parentId is not None:
@@ -110,7 +131,8 @@ def process_chain(idx, chain, len):
         "runtimePrefix": runtime_prefix,
         "name": chain.name,
         "dryRunVersion": chain_dry_run_api_version,
-        "xcmOutcomeType": xcm_outcome_type
+        "xcmOutcomeType": xcm_outcome_type,
+        "hasXcmPaymentApi": xcm_payment_api_presence
     }
     data[chain.chainId] = parachain_info
 

@@ -119,7 +119,8 @@ def build_all_xcm_capable_chains(files: XCMConfigFiles) -> List[XcmChain]:
         chain = Chain(chain_config, type_registry)
 
         parachain_id = additional_xcm_chain_data["parachainId"]
-        xcm_chain = XcmChain(chain, parachain_id)
+        supports_xcm_payment_api = additional_xcm_chain_data["hasXcmPaymentApi"]
+        xcm_chain = XcmChain(chain, parachain_id, supports_xcm_payment_api)
         result.append(xcm_chain)
 
     return result
