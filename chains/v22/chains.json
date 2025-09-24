@@ -8745,7 +8745,10 @@
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Hyperbridge_Nexus.svg",
         "addressPrefix": 0,
-        "legacyAddressPrefix": 42
+        "legacyAddressPrefix": 42,
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "chainId": "81443836a9a24caaa23f1241897d1235717535711d1d3fe24eae4fdc942c092c",
