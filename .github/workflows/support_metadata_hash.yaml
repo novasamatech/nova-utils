@@ -3,6 +3,7 @@ name: Update support metadata hash
 on:
   schedule:
     - cron: '0 0,12 * * *'
+  workflow_dispatch:
 
 jobs:
   update-networks:
