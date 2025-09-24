@@ -3,8 +3,7 @@ from __future__ import annotations
 from collections import defaultdict
 from typing import List, Callable
 
-from typing import NewType
-ChainId = NewType('ChainId', int)
+from eth_typing import ChainId
 
 from scripts.utils.chain_model import Chain, ChainAssetId, ChainAsset
 from scripts.xcm_transfers.xcm.registry import TrustedTeleporters
