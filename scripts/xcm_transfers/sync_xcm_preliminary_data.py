@@ -69,7 +69,6 @@ def determine_xcm_payment_api_presence(substrate: SubstrateInterface) -> bool:
 
         if "XcmPaymentApi_query_xcm_weight is not found" in error_message:
             return False
-        # Dry run v2 has additional argument so it will result in a trap
         else:
             return True
 
