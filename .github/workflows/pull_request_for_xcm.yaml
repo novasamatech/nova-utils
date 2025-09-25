@@ -1,11 +1,8 @@
 name: Check pull requests
 
 on:
-  pull_request:
-    paths:
-      - 'xcm/**'
-  pull_request_target:
-    types: [labeled]
+ pull_request:
+ workflow_dispatch:
 
 env:
   BODY_FILE: body_file.txt
