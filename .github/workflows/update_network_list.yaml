@@ -1,8 +1,10 @@
 name: Update project metadata
 
 on:
- pull_request:
- workflow_dispatch:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
 
 permissions:
   pull-requests: write
