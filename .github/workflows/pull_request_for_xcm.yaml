@@ -25,6 +25,11 @@ jobs:
       - name: 🛠 Set up actual paths
         uses: ./.github/workflows/setup-path
 
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
       - name: Was transfers.json changed?
         id: prod
         uses: tj-actions/changed-files@v18.2

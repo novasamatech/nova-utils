@@ -1,8 +1,7 @@
 name: Update xcm coefficients
 
 on:
-  schedule:
-    - cron: '0 */6 * * *' # every 6 hours
+  pull_request:
   workflow_dispatch:
 
 permissions:
