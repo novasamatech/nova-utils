@@ -19,13 +19,17 @@ class XcmChain:
     chain: Chain
     parachain_id: Optional[ParachainId]
 
+    supports_xcm_payment_api: bool
+
     def __init__(
             self,
             chain: Chain,
             parachain_id: Optional[ParachainId],
+            supports_xcm_payment_api: bool
     ):
         self.chain = chain
         self.parachain_id = parachain_id
+        self.supports_xcm_payment_api = supports_xcm_payment_api
 
     def access_substrate(self, action: Callable[[SubstrateInterface], T]) -> T:
         return self.chain.access_substrate(action)

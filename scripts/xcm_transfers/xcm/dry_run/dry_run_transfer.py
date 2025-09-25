@@ -169,6 +169,11 @@ def _check_origin_call_weight(
 
 @functools.cache
 def _detect_supports_xcm_execute(xcm_chain: XcmChain) -> bool:
+    # Xcm payment api is needed for clients to properly construct xcm program
+    if not xcm_chain.supports_xcm_payment_api:
+        debug_log(f"{xcm_chain.chain.name} does not support xcm payment API")
+        return False
+
     dry_run_result: dict
 
     try:
