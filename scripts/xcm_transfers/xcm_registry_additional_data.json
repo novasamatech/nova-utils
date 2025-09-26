@@ -2,7 +2,7 @@
     "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3": {
         "parachainId": null,
         "runtimePrefix": "polkadot_runtime",
-        "name": "Polkadot",
+        "name": "Polkadot Relay",
         "dryRunVersion": 2,
         "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
         "hasXcmPaymentApi": true
@@ -43,6 +43,14 @@
         "parachainId": 2030,
         "runtimePrefix": "bifrost_polkadot_runtime",
         "name": "Bifrost Polkadot",
+        "dryRunVersion": 2,
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
+    },
+    "e358eb1d11b31255a286c12e44fe6780b7edb171d657905a97e39f71d9c6c3ee": {
+        "parachainId": 2051,
+        "runtimePrefix": "ajuna_runtime",
+        "name": "Ajuna",
         "dryRunVersion": 2,
         "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
         "hasXcmPaymentApi": true
@@ -119,10 +127,18 @@
         "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
         "hasXcmPaymentApi": true
     },
+    "4de660c7530d0f46968b5a243d10092ca9a55e3575fc5d83b91e24c20d994502": {
+        "parachainId": 2034,
+        "runtimePrefix": "hydradx_runtime",
+        "name": "Lark Hydration (TESTNET)",
+        "dryRunVersion": 1,
+        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome",
+        "hasXcmPaymentApi": true
+    },
     "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe": {
         "parachainId": null,
         "runtimePrefix": "staging_kusama_runtime",
-        "name": "Kusama",
+        "name": "Kusama Relay",
         "dryRunVersion": 2,
         "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
         "hasXcmPaymentApi": true
