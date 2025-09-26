@@ -2355,29 +2355,6 @@
               "type": "xcmpallet"
             }
           ]
-        },
-        {
-          "assetId": 15,
-          "assetLocation": "MYTH",
-          "assetLocationPath": {
-            "type": "absolute"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "f6ee56e9c5277df5b4ce6ae9983ee88f3cbed27d31beeb98f9f84f997a1ab0b9",
-                "assetId": 0,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "573439999999999737856"
-                  },
-                  "instructions": "xcmPalletTeleportDest"
-                }
-              },
-              "type": "xcmpallet-teleport"
-            }
-          ]
         }
       ]
     },
