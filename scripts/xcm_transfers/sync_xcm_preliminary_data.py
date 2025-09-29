@@ -106,8 +106,9 @@ def process_chain(idx, chain, len):
             print(f"Failed to fetch ParachainId for {chain.name} due to {e}, skipping")
             return
 
-    general_xcm_config_data[chain.chainId] = parachainId
-    write_general_xcm_config()
+    if parachainId is not None:
+        general_xcm_config_data[chain.chainId] = parachainId
+        write_general_xcm_config()
 
     try:
         runtime_prefix = get_runtime_prefix(chain.substrate)
