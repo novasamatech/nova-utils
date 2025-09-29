@@ -40,7 +40,7 @@ def process_chain(idx, chain, len):
 def save_synced_data():
     general_config["chains"]["parachainIds"] = data
 
-    write_data_to_file(config_files.general_config, json.dumps(general_config, indent=4))
+    write_data_to_file(config_files.general_config, json.dumps(general_config, indent=2))
 
 
 def find_xcm_chains(chains: List[Chain], relay_ids: list[str] = RELAYS) -> List[Chain]:
