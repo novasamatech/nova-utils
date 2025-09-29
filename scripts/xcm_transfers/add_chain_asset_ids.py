@@ -11,10 +11,10 @@ chains = [Chain(it) for it in chains_file]
 chains_by_id = {chain.chainId:chain for chain in chains}
 
 general_config = get_data_from_file(config_files.general_config)
-asset_locations_config = general_config["assets"]["assetLocations"]
+asset_locations_config = general_config["assets"]["assetsLocation"]
 
-for (reserve_id, asset_config) in asset_locations_config.entries():
-    normalized = ChainAsset.unify_symbol(reserve_id)
+for (reserve_id, asset_config) in asset_locations_config.items():
+    normalized = ChainAsset.unify_symbol(reserve_id).removesuffix("-Statemine").removesuffix("-Westmint").removesuffix("-Polkadot").removesuffix("-Statemint")
     chain = chains_by_id[asset_config["chainId"]]
     asset = chain.get_asset_by_symbol_or_null(normalized)
 

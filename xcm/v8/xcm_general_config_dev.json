@@ -78,58 +78,69 @@
                 "multiLocation": {
                     "parachainId": 2000,
                     "generalKey": "0x0080"
-                }
+                },
+                "assetId": 0
             },
             "KSM": {
                 "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-                "multiLocation": {}
+                "multiLocation": {},
+                "assetId": 0
             },
             "KSM-Statemine": {
                 "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
-                "multiLocation": {}
+                "multiLocation": {},
+                "assetId": 0
             },
             "DOT-Statemint": {
                 "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
-                "multiLocation": {}
+                "multiLocation": {},
+                "assetId": 0
             },
             "MOVR": {
                 "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
                 "multiLocation": {
                     "parachainId": 2023,
                     "palletInstance": 10
-                }
+                },
+                "assetId": 0
             },
             "BNC": {
                 "chainId": "9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed",
                 "multiLocation": {
                     "parachainId": 2001,
                     "generalKey": "0x0001"
-                }
+                },
+                "assetId": 0
             },
             "UNIT": {
                 "chainId": "e1ea3ab1d46ba8f4898b6b4b9c54ffc05282d299f89e84bd0fd08067758c9443",
-                "multiLocation": {}
+                "multiLocation": {},
+                "assetId": 0
             },
             "ACA": {
                 "chainId": "fc41b9bd8ef8fe53d58c7ea67c794c7ec9a73daf05e6d54b14ff6342c99ba64c",
                 "multiLocation": {
                     "parachainId": 2000,
                     "generalKey": "0x0000"
-                }
+                },
+                "assetId": 0
             },
             "DOT": {
                 "chainId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-                "multiLocation": {}
+                "multiLocation": {},
+                "assetId": 0
             },
             "GLMR": {
                 "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
                 "multiLocation": {
                     "parachainId": 2004,
                     "palletInstance": 10
-                }
+                },
+                "assetId": 0
             },
             "RMRK": {
                 "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
+                "assetId": 1,
                 "multiLocation": {
                     "parachainId": 1000,
                     "palletInstance": 50,
@@ -141,57 +152,58 @@
                 "multiLocation": {
                     "parachainId": 2092,
                     "generalKey": "0x000c"
-                }
-            },
-            "HKO": {
-                "chainId": "64a1c658a48b2e70a7fb1ad4c39eea35022568c20fc44a6e2e3d0a57aee6053b",
-                "multiLocation": {
-                    "parachainId": 2085,
-                    "generalKey": "0x484b4f"
-                }
+                },
+                "assetId": 0
             },
             "PARA": {
                 "chainId": "e61a41c53f5dcd0beb09df93b34402aada44cb05117b71059cce40a2723a4e97",
                 "multiLocation": {
                     "parachainId": 2012,
                     "generalKey": "0x50415241"
-                }
+                },
+                "assetId": 0
             },
             "INTR": {
                 "chainId": "bf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72",
                 "multiLocation": {
                     "parachainId": 2032,
                     "generalKey": "0x0002"
-                }
+                },
+                "assetId": 0
             },
             "iBTC": {
                 "chainId": "bf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72",
                 "multiLocation": {
                     "parachainId": 2032,
                     "generalKey": "0x0001"
-                }
+                },
+                "assetId": 1
             },
             "kBTC": {
                 "chainId": "9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
                 "multiLocation": {
                     "parachainId": 2092,
                     "generalKey": "0x000b"
-                }
+                },
+                "assetId": 1
             },
             "BSX": {
                 "chainId": "a85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755",
                 "multiLocation": {
                     "parachainId": 2090,
                     "generalIndex": "0"
-                }
+                },
+                "assetId": 0
             },
             "WND": {
                 "chainId": "e143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e",
-                "multiLocation": {}
+                "multiLocation": {},
+                "assetId": 0
             },
             "WND-Westmint": {
                 "chainId": "67f9723393ef76214df0118c34bbbd3dbebc8ed46a10973a8c969d48fe7598c9",
-                "multiLocation": {}
+                "multiLocation": {},
+                "assetId": 0
             },
             "USDT-Statemine": {
                 "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
@@ -199,7 +211,8 @@
                     "parachainId": 1000,
                     "palletInstance": 50,
                     "generalIndex": "1984"
-                }
+                },
+                "assetId": 7
             },
             "USDT-Statemint": {
                 "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
@@ -207,32 +220,37 @@
                     "parachainId": 1000,
                     "palletInstance": 50,
                     "generalIndex": "1984"
-                }
+                },
+                "assetId": 1
             },
             "XRT": {
                 "chainId": "631ccc82a078481584041656af292834e1ae6daab61d2875b4dd0c14bb9b17bc",
                 "multiLocation": {
                     "parachainId": 2048
-                }
+                },
+                "assetId": 0
             },
             "ASTR": {
                 "chainId": "9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6",
                 "multiLocation": {
                     "parachainId": 2006
-                }
+                },
+                "assetId": 0
             },
             "SDN": {
                 "chainId": "f1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
                 "multiLocation": {
                     "parachainId": 2007
-                }
+                },
+                "assetId": 0
             },
             "CFG": {
                 "chainId": "b3db41421702df9a7fcac62b53ffeac85f7853cc4e689e0b93aeb3db18c09d82",
                 "multiLocation": {
                     "parachainId": 2031,
                     "generalKey": "0x0001"
-                }
+                },
+                "assetId": 0
             },
             "USDC-Statemint": {
                 "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
@@ -240,33 +258,38 @@
                     "parachainId": 1000,
                     "palletInstance": 50,
                     "generalIndex": "1337"
-                }
+                },
+                "assetId": 2
             },
             "BNC-Polkadot": {
                 "chainId": "262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b",
                 "multiLocation": {
                     "parachainId": 2030,
                     "generalKey": "0x0001"
-                }
+                },
+                "assetId": 0
             },
             "vDOT": {
                 "chainId": "262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b",
                 "multiLocation": {
                     "parachainId": 2030,
                     "generalKey": "0x0900"
-                }
+                },
+                "assetId": 5
             },
             "SUB": {
                 "chainId": "4a12be580bb959937a1c7a61d5cf24428ed67fa571974b4007645d1886e7c89f",
                 "multiLocation": {
                     "parachainId": 2101
-                }
+                },
+                "assetId": 0
             },
             "MANTA": {
                 "chainId": "f3c7ad88f6a80f366c4be216691411ef0622e8b809b1046ea297ef106058d4eb",
                 "multiLocation": {
                     "parachainId": 2104
-                }
+                },
+                "assetId": 0
             },
             "DED-Statemint": {
                 "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
@@ -274,33 +297,38 @@
                     "parachainId": 1000,
                     "palletInstance": 50,
                     "generalIndex": "30"
-                }
+                },
+                "assetId": 3
             },
             "KILT": {
                 "chainId": "411f057b9107718c9624d6aa4a3f23c1653898297f3d4d529d9bb6511a39dd21",
                 "multiLocation": {
                     "parachainId": 2086
-                }
+                },
+                "assetId": 0
             },
             "MYTH": {
                 "chainId": "f6ee56e9c5277df5b4ce6ae9983ee88f3cbed27d31beeb98f9f84f997a1ab0b9",
                 "multiLocation": {
                     "parachainId": 3369
-                }
+                },
+                "assetId": 0
             },
             "NODL": {
                 "chainId": "97da7ede98d7bad4e36b4d734b6055425a3be036da2a332ea5a7037656427a21",
                 "multiLocation": {
                     "parachainId": 2026,
                     "palletInstance": 2
-                }
+                },
+                "assetId": 0
             },
             "AJUN": {
                 "chainId": "e358eb1d11b31255a286c12e44fe6780b7edb171d657905a97e39f71d9c6c3ee",
                 "multiLocation": {
                     "parachainId": 2051,
                     "generalKey": "0x414a554e"
-                }
+                },
+                "assetId": 0
             }
         },
         "reserveIdOverrides": {
