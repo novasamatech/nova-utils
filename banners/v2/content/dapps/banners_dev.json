@@ -1,5 +1,12 @@
 [
     {
+       "id": "d93d9f00-babc-4a8d-80ef-0658bcd86a3d",
+       "background": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/banners/v2/resources/backgrounds/ksm_migration_banner_background.png",
+       "image": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/banners/v2/resources/images/ksm_migration_banner_picture.png",
+       "clipsToBounds": false,
+       "action": "novawallet://nova/open/ahm?chainId=e143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e"
+    },
+    {
        "id": "0d2f8e1d-017d-4b07-aba6-ea2012354de0",
        "background": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/banners/v2/resources/backgrounds/blue_promo_banner_background.png",
        "image": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/banners/v2/resources/images/browser_promo_banner_picture.png",
@@ -7,11 +14,11 @@
        "action": "https://docs.novawallet.io/nova-wallet-wiki/dapps/dapp-catalog"
     },
     {
-      "id": "3a88f7de-8ef4-43b9-a87c-064124882f62",
-      "background": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/banners/v2/resources/backgrounds/novashots_promo_banner_background.png",
-      "image": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/banners/v2/resources/images/novashots_promo_banner_picture.png",
-      "clipsToBounds": false,
-      "action": "novawallet://nova/open/dapp?url=https://novashots.io"
+       "id": "3a88f7de-8ef4-43b9-a87c-064124882f62",
+       "background": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/banners/v2/resources/backgrounds/novashots_promo_banner_background.png",
+       "image": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/banners/v2/resources/images/novashots_promo_banner_picture.png",
+       "clipsToBounds": false,
+       "action": "novawallet://nova/open/dapp?url=https://novashots.io"
     },
     {
        "id": "88788788-cf90-4171-9514-9d7474d5c765",
