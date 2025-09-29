@@ -16,6 +16,7 @@ def get_xcm_config_files() -> XCMConfigFiles:
             xcm_stable_legacy_config=f"xcm/v6/transfers.json",
             xcm_additional_data="scripts/xcm_transfers/xcm_registry_additional_data.json",
             xcm_dynamic_config=f"xcm/{XCM_VERSION}/transfers_dynamic.json",
+            general_config=f"../../xcm/{XCM_VERSION}/xcm_general_config.json",
         )
     else:
         print("Running in development mode")
@@ -25,4 +26,5 @@ def get_xcm_config_files() -> XCMConfigFiles:
             xcm_stable_legacy_config=f"xcm/v6/transfers_dev.json",
             xcm_additional_data="scripts/xcm_transfers/xcm_registry_additional_data.json",
             xcm_dynamic_config=f"xcm/{XCM_VERSION}/transfers_dynamic_dev.json",
+            general_config=f"../../xcm/{XCM_VERSION}/xcm_general_config_dev.json",
         )
