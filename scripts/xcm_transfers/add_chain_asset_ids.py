@@ -23,4 +23,4 @@ for (reserve_id, asset_config) in asset_locations_config.items():
     else:
         asset_config["assetId"] = asset.id
 
-write_data_to_file(config_files.general_config, json.dumps(general_config, indent=4))
+write_data_to_file(config_files.general_config, json.dumps(general_config, indent=2))
