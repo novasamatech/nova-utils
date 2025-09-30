@@ -7287,6 +7287,14 @@
                 "name": "IBP-GeoDNS2"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-paseo-stg.novasama-tech.org"
+                }
+            ]
+        },
         "explorers": [
             {
                 "name": "Subscan",
