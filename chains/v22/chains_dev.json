@@ -7270,7 +7270,7 @@
     },
     {
         "chainId": "77afd6190f1554ad45fd0d31aee62aacc33c6db0ea801129acb813f913e0764f",
-        "name": "Paseo Testnet",
+        "name": "Paseo Relay Testnet",
         "assets": [
             {
                 "assetId": 0,
@@ -7293,11 +7293,25 @@
                 "name": "IBP-GeoDNS2"
             }
         ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-paseo-stg.novasama-tech.org"
+                }
+            ]
+        },
         "explorers": [
             {
                 "name": "Subscan",
                 "account": "https://paseo.subscan.io/account/{address}",
                 "extrinsic": "https://paseo.subscan.io/extrinsic/{hash}"
+            },
+            {
+                "name": "Statescan",
+                "account": "https://paseo.statescan.io/#/accounts/{address}",
+                "extrinsic": "https://paseo.statescan.io/#/extrinsics/{hash}",
+                "event": "https://paseo.statescan.io/#/events/{event}"
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Paseo_Testnet.svg",
@@ -7311,6 +7325,72 @@
             "supportsGenericLedgerApp": true
         },
         "legacyAddressPrefix": 42
+    },
+    {
+        "chainId": "d6eec26135305a8ad257a20d003357284c8aa03d0bdb2b357ab0a22371e11ef2",
+        "parentId": "77afd6190f1554ad45fd0d31aee62aacc33c6db0ea801129acb813f913e0764f",
+        "name": "Paseo Asset Hub (TESTNET)",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "PAS",
+                "precision": 10,
+                "icon": "PAS.svg",
+                "staking": [
+                    "relaychain",
+                    "nomination-pools"
+                ]
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://asset-hub-paseo-rpc.n.dwellir.com",
+                "name": "Dwellir"
+            },
+            {
+                "url": "wss://sys.ibp.network/asset-hub-paseo",
+                "name": "IBP1"
+            },
+            {
+                "url": "wss://asset-hub-paseo.dotters.network",
+                "name": "IBP2"
+            },
+            {
+                "url": "wss://pas-rpc.stakeworld.io/assethub",
+                "name": "StakeWorld"
+            },
+            {
+                "url": "wss://sys.turboflakes.io/asset-hub-paseo",
+                "name": "TurboFlakes"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://assethub-paseo.subscan.io/extrinsic/{hash}",
+                "account": "https://assethub-paseo.subscan.io/account/{address}"
+            },
+            {
+                "name": "Statescan",
+                "account": "https://assethub-paseo.statescan.io/#/accounts/{address}",
+                "extrinsic": "https://assethub-paseo.statescan.io/#/extrinsics/{hash}",
+                "event": "https://assethub-paseo.statescan.io/#/events/{event}"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Paseo_Testnet.svg",
+        "addressPrefix": 0,
+        "options": [
+            "testnet",
+            "swap-hub",
+            "proxy",
+            "governance"
+        ],
+        "additional": {
+            "relaychainAsNative": true,
+            "feeViaRuntimeCall": true,
+            "supportsGenericLedgerApp": true,
+            "timelineChain": "77afd6190f1554ad45fd0d31aee62aacc33c6db0ea801129acb813f913e0764f"
+        }
     },
     {
         "chainId": "6408de7737c59c238890533af25896a2c20608d8b380bb01029acb392781063e",
