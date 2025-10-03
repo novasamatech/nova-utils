@@ -98,6 +98,12 @@
                     "url": "https://subquery-history-polkadot-prod.novasama-tech.org"
                 }
             ],
+            "staking-rewards": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-polkadot-prod.novasama-tech.org"
+                }
+            ],
             "history": [
                 {
                     "type": "subquery",
@@ -247,6 +253,12 @@
                     "url": "https://subquery-history-kusama-prod.novasama-tech.org"
                 }
             ],
+            "staking-rewards": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-kusama-prod.novasama-tech.org"
+                }
+            ],
             "history": [
                 {
                     "type": "subquery",
@@ -346,6 +358,12 @@
         "addressPrefix": 42,
         "externalApi": {
             "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-westend-prod.novasama-tech.org/"
+                }
+            ],
+            "staking-rewards": [
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-westend-prod.novasama-tech.org/"
@@ -5953,6 +5971,12 @@
                     "url": "https://subquery-history-aleph-zero-prod.novasama-tech.org"
                 }
             ],
+            "staking-rewards": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-aleph-zero-prod.novasama-tech.org"
+                }
+            ],
             "multisig": [
                 {
                     "type": "subquery",
@@ -6091,6 +6115,12 @@
         ],
         "externalApi": {
             "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-polkadex-prod.novasama-tech.org"
+                }
+            ],
+            "staking-rewards": [
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-polkadex-prod.novasama-tech.org"
@@ -6855,6 +6885,12 @@
         ],
         "externalApi": {
             "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-ternoa-prod.novasama-tech.org"
+                }
+            ],
+             "staking-rewards": [
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-ternoa-prod.novasama-tech.org"
@@ -7750,6 +7786,12 @@
                 }
             ],
             "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-vara-prod.novasama-tech.org"
+                }
+            ],
+             "staking-rewards": [
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-vara-prod.novasama-tech.org"
@@ -8825,6 +8867,12 @@
         },
         "externalApi": {
             "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-avail-prod.novasama-tech.org"
+                }
+            ],
+            "staking-rewards": [
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-avail-prod.novasama-tech.org"
