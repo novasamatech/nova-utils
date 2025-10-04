@@ -99,6 +99,9 @@ class Chain:
     def get_asset_by_symbol(self, symbol: str) -> ChainAsset:
         return next((a for a in self.assets if a.symbol == symbol))
 
+    def get_asset_by_symbol_or_null(self, symbol: str) -> ChainAsset | None:
+        return next((a for a in self.assets if a.symbol == symbol), None)
+
     def get_asset_by_id(self, id: int) -> ChainAsset:
         return next((a for a in self.assets if a.id == id))
 
@@ -160,8 +163,12 @@ class ChainAsset:
     def __getitem__(self, item):
         return self._data[item]
 
+    @staticmethod
+    def unify_symbol(symbol: str) -> str:
+        return symbol.removeprefix("xc")
+
     def unified_symbol(self) -> str:
-        return self.symbol.removeprefix("xc")
+        return self.unify_symbol(self.symbol)
 
     def planks(self, amount: int | float) -> int:
         return int(amount * 10 ** self.precision)
