@@ -9,7 +9,7 @@ from substrateinterface import SubstrateInterface
 
 from .metadata_interaction import get_properties
 from .substrate_interface import create_connection_by_url
-from ..xcm_transfers.utils.log import debug_log
+from scripts.xcm_transfers.utils.log import debug_log
 
 T = TypeVar('T')
 
