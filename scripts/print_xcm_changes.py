@@ -4,6 +4,7 @@ This script compare transfers.json from endpoint and local file, then print chan
 """
 import sys
 import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 import json
 from collections import defaultdict
 
