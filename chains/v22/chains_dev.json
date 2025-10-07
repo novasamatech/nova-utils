@@ -522,6 +522,10 @@
                 "symbol": "KSM",
                 "precision": 12,
                 "icon": "KSM.svg",
+                "staking": [
+                    "relaychain",
+                    "nomination-pools"
+                ],
                 "priceId": "kusama"
             },
             {
@@ -648,7 +652,8 @@
             "swap-hub",
             "assethub-fees",
             "proxy",
-            "multisig"
+            "multisig",
+            "governance"
         ],
         "additional": {
             "relaychainAsNative": true,
