@@ -658,6 +658,30 @@
                     "type": "subquery",
                     "url": "https://subquery-history-kusama-prod.novasama-tech.org"
                 }
+            ],
+            "governance": [
+                {
+                    "type": "subsquare",
+                    "url": "https://kusama-api.subsquare.io"
+                }
+            ],
+            "governance-delegations": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-governance-kusama-stg.novasama-tech.org"
+                }
+            ],
+            "referendum-summary": [
+                {
+                    "type": "novasama",
+                    "url": "https://opengov-backend-dev.novasama-tech.org/api/v1/referendum-summaries/list"
+                }
+            ],
+            "crowdloans": [
+                {
+                    "type": "github",
+                    "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/crowdloan/kusama.json"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_Asset_Hub.svg",
@@ -667,7 +691,10 @@
             "assethub-fees",
             "proxy",
             "multisig",
-            "governance"
+            "governance",
+            "crowdloans",
+            "pushSupport",
+            "fullSyncByDefault"
         ],
         "additional": {
             "themeColor": "#1F78FF",
