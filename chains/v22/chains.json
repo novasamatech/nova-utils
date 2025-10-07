@@ -167,27 +167,7 @@
                 "symbol": "KSM",
                 "precision": 12,
                 "priceId": "kusama",
-                "icon": "KSM.svg",
-                "staking": [
-                    "relaychain",
-                    "nomination-pools"
-                ],
-                "buyProviders": {
-                    "transak": {
-                        "network": "MAINNET"
-                    },
-                    "mercuryo": {},
-                    "banxa": {
-                        "coinType": "KSM",
-                        "blockchain": "KSM"
-                    }
-                },
-                "sellProviders": {
-                    "transak": {
-                        "network": "MAINNET"
-                    },
-                    "mercuryo": {}
-                }
+                "icon": "KSM.svg"
             }
         ],
         "nodes": [
@@ -298,7 +278,6 @@
         },
         "options": [
             "crowdloans",
-            "governance",
             "proxy",
             "fullSyncByDefault",
             "pushSupport",
