@@ -98,6 +98,12 @@
                     "url": "https://subquery-history-polkadot-prod.novasama-tech.org"
                 }
             ],
+            "staking-rewards": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-polkadot-prod.novasama-tech.org"
+                }
+            ],
             "history": [
                 {
                     "type": "subquery",
@@ -247,6 +253,12 @@
                     "url": "https://subquery-history-kusama-prod.novasama-tech.org"
                 }
             ],
+            "staking-rewards": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-kusama-prod.novasama-tech.org"
+                }
+            ],
             "history": [
                 {
                     "type": "subquery",
@@ -346,6 +358,12 @@
         "addressPrefix": 42,
         "externalApi": {
             "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-westend-prod.novasama-tech.org/"
+                }
+            ],
+            "staking-rewards": [
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-westend-prod.novasama-tech.org/"
@@ -1392,6 +1410,12 @@
                     "url": "https://subquery-history-moonbeam-v2-prod.novasama-tech.org"
                 }
             ],
+            "staking-rewards": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-moonbeam-v2-prod.novasama-tech.org"
+                }
+            ],
             "governance": [
                 {
                     "type": "polkassembly",
@@ -1822,6 +1846,12 @@
                 }
             ],
             "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-moonriver-prod.novasama-tech.org"
+                }
+            ],
+            "staking-rewards": [
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-moonriver-prod.novasama-tech.org"
@@ -4352,6 +4382,12 @@
                     "url": "https://subquery-history-zeitgeist-prod.novasama-tech.org"
                 }
             ],
+            "staking-rewards": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-zeitgeist-prod.novasama-tech.org"
+                }
+            ],
             "governance": [
                 {
                     "type": "subsquare",
@@ -5953,6 +5989,12 @@
                     "url": "https://subquery-history-aleph-zero-prod.novasama-tech.org"
                 }
             ],
+            "staking-rewards": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-aleph-zero-prod.novasama-tech.org"
+                }
+            ],
             "multisig": [
                 {
                     "type": "subquery",
@@ -6091,6 +6133,12 @@
         ],
         "externalApi": {
             "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-polkadex-prod.novasama-tech.org"
+                }
+            ],
+            "staking-rewards": [
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-polkadex-prod.novasama-tech.org"
@@ -6855,6 +6903,12 @@
         ],
         "externalApi": {
             "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-ternoa-prod.novasama-tech.org"
+                }
+            ],
+             "staking-rewards": [
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-ternoa-prod.novasama-tech.org"
@@ -7754,6 +7808,12 @@
                     "type": "subquery",
                     "url": "https://subquery-history-vara-prod.novasama-tech.org"
                 }
+            ],
+             "staking-rewards": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-vara-prod.novasama-tech.org"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Vara.svg",
@@ -8326,6 +8386,12 @@
                     "type": "subquery",
                     "url": "https://subquery-history-polimec-prod.novasama-tech.org"
                 }
+            ],
+            "staking-rewards": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-polimec-prod.novasama-tech.org"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polimec.svg",
@@ -8379,6 +8445,12 @@
                 }
             ],
             "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-manta-prod.novasama-tech.org"
+                }
+            ],
+            "staking-rewards": [
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-manta-prod.novasama-tech.org"
@@ -8618,6 +8690,12 @@
                     "url": "https://subquery-history-mythos-prod.novasama-tech.org"
                 }
             ],
+            "staking-rewards": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-mythos-prod.novasama-tech.org"
+                }
+            ],
             "multisig": [
                 {
                     "type": "subquery",
@@ -8825,6 +8903,12 @@
         },
         "externalApi": {
             "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-avail-prod.novasama-tech.org"
+                }
+            ],
+            "staking-rewards": [
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-avail-prod.novasama-tech.org"
