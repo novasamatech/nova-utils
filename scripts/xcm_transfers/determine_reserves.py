@@ -76,10 +76,8 @@ def main():
     for direction in potential_directions:
         transfer_type = registry.determine_transfer_type(direction.origin_chain, direction.destination_chain, direction.origin_asset)
 
-
         if is_ksm(direction.origin_asset) and not isinstance(transfer_type, Teleport) and not is_regular_para_and_relay(direction.origin_chain, direction.destination_chain):
-            if direction.origin_chain.chain.name == "Kusama People" and len(ksm_directions) == 0:
-                ksm_directions.append(direction)
+            ksm_directions.append(direction)
 
     print(f"\nFound {len(ksm_directions)} KSM directions to test: {ksm_directions}\n")
 
