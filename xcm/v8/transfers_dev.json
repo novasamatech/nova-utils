@@ -3800,10 +3800,10 @@
                     "type": "proportional",
                     "value": "46064814619"
                   },
-                  "instructions": "xcmPalletDest"
+                  "instructions": "xtokensDest"
                 }
               },
-              "type": "xcmpallet-transferAssets"
+              "type": "xtokens"
             },
             {
               "destination": {
@@ -3814,10 +3814,10 @@
                     "type": "proportional",
                     "value": "449135489738"
                   },
-                  "instructions": "xtokensDest"
+                  "instructions": "xcmPalletDest"
                 }
               },
-              "type": "xtokens"
+              "type": "xcmpallet-transferAssets"
             },
             {
               "destination": {
