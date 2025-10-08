@@ -50,8 +50,11 @@ def update_reserve_override(config_data: dict, direction: XcmTransferDirection, 
     if reserve_id is not None:
         chain_reserves[str(origin_asset_id)] = reserve_id
     else:
-        if origin_asset_id in chain_reserves:
+        if str(origin_asset_id) in chain_reserves:
             del chain_reserves[str(origin_asset_id)]
+
+            if len(chain_reserves) == 0:
+                del reserves[origin_chain_id]
 
 success = []
 failure = []
@@ -75,7 +78,8 @@ def main():
 
 
         if is_ksm(direction.origin_asset) and not isinstance(transfer_type, Teleport) and not is_regular_para_and_relay(direction.origin_chain, direction.destination_chain):
-            ksm_directions.append(direction)
+            if direction.origin_chain.chain.name == "Kusama People" and len(ksm_directions) == 0:
+                ksm_directions.append(direction)
 
     print(f"\nFound {len(ksm_directions)} KSM directions to test: {ksm_directions}\n")
 
