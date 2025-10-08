@@ -25,8 +25,8 @@ def dry_run_sample(
     print(direction)
 
 if __name__ == "__main__":
-    origin_chain_name = "Basilisk"
-    destination_chain_name = "Kusama Relay"
+    origin_chain_name = "Kusama Relay"
+    destination_chain_name = "Encointer"
     origin_token = "KSM"
     destination_token = "KSM"
 
