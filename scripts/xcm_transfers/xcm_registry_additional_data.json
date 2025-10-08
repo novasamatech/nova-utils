@@ -2,7 +2,7 @@
     "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3": {
         "parachainId": null,
         "runtimePrefix": "polkadot_runtime",
-        "name": "Polkadot",
+        "name": "Polkadot Relay",
         "dryRunVersion": 2,
         "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
         "hasXcmPaymentApi": true
@@ -47,6 +47,14 @@
         "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
         "hasXcmPaymentApi": true
     },
+    "e358eb1d11b31255a286c12e44fe6780b7edb171d657905a97e39f71d9c6c3ee": {
+        "parachainId": 2051,
+        "runtimePrefix": "ajuna_runtime",
+        "name": "Ajuna",
+        "dryRunVersion": 2,
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
+    },
     "f0b8924b12e8108550d28870bc03f7b45a947e1b2b9abf81bfb0b89ecb60570e": {
         "parachainId": 2046,
         "runtimePrefix": "darwinia_runtime",
@@ -82,7 +90,7 @@
     "7eb9354488318e7549c722669dcbdcdc526f1fef1420e7944667212f3601fdbd": {
         "parachainId": 3344,
         "runtimePrefix": "polimec_runtime",
-        "name": "Polimec",
+        "name": "Polimec (PAUSED)",
         "dryRunVersion": 2,
         "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
         "hasXcmPaymentApi": true
@@ -122,7 +130,7 @@
     "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe": {
         "parachainId": null,
         "runtimePrefix": "staging_kusama_runtime",
-        "name": "Kusama",
+        "name": "Kusama Relay",
         "dryRunVersion": 2,
         "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
         "hasXcmPaymentApi": true
@@ -131,6 +139,14 @@
         "parachainId": 1000,
         "runtimePrefix": "asset_hub_kusama_runtime",
         "name": "Kusama Asset Hub",
+        "dryRunVersion": 2,
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
+    },
+    "baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b": {
+        "parachainId": 2000,
+        "runtimePrefix": "karura_runtime",
+        "name": "Karura",
         "dryRunVersion": 2,
         "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
         "hasXcmPaymentApi": true
