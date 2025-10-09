@@ -7,6 +7,7 @@
                 "assetId": 0,
                 "symbol": "DOT",
                 "precision": 10,
+                "name": "Polkadot",
                 "priceId": "polkadot",
                 "icon": "DOT.svg",
                 "staking": [
@@ -98,6 +99,12 @@
                     "url": "https://subquery-history-polkadot-prod.novasama-tech.org"
                 }
             ],
+            "staking-rewards": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-polkadot-prod.novasama-tech.org"
+                }
+            ],
             "history": [
                 {
                     "type": "subquery",
@@ -154,34 +161,15 @@
     },
     {
         "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Kusama",
+        "name": "Kusama Relay",
         "assets": [
             {
                 "assetId": 0,
                 "symbol": "KSM",
                 "precision": 12,
+                "name": "Kusama",
                 "priceId": "kusama",
-                "icon": "KSM.svg",
-                "staking": [
-                    "relaychain",
-                    "nomination-pools"
-                ],
-                "buyProviders": {
-                    "transak": {
-                        "network": "MAINNET"
-                    },
-                    "mercuryo": {},
-                    "banxa": {
-                        "coinType": "KSM",
-                        "blockchain": "KSM"
-                    }
-                },
-                "sellProviders": {
-                    "transak": {
-                        "network": "MAINNET"
-                    },
-                    "mercuryo": {}
-                }
+                "icon": "KSM.svg"
             }
         ],
         "nodes": [
@@ -247,6 +235,12 @@
                     "url": "https://subquery-history-kusama-prod.novasama-tech.org"
                 }
             ],
+            "staking-rewards": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-kusama-prod.novasama-tech.org"
+                }
+            ],
             "history": [
                 {
                     "type": "subquery",
@@ -285,8 +279,6 @@
             ]
         },
         "options": [
-            "crowdloans",
-            "governance",
             "proxy",
             "fullSyncByDefault",
             "pushSupport",
@@ -351,6 +343,12 @@
                     "url": "https://subquery-history-westend-prod.novasama-tech.org/"
                 }
             ],
+            "staking-rewards": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-westend-prod.novasama-tech.org/"
+                }
+            ],
             "history": [
                 {
                     "type": "subquery",
@@ -392,7 +390,12 @@
                 "assetId": 0,
                 "symbol": "KSM",
                 "precision": 12,
+                "name": "Kusama",
                 "icon": "KSM.svg",
+                "staking": [
+                    "relaychain",
+                    "nomination-pools"
+                ],
                 "priceId": "kusama"
             },
             {
@@ -511,6 +514,28 @@
                     "type": "subquery",
                     "url": "https://subquery-proxy-kusama-ah-prod.novasama-tech.org"
                 }
+            ],
+            "governance-delegations": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-governance-kusama-ah-prod.novasama-tech.org"
+                }
+            ],
+            "staking-rewards": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-kusama-prod.novasama-tech.org"
+                },
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-kusama-ah-prod.novasama-tech.org"
+                }
+            ],
+            "staking": [
+                 {
+                    "type": "subquery",
+                    "url": "https://subquery-history-kusama-prod.novasama-tech.org"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_Asset_Hub.svg",
@@ -522,10 +547,14 @@
             "multisig"
         ],
         "additional": {
+            "themeColor": "#1F78FF",
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/kusama-ksm-staking",
+            "stakingMaxElectingVoters": 12500,
             "relaychainAsNative": true,
             "feeViaRuntimeCall": true,
             "supportsGenericLedgerApp": true,
-            "identityChain": "c1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f"
+            "identityChain": "c1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f",
+            "timelineChain": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe"
         }
     },
     {
@@ -1392,6 +1421,12 @@
                     "url": "https://subquery-history-moonbeam-v2-prod.novasama-tech.org"
                 }
             ],
+            "staking-rewards": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-moonbeam-v2-prod.novasama-tech.org"
+                }
+            ],
             "governance": [
                 {
                     "type": "polkassembly",
@@ -1822,6 +1857,12 @@
                 }
             ],
             "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-moonriver-prod.novasama-tech.org"
+                }
+            ],
+            "staking-rewards": [
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-moonriver-prod.novasama-tech.org"
@@ -3600,6 +3641,7 @@
                 "assetId": 0,
                 "symbol": "DOT",
                 "precision": 10,
+                "name": "Polkadot",
                 "priceId": "polkadot",
                 "icon": "DOT.svg"
             },
@@ -4347,6 +4389,12 @@
                 }
             ],
             "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-zeitgeist-prod.novasama-tech.org"
+                }
+            ],
+            "staking-rewards": [
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-zeitgeist-prod.novasama-tech.org"
@@ -5953,6 +6001,12 @@
                     "url": "https://subquery-history-aleph-zero-prod.novasama-tech.org"
                 }
             ],
+            "staking-rewards": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-aleph-zero-prod.novasama-tech.org"
+                }
+            ],
             "multisig": [
                 {
                     "type": "subquery",
@@ -6091,6 +6145,12 @@
         ],
         "externalApi": {
             "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-polkadex-prod.novasama-tech.org"
+                }
+            ],
+            "staking-rewards": [
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-polkadex-prod.novasama-tech.org"
@@ -6855,6 +6915,12 @@
         ],
         "externalApi": {
             "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-ternoa-prod.novasama-tech.org"
+                }
+            ],
+             "staking-rewards": [
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-ternoa-prod.novasama-tech.org"
@@ -7754,6 +7820,12 @@
                     "type": "subquery",
                     "url": "https://subquery-history-vara-prod.novasama-tech.org"
                 }
+            ],
+             "staking-rewards": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-vara-prod.novasama-tech.org"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Vara.svg",
@@ -8234,7 +8306,7 @@
     {
         "chainId": "7eb9354488318e7549c722669dcbdcdc526f1fef1420e7944667212f3601fdbd",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "Polimec",
+        "name": "Polimec (PAUSED)",
         "assets": [
             {
                 "assetId": 0,
@@ -8326,6 +8398,12 @@
                     "type": "subquery",
                     "url": "https://subquery-history-polimec-prod.novasama-tech.org"
                 }
+            ],
+            "staking-rewards": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-polimec-prod.novasama-tech.org"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polimec.svg",
@@ -8379,6 +8457,12 @@
                 }
             ],
             "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-manta-prod.novasama-tech.org"
+                }
+            ],
+            "staking-rewards": [
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-manta-prod.novasama-tech.org"
@@ -8618,6 +8702,12 @@
                     "url": "https://subquery-history-mythos-prod.novasama-tech.org"
                 }
             ],
+            "staking-rewards": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-mythos-prod.novasama-tech.org"
+                }
+            ],
             "multisig": [
                 {
                     "type": "subquery",
@@ -8825,6 +8915,12 @@
         },
         "externalApi": {
             "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-avail-prod.novasama-tech.org"
+                }
+            ],
+            "staking-rewards": [
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-avail-prod.novasama-tech.org"

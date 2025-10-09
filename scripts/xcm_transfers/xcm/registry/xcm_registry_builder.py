@@ -108,7 +108,6 @@ def build_all_xcm_capable_chains(files: XCMConfigFiles) -> List[XcmChain]:
         additional_xcm_chain_data = additional_xcm_data.get(chain_config["chainId"], None)
 
         if additional_xcm_chain_data is None:
-            debug_log(f"No additional xcm data found for {chain_config['name']}, skipping")
             continue
 
         runtime_prefix = additional_xcm_chain_data["runtimePrefix"]

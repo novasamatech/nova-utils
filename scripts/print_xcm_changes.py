@@ -4,6 +4,7 @@ This script compare transfers.json from endpoint and local file, then print chan
 """
 import sys
 import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 import json
 from collections import defaultdict
 
@@ -265,7 +266,7 @@ def main(argv):
     if github_base:
         nova_utils_url = f"https://raw.githubusercontent.com/novasamatech/nova-utils/{github_base}/"
 
-    transfers_file = os.getenv("XCM_PATH", "xcm/v4/transfers_dev.json")
+    transfers_file = os.getenv("XCM_PATH", "xcm/v8/transfers_dev.json")
     chains_version = Chain.latest_config_version()
     chains_url = nova_utils_url + os.getenv("CHAINS_PATH", f"chains/{chains_version}/chains_dev.json")
 
