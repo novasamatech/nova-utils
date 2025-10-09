@@ -56,9 +56,6 @@ def update_reserve_override(config_data: dict, direction: XcmTransferDirection, 
             if len(chain_reserves) == 0:
                 del reserves[origin_chain_id]
 
-success = []
-failure = []
-
 def main():
     print("Loading configuration...")
     config_files = get_xcm_config_files()
@@ -81,19 +78,23 @@ def main():
 
     print(f"\nFound {len(ksm_directions)} KSM directions to test: {ksm_directions}\n")
 
+    success = []
+    failure = []
+
+    already_set_reserves = set()
+
     # Test each direction
     for idx, direction in enumerate(ksm_directions):
         origin_chain, dest_chain, origin_token, dest_token = direction.origin_chain, direction.destination_chain, direction.origin_asset, direction.destination_asset
 
         print(f"\n[{idx + 1}/{len(ksm_directions)}] Testing: {origin_chain.chain.name} -> {dest_chain.chain.name}")
 
-        if direction.origin_chain.parachain_id is None:
-            # If relay is the origin
-            first_try = RELAY_RESERVE
-            second_try = ASSET_HUB_RESERVE
-        else:
-            first_try = ASSET_HUB_RESERVE
-            second_try = RELAY_RESERVE
+        if direction.origin_chain.chain.chainId in already_set_reserves:
+            print(f"Skipping - already set for {direction.origin_chain.chain.name}")
+            continue
+
+        first_try = ASSET_HUB_RESERVE
+        second_try = RELAY_RESERVE
 
         print(f"  Setting reserve to {first_try}...")
         update_reserve_override(dynamic_config, direction, first_try)
@@ -103,6 +104,7 @@ def main():
         if run_dry_run(origin_chain.chain.name, dest_chain.chain.name, origin_token.symbol, dest_token.symbol):
             print(f"  ✓ Success with {first_try}")
             success.append(direction)
+            already_set_reserves.add(direction.origin_chain.chain.chainId)
             continue
 
         # If failed, try with KSM
@@ -114,6 +116,7 @@ def main():
         if run_dry_run(origin_chain.chain.name, dest_chain.chain.name, origin_token.symbol, dest_token.symbol):
             print(f"  ✓ Success with {second_try}")
             success.append(direction)
+            already_set_reserves.add(direction.origin_chain.chain.chainId)
         else:
             print(f"  ✗ Failed with both reserves")
             failure.append(direction)
