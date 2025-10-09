@@ -7,10 +7,10 @@ from scripts.xcm_transfers.xcm.xcm_transfer_direction import XcmTransferDirectio
 config_files = get_xcm_config_files()
 registry = build_xcm_registry(config_files)
 
-origin_chain_name = "Mythos"
-destination_chain_name = "Hydration"
-origin_token = "MYTH"
-destination_token = "MYTH"
+origin_chain_name = "Bifrost Kusama"
+destination_chain_name = "Karura"
+origin_token = "KSM"
+destination_token = "KSM"
 
 origin_chain = registry.get_chain_by_name(origin_chain_name)
 destination_chain = registry.get_chain_by_name(destination_chain_name)
