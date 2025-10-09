@@ -60,5 +60,8 @@ class XcmChain:
     def is_system_parachain(self) -> bool:
         return self.parachain_id is not None and 1000 <= self.parachain_id < 2000
 
+    def is_regular_parachain(self) -> bool:
+        return self.parachain_id is not None and self.parachain_id >= 2000
+
     def is_relay(self) -> bool:
         return self.parachain_id is None

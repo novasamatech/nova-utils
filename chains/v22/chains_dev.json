@@ -170,10 +170,6 @@
                 "priceId": "kusama",
                 "name": "Kusama",
                 "icon": "KSM.svg",
-                "staking": [
-                    "relaychain",
-                    "nomination-pools"
-                ],
                 "buyProviders": {
                     "transak": {
                         "network": "MAINNET"
@@ -299,7 +295,6 @@
             ]
         },
         "options": [
-            "crowdloans",
             "governance",
             "proxy",
             "fullSyncByDefault",
@@ -420,6 +415,7 @@
                 "assetId": 0,
                 "symbol": "WND",
                 "precision": 12,
+                "name": "Westend",
                 "icon": "WND.svg",
                 "staking": [
                     "relaychain",
@@ -521,7 +517,12 @@
                 "assetId": 0,
                 "symbol": "KSM",
                 "precision": 12,
+                "name": "Kusama",
                 "icon": "KSM.svg",
+                "staking": [
+                    "relaychain",
+                    "nomination-pools"
+                ],
                 "priceId": "kusama"
             },
             {
@@ -640,6 +641,34 @@
                     "type": "subquery",
                     "url": "https://subquery-proxy-kusama-ah-prod.novasama-tech.org"
                 }
+            ],
+            "staking-rewards": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-kusama-prod.novasama-tech.org"
+                },
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-kusama-ah-prod.novasama-tech.org"
+                }
+            ],
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-kusama-prod.novasama-tech.org"
+                }
+            ],
+            "governance": [
+                {
+                    "type": "subsquare",
+                    "url": "https://kusama-api.subsquare.io"
+                }
+            ],
+            "governance-delegations": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-governance-kusama-ah-prod.novasama-tech.org"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_Asset_Hub.svg",
@@ -648,13 +677,20 @@
             "swap-hub",
             "assethub-fees",
             "proxy",
-            "multisig"
+            "multisig",
+            "governance",
+            "pushSupport",
+            "fullSyncByDefault"
         ],
         "additional": {
+            "themeColor": "#1F78FF",
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/kusama-ksm-staking",
+            "stakingMaxElectingVoters": 12500,
             "relaychainAsNative": true,
             "feeViaRuntimeCall": true,
             "supportsGenericLedgerApp": true,
-            "identityChain": "c1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f"
+            "identityChain": "c1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f",
+            "timelineChain": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe"
         }
     },
     {
@@ -4095,6 +4131,7 @@
                 "assetId": 0,
                 "symbol": "DOT",
                 "precision": 10,
+                "name": "Polkadot",
                 "priceId": "polkadot",
                 "icon": "DOT.svg"
             },
