@@ -532,9 +532,15 @@
                 }
             ],
             "staking": [
-                 {
+                {
                     "type": "subquery",
                     "url": "https://subquery-history-kusama-prod.novasama-tech.org"
+                }
+            ],
+            "governance": [
+                {
+                    "type": "subsquare",
+                    "url": "https://kusama-api.subsquare.io"
                 }
             ]
         },
@@ -544,7 +550,8 @@
             "swap-hub",
             "assethub-fees",
             "proxy",
-            "multisig"
+            "multisig",
+            "governance"
         ],
         "additional": {
             "themeColor": "#1F78FF",
