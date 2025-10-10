@@ -628,7 +628,10 @@
         "additional": {
             "supportsGenericLedgerApp": true,
             "identityChain": "67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008"
-        }
+        },
+        "options": [
+            "multisig"
+        ]
     },
     {
         "chainId": "c1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f",
@@ -690,7 +693,10 @@
         "additional": {
             "disabledCheckMetadataHash": true,
             "identityChain": "c1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f"
-        }
+        },
+        "options": [
+            "multisig"
+        ]
     },
     {
         "chainId": "baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b",
@@ -6031,7 +6037,8 @@
         },
         "options": [
             "fullSyncByDefault",
-            "pushSupport"
+            "pushSupport",
+            "multisig"
         ]
     },
     {
@@ -8949,7 +8956,8 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Avail.svg",
         "addressPrefix": 42,
         "options": [
-            "pushSupport"
+            "pushSupport",
+            "multisig"
         ],
         "additional": {
             "themeColor": "#58C8F6",
@@ -9556,7 +9564,10 @@
         "additional": {
             "supportsGenericLedgerApp": true,
             "identityChain": "67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008"
-        }
+        },
+        "options": [
+            "multisig"
+        ]
     },
     {
         "chainId": "638cd2b9af4b3bb54b8c1f0d22711fc89924ca93300f0caf25a580432b29d050",
@@ -9623,7 +9634,10 @@
         "additional": {
             "supportsGenericLedgerApp": true,
             "identityChain": "c1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f"
-        }
+        },
+        "options": [
+            "multisig"
+        ]
     },
     {
         "chainId": "dffb39a66d80b9adb6bdbd7564a9215a1606596062578bf536480de6cc780c2d",
