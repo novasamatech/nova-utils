@@ -532,9 +532,15 @@
                 }
             ],
             "staking": [
-                 {
+                {
                     "type": "subquery",
                     "url": "https://subquery-history-kusama-prod.novasama-tech.org"
+                }
+            ],
+            "governance": [
+                {
+                    "type": "subsquare",
+                    "url": "https://kusama-api.subsquare.io"
                 }
             ]
         },
@@ -544,7 +550,8 @@
             "swap-hub",
             "assethub-fees",
             "proxy",
-            "multisig"
+            "multisig",
+            "governance"
         ],
         "additional": {
             "themeColor": "#1F78FF",
@@ -621,7 +628,10 @@
         "additional": {
             "supportsGenericLedgerApp": true,
             "identityChain": "67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008"
-        }
+        },
+        "options": [
+            "multisig"
+        ]
     },
     {
         "chainId": "c1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f",
@@ -683,7 +693,10 @@
         "additional": {
             "disabledCheckMetadataHash": true,
             "identityChain": "c1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f"
-        }
+        },
+        "options": [
+            "multisig"
+        ]
     },
     {
         "chainId": "baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b",
@@ -6024,7 +6037,8 @@
         },
         "options": [
             "fullSyncByDefault",
-            "pushSupport"
+            "pushSupport",
+            "multisig"
         ]
     },
     {
@@ -8942,7 +8956,8 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Avail.svg",
         "addressPrefix": 42,
         "options": [
-            "pushSupport"
+            "pushSupport",
+            "multisig"
         ],
         "additional": {
             "themeColor": "#58C8F6",
@@ -9549,7 +9564,10 @@
         "additional": {
             "supportsGenericLedgerApp": true,
             "identityChain": "67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008"
-        }
+        },
+        "options": [
+            "multisig"
+        ]
     },
     {
         "chainId": "638cd2b9af4b3bb54b8c1f0d22711fc89924ca93300f0caf25a580432b29d050",
@@ -9616,7 +9634,10 @@
         "additional": {
             "supportsGenericLedgerApp": true,
             "identityChain": "c1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f"
-        }
+        },
+        "options": [
+            "multisig"
+        ]
     },
     {
         "chainId": "dffb39a66d80b9adb6bdbd7564a9215a1606596062578bf536480de6cc780c2d",
@@ -9676,5 +9697,54 @@
         "additional": {
             "supportsGenericLedgerApp": true
         }
+    },
+    {
+        "chainId": "eip155:420420422",
+        "name": "Polkadot Hub TestNet",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "PAS",
+                "type": "evmNative",
+                "icon": "PAS.svg",
+                "precision": 18
+            }
+        ],
+        "nodeSelectionStrategy": "uniform",
+        "nodes": [
+            {
+                "url": "https://testnet-passet-hub-eth-rpc.polkadot.io",
+                "name": "Polkadot Hub rpc node"
+            },
+            {
+                "url": "wss://passet-hub-paseo.ibp.network",
+                "name": "Polkadot Hub wss node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Blockscan",
+                "extrinsic": "https://blockscout-passet-hub.parity-testnet.parity.io/tx/{hash}",
+                "account": "https://blockscout-passet-hub.parity-testnet.parity.io/address/{address}"
+            }
+        ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "etherscan",
+                    "url": "https://blockscout-passet-hub.parity-testnet.parity.io/api/v2/",
+                    "parameters": {
+                        "assetType": "evm"
+                    }
+                }
+            ]
+        },
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Paseo_Testnet.svg",
+        "addressPrefix": 420420422,
+        "options": [
+            "ethereumBased",
+            "noSubstrateRuntime",
+            "testnet"
+        ]
     }
 ]

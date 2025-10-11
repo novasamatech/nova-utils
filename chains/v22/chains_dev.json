@@ -12059,5 +12059,54 @@
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/RegionX_Kusama.svg",
         "addressPrefix": 74
+    },
+    {
+        "chainId": "eip155:420420422",
+        "name": "Polkadot Hub TestNet",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "PAS",
+                "type": "evmNative",
+                "icon": "PAS.svg",
+                "precision": 18
+            }
+        ],
+        "nodeSelectionStrategy": "uniform",
+        "nodes": [
+            {
+                "url": "https://testnet-passet-hub-eth-rpc.polkadot.io",
+                "name": "Polkadot Hub rpc node"
+            },
+            {
+                "url": "wss://passet-hub-paseo.ibp.network",
+                "name": "Polkadot Hub wss node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Blockscan",
+                "extrinsic": "https://blockscout-passet-hub.parity-testnet.parity.io/tx/{hash}",
+                "account": "https://blockscout-passet-hub.parity-testnet.parity.io/address/{address}"
+            }
+        ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "etherscan",
+                    "url": "https://blockscout-passet-hub.parity-testnet.parity.io/api/v2/",
+                    "parameters": {
+                        "assetType": "evm"
+                    }
+                }
+            ]
+        },
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Paseo_Testnet.svg",
+        "addressPrefix": 420420422,
+        "options": [
+            "ethereumBased",
+            "noSubstrateRuntime",
+            "testnet"
+        ]
     }
 ]

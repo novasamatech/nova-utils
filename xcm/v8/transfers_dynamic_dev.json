@@ -627,6 +627,31 @@
       "chainId": "9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed",
       "assets": [
         {
+          "assetId": 1,
+          "xcmTransfers": [
+            {
+              "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
+              "assetId": 0,
+              "supportsXcmExecute": true
+            },
+            {
+              "chainId": "baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b",
+              "assetId": 2,
+              "supportsXcmExecute": true
+            },
+            {
+              "chainId": "f1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
+              "assetId": 6,
+              "supportsXcmExecute": true
+            },
+            {
+              "chainId": "a85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755",
+              "assetId": 1,
+              "supportsXcmExecute": true
+            }
+          ]
+        },
+        {
           "assetId": 7,
           "xcmTransfers": [
             {
@@ -671,6 +696,31 @@
     {
       "chainId": "a85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755",
       "assets": [
+        {
+          "assetId": 1,
+          "xcmTransfers": [
+            {
+              "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
+              "assetId": 0,
+              "supportsXcmExecute": true
+            },
+            {
+              "chainId": "baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b",
+              "assetId": 2,
+              "supportsXcmExecute": true
+            },
+            {
+              "chainId": "f1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
+              "assetId": 6,
+              "supportsXcmExecute": true
+            },
+            {
+              "chainId": "9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed",
+              "assetId": 1,
+              "supportsXcmExecute": true
+            }
+          ]
+        },
         {
           "assetId": 4,
           "xcmTransfers": [
@@ -920,12 +970,6 @@
               "supportsXcmExecute": true
             },
             {
-              "chainId": "7eb9354488318e7549c722669dcbdcdc526f1fef1420e7944667212f3601fdbd",
-              "assetId": 1,
-              "hasDeliveryFee": true,
-              "supportsXcmExecute": true
-            },
-            {
               "chainId": "efb56e30d9b4a24099f88820987d0f45fb645992416535d87650d98e00f46fc4",
               "assetId": 0,
               "hasDeliveryFee": true,
@@ -953,12 +997,6 @@
               "assetId": 3,
               "hasDeliveryFee": true,
               "supportsXcmExecute": true
-            },
-            {
-              "chainId": "7eb9354488318e7549c722669dcbdcdc526f1fef1420e7944667212f3601fdbd",
-              "assetId": 2,
-              "hasDeliveryFee": true,
-              "supportsXcmExecute": true
             }
           ]
         },
@@ -968,12 +1006,6 @@
             {
               "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
               "assetId": 15,
-              "hasDeliveryFee": true,
-              "supportsXcmExecute": true
-            },
-            {
-              "chainId": "7eb9354488318e7549c722669dcbdcdc526f1fef1420e7944667212f3601fdbd",
-              "assetId": 3,
               "hasDeliveryFee": true,
               "supportsXcmExecute": true
             }
