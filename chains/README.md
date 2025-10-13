@@ -3,7 +3,7 @@
 ### 🕸️ Supported networks: 104
 ### 💰 All assets 465
 ### 🪙 Unique assets: 250
-### 💫 Cross Chain directions: 316
+### 💫 Cross Chain directions: 324
 ### 🧾 SubQuery API projects: 60
 ### 👀 Networks with block explorers: 89
 ---
