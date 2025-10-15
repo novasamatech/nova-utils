@@ -2740,8 +2740,7 @@
                 "account": "https://khala.subscan.io/account/{address}"
             }
         ],
-        "externalApi": {
-        },
+        "externalApi": {},
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Khala.svg",
         "addressPrefix": 30,
         "additional": {
@@ -6930,7 +6929,7 @@
                     "url": "https://subquery-history-ternoa-prod.novasama-tech.org"
                 }
             ],
-             "staking-rewards": [
+            "staking-rewards": [
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-ternoa-prod.novasama-tech.org"
@@ -7416,10 +7415,11 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Crust_Parachain.svg",
-        "addressPrefix": 88,
+        "addressPrefix": 0,
         "additional": {
             "feeViaRuntimeCall": true
-        }
+        },
+        "legacyAddressPrefix": 88
     },
     {
         "chainId": "8b5c955b5c8fd7112562327e3859473df4e3dff49bd72a113dbb668d2cfa20d7",
@@ -7835,7 +7835,7 @@
                     "url": "https://subquery-history-vara-prod.novasama-tech.org"
                 }
             ],
-             "staking-rewards": [
+            "staking-rewards": [
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-vara-prod.novasama-tech.org"
