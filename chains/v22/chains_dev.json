@@ -8346,10 +8346,11 @@
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Crust_Parachain.svg",
-        "addressPrefix": 88,
+        "addressPrefix": 0,
         "additional": {
             "feeViaRuntimeCall": true
-        }
+        },
+        "legacyAddressPrefix": 88
     },
     {
         "chainId": "e3a1cf3db108e3e45c63a4841fe89ba95108b1db14fdec10c2e8a078ff322a67",
