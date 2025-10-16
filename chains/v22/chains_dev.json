@@ -5894,6 +5894,19 @@
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 70,
+                "symbol": "PAXG",
+                "precision": 18,
+                "type": "orml",
+                "icon": "PAXG.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x27000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "2374169040836",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
