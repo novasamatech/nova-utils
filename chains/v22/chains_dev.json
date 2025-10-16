@@ -134,12 +134,6 @@
                     "type": "novasama",
                     "url": "https://opengov-backend-dev.novasama-tech.org/api/v1/referendum-summaries/list"
                 }
-            ],
-            "multisig": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-proxy-polkadot-prod.novasama-tech.org"
-                }
             ]
         },
         "options": [
@@ -286,12 +280,6 @@
                     "type": "novasama",
                     "url": "https://opengov-backend-dev.novasama-tech.org/api/v1/referendum-summaries/list"
                 }
-            ],
-            "multisig": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-proxy-kusama-prod.novasama-tech.org"
-                }
             ]
         },
         "options": [
@@ -381,12 +369,6 @@
                 {
                     "type": "github",
                     "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/crowdloan/westend.json"
-                }
-            ],
-            "multisig": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-proxy-westend-prod.novasama-tech.org"
                 }
             ]
         },
@@ -635,12 +617,6 @@
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-kusama-ah-prod.novasama-tech.org"
-                }
-            ],
-            "multisig": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-proxy-kusama-ah-prod.novasama-tech.org"
                 }
             ],
             "staking-rewards": [
@@ -1439,12 +1415,6 @@
                 {
                     "type": "subquery",
                     "url": "https://subquery-governance-moonriver-stg.novasama-tech.org"
-                }
-            ],
-            "multisig": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-proxy-moonriver-prod.novasama-tech.org"
                 }
             ]
         },
@@ -3444,12 +3414,6 @@
                     "type": "subquery",
                     "url": "https://subquery-governance-moonbeam-stg.novasama-tech.org"
                 }
-            ],
-            "multisig": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-proxy-moonbeam-prod.novasama-tech.org"
-                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/moonbeam.svg",
@@ -4462,12 +4426,6 @@
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-polkadot-ah-prod.novasama-tech.org"
-                }
-            ],
-            "multisig": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-proxy-polkadot-ah-prod.novasama-tech.org"
                 }
             ]
         },
@@ -5937,12 +5895,6 @@
                     "type": "subsquare",
                     "url": "https://hydradx.subsquare.io/api"
                 }
-            ],
-            "multisig": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-proxy-hydradx-prod.novasama-tech.org"
-                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Hydration.svg",
@@ -6386,12 +6338,6 @@
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-aleph-zero-prod.novasama-tech.org"
-                }
-            ],
-            "multisig": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-proxy-aleph-zero-prod.novasama-tech.org"
                 }
             ]
         },
@@ -9419,14 +9365,6 @@
                 "event": "https://people-polkadot.statescan.io/#/events/{event}"
             }
         ],
-        "externalApi": {
-            "multisig": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-proxy-polkadot-people-prod.novasama-tech.org"
-                }
-            ]
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_People.svg",
         "addressPrefix": 0,
         "options": [
@@ -9484,14 +9422,6 @@
                 "event": "https://people-kusama.statescan.io/#/events/{event}"
             }
         ],
-        "externalApi": {
-            "multisig": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-proxy-kusama-people-prod.novasama-tech.org"
-                }
-            ]
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_People.svg",
         "addressPrefix": 2,
         "options": [
@@ -10746,12 +10676,6 @@
                     "type": "subquery",
                     "url": "https://subquery-history-mythos-prod.novasama-tech.org"
                 }
-            ],
-            "multisig": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-proxy-mythos-prod.novasama-tech.org"
-                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Mythos.svg",
@@ -10962,12 +10886,6 @@
                     "type": "subquery",
                     "url": "https://subquery-history-avail-prod.novasama-tech.org"
                 }
-            ],
-            "multisig": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-proxy-avail-prod.novasama-tech.org"
-                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Avail.svg",
@@ -11016,12 +10934,6 @@
                     "parameters": {
                         "network": "novasama"
                     }
-                }
-            ],
-            "multisig": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-proxy-testnet-prod.novasama-tech.org"
                 }
             ]
         },
@@ -11839,14 +11751,6 @@
                 "event": "https://coretime-polkadot.statescan.io/#/events/{event}"
             }
         ],
-        "externalApi": {
-            "multisig": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-proxy-polkadot-coretime-prod.novasama-tech.org"
-                }
-            ]
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Coretime.svg",
         "addressPrefix": 0,
         "options": [
@@ -11909,14 +11813,6 @@
                 "event": "https://coretime-kusama.statescan.io/#/events/{event}"
             }
         ],
-        "externalApi": {
-            "multisig": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-proxy-kusama-coretime-prod.novasama-tech.org"
-                }
-            ]
-        },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_Coretime.svg",
         "addressPrefix": 2,
         "options": [
