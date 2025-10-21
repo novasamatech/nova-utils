@@ -5575,6 +5575,20 @@
                     "existentialDeposit": "2374169040836",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 71,
+                "symbol": "PEN",
+                "precision": 12,
+                "priceId": "pendulum-chain",
+                "type": "orml",
+                "icon": "PEN.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x91420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "153256704981",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
