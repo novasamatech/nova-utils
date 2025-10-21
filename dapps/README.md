@@ -27,18 +27,18 @@
 |  23 | GIANTProtocol                        | https://app.giantprotocol.org/shop                  | utilities             |
 |  24 | Gleev                                | https://gleev.xyz/                                  | social                |
 |  25 | Grill                                | https://grillapp.net/                               | social                |
-|  26 | Hydration                            | https://app.hydration.net/NOVA                      | bridge,dex,staking    |
-|  27 | Hyperbridge                          | https://app.hyperbridge.network/                    | bridge                |
-|  28 | Incognitee Privacy Sidechains Dapp   | https://app.incognitee.io/                          | utilities             |
-|  29 | Interlay Bitcoin DeFi Hub            | https://app.interlay.io/                            | bridge,staking        |
-|  30 | InvArch Dashboard                    | https://portal.invarch.network/                     | staking               |
-|  31 | Joystream Governance App             | https://pioneerapp.xyz/                             | governance            |
-|  32 | KILT Stakeboard (Desktop mode)       | https://stakeboard.kilt.io/                         | staking               |
-|  33 | Karura App (Desktop mode)            | https://apps.karura.network/                        | staking               |
-|  34 | Kintsugi Hub                         | https://kintsugi.interlay.io/                       | bridge,staking        |
-|  35 | KodaDot                              | https://kodadot.xyz/                                | art                   |
-|  36 | MULTIX                               | https://multix.chainsafe.io/                        | utilities             |
-|  37 | Mangata X (Desktop mode)             | https://app.mangata.finance/                        | staking               |
+|  26 | Houdini Swap                         | https://houdiniswap.com/                            | dex,evm,staking       |
+|  27 | Hydration                            | https://app.hydration.net/NOVA                      | bridge,dex,staking    |
+|  28 | Hyperbridge                          | https://app.hyperbridge.network/                    | bridge                |
+|  29 | Incognitee Privacy Sidechains Dapp   | https://app.incognitee.io/                          | utilities             |
+|  30 | Interlay Bitcoin DeFi Hub            | https://app.interlay.io/                            | bridge,staking        |
+|  31 | InvArch Dashboard                    | https://portal.invarch.network/                     | staking               |
+|  32 | Joystream Governance App             | https://pioneerapp.xyz/                             | governance            |
+|  33 | KILT Stakeboard (Desktop mode)       | https://stakeboard.kilt.io/                         | staking               |
+|  34 | Karura App (Desktop mode)            | https://apps.karura.network/                        | staking               |
+|  35 | Kintsugi Hub                         | https://kintsugi.interlay.io/                       | bridge,staking        |
+|  36 | KodaDot                              | https://kodadot.xyz/                                | art                   |
+|  37 | MULTIX                               | https://multix.chainsafe.io/                        | utilities             |
 |  38 | Mentat Minds                         | https://mentatminds.com/delegate/                   | staking               |
 |  39 | Mimir                                | https://app.mimir.global/welcome?network=polkadot   | utilities             |
 |  40 | Moonbeam App                         | https://apps.moonbeam.network/moonbeam              | staking,utilities,evm |
