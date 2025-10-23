@@ -1,51 +1,75 @@
 [
-  {
-    "sourceData": {
-        "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "assetId": 0,
-        "minBalance": "33333333",
-        "averageFee": "530000000"
-    },
-    "destinationData": {
-        "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
-        "assetId": 0,
-        "minBalance": "3333333",
-        "averageFee": "90000000"
-    },
-    "blockNumber": 30423691,
-    "timestamp": 1759795200,
-    "newTokenNames": [
-        "USDT",
-        "USDC",
-        "ETH",
-        "DOT"
-    ],
-    "bannerPath": "ahm_kusama",
-    "migrationInProgress": false,
-    "wikiURL": "https://docs.novawallet.io/nova-wallet-wiki/asset-management/asset-hub-migration-faq"
-  },
-  {
-    "sourceData": {
-        "chainId": "e143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e",
-        "assetId": 0,
-        "minBalance": "10000000000",
-        "averageFee": "16127400000"
-    },
-    "destinationData": {
-        "chainId": "67f9723393ef76214df0118c34bbbd3dbebc8ed46a10973a8c969d48fe7598c9",
-        "assetId": 0,
-        "minBalance": "1000000000",
-        "averageFee": "2933700000"
-    },
-    "blockNumber": 26047261,
-    "timestamp": 1759795200,
-    "newTokenNames": [
-        "USDT",
-        "USDC",
-        "DOT"
-    ],
-    "bannerPath": "ahm_kusama",
-    "migrationInProgress": true,
-    "wikiURL": "https://docs.novawallet.io/nova-wallet-wiki/asset-management/asset-hub-migration-faq"
-  }
+   {
+      "sourceData": {
+         "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+         "assetId": 0,
+         "minBalance": "33333333",
+         "averageFee": "530000000"
+      },
+      "destinationData": {
+         "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
+         "assetId": 0,
+         "minBalance": "3333333",
+         "averageFee": "90000000"
+      },
+      "blockNumber": 30423691,
+      "timestamp": 1759795200,
+      "newTokenNames": [
+         "USDT",
+         "USDC",
+         "ETH",
+         "DOT"
+      ],
+      "bannerPath": "ahm_kusama",
+      "migrationInProgress": false,
+      "wikiURL": "https://docs.novawallet.io/nova-wallet-wiki/asset-management/asset-hub-migration-faq"
+   },
+   {
+      "sourceData": {
+         "chainId": "e143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e",
+         "assetId": 0,
+         "minBalance": "10000000000",
+         "averageFee": "16127400000"
+      },
+      "destinationData": {
+         "chainId": "67f9723393ef76214df0118c34bbbd3dbebc8ed46a10973a8c969d48fe7598c9",
+         "assetId": 0,
+         "minBalance": "1000000000",
+         "averageFee": "2933700000"
+      },
+      "blockNumber": 26047261,
+      "timestamp": 1759795200,
+      "newTokenNames": [
+         "USDT",
+         "USDC",
+         "DOT"
+      ],
+      "bannerPath": "ahm_kusama",
+      "migrationInProgress": true,
+      "wikiURL": "https://docs.novawallet.io/nova-wallet-wiki/asset-management/asset-hub-migration-faq"
+   },
+   {
+      "sourceData": {
+         "chainId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+         "assetId": 0,
+         "minBalance": "1000000000",
+         "averageFee": "530000000"
+      },
+      "destinationData": {
+         "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+         "assetId": 0,
+         "minBalance": "10000000",
+         "averageFee": "90000000"
+      },
+      "blockNumber": 28490502,
+      "timestamp": 1704396800,
+      "newTokenNames": [
+         "USDT",
+         "USDC",
+         "KSM"
+      ],
+      "bannerPath": "ahm_polkadot",
+      "migrationInProgress": true,
+      "wikiURL": "https://docs.novawallet.io/nova-wallet-wiki/asset-management/asset-hub-migration-faq"
+   }
 ]
