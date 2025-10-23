@@ -542,6 +542,12 @@
                     "type": "subsquare",
                     "url": "https://kusama-api.subsquare.io"
                 }
+            ],
+            "referendum-summary": [
+                {
+                    "type": "novasama",
+                    "url": "https://opengov-backend.novasama-tech.org/api/v1/referendum-summaries/list"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_Asset_Hub.svg",
