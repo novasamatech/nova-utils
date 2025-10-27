@@ -396,7 +396,13 @@
                     "relaychain",
                     "nomination-pools"
                 ],
-                "priceId": "kusama"
+                "priceId": "kusama",
+                "buyProviders": {
+                    "mercuryo": {}
+                },
+                "sellProviders": {
+                    "mercuryo": {}
+                }
             },
             {
                 "assetId": 1,

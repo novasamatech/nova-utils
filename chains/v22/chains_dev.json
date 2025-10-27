@@ -174,7 +174,6 @@
                     "transak": {
                         "network": "MAINNET"
                     },
-                    "mercuryo": {},
                     "banxa": {
                         "coinType": "KSM",
                         "blockchain": "KSM"
@@ -183,8 +182,7 @@
                 "sellProviders": {
                     "transak": {
                         "network": "MAINNET"
-                    },
-                    "mercuryo": {}
+                    }
                 }
             }
         ],
@@ -524,7 +522,13 @@
                     "relaychain",
                     "nomination-pools"
                 ],
-                "priceId": "kusama"
+                "priceId": "kusama",
+                "buyProviders": {
+                    "mercuryo": {}
+                },
+                "sellProviders": {
+                    "mercuryo": {}
+                }
             },
             {
                 "assetId": 1,
