@@ -1,0 +1,19 @@
+{
+    "chainId": "ddb89973361a170839f80f152d2e9e38a376a5a7eccefcade763f46a8e567019",
+    "name": "Shibuya Testnet (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "SBY",
+            "precision": 18,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc.shibuya.astar.network",
+            "name": "Astar"
+        }
+    ],
+    "addressPrefix": 5
+}
