@@ -83,8 +83,9 @@
 |  79 | Unique Staking                       | https://unique.network/staking                      | staking               |
 |  80 | Unlock Polkadot                      | https://unlockpolkadot.com                          | social                |
 |  81 | Vortex Finance                       | https://app.vortexfinance.co/                       | evm,utilities         |
-|  82 | XDAO                                 | https://www.xdao.app/1284                           | bridge,dex,evm        |
-|  83 | Zeitgeist                            | https://app.zeitgeist.pm/                           | utilities             |
-|  84 | Zenlink                              | https://app.zenlink.pro                             | dex                   |
-|  85 | cBRIDGE                              | https://cbridge.celer.network/                      | dex,evm               |
-|  86 | xx network Hub                       | https://hub.xx.network/                             | utilities             |
+|  82 | WUD Universe                         | https://wuduniverse.xyz/                            | gaming,social         |
+|  83 | XDAO                                 | https://www.xdao.app/1284                           | bridge,dex,evm        |
+|  84 | Zeitgeist                            | https://app.zeitgeist.pm/                           | utilities             |
+|  85 | Zenlink                              | https://app.zenlink.pro                             | dex                   |
+|  86 | cBRIDGE                              | https://cbridge.celer.network/                      | dex,evm               |
+|  87 | xx network Hub                       | https://hub.xx.network/                             | utilities             |
