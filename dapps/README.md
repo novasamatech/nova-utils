@@ -16,7 +16,7 @@
 |  12 | Bit.Country Pioneer Metaverse        | https://pioneer.bit.country/                        | art,staking,gaming    |
 |  13 | Capital Curio                        | https://capitaldex.exchange/staking                 | staking               |
 |  14 | Centrifuge CFG Migration App         | https://app.centrifuge.io/#/portfolio/migrate/cent  | utilities             |
-|  15 | Chaotic                              | https://beta.chaotic.art/                           | art                   |
+|  15 | Chaotic                              | https://chaotic.art/                                | art                   |
 |  16 | ChessOnChain                         | https://play.chessonchain.io                        | gaming                |
 |  17 | DOT Yappers                          | https://dotyappers.com                              | social                |
 |  18 | DOTNIGHT - TOKEN2049                 | https://dotnight.unique.network/                    | social                |
