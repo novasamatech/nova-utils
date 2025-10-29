@@ -396,7 +396,13 @@
                     "relaychain",
                     "nomination-pools"
                 ],
-                "priceId": "kusama"
+                "priceId": "kusama",
+                "buyProviders": {
+                    "mercuryo": {}
+                },
+                "sellProviders": {
+                    "mercuryo": {}
+                }
             },
             {
                 "assetId": 1,
@@ -542,6 +548,12 @@
                     "type": "subsquare",
                     "url": "https://kusama-api.subsquare.io"
                 }
+            ],
+            "referendum-summary": [
+                {
+                    "type": "novasama",
+                    "url": "https://opengov-backend.novasama-tech.org/api/v1/referendum-summaries/list"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_Asset_Hub.svg",
@@ -551,7 +563,8 @@
             "assethub-fees",
             "proxy",
             "multisig",
-            "governance"
+            "governance",
+            "pushSupport"
         ],
         "additional": {
             "themeColor": "#1F78FF",
@@ -5561,6 +5574,34 @@
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 70,
+                "symbol": "PAXG",
+                "precision": 18,
+                "priceId": "pax-gold",
+                "type": "orml",
+                "icon": "PAXG.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x27000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "2374169040836",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 71,
+                "symbol": "PEN",
+                "precision": 12,
+                "priceId": "pendulum-chain",
+                "type": "orml",
+                "icon": "PEN.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x91420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "153256704981",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
@@ -8318,118 +8359,6 @@
         }
     },
     {
-        "chainId": "7eb9354488318e7549c722669dcbdcdc526f1fef1420e7944667212f3601fdbd",
-        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "Polimec (PAUSED)",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "PLMC",
-                "priceId": "polimec",
-                "precision": 10,
-                "icon": "PLMC.svg",
-                "staking": [
-                    "parachain"
-                ],
-                "buyProviders": {
-                    "banxa": {
-                        "coinType": "PLMC",
-                        "blockchain": "Polimec"
-                    }
-                }
-            },
-            {
-                "assetId": 1,
-                "symbol": "DOT",
-                "precision": 10,
-                "priceId": "polkadot",
-                "icon": "DOT.svg",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "0x0100",
-                    "palletName": "ForeignAssets",
-                    "isSufficient": true
-                }
-            },
-            {
-                "assetId": 2,
-                "symbol": "USDT",
-                "precision": 6,
-                "priceId": "tether",
-                "icon": "USDT.svg",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "0x010300a10f043205011f",
-                    "palletName": "ForeignAssets",
-                    "isSufficient": true
-                }
-            },
-            {
-                "assetId": 3,
-                "symbol": "USDC",
-                "precision": 6,
-                "priceId": "usd-coin",
-                "icon": "USDC.svg",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "0x010300a10f043205e514",
-                    "palletName": "ForeignAssets",
-                    "isSufficient": true
-                }
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://rpc.polimec.org",
-                "name": "Polimec node"
-            },
-            {
-                "url": "wss://polimec.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://polimec.dotters.network",
-                "name": "IBP2 node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Statescan",
-                "account": "https://polimec.statescan.io/#/accounts/{address}",
-                "event": "https://polimec.statescan.io/#/events/{event}",
-                "extrinsic": "https://polimec.statescan.io/#/extrinsics/{hash}"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-history-polimec-prod.novasama-tech.org"
-                }
-            ],
-            "staking": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-history-polimec-prod.novasama-tech.org"
-                }
-            ],
-            "staking-rewards": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-history-polimec-prod.novasama-tech.org"
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polimec.svg",
-        "addressPrefix": 41,
-        "additional": {
-            "themeColor": "#96CC5A",
-            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polimec-plmc-staking",
-            "defaultBlockTime": 12000,
-            "supportsGenericLedgerApp": true
-        }
-    },
-    {
         "chainId": "f3c7ad88f6a80f366c4be216691411ef0622e8b809b1046ea297ef106058d4eb",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
         "name": "Manta Atlantic",
@@ -9425,7 +9354,7 @@
     },
     {
         "chainId": "eip155:41455",
-        "name": "Aleph Zero EVM",
+        "name": "Aleph Zero EVM (PAUSED)",
         "assets": [
             {
                 "assetId": 0,
