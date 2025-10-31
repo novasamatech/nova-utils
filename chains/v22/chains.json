@@ -11,19 +11,9 @@
                 "priceId": "polkadot",
                 "icon": "DOT.svg",
                 "buyProviders": {
-                    "transak": {
-                        "network": "MAINNET"
-                    },
-                    "mercuryo": {},
-                    "banxa": {
-                        "coinType": "DOT",
-                        "blockchain": "DOT"
-                    }
+                    "mercuryo": {}
                 },
                 "sellProviders": {
-                    "transak": {
-                        "network": "MAINNET"
-                    },
                     "mercuryo": {}
                 }
             }
