@@ -10,10 +10,6 @@
                 "name": "Polkadot",
                 "priceId": "polkadot",
                 "icon": "DOT.svg",
-                "staking": [
-                    "relaychain",
-                    "nomination-pools"
-                ],
                 "buyProviders": {
                     "transak": {
                         "network": "MAINNET"
@@ -138,7 +134,6 @@
         },
         "options": [
             "crowdloans",
-            "governance",
             "proxy",
             "fullSyncByDefault",
             "pushSupport",
@@ -4104,7 +4099,11 @@
                 "precision": 10,
                 "name": "Polkadot",
                 "priceId": "polkadot",
-                "icon": "DOT.svg"
+                "icon": "DOT.svg",
+                "staking": [
+                    "relaychain",
+                    "nomination-pools"
+                ]
             },
             {
                 "assetId": 1,
@@ -4439,9 +4438,13 @@
             "swap-hub",
             "assethub-fees",
             "proxy",
-            "multisig"
+            "multisig",
+            "governance"
         ],
         "additional": {
+            "themeColor": "#E6007A",
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polkadot-dot-staking",
+            "stakingMaxElectingVoters": 22500,
             "relaychainAsNative": true,
             "feeViaRuntimeCall": true,
             "supportsGenericLedgerApp": true,
