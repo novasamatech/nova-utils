@@ -10,24 +10,10 @@
                 "name": "Polkadot",
                 "priceId": "polkadot",
                 "icon": "DOT.svg",
-                "staking": [
-                    "relaychain",
-                    "nomination-pools"
-                ],
                 "buyProviders": {
-                    "transak": {
-                        "network": "MAINNET"
-                    },
-                    "mercuryo": {},
-                    "banxa": {
-                        "coinType": "DOT",
-                        "blockchain": "DOT"
-                    }
+                    "mercuryo": {}
                 },
                 "sellProviders": {
-                    "transak": {
-                        "network": "MAINNET"
-                    },
                     "mercuryo": {}
                 }
             }
@@ -138,7 +124,6 @@
         },
         "options": [
             "crowdloans",
-            "governance",
             "proxy",
             "fullSyncByDefault",
             "pushSupport",
