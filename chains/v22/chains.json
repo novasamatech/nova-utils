@@ -3936,6 +3936,40 @@
                     "type": "subquery",
                     "url": "https://subquery-history-polkadot-ah-prod.novasama-tech.org"
                 }
+            ],
+            "staking-rewards": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-polkadot-prod.novasama-tech.org"
+                },
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-polkadot-ah-prod.novasama-tech.org"
+                }
+            ],
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-polkadot-prod.novasama-tech.org"
+                }
+            ],
+            "governance": [
+                {
+                    "type": "subsquare",
+                    "url": "https://polkadot-api.subsquare.io"
+                }
+            ],
+            "governance-delegations": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-governance-polkadot-ah-prod.novasama-tech.org"
+                }
+            ],
+            "referendum-summary": [
+                {
+                    "type": "novasama",
+                    "url": "https://opengov-backend.novasama-tech.org/api/v1/referendum-summaries/list"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Asset_Hub.svg",
@@ -3944,10 +3978,16 @@
             "swap-hub",
             "assethub-fees",
             "proxy",
-            "multisig"
+            "multisig",
+            "governance",
+            "fullSyncByDefault"
         ],
         "additional": {
+            "themeColor": "#E6007A",
+            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polkadot-dot-staking",
+            "stakingMaxElectingVoters": 22500,
             "relaychainAsNative": true,
+            "feeViaRuntimeCall": true,
             "supportsGenericLedgerApp": true,
             "identityChain": "67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008",
             "timelineChain": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3"
