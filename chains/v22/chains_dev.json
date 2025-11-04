@@ -4430,6 +4430,40 @@
                     "type": "subquery",
                     "url": "https://subquery-history-polkadot-ah-prod.novasama-tech.org"
                 }
+            ],
+            "staking-rewards": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-polkadot-prod.novasama-tech.org"
+                },
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-polkadot-ah-prod.novasama-tech.org"
+                }
+            ],
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-polkadot-prod.novasama-tech.org"
+                }
+            ],
+            "governance": [
+                {
+                    "type": "subsquare",
+                    "url": "https://polkadot-api.subsquare.io"
+                }
+            ],
+            "governance-delegations": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-governance-polkadot-prod.novasama-tech.org"
+                }
+            ],
+            "referendum-summary": [
+                {
+                    "type": "novasama",
+                    "url": "https://opengov-backend.novasama-tech.org/api/v1/referendum-summaries/list"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Asset_Hub.svg",
@@ -4439,7 +4473,9 @@
             "assethub-fees",
             "proxy",
             "multisig",
-            "governance"
+            "governance",
+            "pushSupport",
+            "fullSyncByDefault"
         ],
         "additional": {
             "themeColor": "#E6007A",

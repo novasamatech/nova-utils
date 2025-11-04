@@ -382,5 +382,24 @@
         "details": "Comment and react"
       }
     ]
+  },
+  {
+    "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+    "dapps": [
+      {
+        "title": "Polkassembly",
+        "urlV1": "https://polkadot.polkassembly.io/referendum/{referendumId}",
+        "urlV2": "https://polkadot.polkassembly.io/referenda/{referendumId}",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/Polkassembly.svg",
+        "details": "Comment and react"
+      },
+      {
+        "title": "Subsquare",
+        "urlV1": "https://polkadot.subsquare.io/democracy/referendum/{referendumId}",
+        "urlV2": "https://polkadot.subsquare.io/referenda/referendum/{referendumId}",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/dapps/dapps/color/SubSquare.svg",
+        "details": "Comment and react"
+      }
+    ]
   }
 ]
