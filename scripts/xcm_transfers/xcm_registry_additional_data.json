@@ -47,10 +47,26 @@
         "xcmOutcomeType": "staging_xcm::v4::traits::Outcome",
         "hasXcmPaymentApi": true
     },
+    "e7e0962324a3b86c83404dbea483f25fb5dab4c224791c81b756cfc948006174": {
+        "parachainId": 2043,
+        "runtimePrefix": "neuroweb_runtime",
+        "name": "NeuroWeb",
+        "dryRunVersion": 2,
+        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome",
+        "hasXcmPaymentApi": true
+    },
     "262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b": {
         "parachainId": 2030,
         "runtimePrefix": "bifrost_polkadot_runtime",
         "name": "Bifrost Polkadot",
+        "dryRunVersion": 2,
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
+    },
+    "84322d9cddbf35088f1e54e9a85c967a41a56a4f43445768125e61af166c7d31": {
+        "parachainId": 2037,
+        "runtimePrefix": "unique_runtime",
+        "name": "UNIQUE",
         "dryRunVersion": 2,
         "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
         "hasXcmPaymentApi": true
