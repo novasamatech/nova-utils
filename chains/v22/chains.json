@@ -3609,7 +3609,11 @@
                 "precision": 10,
                 "name": "Polkadot",
                 "priceId": "polkadot",
-                "icon": "DOT.svg"
+                "icon": "DOT.svg",
+                "staking": [
+                    "relaychain",
+                    "nomination-pools"
+                ]
             },
             {
                 "assetId": 1,
