@@ -12,16 +12,22 @@ from scripts.xcm_transfers.xcm.registry.xcm_chain import XcmChain
 from scripts.xcm_transfers.xcm.registry.xcm_registry_builder import build_xcm_registry
 from scripts.xcm_transfers.xcm.xcm_transfer_direction import XcmTransferDirection
 
-RELAY_CHAIN_ID = "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe"
-ASSET_HUB_RESERVE = "KSM-Statemine"
+RELAY_CHAIN_ID = "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3"
+ASSET_HUB_RESERVE = "DOT-Statemint"
 RELAY_RESERVE = None # To avoid redundant KSM entries in overrides
 
 
 def is_ksm(asset: ChainAsset) -> bool:
-    return "KSM" == asset.unified_symbol()
+    return "DOT" == asset.unified_symbol()
+
+def is_system_para_not_pah(chain: XcmChain) -> bool:
+    return chain.is_system_parachain() and chain.parachain_id != 1000
 
 def is_regular_para_and_relay(origin: XcmChain, dest: XcmChain) -> bool:
     return (origin.is_relay() and dest.is_regular_parachain()) or (origin.is_regular_parachain() and dest.is_relay())
+
+def is_sibling_with_not_pah_system_para(origin: XcmChain, dest: XcmChain) -> bool:
+    return (is_system_para_not_pah(origin) and dest.is_regular_parachain()) or (origin.is_regular_parachain() and is_system_para_not_pah(dest))
 
 def run_dry_run(origin_chain: str, dest_chain: str, origin_token: str, dest_token: str) -> bool:
     """Run dry_run_sample.py as subprocess and return True if successful."""
@@ -73,7 +79,7 @@ def main():
     for direction in potential_directions:
         transfer_type = registry.determine_transfer_type(direction.origin_chain, direction.destination_chain, direction.origin_asset)
 
-        if is_ksm(direction.origin_asset) and not isinstance(transfer_type, Teleport) and not is_regular_para_and_relay(direction.origin_chain, direction.destination_chain):
+        if is_ksm(direction.origin_asset) and not isinstance(transfer_type, Teleport) and not is_regular_para_and_relay(direction.origin_chain, direction.destination_chain) and not is_sibling_with_not_pah_system_para(direction.origin_chain, direction.destination_chain):
             ksm_directions.append(direction)
 
     print(f"\nFound {len(ksm_directions)} KSM directions to test: {ksm_directions}\n")
