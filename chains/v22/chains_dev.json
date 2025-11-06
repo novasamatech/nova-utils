@@ -9,23 +9,7 @@
                 "precision": 10,
                 "name": "Polkadot",
                 "priceId": "polkadot",
-                "icon": "DOT.svg",
-                "buyProviders": {
-                    "transak": {
-                        "network": "MAINNET"
-                    },
-                    "mercuryo": {},
-                    "banxa": {
-                        "coinType": "DOT",
-                        "blockchain": "DOT"
-                    }
-                },
-                "sellProviders": {
-                    "transak": {
-                        "network": "MAINNET"
-                    },
-                    "mercuryo": {}
-                }
+                "icon": "DOT.svg"
             }
         ],
         "nodes": [
@@ -4103,7 +4087,23 @@
                 "staking": [
                     "relaychain",
                     "nomination-pools"
-                ]
+                ],
+                "buyProviders": {
+                    "transak": {
+                        "network": "MAINNET"
+                    },
+                    "mercuryo": {},
+                    "banxa": {
+                        "coinType": "DOT",
+                        "blockchain": "DOT"
+                    }
+                },
+                "sellProviders": {
+                    "transak": {
+                        "network": "MAINNET"
+                    },
+                    "mercuryo": {}
+                }
             },
             {
                 "assetId": 1,

@@ -9,13 +9,7 @@
                 "precision": 10,
                 "name": "Polkadot",
                 "priceId": "polkadot",
-                "icon": "DOT.svg",
-                "buyProviders": {
-                    "mercuryo": {}
-                },
-                "sellProviders": {
-                    "mercuryo": {}
-                }
+                "icon": "DOT.svg"
             }
         ],
         "nodes": [
@@ -3613,7 +3607,13 @@
                 "staking": [
                     "relaychain",
                     "nomination-pools"
-                ]
+                ],
+                "buyProviders": {
+                    "mercuryo": {}
+                },
+                "sellProviders": {
+                    "mercuryo": {}
+                }
             },
             {
                 "assetId": 1,
