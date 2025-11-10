@@ -175,14 +175,6 @@
         "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
         "hasXcmPaymentApi": true
     },
-    "f1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108": {
-        "parachainId": 2007,
-        "runtimePrefix": "shiden_runtime",
-        "name": "Shiden",
-        "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
-        "hasXcmPaymentApi": true
-    },
     "9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed": {
         "parachainId": 2001,
         "runtimePrefix": "bifrost_kusama_runtime",
@@ -275,6 +267,14 @@
         "parachainId": 1002,
         "runtimePrefix": "bridge_hub_westend_runtime",
         "name": "Westend Bridge Hub",
+        "dryRunVersion": 2,
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
+    },
+    "1eb6fb0ba5187434de017a70cb84d4f47142df1d571d0ef9e7e1407f2b80b93c": {
+        "parachainId": 1004,
+        "runtimePrefix": "people_westend_runtime",
+        "name": "Westend People",
         "dryRunVersion": 2,
         "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
         "hasXcmPaymentApi": true
