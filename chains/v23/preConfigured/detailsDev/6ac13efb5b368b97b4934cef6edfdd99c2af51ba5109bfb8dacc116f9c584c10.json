@@ -1,0 +1,19 @@
+{
+    "chainId": "6ac13efb5b368b97b4934cef6edfdd99c2af51ba5109bfb8dacc116f9c584c10",
+    "name": "ChainX",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "PCX",
+            "precision": 8,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://mainnet.chainx.org/ws",
+            "name": "ChainX"
+        }
+    ],
+    "addressPrefix": 44
+}

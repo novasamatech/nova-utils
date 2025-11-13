@@ -1,0 +1,19 @@
+{
+    "chainId": "f2b8faefcf9c370872d0b4d2eee31d46b4de4a8688153d23d82a39e2d6bc8bbc",
+    "name": "NeuroWeb Testnet (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "NEURO",
+            "precision": 12,
+            "icon": "NEURO.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://parachain-testnet-rpc.origin-trail.network/",
+            "name": "TraceLabs"
+        }
+    ],
+    "addressPrefix": 101
+}
