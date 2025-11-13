@@ -1332,7 +1332,7 @@
           "xcmTransfers": [
             {
               "destination": {
-                "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+                "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
                 "assetId": 0,
                 "fee": {
                   "mode": {
@@ -1342,7 +1342,7 @@
                   "instructions": "xtokensDest"
                 }
               },
-              "type": "xtokens"
+              "type": "xcmpallet-transferAssets"
             },
             {
               "destination": {
@@ -2693,6 +2693,62 @@
                 }
               },
               "type": "xcmpallet-transferAssets"
+            },
+            {
+              "destination": {
+                "chainId": "baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b",
+                "assetId": 2,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "46064814619"
+                  },
+                  "instructions": "xcmPalletDest"
+                }
+              },
+              "type": "xcmpallet-transferAssets"
+            },
+            {
+              "destination": {
+                "chainId": "9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
+                "assetId": 2,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "253900000000"
+                  },
+                  "instructions": "xcmPalletDest"
+                }
+              },
+              "type": "xcmpallet-transferAssets"
+            },
+            {
+              "destination": {
+                "chainId": "631ccc82a078481584041656af292834e1ae6daab61d2875b4dd0c14bb9b17bc",
+                "assetId": 1,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "1158776"
+                  },
+                  "instructions": "xcmPalletDest"
+                }
+              },
+              "type": "xcmpallet-transferAssets"
+            },
+            {
+              "destination": {
+                "chainId": "cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
+                "assetId": 1,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "66666666667"
+                  },
+                  "instructions": "xcmPalletDest"
+                }
+              },
+              "type": "xcmpallet-transferAssets"
             }
           ]
         }
@@ -2998,7 +3054,7 @@
           "xcmTransfers": [
             {
               "destination": {
-                "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+                "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
                 "assetId": 0,
                 "fee": {
                   "mode": {
@@ -3008,7 +3064,7 @@
                   "instructions": "xtokensDest"
                 }
               },
-              "type": "xtokens"
+              "type": "xcmpallet-transferAssets"
             },
             {
               "destination": {
@@ -4524,7 +4580,7 @@
           "xcmTransfers": [
             {
               "destination": {
-                "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+                "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
                 "assetId": 0,
                 "fee": {
                   "mode": {
@@ -4534,7 +4590,7 @@
                   "instructions": "xcmPalletDest"
                 }
               },
-              "type": "xcmpallet"
+              "type": "xcmpallet-transferAssets"
             },
             {
               "destination": {
@@ -5560,7 +5616,7 @@
           "xcmTransfers": [
             {
               "destination": {
-                "chainId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+                "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
                 "assetId": 0,
                 "fee": {
                   "mode": {
@@ -5570,7 +5626,7 @@
                   "instructions": "xtokensDest"
                 }
               },
-              "type": "xtokens"
+              "type": "xcmpallet-transferAssets"
             },
             {
               "destination": {
