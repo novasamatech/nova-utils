@@ -1,0 +1,19 @@
+{
+    "chainId": "05fab032a899566268235e3c89c847fb4644558a0d856282d47d17ff06cb2020",
+    "name": "Hydration Paseo Testnet (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "HDX",
+            "precision": 12,
+            "icon": "HDX.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://paseo-rpc.play.hydration.cloud",
+            "name": "Galactic Council"
+        }
+    ],
+    "addressPrefix": 0
+}

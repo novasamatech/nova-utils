@@ -1,0 +1,35 @@
+{
+    "chainId": "d6eec26135305a8ad257a20d003357284c8aa03d0bdb2b357ab0a22371e11ef2",
+    "name": "Paseo Asset Hub (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "PAS",
+            "precision": 10,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://asset-hub-paseo-rpc.n.dwellir.com",
+            "name": "Dwellir"
+        },
+        {
+            "url": "wss://sys.ibp.network/asset-hub-paseo",
+            "name": "IBP1"
+        },
+        {
+            "url": "wss://asset-hub-paseo.dotters.network",
+            "name": "IBP2"
+        },
+        {
+            "url": "wss://pas-rpc.stakeworld.io/assethub",
+            "name": "StakeWorld"
+        },
+        {
+            "url": "wss://sys.turboflakes.io/asset-hub-paseo",
+            "name": "TurboFlakes"
+        }
+    ],
+    "addressPrefix": 0
+}
