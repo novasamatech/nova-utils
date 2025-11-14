@@ -2,7 +2,15 @@
     "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3": {
         "parachainId": null,
         "runtimePrefix": "polkadot_runtime",
-        "name": "Polkadot",
+        "name": "Polkadot Relay",
+        "dryRunVersion": 2,
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
+    },
+    "fc41b9bd8ef8fe53d58c7ea67c794c7ec9a73daf05e6d54b14ff6342c99ba64c": {
+        "parachainId": 2000,
+        "runtimePrefix": "acala_runtime",
+        "name": "Acala",
         "dryRunVersion": 2,
         "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
         "hasXcmPaymentApi": true
@@ -39,10 +47,34 @@
         "xcmOutcomeType": "staging_xcm::v4::traits::Outcome",
         "hasXcmPaymentApi": true
     },
+    "e7e0962324a3b86c83404dbea483f25fb5dab4c224791c81b756cfc948006174": {
+        "parachainId": 2043,
+        "runtimePrefix": "neuroweb_runtime",
+        "name": "NeuroWeb",
+        "dryRunVersion": 2,
+        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome",
+        "hasXcmPaymentApi": true
+    },
     "262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b": {
         "parachainId": 2030,
         "runtimePrefix": "bifrost_polkadot_runtime",
         "name": "Bifrost Polkadot",
+        "dryRunVersion": 2,
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
+    },
+    "84322d9cddbf35088f1e54e9a85c967a41a56a4f43445768125e61af166c7d31": {
+        "parachainId": 2037,
+        "runtimePrefix": "unique_runtime",
+        "name": "UNIQUE",
+        "dryRunVersion": 2,
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
+    },
+    "e358eb1d11b31255a286c12e44fe6780b7edb171d657905a97e39f71d9c6c3ee": {
+        "parachainId": 2051,
+        "runtimePrefix": "ajuna_runtime",
+        "name": "Ajuna",
         "dryRunVersion": 2,
         "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
         "hasXcmPaymentApi": true
@@ -75,14 +107,6 @@
         "parachainId": 1004,
         "runtimePrefix": "people_polkadot_runtime",
         "name": "Polkadot People",
-        "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
-        "hasXcmPaymentApi": true
-    },
-    "7eb9354488318e7549c722669dcbdcdc526f1fef1420e7944667212f3601fdbd": {
-        "parachainId": 3344,
-        "runtimePrefix": "polimec_runtime",
-        "name": "Polimec",
         "dryRunVersion": 2,
         "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
         "hasXcmPaymentApi": true
@@ -122,7 +146,7 @@
     "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe": {
         "parachainId": null,
         "runtimePrefix": "staging_kusama_runtime",
-        "name": "Kusama",
+        "name": "Kusama Relay",
         "dryRunVersion": 2,
         "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
         "hasXcmPaymentApi": true
@@ -131,6 +155,14 @@
         "parachainId": 1000,
         "runtimePrefix": "asset_hub_kusama_runtime",
         "name": "Kusama Asset Hub",
+        "dryRunVersion": 2,
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
+    },
+    "baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b": {
+        "parachainId": 2000,
+        "runtimePrefix": "karura_runtime",
+        "name": "Karura",
         "dryRunVersion": 2,
         "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
         "hasXcmPaymentApi": true
@@ -165,6 +197,14 @@
         "name": "Basilisk",
         "dryRunVersion": 1,
         "xcmOutcomeType": "staging_xcm::v4::traits::Outcome",
+        "hasXcmPaymentApi": true
+    },
+    "cd4d732201ebe5d6b014edda071c4203e16867305332301dc8d092044b28e554": {
+        "parachainId": 2095,
+        "runtimePrefix": "quartz_runtime",
+        "name": "QUARTZ",
+        "dryRunVersion": 2,
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
         "hasXcmPaymentApi": true
     },
     "7dd99936c1e9e6d1ce7d90eb6f33bea8393b4bf87677d675aa63c9cb3e8c5b5b": {

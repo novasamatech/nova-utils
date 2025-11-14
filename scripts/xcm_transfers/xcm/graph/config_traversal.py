@@ -34,9 +34,8 @@ class XcmConfigTraversal:
                     continue
 
                 for transfer_config in origin_asset_config["xcmTransfers"]:
-                    destination_config = transfer_config["destination"]
-                    destination_chain_id = destination_config["chainId"]
-                    destination_asset_id = destination_config["assetId"]
+                    destination_chain_id = transfer_config["chainId"]
+                    destination_asset_id = transfer_config["assetId"]
 
                     destination_chain = self.registry.get_chain_or_none(destination_chain_id)
                     if destination_chain is None:
