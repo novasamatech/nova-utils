@@ -1,0 +1,19 @@
+{
+    "chainId": "a01fd8b004e04a4ce2c689a339b48b0585004de5844b9939071d44be07806a94",
+    "name": "Elysium Mainnet",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "ELY",
+            "precision": 18,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://ws.elysiumchain.tech",
+            "name": "Elysium"
+        }
+    ],
+    "addressPrefix": 42
+}

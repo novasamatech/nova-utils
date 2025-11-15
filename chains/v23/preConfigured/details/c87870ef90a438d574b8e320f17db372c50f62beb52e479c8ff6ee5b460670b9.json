@@ -1,0 +1,19 @@
+{
+    "chainId": "c87870ef90a438d574b8e320f17db372c50f62beb52e479c8ff6ee5b460670b9",
+    "name": "OPAL by UNIQUE (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "OPL",
+            "precision": 18,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://ws-opal.unique.network",
+            "name": "Geo Load Balancer"
+        }
+    ],
+    "addressPrefix": 42
+}
