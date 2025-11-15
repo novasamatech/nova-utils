@@ -87,12 +87,6 @@
                     "url": "https://subquery-history-polkadot-prod.novasama-tech.org"
                 }
             ],
-            "crowdloans": [
-                {
-                    "type": "github",
-                    "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/crowdloan/polkadot-dev.json"
-                }
-            ],
             "governance": [
                 {
                     "type": "subsquare",
@@ -113,7 +107,6 @@
             ]
         },
         "options": [
-            "crowdloans",
             "proxy",
             "fullSyncByDefault",
             "pushSupport",
@@ -4432,11 +4425,18 @@
                     "type": "novasama",
                     "url": "https://opengov-backend.novasama-tech.org/api/v1/referendum-summaries/list"
                 }
+            ],
+             "crowdloans": [
+                {
+                    "type": "github",
+                    "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/crowdloan/polkadot-dev.json"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Asset_Hub.svg",
         "addressPrefix": 0,
         "options": [
+            "crowdloans",
             "swap-hub",
             "assethub-fees",
             "proxy",
