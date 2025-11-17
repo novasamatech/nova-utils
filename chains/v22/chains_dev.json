@@ -227,12 +227,6 @@
                     "url": "https://subquery-history-kusama-prod.novasama-tech.org"
                 }
             ],
-            "crowdloans": [
-                {
-                    "type": "github",
-                    "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/crowdloan/kusama.json"
-                }
-            ],
             "governance": [
                 {
                     "type": "subsquare",
@@ -334,17 +328,10 @@
                     "type": "subquery",
                     "url": "https://subquery-history-westend-prod.novasama-tech.org/"
                 }
-            ],
-            "crowdloans": [
-                {
-                    "type": "github",
-                    "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/crowdloan/westend.json"
-                }
             ]
         },
         "options": [
             "testnet",
-            "crowdloans",
             "governance",
             "proxy",
             "multisig"
@@ -7375,7 +7362,6 @@
         "addressPrefix": 0,
         "options": [
             "testnet",
-            "crowdloans",
             "proxy"
         ],
         "additional": {
@@ -7473,7 +7459,6 @@
         "addressPrefix": 42,
         "options": [
             "testnet",
-            "crowdloans",
             "proxy"
         ],
         "additional": {
