@@ -37,10 +37,6 @@
                 ]
             },
             {
-                "url": "wss://polkadot-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
                 "url": "wss://dot-rpc.stakeworld.io",
                 "name": "Stakeworld node"
             },
@@ -170,10 +166,6 @@
                 ]
             },
             {
-                "url": "wss://kusama-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
                 "url": "wss://rpc-kusama.luckyfriday.io",
                 "name": "LuckyFriday node"
             },
@@ -275,10 +267,6 @@
             }
         ],
         "nodes": [
-            {
-                "url": "wss://westend-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
             {
                 "url": "wss://westend-rpc.polkadot.io",
                 "name": "Parity node"
@@ -456,10 +444,6 @@
             {
                 "url": "wss://asset-hub-kusama.dotters.network",
                 "name": "IBP2 node"
-            },
-            {
-                "url": "wss://asset-hub-kusama-rpc.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -501,7 +485,7 @@
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-history-kusama-prod.novasama-tech.org"
+                    "url": "https://subquery-history-kusama-ah-prod.novasama-tech.org"
                 }
             ],
             "governance": [
@@ -1354,10 +1338,6 @@
             {
                 "url": "wss://moonbeam.public.curie.radiumblock.co/ws",
                 "name": "RadiumBlock node"
-            },
-            {
-                "url": "wss://moonbeam.public.blastapi.io",
-                "name": "Blast node"
             }
         ],
         "explorers": [
@@ -1789,10 +1769,6 @@
             {
                 "url": "wss://moonriver.public.curie.radiumblock.co/ws",
                 "name": "RadiumBlock node"
-            },
-            {
-                "url": "wss://moonriver-rpc.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -2369,10 +2345,6 @@
             {
                 "url": "wss://rpc.basilisk.cloud",
                 "name": "Basilisk node"
-            },
-            {
-                "url": "wss://basilisk-rpc.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -3950,7 +3922,7 @@
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-history-polkadot-prod.novasama-tech.org"
+                    "url": "https://subquery-history-polkadot-ah-prod.novasama-tech.org"
                 }
             ],
             "governance": [
@@ -5600,10 +5572,6 @@
             {
                 "url": "wss://hydration.dotters.network",
                 "name": "IBP2 node"
-            },
-            {
-                "url": "wss://hydradx-rpc.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -5890,8 +5858,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://nodle-rpc.dwellir.com",
-                "name": "Dwellir node"
+                "url": "wss://nodle-parachain.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -7680,10 +7648,6 @@
             {
                 "url": "wss://rpc.darwinia.network",
                 "name": "Darwinia node"
-            },
-            {
-                "url": "wss://darwinia-rpc.n.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -7727,10 +7691,6 @@
             {
                 "url": "wss://crab-rpc.darwinia.network/",
                 "name": "Darwinia node"
-            },
-            {
-                "url": "wss://darwiniacrab-rpc.n.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -8105,10 +8065,6 @@
             {
                 "url": "wss://rpc.matrix.blockchain.enjin.io",
                 "name": "Enjin node"
-            },
-            {
-                "url": "wss://enjin-matrix-rpc-1.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -8499,10 +8455,6 @@
             {
                 "url": "wss://rpc.relay.blockchain.enjin.io",
                 "name": "Enjin node"
-            },
-            {
-                "url": "wss://enjin-relay-rpc.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -8797,10 +8749,6 @@
             {
                 "url": "wss://mainnet-rpc.avail.so/ws",
                 "name": "Avail node"
-            },
-            {
-                "url": "wss://avail-mainnet.public.blastapi.io/",
-                "name": "Blastapi node"
             },
             {
                 "url": "wss://avail.rpc.bountyblok.io",
@@ -9373,10 +9321,6 @@
             {
                 "url": "wss://rpc.tangle.tools",
                 "name": "Parity node"
-            },
-            {
-                "url": "wss://tangle-mainnet-rpc.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -9460,10 +9404,6 @@
             }
         ],
         "nodes": [
-            {
-                "url": "wss://coretime-kusama-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
             {
                 "url": "wss://sys.ibp.network/coretime-kusama",
                 "name": "IBP1 node"
