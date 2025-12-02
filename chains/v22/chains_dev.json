@@ -87,12 +87,6 @@
                     "url": "https://subquery-history-polkadot-prod.novasama-tech.org"
                 }
             ],
-            "crowdloans": [
-                {
-                    "type": "github",
-                    "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/crowdloan/polkadot-dev.json"
-                }
-            ],
             "governance": [
                 {
                     "type": "subsquare",
@@ -113,7 +107,6 @@
             ]
         },
         "options": [
-            "crowdloans",
             "proxy",
             "fullSyncByDefault",
             "pushSupport",
@@ -226,12 +219,6 @@
                     "url": "https://subquery-history-kusama-prod.novasama-tech.org"
                 }
             ],
-            "crowdloans": [
-                {
-                    "type": "github",
-                    "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/crowdloan/kusama.json"
-                }
-            ],
             "governance": [
                 {
                     "type": "subsquare",
@@ -329,17 +316,10 @@
                     "type": "subquery",
                     "url": "https://subquery-history-westend-prod.novasama-tech.org/"
                 }
-            ],
-            "crowdloans": [
-                {
-                    "type": "github",
-                    "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/crowdloan/westend.json"
-                }
             ]
         },
         "options": [
             "testnet",
-            "crowdloans",
             "governance",
             "proxy",
             "multisig"
@@ -599,7 +579,7 @@
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-history-kusama-prod.novasama-tech.org"
+                    "url": "https://subquery-history-kusama-ah-prod.novasama-tech.org"
                 }
             ],
             "governance": [
@@ -4412,7 +4392,7 @@
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-history-polkadot-prod.novasama-tech.org"
+                    "url": "https://subquery-history-polkadot-ah-prod.novasama-tech.org"
                 }
             ],
             "governance": [
@@ -4432,11 +4412,18 @@
                     "type": "novasama",
                     "url": "https://opengov-backend.novasama-tech.org/api/v1/referendum-summaries/list"
                 }
+            ],
+             "crowdloans": [
+                {
+                    "type": "github",
+                    "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/crowdloan/polkadot-dev.json"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Asset_Hub.svg",
         "addressPrefix": 0,
         "options": [
+            "crowdloans",
             "swap-hub",
             "assethub-fees",
             "proxy",
@@ -6280,10 +6267,6 @@
                 "name": "Dwellir node"
             },
             {
-                "url": "wss://rpc.helikon.io/phala",
-                "name": "Helikon node"
-            },
-            {
                 "url": "wss://api.phala.network/ws",
                 "name": "Phala node"
             },
@@ -7343,7 +7326,6 @@
         "addressPrefix": 0,
         "options": [
             "testnet",
-            "crowdloans",
             "proxy"
         ],
         "additional": {
@@ -7441,7 +7423,6 @@
         "addressPrefix": 42,
         "options": [
             "testnet",
-            "crowdloans",
             "proxy"
         ],
         "additional": {
@@ -9710,6 +9691,10 @@
             }
         ],
         "nodes": [
+           {
+                "url": "wss://krest.api.onfinality.io/public-ws'",
+                "name": "OnFinality node"
+            },
             {
                 "url": "wss://wss-krest.peaq.network/",
                 "name": "Krest node"

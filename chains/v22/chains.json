@@ -87,12 +87,6 @@
                     "url": "https://subquery-history-polkadot-prod.novasama-tech.org"
                 }
             ],
-            "crowdloans": [
-                {
-                    "type": "github",
-                    "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/crowdloan/polkadot.json"
-                }
-            ],
             "governance": [
                 {
                     "type": "subsquare",
@@ -113,7 +107,6 @@
             ]
         },
         "options": [
-            "crowdloans",
             "proxy",
             "fullSyncByDefault",
             "pushSupport",
@@ -212,12 +205,6 @@
                     "url": "https://subquery-history-kusama-prod.novasama-tech.org"
                 }
             ],
-            "crowdloans": [
-                {
-                    "type": "github",
-                    "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/crowdloan/kusama.json"
-                }
-            ],
             "governance": [
                 {
                     "type": "subsquare",
@@ -310,12 +297,6 @@
                     "url": "https://subquery-history-westend-prod.novasama-tech.org/"
                 }
             ],
-            "crowdloans": [
-                {
-                    "type": "github",
-                    "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/crowdloan/westend.json"
-                }
-            ],
             "governance": [
                 {
                     "type": "subsquare",
@@ -325,7 +306,6 @@
         },
         "options": [
             "testnet",
-            "crowdloans",
             "proxy"
         ],
         "additional": {
@@ -485,7 +465,7 @@
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-history-kusama-prod.novasama-tech.org"
+                    "url": "https://subquery-history-kusama-ah-prod.novasama-tech.org"
                 }
             ],
             "governance": [
@@ -3922,7 +3902,7 @@
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-history-polkadot-prod.novasama-tech.org"
+                    "url": "https://subquery-history-polkadot-ah-prod.novasama-tech.org"
                 }
             ],
             "governance": [
@@ -3942,6 +3922,12 @@
                     "type": "novasama",
                     "url": "https://opengov-backend.novasama-tech.org/api/v1/referendum-summaries/list"
                 }
+            ],
+            "crowdloans": [
+                {
+                    "type": "github",
+                    "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/crowdloan/polkadot.json"
+                }
             ]
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Asset_Hub.svg",
@@ -3952,8 +3938,9 @@
             "proxy",
             "multisig",
             "governance",
-            "pushSupport",
-            "fullSyncByDefault"
+            "fullSyncByDefault",
+            "crowdloans",
+            "pushSupport"
         ],
         "additional": {
             "themeColor": "#E6007A",
@@ -5901,10 +5888,6 @@
             {
                 "url": "wss://phala-rpc.n.dwellir.com",
                 "name": "Dwellir node"
-            },
-            {
-                "url": "wss://rpc.helikon.io/phala",
-                "name": "Helikon node"
             },
             {
                 "url": "wss://api.phala.network/ws",
@@ -8035,6 +8018,10 @@
             }
         ],
         "nodes": [
+            {
+                "url": "wss://krest.api.onfinality.io/public-ws'",
+                "name": "OnFinality node"
+            },
             {
                 "url": "wss://wss-krest.peaq.network/",
                 "name": "Krest node"
