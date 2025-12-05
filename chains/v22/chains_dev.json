@@ -432,8 +432,7 @@
             "feeViaRuntimeCall": true,
             "supportsGenericLedgerApp": true,
             "timelineChain": "e143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e",
-            "sessionsPerEra": 7,
-            "disabledCheckMetadataHash": true
+            "sessionsPerEra": 7
         }
     },
     {
@@ -4413,7 +4412,7 @@
                     "url": "https://opengov-backend.novasama-tech.org/api/v1/referendum-summaries/list"
                 }
             ],
-             "crowdloans": [
+            "crowdloans": [
                 {
                     "type": "github",
                     "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/crowdloan/polkadot-dev.json"
