@@ -1,0 +1,19 @@
+{
+    "chainId": "f4f7be86702d82728d97c3f969d93697b3a7c415afca098e00858f68f96dc28f",
+    "name": "TSCS Network",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "TSCS",
+            "precision": 18,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://testnetrpc.scschain.com",
+            "name": "SuperEX"
+        }
+    ],
+    "addressPrefix": 42
+}
