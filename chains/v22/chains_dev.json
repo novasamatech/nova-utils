@@ -453,10 +453,16 @@
                 ],
                 "priceId": "kusama",
                 "buyProviders": {
-                    "mercuryo": {}
+                    "mercuryo": {},
+                    "transak": {
+                        "network": "KUSMAASSETHUB"
+                    }
                 },
                 "sellProviders": {
-                    "mercuryo": {}
+                    "mercuryo": {},
+                    "transak": {
+                        "network": "KUSMAASSETHUB"
+                    }
                 }
             },
             {
@@ -4042,7 +4048,7 @@
                 ],
                 "buyProviders": {
                     "transak": {
-                        "network": "MAINNET"
+                        "network": "ASSETHUB"
                     },
                     "mercuryo": {},
                     "banxa": {
@@ -4052,7 +4058,7 @@
                 },
                 "sellProviders": {
                     "transak": {
-                        "network": "MAINNET"
+                        "network": "ASSETHUB"
                     },
                     "mercuryo": {}
                 }
@@ -4413,7 +4419,7 @@
                     "url": "https://opengov-backend.novasama-tech.org/api/v1/referendum-summaries/list"
                 }
             ],
-             "crowdloans": [
+            "crowdloans": [
                 {
                     "type": "github",
                     "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/crowdloan/polkadot-dev.json"
