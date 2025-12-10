@@ -1,0 +1,23 @@
+{
+    "chainId": "66455a580aabff303720aa83adbe6c44502922251c03ba73686d5245da9e21bd",
+    "name": "Autonomys Mainnet",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "AI3",
+            "precision": 18,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc.mainnet.subspace.foundation/ws",
+            "name": "Foundation"
+        },
+        {
+            "url": "wss://rpc.mainnet.autonomys.xyz/ws",
+            "name": "Labs"
+        }
+    ],
+    "addressPrefix": 6094
+}
