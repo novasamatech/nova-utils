@@ -22,7 +22,7 @@ def get_network_list(path):
     except:
         raise
 
-    return chains_data
+    return chains_data["chains"]
 
 
 def get_data_from_file(file_path):
