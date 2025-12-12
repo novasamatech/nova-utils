@@ -882,20 +882,6 @@
                 }
             },
             {
-                "assetId": 19,
-                "symbol": "TEER",
-                "precision": 12,
-                "priceId": "integritee",
-                "type": "orml",
-                "icon": "TEER.svg",
-                "typeExtras": {
-                    "currencyIdScale": "0x050800",
-                    "currencyIdType": "acala_primitives.currency.CurrencyId",
-                    "existentialDeposit": "100000000000",
-                    "transfersEnabled": true
-                }
-            },
-            {
                 "assetId": 20,
                 "symbol": "KICO",
                 "precision": 14,
@@ -1205,17 +1191,6 @@
                 }
             },
             {
-                "assetId": 14,
-                "symbol": "xcTEER",
-                "precision": 12,
-                "priceId": "integritee",
-                "type": "evm",
-                "icon": "TEER.svg",
-                "typeExtras": {
-                    "contractAddress": "0xFfFfffFf4F0CD46769550E5938F6beE2F5d4ef1e"
-                }
-            },
-            {
                 "assetId": 15,
                 "symbol": "xcLIT",
                 "precision": 12,
@@ -1235,17 +1210,6 @@
                 "icon": "SDN.svg",
                 "typeExtras": {
                     "contractAddress": "0xFFFfffFF0Ca324C842330521525E7De111F38972"
-                }
-            },
-            {
-                "assetId": 17,
-                "symbol": "xcXRT",
-                "precision": 9,
-                "priceId": "robonomics-network",
-                "type": "evm",
-                "icon": "XRT.svg",
-                "typeExtras": {
-                    "contractAddress": "0xFffFFffF51470Dca3dbe535bD2880a9CcDBc6Bd9"
                 }
             },
             {
@@ -2183,20 +2147,6 @@
                     "currencyIdScale": "0x0e000000",
                     "currencyIdType": "u32",
                     "existentialDeposit": "10000",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "assetId": 5,
-                "symbol": "XRT",
-                "precision": 9,
-                "type": "orml",
-                "priceId": "robonomics-network",
-                "icon": "XRT.svg",
-                "typeExtras": {
-                    "currencyIdScale": "0x10000000",
-                    "currencyIdType": "u32",
-                    "existentialDeposit": "1683502",
                     "transfersEnabled": true
                 }
             }
@@ -4450,68 +4400,6 @@
         }
     },
     {
-        "chainId": "631ccc82a078481584041656af292834e1ae6daab61d2875b4dd0c14bb9b17bc",
-        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Robonomics",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "XRT",
-                "precision": 9,
-                "icon": "XRT.svg",
-                "priceId": "robonomics-network"
-            },
-            {
-                "assetId": 1,
-                "symbol": "KSM",
-                "precision": 12,
-                "type": "statemine",
-                "icon": "KSM.svg",
-                "priceId": "kusama",
-                "typeExtras": {
-                    "assetId": "4294967295",
-                    "isSufficient": true
-                }
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://kusama.rpc.robonomics.network/",
-                "name": "Airalab node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://robonomics.subscan.io/extrinsic/{hash}",
-                "account": "https://robonomics.subscan.io/account/{address}"
-            }
-        ],
-        "externalApi": {
-            "governance": [
-                {
-                    "type": "polkassembly",
-                    "url": "https://polkassembly-hasura.herokuapp.com/v1/graphql",
-                    "parameters": {
-                        "network": "robonomics"
-                    }
-                }
-            ]
-        },
-        "types": {
-            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/robonomics.json",
-            "overridesCommon": true
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Robonomics.svg",
-        "addressPrefix": 32,
-        "options": [
-            "governance-v1"
-        ],
-        "additional": {
-            "feeViaRuntimeCall": true
-        }
-    },
-    {
         "chainId": "7dd99936c1e9e6d1ce7d90eb6f33bea8393b4bf87677d675aa63c9cb3e8c5b5b",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Encointer",
@@ -4800,46 +4688,6 @@
         ],
         "additional": {
             "feeViaRuntimeCall": true
-        }
-    },
-    {
-        "chainId": "cdedc8eadbfa209d3f207bba541e57c3c58a667b05a2e1d1e86353c9000758da",
-        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Integritee Parachain",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "TEER",
-                "precision": 12,
-                "priceId": "integritee",
-                "icon": "TEER.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://kusama.api.integritee.network",
-                "name": "Integritee node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://integritee.subscan.io/extrinsic/{hash}",
-                "account": "https://integritee.subscan.io/account/{address}"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-history-integritee-prod.novasama-tech.org"
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Integritee.svg",
-        "addressPrefix": 13,
-        "additional": {
-            "supportsGenericLedgerApp": true
         }
     },
     {
