@@ -2203,6 +2203,10 @@
         ],
         "nodes": [
             {
+                "url": "wss://basilisk-rpc.n.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
                 "url": "wss://rpc.basilisk.cloud",
                 "name": "Basilisk node"
             }
@@ -8667,6 +8671,10 @@
             {
                 "url": "wss://rpc.3dpass.org",
                 "name": "3DPass node"
+            },
+            {
+                "url": "wss://rpc.p3d.top",
+                "name": "Lzmz node"
             }
         ],
         "explorers": [
@@ -9704,10 +9712,6 @@
             {
                 "url": "wss://krest.api.onfinality.io/public-ws'",
                 "name": "OnFinality node"
-            },
-            {
-                "url": "wss://wss-krest.peaq.network/",
-                "name": "Krest node"
             }
         ],
         "explorers": [
@@ -10544,14 +10548,6 @@
                 "features": [
                     "noTls12"
                 ]
-            },
-            {
-                "url": "wss://mythos.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://mythos.dotters.network",
-                "name": "IBP2 node"
             }
         ],
         "explorers": [
@@ -11325,7 +11321,7 @@
     {
         "chainId": "28cc1df52619f4edd9f0389a7e910a636276075ecc429600f1dd434e281a04e9",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Xode",
+        "name": "Xode (PAUSED)",
         "assets": [
             {
                 "assetId": 0,
