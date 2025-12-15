@@ -881,6 +881,20 @@
                     "transfersEnabled": true
                 }
             },
+						{
+                "assetId": 19,
+                "symbol": "TEER",
+                "precision": 12,
+                "priceId": "integritee",
+                "type": "orml",
+                "icon": "TEER.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x050800",
+                    "currencyIdType": "acala_primitives.currency.CurrencyId",
+                    "existentialDeposit": "100000000000",
+                    "transfersEnabled": true
+                }
+            },
             {
                 "assetId": 20,
                 "symbol": "KICO",
@@ -1188,6 +1202,17 @@
                 "icon": "CRAB.svg",
                 "typeExtras": {
                     "contractAddress": "0xFFFffFfF8283448b3cB519Ca4732F2ddDC6A6165"
+                }
+            },
+						{
+                "assetId": 14,
+                "symbol": "xcTEER",
+                "precision": 12,
+                "priceId": "integritee",
+                "type": "evm",
+                "icon": "TEER.svg",
+                "typeExtras": {
+                    "contractAddress": "0xFfFfffFf4F0CD46769550E5938F6beE2F5d4ef1e"
                 }
             },
             {
