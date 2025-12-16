@@ -8142,35 +8142,6 @@
         ]
     },
     {
-        "chainId": "ae1ca86c936aa252cdc45f4f436220567b2bbbcc4834f5b8f4191462baf19dfb",
-        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "Continuum (PAUSED)",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "NUUM",
-                "priceId": "mnet-continuum",
-                "precision": 18,
-                "icon": "NUUM.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://continuum-rpc-1.metaverse.network/wss",
-                "name": "MNet node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://continuum.subscan.io/extrinsic/{hash}",
-                "account": "https://continuum.subscan.io/account/{address}"
-            }
-        ],
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Continuum.svg",
-        "addressPrefix": 268
-    },
-    {
         "chainId": "d8761d3c88f26dc12875c00d3165f7d67243d56fc85b4cf19937601a7916e5a9",
         "name": "Enjin Relay",
         "assets": [
