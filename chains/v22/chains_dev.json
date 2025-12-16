@@ -8543,6 +8543,14 @@
         ],
         "nodes": [
             {
+                "url": "wss://lite.sub.latent.to:443",
+                "name": "Latent Holdings (Lite) node"
+            },
+            {
+                "url": "wss://bittensor-finney.api.onfinality.io/public-ws",
+                "name": "OnFinality (Archive) node"
+            },
+            {
                 "url": "wss://entrypoint-finney.opentensor.ai:443",
                 "name": "Opentensor Fdn node"
             }
