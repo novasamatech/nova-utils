@@ -2523,56 +2523,6 @@
         }
     },
     {
-        "chainId": "f22b7850cdd5a7657bbfd90ac86441275bbc57ace3d2698a740c7b0ec4de5ec3",
-        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Bit.Country Pioneer (PAUSED)",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "NEER",
-                "precision": 18,
-                "priceId": "metaverse-network-pioneer",
-                "icon": "NEER.svg"
-            },
-            {
-                "assetId": 1,
-                "symbol": "BIT",
-                "precision": 18,
-                "icon": "BIT.svg",
-                "type": "orml",
-                "typeExtras": {
-                    "currencyIdScale": "0x030000000000000000",
-                    "currencyIdType": "bit_country_primitives.FungibleTokenId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                }
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://pioneer-rpc-1.bit.country/wss",
-                "name": "MetaverseNetwork node 1"
-            },
-            {
-                "url": "wss://pioneer-rpc-2.bit.country/wss",
-                "name": "MetaverseNetwork node 2"
-            },
-            {
-                "url": "wss://pioneer-rpc-3.bit.country/wss",
-                "name": "MetaverseNetwork node 3"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://pioneer.subscan.io/extrinsic/{hash}",
-                "account": "https://pioneer.subscan.io/account/{address}"
-            }
-        ],
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Bit.Country_Pioneer.svg",
-        "addressPrefix": 268
-    },
-    {
         "chainId": "fc41b9bd8ef8fe53d58c7ea67c794c7ec9a73daf05e6d54b14ff6342c99ba64c",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
         "name": "Acala",
