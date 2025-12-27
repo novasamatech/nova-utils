@@ -215,14 +215,6 @@
         "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
         "hasXcmPaymentApi": true
     },
-    "cdedc8eadbfa209d3f207bba541e57c3c58a667b05a2e1d1e86353c9000758da": {
-        "parachainId": 2015,
-        "runtimePrefix": "integritee_kusama_runtime",
-        "name": "Integritee Parachain",
-        "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
-        "hasXcmPaymentApi": true
-    },
     "86e49c195aeae7c5c4a86ced251f1a28c67b3c35d8289c387ede1776cdd88b24": {
         "parachainId": 2105,
         "runtimePrefix": "crab_runtime",
@@ -275,14 +267,6 @@
         "parachainId": 1002,
         "runtimePrefix": "bridge_hub_westend_runtime",
         "name": "Westend Bridge Hub",
-        "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
-        "hasXcmPaymentApi": true
-    },
-    "1eb6fb0ba5187434de017a70cb84d4f47142df1d571d0ef9e7e1407f2b80b93c": {
-        "parachainId": 1004,
-        "runtimePrefix": "people_westend_runtime",
-        "name": "Westend People",
         "dryRunVersion": 2,
         "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
         "hasXcmPaymentApi": true
