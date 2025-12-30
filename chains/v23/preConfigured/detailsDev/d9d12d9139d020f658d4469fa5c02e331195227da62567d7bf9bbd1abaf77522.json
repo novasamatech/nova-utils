@@ -1,0 +1,19 @@
+{
+    "chainId": "d9d12d9139d020f658d4469fa5c02e331195227da62567d7bf9bbd1abaf77522",
+    "name": "Parachain Hades testnet (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "notNodl",
+            "precision": 11,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://node-7273232234617282560.nv.onfinality.io/ws?apikey=b937a7d7-7395-49b9-b745-60a0342fa365",
+            "name": "OnFinality"
+        }
+    ],
+    "addressPrefix": 37
+}
