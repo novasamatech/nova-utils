@@ -49,7 +49,6 @@
 |  45 | OpenSea                              | https://opensea.io/                                 | art,evm               |
 |  46 | Pendulum Chain Portal                | https://portal.pendulumchain.org/pendulum/dashboard | utilities,staking     |
 |  47 | Phala App                            | https://app.phala.network/                          | staking               |
-|  48 | PolkaIdentity                        | https://app.polkaidentity.com                       | social,utilities      |
 |  49 | Polkadex Orderbook                   | https://orderbook.polkadex.trade/                   | dex,utilities         |
 |  50 | Polkadot Bounties                    | https://bounties.usepapi.app/                       | utilities,governance  |
 |  51 | Polkadot Faucet                      | https://faucet.polkadot.io                          | utilities             |
