@@ -48,6 +48,7 @@
 |  44 | Omni Liquid Staking                  | https://omni.ls/                                    | staking,evm           |
 |  45 | OpenSea                              | https://opensea.io/                                 | art,evm               |
 |  46 | Pendulum Chain Portal                | https://portal.pendulumchain.org/pendulum/dashboard | utilities,staking     |
+|  48 | PolkaIdentity                        | https://app.polkaidentity.com                       | social,utilities      |
 |  47 | Phala App                            | https://app.phala.network/                          | staking               |
 |  49 | Polkadex Orderbook                   | https://orderbook.polkadex.trade/                   | dex,utilities         |
 |  50 | Polkadot Bounties                    | https://bounties.usepapi.app/                       | utilities,governance  |
