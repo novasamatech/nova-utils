@@ -1,0 +1,19 @@
+{
+    "chainId": "8b8c140b0af9db70686583e3f6bf2a59052bfe9584b97d20c45068281e976eb9",
+    "name": "Chainflip-Berghain",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "FLIP",
+            "precision": 18,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://mainnet-archive.chainflip.io",
+            "name": "chainflip"
+        }
+    ],
+    "addressPrefix": 2112
+}

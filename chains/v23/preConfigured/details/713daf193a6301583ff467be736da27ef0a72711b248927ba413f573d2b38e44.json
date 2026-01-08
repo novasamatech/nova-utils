@@ -1,0 +1,27 @@
+{
+    "chainId": "713daf193a6301583ff467be736da27ef0a72711b248927ba413f573d2b38e44",
+    "name": "Westend Collectives (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "WND",
+            "precision": 12,
+            "icon": "WND.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://collectives-westend-rpc.n.dwellir.com",
+            "name": "Dwellir"
+        },
+        {
+            "url": "wss://westend-collectives-rpc-tn.dwellir.com",
+            "name": "Dwellir Tunisia"
+        },
+        {
+            "url": "wss://westend-collectives-rpc.polkadot.io",
+            "name": "Parity"
+        }
+    ],
+    "addressPrefix": 42
+}
