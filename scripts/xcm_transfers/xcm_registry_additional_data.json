@@ -195,8 +195,8 @@
         "parachainId": 2090,
         "runtimePrefix": "basilisk_runtime",
         "name": "Basilisk",
-        "dryRunVersion": 1,
-        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome",
+        "dryRunVersion": 2,
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
         "hasXcmPaymentApi": true
     },
     "cd4d732201ebe5d6b014edda071c4203e16867305332301dc8d092044b28e554": {
@@ -211,14 +211,6 @@
         "parachainId": 1001,
         "runtimePrefix": "encointer_kusama_runtime",
         "name": "Encointer",
-        "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
-        "hasXcmPaymentApi": true
-    },
-    "cdedc8eadbfa209d3f207bba541e57c3c58a667b05a2e1d1e86353c9000758da": {
-        "parachainId": 2015,
-        "runtimePrefix": "integritee_kusama_runtime",
-        "name": "Integritee Parachain",
         "dryRunVersion": 2,
         "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
         "hasXcmPaymentApi": true
@@ -283,14 +275,6 @@
         "parachainId": 1004,
         "runtimePrefix": "people_westend_runtime",
         "name": "Westend People",
-        "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
-        "hasXcmPaymentApi": true
-    },
-    "713daf193a6301583ff467be736da27ef0a72711b248927ba413f573d2b38e44": {
-        "parachainId": 1001,
-        "runtimePrefix": "collectives_westend_runtime",
-        "name": "Westend Collectives",
         "dryRunVersion": 2,
         "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
         "hasXcmPaymentApi": true
