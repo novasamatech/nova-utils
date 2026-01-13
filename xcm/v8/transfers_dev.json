@@ -1467,6 +1467,29 @@
       "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
       "assets": [
         {
+          "assetId": 1,
+          "assetLocation": "DOT-Statemint",
+          "assetLocationPath": {
+            "type": "absolute"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+                "assetId": 0,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "5175135755"
+                  },
+                  "instructions": "xcmPalletDest"
+                }
+              },
+              "type": "xcmpallet-transferAssets"
+            }
+          ]
+        },
+        {
           "assetId": 3,
           "assetLocation": "ACA",
           "assetLocationPath": {
@@ -1505,7 +1528,7 @@
         },
         {
           "assetId": 1,
-          "assetLocation": "DOT",
+          "assetLocation": "DOT-Statemint",
           "assetLocationPath": {
             "type": "absolute"
           },
@@ -1902,6 +1925,29 @@
           ]
         },
         {
+          "assetId": 3,
+          "assetLocation": "DOT-Statemint",
+          "assetLocationPath": {
+            "type": "absolute"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+                "assetId": 0,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "5175135755"
+                  },
+                  "instructions": "xtokensDest"
+                }
+              },
+              "type": "xcmpallet-transferAssets"
+            }
+          ]
+        },
+        {
           "assetId": 9,
           "assetLocation": "INTR",
           "assetLocationPath": {
@@ -2019,7 +2065,7 @@
         },
         {
           "assetId": 3,
-          "assetLocation": "DOT",
+          "assetLocation": "DOT-Statemint",
           "assetLocationPath": {
             "type": "absolute"
           },
@@ -2655,6 +2701,43 @@
       "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
       "assets": [
         {
+          "assetId": 0,
+          "assetLocation": "DOT-Statemint",
+          "assetLocationPath": {
+            "type": "relative"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "fe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "assetId": 1,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "17356651607"
+                  },
+                  "instructions": "xcmPalletDest"
+                }
+              },
+              "type": "xcmpallet"
+            },
+            {
+              "destination": {
+                "chainId": "bf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72",
+                "assetId": 2,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "18012616398"
+                  },
+                  "instructions": "xcmPalletDest"
+                }
+              },
+              "type": "xcmpallet"
+            }
+          ]
+        },
+        {
           "assetId": 1,
           "assetLocation": "USDT-Statemint",
           "assetLocationPath": {
@@ -2902,7 +2985,7 @@
         },
         {
           "assetId": 2,
-          "assetLocation": "DOT",
+          "assetLocation": "DOT-Statemint",
           "assetLocationPath": {
             "type": "absolute"
           },
@@ -2915,6 +2998,20 @@
                   "mode": {
                     "type": "proportional",
                     "value": "1376030024"
+                  },
+                  "instructions": "xtokensDest"
+                }
+              },
+              "type": "xtokens"
+            },
+            {
+              "destination": {
+                "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+                "assetId": 0,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "5175135755"
                   },
                   "instructions": "xtokensDest"
                 }
@@ -3130,7 +3227,7 @@
       "assets": [
         {
           "assetId": 2,
-          "assetLocation": "DOT",
+          "assetLocation": "DOT-Statemint",
           "assetLocationPath": {
             "type": "absolute"
           },
@@ -3232,7 +3329,7 @@
       "assets": [
         {
           "assetId": 1,
-          "assetLocation": "DOT",
+          "assetLocation": "DOT-Statemint",
           "assetLocationPath": {
             "type": "absolute"
           },
@@ -3695,7 +3792,7 @@
       "assets": [
         {
           "assetId": 1,
-          "assetLocation": "DOT",
+          "assetLocation": "DOT-Statemint",
           "assetLocationPath": {
             "type": "absolute"
           },
@@ -3890,7 +3987,7 @@
         },
         {
           "assetId": 1,
-          "assetLocation": "DOT",
+          "assetLocation": "DOT-Statemint",
           "assetLocationPath": {
             "type": "absolute"
           },
