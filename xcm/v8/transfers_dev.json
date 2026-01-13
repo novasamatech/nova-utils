@@ -38,7 +38,14 @@
     },
     "DOT-Statemint": {
       "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
-      "multiLocation": {}
+      "multiLocation": {},
+      "reserveFee": {
+        "mode": {
+          "type": "proportional",
+          "value": "5175135755"
+        },
+        "instructions": "xtokensReserve"
+      }
     },
     "MOVR": {
       "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
