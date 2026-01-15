@@ -66,7 +66,7 @@
                 "event": "https://polkadot.statescan.io/#/events/{event}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Polkadot.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot.svg",
         "addressPrefix": 0,
         "externalApi": {
             "staking": [
@@ -198,7 +198,7 @@
                 "event": "https://kusama.statescan.io/#/events/{event}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Kusama.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama.svg",
         "addressPrefix": 2,
         "externalApi": {
             "staking": [
@@ -296,7 +296,7 @@
                 "event": "https://westend.statescan.io/#/events/{event}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
         "addressPrefix": 42,
         "externalApi": {
             "staking": [
@@ -419,7 +419,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
         "addressPrefix": 42,
         "options": [
             "testnet",
@@ -607,7 +607,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Kusama_Asset_Hub.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_Asset_Hub.svg",
         "addressPrefix": 2,
         "options": [
             "swap-hub",
@@ -1030,7 +1030,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Karura.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Karura.svg",
         "addressPrefix": 8,
         "options": [
             "governance-v1"
@@ -1367,7 +1367,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/moonriver.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/moonriver.svg",
         "addressPrefix": 1285,
         "options": [
             "ethereumBased",
@@ -1429,7 +1429,7 @@
                 "account": "https://moonbase.subscan.io/account/{address}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Moonbase_Alpha_Testnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Moonbase_Alpha_Testnet.svg",
         "addressPrefix": 1287,
         "options": [
             "ethereumBased",
@@ -1619,7 +1619,7 @@
                 "account": "https://shiden.subscan.io/account/{address}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Shiden.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Shiden.svg",
         "addressPrefix": 5,
         "externalApi": {
             "governance": [
@@ -1863,7 +1863,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Bifrost_Kusama.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Bifrost_Kusama.svg",
         "addressPrefix": 0,
         "legacyAddressPrefix": 6,
         "options": [
@@ -2071,7 +2071,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Kintsugi.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kintsugi.svg",
         "addressPrefix": 2092,
         "additional": {
             "feeViaRuntimeCall": true
@@ -2106,7 +2106,7 @@
                 "account": "https://edgscan.ink/#/accounts/{address}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Edgeware.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Edgeware.svg",
         "addressPrefix": 7,
         "additional": {
             "themeColor": "#1F78FF",
@@ -2226,13 +2226,13 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Basilisk.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Basilisk.svg",
         "addressPrefix": 10041,
         "options": [
             "governance-v1"
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/leohar/nova-utils/master/chains/v2/types/basilisk.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/basilisk.json",
             "overridesCommon": true
         },
         "additional": {
@@ -2273,7 +2273,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Altair.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Altair.svg",
         "addressPrefix": 136,
         "options": [
             "governance"
@@ -2331,7 +2331,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/KILT_Spiritnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/KILT_Spiritnet.svg",
         "addressPrefix": 38,
         "options": [
             "governance-v1"
@@ -2364,7 +2364,7 @@
                 "account": "https://kilt-testnet.subscan.io/account/{address}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/KILT_Peregrine_Testnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/KILT_Peregrine_Testnet.svg",
         "addressPrefix": 38,
         "options": [
             "testnet"
@@ -2400,7 +2400,7 @@
                 "name": "Unique US node"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Quartz.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Quartz.svg",
         "addressPrefix": 255,
         "additional": {
             "feeViaRuntimeCall": true,
@@ -2682,7 +2682,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Acala.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Acala.svg",
         "addressPrefix": 10,
         "additional": {
             "feeViaRuntimeCall": true,
@@ -2729,7 +2729,7 @@
                 "account": "https://acala-testnet.subscan.io/account/{address}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Acala_Mandala_Testnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Acala_Mandala_Testnet.svg",
         "addressPrefix": 42,
         "options": [
             "testnet"
@@ -3075,7 +3075,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/moonbeam.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/moonbeam.svg",
         "addressPrefix": 1284,
         "options": [
             "ethereumBased",
@@ -3164,7 +3164,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Ethereum.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Ethereum.svg",
         "addressPrefix": 1,
         "options": [
             "ethereumBased",
@@ -3208,7 +3208,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Ethereum_Goerli.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Ethereum_Goerli.svg",
         "addressPrefix": 11155111,
         "options": [
             "testnet",
@@ -3253,7 +3253,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Ethereum_Goerli.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Ethereum_Goerli.svg",
         "addressPrefix": 5,
         "options": [
             "testnet",
@@ -3470,7 +3470,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Astar.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Astar.svg",
         "addressPrefix": 5,
         "additional": {
             "defaultTip": "1000000",
@@ -3869,11 +3869,11 @@
             "crowdloans": [
                 {
                     "type": "github",
-                    "url": "https://raw.githubusercontent.com/leohar/nova-utils/master/crowdloan/polkadot-dev.json"
+                    "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/crowdloan/polkadot-dev.json"
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Polkadot_Asset_Hub.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Asset_Hub.svg",
         "addressPrefix": 0,
         "options": [
             "crowdloans",
@@ -3946,10 +3946,10 @@
             ]
         },
         "types": {
-            "url": "https://raw.githubusercontent.com/leohar/nova-utils/master/chains/v2/types/robonomics.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/robonomics.json",
             "overridesCommon": true
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Robonomics.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Robonomics.svg",
         "addressPrefix": 32,
         "options": [
             "governance-v1"
@@ -4000,7 +4000,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Encointer.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Encointer.svg",
         "addressPrefix": 2,
         "additional": {
             "feeViaRuntimeCall": true,
@@ -4075,7 +4075,7 @@
                 "account": "https://picasso.subscan.io/account/{address}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Picasso.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Picasso.svg",
         "addressPrefix": 49,
         "options": [
             "governance-v1"
@@ -4143,7 +4143,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Zeitgeist.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Zeitgeist.svg",
         "addressPrefix": 73,
         "options": [
             "governance-v1"
@@ -4185,7 +4185,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Subsocial_Parachain.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Subsocial_Parachain.svg",
         "addressPrefix": 28
     },
     {
@@ -4240,7 +4240,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Crust_Shadow.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Crust_Shadow.svg",
         "addressPrefix": 66,
         "options": [
             "governance-v1"
@@ -4283,7 +4283,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Integritee.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Integritee.svg",
         "addressPrefix": 13,
         "additional": {
             "supportsGenericLedgerApp": true
@@ -4333,7 +4333,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Centrifuge.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Centrifuge.svg",
         "addressPrefix": 36,
         "options": [
             "governance-v1"
@@ -5373,7 +5373,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Hydration.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Hydration.svg",
         "addressPrefix": 0,
         "options": [
             "governance",
@@ -5632,7 +5632,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Interlay.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Interlay.svg",
         "addressPrefix": 2032,
         "additional": {
             "feeViaRuntimeCall": true
@@ -5672,7 +5672,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Nodle.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Nodle.svg",
         "addressPrefix": 37,
         "additional": {
             "supportsGenericLedgerApp": true
@@ -5695,7 +5695,7 @@
                 "name": "Singular DEV node"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Singular_Testnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Singular_Testnet.svg",
         "addressPrefix": 0,
         "options": [
             "testnet"
@@ -5749,7 +5749,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Phala.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Phala.svg",
         "addressPrefix": 30,
         "options": [
             "governance-v1"
@@ -5813,7 +5813,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/AlephZero.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/AlephZero.svg",
         "addressPrefix": 42,
         "additional": {
             "themeColor": "#10B6B1",
@@ -5905,7 +5905,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Composable.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Composable.svg",
         "addressPrefix": 50,
         "options": [
             "governance-v1"
@@ -6063,7 +6063,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Polkadex.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadex.svg",
         "addressPrefix": 88,
         "options": [
             "governance-v1"
@@ -6112,7 +6112,7 @@
                 "extrinsic": "https://neuroweb.subscan.io/extrinsic/{hash}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/NeuroWeb.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/NeuroWeb.svg",
         "addressPrefix": 101,
         "additional": {
             "feeViaRuntimeCall": true,
@@ -6341,7 +6341,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Bifrost_Polkadot.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Bifrost_Polkadot.svg",
         "addressPrefix": 0,
         "legacyAddressPrefix": 6,
         "options": [
@@ -6390,7 +6390,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Heima.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Heima.svg",
         "addressPrefix": 31,
         "additional": {
             "supportsGenericLedgerApp": true
@@ -6446,7 +6446,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Unique.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Unique.svg",
         "addressPrefix": 7391,
         "options": [
             "fullSyncByDefault"
@@ -6603,7 +6603,7 @@
                 "account": "https://mangatax.subscan.io/account/{address}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/MangataX.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/MangataX.svg",
         "addressPrefix": 42,
         "additional": {
             "feeViaRuntimeCall": true
@@ -6630,7 +6630,7 @@
                 "name": "Aleph Zero node"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/AlephZero_Testnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/AlephZero_Testnet.svg",
         "addressPrefix": 42,
         "options": [
             "testnet"
@@ -6658,7 +6658,7 @@
                 "name": "Moonbase Relay node"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Moonbase_Alpha_Testnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Moonbase_Alpha_Testnet.svg",
         "addressPrefix": 42,
         "options": [
             "testnet"
@@ -6702,7 +6702,7 @@
                 "account": "https://polymesh.subscan.io/account/{address}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Polymesh_Testnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polymesh_Testnet.svg",
         "addressPrefix": 42,
         "options": [
             "testnet"
@@ -6730,7 +6730,7 @@
                 "name": "JelliedOwl node"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Kabocha.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kabocha.svg",
         "addressPrefix": 27
     },
     {
@@ -6779,7 +6779,7 @@
                 "event": "https://paseo.statescan.io/#/events/{event}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Paseo_Testnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Paseo_Testnet.svg",
         "addressPrefix": 0,
         "options": [
             "testnet",
@@ -6841,7 +6841,7 @@
                 "event": "https://assethub-paseo.statescan.io/#/events/{event}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Paseo_Testnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Paseo_Testnet.svg",
         "addressPrefix": 0,
         "options": [
             "testnet",
@@ -6876,7 +6876,7 @@
                 ]
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Rococo_Testnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Rococo_Testnet.svg",
         "addressPrefix": 42,
         "options": [
             "testnet",
@@ -7043,7 +7043,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Amplitude.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Amplitude.svg",
         "addressPrefix": 0,
         "options": [
             "governance-v1"
@@ -7108,7 +7108,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Ternoa.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Ternoa.svg",
         "addressPrefix": 42,
         "additional": {
             "themeColor": "#EB2B6C",
@@ -7144,7 +7144,7 @@
                 "account": "https://explorer-alphanet.ternoa.dev/{address}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Ternoa_Alphanet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Ternoa_Alphanet.svg",
         "addressPrefix": 42,
         "options": [
             "testnet"
@@ -7177,7 +7177,7 @@
                 "account": "https://gov2.statescan.io/#/accounts/{address}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Governance2_Testnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Governance2_Testnet.svg",
         "addressPrefix": 42,
         "options": [
             "testnet",
@@ -7220,7 +7220,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Polymesh.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polymesh.svg",
         "addressPrefix": 12,
         "additional": {
             "themeColor": "#EB2B6C",
@@ -7244,7 +7244,7 @@
                 "name": "JelliedOwl node"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Beresheet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Beresheet.svg",
         "addressPrefix": 7,
         "options": [
             "testnet"
@@ -7276,7 +7276,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/DAOIPCI.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/DAOIPCI.svg",
         "addressPrefix": 32
     },
     {
@@ -7303,7 +7303,7 @@
                 "account": "https://explorer.mainnet.oct.network/myriad/accounts/{address}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Myriad.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Myriad.svg",
         "addressPrefix": 42
     },
     {
@@ -7330,7 +7330,7 @@
                 "account": "https://explorer.mainnet.oct.network/fusotao/accounts/{address}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Fusotao.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Fusotao.svg",
         "addressPrefix": 42
     },
     {
@@ -7367,7 +7367,7 @@
                 "account": "https://xx.polkastats.io/account/{address}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/XX_network.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/XX_network.svg",
         "addressPrefix": 55,
         "additional": {
             "feeViaRuntimeCall": true
@@ -7655,7 +7655,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Pendulum.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Pendulum.svg",
         "addressPrefix": 0,
         "options": [
             "governance-v1"
@@ -7689,7 +7689,7 @@
                 "account": "https://explorer.testnet.aventus.io/address/{address}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Aventus_Testnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Aventus_Testnet.svg",
         "addressPrefix": 42,
         "options": [
             "testnet"
@@ -7729,7 +7729,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Aventus.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Aventus.svg",
         "addressPrefix": 42
     },
     {
@@ -7766,7 +7766,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Crust_Parachain.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Crust_Parachain.svg",
         "addressPrefix": 0,
         "additional": {
             "feeViaRuntimeCall": true
@@ -7941,7 +7941,7 @@
                 "name": "Kintsugi Labs"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Kintsugi_Testnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kintsugi_Testnet.svg",
         "addressPrefix": 2092,
         "options": [
             "testnet"
@@ -7966,10 +7966,10 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/leohar/nova-utils/master/chains/v2/types/hashed.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/hashed.json",
             "overridesCommon": true
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Hashed.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Hashed.svg",
         "addressPrefix": 42
     },
     {
@@ -8012,7 +8012,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Bittensor.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Bittensor.svg",
         "addressPrefix": 42,
         "additional": {
             "supportsGenericLedgerApp": true
@@ -8055,7 +8055,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Polygon.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polygon.svg",
         "addressPrefix": 137,
         "options": [
             "ethereumBased",
@@ -8099,7 +8099,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Exosama.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Exosama.svg",
         "addressPrefix": 2109,
         "options": [
             "ethereumBased",
@@ -8143,7 +8143,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/3DPass.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/3DPass.svg",
         "addressPrefix": 71
     },
     {
@@ -8189,7 +8189,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Ajuna.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Ajuna.svg",
         "addressPrefix": 1328,
         "additional": {
             "supportsGenericLedgerApp": true
@@ -8236,7 +8236,7 @@
                 "account": "https://darwinia.subscan.io/account/{address}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Darwinia.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Darwinia.svg",
         "addressPrefix": 18,
         "options": [
             "ethereumBased"
@@ -8287,7 +8287,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Crab.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Crab.svg",
         "addressPrefix": 42,
         "options": [
             "ethereumBased"
@@ -8324,10 +8324,10 @@
             ]
         },
         "types": {
-            "url": "https://raw.githubusercontent.com/leohar/nova-utils/master/chains/v2/types/frequency.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/frequency.json",
             "overridesCommon": true
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Frequency.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Frequency.svg",
         "addressPrefix": 90,
         "additional": {
             "supportsGenericLedgerApp": true
@@ -8393,7 +8393,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Vara.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Vara.svg",
         "addressPrefix": 137,
         "additional": {
             "themeColor": "#10B6B1",
@@ -8433,7 +8433,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Giant.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Giant.svg",
         "addressPrefix": 42,
         "additional": {
             "feeViaRuntimeCall": true
@@ -8509,7 +8509,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/BSCTestnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/BSCTestnet.svg",
         "addressPrefix": 97,
         "options": [
             "testnet",
@@ -8589,7 +8589,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/BSC.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/BSC.svg",
         "addressPrefix": 56,
         "options": [
             "ethereumBased",
@@ -8614,7 +8614,7 @@
                 "name": "Giant testnet node"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Giant_Testnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Giant_Testnet.svg",
         "addressPrefix": 42,
         "options": [
             "testnet"
@@ -8671,7 +8671,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Polkadot_Bridge_Hub.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Bridge_Hub.svg",
         "addressPrefix": 0,
         "additional": {
             "supportsGenericLedgerApp": true,
@@ -8726,7 +8726,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Kusama_Bridge_Hub.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_Bridge_Hub.svg",
         "addressPrefix": 2,
         "additional": {
             "supportsGenericLedgerApp": true,
@@ -8785,7 +8785,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Polkadot_Collectives.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Collectives.svg",
         "addressPrefix": 0,
         "additional": {
             "identityChain": "67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008",
@@ -8843,7 +8843,7 @@
                 "event": "https://people-polkadot.statescan.io/#/events/{event}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Polkadot_People.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_People.svg",
         "addressPrefix": 0,
         "options": [
             "multisig"
@@ -8900,7 +8900,7 @@
                 "event": "https://people-kusama.statescan.io/#/events/{event}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Kusama_People.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_People.svg",
         "addressPrefix": 2,
         "options": [
             "multisig"
@@ -8928,7 +8928,7 @@
                 "name": "PendulumChain node"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Amplitude_foucoco.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Amplitude_foucoco.svg",
         "addressPrefix": 0,
         "options": [
             "testnet"
@@ -9140,7 +9140,7 @@
                 "name": "Kintsugi Labs node"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Interlay_Testnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Interlay_Testnet.svg",
         "addressPrefix": 2032,
         "options": [
             "testnet"
@@ -9172,7 +9172,7 @@
                 "account": "https://krest.subscan.io/account/{address}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/krest.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/krest.svg",
         "addressPrefix": 42
     },
     {
@@ -9236,7 +9236,7 @@
                 "account": "https://manta.subscan.io/account/{address}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Manta.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Manta.svg",
         "addressPrefix": 77,
         "additional": {
             "themeColor": "#1F78FF",
@@ -9265,7 +9265,7 @@
                 "name": "Gear Tech test node"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Vara_Testnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Vara_Testnet.svg",
         "addressPrefix": 137,
         "options": [
             "testnet"
@@ -9307,7 +9307,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Enjin.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Enjin.svg",
         "addressPrefix": 1110,
         "options": [
             "governance-v1"
@@ -9366,7 +9366,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Energy_Web.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Energy_Web.svg",
         "addressPrefix": 246,
         "options": [
             "ethereumBased",
@@ -9408,7 +9408,7 @@
                 "account": "https://astar.subscan.io/account/{address}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Astar.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Astar.svg",
         "addressPrefix": 592,
         "options": [
             "ethereumBased",
@@ -9442,7 +9442,7 @@
                 "account": "https://centrifuge.subscan.io/account/{address}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Centrifuge.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Centrifuge.svg",
         "addressPrefix": 2031,
         "options": [
             "ethereumBased",
@@ -9472,7 +9472,7 @@
                 "name": "http node"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Acala_Mandala_Testnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Acala_Mandala_Testnet.svg",
         "addressPrefix": 595,
         "options": [
             "testnet",
@@ -9498,7 +9498,7 @@
                 "name": "EWX node"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Energy_Web_Testnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Energy_Web_Testnet.svg",
         "addressPrefix": 42,
         "options": [
             "testnet"
@@ -9555,7 +9555,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Joystream.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Joystream.svg",
         "addressPrefix": 126
     },
     {
@@ -9586,7 +9586,7 @@
                 "account": "https://dock.subscan.io/account/{address}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Dock.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Dock.svg",
         "addressPrefix": 22
     },
     {
@@ -9623,7 +9623,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Energy_Web_X.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Energy_Web_X.svg",
         "addressPrefix": 42,
         "additional": {
             "supportsGenericLedgerApp": true
@@ -9646,7 +9646,7 @@
                 "name": "Energy Web X Rococo node"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Energy_Web_Testnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Energy_Web_Testnet.svg",
         "addressPrefix": 42,
         "options": [
             "testnet"
@@ -9686,7 +9686,7 @@
                 "extrinsic": "https://invarch.statescan.io/#/extrinsics/{hash}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/InvArch.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/InvArch.svg",
         "addressPrefix": 117,
         "additional": {
             "supportsGenericLedgerApp": true
@@ -9721,7 +9721,7 @@
                 "account": "https://crust.subscan.io/account/{address}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Crust.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Crust.svg",
         "addressPrefix": 66
     },
     {
@@ -9775,7 +9775,7 @@
                 "account": "https://manta.socialscan.io/address/{address}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Manta.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Manta.svg",
         "addressPrefix": 169,
         "options": [
             "ethereumBased",
@@ -9816,7 +9816,7 @@
                 "name": "Parity node"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/BridgeHub_Testnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/BridgeHub_Testnet.svg",
         "addressPrefix": 42,
         "options": [
             "testnet"
@@ -9873,7 +9873,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Enjin.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Enjin.svg",
         "addressPrefix": 2135,
         "additional": {
             "disabledCheckMetadataHash": true
@@ -9910,7 +9910,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Curio.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Curio.svg",
         "addressPrefix": 777
     },
     {
@@ -9935,10 +9935,10 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/leohar/nova-utils/master/chains/v2/types/avail_turing.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/avail_turing.json",
             "overridesCommon": true
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Avail_Testnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Avail_Testnet.svg",
         "addressPrefix": 42,
         "additional": {
             "themeColor": "#58C8F6"
@@ -9999,7 +9999,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Mythos.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Mythos.svg",
         "addressPrefix": 29972,
         "options": [
             "ethereumBased",
@@ -10054,7 +10054,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Acurast_Canary.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Acurast_Canary.svg",
         "addressPrefix": 42,
         "additional": {
             "feeViaRuntimeCall": true
@@ -10100,10 +10100,10 @@
             ]
         },
         "types": {
-            "url": "https://raw.githubusercontent.com/leohar/nova-utils/master/chains/v2/types/kreivo.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/kreivo.json",
             "overridesCommon": true
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Kreivo.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kreivo.svg",
         "addressPrefix": 2
     },
     {
@@ -10141,7 +10141,7 @@
                 "extrinsic": "https://nexus.statescan.io/#/extrinsics/{hash}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Hyperbridge_Nexus.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Hyperbridge_Nexus.svg",
         "addressPrefix": 0,
         "legacyAddressPrefix": 42,
         "additional": {
@@ -10182,7 +10182,7 @@
             }
         ],
         "types": {
-            "url": "https://raw.githubusercontent.com/leohar/nova-utils/master/chains/v2/types/avail.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/avail.json",
             "overridesCommon": true
         },
         "externalApi": {
@@ -10205,7 +10205,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Avail.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Avail.svg",
         "addressPrefix": 42,
         "options": [
             "pushSupport",
@@ -10254,7 +10254,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
         "addressPrefix": 42,
         "options": [
             "governance",
@@ -10295,7 +10295,7 @@
                 "extrinsic": "https://cere.statescan.io/#/extrinsics/{hash}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Cere.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Cere.svg",
         "addressPrefix": 54,
         "additional": {
             "disabledCheckMetadataHash": true
@@ -10328,7 +10328,7 @@
                 "account": "https://main.dentnet.io/explorer/dentnet/account/{address}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/DENTNet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/DENTNet.svg",
         "addressPrefix": 9807,
         "additional": {
             "supportsGenericLedgerApp": true
@@ -10373,7 +10373,7 @@
                 "event": "https://people-westend.statescan.io/#/events/{event}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Westend_People.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Westend_People.svg",
         "addressPrefix": 42,
         "additional": {},
         "options": [
@@ -10422,7 +10422,7 @@
                 "account": "https://evm-explorer.alephzero.org/address/{address}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/AlephZero.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/AlephZero.svg",
         "addressPrefix": 41455,
         "options": [
             "ethereumBased",
@@ -10479,7 +10479,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Base.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Base.svg",
         "addressPrefix": 8453,
         "options": [
             "ethereumBased",
@@ -10541,7 +10541,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/ZKsync_Mainnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/ZKsync_Mainnet.svg",
         "addressPrefix": 324,
         "options": [
             "ethereumBased",
@@ -10573,7 +10573,7 @@
                 "account": "https://cc-enterprise.subscan.io/account/{address}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Creditcoin.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Creditcoin.svg",
         "addressPrefix": 42
     },
     {
@@ -10605,7 +10605,7 @@
                 "account": "https://creditcoin.subscan.io/account/{address}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Creditcoin.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Creditcoin.svg",
         "addressPrefix": 42,
         "additional": {
             "supportsGenericLedgerApp": true
@@ -10636,7 +10636,7 @@
                 "account": "https://humanode.subscan.io/account/{address}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Humanode.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Humanode.svg",
         "addressPrefix": 5234
     },
     {
@@ -10668,7 +10668,7 @@
                 "account": "https://dbc.subscan.io/account/{address}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/DeepBrain.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/DeepBrain.svg",
         "addressPrefix": 42
     },
     {
@@ -10697,7 +10697,7 @@
                 "account": "https://peaq.subscan.io/account/{address}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/peaq.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/peaq.svg",
         "addressPrefix": 42,
         "additional": {
             "supportsGenericLedgerApp": true
@@ -10734,7 +10734,7 @@
                 "extrinsic": "https://explorer.laosnetwork.io/tx/{hash}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/LAOS.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/LAOS.svg",
         "addressPrefix": 42,
         "options": [
             "ethereumBased"
@@ -10848,7 +10848,7 @@
                 "name": "Xode archive node"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Xode_Kusama.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Xode_Kusama.svg",
         "addressPrefix": 42
     },
     {
@@ -10869,10 +10869,10 @@
                 "name": "Jamton node"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Jamton.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Jamton.svg",
         "addressPrefix": 5589,
         "types": {
-            "url": "https://raw.githubusercontent.com/leohar/nova-utils/master/chains/v2/types/jamton.json",
+            "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/jamton.json",
             "overridesCommon": true
         }
     },
@@ -10893,7 +10893,7 @@
                 "name": "Novasama node"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
         "addressPrefix": 42,
         "options": [
             "testnet"
@@ -10929,7 +10929,7 @@
                 "event": "https://collectives-westend.statescan.io/#/events/{event}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
         "addressPrefix": 42,
         "options": [
             "testnet"
@@ -10960,7 +10960,7 @@
                 "event": "https://tangle.statescan.io/#/events/{event}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Tangle.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Tangle.svg",
         "addressPrefix": 5845,
         "additional": {
             "disabledCheckMetadataHash": true
@@ -10986,7 +10986,7 @@
                 "name": "Muse node"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Westend_Testnet.svg",
         "addressPrefix": 29972,
         "externalApi": {
             "staking": [
@@ -11064,7 +11064,7 @@
                 "event": "https://coretime-polkadot.statescan.io/#/events/{event}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Polkadot_Coretime.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Coretime.svg",
         "addressPrefix": 0,
         "options": [
             "multisig"
@@ -11122,7 +11122,7 @@
                 "event": "https://coretime-kusama.statescan.io/#/events/{event}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Kusama_Coretime.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_Coretime.svg",
         "addressPrefix": 2,
         "options": [
             "multisig"
@@ -11157,7 +11157,7 @@
                 "extrinsic": "https://scanner.argoscan.net/tx/{hash}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Argochain.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Argochain.svg",
         "addressPrefix": 42,
         "additional": {
             "supportsGenericLedgerApp": true
@@ -11188,7 +11188,7 @@
                 "account": "https://tanssi.subscan.io/account/account/{address}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Tanssi.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Tanssi.svg",
         "addressPrefix": 42,
         "additional": {
             "supportsGenericLedgerApp": true
@@ -11236,7 +11236,7 @@
                 "name": "Zeeve node"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Xode-Polkadot.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Xode-Polkadot.svg",
         "addressPrefix": 280,
         "additional": {
             "supportsGenericLedgerApp": true
@@ -11260,7 +11260,7 @@
                 "name": "RegionX node"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/RegionX_Kusama.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/RegionX_Kusama.svg",
         "addressPrefix": 74
     },
     {
@@ -11304,7 +11304,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/leohar/nova-utils/master/icons/chains/gradient/Paseo_Testnet.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Paseo_Testnet.svg",
         "addressPrefix": 420420422,
         "options": [
             "ethereumBased",
