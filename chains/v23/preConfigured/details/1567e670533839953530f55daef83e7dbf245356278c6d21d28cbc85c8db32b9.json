@@ -1,0 +1,19 @@
+{
+    "chainId": "1567e670533839953530f55daef83e7dbf245356278c6d21d28cbc85c8db32b9",
+    "name": "IDN Consumer Testnet (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "IDNC",
+            "precision": 10,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://idnc0-testnet.idealabs.network",
+            "name": "IDN Node"
+        }
+    ],
+    "addressPrefix": 0
+}

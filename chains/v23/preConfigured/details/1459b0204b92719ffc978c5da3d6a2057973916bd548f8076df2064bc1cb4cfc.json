@@ -1,0 +1,19 @@
+{
+    "chainId": "1459b0204b92719ffc978c5da3d6a2057973916bd548f8076df2064bc1cb4cfc",
+    "name": "Analog Timechain",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "ANLOG",
+            "precision": 12,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc.timechain.analog.one",
+            "name": "Analog One"
+        }
+    ],
+    "addressPrefix": 12850
+}
