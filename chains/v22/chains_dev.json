@@ -9934,8 +9934,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://turing-rpc.avail.so/ws",
-                "name": "Turing node"
+                "url": "wss://avail-turing.api.onfinality.io/public-ws",
+                "name": "Turing primary node"
+            },
+            {
+                "url": "wss://turing-testnet.avail-rpc.com",
+                "name": "Turing secondary node"
             }
         ],
         "types": {
@@ -10170,12 +10174,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://mainnet-rpc.avail.so/ws",
-                "name": "Avail node"
+                "url": "wss://avail.api.onfinality.io/public-ws",
+                "name": "Avail primary node"
             },
             {
-                "url": "wss://avail.rpc.bountyblok.io",
-                "name": "Bountyblok node"
+                "url": "wss://mainnet.avail-rpc.com/",
+                "name": "Avail secondary node"
             }
         ],
         "explorers": [
