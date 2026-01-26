@@ -83,4 +83,5 @@
 |  79 | Zeitgeist                            | https://app.zeitgeist.pm/                           | utilities             |
 |  80 | Zenlink                              | https://app.zenlink.pro                             | dex                   |
 |  81 | cBRIDGE                              | https://cbridge.celer.network/                      | dex,evm               |
-|  82 | xx network Hub                       | https://hub.xx.network/                             | utilities             |
+|  82 | dotID                                | https://dotid.app                                   | social,utilities      |
+|  83 | xx network Hub                       | https://hub.xx.network/                             | utilities             |
