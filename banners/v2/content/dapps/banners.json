@@ -1,9 +1,23 @@
 [
     {
-       "id": "ef94c059-ae2b-4a80-9e77-cb16060c4c30",
-       "background": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/banners/v2/resources/backgrounds/novashots_promo_banner_background.png",
-       "image": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/banners/v2/resources/images/novashots_promo_banner_picture.png",
-       "clipsToBounds": false,
-       "action": "novawallet://nova/open/dapp?url=https://novashots.io"
+       "id": "0d2f8e1d-017d-4b07-aba6-ea2012354de0",
+       "background": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/banners/v2/resources/backgrounds/blue_promo_banner_background.png",
+       "image": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/banners/v2/resources/images/browser_promo_banner_picture.png",
+       "clipsToBounds": true,
+       "action": "https://docs.novawallet.io/nova-wallet-wiki/dapps/dapp-catalog"
+    },
+    {
+       "id": "88788788-cf90-4171-9514-9d7474d5c765",
+       "background": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/banners/v2/resources/backgrounds/pink_promo_banner_background.png",
+       "image": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/banners/v2/resources/images/hydration_promo_banner_picture.png",
+       "clipsToBounds": true,
+       "action": "novawallet://nova/open/dapp?url=https://app.hydration.net/NOVA"
+    },
+    {
+       "id": "b6eb6249-9951-4f3e-9b08-a2fe9dbafe5f",
+       "background": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/banners/v2/resources/backgrounds/violet_promo_banner_background.png",
+       "image": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/banners/v2/resources/images/submit_dapp_promo_banner_picture.png",
+       "clipsToBounds": true,
+       "action": "https://docs.novawallet.io/nova-wallet-wiki/misc/developer-documentation/add-your-dapp-to-nova-wallet"
     }
 ]
