@@ -8997,5 +8997,34 @@
             "noSubstrateRuntime",
             "testnet"
         ]
+    },
+    {
+        "chainId": "4b5f95eefedf0d0fb514339edc24d2d411310520f687b4146145bcedb99885b9",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Acurast",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "ACU",
+                "precision": 12,
+                "priceId": "acurast",
+                "icon": "cACU.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://public-archive.mainnet.acurast.com",
+                "name": "Acurast node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Acurast Monitoring Bot",
+                "extrinsic": "https://acurastbot.com/explorer/extrinsics/{hash}",
+                "account": "https://acurastbot.com/explorer/address/{address}"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Acurast.svg",
+        "addressPrefix": 42
     }
 ]
