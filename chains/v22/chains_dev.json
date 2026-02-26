@@ -5333,6 +5333,34 @@
                     "existentialDeposit": "153256704981",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 72,
+                "symbol": "USDT-Snowbridge",
+                "precision": 6,
+                "priceId": "tether",
+                "type": "orml",
+                "icon": "USDT-Snowbridge.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x3f450f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "10000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 73,
+                "symbol": "USDC-Snowbridge",
+                "precision": 6,
+                "priceId": "usd-coin",
+                "type": "orml",
+                "icon": "USDC-Snowbridge.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x3e450f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "10000",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
