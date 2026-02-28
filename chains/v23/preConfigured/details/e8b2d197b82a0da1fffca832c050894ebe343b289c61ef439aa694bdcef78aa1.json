@@ -1,0 +1,19 @@
+{
+    "chainId": "e8b2d197b82a0da1fffca832c050894ebe343b289c61ef439aa694bdcef78aa1",
+    "name": "Pop Network Testnet (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "PAS",
+            "precision": 10,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc1.paseo.popnetwork.xyz",
+            "name": "R0GUE-RPC1"
+        }
+    ],
+    "addressPrefix": 0
+}
