@@ -43,8 +43,8 @@
         "parachainId": 2034,
         "runtimePrefix": "hydradx_runtime",
         "name": "Hydration",
-        "dryRunVersion": 1,
-        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome",
+        "dryRunVersion": 2,
+        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
         "hasXcmPaymentApi": true
     },
     "e7e0962324a3b86c83404dbea483f25fb5dab4c224791c81b756cfc948006174": {
@@ -117,7 +117,7 @@
         "name": "Mythos",
         "dryRunVersion": 2,
         "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
-        "hasXcmPaymentApi": false
+        "hasXcmPaymentApi": true
     },
     "e8aecc950e82f1a375cf650fa72d07e0ad9bef7118f49b92283b63e88b1de88b": {
         "parachainId": 3370,
@@ -141,6 +141,14 @@
         "name": "Polkadot Coretime",
         "dryRunVersion": 2,
         "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
+        "hasXcmPaymentApi": true
+    },
+    "b2985e778bb748c70e450dcc084cc7da79fe742cc23d3b040abd7028187de69c": {
+        "parachainId": 3417,
+        "runtimePrefix": "xode_runtime",
+        "name": "Xode",
+        "dryRunVersion": 2,
+        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome",
         "hasXcmPaymentApi": true
     },
     "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe": {
@@ -195,14 +203,6 @@
         "parachainId": 2090,
         "runtimePrefix": "basilisk_runtime",
         "name": "Basilisk",
-        "dryRunVersion": 1,
-        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome",
-        "hasXcmPaymentApi": true
-    },
-    "cd4d732201ebe5d6b014edda071c4203e16867305332301dc8d092044b28e554": {
-        "parachainId": 2095,
-        "runtimePrefix": "quartz_runtime",
-        "name": "QUARTZ",
         "dryRunVersion": 2,
         "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
         "hasXcmPaymentApi": true
@@ -213,22 +213,6 @@
         "name": "Encointer",
         "dryRunVersion": 2,
         "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
-        "hasXcmPaymentApi": true
-    },
-    "cdedc8eadbfa209d3f207bba541e57c3c58a667b05a2e1d1e86353c9000758da": {
-        "parachainId": 2015,
-        "runtimePrefix": "integritee_kusama_runtime",
-        "name": "Integritee Parachain",
-        "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
-        "hasXcmPaymentApi": true
-    },
-    "86e49c195aeae7c5c4a86ced251f1a28c67b3c35d8289c387ede1776cdd88b24": {
-        "parachainId": 2105,
-        "runtimePrefix": "crab_runtime",
-        "name": "Crab",
-        "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v4::traits::Outcome",
         "hasXcmPaymentApi": true
     },
     "00dcb981df86429de8bbacf9803401f09485366c44efbf53af9ecfab03adc7e5": {
@@ -275,14 +259,6 @@
         "parachainId": 1002,
         "runtimePrefix": "bridge_hub_westend_runtime",
         "name": "Westend Bridge Hub",
-        "dryRunVersion": 2,
-        "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
-        "hasXcmPaymentApi": true
-    },
-    "1eb6fb0ba5187434de017a70cb84d4f47142df1d571d0ef9e7e1407f2b80b93c": {
-        "parachainId": 1004,
-        "runtimePrefix": "people_westend_runtime",
-        "name": "Westend People",
         "dryRunVersion": 2,
         "xcmOutcomeType": "staging_xcm::v5::traits::Outcome",
         "hasXcmPaymentApi": true
