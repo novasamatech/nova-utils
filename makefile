@@ -2,6 +2,9 @@
 # Variables
 # =============================================================================
 
+# Force virtualenv to use stdlib venv creator (avoids rustpython which doesn't exist in virtualenv<20.39)
+export VIRTUALENV_CREATOR := venv
+
 # Python environment
 PYTHON := python
 PYTHON_VERSION := 3.11
