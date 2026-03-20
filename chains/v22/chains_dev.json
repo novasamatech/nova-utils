@@ -432,8 +432,7 @@
             "feeViaRuntimeCall": true,
             "supportsGenericLedgerApp": true,
             "timelineChain": "e143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e",
-            "sessionsPerEra": 7,
-            "disabledCheckMetadataHash": true
+            "sessionsPerEra": 7
         }
     },
     {
@@ -3956,7 +3955,8 @@
             "governance-v1"
         ],
         "additional": {
-            "feeViaRuntimeCall": true
+            "feeViaRuntimeCall": true,
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -10974,7 +10974,10 @@
         "addressPrefix": 42,
         "options": [
             "testnet"
-        ]
+        ],
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "chainId": "44f68476df71ebf765b630bf08dc1e0fedb2bf614a1aa0563b3f74f20e47b3e0",
