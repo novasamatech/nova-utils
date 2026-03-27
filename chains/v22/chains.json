@@ -7029,8 +7029,9 @@
         ],
         "explorers": [
             {
-                "name": "SCAN",
-                "account": "https://bittensor.com/scan/address/{address}"
+                "name": "TaoApp",
+                "account": "https://tao.app/account/{address}",
+                "extrinsic": "https://tao.app/tx/{hash}"
             }
         ],
         "externalApi": {
