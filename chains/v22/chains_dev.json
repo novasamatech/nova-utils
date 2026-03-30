@@ -10390,16 +10390,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://people-westend-rpc.dwellir.com",
+                "url": "wss://people-westend-rpc.n.dwellir.com",
                 "name": "Dwellir node"
             },
             {
-                "url": "wss://sys.ibp.network/people-westend",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://people-westend.dotters.network",
-                "name": "IBP2 node"
+                "url": "wss://westend-people-rpc.polkadot.io",
+                "name": "Parity node"
             }
         ],
         "explorers": [
