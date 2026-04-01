@@ -1,0 +1,13 @@
+# Updated YAML configuration
+
+# adding missing PR_REVIEWER environment variable definition
+
+env:
+  PR_REVIEWER: "your_value_here"   # Add the appropriate value for the PR_REVIEWER
+
+jobs:
+  check-legacy-address-prefix:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Legacy Address Prefix
+        run: echo "Running the check"
