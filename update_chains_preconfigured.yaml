@@ -1,0 +1,14 @@
+# This YAML file defines the various chains for pre-configured jobs
+# Updated to include the missing PR_REVIEWER environment variable
+
+jobs:
+  update-preconfigured:
+    runs-on: ubuntu-latest
+    env:
+      PR_REVIEWER: ${{ secrets.PR_REVIEWER }}  # Add the missing environment variable
+      OTHER_VAR: value
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Update Preconfigured
+        run: echo "Updating preconfigured jobs..."
