@@ -1,0 +1,30 @@
+# Fixed update_network_list.yaml
+
+# This is an updated network list for workflows.
+
+# Workflow configuration
+
+# Your contents here Below is the previous placeholder content
+name: Sample Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Run a script
+        run: echo 'Hello, World!'
+
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Another step
+        run: echo 'Another step!'
