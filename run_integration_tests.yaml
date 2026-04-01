@@ -1,0 +1,12 @@
+# This is the updated run_integration_tests.yaml
+
+# Other configurations
+# Your configurations here...
+
+# Changes applied on line 64
+# Previous line:
+# echo "::set-output name=matrix::{\"test_path\": [\"${TEST_PATHS}\"]}"
+# Updated line:
+echo "matrix={\"test_path\": [\"${TEST_PATHS}\"]}" >> $GITHUB_OUTPUT
+
+# Other configurations continue...
