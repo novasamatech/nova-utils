@@ -1,0 +1,19 @@
+{
+    "chainId": "ee1f44f62e68312c4852f37585941e9b64b5ceae539e4aa112ce9d3cf7bbe9fd",
+    "name": "Westend Bulletin (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "WND",
+            "precision": 12,
+            "icon": "WND.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://westend-bulletin-rpc.polkadot.io",
+            "name": "Parity"
+        }
+    ],
+    "addressPrefix": 42
+}
