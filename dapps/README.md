@@ -69,10 +69,10 @@
 |  65 | Stellaswap                           | https://app.stellaswap.com/exchange/swap            | bridge,dex,evm        |
 |  66 | Sub.ID                               | https://sub.id/                                     | utilities             |
 |  67 | Subsquare                            | https://polkadot.subsquare.io/                      | governance            |
-|  68 | Taostats                             | https://dash.taostats.io/                           | staking               |
-|  69 | Tensor Wallet                        | https://tensorwallet.ca/                            | utilities,staking     |
-|  70 | Ternoa HUB                           | https://hub.ternoa.network/                         | staking               |
-|  71 | Turtle                               | https://app.turtle.cool/                            | bridge                |
+|  68 | TAOApp                               | https://tao.app/                                    | utilities,staking,dex |
+|  69 | Taostats                             | https://dash.taostats.io/                           | staking               |
+|  70 | Tensor Wallet                        | https://tensorwallet.ca/                            | utilities,staking     |
+|  71 | Ternoa HUB                           | https://hub.ternoa.network/                         | staking               |
 |  72 | Unique Marketplace                   | https://unqnft.io                                   | gaming,art            |
 |  73 | Unique PlayX                         | https://playx.unique.network                        | gaming                |
 |  74 | Unique Staking                       | https://unique.network/staking                      | staking               |
