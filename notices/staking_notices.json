@@ -2,14 +2,8 @@
   {
     "chainId": "f3c7ad88f6a80f366c4be216691411ef0622e8b809b1046ea297ef106058d4eb",
     "severity": "critical",
-    "shortText": "Migrate by Aug 1, 2026",
-    "longText": "The Manta Atlantic parachain slot expires August 1, 2026. Manta Network is consolidating on Manta Pacific. Unstake your MANTA and migrate before this date to avoid losing access to your funds.",
+    "shortText": "Manta Atlantic is shutting down",
+    "longText": "Staking on Manta Atlantic will stop earning rewards on 20th May 2026. The parachain will go offline on 1st August 2026. Users with MANTA tokens should unstake and migrate before this deadline to avoid losing access to your funds. Please consult the Manta project's website and social feeds for more information.",
     "endDate": "2026-08-01"
-  },
-  {
-    "chainId": "70255b4d28de0fc4e1a193d7e175ad1ccef431598211c55538f1018651a0344e",
-    "severity": "info",
-    "shortText": "Validator program update",
-    "longText": "Aleph Zero is transitioning its validator program. Rewards may pause briefly during the next era. No action required."
   }
 ]
