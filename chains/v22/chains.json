@@ -22,14 +22,6 @@
                 "name": "Novasama node"
             },
             {
-                "url": "wss://rpc.ibp.network/polkadot",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://polkadot.dotters.network",
-                "name": "IBP2 node"
-            },
-            {
                 "url": "wss://apps-rpc.polkadot.io",
                 "name": "Public node",
                 "features": [
@@ -142,14 +134,6 @@
             {
                 "url": "wss://rpc-kusama-2.novasama-tech.org",
                 "name": "Novasama node"
-            },
-            {
-                "url": "wss://rpc.ibp.network/kusama",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://kusama.dotters.network",
-                "name": "IBP2 node"
             },
             {
                 "url": "wss://apps-kusama-rpc.polkadot.io",
@@ -531,14 +515,6 @@
                 ]
             },
             {
-                "url": "wss://sys.ibp.network/people-polkadot",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://people-polkadot.dotters.network",
-                "name": "IBP2 node"
-            },
-            {
                 "url": "wss://rpc-people-polkadot.luckyfriday.io",
                 "name": "LuckyFriday node"
             },
@@ -590,14 +566,6 @@
                 "features": [
                     "noTls12"
                 ]
-            },
-            {
-                "url": "wss://sys.ibp.network/people-kusama",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://people-kusama.dotters.network",
-                "name": "IBP2 node"
             },
             {
                 "url": "wss://ksm-rpc.stakeworld.io/people",
@@ -1313,14 +1281,6 @@
             {
                 "url": "wss://wss.api.moonbeam.network",
                 "name": "Moonbeam Foundation node"
-            },
-            {
-                "url": "wss://moonbeam.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://moonbeam.dotters.network",
-                "name": "IBP2 node"
             },
             {
                 "url": "wss://moonbeam.public.curie.radiumblock.co/ws",
@@ -2460,14 +2420,6 @@
         ],
         "nodes": [
             {
-                "url": "wss://kilt.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://kilt.dotters.network",
-                "name": "IBP2 node"
-            },
-            {
                 "url": "wss://spiritnet.kilt.io/",
                 "name": "KILT Protocol node"
             }
@@ -3347,14 +3299,6 @@
             {
                 "url": "wss://asset-hub-polkadot-rpc.n.dwellir.com",
                 "name": "Dwellir node"
-            },
-            {
-                "url": "wss://sys.ibp.network/asset-hub-polkadot",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://asset-hub-polkadot.dotters.network",
-                "name": "IBP2 node"
             }
         ],
         "explorers": [
@@ -3506,14 +3450,6 @@
             }
         ],
         "nodes": [
-            {
-                "url": "wss://sys.ibp.network/encointer-kusama",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://encointer-kusama.dotters.network",
-                "name": "IBP2 node"
-            },
             {
                 "url": "wss://api.kusama.encointer.org",
                 "name": "Encointer association node"
@@ -5902,14 +5838,6 @@
         ],
         "nodes": [
             {
-                "url": "wss://bifrost-polkadot.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://bifrost-polkadot.dotters.network",
-                "name": "IBP2 node"
-            },
-            {
                 "url": "wss://hk.p.bifrost-rpc.liebi.com/ws",
                 "name": "Liebi node"
             },
@@ -6016,14 +5944,6 @@
             {
                 "url": "wss://asia-ws.unique.network/",
                 "name": "Unique Asia node"
-            },
-            {
-                "url": "wss://unique.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://unique.dotters.network",
-                "name": "IBP2 node"
             }
         ],
         "explorers": [
@@ -7081,14 +7001,6 @@
             {
                 "url": "wss://rpc-para.ajuna.network",
                 "name": "Ajuna node"
-            },
-            {
-                "url": "wss://ajuna.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://ajuna.dotters.network",
-                "name": "IBP2 node"
             }
         ],
         "explorers": [
@@ -7402,14 +7314,6 @@
         ],
         "nodes": [
             {
-                "url": "wss://sys.ibp.network/bridgehub-polkadot",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://bridge-hub-polkadot.dotters.network",
-                "name": "IBP2 node"
-            },
-            {
                 "url": "wss://dot-rpc.stakeworld.io/bridgehub",
                 "name": "Stakeworld node"
             }
@@ -7456,14 +7360,6 @@
         ],
         "nodes": [
             {
-                "url": "wss://sys.ibp.network/bridgehub-kusama",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://bridge-hub-kusama.dotters.network",
-                "name": "IBP2 node"
-            },
-            {
                 "url": "wss://ksm-rpc.stakeworld.io/bridgehub",
                 "name": "Stakeworld node"
             }
@@ -7509,14 +7405,6 @@
             }
         ],
         "nodes": [
-            {
-                "url": "wss://sys.ibp.network/collectives-polkadot",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://collectives-polkadot.dotters.network",
-                "name": "IBP2 node"
-            },
             {
                 "url": "wss://collectives.public.curie.radiumblock.co/ws",
                 "name": "Radium node"
@@ -7793,14 +7681,7 @@
             }
         ],
         "nodes": [
-            {
-                "url": "wss://invarch.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://invarch.dotters.network",
-                "name": "IBP2 node"
-            }
+
         ],
         "explorers": [
             {
@@ -8840,14 +8721,6 @@
         ],
         "nodes": [
             {
-                "url": "wss://sys.ibp.network/coretime-polkadot",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://coretime-polkadot.dotters.network",
-                "name": "IBP2 node"
-            },
-            {
                 "url": "wss://rpc-coretime-polkadot.luckyfriday.io",
                 "name": "LuckyFriday node"
             },
@@ -8893,14 +8766,6 @@
             }
         ],
         "nodes": [
-            {
-                "url": "wss://sys.ibp.network/coretime-kusama",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://coretime-kusama.dotters.network",
-                "name": "IBP2 node"
-            },
             {
                 "url": "wss://rpc-coretime-kusama.luckyfriday.io",
                 "name": "LuckyFriday node"
@@ -9013,10 +8878,6 @@
             {
                 "url": "https://testnet-passet-hub-eth-rpc.polkadot.io",
                 "name": "Polkadot Hub rpc node"
-            },
-            {
-                "url": "wss://passet-hub-paseo.ibp.network",
-                "name": "Polkadot Hub wss node"
             }
         ],
         "explorers": [
