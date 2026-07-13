@@ -44,44 +44,43 @@
 |  40 | Moonbeam App                         | https://apps.moonbeam.network/moonbeam              | staking,utilities,evm |
 |  41 | Moonsama                             | https://marketplace.moonsama.com/                   | art,evm               |
 |  42 | Nodle client                         | https://client.nodle.com/                           | utilities             |
-|  43 | Nova Shots: CS2 BLAST Prediction     | https://novashots.io/                               | gaming                |
-|  44 | Omni Liquid Staking                  | https://omni.ls/                                    | staking,evm           |
-|  45 | OpenSea                              | https://opensea.io/                                 | art,evm               |
-|  46 | Pendulum Chain Portal                | https://portal.pendulumchain.org/pendulum/dashboard | utilities,staking     |
-|  47 | Phala App                            | https://app.phala.network/                          | staking               |
-|  48 | Polkadex Orderbook                   | https://orderbook.polkadex.trade/                   | dex,utilities         |
-|  49 | Polkadot Bounties                    | https://bounties.usepapi.app/                       | utilities,governance  |
-|  50 | Polkadot Faucet                      | https://faucet.polkadot.io                          | utilities             |
-|  51 | Polkadot Pop-Up Summer               | https://popupsummer.unique.network/                 | social                |
-|  52 | Polkadot Staking Dashboard           | https://staking.polkadot.cloud/#/overview           | staking,utilities     |
-|  53 | Polkadot.js                          | https://polkadot.js.org/apps/                       | utilities             |
-|  54 | Polkassembly                         | https://polkadot.polkassembly.io/                   | governance            |
-|  55 | Polkawatch                           | https://polkawatch.app/                             | utilities             |
-|  56 | Polymesh Portal                      | https://portal.polymesh.network/                    | utilities,staking     |
-|  57 | Proof of Chaos                       | https://www.proofofchaos.app/                       | art,governance        |
-|  58 | RFP Launcher                         | https://rfp.fund/                                   | governance            |
-|  59 | Raresama                             | https://raresama.com/                               | art,evm               |
-|  60 | Robonomics                           | https://robonomics.app/                             | utilities             |
-|  61 | Secret Stash                         | https://secret-stash.io/                            | art                   |
-|  62 | Singular                             | https://singular.app/                               | art                   |
-|  63 | Skybreach                            | https://skybreach.app/                              | evm,gaming            |
-|  64 | Snowbridge                           | https://app.snowbridge.network/                     | bridge                |
-|  65 | Stellaswap                           | https://app.stellaswap.com/exchange/swap            | bridge,dex,evm        |
-|  66 | Sub.ID                               | https://sub.id/                                     | utilities             |
-|  67 | Subsquare                            | https://polkadot.subsquare.io/                      | governance            |
-|  68 | TAOApp                               | https://tao.app/                                    | utilities,staking,dex |
-|  69 | Taostats                             | https://dash.taostats.io/                           | staking               |
-|  70 | Tensor Wallet                        | https://tensorwallet.ca/                            | utilities,staking     |
-|  71 | Ternoa HUB                           | https://hub.ternoa.network/                         | staking               |
-|  72 | Unique Marketplace                   | https://unqnft.io                                   | gaming,art            |
-|  73 | Unique PlayX                         | https://playx.unique.network                        | gaming                |
-|  74 | Unique Staking                       | https://unique.network/staking                      | staking               |
-|  75 | Unlock Polkadot                      | https://unlockpolkadot.com                          | social                |
-|  76 | Vortex Finance                       | https://app.vortexfinance.co/                       | evm,utilities         |
-|  77 | WUD Universe                         | https://wuduniverse.xyz/                            | gaming,social         |
-|  78 | XDAO                                 | https://www.xdao.app/1284                           | bridge,dex,evm        |
-|  79 | Zeitgeist                            | https://app.zeitgeist.pm/                           | utilities             |
-|  80 | Zenlink                              | https://app.zenlink.pro                             | dex                   |
-|  81 | cBRIDGE                              | https://cbridge.celer.network/                      | dex,evm               |
-|  82 | dotID                                | https://dotid.app                                   | social,utilities      |
-|  83 | xx network Hub                       | https://hub.xx.network/                             | utilities             |
+|  43 | Omni Liquid Staking                  | https://omni.ls/                                    | staking,evm           |
+|  44 | OpenSea                              | https://opensea.io/                                 | art,evm               |
+|  45 | Pendulum Chain Portal                | https://portal.pendulumchain.org/pendulum/dashboard | utilities,staking     |
+|  46 | Phala App                            | https://app.phala.network/                          | staking               |
+|  47 | Polkadex Orderbook                   | https://orderbook.polkadex.trade/                   | dex,utilities         |
+|  48 | Polkadot Bounties                    | https://bounties.usepapi.app/                       | utilities,governance  |
+|  49 | Polkadot Faucet                      | https://faucet.polkadot.io                          | utilities             |
+|  50 | Polkadot Pop-Up Summer               | https://popupsummer.unique.network/                 | social                |
+|  51 | Polkadot Staking Dashboard           | https://staking.polkadot.cloud/#/overview           | staking,utilities     |
+|  52 | Polkadot.js                          | https://polkadot.js.org/apps/                       | utilities             |
+|  53 | Polkassembly                         | https://polkadot.polkassembly.io/                   | governance            |
+|  54 | Polkawatch                           | https://polkawatch.app/                             | utilities             |
+|  55 | Polymesh Portal                      | https://portal.polymesh.network/                    | utilities,staking     |
+|  56 | Proof of Chaos                       | https://www.proofofchaos.app/                       | art,governance        |
+|  57 | RFP Launcher                         | https://rfp.fund/                                   | governance            |
+|  58 | Raresama                             | https://raresama.com/                               | art,evm               |
+|  59 | Robonomics                           | https://robonomics.app/                             | utilities             |
+|  60 | Secret Stash                         | https://secret-stash.io/                            | art                   |
+|  61 | Singular                             | https://singular.app/                               | art                   |
+|  62 | Skybreach                            | https://skybreach.app/                              | evm,gaming            |
+|  63 | Snowbridge                           | https://app.snowbridge.network/                     | bridge                |
+|  64 | Stellaswap                           | https://app.stellaswap.com/exchange/swap            | bridge,dex,evm        |
+|  65 | Sub.ID                               | https://sub.id/                                     | utilities             |
+|  66 | Subsquare                            | https://polkadot.subsquare.io/                      | governance            |
+|  67 | TAOApp                               | https://tao.app/                                    | utilities,staking,dex |
+|  68 | Taostats                             | https://dash.taostats.io/                           | staking               |
+|  69 | Tensor Wallet                        | https://tensorwallet.ca/                            | utilities,staking     |
+|  70 | Ternoa HUB                           | https://hub.ternoa.network/                         | staking               |
+|  71 | Unique Marketplace                   | https://unqnft.io                                   | gaming,art            |
+|  72 | Unique PlayX                         | https://playx.unique.network                        | gaming                |
+|  73 | Unique Staking                       | https://unique.network/staking                      | staking               |
+|  74 | Unlock Polkadot                      | https://unlockpolkadot.com                          | social                |
+|  75 | Vortex Finance                       | https://app.vortexfinance.co/                       | evm,utilities         |
+|  76 | WUD Universe                         | https://wuduniverse.xyz/                            | gaming,social         |
+|  77 | XDAO                                 | https://www.xdao.app/1284                           | bridge,dex,evm        |
+|  78 | Zeitgeist                            | https://app.zeitgeist.pm/                           | utilities             |
+|  79 | Zenlink                              | https://app.zenlink.pro                             | dex                   |
+|  80 | cBRIDGE                              | https://cbridge.celer.network/                      | dex,evm               |
+|  81 | dotID                                | https://dotid.app                                   | social,utilities      |
+|  82 | xx network Hub                       | https://hub.xx.network/                             | utilities             |
