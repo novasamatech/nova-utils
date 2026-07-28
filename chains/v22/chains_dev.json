@@ -11386,5 +11386,53 @@
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Acurast.svg",
         "addressPrefix": 42
+    },
+    {
+        "chainId": "e9bb9edbc674faacf806ad9ea66edc3c90a01925723745f9b0ffa060acba3f05",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Mosaic",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "MOS",
+                "precision": 18,
+                "icon": "MOS.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://mainnet-explorer.mosaicchain.io/MosaicNode1/chain",
+                "name": "Mosaic Node 1"
+            },
+            {
+                "url": "wss://mainnet-explorer.mosaicchain.io/MosaicNode2/chain",
+                "name": "Mosaic Node 2"
+            },
+            {
+                "url": "wss://mainnet-explorer.mosaicchain.io/MosaicNode3/chain",
+                "name": "Mosaic Node 3"
+            },
+            {
+                "url": "wss://mainnet-explorer.mosaicchain.io/MosaicNode4/chain",
+                "name": "Mosaic Node 4"
+            },
+            {
+                "url": "wss://mainnet-explorer.mosaicchain.io/MosaicNode5/chain",
+                "name": "Mosaic Node 5"
+            },
+            {
+                "url": "wss://mainnet-explorer.mosaicchain.io/MosaicNode6/chain",
+                "name": "Mosaic Node 6"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Mosaic Explorer",
+                "extrinsic": "https://mainnet-explorer.mosaicchain.io/transactions/{hash}",
+                "account": "https://mainnet-explorer.mosaicchain.io/accounts/{address}"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Mosaic.svg",
+        "addressPrefix": 0
     }
 ]
