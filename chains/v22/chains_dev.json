@@ -6887,7 +6887,7 @@
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Paseo_Testnet.svg",
-        "addressPrefix": 0,
+        "addressPrefix": 42,
         "options": [
             "testnet",
             "swap-hub",
@@ -6899,7 +6899,8 @@
             "feeViaRuntimeCall": true,
             "supportsGenericLedgerApp": true,
             "timelineChain": "77afd6190f1554ad45fd0d31aee62aacc33c6db0ea801129acb813f913e0764f"
-        }
+        },
+        "legacyAddressPrefix": 0
     },
     {
         "chainId": "6408de7737c59c238890533af25896a2c20608d8b380bb01029acb392781063e",
