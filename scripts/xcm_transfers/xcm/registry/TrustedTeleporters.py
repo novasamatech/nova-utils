@@ -1,4 +1,4 @@
-from scripts.utils.chain_model import ChainId, FullChainAssetId, ChainAssetId
+from scripts.utils.chain_model import ChainId, ChainAssetId
 from scripts.xcm_transfers.xcm.registry.xcm_chain import XcmChain
 
 CustomTeleportsEntry = (ChainId, ChainId, ChainAssetId)  # origin, destination, originAsset

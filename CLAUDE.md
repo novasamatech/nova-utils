@@ -41,6 +41,8 @@ Run `make init` once to create `.venv`, install dependencies via poetry and inst
 
 Python scripts must run from the repo root with `PYTHONPATH=.` (the Makefile targets already do): `scripts/utils/work_with_data.py` resolves config paths against the current working directory.
 
+Several scripts do their work at module level rather than under `if __name__ == "__main__"` — importing `scripts/update_test_data.py` or `scripts/xcm_transfers/clean_up_legacy_directions.py` rewrites config files as a side effect. Never import a script to inspect it; read it instead. A few scripts also import their siblings as top-level modules (`from utils.work_with_data import ...`), so they only resolve when run as a script from their own directory, not as `scripts.<name>`.
+
 ## Tests
 
 Integration tests connect to live RPC nodes, take a long time, and are CI's job — `.github/workflows/run_integration_tests.yaml` runs them on any `chains/**` change. Do not run `make test-all` locally; use `make check-chains-file` for local verification.

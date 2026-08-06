@@ -6,9 +6,8 @@ from typing import List, Callable
 from typing import NewType
 ChainId = NewType('ChainId', int)
 
-from scripts.utils.chain_model import Chain, ChainAssetId, ChainAsset
+from scripts.utils.chain_model import ChainAsset
 from scripts.xcm_transfers.xcm.registry import TrustedTeleporters
-from scripts.xcm_transfers.xcm.registry.parachain import Parachain
 from scripts.xcm_transfers.xcm.registry.reserve_location import ReserveLocations
 from scripts.xcm_transfers.xcm.registry.transfer_type import TransferType, Teleport, LocalReserve, DestinationReserve, \
     RemoteReserve

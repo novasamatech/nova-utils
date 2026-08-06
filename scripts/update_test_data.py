@@ -1,5 +1,4 @@
 import json
-import os
 
 from scripts.utils.chain_model import Chain
 
@@ -54,7 +53,8 @@ for dev_index, dev_id in enumerate(dev_ids):  # Add new network
 
         if options is not None:
             need_skip = [option for option in skip_options if option in options]
-            if need_skip: continue
+            if need_skip:
+                continue
 
         test_chains.append(chain_dict)
 
