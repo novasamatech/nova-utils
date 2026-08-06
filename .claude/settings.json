@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_response.filePath // .tool_input.file_path' | { read -r f; case \"$f\" in *.json) [ -x .venv/bin/pre-commit ] && .venv/bin/pre-commit run --files \"$f\";; esac; } 2>/dev/null || true",
+            "timeout": 120,
+            "statusMessage": "Running pre-commit on changed config..."
+          }
+        ]
+      }
+    ]
+  }
+}
