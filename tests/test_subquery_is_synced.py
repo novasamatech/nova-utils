@@ -1,5 +1,4 @@
 import requests
-from typing import List
 
 payload = "{\"query\":\"query{\\n  _metadata{\\n    chain\\n    lastProcessedHeight\\n    targetHeight\\n  }\\n}\",\"variables\":{}}"
 headers = {

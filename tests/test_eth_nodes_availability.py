@@ -19,7 +19,7 @@ class TestETHNodesAvailability:
 
         # Measure time taken to retrieve current block
         start_time = time.time()
-        block = w3.eth.get_block('latest')
+        w3.eth.get_block('latest')
         end_time = time.time()
 
         # Check if request took more than 3 seconds

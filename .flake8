@@ -1,0 +1,13 @@
+[flake8]
+max-line-length = 120
+extend-exclude = .venv,__pycache__,.pytest_cache,allure-results
+
+# This codebase does not follow a single formatting style, and reformatting it
+# is not the point of linting here. Restrict flake8 to checks that flag real
+# defects: syntax errors (E9), statement problems such as bare except (E7),
+# and everything pyflakes reports — undefined names, unused imports/locals (F).
+select = E7,E9,F
+
+per-file-ignores =
+    # Package __init__ files re-export submodules.
+    __init__.py:F401

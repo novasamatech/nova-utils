@@ -24,7 +24,7 @@ def find_sent_xcm(
 ) -> VerionsedXcm:
     forwarded_xcm = _find_forwarded_xcm(success_dry_run_effects, final_destination_account)
     if forwarded_xcm is not None:
-        debug_log(f"Found sent xcm in forwarded xcms")
+        debug_log("Found sent xcm in forwarded xcms")
         return forwarded_xcm
 
     emitted_events = success_dry_run_effects["emitted_events"]
