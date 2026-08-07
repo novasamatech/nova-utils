@@ -55,7 +55,7 @@ def compare_reserve_fee(object_accumulator, actual_assets_location, changed_asse
             if new_value != old_value:
                 object_accumulator['reserveFee'][assets] = {
                     'old_value': old_value, 'new_value': new_value}
-        except:
+        except Exception:
             object_accumulator['reserveFee'][assets] = "That asset was removed"
 
 
@@ -120,7 +120,8 @@ def find_new_destinations(object_accumulator, actual_chain_dict, new_cahin_dict,
                 actual_destinations = asset_in_actual_chain_dict.get(
                     'xcmTransfers')
                 try:
-                    destination_in_generated_chain_file = next(
+                    # Called for its side effect: StopIteration means the destination is new.
+                    next(
                         new_destination for new_destination in actual_destinations if new_destination.get('destination').get('chainId') == destination_chain_id)
                 except (StopIteration, KeyError, TypeError):
                     object_accumulator['chains'][chain_name][asset_symbol][destination_name] = 'That destination was added'

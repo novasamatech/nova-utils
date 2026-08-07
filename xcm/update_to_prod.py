@@ -82,9 +82,9 @@ def update_destinations(dev_chains, prod_chains, meta_dict):
         for prod_asset_location, prod_asset in prod_chain['assets'].items():
 
             if dev_chains[prod_chain_id]['assets'].get(prod_asset_location) is None:
-                print(f"Destination was removed in {meta_dict[prod_chain_id]['name']} \
-                          \nfor asset: {prod_asset_location} \
-                          \nto network: {meta_dict[dev_destination_id]['name']} ")
+                # The whole asset is gone from dev, so every destination of it is removed.
+                print(f"Asset was removed in {meta_dict[prod_chain_id]['name']} \
+                          \nfor asset: {prod_asset_location} ")
                 if ask_to_update():
                     prod_chains[prod_chain_id]['assets'][prod_asset_location] = None
             else:

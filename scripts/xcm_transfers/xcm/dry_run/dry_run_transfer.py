@@ -6,7 +6,7 @@ from dataclasses import dataclass
 from scalecodec import GenericCall
 from substrateinterface import SubstrateInterface
 
-from scripts.xcm_transfers.utils.fix_scale_codec import fix_tuple_encoding, fix_substrate_interface
+from scripts.xcm_transfers.utils.fix_scale_codec import fix_substrate_interface
 from scripts.xcm_transfers.utils.weight import Weight
 from scripts.xcm_transfers.xcm.call_payment.call_payment_api import calculate_call_weight
 from scripts.xcm_transfers.xcm.dry_run.dry_run_api import dry_run_xcm_call, dry_run_final_xcm, dry_run_call
@@ -188,7 +188,7 @@ def _detect_supports_xcm_execute(xcm_chain: XcmChain) -> bool:
     error = extract_xcm_execute_error(execution_result, xcm_chain)
 
     if error is None:
-        print(f"Xcm execute status OK")
+        print("Xcm execute status OK")
     else:
         print(f"Xcm execute status error: {error}")
 

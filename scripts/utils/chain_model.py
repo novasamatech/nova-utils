@@ -78,7 +78,7 @@ class Chain:
                 connect_to_node(node_url)
                 print("Connected to ", node_url)
                 return
-            except:
+            except Exception:
                 print("Can't connect to", node_url)
                 continue
 
