@@ -554,6 +554,10 @@
             {
                 "url": "wss://kusama-asset-hub-rpc.polkadot.io",
                 "name": "Parity node"
+            },
+            {
+                "url": "wss://asset-hub-kusama.rotko.net",
+                "name": "Rotko node"
             }
         ],
         "explorers": [
@@ -3818,6 +3822,10 @@
             {
                 "url": "wss://asset-hub-polkadot.dotters.network",
                 "name": "IBP2 node"
+            },
+            {
+                "url": "wss://asset-hub-polkadot.rotko.net",
+                "name": "Rotko node"
             }
         ],
         "explorers": [
@@ -3992,6 +4000,10 @@
             {
                 "url": "wss://api.kusama.encointer.org",
                 "name": "Encointer association node"
+            },
+            {
+                "url": "wss://encointer-kusama.rotko.net",
+                "name": "Rotko node"
             }
         ],
         "explorers": [
@@ -6887,7 +6899,7 @@
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Paseo_Testnet.svg",
-        "addressPrefix": 0,
+        "addressPrefix": 42,
         "options": [
             "testnet",
             "swap-hub",
@@ -6899,7 +6911,8 @@
             "feeViaRuntimeCall": true,
             "supportsGenericLedgerApp": true,
             "timelineChain": "77afd6190f1554ad45fd0d31aee62aacc33c6db0ea801129acb813f913e0764f"
-        }
+        },
+        "legacyAddressPrefix": 0
     },
     {
         "chainId": "6408de7737c59c238890533af25896a2c20608d8b380bb01029acb392781063e",
@@ -8702,6 +8715,10 @@
             {
                 "url": "wss://dot-rpc.stakeworld.io/bridgehub",
                 "name": "Stakeworld node"
+            },
+            {
+                "url": "wss://bridge-hub-polkadot.rotko.net",
+                "name": "Rotko node"
             }
         ],
         "explorers": [
@@ -8757,6 +8774,10 @@
             {
                 "url": "wss://ksm-rpc.stakeworld.io/bridgehub",
                 "name": "Stakeworld node"
+            },
+            {
+                "url": "wss://bridge-hub-kusama.rotko.net",
+                "name": "Rotko node"
             }
         ],
         "explorers": [
@@ -8816,6 +8837,10 @@
             {
                 "url": "wss://dot-rpc.stakeworld.io/collectives",
                 "name": "Stakeworld node"
+            },
+            {
+                "url": "wss://collectives-polkadot.rotko.net",
+                "name": "Rotko node"
             }
         ],
         "explorers": [
@@ -8882,6 +8907,10 @@
             {
                 "url": "wss://people-polkadot.public.curie.radiumblock.co/ws",
                 "name": "Radium node"
+            },
+            {
+                "url": "wss://people-polkadot.rotko.net",
+                "name": "Rotko node"
             }
         ],
         "explorers": [
@@ -8939,6 +8968,10 @@
             {
                 "url": "wss://ksm-rpc.stakeworld.io/people",
                 "name": "Stakeworld node"
+            },
+            {
+                "url": "wss://people-kusama.rotko.net",
+                "name": "Rotko node"
             }
         ],
         "explorers": [
@@ -11095,6 +11128,10 @@
             {
                 "url": "wss://polkadot-coretime-rpc.polkadot.io",
                 "name": "Parity node"
+            },
+            {
+                "url": "wss://coretime-polkadot.rotko.net",
+                "name": "Rotko node"
             }
         ],
         "explorers": [
@@ -11153,6 +11190,10 @@
             {
                 "url": "wss://ksm-rpc.stakeworld.io/coretime",
                 "name": "Stakeworld node"
+            },
+            {
+                "url": "wss://coretime-kusama.rotko.net",
+                "name": "Rotko node"
             }
         ],
         "explorers": [

@@ -17,7 +17,7 @@ def test_rpc_node_is_synced(connection_by_url: SubstrateInterface):
 
         else:
             assert False, "Failed to retrieve SyncState"
-    except SubstrateRequestException as err:
+    except SubstrateRequestException:
         # If we catch Method not found Exception -> then check internal network time
         system_timestamp = connection_by_url.query("Timestamp", "Now").value / 1000
         assert abs(time.time() - system_timestamp) < 600  # 10 min = 10 * 60s

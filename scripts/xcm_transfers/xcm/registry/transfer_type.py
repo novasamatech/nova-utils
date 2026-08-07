@@ -3,7 +3,6 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 from typing import Union
 
-from scripts.utils.chain_model import ChainAsset
 from scripts.xcm_transfers.xcm.registry.xcm_chain import XcmChain
 
 class TransferType(ABC):

@@ -6,7 +6,6 @@ from scalecodec import ScaleBytes
 from scripts.utils.chain_model import Chain
 from scripts.utils.work_with_data import get_data_from_file
 from scripts.xcm_transfers.utils.dry_run_api_types import dry_run_api_types
-from scripts.xcm_transfers.utils.log import debug_log
 from scripts.xcm_transfers.utils.xcm_config_files import XCMConfigFiles
 from scripts.xcm_transfers.xcm.multi_location import GlobalMultiLocation
 from scripts.xcm_transfers.xcm.registry.TrustedTeleporters import TrustedTeleporters, CustomTeleportsEntry

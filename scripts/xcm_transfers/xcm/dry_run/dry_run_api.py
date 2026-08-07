@@ -3,7 +3,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import List
 
-from scalecodec import GenericCall, GenericEvent
+from scalecodec import GenericCall
 
 from scripts.xcm_transfers.xcm.dry_run.errors import is_xcm_run_error, handle_xcm_run_error_execution_result, \
     is_call_run_error, handle_call_run_error_execution_result

@@ -124,7 +124,7 @@ def main():
             success.append(direction)
             already_set_reserves.add(direction.origin_chain.chain.chainId)
         else:
-            print(f"  ✗ Failed with both reserves")
+            print("  ✗ Failed with both reserves")
             failure.append(direction)
 
     print("\n" + "="*80)

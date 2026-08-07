@@ -286,7 +286,8 @@ def check_fee_is_calculating(substrate: SubstrateInterface) -> bool:
                 'value': 0,
             }
         )
-        query_info = substrate.get_payment_info(call=call, keypair=test_keypair)
+        # Called for its side effect: it raises if the payment info cannot be queried.
+        substrate.get_payment_info(call=call, keypair=test_keypair)
         return True
     except ValueError as value_error:
         print(f"Case when Balance pallet not found:\n{value_error}")
@@ -354,7 +355,8 @@ def account_does_not_need_updates(substrate: SubstrateInterface):
 
 
 def deep_search_an_elemnt_by_key(obj, key):
-    if key in obj: return obj[key]
+    if key in obj:
+        return obj[key]
     for k, v in obj.items():
         if isinstance(v,dict):
             item = deep_search_an_elemnt_by_key(v, key)
