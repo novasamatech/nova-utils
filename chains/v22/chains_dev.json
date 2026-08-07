@@ -22,14 +22,6 @@
                 "name": "Novasama node"
             },
             {
-                "url": "wss://rpc.ibp.network/polkadot",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://polkadot.dotters.network",
-                "name": "IBP2 node"
-            },
-            {
                 "url": "wss://apps-rpc.polkadot.io",
                 "name": "Public node",
                 "features": [
@@ -156,14 +148,6 @@
             {
                 "url": "wss://rpc-kusama-2.novasama-tech.org",
                 "name": "Novasama node"
-            },
-            {
-                "url": "wss://rpc.ibp.network/kusama",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://kusama.dotters.network",
-                "name": "IBP2 node"
             },
             {
                 "url": "wss://apps-kusama-rpc.polkadot.io",
@@ -358,14 +342,6 @@
             {
                 "url": "wss://westmint-rpc-tn.dwellir.com",
                 "name": "Dwellir Tunisia"
-            },
-            {
-                "url": "wss://sys.ibp.network/asset-hub-westend",
-                "name": "IBP1"
-            },
-            {
-                "url": "wss://asset-hub-westend.dotters.network",
-                "name": "IBP2"
             },
             {
                 "url": "wss://westend-asset-hub-rpc.polkadot.io",
@@ -3816,14 +3792,6 @@
                 "name": "Dwellir node"
             },
             {
-                "url": "wss://sys.ibp.network/asset-hub-polkadot",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://asset-hub-polkadot.dotters.network",
-                "name": "IBP2 node"
-            },
-            {
                 "url": "wss://asset-hub-polkadot.rotko.net",
                 "name": "Rotko node"
             }
@@ -3989,14 +3957,6 @@
             }
         ],
         "nodes": [
-            {
-                "url": "wss://sys.ibp.network/encointer-kusama",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://encointer-kusama.dotters.network",
-                "name": "IBP2 node"
-            },
             {
                 "url": "wss://api.kusama.encointer.org",
                 "name": "Encointer association node"
@@ -6361,14 +6321,6 @@
         ],
         "nodes": [
             {
-                "url": "wss://bifrost-polkadot.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://bifrost-polkadot.dotters.network",
-                "name": "IBP2 node"
-            },
-            {
                 "url": "wss://hk.p.bifrost-rpc.liebi.com/ws",
                 "name": "Liebi node"
             },
@@ -6478,14 +6430,6 @@
             {
                 "url": "wss://asia-ws.unique.network/",
                 "name": "Unique Asia node"
-            },
-            {
-                "url": "wss://unique.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://unique.dotters.network",
-                "name": "IBP2 node"
             }
         ],
         "explorers": [
@@ -6869,14 +6813,6 @@
                 "name": "Dwellir"
             },
             {
-                "url": "wss://sys.ibp.network/asset-hub-paseo",
-                "name": "IBP1"
-            },
-            {
-                "url": "wss://asset-hub-paseo.dotters.network",
-                "name": "IBP2"
-            },
-            {
                 "url": "wss://pas-rpc.stakeworld.io/assethub",
                 "name": "StakeWorld"
             },
@@ -6899,7 +6835,7 @@
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Paseo_Testnet.svg",
-        "addressPrefix": 0,
+        "addressPrefix": 42,
         "options": [
             "testnet",
             "swap-hub",
@@ -6911,7 +6847,8 @@
             "feeViaRuntimeCall": true,
             "supportsGenericLedgerApp": true,
             "timelineChain": "77afd6190f1554ad45fd0d31aee62aacc33c6db0ea801129acb813f913e0764f"
-        }
+        },
+        "legacyAddressPrefix": 0
     },
     {
         "chainId": "6408de7737c59c238890533af25896a2c20608d8b380bb01029acb392781063e",
@@ -8225,14 +8162,6 @@
             {
                 "url": "wss://rpc-para.ajuna.network",
                 "name": "Ajuna node"
-            },
-            {
-                "url": "wss://ajuna.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://ajuna.dotters.network",
-                "name": "IBP2 node"
             }
         ],
         "explorers": [
@@ -8704,14 +8633,6 @@
         ],
         "nodes": [
             {
-                "url": "wss://sys.ibp.network/bridgehub-polkadot",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://bridge-hub-polkadot.dotters.network",
-                "name": "IBP2 node"
-            },
-            {
                 "url": "wss://dot-rpc.stakeworld.io/bridgehub",
                 "name": "Stakeworld node"
             },
@@ -8763,14 +8684,6 @@
         ],
         "nodes": [
             {
-                "url": "wss://sys.ibp.network/bridgehub-kusama",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://bridge-hub-kusama.dotters.network",
-                "name": "IBP2 node"
-            },
-            {
                 "url": "wss://ksm-rpc.stakeworld.io/bridgehub",
                 "name": "Stakeworld node"
             },
@@ -8821,14 +8734,6 @@
             }
         ],
         "nodes": [
-            {
-                "url": "wss://sys.ibp.network/collectives-polkadot",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://collectives-polkadot.dotters.network",
-                "name": "IBP2 node"
-            },
             {
                 "url": "wss://collectives.public.curie.radiumblock.co/ws",
                 "name": "Radium node"
@@ -8892,14 +8797,6 @@
                 ]
             },
             {
-                "url": "wss://sys.ibp.network/people-polkadot",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://people-polkadot.dotters.network",
-                "name": "IBP2 node"
-            },
-            {
                 "url": "wss://rpc-people-polkadot.luckyfriday.io",
                 "name": "LuckyFriday node"
             },
@@ -8955,14 +8852,6 @@
                 "features": [
                     "noTls12"
                 ]
-            },
-            {
-                "url": "wss://sys.ibp.network/people-kusama",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://people-kusama.dotters.network",
-                "name": "IBP2 node"
             },
             {
                 "url": "wss://ksm-rpc.stakeworld.io/people",
@@ -9247,7 +9136,7 @@
         ],
         "nodes": [
             {
-                "url": "wss://krest.api.onfinality.io/public-ws'",
+                "url": "wss://krest.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
             }
         ],
@@ -9888,14 +9777,6 @@
             {
                 "url": "wss://westend-bridge-hub-rpc-tn.dwellir.com",
                 "name": "Dwellir Tunisia node"
-            },
-            {
-                "url": "wss://sys.ibp.network/bridgehub-westend",
-                "name": "IBP-GeoDNS1 node"
-            },
-            {
-                "url": "wss://bridge-hub-westend.dotters.network",
-                "name": "IBP-GeoDNS2 node"
             },
             {
                 "url": "wss://westend-bridge-hub-rpc.polkadot.io",
@@ -11113,14 +10994,6 @@
         ],
         "nodes": [
             {
-                "url": "wss://sys.ibp.network/coretime-polkadot",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://coretime-polkadot.dotters.network",
-                "name": "IBP2 node"
-            },
-            {
                 "url": "wss://rpc-coretime-polkadot.luckyfriday.io",
                 "name": "LuckyFriday node"
             },
@@ -11170,14 +11043,6 @@
             }
         ],
         "nodes": [
-            {
-                "url": "wss://sys.ibp.network/coretime-kusama",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://coretime-kusama.dotters.network",
-                "name": "IBP2 node"
-            },
             {
                 "url": "wss://rpc-coretime-kusama.luckyfriday.io",
                 "name": "LuckyFriday node"
