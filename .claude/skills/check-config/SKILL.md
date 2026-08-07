@@ -23,9 +23,13 @@ Flag as a problem:
 
 ## 3. Check the dev/prod pairing
 
-This repo promotes changes dev-first: a change should touch the `*_dev.json` half of a pair, not both halves in one PR.
+Which rule applies depends on what the change does — the repo does not treat every edit the same way.
 
-If both `chains_dev.json` and `chains.json` (or the `transfers`/`dapps`/`global/config` equivalents) are modified, flag it and ask whether this is an intentional promotion PR. Editing only the prod half is also worth flagging — the dev config would then be behind.
+**Adding a network or an asset** goes dev-first: it lands in the `*_dev.json` half, and reaches prod later through `chains/apply_dev_to_prod.py` or `make update-xcm-to-prod`. Touching both halves in one PR here is worth questioning.
+
+**Changing nodes, or marking a network `(PAUSED)`**, goes into both files in the same PR. Every pause and node PR in the history does this — see #4362, #4300, #4227, #4223, #4111 — so a node change touching only one half is the thing to flag, not the reverse. Node updates are occasionally split into a paired prod PR and dev PR instead (#4351 / #4352); that is fine too, as long as both halves land.
+
+In either case, flag a change that reaches only one half with no sign the other is coming: the configs drifting apart is the actual failure mode.
 
 ## 4. Run the pre-commit hooks
 
