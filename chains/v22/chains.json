@@ -1010,9 +1010,6 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Karura.svg",
         "addressPrefix": 8,
-        "options": [
-            "governance-v1"
-        ],
         "additional": {
             "feeViaRuntimeCall": true,
             "supportsGenericLedgerApp": true
@@ -1362,7 +1359,6 @@
         "addressPrefix": 1284,
         "options": [
             "ethereumBased",
-            "governance",
             "proxy",
             "multisig"
         ],
@@ -1793,7 +1789,6 @@
         "addressPrefix": 1285,
         "options": [
             "ethereumBased",
-            "governance",
             "proxy"
         ],
         "additional": {
@@ -2335,9 +2330,6 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Basilisk.svg",
         "addressPrefix": 10041,
-        "options": [
-            "governance-v1"
-        ],
         "types": {
             "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/basilisk.json",
             "overridesCommon": true
@@ -2382,9 +2374,6 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Altair.svg",
         "addressPrefix": 136,
-        "options": [
-            "governance-v1"
-        ],
         "additional": {
             "feeViaRuntimeCall": true,
             "disabledCheckMetadataHash": true
@@ -2469,9 +2458,6 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/KILT_Spiritnet.svg",
         "addressPrefix": 38,
-        "options": [
-            "governance-v1"
-        ],
         "additional": {
             "supportsGenericLedgerApp": true
         }
@@ -2789,10 +2775,7 @@
         "additional": {
             "feeViaRuntimeCall": true,
             "supportsGenericLedgerApp": true
-        },
-        "options": [
-            "governance-v1"
-        ]
+        }
     },
     {
         "chainId": "9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6",
@@ -3461,9 +3444,6 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Robonomics.svg",
         "addressPrefix": 32,
-        "options": [
-            "governance-v1"
-        ],
         "additional": {
             "feeViaRuntimeCall": true
         }
@@ -3831,9 +3811,6 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Zeitgeist.svg",
         "addressPrefix": 73,
-        "options": [
-            "governance-v1"
-        ],
         "additional": {
             "themeColor": "#1F78FF",
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/zeitgeist-ztg-staking",
@@ -4006,9 +3983,6 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Centrifuge.svg",
         "addressPrefix": 36,
-        "options": [
-            "governance-v1"
-        ],
         "additional": {
             "feeViaRuntimeCall": true,
             "disabledCheckMetadataHash": true
@@ -5084,7 +5058,6 @@
         "addressPrefix": 0,
         "options": [
             "governance",
-            "governance-v1",
             "hydradx-swaps",
             "hydration-fees",
             "proxy",
@@ -5418,9 +5391,6 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Phala.svg",
         "addressPrefix": 30,
-        "options": [
-            "governance-v1"
-        ],
         "additional": {
             "supportsGenericLedgerApp": true
         }
@@ -5636,9 +5606,6 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadex.svg",
         "addressPrefix": 88,
-        "options": [
-            "governance-v1"
-        ],
         "additional": {
             "themeColor": "#1F78FF",
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/polkadex-pdex-staking",
@@ -5899,7 +5866,7 @@
             "governance": [
                 {
                     "type": "subsquare",
-                    "url": "https://bifrost.subsquare.io/api"
+                    "url": "https://bifrost-api.subsquare.io"
                 }
             ]
         },
@@ -6818,9 +6785,6 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Pendulum.svg",
         "addressPrefix": 0,
-        "options": [
-            "governance-v1"
-        ],
         "additional": {
             "supportsGenericLedgerApp": true
         },
@@ -8009,7 +7973,6 @@
         "addressPrefix": 29972,
         "options": [
             "ethereumBased",
-            "governance-v1",
             "proxy",
             "multisig"
         ],
