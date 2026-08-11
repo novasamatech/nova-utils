@@ -20,4 +20,4 @@
 |  16 | TAOApp                     | https://tao.app/                          | utilities,staking,dex |
 |  17 | Taostats                   | https://taostats.io                       | staking               |
 |  18 | Tensor Wallet              | https://tensorwallet.ca/                  | utilities,staking     |
-|  19 | WUD Universe               | https://wuduniverse.xyz/                  | gaming,social         |
+|  19 | WUD Universe               | https://wuduniverse.xyz/                  | art                   |
