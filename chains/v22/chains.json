@@ -713,7 +713,6 @@
                 "assetId": 7,
                 "symbol": "KINT",
                 "precision": 12,
-                "priceId": "kintsugi",
                 "type": "orml",
                 "icon": "KINT.svg",
                 "typeExtras": {
@@ -780,7 +779,6 @@
                 "assetId": 12,
                 "symbol": "QTZ",
                 "precision": 18,
-                "priceId": "quartz",
                 "type": "orml",
                 "icon": "QTZ.svg",
                 "typeExtras": {
@@ -821,7 +819,6 @@
                 "assetId": 16,
                 "symbol": "CSM",
                 "precision": 12,
-                "priceId": "crust-storage-market",
                 "type": "orml",
                 "icon": "CSM.svg",
                 "typeExtras": {
@@ -849,7 +846,6 @@
                 "assetId": 18,
                 "symbol": "KMA",
                 "precision": 12,
-                "priceId": "calamari-network",
                 "type": "orml",
                 "icon": "KMA.svg",
                 "typeExtras": {
@@ -863,7 +859,6 @@
                 "assetId": 19,
                 "symbol": "TEER",
                 "precision": 12,
-                "priceId": "integritee",
                 "type": "orml",
                 "icon": "TEER.svg",
                 "typeExtras": {
@@ -890,7 +885,6 @@
                 "assetId": 21,
                 "symbol": "NEER",
                 "precision": 18,
-                "priceId": "metaverse-network-pioneer",
                 "type": "orml",
                 "icon": "NEER.svg",
                 "typeExtras": {
@@ -904,7 +898,6 @@
                 "assetId": 22,
                 "symbol": "BSX",
                 "precision": 12,
-                "priceId": "basilisk",
                 "type": "orml",
                 "icon": "BSX.svg",
                 "typeExtras": {
@@ -918,7 +911,6 @@
                 "assetId": 23,
                 "symbol": "AIR",
                 "precision": 18,
-                "priceId": "altair",
                 "type": "orml",
                 "icon": "AIR.svg",
                 "typeExtras": {
@@ -933,7 +925,6 @@
                 "symbol": "GENS",
                 "precision": 9,
                 "type": "orml",
-                "priceId": "genshiro",
                 "icon": "GENS.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050e00",
@@ -961,7 +952,6 @@
                 "symbol": "CRAB",
                 "precision": 18,
                 "type": "orml",
-                "priceId": "darwinia-crab-network",
                 "icon": "CRAB.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050d00",
@@ -1060,7 +1050,6 @@
                 "symbol": "xcaSEEDp",
                 "precision": 12,
                 "type": "statemine",
-                "priceId": "ausd-seed-acala",
                 "icon": "aSEEDp.svg",
                 "typeExtras": {
                     "assetId": "110021739665376159354538090254163045594",
@@ -1093,7 +1082,6 @@
                 "symbol": "xcINTR",
                 "precision": 10,
                 "type": "evm",
-                "priceId": "interlay",
                 "icon": "INTR.svg",
                 "typeExtras": {
                     "contractAddress": "0xFffFFFFF4C1cbCd97597339702436d4F18a375Ab"
@@ -1170,7 +1158,6 @@
                 "symbol": "xcEQ",
                 "precision": 9,
                 "type": "evm",
-                "priceId": "equilibrium-token",
                 "icon": "EQ.svg",
                 "typeExtras": {
                     "contractAddress": "0xFffFFfFf8f6267e040D8a0638C576dfBa4F0F6D6"
@@ -1256,7 +1243,6 @@
                 "assetId": 21,
                 "symbol": "xcvGLMR",
                 "precision": 18,
-                "priceId": "voucher-glmr",
                 "type": "evm",
                 "icon": "vGLMR.svg",
                 "typeExtras": {
@@ -1505,7 +1491,6 @@
                 "assetId": 3,
                 "symbol": "xcKINT",
                 "precision": 12,
-                "priceId": "kintsugi",
                 "type": "evm",
                 "icon": "KINT.svg",
                 "typeExtras": {
@@ -1572,7 +1557,6 @@
                 "assetId": 9,
                 "symbol": "xcCSM",
                 "precision": 12,
-                "priceId": "crust-storage-market",
                 "type": "evm",
                 "icon": "CSM.svg",
                 "typeExtras": {
@@ -1604,7 +1588,6 @@
                 "assetId": 12,
                 "symbol": "xcKMA",
                 "precision": 12,
-                "priceId": "calamari-network",
                 "type": "evm",
                 "icon": "KMA.svg",
                 "typeExtras": {
@@ -1615,7 +1598,6 @@
                 "assetId": 13,
                 "symbol": "xcCRAB",
                 "precision": 18,
-                "priceId": "darwinia-crab-network",
                 "type": "evm",
                 "icon": "CRAB.svg",
                 "typeExtras": {
@@ -1626,7 +1608,6 @@
                 "assetId": 14,
                 "symbol": "xcTEER",
                 "precision": 12,
-                "priceId": "integritee",
                 "type": "evm",
                 "icon": "TEER.svg",
                 "typeExtras": {
@@ -1648,7 +1629,6 @@
                 "assetId": 16,
                 "symbol": "xcSDN",
                 "precision": 18,
-                "priceId": "shiden",
                 "type": "evm",
                 "icon": "SDN.svg",
                 "typeExtras": {
@@ -1702,7 +1682,6 @@
                 "symbol": "xcMGX",
                 "precision": 18,
                 "type": "evm",
-                "priceId": "mangata-x",
                 "icon": "MGX.svg",
                 "typeExtras": {
                     "contractAddress": "0xffFfFffF58d867EEa1Ce5126A4769542116324e9"
@@ -1713,7 +1692,6 @@
                 "symbol": "xcTUR",
                 "precision": 10,
                 "type": "evm",
-                "priceId": "turing-network",
                 "icon": "TUR.svg",
                 "typeExtras": {
                     "contractAddress": "0xfFffffFf6448d0746f2a66342B67ef9CAf89478E"
@@ -1807,8 +1785,7 @@
                 "assetId": 0,
                 "symbol": "SDN",
                 "precision": 18,
-                "icon": "SDN.svg",
-                "priceId": "shiden"
+                "icon": "SDN.svg"
             },
             {
                 "assetId": 1,
@@ -1863,7 +1840,6 @@
                 "symbol": "KINT",
                 "precision": 12,
                 "type": "statemine",
-                "priceId": "kintsugi",
                 "icon": "KINT.svg",
                 "typeExtras": {
                     "assetId": "18446744073709551622",
@@ -1899,7 +1875,6 @@
                 "symbol": "CSM",
                 "precision": 12,
                 "type": "statemine",
-                "priceId": "crust-storage-market",
                 "icon": "CSM.svg",
                 "typeExtras": {
                     "assetId": "18446744073709551624",
@@ -2032,7 +2007,6 @@
                 "assetId": 3,
                 "symbol": "ZLK",
                 "precision": 18,
-                "priceId": "zenlink-network-token",
                 "type": "orml",
                 "icon": "ZLK.svg",
                 "typeExtras": {
@@ -2224,7 +2198,6 @@
                 "assetId": 0,
                 "symbol": "BSX",
                 "precision": 12,
-                "priceId": "basilisk",
                 "icon": "BSX.svg",
                 "buyProviders": {
                     "banxa": {
@@ -2347,8 +2320,7 @@
                 "assetId": 0,
                 "symbol": "AIR",
                 "precision": 18,
-                "icon": "AIR.svg",
-                "priceId": "altair"
+                "icon": "AIR.svg"
             }
         ],
         "nodes": [
@@ -2387,7 +2359,6 @@
                 "assetId": 0,
                 "symbol": "EDG",
                 "precision": 18,
-                "priceId": "edgeware",
                 "icon": "EDG.svg"
             }
         ],
@@ -2416,7 +2387,6 @@
             {
                 "assetId": 0,
                 "symbol": "KILT",
-                "priceId": "kilt-protocol",
                 "icon": "KILT.svg",
                 "precision": 15,
                 "buyProviders": {
@@ -2470,7 +2440,6 @@
             {
                 "assetId": 0,
                 "symbol": "QTZ",
-                "priceId": "quartz",
                 "icon": "QTZ.svg",
                 "precision": 18
             }
@@ -2517,7 +2486,6 @@
                 "assetId": 1,
                 "symbol": "LDOT",
                 "precision": 10,
-                "priceId": "liquid-staking-dot",
                 "type": "orml",
                 "icon": "LDOT.svg",
                 "typeExtras": {
@@ -2531,7 +2499,6 @@
                 "assetId": 2,
                 "symbol": "aSEEDp",
                 "precision": 12,
-                "priceId": "ausd-seed-acala",
                 "type": "orml",
                 "icon": "aSEEDp.svg",
                 "typeExtras": {
@@ -2627,7 +2594,6 @@
                 "symbol": "INTR",
                 "precision": 10,
                 "type": "orml",
-                "priceId": "interlay",
                 "icon": "INTR.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050400",
@@ -2654,7 +2620,6 @@
                 "assetId": 11,
                 "symbol": "EQ",
                 "precision": 9,
-                "priceId": "equilibrium-token",
                 "type": "orml",
                 "icon": "EQ.svg",
                 "typeExtras": {
@@ -2836,7 +2801,6 @@
                 "symbol": "INTR",
                 "precision": 10,
                 "type": "statemine",
-                "priceId": "interlay",
                 "icon": "INTR.svg",
                 "typeExtras": {
                     "assetId": "18446744073709551621",
@@ -2872,7 +2836,6 @@
                 "symbol": "LDOT",
                 "precision": 10,
                 "type": "statemine",
-                "priceId": "liquid-staking-dot",
                 "icon": "LDOT.svg",
                 "typeExtras": {
                     "assetId": "18446744073709551618",
@@ -2884,7 +2847,6 @@
                 "symbol": "aSEEDp",
                 "precision": 12,
                 "type": "statemine",
-                "priceId": "ausd-seed-acala",
                 "icon": "aSEEDp.svg",
                 "typeExtras": {
                     "assetId": "18446744073709551617",
@@ -3042,7 +3004,6 @@
                 "assetId": 3,
                 "symbol": "DED",
                 "precision": 10,
-                "priceId": "dot-is-ded",
                 "type": "statemine",
                 "icon": "DED.svg",
                 "typeExtras": {
@@ -3283,7 +3244,6 @@
                 "assetId": 26,
                 "symbol": "MPC",
                 "precision": 12,
-                "priceId": "my-paqman-coin",
                 "icon": "MPC.png",
                 "type": "statemine",
                 "typeExtras": {
@@ -3294,7 +3254,6 @@
                 "assetId": 27,
                 "symbol": "DON",
                 "precision": 12,
-                "priceId": "paydon",
                 "icon": "DON.png",
                 "type": "statemine",
                 "typeExtras": {
@@ -3502,7 +3461,6 @@
                 "symbol": "KINT",
                 "precision": 12,
                 "type": "orml",
-                "priceId": "kintsugi",
                 "icon": "KINT.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x000c",
@@ -3699,7 +3657,6 @@
                 "assetId": 0,
                 "symbol": "PICA",
                 "precision": 12,
-                "priceId": "picasso",
                 "icon": "PICA.svg"
             },
             {
@@ -3773,7 +3730,6 @@
                     "parachain"
                 ],
                 "precision": 10,
-                "priceId": "zeitgeist",
                 "icon": "ZTG.svg"
             }
         ],
@@ -3826,7 +3782,6 @@
                 "assetId": 0,
                 "symbol": "SUB",
                 "precision": 10,
-                "priceId": "subsocial",
                 "icon": "SUB.svg"
             }
         ],
@@ -3860,7 +3815,6 @@
                 "assetId": 0,
                 "symbol": "CSM",
                 "precision": 12,
-                "priceId": "crust-storage-market",
                 "icon": "CSM.svg"
             }
         ],
@@ -3909,7 +3863,6 @@
                 "assetId": 0,
                 "symbol": "TEER",
                 "precision": 12,
-                "priceId": "integritee",
                 "icon": "TEER.svg"
             }
         ],
@@ -4093,7 +4046,6 @@
                 "assetId": 7,
                 "symbol": "ZTG",
                 "precision": 10,
-                "priceId": "zeitgeist",
                 "type": "orml",
                 "icon": "ZTG.svg",
                 "typeExtras": {
@@ -4233,7 +4185,6 @@
                 "assetId": 17,
                 "symbol": "INTR",
                 "precision": 10,
-                "priceId": "interlay",
                 "icon": "INTR.svg",
                 "type": "orml",
                 "typeExtras": {
@@ -4247,7 +4198,6 @@
                 "assetId": 18,
                 "symbol": "SUB",
                 "precision": 10,
-                "priceId": "subsocial",
                 "icon": "SUB.svg",
                 "type": "orml",
                 "typeExtras": {
@@ -4398,7 +4348,6 @@
                 "assetId": 29,
                 "symbol": "DED",
                 "precision": 10,
-                "priceId": "dot-is-ded",
                 "type": "orml",
                 "icon": "DED.svg",
                 "typeExtras": {
@@ -4465,7 +4414,6 @@
                 "symbol": "KILT",
                 "precision": 15,
                 "type": "orml",
-                "priceId": "kilt-protocol",
                 "icon": "KILT.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x1c000000",
@@ -5079,7 +5027,6 @@
                 "assetId": 0,
                 "symbol": "INTR",
                 "precision": 10,
-                "priceId": "interlay",
                 "icon": "INTR.svg",
                 "type": "orml",
                 "typeExtras": {
@@ -5127,7 +5074,6 @@
                 "assetId": 3,
                 "symbol": "KINT",
                 "precision": 12,
-                "priceId": "kintsugi",
                 "icon": "KINT.svg",
                 "type": "orml",
                 "typeExtras": {
@@ -5169,7 +5115,6 @@
                 "assetId": 6,
                 "symbol": "LDOT",
                 "precision": 10,
-                "priceId": "liquid-staking-dot",
                 "icon": "LDOT.svg",
                 "type": "orml",
                 "typeExtras": {
@@ -5471,7 +5416,6 @@
             {
                 "assetId": 0,
                 "symbol": "PDEX",
-                "priceId": "polkadex",
                 "staking": [
                     "relaychain"
                 ],
@@ -5542,7 +5486,6 @@
                 "assetId": 6,
                 "symbol": "DED",
                 "precision": 12,
-                "priceId": "dot-is-ded",
                 "type": "statemine",
                 "icon": "DED.svg",
                 "typeExtras": {
@@ -5748,7 +5691,6 @@
                 "assetId": 6,
                 "symbol": "vGLMR",
                 "precision": 18,
-                "priceId": "voucher-glmr",
                 "type": "orml",
                 "icon": "vGLMR.svg",
                 "typeExtras": {
@@ -5981,7 +5923,6 @@
             {
                 "assetId": 0,
                 "symbol": "MGX",
-                "priceId": "mangata-x",
                 "precision": 18,
                 "icon": "MGX.svg",
                 "type": "orml",
@@ -6024,7 +5965,6 @@
                 "assetId": 3,
                 "symbol": "TUR",
                 "precision": 10,
-                "priceId": "turing-network",
                 "icon": "TUR.svg",
                 "type": "orml",
                 "typeExtras": {
@@ -6066,7 +6006,6 @@
                 "assetId": 6,
                 "symbol": "ZLK",
                 "precision": 18,
-                "priceId": "zenlink-network-token",
                 "icon": "ZLK.svg",
                 "type": "orml",
                 "typeExtras": {
@@ -6442,7 +6381,6 @@
                 "assetId": 0,
                 "symbol": "MYRIA",
                 "precision": 18,
-                "priceId": "myriad-social",
                 "icon": "MYRIA.svg"
             }
         ],
@@ -6900,7 +6838,6 @@
             {
                 "assetId": 0,
                 "symbol": "SAMA",
-                "priceId": "exosama-network",
                 "type": "evmNative",
                 "icon": "SAMA.svg",
                 "precision": 18
@@ -7030,7 +6967,6 @@
                 "assetId": 0,
                 "symbol": "P3D",
                 "precision": 12,
-                "priceId": "3dpass",
                 "icon": "P3D.svg"
             }
         ],
@@ -7463,7 +7399,6 @@
                 "assetId": 0,
                 "symbol": "KREST",
                 "precision": 18,
-                "priceId": "krest",
                 "icon": "KREST.svg"
             }
         ],
@@ -7529,7 +7464,6 @@
             {
                 "assetId": 0,
                 "symbol": "JOY",
-                "priceId": "joystream",
                 "precision": 10,
                 "icon": "JOY.svg"
             }
@@ -7565,7 +7499,6 @@
             {
                 "assetId": 0,
                 "symbol": "DOCK",
-                "priceId": "dock",
                 "precision": 6,
                 "icon": "DOCK.svg"
             }
@@ -7892,7 +7825,6 @@
                 "assetId": 0,
                 "symbol": "CGT",
                 "precision": 18,
-                "priceId": "curio-governance",
                 "icon": "CGT.svg"
             }
         ],
@@ -8060,7 +7992,6 @@
                 "assetId": 0,
                 "symbol": "BRIDGE",
                 "precision": 12,
-                "priceId": "hyperbridge-2",
                 "icon": "BRIDGE.svg"
             }
         ],
@@ -8480,7 +8411,6 @@
                 "assetId": 0,
                 "symbol": "LAOS",
                 "precision": 18,
-                "priceId": "laos-network",
                 "icon": "LAOS.svg"
             }
         ],
@@ -8701,7 +8631,6 @@
                 "assetId": 0,
                 "symbol": "TNT",
                 "precision": 18,
-                "priceId": "tangle-network",
                 "icon": "TNT.svg"
             }
         ],
@@ -8836,7 +8765,6 @@
                 "assetId": 0,
                 "symbol": "AGC",
                 "precision": 18,
-                "priceId": "argocoin-2",
                 "icon": "AGC.svg"
             }
         ],
@@ -8864,7 +8792,6 @@
                 "assetId": 0,
                 "symbol": "TANSSI",
                 "precision": 12,
-                "priceId": "tanssi",
                 "icon": "TANSSI.svg"
             }
         ],
