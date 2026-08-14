@@ -425,6 +425,20 @@
         },
         "instructions": "xtokensReserve"
       }
+    },
+    "HOLLAR": {
+      "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+      "multiLocation": {
+        "parachainId": 2034,
+        "generalIndex": "222"
+      },
+      "reserveFee": {
+        "mode": {
+          "type": "proportional",
+          "value": "2000000000000000000"
+        },
+        "instructions": "xtokensReserve"
+      }
     }
   },
   "instructions": {
@@ -2004,6 +2018,29 @@
               "type": "xcmpallet"
             }
           ]
+        },
+        {
+          "assetId": 28,
+          "assetLocation": "HOLLAR",
+          "assetLocationPath": {
+            "type": "absolute"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+                "assetId": 65,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "3000000000000000000"
+                  },
+                  "instructions": "xcmPalletDest"
+                }
+              },
+              "type": "xcmpallet"
+            }
+          ]
         }
       ]
     },
@@ -2265,6 +2302,29 @@
                   "mode": {
                     "type": "proportional",
                     "value": "70000000000000"
+                  },
+                  "instructions": "xtokensDest"
+                }
+              },
+              "type": "xtokens"
+            }
+          ]
+        },
+        {
+          "assetId": 65,
+          "assetLocation": "HOLLAR",
+          "assetLocationPath": {
+            "type": "absolute"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+                "assetId": 28,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "650000000000000000"
                   },
                   "instructions": "xtokensDest"
                 }
