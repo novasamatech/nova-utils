@@ -3259,6 +3259,19 @@
                 "typeExtras": {
                     "assetId": "50000111"
                 }
+            },
+            {
+                "assetId": 28,
+                "symbol": "HOLLAR",
+                "precision": 18,
+                "priceId": "hydrated-dollar",
+                "type": "statemine",
+                "icon": "HOLLAR.svg",
+                "typeExtras": {
+                    "assetId": "0x010200c91f057903",
+                    "palletName": "ForeignAssets",
+                    "isSufficient": true
+                }
             }
         ],
         "nodes": [
@@ -4834,7 +4847,7 @@
                 "assetId": 65,
                 "symbol": "HOLLAR",
                 "precision": 18,
-                "priceId": "tether",
+                "priceId": "hydrated-dollar",
                 "type": "orml-hydration-evm",
                 "icon": "HOLLAR.svg",
                 "typeExtras": {
