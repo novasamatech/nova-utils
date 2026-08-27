@@ -8453,9 +8453,9 @@
         ]
     },
     {
-        "chainId": "28cc1df52619f4edd9f0389a7e910a636276075ecc429600f1dd434e281a04e9",
-        "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Xode (PAUSED)",
+        "chainId": "2985e778bb748c70e450dcc084cc7da79fe742cc23d3b040abd7028187de69c",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Xode",
         "assets": [
             {
                 "assetId": 0,
@@ -8465,99 +8465,105 @@
             },
             {
                 "assetId": 1,
-                "symbol": "XGM",
-                "precision": 12,
-                "icon": "XGM.svg",
+                "symbol": "USDT",
+                "precision": 6,
+                "priceId": "tether",
                 "type": "statemine",
+                "icon": "USDT.svg",
                 "typeExtras": {
-                    "assetId": "1"
+                    "assetId": "1984",
+                    "isSufficient": true
                 }
             },
             {
                 "assetId": 2,
-                "symbol": "XAV",
-                "precision": 12,
-                "icon": "XAV.svg",
+                "symbol": "MPC",
+                "precision": 12,                
+                "priceId": "my-paqman-coin",
+                "icon": "MPC.png",
                 "type": "statemine",
                 "typeExtras": {
-                    "assetId": "2"
+                    "assetId": "50000103"
                 }
             },
             {
                 "assetId": 3,
-                "symbol": "AZK",
-                "precision": 12,
-                "icon": "AZK.png",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "3"
-                }
-            },
-            {
-                "assetId": 4,
-                "symbol": "IXON",
-                "precision": 12,
-                "icon": "IXON.svg",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "4"
-                }
-            },
-            {
-                "assetId": 5,
-                "symbol": "IXAV",
-                "precision": 12,
-                "icon": "IXAV.svg",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "5"
-                }
-            },
-            {
-                "assetId": 6,
-                "symbol": "IDON",
-                "precision": 12,
-                "icon": "IDON.png",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "6"
-                }
-            },
-            {
-                "assetId": 7,
-                "symbol": "MPC",
-                "precision": 12,
-                "icon": "MPC.png",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "7"
-                }
-            },
-            {
-                "assetId": 8,
-                "symbol": "IMPC",
-                "precision": 12,
-                "icon": "IMPC.png",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "8"
-                }
-            },
-            {
-                "assetId": 9,
                 "symbol": "DON",
                 "precision": 12,
                 "icon": "DON.png",
                 "type": "statemine",
                 "typeExtras": {
-                    "assetId": "9"
+                    "assetId": "50000111"
+                }
+            },
+            {
+                "assetId": 4,
+                "symbol": "DOT",
+                "precision": 12,  
+                "priceId": "polkadot",
+                "icon": "DOT.svg",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "100000000",
+                    "isSufficient": true
+                }
+            },
+            {
+                "assetId": 5,
+                "symbol": "GEM",
+                "precision": 12,  
+                "priceId": "mythical-gem",
+                "icon": "GEM.gif",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "1000000001"
+                }
+            },
+            {
+                "assetId": 6,
+                "symbol": "gXON",
+                "precision": 12,  
+                "icon": "gXON.png",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "1000000002"
+                }
+            },
+            {
+                "assetId": 7,
+                "symbol": "HUG",
+                "precision": 12,  
+                "icon": "HUG.png",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "1000000003"
                 }
             }
         ],
         "nodes": [
             {
-                "url": "wss://rpc-kr.xode.net",
-                "name": "Xode archive node"
+                "url": "wss://rakson-archive.xode.net",
+                "name": "RakSon archive node Korea"
+            },
+            {
+                "url": "wss://polkadot-archive-rpcnode.staginglab.info",
+                "name": "XodeCommunity "
+            },
+            {
+                "url": "wss://rakson-ceb-archive.xode.net",
+                "name": "RakSon NUSTAR Archive "
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Node Scanner (Deprecated)",
+                "account": "https://node.xode.net/xode-polkadot/account/{address}",
+                "extrinsics": "https://node.xode.net/xode-polkadot/extrinsics/{extrinsic}"
+            },
+            {
+                "name": "Blockscanner",
+                "account": "https://blockscanner.xode.net/account/{address}",
+                "extrinsics": "https://blockscanner.xode.net/extrinsic/{extrinsic}"
             }
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Xode.svg",
