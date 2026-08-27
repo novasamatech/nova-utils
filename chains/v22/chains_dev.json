@@ -9481,7 +9481,10 @@
                 "symbol": "EWT",
                 "priceId": "energy-web-token",
                 "precision": 18,
-                "icon": "EWT.svg"
+                "icon": "EWT.svg",
+                "staking": [
+                    "parachain-avn"
+                ]
             }
         ],
         "nodes": [
@@ -9508,7 +9511,8 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Energy_Web_X.svg",
         "addressPrefix": 42,
         "additional": {
-            "supportsGenericLedgerApp": true
+            "supportsGenericLedgerApp": true,
+            "themeColor": "#A566FF"
         }
     },
     {
