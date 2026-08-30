@@ -1,0 +1,19 @@
+{
+    "chainId": "f2741047604399cf783f47197ad06f5d2761e2dab97c405e076af64d60f20faf",
+    "name": "QF Testnet (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "QF",
+            "precision": 18,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://test.qfnetwork.xyz",
+            "name": "QF Network"
+        }
+    ],
+    "addressPrefix": 42
+}

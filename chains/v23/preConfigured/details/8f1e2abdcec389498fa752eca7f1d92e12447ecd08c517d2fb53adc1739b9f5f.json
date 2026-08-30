@@ -1,0 +1,19 @@
+{
+    "chainId": "8f1e2abdcec389498fa752eca7f1d92e12447ecd08c517d2fb53adc1739b9f5f",
+    "name": "Kreivo de Paseo (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "PAS",
+            "precision": 10,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://testnet.kreivo.kippu.rocks/",
+            "name": "Kippu"
+        }
+    ],
+    "addressPrefix": 2
+}

@@ -1,0 +1,27 @@
+{
+    "chainId": "91bc6e169807aaa54802737e1c504b2577d4fafedd5a02c10293b1cd60e39527",
+    "name": "Moonbase Alpha (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "DEV",
+            "precision": 18,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://wss.api.moonbase.moonbeam.network",
+            "name": "Moonbeam Foundation"
+        },
+        {
+            "url": "wss://moonbeam-alpha.api.onfinality.io/public-ws",
+            "name": "OnFinality"
+        },
+        {
+            "url": "wss://moonbase.public.curie.radiumblock.co/ws",
+            "name": "RadiumBlock"
+        }
+    ],
+    "addressPrefix": 1287
+}

@@ -1,0 +1,19 @@
+{
+    "chainId": "79a4dc4b7d2d34be5fb91e65fd3c964054c3825c6eb281577fd879ee07544519",
+    "name": "Ajuna Paseo (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "AJUN",
+            "precision": 12,
+            "icon": "AJUN.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc-paseo.ajuna.network",
+            "name": "BajunNetwork"
+        }
+    ],
+    "addressPrefix": 1328
+}

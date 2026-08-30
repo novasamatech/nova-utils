@@ -1,0 +1,23 @@
+{
+    "chainId": "6bd89e052d67a45bb60a9a23e8581053d5e0d619f15cb9865946937e690c42d6",
+    "name": "Liberland",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "LLD",
+            "precision": 12,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://liberland-rpc.n.dwellir.com",
+            "name": "Dwellir"
+        },
+        {
+            "url": "wss://mainnet.liberland.org",
+            "name": "Liberland Government"
+        }
+    ],
+    "addressPrefix": 42
+}

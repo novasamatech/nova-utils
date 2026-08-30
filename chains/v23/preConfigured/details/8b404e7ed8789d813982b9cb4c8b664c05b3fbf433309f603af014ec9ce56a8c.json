@@ -1,0 +1,35 @@
+{
+    "chainId": "8b404e7ed8789d813982b9cb4c8b664c05b3fbf433309f603af014ec9ce56a8c",
+    "name": "Crust",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "CRU",
+            "precision": 12,
+            "icon": "CRU.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc.crust.network",
+            "name": "Crust Network"
+        },
+        {
+            "url": "wss://rpc.crustnetwork.app",
+            "name": "Crust Network APP"
+        },
+        {
+            "url": "wss://rpc.crustnetwork.cc",
+            "name": "Crust Network CC"
+        },
+        {
+            "url": "wss://rpc.crustnetwork.xyz",
+            "name": "Crust Network XYZ"
+        },
+        {
+            "url": "wss://crust.api.onfinality.io/public-ws",
+            "name": "OnFinality"
+        }
+    ],
+    "addressPrefix": 66
+}

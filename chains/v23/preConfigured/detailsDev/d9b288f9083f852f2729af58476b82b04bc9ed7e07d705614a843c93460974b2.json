@@ -1,0 +1,19 @@
+{
+    "chainId": "d9b288f9083f852f2729af58476b82b04bc9ed7e07d705614a843c93460974b2",
+    "name": "Phala PoC-6 (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "PHA",
+            "precision": 12,
+            "icon": "PHA.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://poc6.phala.network/ws",
+            "name": "Phala Network"
+        }
+    ],
+    "addressPrefix": 30
+}
