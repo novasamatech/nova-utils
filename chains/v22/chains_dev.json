@@ -33,14 +33,6 @@
                 "name": "Stakeworld node"
             },
             {
-                "url": "wss://polkadot.public.curie.radiumblock.co/ws",
-                "name": "Radium node"
-            },
-            {
-                "url": "wss://1rpc.io/dot",
-                "name": "Automata 1RPC node"
-            },
-            {
                 "url": "wss://rpc-polkadot.luckyfriday.io",
                 "name": "LuckyFriday node"
             }
@@ -159,14 +151,6 @@
             {
                 "url": "wss://rpc-kusama.luckyfriday.io",
                 "name": "LuckyFriday node"
-            },
-            {
-                "url": "wss://1rpc.io/ksm",
-                "name": "Automata 1RPC node"
-            },
-            {
-                "url": "wss://kusama.public.curie.radiumblock.co/ws",
-                "name": "Radium node"
             }
         ],
         "explorers": [
@@ -1565,10 +1549,6 @@
             {
                 "url": "wss://shiden-rpc.n.dwellir.com",
                 "name": "Dwellir node"
-            },
-            {
-                "url": "wss://shiden.public.curie.radiumblock.co/ws",
-                "name": "RadiumBlock node"
             }
         ],
         "explorers": [
@@ -2194,7 +2174,7 @@
     {
         "chainId": "aa3876c1dc8a1afcc2e9a685a49ff7704cfd36ad8c90bf2702b9d1b00cc40011",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Altair",
+        "name": "Altair (PAUSED)",
         "assets": [
             {
                 "assetId": 0,
@@ -2600,10 +2580,6 @@
             {
                 "url": "wss://acala-rpc-3.aca-api.network/ws",
                 "name": "Acala Foundation 3 node"
-            },
-            {
-                "url": "wss://acala-rpc.n.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "explorers": [
@@ -3370,8 +3346,8 @@
                 "name": "Astar node"
             },
             {
-                "url": "wss://astar.public.curie.radiumblock.co/ws",
-                "name": "RadiumBlock node"
+                "url": "wss://astar.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "explorers": [
@@ -5292,10 +5268,6 @@
                 "name": "Neckwork node"
             },
             {
-                "url": "wss://node-sparrow-1.sparrow.shadow-senate.com",
-                "name": "Sparrow node"
-            },
-            {
                 "url": "wss://hdx.tarn.hydration.cloud",
                 "name": "Tarn node"
             },
@@ -5972,10 +5944,6 @@
             {
                 "url": "wss://so.polkadex.ee",
                 "name": "PolkadexSup node"
-            },
-            {
-                "url": "wss://polkadex.public.curie.radiumblock.co/ws",
-                "name": "RadiumBlock node"
             }
         ],
         "externalApi": {
@@ -8034,10 +8002,6 @@
             {
                 "url": "wss://rpc.3dpass.org",
                 "name": "3DPass node"
-            },
-            {
-                "url": "wss://rpc.p3d.top",
-                "name": "Lzmz node"
             }
         ],
         "explorers": [
@@ -8061,7 +8025,7 @@
     {
         "chainId": "e358eb1d11b31255a286c12e44fe6780b7edb171d657905a97e39f71d9c6c3ee",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "Ajuna",
+        "name": "Ajuna (PAUSED)",
         "assets": [
             {
                 "assetId": 0,
@@ -8324,10 +8288,6 @@
             }
         ],
         "nodes": [
-            {
-                "url": "wss://rpc-anchor-1-mainnet-az-ue1.giantprotocol.org:443",
-                "name": "Anchor node 1"
-            },
             {
                 "url": "wss://rpc-anchor-2-mainnet-az-ue1.giantprotocol.org:443",
                 "name": "Anchor node 2"
@@ -8648,10 +8608,6 @@
         ],
         "nodes": [
             {
-                "url": "wss://collectives.public.curie.radiumblock.co/ws",
-                "name": "Radium node"
-            },
-            {
                 "url": "wss://dot-rpc.stakeworld.io/collectives",
                 "name": "Stakeworld node"
             },
@@ -8712,10 +8668,6 @@
             {
                 "url": "wss://rpc-people-polkadot.luckyfriday.io",
                 "name": "LuckyFriday node"
-            },
-            {
-                "url": "wss://people-polkadot.public.curie.radiumblock.co/ws",
-                "name": "Radium node"
             },
             {
                 "url": "wss://people-polkadot.rotko.net",
@@ -9393,7 +9345,7 @@
     },
     {
         "chainId": "6b5e488e0fa8f9821110d5c13f4c468abcd43ce5e297e62b34c53c3346465956",
-        "name": "Joystream",
+        "name": "Joystream (PAUSED)",
         "assets": [
             {
                 "assetId": 0,
@@ -9624,10 +9576,6 @@
             {
                 "url": "https://pacific-rpc.manta.network/http",
                 "name": "Manta rpc 1 node"
-            },
-            {
-                "url": "https://1rpc.io/manta",
-                "name": "Manta rpc 2 node"
             },
             {
                 "url": "wss://pacific-rpc.manta.network/ws",
