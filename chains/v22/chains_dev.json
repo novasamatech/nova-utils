@@ -10998,51 +10998,6 @@
         "addressPrefix": 74
     },
     {
-        "chainId": "eip155:420420422",
-        "name": "Polkadot Hub TestNet (PAUSED)",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "PAS",
-                "type": "evmNative",
-                "icon": "PAS.svg",
-                "precision": 18
-            }
-        ],
-        "nodeSelectionStrategy": "uniform",
-        "nodes": [
-            {
-                "url": "https://testnet-passet-hub-eth-rpc.polkadot.io",
-                "name": "Polkadot Hub rpc node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Blockscan",
-                "extrinsic": "https://blockscout-passet-hub.parity-testnet.parity.io/tx/{hash}",
-                "account": "https://blockscout-passet-hub.parity-testnet.parity.io/address/{address}"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "etherscan",
-                    "url": "https://blockscout-passet-hub.parity-testnet.parity.io/api/v2/",
-                    "parameters": {
-                        "assetType": "evm"
-                    }
-                }
-            ]
-        },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Paseo_Testnet.svg",
-        "addressPrefix": 420420422,
-        "options": [
-            "ethereumBased",
-            "noSubstrateRuntime",
-            "testnet"
-        ]
-    },
-    {
         "chainId": "4b5f95eefedf0d0fb514339edc24d2d411310520f687b4146145bcedb99885b9",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
         "name": "Acurast",
