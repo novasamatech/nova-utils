@@ -14,14 +14,6 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc-polkadot-1.novasama-tech.org",
-                "name": "Novasama node"
-            },
-            {
-                "url": "wss://rpc-polkadot-2.novasama-tech.org",
-                "name": "Novasama node"
-            },
-            {
                 "url": "wss://apps-rpc.polkadot.io",
                 "name": "Public node",
                 "features": [
@@ -33,16 +25,24 @@
                 "name": "Stakeworld node"
             },
             {
-                "url": "wss://polkadot.public.curie.radiumblock.co/ws",
-                "name": "Radium node"
-            },
-            {
-                "url": "wss://1rpc.io/dot",
-                "name": "Automata 1RPC node"
-            },
-            {
                 "url": "wss://rpc-polkadot.luckyfriday.io",
                 "name": "LuckyFriday node"
+            },
+            {
+                "url": "wss://polkadot-rpc.n.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://polkadot.gatotech.network",
+                "name": "Gatotech node"
+            },
+            {
+                "url": "wss://polkadot-rpc.publicnode.com",
+                "name": "Allnodes node"
+            },
+            {
+                "url": "wss://rpc-polkadot.helixstreet.io",
+                "name": "Helixstreet node"
             }
         ],
         "explorers": [
@@ -128,14 +128,6 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc-kusama-1.novasama-tech.org",
-                "name": "Novasama node"
-            },
-            {
-                "url": "wss://rpc-kusama-2.novasama-tech.org",
-                "name": "Novasama node"
-            },
-            {
                 "url": "wss://apps-kusama-rpc.polkadot.io",
                 "name": "Public node",
                 "features": [
@@ -147,12 +139,20 @@
                 "name": "LuckyFriday node"
             },
             {
-                "url": "wss://1rpc.io/ksm",
-                "name": "Automata 1RPC node"
+                "url": "wss://kusama-rpc.n.dwellir.com",
+                "name": "Dwellir node"
             },
             {
-                "url": "wss://kusama.public.curie.radiumblock.co/ws",
-                "name": "Radium node"
+                "url": "wss://kusama.gatotech.network",
+                "name": "Gatotech node"
+            },
+            {
+                "url": "wss://ksm-rpc.stakeworld.io",
+                "name": "Stakeworld node"
+            },
+            {
+                "url": "wss://rpc-kusama.helixstreet.io",
+                "name": "Helixstreet node"
             }
         ],
         "explorers": [
@@ -1278,14 +1278,6 @@
                 "name": "Moonbeam Foundation node"
             },
             {
-                "url": "wss://moonbeam.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://moonbeam.dotters.network",
-                "name": "IBP2 node"
-            },
-            {
                 "url": "wss://moonbeam.public.curie.radiumblock.co/ws",
                 "name": "RadiumBlock node"
             }
@@ -2399,14 +2391,6 @@
         ],
         "nodes": [
             {
-                "url": "wss://kilt.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://kilt.dotters.network",
-                "name": "IBP2 node"
-            },
-            {
                 "url": "wss://spiritnet.kilt.io/",
                 "name": "KILT Protocol node"
             }
@@ -3276,16 +3260,24 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc-assethub.novasama-tech.org",
-                "name": "Novasama node"
-            },
-            {
                 "url": "wss://asset-hub-polkadot-rpc.n.dwellir.com",
                 "name": "Dwellir node"
             },
             {
                 "url": "wss://asset-hub-polkadot.rotko.net",
                 "name": "Rotko node"
+            },
+            {
+                "url": "wss://polkadot-asset-hub-rpc.polkadot.io",
+                "name": "Parity node"
+            },
+            {
+                "url": "wss://rpc-asset-hub-polkadot.stakeworld.io",
+                "name": "Stakeworld node"
+            },
+            {
+                "url": "wss://rpc-asset-hub-polkadot.luckyfriday.io",
+                "name": "LuckyFriday node"
             }
         ],
         "explorers": [
@@ -4970,10 +4962,6 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc-hydra.novasama-tech.org",
-                "name": "Novasama node"
-            },
-            {
                 "url": "wss://hydration-rpc.n.dwellir.com",
                 "name": "Dwellir node"
             },
@@ -4992,6 +4980,10 @@
             {
                 "url": "wss://hydration.rotko.net",
                 "name": "Rotko node"
+            },
+            {
+                "url": "wss://rpc.hydradx.cloud",
+                "name": "Galactic Council node"
             }
         ],
         "explorers": [
@@ -7628,42 +7620,6 @@
         "addressPrefix": 42
     },
     {
-        "chainId": "31a7d8914fb31c249b972f18c115f1e22b4b039abbcb03c73b6774c5642f9efe",
-        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "InvArch (PAUSED)",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "VARCH",
-                "precision": 12,
-                "icon": "VARCH.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://invarch.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://invarch.dotters.network",
-                "name": "IBP2 node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Statescan",
-                "account": "https://invarch.statescan.io/#/accounts/{address}",
-                "event": "https://invarch.statescan.io/#/events/{event}",
-                "extrinsic": "https://invarch.statescan.io/#/extrinsics/{hash}"
-            }
-        ],
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/InvArch.svg",
-        "addressPrefix": 117,
-        "additional": {
-            "supportsGenericLedgerApp": true
-        }
-    },
-    {
         "chainId": "f3c7ad88f6a80f366c4be216691411ef0622e8b809b1046ea297ef106058d4eb",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
         "name": "Manta Atlantic",
@@ -8845,10 +8801,6 @@
             {
                 "url": "https://testnet-passet-hub-eth-rpc.polkadot.io",
                 "name": "Polkadot Hub rpc node"
-            },
-            {
-                "url": "wss://passet-hub-paseo.ibp.network",
-                "name": "Polkadot Hub wss node"
             }
         ],
         "explorers": [
