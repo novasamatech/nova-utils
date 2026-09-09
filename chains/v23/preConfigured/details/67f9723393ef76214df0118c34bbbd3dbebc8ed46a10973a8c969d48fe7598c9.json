@@ -1,0 +1,27 @@
+{
+    "chainId": "67f9723393ef76214df0118c34bbbd3dbebc8ed46a10973a8c969d48fe7598c9",
+    "name": "Westend Asset Hub (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "WND",
+            "precision": 12,
+            "icon": "WND.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://asset-hub-westend-rpc.n.dwellir.com",
+            "name": "Dwellir"
+        },
+        {
+            "url": "wss://westmint-rpc-tn.dwellir.com",
+            "name": "Dwellir Tunisia"
+        },
+        {
+            "url": "wss://westend-asset-hub-rpc.polkadot.io",
+            "name": "Parity"
+        }
+    ],
+    "addressPrefix": 42
+}

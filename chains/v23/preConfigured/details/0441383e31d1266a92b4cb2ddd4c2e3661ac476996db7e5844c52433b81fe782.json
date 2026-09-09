@@ -1,0 +1,27 @@
+{
+    "chainId": "0441383e31d1266a92b4cb2ddd4c2e3661ac476996db7e5844c52433b81fe782",
+    "name": "Westend BridgeHub (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "WND",
+            "precision": 12,
+            "icon": "WND.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://bridge-hub-westend-rpc.n.dwellir.com",
+            "name": "Dwellir"
+        },
+        {
+            "url": "wss://westend-bridge-hub-rpc-tn.dwellir.com",
+            "name": "Dwellir Tunisia"
+        },
+        {
+            "url": "wss://westend-bridge-hub-rpc.polkadot.io",
+            "name": "Parity"
+        }
+    ],
+    "addressPrefix": 42
+}

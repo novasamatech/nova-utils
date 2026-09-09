@@ -1,0 +1,19 @@
+{
+    "chainId": "6d04f01a398a0de6466f7e3d8300e81fb1e5e8428a48ac4975469e90bedb96b6",
+    "name": "Analog Testnet (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "TANLOG",
+            "precision": 12,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc.testnet.analog.one",
+            "name": "Analog One"
+        }
+    ],
+    "addressPrefix": 12851
+}

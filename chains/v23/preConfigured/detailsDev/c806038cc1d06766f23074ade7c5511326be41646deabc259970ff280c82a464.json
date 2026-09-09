@@ -1,0 +1,23 @@
+{
+    "chainId": "c806038cc1d06766f23074ade7c5511326be41646deabc259970ff280c82a464",
+    "name": "Paseo Coretime (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "PAS",
+            "precision": 10,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://sys.ibp.network/coretime-paseo",
+            "name": "IBP1"
+        },
+        {
+            "url": "wss://coretime-paseo.dotters.network",
+            "name": "IBP2"
+        }
+    ],
+    "addressPrefix": 0
+}

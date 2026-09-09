@@ -1,0 +1,19 @@
+{
+    "chainId": "21a1ba24a807ab70ade25cbd741e6428746a7007926ac7b82d102df7d620e2ea",
+    "name": "VTB Mainnet",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "VTBC",
+            "precision": 18,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://substratenode.vtbcfoundation.org/explorer",
+            "name": "VTB Community"
+        }
+    ],
+    "addressPrefix": 42
+}

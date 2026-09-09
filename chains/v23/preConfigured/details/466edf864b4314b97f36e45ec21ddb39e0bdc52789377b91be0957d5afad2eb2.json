@@ -1,0 +1,19 @@
+{
+    "chainId": "466edf864b4314b97f36e45ec21ddb39e0bdc52789377b91be0957d5afad2eb2",
+    "name": "Energy Web X Paseo (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "EWT",
+            "precision": 18,
+            "icon": "EWT.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://public-rpc.testnet.energywebx.com/",
+            "name": "Energy Web"
+        }
+    ],
+    "addressPrefix": 42
+}

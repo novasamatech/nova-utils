@@ -1,0 +1,19 @@
+{
+    "chainId": "5388faf792c5232566d21493929b32c1f20a9c2b03e95615eefec2aa26d64b73",
+    "name": "Hyperbridge (Gargantua) (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "tBRIDGE",
+            "precision": 12,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://hyperbridge-paseo-rpc.blockops.network",
+            "name": "BlockOps"
+        }
+    ],
+    "addressPrefix": 0
+}

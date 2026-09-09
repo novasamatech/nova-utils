@@ -1,0 +1,23 @@
+{
+    "chainId": "bc56cf00c4a27f1e07e3a6c51ad427a1adc1d1109ed47a1e941f187e95012a33",
+    "name": "Paseo Collectives (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "PAS",
+            "precision": 10,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://collectives-paseo.rpc.amforc.com",
+            "name": "IBP1"
+        },
+        {
+            "url": "wss://collectives-paseo.dotters.network",
+            "name": "IBP2"
+        }
+    ],
+    "addressPrefix": 0
+}
