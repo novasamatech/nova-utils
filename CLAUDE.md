@@ -16,7 +16,9 @@ Static JSON configuration (networks, assets, XCM routes, dApps, banners, icons) 
 
 ## dev → prod flow
 
-Configs come in dev/prod pairs: `chains_dev.json`/`chains.json`, `transfers_dev.json`/`transfers.json`, `dapps_dev.json`/`dapps.json`, `global/config_dev.json`/`global/config.json`.
+Configs come in dev/prod pairs: `chains_dev.json`/`chains.json`, `transfers_dev.json`/`transfers.json`, `dapps_dev.json`/`dapps.json`, `global/config_dev.json`/`global/config.json`, `chains/vNN/default_assets_dev.json`/`default_assets.json`.
+
+`default_assets*.json` is the curated token list a fresh wallet starts with. Its order is the priority order clients display, so reordering it is a behavioural change, not cosmetics. `chains/apply_dev_to_prod.py` is hardcoded to `chains.json`/`chains_dev.json` and does **not** promote it — copy it across by hand. `pre-commit` checks every `(chainId, assetId)` against the sibling `chains.json` via `scripts/check_default_assets.py`, so a typo fails CI instead of silently shortening the list clients apply.
 
 Changes land in the `*_dev.json` file first, in their own PR, and are promoted to prod separately. Do not edit both halves of a pair in one change unless explicitly asked.
 
