@@ -16,6 +16,9 @@ config_files = get_xcm_config_files()
 
 data = {}
 
+general_xcm_config = get_data_from_file(config_files.general_config)
+general_xcm_config_data = {}
+
 def get_runtime_prefix(substrate: SubstrateInterface) -> str | None:
     registry = substrate.get_type_registry(substrate.block_hash)
 
@@ -85,10 +88,27 @@ def construct_v1_dry_run_method_data(substrate: SubstrateInterface, runtime_pref
     method_data = origin_caller + call
     return method_data.to_hex()
 
+def write_general_xcm_config():
+    general_xcm_config["chains"]["parachainIds"] = general_xcm_config_data
+    write_data_to_file(config_files.general_config, json.dumps(general_xcm_config, indent=2))
+
 def process_chain(idx, chain, len):
     print(f"\n{idx + 1}/{len}. Starting fetching data for {chain.name}")
 
     chain.create_connection()
+
+    parachainId = None
+
+    if chain.parentId is not None:
+        try:
+            parachainId = chain.substrate.query("ParachainInfo", "ParachainId").value
+        except Exception as e:
+            print(f"Failed to fetch ParachainId for {chain.name} due to {e}, skipping")
+            return
+
+    if parachainId is not None:
+        general_xcm_config_data[chain.chainId] = parachainId
+        write_general_xcm_config()
 
     try:
         runtime_prefix = get_runtime_prefix(chain.substrate)
@@ -115,15 +135,6 @@ def process_chain(idx, chain, len):
 
     xcm_payment_api_presence = determine_xcm_payment_api_presence(chain.substrate)
     print(f"{chain.name} xcm payment api presence: {xcm_payment_api_presence}")
-
-    parachainId = None
-
-    if chain.parentId is not None:
-        try:
-            parachainId = chain.substrate.query("ParachainInfo", "ParachainId").value
-        except Exception as e:
-            print(f"Failed to fetch ParachainId for {chain.name} due to {e}, skipping")
-            return
 
     parachain_info = {
         "parachainId": parachainId,

@@ -16,3 +16,5 @@ class XCMConfigFiles(object):
     xcm_dynamic_config: str
 
     xcm_additional_data: str
+
+    general_config: str
