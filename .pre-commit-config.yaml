@@ -12,3 +12,11 @@ repos:
     rev: 6.1.0
     hooks:
     -   id: flake8
+
+-   repo: local
+    hooks:
+    -   id: check-default-assets
+        name: default assets resolve against their chains file
+        entry: python3 scripts/check_default_assets.py
+        language: system
+        files: ^chains/.*/default_assets(_dev)?\.json$
