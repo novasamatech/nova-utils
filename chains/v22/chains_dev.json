@@ -3718,6 +3718,18 @@
                     "palletName": "ForeignAssets",
                     "isSufficient": true
                 }
+            },
+            {
+                "assetId": 29,
+                "symbol": "dotUSD",
+                "precision": 6,
+                "priceId": "tether",
+                "type": "statemine",
+                "icon": "DOT.svg",
+                "typeExtras": {
+                    "assetId": "7873",
+                    "isSufficient": true
+                }
             }
         ],
         "nodes": [
@@ -8691,6 +8703,18 @@
                 "precision": 10,
                 "priceId": "polkadot",
                 "icon": "DOT.svg"
+            },
+            {
+                "assetId": 1,
+                "symbol": "dotUSD",
+                "precision": 6,
+                "priceId": "tether",
+                "type": "statemine",
+                "icon": "DOT.svg",
+                "typeExtras": {
+                    "assetId": "0x010300a10f043205057b",
+                    "isSufficient": true
+                }
             }
         ],
         "nodes": [
