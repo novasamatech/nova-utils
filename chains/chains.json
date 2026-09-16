@@ -610,5 +610,46 @@
         },
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Calamari.svg",
         "addressPrefix": 78
+    },
+    {
+        "chainId": "681c0735929b234da639bdf87bcecaf8a043d44a83c92784664d8ea9ef8f6be8",
+        "name": "Allfeat",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "AFT",
+                "precision": 12
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://mainnet.rpc.allfeat.org",
+                "name": "Allfeat Foundation"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Allfeat.svg",
+        "addressPrefix": 440
+    },
+    {
+        "chainId": "21994a5dd232f5bbdd9df2b8328c396d0099ec00e04b86585a57c9453519b068",
+        "name": "Melodie (TESTNET)",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "MEL",
+                "precision": 12
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://melodie-rpc.allfeat.io",
+                "name": "Allfeat Foundation"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Allfeat.svg",
+        "options": [
+            "testnet"
+        ],
+        "addressPrefix": 42
     }
 ]
