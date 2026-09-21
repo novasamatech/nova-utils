@@ -1168,6 +1168,16 @@
       "chainId": "262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b",
       "assets": [
         {
+          "assetId": 0,
+          "xcmTransfers": [
+            {
+              "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+              "assetId": 11,
+              "supportsXcmExecute": true
+            }
+          ]
+        },
+        {
           "assetId": 1,
           "xcmTransfers": [
             {

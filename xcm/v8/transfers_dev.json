@@ -3303,29 +3303,6 @@
           ]
         },
         {
-          "assetId": 0,
-          "assetLocation": "BNC-Polkadot",
-          "assetLocationPath": {
-            "type": "relative"
-          },
-          "xcmTransfers": [
-            {
-              "destination": {
-                "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
-                "assetId": 11,
-                "fee": {
-                  "mode": {
-                    "type": "proportional",
-                    "value": "21264531249466"
-                  },
-                  "instructions": "xtokensDest"
-                }
-              },
-              "type": "xtokens"
-            }
-          ]
-        },
-        {
           "assetId": 5,
           "assetLocation": "vDOT",
           "assetLocationPath": {
