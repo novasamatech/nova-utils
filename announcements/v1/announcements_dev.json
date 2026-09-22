@@ -17,10 +17,17 @@
       }
     },
     {
-      "style": "error",
+      "style": "warning",
       "description": {
-        "default": "Rewards in DOT and KSM staking will resume after the migration completes. Please wait.",
-        "ru": "Награды KSM и DOT-стейкинга возобновятся после завершения миграции. пожалуйста ожидайте"
+        "default": "Some staking options are no longer available in Nova Wallet. See the full list and where to manage your stake.",
+        "ru": "Некоторые варианты стейкинга больше недоступны в Nova Wallet. Смотрите полный список и где управлять стейком."
+      },
+      "link": {
+        "url": "https://docs.novawallet.io/nova-wallet-wiki/staking/removed-staking-options",
+        "title": {
+          "default": "Learn more",
+          "ru": "Подробнее"
+        }
       }
     }
   ]
