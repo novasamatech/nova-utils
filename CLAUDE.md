@@ -32,6 +32,7 @@ Promotion tools:
 - `dapps/README.md` ← `make generate_dapp_list`
 - `chains/types/*.json` ← `make generate_type_files`
 - `tests/data/xcm_data.json` ← `make generate_test_file`
+- `bittensor/v1/subnets.json` + `icons/bittensor/subnets/*.png` ← `make update-bittensor-subnets` (a daily workflow opens the PR; SVG logos need the system cairo library — `brew install cairo` locally). Offline tests: `make test-bittensor`.
 
 ## Commands
 
