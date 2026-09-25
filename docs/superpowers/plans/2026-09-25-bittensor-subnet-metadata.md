@@ -339,7 +339,6 @@ Expected: FAIL — `ModuleNotFoundError: No module named 'scripts.bittensor.logo
 import io
 
 import cairosvg
-from cairosvg.url import fetch as cairosvg_fetch
 from PIL import Image
 
 SIZE = 256
@@ -355,24 +354,17 @@ def _is_svg(raw: bytes) -> bool:
     return head.startswith(_SVG_PROLOGS) and b"<svg" in head and b"<html" not in head
 
 
-def _data_urls_only(url, resource_type):
-    # Untrusted SVGs must not make the job fetch arbitrary URLs or local files.
-    if url.startswith("data:"):
-        return cairosvg_fetch(url, resource_type)
-    raise LogoError(f"external reference blocked: {url}")
-
-
 def _open_svg(raw: bytes) -> Image.Image:
     def render(**kwargs) -> Image.Image:
-        png = cairosvg.svg2png(bytestring=raw, url_fetcher=_data_urls_only, **kwargs)
+        # unsafe=False (the default) makes cairosvg resolve only data: URLs, so untrusted
+        # SVGs cannot make the job fetch arbitrary URLs or local files.
+        png = cairosvg.svg2png(bytestring=raw, unsafe=False, **kwargs)
         return Image.open(io.BytesIO(png))
 
     try:
         natural = render()
         # Re-render at the target size instead of upscaling a tiny bitmap.
         return render(scale=SIZE / max(natural.size))
-    except LogoError:
-        raise
     except Exception as e:
         raise LogoError(f"cannot render SVG: {e!r}") from e
 
@@ -404,7 +396,7 @@ def normalize(raw: bytes) -> bytes:
     return out.getvalue()
 ```
 
-Note on `test_svg_external_references_are_not_fetched`: if cairosvg propagates the fetcher error for `<image>` instead of skipping the element, change the test to `pytest.raises(LogoError)` — either outcome satisfies "nothing is fetched"; what matters is no network access and a clean `LogoError` or a rendered PNG.
+cairosvg 2.9 `svg2png` does not accept a custom `url_fetcher`; with `unsafe=False` it already resolves only `data:` URLs (`safe_fetch`), which `test_svg_external_references_are_not_fetched` guards.
 
 - [ ] **Step 4: Run to verify it passes**
 
