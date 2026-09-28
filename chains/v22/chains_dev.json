@@ -1022,9 +1022,6 @@
                 "precision": 18,
                 "priceId": "moonriver",
                 "icon": "MOVR.svg",
-                "staking": [
-                    "parachain"
-                ],
                 "buyProviders": {
                     "banxa": {
                         "coinType": "MOVR",
@@ -2674,9 +2671,6 @@
                 "precision": 18,
                 "priceId": "moonbeam",
                 "icon": "GLMR.svg",
-                "staking": [
-                    "parachain"
-                ],
                 "buyProviders": {
                     "transak": {
                         "network": "MAINNET"
@@ -4012,9 +4006,6 @@
             {
                 "assetId": 0,
                 "symbol": "ZTG",
-                "staking": [
-                    "parachain"
-                ],
                 "precision": 10,
                 "icon": "ZTG.svg"
             },
@@ -5703,10 +5694,6 @@
             {
                 "assetId": 0,
                 "symbol": "AZERO",
-                "staking": [
-                    "aleph-zero",
-                    "nomination-pools"
-                ],
                 "priceId": "aleph-zero",
                 "precision": 12,
                 "icon": "AZERO.svg",
@@ -5859,9 +5846,6 @@
             {
                 "assetId": 0,
                 "symbol": "PDEX",
-                "staking": [
-                    "relaychain"
-                ],
                 "precision": 12,
                 "icon": "PDEX.svg"
             },
@@ -6529,10 +6513,6 @@
             {
                 "assetId": 0,
                 "symbol": "TZERO",
-                "staking": [
-                    "aleph-zero",
-                    "nomination-pools"
-                ],
                 "precision": 12,
                 "icon": "AZERO.svg"
             }
@@ -6968,9 +6948,6 @@
                 "assetId": 0,
                 "symbol": "CAPS",
                 "priceId": "coin-capsule",
-                "staking": [
-                    "relaychain"
-                ],
                 "precision": 18,
                 "icon": "CAPS.svg",
                 "buyProviders": {
@@ -7030,9 +7007,6 @@
                 "assetId": 0,
                 "symbol": "CAPS",
                 "priceId": "coin-capsule",
-                "staking": [
-                    "relaychain"
-                ],
                 "precision": 18,
                 "icon": "CAPS.svg"
             }
@@ -8241,10 +8215,6 @@
                 "symbol": "VARA",
                 "precision": 12,
                 "priceId": "vara-network",
-                "staking": [
-                    "relaychain",
-                    "nomination-pools"
-                ],
                 "icon": "VARA.svg",
                 "buyProviders": {
                     "banxa": {
@@ -9064,10 +9034,7 @@
                 "symbol": "MANTA",
                 "precision": 18,
                 "priceId": "manta-network",
-                "icon": "MANTA.svg",
-                "staking": [
-                    "parachain"
-                ]
+                "icon": "MANTA.svg"
             },
             {
                 "assetId": 1,
@@ -9132,9 +9099,6 @@
                 "assetId": 0,
                 "symbol": "TVARA",
                 "precision": 12,
-                "staking": [
-                    "relaychain"
-                ],
                 "icon": "VARA.svg"
             }
         ],
@@ -9753,11 +9717,7 @@
                 "assetId": 0,
                 "symbol": "AVAIL",
                 "precision": 18,
-                "icon": "AVAIL.svg",
-                "staking": [
-                    "relaychain",
-                    "nomination-pools"
-                ]
+                "icon": "AVAIL.svg"
             }
         ],
         "nodes": [
@@ -9983,11 +9943,7 @@
                 "symbol": "AVAIL",
                 "precision": 18,
                 "priceId": "avail",
-                "icon": "AVAIL.svg",
-                "staking": [
-                    "relaychain",
-                    "nomination-pools"
-                ]
+                "icon": "AVAIL.svg"
             }
         ],
         "nodes": [
