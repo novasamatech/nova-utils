@@ -55,5 +55,6 @@ For a single suite, targets like `make test-nodes-availability` exist. `CHAINS_J
 ## Repo etiquette
 
 - PRs target `master`.
+- Do not commit agent working notes — design specs, implementation plans and similar artifacts produced by skills (e.g. superpowers writes them to `docs/superpowers/`). Keep them local; `docs/superpowers/` is gitignored.
 - Branch names use a type prefix: `fix/`, `feat/`, and similar.
 - CI runs pre-commit on every PR and auto-commits its fixes onto your branch, so run pre-commit before pushing to avoid surprise commits.
