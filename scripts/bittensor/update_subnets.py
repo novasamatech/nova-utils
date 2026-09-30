@@ -14,6 +14,7 @@ import requests
 
 from scripts.bittensor.chain_source import ChainSourceError, Subnet, bittensor_node_urls, fetch_subnets
 from scripts.bittensor.logo_normalizer import LogoError, normalize
+from scripts.bittensor.price_source import PriceSourceError, fetch_price_ids
 
 SUBNETS_JSON = "bittensor/v1/subnets.json"
 LOGO_DIR = "icons/bittensor/subnets"
@@ -57,7 +58,9 @@ def merge(
     subnets: List[Subnet],
     logos: Dict[int, LogoOutcome],
     existing_files: List[str],
+    price_ids: Optional[Dict[int, str]],
 ) -> MergeResult:
+    """`price_ids` is None when the price source was unavailable: previous priceIds are kept then."""
     if previous and len(subnets) < len(previous) / 2:
         raise UpdateAborted(f"chain returned {len(subnets)} subnets, current file has {len(previous)}")
 
@@ -65,6 +68,8 @@ def merge(
         e["netuid"]: e["logo"] for e in previous
         if e.get("logo") and _filename(e["logo"]) in existing_files
     }
+    if price_ids is None:
+        price_ids = {e["netuid"]: e["priceId"] for e in previous if e.get("priceId")}
     result = MergeResult(entries=[], files_to_write={}, files_to_delete=[])
 
     for subnet in sorted(subnets, key=lambda s: s.netuid):
@@ -81,7 +86,13 @@ def merge(
         elif subnet.logo_url:
             result.missing[subnet.netuid] = outcome
 
-        result.entries.append({"netuid": subnet.netuid, "name": subnet.name, "symbol": subnet.symbol, "logo": logo})
+        result.entries.append({
+            "netuid": subnet.netuid,
+            "name": subnet.name,
+            "symbol": subnet.symbol,
+            "priceId": price_ids.get(subnet.netuid),
+            "logo": logo,
+        })
 
     referenced = {_filename(e["logo"]) for e in result.entries if e["logo"]}
     result.files_to_delete = sorted(f for f in existing_files if f not in referenced)
@@ -135,7 +146,13 @@ def main() -> None:
     with ThreadPoolExecutor(DOWNLOAD_WORKERS) as pool:
         logos = dict(zip((s.netuid for s in with_logo), pool.map(fetch_logo, with_logo)))
 
-    result = merge(previous, subnets, logos, existing_logo_files(LOGO_DIR))
+    try:
+        price_ids = fetch_price_ids()
+    except PriceSourceError as e:
+        print(f"Price source unavailable, keeping previous priceIds: {e}", file=sys.stderr)
+        price_ids = None
+
+    result = merge(previous, subnets, logos, existing_logo_files(LOGO_DIR), price_ids)
 
     os.makedirs(LOGO_DIR, exist_ok=True)
     for filename, png in result.files_to_write.items():
@@ -146,7 +163,8 @@ def main() -> None:
     write_subnets_json(SUBNETS_JSON, result.entries)
 
     with_logos = sum(1 for e in result.entries if e["logo"])
-    print(f"{len(result.entries)} subnets, {with_logos} with logo; "
+    with_prices = sum(1 for e in result.entries if e["priceId"])
+    print(f"{len(result.entries)} subnets, {with_logos} with logo, {with_prices} with priceId; "
           f"{len(result.files_to_write)} logos written, {len(result.files_to_delete)} deleted")
     for title, failures in (("Kept previous logo", result.kept_previous), ("No logo", result.missing)):
         for netuid, reason in sorted(failures.items()):
