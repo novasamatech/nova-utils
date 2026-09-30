@@ -33,7 +33,7 @@ jobs:
       - name: ⚙️ Install dependencies
         run: make init
 
-      - name: 🦾 Update subnet names, symbols and logos
+      - name: 🦾 Update subnet names, symbols, logos and priceIds
         run: make update-bittensor-subnets
 
       - name: Make Pull Request
