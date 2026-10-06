@@ -2,13 +2,16 @@
 # Variables
 # =============================================================================
 
-# Force virtualenv to use stdlib venv creator (avoids rustpython which doesn't exist in virtualenv<20.39)
-export VIRTUALENV_CREATOR := venv
-
 # Python environment
 PYTHON := python
 PYTHON_VERSION := 3.11
 VENV ?= .venv
+
+# Poetry lives in its own venv: installed into $(VENV) it would up/downgrade its own
+# dependencies (virtualenv, urllib3, ...) mid-install and crash intermittently
+POETRY_VENV ?= .poetry-venv
+POETRY := $(POETRY_VENV)/bin/poetry
+export POETRY_VIRTUALENVS_IN_PROJECT := true
 
 # Test configuration
 RE_RUNS := 2
@@ -92,15 +95,16 @@ venv:
 .create-venv:
 	test -d $(VENV) || python$(PYTHON_VERSION) -m venv $(VENV)
 	$(VENV)/bin/python -m pip install --upgrade pip
-	$(VENV)/bin/python -m pip install poetry
+	test -d $(POETRY_VENV) || $(PYTHON) -m venv $(POETRY_VENV)
+	$(POETRY_VENV)/bin/python -m pip install --upgrade pip poetry
 
 ## Install pre-commit hooks
 .install-pre-commit:
-	$(VENV)/bin/poetry run pre-commit install
+	$(POETRY) run pre-commit install
 
 ## Install project dependencies
 requirements:
-	$(VENV)/bin/poetry install
+	$(POETRY) install
 	. .venv/bin/activate
 
 # =============================================================================
