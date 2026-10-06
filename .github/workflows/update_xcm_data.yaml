@@ -47,7 +47,7 @@ jobs:
           commit-message: Update xcm config for ${{ matrix.environment }} env
           app-id: ${{ secrets.PR_APP_ID}}
           app-token: ${{ secrets.PR_APP_TOKEN}}
-          pr-reviewer: 'leohar,stepanLav'
+          pr-reviewer: 'stepanLav'
           branch-name: update-xcm-coefficients-${{ matrix.environment }}
           pr-title: 🆙 Update XCM config for ${{ matrix.environment }} env
           pr-body: This PR was generated automatically 🤖

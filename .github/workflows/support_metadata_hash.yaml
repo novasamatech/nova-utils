@@ -36,7 +36,7 @@ jobs:
           commit-message: Update metadata hash
           app-id: ${{ secrets.PR_APP_ID}}
           app-token: ${{ secrets.PR_APP_TOKEN}}
-          pr-reviewer: 'ERussel,leohar,valentunn,stepanLav'
+          pr-reviewer: 'ERussel,valentunn,stepanLav'
           branch-name: update-metadata-hash
           pr-title: 📒 New networks have been added metadata hash!
           pr-body: |
