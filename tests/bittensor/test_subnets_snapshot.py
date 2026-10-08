@@ -1,12 +1,21 @@
 import json
 import os
 
-from scripts.bittensor.update_subnets import LOGO_BASE_URL, LOGO_DIR, SUBNETS_JSON, existing_logo_files
+from scripts.bittensor.update_subnets import CONFIG_JSON, LOGO_BASE_URL, LOGO_DIR, existing_logo_files
+
+
+def load_config():
+    with open(CONFIG_JSON, encoding="utf-8") as f:
+        return json.load(f)
 
 
 def load_entries():
-    with open(SUBNETS_JSON, encoding="utf-8") as f:
-        return json.load(f)["subnets"]
+    return load_config()["subnets"]
+
+
+def test_swap_fee_is_a_percent():
+    swap_fee = load_config()["swapFee"]
+    assert type(swap_fee) in (int, float) and 0 <= swap_fee < 100, swap_fee
 
 
 def test_entries_are_sorted_and_unique():
