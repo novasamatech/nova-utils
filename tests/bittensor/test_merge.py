@@ -98,5 +98,5 @@ def test_unavailable_price_source_keeps_previous_price_ids():
 
 
 def test_regenerated_config_keeps_swap_fee():
-    config = {"swapFee": 0.3, "subnets": [entry(1, None)]}
-    assert with_subnets(config, [entry(2, None)]) == {"swapFee": 0.3, "subnets": [entry(2, None)]}
+    config = {"swapFee": 0.003, "subnets": [entry(1, None)]}
+    assert with_subnets(config, [entry(2, None)]) == {"swapFee": 0.003, "subnets": [entry(2, None)]}

@@ -13,9 +13,9 @@ def load_entries():
     return load_config()["subnets"]
 
 
-def test_swap_fee_is_a_percent():
+def test_swap_fee_is_a_fraction():
     swap_fee = load_config()["swapFee"]
-    assert type(swap_fee) in (int, float) and 0 <= swap_fee < 100, swap_fee
+    assert type(swap_fee) in (int, float) and 0 <= swap_fee < 1, swap_fee
 
 
 def test_entries_are_sorted_and_unique():
