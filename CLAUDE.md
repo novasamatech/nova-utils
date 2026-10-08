@@ -32,7 +32,7 @@ Promotion tools:
 - `dapps/README.md` ← `make generate_dapp_list`
 - `chains/types/*.json` ← `make generate_type_files`
 - `tests/data/xcm_data.json` ← `make generate_test_file`
-- `bittensor/v1/subnets.json` + `icons/bittensor/subnets/*.png` ← `make update-bittensor-subnets` (a daily workflow opens the PR; SVG logos need the system cairo library — `brew install cairo` locally). Offline tests: `make test-bittensor`.
+- `subnets` of `bittensor/v1/config.json` + `icons/bittensor/subnets/*.png` ← `make update-bittensor-subnets` (a daily workflow opens the PR; SVG logos need the system cairo library — `brew install cairo` locally). The generator keeps the other keys of `config.json` as they are: `swapFee`, the Nova fee on subnet swaps as a fraction (`0.003` = 0.3%), is edited by hand. Offline tests: `make test-bittensor`.
 
 ## Commands
 

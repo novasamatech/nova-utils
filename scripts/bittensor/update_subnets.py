@@ -1,4 +1,6 @@
-"""Regenerate bittensor/v1/subnets.json and icons/bittensor/subnets/ from Bittensor chain state.
+"""Regenerate the subnets of bittensor/v1/config.json and icons/bittensor/subnets/ from Bittensor chain state.
+
+Every other key of config.json, such as swapFee, is maintained by hand and kept as it is.
 
 Run from the repo root: `make update-bittensor-subnets`.
 """
@@ -16,7 +18,7 @@ from scripts.bittensor.chain_source import ChainSourceError, Subnet, bittensor_n
 from scripts.bittensor.logo_normalizer import LogoError, normalize
 from scripts.bittensor.price_source import PriceSourceError, fetch_price_ids
 
-SUBNETS_JSON = "bittensor/v1/subnets.json"
+CONFIG_JSON = "bittensor/v1/config.json"
 LOGO_DIR = "icons/bittensor/subnets"
 LOGO_BASE_URL = f"https://raw.githubusercontent.com/novasamatech/nova-utils/master/{LOGO_DIR}"
 DOWNLOAD_TIMEOUT = 15
@@ -118,17 +120,21 @@ def fetch_logo(subnet: Subnet) -> LogoOutcome:
         return f"{type(e).__name__}: {e}"
 
 
-def load_previous(path: str) -> List[dict]:
+def load_config(path: str) -> dict:
     if not os.path.exists(path):
-        return []
+        return {}
     with open(path, encoding="utf-8") as f:
-        return json.load(f)["subnets"]
+        return json.load(f)
 
 
-def write_subnets_json(path: str, entries: List[dict]) -> None:
+def with_subnets(config: dict, entries: List[dict]) -> dict:
+    return {**config, "subnets": entries}
+
+
+def write_config(path: str, config: dict) -> None:
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
-        json.dump({"subnets": entries}, f, indent=2, ensure_ascii=False)
+        json.dump(config, f, indent=2, ensure_ascii=False)
         f.write("\n")
 
 
@@ -139,7 +145,8 @@ def existing_logo_files(directory: str) -> List[str]:
 
 
 def main() -> None:
-    previous = load_previous(SUBNETS_JSON)
+    config = load_config(CONFIG_JSON)
+    previous = config.get("subnets", [])
     subnets = fetch_subnets(bittensor_node_urls())
 
     with_logo = [s for s in subnets if s.logo_url]
@@ -160,7 +167,7 @@ def main() -> None:
             f.write(png)
     for filename in result.files_to_delete:
         os.remove(os.path.join(LOGO_DIR, filename))
-    write_subnets_json(SUBNETS_JSON, result.entries)
+    write_config(CONFIG_JSON, with_subnets(config, result.entries))
 
     with_logos = sum(1 for e in result.entries if e["logo"])
     with_prices = sum(1 for e in result.entries if e["priceId"])

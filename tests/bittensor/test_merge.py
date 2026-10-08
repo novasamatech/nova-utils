@@ -1,7 +1,7 @@
 import pytest
 
 from scripts.bittensor.chain_source import Subnet
-from scripts.bittensor.update_subnets import UpdateAborted, logo_filename, logo_url, merge
+from scripts.bittensor.update_subnets import UpdateAborted, logo_filename, logo_url, merge, with_subnets
 
 PNG_A = b"png-a"
 PNG_B = b"png-b"
@@ -95,3 +95,8 @@ def test_subnet_unknown_to_price_source_gets_null_price_id():
 def test_unavailable_price_source_keeps_previous_price_ids():
     result = merge([entry(7, None, price_id="subvortex")], [subnet(7), subnet(8)], {}, [], None)
     assert result.entries == [entry(7, None, price_id="subvortex"), entry(8, None)]
+
+
+def test_regenerated_config_keeps_swap_fee():
+    config = {"swapFee": 0.003, "subnets": [entry(1, None)]}
+    assert with_subnets(config, [entry(2, None)]) == {"swapFee": 0.003, "subnets": [entry(2, None)]}
