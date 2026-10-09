@@ -8,7 +8,7 @@ from scripts.bittensor import update_subnets
 from scripts.bittensor.chain_source import Subnet
 from scripts.bittensor.price_source import CoinGeckoLogo
 from scripts.bittensor.update_subnets import (
-    fetch_logo, is_tao_placeholder, load_logo_overrides, logo_candidates, names_match,
+    LogoCandidate, fetch_logo, is_tao_placeholder, load_logo_overrides, logo_candidates, names_match,
 )
 
 FIXTURES = "tests/bittensor/fixtures"
@@ -39,9 +39,9 @@ def test_candidates_are_ordered_override_chain_coingecko():
     coingecko = {1: cg("https://cg/1.png"), 3: cg("https://cg/3.png")}
 
     assert logo_candidates(subnets, overrides, coingecko) == {
-        1: [("chain", "https://chain/1.png"), ("coingecko", "https://cg/1.png")],
-        2: [("override", "https://manual/2.png"), ("chain", "https://chain/2.png")],
-        3: [("coingecko", "https://cg/3.png")],
+        1: [LogoCandidate("chain", "https://chain/1.png"), LogoCandidate("coingecko", "https://cg/1.png")],
+        2: [LogoCandidate("override", "https://manual/2.png"), LogoCandidate("chain", "https://chain/2.png")],
+        3: [LogoCandidate("coingecko", "https://cg/3.png")],
     }
 
 
@@ -53,13 +53,18 @@ def test_override_for_unknown_subnet_is_ignored():
     assert logo_candidates([subnet(1)], {9: "https://manual/9.png"}, {}) == {}
 
 
-def test_coingecko_logo_of_a_differently_named_coin_is_not_a_candidate():
-    # SN5 was OpenKaito when CoinGecko listed it and is Hone now: the Kaito logo would be wrong.
-    assert logo_candidates([subnet(5, name="Hone")], {}, {5: cg("https://cg/5.png", name="OpenKaito")}) == {}
+def test_coingecko_listing_of_a_differently_named_coin_may_only_give_the_placeholder():
+    # SN5 was OpenKaito when CoinGecko listed it and is Hone now: the Kaito logo would be wrong,
+    # the generic TAO placeholder cannot be.
+    assert logo_candidates([subnet(5, name="Hone")], {}, {5: cg("https://cg/5.png", name="OpenKaito")}) == {
+        5: [LogoCandidate("coingecko", "https://cg/5.png", placeholder_only=True)],
+    }
 
 
-def test_coingecko_logo_needs_a_subnet_name_to_match_against():
-    assert logo_candidates([subnet(5, name=None)], {}, {5: cg("https://cg/5.png", name="LogicNet")}) == {}
+def test_coingecko_listing_without_a_subnet_name_to_match_against_may_only_give_the_placeholder():
+    assert logo_candidates([subnet(5, name=None)], {}, {5: cg("https://cg/5.png", name="LogicNet")}) == {
+        5: [LogoCandidate("coingecko", "https://cg/5.png", placeholder_only=True)],
+    }
 
 
 @pytest.mark.parametrize("subnet_name, coin_name", [
@@ -101,18 +106,26 @@ def test_real_logo_is_not_a_placeholder():
     assert not is_tao_placeholder(update_subnets.normalize(png_bytes((255, 0, 0, 255))))
 
 
-def test_fetch_logo_skips_coingecko_placeholder(monkeypatch):
+def test_fetch_logo_accepts_the_placeholder_from_a_stale_listing(monkeypatch):
     monkeypatch.setattr(update_subnets, "download", lambda url: fixture("coingecko_tao_placeholder.png"))
 
-    outcome = fetch_logo([("coingecko", "https://cg/73.png")])
-
-    assert outcome == "coingecko https://cg/73.png: LogoError: CoinGecko placeholder (the TAO logo)"
+    assert isinstance(fetch_logo([LogoCandidate("coingecko", "https://cg/73.png", placeholder_only=True)]), bytes)
 
 
-def test_fetch_logo_keeps_tao_logo_from_other_sources(monkeypatch):
-    monkeypatch.setattr(update_subnets, "download", lambda url: fixture("coingecko_tao_placeholder.png"))
+def test_fetch_logo_rejects_a_real_logo_from_a_stale_listing(monkeypatch):
+    monkeypatch.setattr(update_subnets, "download", lambda url: fixture("real_logo.png"))
 
-    assert isinstance(fetch_logo([("chain", "https://chain/0.png")]), bytes)
+    outcome = fetch_logo([LogoCandidate("coingecko", "https://cg/5.png", placeholder_only=True)])
+
+    assert outcome == (
+        "coingecko https://cg/5.png: LogoError: listed under another name, only the TAO placeholder is taken from it"
+    )
+
+
+def test_fetch_logo_accepts_a_real_logo_from_a_matching_listing(monkeypatch):
+    monkeypatch.setattr(update_subnets, "download", lambda url: fixture("real_logo.png"))
+
+    assert isinstance(fetch_logo([LogoCandidate("coingecko", "https://cg/61.png")]), bytes)
 
 
 def test_fetch_logo_uses_first_working_candidate(monkeypatch):
@@ -125,7 +138,7 @@ def test_fetch_logo_uses_first_working_candidate(monkeypatch):
 
     monkeypatch.setattr(update_subnets, "download", fake_download)
 
-    outcome = fetch_logo([("chain", "https://chain/1.png"), ("coingecko", "https://cg/1.png")])
+    outcome = fetch_logo([LogoCandidate("chain", "https://chain/1.png"), LogoCandidate("coingecko", "https://cg/1.png")])
 
     assert isinstance(outcome, bytes)
     assert Image.open(io.BytesIO(outcome)).getpixel((128, 128)) == (0, 0, 255, 255)
@@ -138,7 +151,7 @@ def test_fetch_logo_reports_every_failed_source(monkeypatch):
 
     monkeypatch.setattr(update_subnets, "download", fake_download)
 
-    outcome = fetch_logo([("chain", "https://chain/1.png"), ("coingecko", "https://cg/1.png")])
+    outcome = fetch_logo([LogoCandidate("chain", "https://chain/1.png"), LogoCandidate("coingecko", "https://cg/1.png")])
 
     assert outcome == "chain https://chain/1.png: LogoError: nope; coingecko https://cg/1.png: LogoError: nope"
 

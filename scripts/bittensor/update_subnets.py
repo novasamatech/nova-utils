@@ -2,9 +2,9 @@
 
 A subnet logo comes from the first source that yields an image: a hand-picked URL in
 bittensor/v1/logo-overrides.json, the logo_url of the on-chain subnet identity, then the CoinGecko
-coin image. The CoinGecko image is used only when the coin is still named like the subnet, since a
-renamed subnet keeps the listing of its previous owner, and never when it is CoinGecko's generic TAO
-placeholder. Every other key of config.json, such as swapFee, is maintained by hand and kept as it is.
+coin image. A renamed subnet keeps the CoinGecko listing of its previous owner, so when the coin is
+not named like the subnet only CoinGecko's generic TAO placeholder is taken from it, never the old
+owner's logo. Every other key of config.json, such as swapFee, is maintained by hand and kept as it is.
 
 Run from the repo root: `make update-bittensor-subnets`. Pass `--report FILE` to also write the
 summary printed at the end to FILE, the daily workflow puts it into the pull request body.
@@ -18,7 +18,7 @@ import re
 import sys
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass, field
-from typing import Dict, List, Optional, Tuple, Union
+from typing import Dict, List, Optional, Union
 
 import requests
 from PIL import Image
@@ -40,8 +40,6 @@ USER_AGENT = "Mozilla/5.0 (compatible; nova-utils-subnet-metadata)"
 
 # Per netuid: normalised PNG bytes on success, a human-readable reason on failure.
 LogoOutcome = Union[bytes, str]
-# (source name, url) pairs to try in order.
-LogoCandidates = List[Tuple[str, str]]
 
 # CoinGecko gives every subnet token without an own logo the TAO logo, recognised here by its
 # perceptual hash (see dhash) so that a rescaled or re-encoded copy still matches.
@@ -55,6 +53,18 @@ _NOT_ALNUM = re.compile(r"[^0-9a-z]+")
 
 class UpdateAborted(Exception):
     pass
+
+
+@dataclass(frozen=True)
+class LogoCandidate:
+    source: str
+    url: str
+    # The listing is not named like the subnet: its own logo may belong to a previous owner, so
+    # only the generic TAO placeholder, which cannot be wrong, is accepted from it.
+    placeholder_only: bool = False
+
+
+LogoCandidates = List[LogoCandidate]
 
 
 @dataclass
@@ -164,14 +174,14 @@ def is_tao_placeholder(png: bytes) -> bool:
 def fetch_logo(candidates: LogoCandidates) -> LogoOutcome:
     """The normalised logo of the first candidate that downloads and decodes, else why each one failed."""
     failures = []
-    for source, url in candidates:
+    for candidate in candidates:
         try:
-            png = normalize(download(url))
-            if source == "coingecko" and is_tao_placeholder(png):
-                raise LogoError("CoinGecko placeholder (the TAO logo)")
+            png = normalize(download(candidate.url))
+            if candidate.placeholder_only and not is_tao_placeholder(png):
+                raise LogoError("listed under another name, only the TAO placeholder is taken from it")
             return png
         except (requests.RequestException, LogoError) as e:
-            failures.append(f"{source} {url}: {type(e).__name__}: {e}")
+            failures.append(f"{candidate.source} {candidate.url}: {type(e).__name__}: {e}")
     return "; ".join(failures)
 
 
@@ -188,13 +198,14 @@ def logo_candidates(
 ) -> Dict[int, LogoCandidates]:
     candidates = {}
     for subnet in subnets:
+        found = []
+        if subnet.netuid in overrides:
+            found.append(LogoCandidate("override", overrides[subnet.netuid]))
+        if subnet.logo_url:
+            found.append(LogoCandidate("chain", subnet.logo_url))
         coin = coingecko.get(subnet.netuid)
-        sources = [
-            ("override", overrides.get(subnet.netuid)),
-            ("chain", subnet.logo_url),
-            ("coingecko", coin.url if coin and names_match(subnet.name, coin.name) else None),
-        ]
-        found = [(source, url) for source, url in sources if url]
+        if coin:
+            found.append(LogoCandidate("coingecko", coin.url, placeholder_only=not names_match(subnet.name, coin.name)))
         if found:
             candidates[subnet.netuid] = found
     return candidates
