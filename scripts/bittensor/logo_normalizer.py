@@ -6,6 +6,12 @@ from PIL import Image
 SIZE = 256
 _SVG_PROLOGS = (b"<svg", b"<?xml", b"<!--")
 
+# The app draws logos straight onto its near-black background. A mark that brings no background of
+# its own and is dark all over would vanish there, so its brightness is flipped while its hues stay.
+MIN_TRANSPARENT_SHARE = 0.2
+VISIBLE_VALUE = 100
+MAX_VISIBLE_SHARE = 0.05
+
 
 class LogoError(Exception):
     pass
@@ -50,9 +56,32 @@ def _fit(img: Image.Image) -> Image.Image:
     return canvas
 
 
+def _is_invisible_on_dark(img: Image.Image) -> bool:
+    alpha = img.getchannel("A")
+    opaque = alpha.point(lambda a: 255 if a > 128 else 0)
+    opaque_count = opaque.histogram()[255]
+    if opaque_count == 0 or 1 - opaque_count / (img.width * img.height) < MIN_TRANSPARENT_SHARE:
+        return False
+
+    value = img.convert("HSV").getchannel("V")
+    bright = value.point(lambda v: 255 if v > VISIBLE_VALUE else 0)
+    bright.paste(0, mask=opaque.point(lambda o: 255 - o))
+    return bright.histogram()[255] / opaque_count < MAX_VISIBLE_SHARE
+
+
+def _lighten_for_dark_ui(img: Image.Image) -> Image.Image:
+    if not _is_invisible_on_dark(img):
+        return img
+
+    hue, saturation, value = img.convert("HSV").split()
+    lightened = Image.merge("HSV", (hue, saturation, value.point(lambda v: 255 - v))).convert("RGBA")
+    lightened.putalpha(img.getchannel("A"))
+    return lightened
+
+
 def normalize(raw: bytes) -> bytes:
     """Return a SIZE×SIZE RGBA PNG for any supported logo, or raise LogoError."""
     img = _open_svg(raw) if _is_svg(raw) else _open_raster(raw)
     out = io.BytesIO()
-    _fit(img).save(out, "PNG", compress_level=9)
+    _lighten_for_dark_ui(_fit(img)).save(out, "PNG", compress_level=9)
     return out.getvalue()

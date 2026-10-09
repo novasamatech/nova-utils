@@ -173,3 +173,20 @@ def test_override_must_be_https(tmp_path):
 
     with pytest.raises(ValueError):
         load_logo_overrides(str(path))
+
+
+def test_fetch_logo_stops_at_the_first_failure_when_a_previous_logo_exists(monkeypatch):
+    # A transient failure of the on-chain logo must keep yesterday's file, not swap in a lower source.
+    tried = []
+
+    def fake_download(url):
+        tried.append(url)
+        raise update_subnets.LogoError("timeout")
+
+    monkeypatch.setattr(update_subnets, "download", fake_download)
+    candidates = [LogoCandidate("chain", "https://chain/66.png"), LogoCandidate("coingecko", "https://cg/66.png")]
+
+    outcome = fetch_logo(candidates, keep_previous=True)
+
+    assert outcome == "chain https://chain/66.png: LogoError: timeout"
+    assert tried == ["https://chain/66.png"]
