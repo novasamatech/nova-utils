@@ -1,5 +1,6 @@
 import re
 from collections import defaultdict
+from dataclasses import dataclass
 from typing import Dict, List
 
 import requests
@@ -18,20 +19,41 @@ class PriceSourceError(Exception):
     pass
 
 
-def price_ids_from_coins(coins: List[dict]) -> Dict[int, str]:
-    by_netuid = defaultdict(set)
+@dataclass(frozen=True)
+class CoinGeckoLogo:
+    name: str
+    url: str
+
+
+def _coins_by_netuid(coins: List[dict]) -> Dict[int, dict]:
+    by_netuid = defaultdict(list)
     for coin in coins:
         match = _SUBNET_SYMBOL.fullmatch(coin["symbol"].lower())
         if match:
-            by_netuid[int(match.group(1))].add(coin["id"])
+            by_netuid[int(match.group(1))].append(coin)
 
     # Two coins claiming one netuid cannot be told apart safely, so neither is used.
-    price_ids = {netuid: ids.pop() for netuid, ids in by_netuid.items() if len(ids) == 1}
+    return {netuid: found[0] for netuid, found in by_netuid.items() if len(found) == 1}
+
+
+def price_ids_from_coins(coins: List[dict]) -> Dict[int, str]:
+    price_ids = {netuid: coin["id"] for netuid, coin in _coins_by_netuid(coins).items()}
     price_ids[0] = ROOT_PRICE_ID
     return price_ids
 
 
-def fetch_price_ids() -> Dict[int, str]:
+def logos_from_coins(coins: List[dict]) -> Dict[int, CoinGeckoLogo]:
+    """The CoinGecko coin image, a fallback for subnets without a usable on-chain logo. The coin name
+    comes along so that callers can tell a stale listing of a renamed subnet from a current one."""
+    return {
+        netuid: CoinGeckoLogo(name=coin.get("name") or "", url=coin["image"])
+        for netuid, coin in _coins_by_netuid(coins).items()
+        if isinstance(coin.get("image"), str) and coin["image"].startswith("https://")
+    }
+
+
+def fetch_coins() -> List[dict]:
+    """Every coin of the CoinGecko subnet category, or PriceSourceError when CoinGecko is unavailable."""
     coins, page = [], 1
     try:
         while True:
@@ -48,4 +70,4 @@ def fetch_price_ids() -> Dict[int, str]:
         raise PriceSourceError(f"{type(e).__name__}: {e}") from e
     if not coins:
         raise PriceSourceError(f"CoinGecko category {CATEGORY} is empty")
-    return price_ids_from_coins(coins)
+    return coins

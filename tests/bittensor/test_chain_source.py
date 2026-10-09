@@ -56,3 +56,30 @@ def test_node_urls_missing_chain_raises(tmp_path):
 
     with pytest.raises(ChainSourceError):
         bittensor_node_urls(str(path))
+
+
+def test_github_blob_logo_url_is_rewritten_to_raw():
+    identities = {5: {"subnet_name": "ItsAI", "logo_url": "https://github.com/It-s-AI/llm-detection/blob/main/full_logo.png"}}
+    assert subnets_from_storage({5: True}, identities, {5: "ε"})[0].logo_url == (
+        "https://raw.githubusercontent.com/It-s-AI/llm-detection/main/full_logo.png"
+    )
+
+
+def test_non_blob_github_logo_url_is_kept():
+    url = "https://raw.githubusercontent.com/a/b/main/logo.png"
+    identities = {5: {"subnet_name": "x", "logo_url": url}}
+    assert subnets_from_storage({5: True}, identities, {5: "ε"})[0].logo_url == url
+
+
+def test_dropbox_share_page_logo_url_becomes_a_direct_download():
+    shared = "https://www.dropbox.com/scl/fi/abc/logo.svg?rlkey=k&st=s&dl=0"
+    identities = {6: {"subnet_name": "Claims", "logo_url": shared}}
+    assert subnets_from_storage({6: True}, identities, {6: "ζ"})[0].logo_url == (
+        "https://www.dropbox.com/scl/fi/abc/logo.svg?rlkey=k&st=s&dl=1"
+    )
+
+
+def test_dropbox_dl_parameter_is_only_rewritten_on_dropbox():
+    url = "https://example.com/logo.png?dl=0"
+    identities = {6: {"subnet_name": "x", "logo_url": url}}
+    assert subnets_from_storage({6: True}, identities, {6: "ζ"})[0].logo_url == url

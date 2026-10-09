@@ -34,7 +34,22 @@ jobs:
         run: make init
 
       - name: 🦾 Update subnet names, symbols, logos and priceIds
-        run: make update-bittensor-subnets
+        run: make update-bittensor-subnets BITTENSOR_REPORT=$RUNNER_TEMP/subnets-report.txt
+
+      - name: 📝 Put the update summary into the PR body
+        id: pr-body
+        run: |
+          {
+            echo 'body<<NOVA_EOF'
+            echo 'This PR was generated automatically 🤖'
+            echo
+            echo 'Subnets whose logo could not be refreshed, if any, are listed below with the reason per source.'
+            echo
+            echo '```'
+            cat "$RUNNER_TEMP/subnets-report.txt"
+            echo '```'
+            echo 'NOVA_EOF'
+          } >> "$GITHUB_OUTPUT"
 
       - name: Make Pull Request
         uses: ./.github/workflows/make-pull-request
@@ -47,7 +62,7 @@ jobs:
           app-token: ${{ secrets.PR_APP_TOKEN}}
           branch-name: update-bittensor-subnets
           pr-title: 🆙 Update Bittensor subnet metadata
-          pr-body: This PR was generated automatically 🤖
+          pr-body: ${{ steps.pr-body.outputs.body }}
           pr-base: master
 
   alert:
