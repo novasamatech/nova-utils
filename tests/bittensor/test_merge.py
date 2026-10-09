@@ -1,10 +1,20 @@
+import io
+
 import pytest
+from PIL import Image
 
 from scripts.bittensor.chain_source import Subnet
 from scripts.bittensor.update_subnets import UpdateAborted, logo_filename, logo_url, merge, with_subnets
 
-PNG_A = b"png-a"
-PNG_B = b"png-b"
+
+def _png(color, compress_level=9):
+    out = io.BytesIO()
+    Image.new("RGBA", (4, 4), color).save(out, "PNG", compress_level=compress_level)
+    return out.getvalue()
+
+
+PNG_A = _png((255, 0, 0, 255))
+PNG_B = _png((0, 0, 255, 255))
 
 
 def subnet(netuid, logo_url_=None, name="Name", symbol="α"):
@@ -100,3 +110,45 @@ def test_unavailable_price_source_keeps_previous_price_ids():
 def test_regenerated_config_keeps_swap_fee():
     config = {"swapFee": 0.003, "subnets": [entry(1, None)]}
     assert with_subnets(config, [entry(2, None)]) == {"swapFee": 0.003, "subnets": [entry(2, None)]}
+
+
+def test_logo_from_fallback_source_is_used_without_chain_logo_url():
+    result = merge([], [subnet(1)], {1: PNG_A}, [], {})
+    filename = logo_filename(1, PNG_A)
+    assert result.entries == [entry(1, logo_url(filename))]
+    assert result.files_to_write == {filename: PNG_A}
+
+
+def test_failed_fallback_keeps_previous_logo_without_chain_logo_url():
+    old = logo_filename(1, PNG_A)
+    result = merge([entry(1, logo_url(old))], [subnet(1)], {1: "coingecko https://cg/1.png: HTTPError: 404"}, [old], {})
+    assert result.entries == [entry(1, logo_url(old))]
+    assert result.kept_previous == {1: "coingecko https://cg/1.png: HTTPError: 404"}
+
+
+def test_report_lists_counts_and_failures():
+    from scripts.bittensor.update_subnets import MergeResult, report
+
+    result = MergeResult(
+        entries=[entry(1, "https://x/sn1-a.png", price_id="a"), entry(2, None)],
+        files_to_write={"sn1-a.png": PNG_A},
+        files_to_delete=["sn1-old.png"],
+        kept_previous={1: "chain https://c/1.png: HTTPError: 500"},
+        missing={2: "coingecko https://cg/2.png: LogoError: html"},
+    )
+    assert report(result) == (
+        "2 subnets, 1 with logo, 1 with priceId; 1 logos written, 1 deleted\n"
+        "\n"
+        "Kept previous logo for SN1: chain https://c/1.png: HTTPError: 500\n"
+        "No logo for SN2: coingecko https://cg/2.png: LogoError: html"
+    )
+
+
+def test_logo_filename_depends_on_pixels_not_on_png_encoding():
+    fast, small = _png((255, 0, 0, 255), 0), _png((255, 0, 0, 255), 9)
+    assert fast != small
+    assert logo_filename(1, fast) == logo_filename(1, small)
+
+
+def test_logo_filename_differs_for_different_pixels():
+    assert logo_filename(1, PNG_A) != logo_filename(1, PNG_B)
