@@ -92,6 +92,14 @@ def _filename(url: str) -> str:
     return url.rsplit("/", 1)[-1]
 
 
+def previous_logos(previous: List[dict], existing_files: List[str]) -> Dict[int, str]:
+    """The logo URL per netuid from the previous config, where the file still exists."""
+    return {
+        e["netuid"]: e["logo"] for e in previous
+        if e.get("logo") and _filename(e["logo"]) in existing_files
+    }
+
+
 def merge(
     previous: List[dict],
     subnets: List[Subnet],
@@ -105,10 +113,7 @@ def merge(
     if previous and len(subnets) < len(previous) / 2:
         raise UpdateAborted(f"chain returned {len(subnets)} subnets, current file has {len(previous)}")
 
-    previous_logo = {
-        e["netuid"]: e["logo"] for e in previous
-        if e.get("logo") and _filename(e["logo"]) in existing_files
-    }
+    previous_logo = previous_logos(previous, existing_files)
     if price_ids is None:
         price_ids = {e["netuid"]: e["priceId"] for e in previous if e.get("priceId")}
     result = MergeResult(entries=[], files_to_write={}, files_to_delete=[])
@@ -171,8 +176,11 @@ def is_tao_placeholder(png: bytes) -> bool:
     return bin(dhash(png) ^ TAO_LOGO_DHASH).count("1") <= TAO_LOGO_MAX_DISTANCE
 
 
-def fetch_logo(candidates: LogoCandidates) -> LogoOutcome:
-    """The normalised logo of the first candidate that downloads and decodes, else why each one failed."""
+def fetch_logo(candidates: LogoCandidates, keep_previous: bool = False) -> LogoOutcome:
+    """The normalised logo of the first candidate that downloads and decodes, else why each one failed.
+
+    With `keep_previous` the first failure ends the search: the logo on file came from that source or
+    a better one, and a flaky host must not get it replaced by a lower-ranked source."""
     failures = []
     for candidate in candidates:
         try:
@@ -182,6 +190,8 @@ def fetch_logo(candidates: LogoCandidates) -> LogoOutcome:
             return png
         except (requests.RequestException, LogoError) as e:
             failures.append(f"{candidate.source} {candidate.url}: {type(e).__name__}: {e}")
+            if keep_previous:
+                break
     return "; ".join(failures)
 
 
@@ -270,11 +280,14 @@ def main(report_path: Optional[str] = None) -> None:
         print(f"CoinGecko unavailable, keeping previous priceIds and skipping CoinGecko logos: {e}", file=sys.stderr)
         price_ids, coingecko_logos = None, {}
 
+    existing_files = existing_logo_files(LOGO_DIR)
+    on_file = previous_logos(previous, existing_files)
     candidates = logo_candidates(subnets, overrides, coingecko_logos)
     with ThreadPoolExecutor(DOWNLOAD_WORKERS) as pool:
-        logos = dict(zip(candidates, pool.map(fetch_logo, candidates.values())))
+        outcomes = pool.map(fetch_logo, candidates.values(), [netuid in on_file for netuid in candidates])
+        logos = dict(zip(candidates, outcomes))
 
-    result = merge(previous, subnets, logos, existing_logo_files(LOGO_DIR), price_ids)
+    result = merge(previous, subnets, logos, existing_files, price_ids)
 
     os.makedirs(LOGO_DIR, exist_ok=True)
     for filename, png in result.files_to_write.items():
