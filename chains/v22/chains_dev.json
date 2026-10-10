@@ -3036,6 +3036,68 @@
                         "network": "ETHEREUM"
                     }
                 }
+            },
+            {
+                "assetId": 1,
+                "symbol": "USDT",
+                "precision": 6,
+                "priceId": "tether",
+                "type": "evm",
+                "icon": "USDT.svg",
+                "typeExtras": {
+                    "contractAddress": "0xdAC17F958D2ee523a2206206994597C13D831ec7"
+                },
+                "buyProviders": {
+                    "transak": {
+                        "network": "ETHEREUM"
+                    },
+                    "mercuryo": {
+                        "network": "ETHEREUM"
+                    },
+                    "banxa": {
+                        "coinType": "USDT",
+                        "blockchain": "ETH"
+                    }
+                },
+                "sellProviders": {
+                    "transak": {
+                        "network": "ETHEREUM"
+                    },
+                    "mercuryo": {
+                        "network": "ETHEREUM"
+                    }
+                }
+            },
+            {
+                "assetId": 2,
+                "symbol": "USDC",
+                "precision": 6,
+                "priceId": "usd-coin",
+                "type": "evm",
+                "icon": "USDC.svg",
+                "typeExtras": {
+                    "contractAddress": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+                },
+                "buyProviders": {
+                    "transak": {
+                        "network": "ETHEREUM"
+                    },
+                    "mercuryo": {
+                        "network": "ETHEREUM"
+                    },
+                    "banxa": {
+                        "coinType": "USDC",
+                        "blockchain": "ETH"
+                    }
+                },
+                "sellProviders": {
+                    "transak": {
+                        "network": "ETHEREUM"
+                    },
+                    "mercuryo": {
+                        "network": "ETHEREUM"
+                    }
+                }
             }
         ],
         "nodeSelectionStrategy": "uniform",
