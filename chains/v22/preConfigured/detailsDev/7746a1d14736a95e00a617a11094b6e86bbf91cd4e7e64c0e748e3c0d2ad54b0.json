@@ -1,0 +1,20 @@
+{
+    "chainId": "7746a1d14736a95e00a617a11094b6e86bbf91cd4e7e64c0e748e3c0d2ad54b0",
+    "name": "Alice Mainnet",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "ALICE",
+            "precision": 12,
+            "name": "Alice",
+            "icon": "ALICE.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc.aliceprotocol.org",
+            "name": "Alice node"
+        }
+    ],
+    "addressPrefix": 300
+}
