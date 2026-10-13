@@ -5272,6 +5272,20 @@
                     "existentialDeposit": "10000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "assetId": 74,
+                "symbol": "aETH",
+                "precision": 18,
+                "priceId": "ethereum",
+                "type": "orml-hydration-evm",
+                "icon": "WETH-Snowbridge.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0xef030000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "8202803876747",
+                    "transfersEnabled": true
+                }
             }
         ],
         "nodes": [
