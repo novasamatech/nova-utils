@@ -44,21 +44,26 @@ def _find_statemine_deposit_amount(
         events: List[dict],
         deposit_account: str,
 ) -> int | None:
-    # TODO matching asset id is quite cumbersome here so we dont do it since
-    # there should only be one "Issued" event to a recipient account, in the receiving token
-    event = find_event_with_attributes(events, asset_type.pallet_name(), "Issued",
-                                       lambda attrs: decode_account_id(attrs["owner"]) == decode_account_id(deposit_account))
-    if event is None:
-        return None
+    # Matching the asset id is deliberately skipped: a dry run deposits a single token to the recipient,
+    # so the first deposit event for that account is the one we need.
+    # pallet-assets emits Issued when tokens are minted (reserve-backed arrival) and Deposited when
+    # existing tokens move from a sovereign account (e.g. Snowbridge assets withdrawn back to Asset Hub).
+    for event_name, account_attribute in (("Issued", "owner"), ("Deposited", "who")):
+        event = find_event_with_attributes(
+            events, asset_type.pallet_name(), event_name,
+            lambda attrs: decode_account_id(attrs[account_attribute]) == decode_account_id(deposit_account)
+        )
+        if event is not None:
+            return event["attributes"]["amount"]
 
-    return event["attributes"]["amount"]
+    return None
 
 def _find_orml_deposit_amount(
         events: List[dict],
         deposit_account: str,
 ) -> int | None:
-    # TODO matching asset id is quite cumbersome here so we dont do it since
-    # there should only be one "Issued" event to a recipient account, in the receiving token
+    # Matching the asset id is deliberately skipped: a dry run deposits a single token to the recipient,
+    # so the first "Deposited" event for that account is the one we need
     event = find_event_with_attributes(events, "Tokens", "Deposited",
                                        lambda attrs: decode_account_id(attrs["who"]) == decode_account_id(deposit_account))
     if event is None:

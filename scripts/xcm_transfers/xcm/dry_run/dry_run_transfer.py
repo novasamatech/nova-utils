@@ -32,13 +32,29 @@ class TransferDryRunner:
 
         fix_substrate_interface()
 
+    # Amounts in whole tokens. 100 is enough to make fees visible for low-value tokens, but for high-value ones
+    # (100 ETH ~ $250k) it can trip per-asset XCM rate limits that share their budget with real traffic, so a
+    # smaller amount is tried before declaring the direction unsupported.
+    _dry_run_amounts = (100, 1)
+
     def dry_run_transfer(self, transfer_direction: XcmTransferDirection) -> DryRunTransferResult:
+        last_error: Exception | None = None
+
+        for amount in self._dry_run_amounts:
+            try:
+                return self._dry_run_transfer(transfer_direction, amount)
+            except Exception as error:
+                warn_log(f"Dry run of {transfer_direction} with amount {amount} failed: {error}")
+                last_error = error
+
+        raise last_error
+
+    def _dry_run_transfer(self, transfer_direction: XcmTransferDirection, amount: int) -> DryRunTransferResult:
         origin_chain, chain_asset, destination_chain, destination_asset = transfer_direction.origin_chain, transfer_direction.origin_asset, transfer_direction.destination_chain, transfer_direction.destination_asset
 
         print(
-            f"Dry running transfer of {chain_asset.symbol} from {origin_chain.chain.name} to {destination_chain.chain.name}")
+            f"Dry running transfer of {chain_asset.symbol} ({amount}) from {origin_chain.chain.name} to {destination_chain.chain.name}")
 
-        amount = 100
         sender = _dry_run_account_for_chain(origin_chain)
         recipient = _dry_run_account_for_chain(destination_chain)
 
