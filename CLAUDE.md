@@ -8,9 +8,9 @@ Static JSON configuration (networks, assets, XCM routes, dApps, banners, icons) 
 
 ## Versioned config directories
 
-`chains/` and `xcm/` keep one directory per config version (`chains/v2`…`chains/v23`, `xcm/v2`…`xcm/v8`). Older versions stay frozen for older client releases.
+`chains/` and `xcm/` keep one directory per config version (`chains/v2`…`chains/v23`, `xcm/v2`…`xcm/v9`). Older versions stay frozen for older client releases.
 
-- Edit only the latest version: **`chains/v23/`** and **`xcm/v8/`**. Do not backport into older `vNN` directories.
+- Edit only the latest version: **`chains/v23/`** and **`xcm/v9/`**. Do not backport into older `vNN` directories.
 - `chains/chains.json`, `chains/chains_dev.json` and `xcm/transfers*.json` at the top level are legacy leftovers (untouched since 2023) — do not edit them.
 - The latest version is hardcoded in two places that must be updated when a new version directory is added: `scripts/utils/chain_model.py` (`latest_config_version()`, overridable via the `CHAINS_VERSION` env var) and `scripts/xcm_transfers/config_setup.py` (`XCM_VERSION`, no env override).
 

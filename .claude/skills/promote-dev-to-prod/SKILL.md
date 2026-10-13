@@ -23,8 +23,8 @@ It copies every dev entry whose `chainId` already exists in prod, non-interactiv
 ## xcm
 
 ```bash
-DEV_XCM_JSON_PATH=xcm/v8/transfers_dev.json \
-XCM_JSON_PATH=xcm/v8/transfers.json \
+DEV_XCM_JSON_PATH=xcm/v9/transfers_dev.json \
+XCM_JSON_PATH=xcm/v9/transfers.json \
 DEV_CHAINS_JSON_PATH=chains/v23/chains_dev.json \
 make update-xcm-to-prod
 ```
