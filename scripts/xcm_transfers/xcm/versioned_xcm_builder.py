@@ -69,7 +69,7 @@ def account_junction(
     account_id = decode_account_id(account)
 
     if evm:
-        return {"AccountKey20": {"network": None, "key": account_id}}
+        return account_key20_junction(account_id)
     else:
         return {"AccountId32": {"network": None, "id": account_id}}
 
