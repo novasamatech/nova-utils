@@ -19,7 +19,17 @@ class GlobalMultiLocation:
     # 2. Use all junctions after common ancestor as result junctions
     # 3. Use difference between len(target.junctions) and common_ancestor_idx
     # to termine how many "up" hops are needed to reach common ancestor
+    # A location whose first junction is GlobalConsensus is rooted at the universal level of another consensus
+    # system (e.g. Snowbridge assets: GlobalConsensus(Ethereum)). Chains of the local consensus never carry
+    # a GlobalConsensus junction in their global location.
+    def is_foreign_consensus(self) -> bool:
+        return len(self.junctions) > 0 and "GlobalConsensus" in self.junctions[0]
+
     def reanchor(self, target: GlobalMultiLocation) -> RelativeMultiLocation:
+        if self.is_foreign_consensus() and not target.is_foreign_consensus():
+            # up to the relay (len(target.junctions)) plus one more hop to the universal level
+            return RelativeMultiLocation(parents=len(target.junctions) + 1, junctions=self.junctions)
+
         common_ancestor_idx = self.find_last_common_junction_idx(target)
         if common_ancestor_idx is None:
             return RelativeMultiLocation(parents=len(target.junctions), junctions=self.junctions)
