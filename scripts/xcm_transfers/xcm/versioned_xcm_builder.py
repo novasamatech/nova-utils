@@ -75,3 +75,11 @@ def account_junction(
 
 def parachain_junction(parachain_id: int) -> dict:
     return {"Parachain": parachain_id}
+
+
+def global_consensus_ethereum_junction(chain_id: int) -> dict:
+    return {"GlobalConsensus": {"Ethereum": {"chain_id": chain_id}}}
+
+
+def account_key20_junction(key: str) -> dict:
+    return {"AccountKey20": {"network": None, "key": key}}
