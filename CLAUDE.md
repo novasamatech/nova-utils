@@ -12,7 +12,7 @@ Static JSON configuration (networks, assets, XCM routes, dApps, banners, icons) 
 
 - Edit only the latest version: **`chains/v22/`** and **`xcm/v9/`**. Do not backport into older `vNN` directories.
 - `chains/chains.json`, `chains/chains_dev.json` and `xcm/transfers*.json` at the top level are legacy leftovers (untouched since 2023) — do not edit them.
-- The latest version is hardcoded in two places that must be updated when a new version directory is added: `scripts/utils/chain_model.py` (`latest_config_version()`, overridable via the `CHAINS_VERSION` env var) and `scripts/xcm_transfers/config_setup.py` (`XCM_VERSION`, no env override).
+- The latest version is hardcoded in three places that must be updated when a new version directory is added: `scripts/utils/chain_model.py` (`latest_config_version()`, overridable via the `CHAINS_VERSION` env var), `scripts/xcm_transfers/config_setup.py` (`XCM_VERSION`, no env override) and the `XCM_PATH` default in `scripts/print_xcm_changes.py`. The docs in `CLAUDE.md` and `.claude/skills/*/SKILL.md` name the directories too.
 
 ## dev → prod flow
 

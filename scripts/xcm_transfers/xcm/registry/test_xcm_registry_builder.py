@@ -17,12 +17,12 @@ def test_account_key20():
 
 
 def test_unsupported_global_consensus_raises():
-    with pytest.raises(Exception):
+    with pytest.raises(Exception, match="Unsupported globalConsensus"):
         _map_junction_from_config("globalConsensus", {"polkadot": {}})
 
 
 def test_unknown_junction_key_raises():
-    with pytest.raises(Exception):
+    with pytest.raises(Exception, match="Unknown junction key"):
         _map_junction_from_config("parents", 2)
 
 
