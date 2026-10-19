@@ -2,9 +2,9 @@
 
 A subnet logo comes from the first source that yields an image: a hand-picked URL in
 bittensor/v1/logo-overrides.json, the logo_url of the on-chain subnet identity, then the CoinGecko
-coin image. A renamed subnet keeps the CoinGecko listing of its previous owner, so when the coin is
-not named like the subnet only CoinGecko's generic TAO placeholder is taken from it, never the old
-owner's logo. Every other key of config.json, such as swapFee, is maintained by hand and kept as it is.
+coin image. The CoinGecko image is taken as is, like Talisman does: a renamed subnet keeps the
+listing of its previous owner, so when that logo is wrong put the right one into logo-overrides.json.
+Every other key of config.json, such as swapFee, is maintained by hand and kept as it is.
 
 Run from the repo root: `make update-bittensor-subnets`. Pass `--report FILE` to also write the
 summary printed at the end to FILE, the daily workflow puts it into the pull request body.
@@ -14,7 +14,6 @@ import hashlib
 import io
 import json
 import os
-import re
 import sys
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass, field
@@ -25,9 +24,7 @@ from PIL import Image
 
 from scripts.bittensor.chain_source import ChainSourceError, Subnet, bittensor_node_urls, fetch_subnets
 from scripts.bittensor.logo_normalizer import LogoError, normalize
-from scripts.bittensor.price_source import (
-    CoinGeckoLogo, PriceSourceError, fetch_coins, logos_from_coins, price_ids_from_coins,
-)
+from scripts.bittensor.price_source import PriceSourceError, fetch_coins, logos_from_coins, price_ids_from_coins
 
 CONFIG_JSON = "bittensor/v1/config.json"
 LOGO_OVERRIDES_JSON = "bittensor/v1/logo-overrides.json"
@@ -41,15 +38,6 @@ USER_AGENT = "Mozilla/5.0 (compatible; nova-utils-subnet-metadata)"
 # Per netuid: normalised PNG bytes on success, a human-readable reason on failure.
 LogoOutcome = Union[bytes, str]
 
-# CoinGecko gives every subnet token without an own logo the TAO logo, recognised here by its
-# perceptual hash (see dhash) so that a rescaled or re-encoded copy still matches.
-TAO_LOGO_DHASH = 0x3000707010700010
-TAO_LOGO_MAX_DISTANCE = 4
-# A name shorter than this says too little to confirm that two listings are the same project.
-MIN_NAME_LENGTH = 3
-
-_NOT_ALNUM = re.compile(r"[^0-9a-z]+")
-
 
 class UpdateAborted(Exception):
     pass
@@ -59,9 +47,6 @@ class UpdateAborted(Exception):
 class LogoCandidate:
     source: str
     url: str
-    # The listing is not named like the subnet: its own logo may belong to a previous owner, so
-    # only the generic TAO placeholder, which cannot be wrong, is accepted from it.
-    placeholder_only: bool = False
 
 
 LogoCandidates = List[LogoCandidate]
@@ -157,25 +142,6 @@ def download(url: str) -> bytes:
     return b"".join(chunks)
 
 
-def dhash(png: bytes, size: int = 8) -> int:
-    """Difference hash over a tiny grayscale copy, flattened onto white: the same picture at another
-    size or encoding gives (nearly) the same bits, a different picture gives mostly different ones."""
-    with Image.open(io.BytesIO(png)) as img:
-        rgba = img.convert("RGBA")
-        flat = Image.new("RGBA", rgba.size, (255, 255, 255, 255))
-        flat.alpha_composite(rgba)
-    gray = flat.convert("L").resize((size + 1, size), Image.LANCZOS)
-    bits = 0
-    for y in range(size):
-        for x in range(size):
-            bits = (bits << 1) | (gray.getpixel((x, y)) > gray.getpixel((x + 1, y)))
-    return bits
-
-
-def is_tao_placeholder(png: bytes) -> bool:
-    return bin(dhash(png) ^ TAO_LOGO_DHASH).count("1") <= TAO_LOGO_MAX_DISTANCE
-
-
 def fetch_logo(candidates: LogoCandidates, keep_previous: bool = False) -> LogoOutcome:
     """The normalised logo of the first candidate that downloads and decodes, else why each one failed.
 
@@ -184,10 +150,7 @@ def fetch_logo(candidates: LogoCandidates, keep_previous: bool = False) -> LogoO
     failures = []
     for candidate in candidates:
         try:
-            png = normalize(download(candidate.url))
-            if candidate.placeholder_only and not is_tao_placeholder(png):
-                raise LogoError("listed under another name, only the TAO placeholder is taken from it")
-            return png
+            return normalize(download(candidate.url))
         except (requests.RequestException, LogoError) as e:
             failures.append(f"{candidate.source} {candidate.url}: {type(e).__name__}: {e}")
             if keep_previous:
@@ -195,16 +158,8 @@ def fetch_logo(candidates: LogoCandidates, keep_previous: bool = False) -> LogoO
     return "; ".join(failures)
 
 
-def names_match(subnet_name: Optional[str], coin_name: Optional[str]) -> bool:
-    """Whether a CoinGecko listing still describes the subnet: one normalised name contains the other."""
-    first, second = (_NOT_ALNUM.sub("", (name or "").lower()) for name in (subnet_name, coin_name))
-    if min(len(first), len(second)) < MIN_NAME_LENGTH:
-        return False
-    return first in second or second in first
-
-
 def logo_candidates(
-    subnets: List[Subnet], overrides: Dict[int, str], coingecko: Dict[int, CoinGeckoLogo],
+    subnets: List[Subnet], overrides: Dict[int, str], coingecko: Dict[int, str],
 ) -> Dict[int, LogoCandidates]:
     candidates = {}
     for subnet in subnets:
@@ -213,9 +168,8 @@ def logo_candidates(
             found.append(LogoCandidate("override", overrides[subnet.netuid]))
         if subnet.logo_url:
             found.append(LogoCandidate("chain", subnet.logo_url))
-        coin = coingecko.get(subnet.netuid)
-        if coin:
-            found.append(LogoCandidate("coingecko", coin.url, placeholder_only=not names_match(subnet.name, coin.name)))
+        if subnet.netuid in coingecko:
+            found.append(LogoCandidate("coingecko", coingecko[subnet.netuid]))
         if found:
             candidates[subnet.netuid] = found
     return candidates

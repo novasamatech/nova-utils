@@ -1,6 +1,5 @@
 import re
 from collections import defaultdict
-from dataclasses import dataclass
 from typing import Dict, List
 
 import requests
@@ -17,12 +16,6 @@ _SUBNET_SYMBOL = re.compile(r"sn(\d+)")
 
 class PriceSourceError(Exception):
     pass
-
-
-@dataclass(frozen=True)
-class CoinGeckoLogo:
-    name: str
-    url: str
 
 
 def _coins_by_netuid(coins: List[dict]) -> Dict[int, dict]:
@@ -42,11 +35,10 @@ def price_ids_from_coins(coins: List[dict]) -> Dict[int, str]:
     return price_ids
 
 
-def logos_from_coins(coins: List[dict]) -> Dict[int, CoinGeckoLogo]:
-    """The CoinGecko coin image, a fallback for subnets without a usable on-chain logo. The coin name
-    comes along so that callers can tell a stale listing of a renamed subnet from a current one."""
+def logos_from_coins(coins: List[dict]) -> Dict[int, str]:
+    """The CoinGecko coin image URL per netuid, a fallback for subnets without a usable on-chain logo."""
     return {
-        netuid: CoinGeckoLogo(name=coin.get("name") or "", url=coin["image"])
+        netuid: coin["image"]
         for netuid, coin in _coins_by_netuid(coins).items()
         if isinstance(coin.get("image"), str) and coin["image"].startswith("https://")
     }
