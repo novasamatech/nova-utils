@@ -29,11 +29,11 @@ def coin_with_image(coin_id, symbol, image, name=None):
     return {**coin(coin_id, symbol), "name": name or coin_id, "image": image}
 
 
-def test_logos_from_coins_carry_name_and_image_by_netuid():
-    from scripts.bittensor.price_source import CoinGeckoLogo, logos_from_coins
+def test_logos_from_coins_map_netuid_to_image_url():
+    from scripts.bittensor.price_source import logos_from_coins
 
     coins = [coin_with_image("synth-2", "sn50", "https://coin-images.coingecko.com/x/sn50.png?1", name="Synth")]
-    assert logos_from_coins(coins) == {50: CoinGeckoLogo(name="Synth", url="https://coin-images.coingecko.com/x/sn50.png?1")}
+    assert logos_from_coins(coins) == {50: "https://coin-images.coingecko.com/x/sn50.png?1"}
 
 
 def test_logos_skip_coins_without_https_image():
