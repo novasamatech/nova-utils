@@ -7937,7 +7937,10 @@
         "addressPrefix": 42,
         "additional": {
             "defaultBlockTime": 12000,
-            "supportsGenericLedgerApp": true
+            "supportsGenericLedgerApp": true,
+            "newFeatures": [
+                "staking"
+            ]
         }
     },
     {
