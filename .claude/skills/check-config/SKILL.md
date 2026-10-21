@@ -15,7 +15,7 @@ Deduplicate, then keep the `.json` files under `chains/`, `xcm/`, `dapps/`, `glo
 
 ## 2. Check the version directory
 
-Changes belong in the latest version directory only — `chains/v22/` and `xcm/v8/` (confirm the latest by listing `chains/` and `xcm/`; do not assume these numbers stay current).
+Changes belong in the latest version directory only — `chains/v23/` and `xcm/v8/` (confirm the latest by listing `chains/` and `xcm/`; do not assume these numbers stay current).
 
 Flag as a problem:
 - edits to an older `vNN` directory

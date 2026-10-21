@@ -1,0 +1,19 @@
+{
+    "chainId": "7838c3c774e887c0a53bcba9e64f702361a1a852d5550b86b58cd73827fa1e1e",
+    "name": "Kapex (SHUTTING DOWN)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "KPX",
+            "precision": 12,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://kapex-rpc.dwellir.com",
+            "name": "Dwellir node"
+        }
+    ],
+    "addressPrefix": 2007
+}

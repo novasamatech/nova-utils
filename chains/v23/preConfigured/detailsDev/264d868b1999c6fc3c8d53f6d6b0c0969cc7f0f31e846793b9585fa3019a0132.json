@@ -1,0 +1,19 @@
+{
+    "chainId": "264d868b1999c6fc3c8d53f6d6b0c0969cc7f0f31e846793b9585fa3019a0132",
+    "name": "Autonomys Chronos Testnet Domain 0 (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "tAI3",
+            "precision": 18,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://auto-evm.chronos.autonomys.xyz/ws",
+            "name": "Labs"
+        }
+    ],
+    "addressPrefix": 6094
+}

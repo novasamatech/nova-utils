@@ -1,0 +1,27 @@
+{
+    "chainId": "2761c95259d59e55ae3daf756c1413b46e45a5a2987299f8ef8e5d8e4776cbc4",
+    "name": "Polkadot Bulletin",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "DOT",
+            "precision": 10,
+            "icon": "DOT.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc-bulletin.luckyfriday.io",
+            "name": "LuckyFriday"
+        },
+        {
+            "url": "wss://bulletin-rpc.polkadot.io",
+            "name": "Parity"
+        },
+        {
+            "url": "wss://spectrum-03.simplystaking.xyz/cG9sa2Fkb3QtMDMtOTFkMmYwZGYtcG9sa2Fkb3Q/9QbAeudedsupNA/polkadotbulletin/mainnet/",
+            "name": "Spectrum"
+        }
+    ],
+    "addressPrefix": 0
+}
