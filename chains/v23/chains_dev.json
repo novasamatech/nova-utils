@@ -3605,7 +3605,8 @@
                 "icon": "USDC-Snowbridge.svg",
                 "typeExtras": {
                     "assetId": "0x02020907040300a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-                    "palletName": "ForeignAssets"
+                    "palletName": "ForeignAssets",
+                    "isSufficient": true
                 }
             },
             {
@@ -3617,7 +3618,8 @@
                 "icon": "USDT-Snowbridge.svg",
                 "typeExtras": {
                     "assetId": "0x02020907040300dac17f958d2ee523a2206206994597c13d831ec7",
-                    "palletName": "ForeignAssets"
+                    "palletName": "ForeignAssets",
+                    "isSufficient": true
                 }
             },
             {
@@ -3671,7 +3673,8 @@
                 "icon": "KSM.svg",
                 "typeExtras": {
                     "assetId": "0x02010903",
-                    "palletName": "ForeignAssets"
+                    "palletName": "ForeignAssets",
+                    "isSufficient": true
                 }
             },
             {
@@ -3683,7 +3686,8 @@
                 "icon": "WETH-Snowbridge.svg",
                 "typeExtras": {
                     "assetId": "0x0201090704",
-                    "palletName": "ForeignAssets"
+                    "palletName": "ForeignAssets",
+                    "isSufficient": true
                 }
             },
             {
@@ -4785,9 +4789,9 @@
                 "type": "orml",
                 "icon": "WETH-Snowbridge.svg",
                 "typeExtras": {
-                    "currencyIdScale": "0x06430f00",
+                    "currencyIdScale": "0xfd420f00",
                     "currencyIdType": "u32",
-                    "existentialDeposit": "1",
+                    "existentialDeposit": "6009615384615",
                     "transfersEnabled": true
                 }
             },
@@ -4801,7 +4805,7 @@
                 "typeExtras": {
                     "currencyIdScale": "0xfe420f00",
                     "currencyIdType": "u32",
-                    "existentialDeposit": "1",
+                    "existentialDeposit": "23",
                     "transfersEnabled": true
                 }
             },
@@ -5278,6 +5282,20 @@
                     "currencyIdScale": "0x3e450f00",
                     "currencyIdType": "u32",
                     "existentialDeposit": "10000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 74,
+                "symbol": "aETH",
+                "precision": 18,
+                "priceId": "ethereum",
+                "type": "orml-hydration-evm",
+                "icon": "WETH-Snowbridge.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0xef030000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "8202803876747",
                     "transfersEnabled": true
                 }
             }

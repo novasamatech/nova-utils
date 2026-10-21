@@ -3,6 +3,13 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import List
 
+GLOBAL_CONSENSUS_JUNCTION = "GlobalConsensus"
+
+
+def is_global_consensus_junction(junction: dict) -> bool:
+    return GLOBAL_CONSENSUS_JUNCTION in junction
+
+
 # A class representing GlobalMultiLocations - a location that is represented from the root ancestry point of view
 # Thus, it cannot have any parents, and we separate it on type level from RelativeMultiLocation for better code safety
 @dataclass
@@ -12,14 +19,26 @@ class GlobalMultiLocation:
     def as_relative(self) -> RelativeMultiLocation:
         return RelativeMultiLocation(parents=0, junctions=self.junctions)
 
+    # A location whose first junction is GlobalConsensus is rooted at the universal level of another consensus
+    # system (e.g. Snowbridge assets: GlobalConsensus(Ethereum)). Chains of the local consensus never carry
+    # a GlobalConsensus junction in their global location.
+    def is_foreign_consensus(self) -> bool:
+        return len(self.junctions) > 0 and is_global_consensus_junction(self.junctions[0])
+
     # Reanchor given location to a point of view of given `target` location
     # Basic algorithm idea:
-    # We find the last common ancestor and consider the target location to be "up to ancestor and down to self":
+    # 0. If `self` is rooted in a foreign consensus, there is no common ancestor inside the local consensus:
+    # go up to the relay (len(target.junctions) hops) plus one more hop to the universal level and keep all junctions
+    # Otherwise we find the last common ancestor and consider the target location to be
+    # "up to ancestor and down to self":
     # 1. Find last common ancestor between `self` and `target`
     # 2. Use all junctions after common ancestor as result junctions
     # 3. Use difference between len(target.junctions) and common_ancestor_idx
     # to termine how many "up" hops are needed to reach common ancestor
     def reanchor(self, target: GlobalMultiLocation) -> RelativeMultiLocation:
+        if self.is_foreign_consensus() and not target.is_foreign_consensus():
+            return RelativeMultiLocation(parents=len(target.junctions) + 1, junctions=self.junctions)
+
         common_ancestor_idx = self.find_last_common_junction_idx(target)
         if common_ancestor_idx is None:
             return RelativeMultiLocation(parents=len(target.junctions), junctions=self.junctions)
