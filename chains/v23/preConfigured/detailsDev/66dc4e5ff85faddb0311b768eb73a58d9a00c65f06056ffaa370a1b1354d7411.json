@@ -1,0 +1,19 @@
+{
+    "chainId": "66dc4e5ff85faddb0311b768eb73a58d9a00c65f06056ffaa370a1b1354d7411",
+    "name": "Argon Testnet (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "ARGN",
+            "precision": 6,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc.testnet.argonprotocol.org",
+            "name": "Argon Foundation"
+        }
+    ],
+    "addressPrefix": 42
+}

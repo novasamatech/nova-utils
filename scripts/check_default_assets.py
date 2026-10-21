@@ -5,7 +5,7 @@ silently start a wallet with a shorter curated list than intended, so it is wort
 
 Run over one or more default_assets*.json paths:
 
-    PYTHONPATH=. python3 scripts/check_default_assets.py chains/v22/default_assets.json
+    PYTHONPATH=. python3 scripts/check_default_assets.py chains/v23/default_assets.json
 """
 
 import json

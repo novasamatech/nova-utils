@@ -13,10 +13,10 @@ Both tools rewrite the prod config in place. Before running either, confirm the 
 `chains/apply_dev_to_prod.py` opens `chains.json` and `chains_dev.json` by bare filename, so it must run from inside the version directory:
 
 ```bash
-cd chains/v22 && PYTHONPATH=../.. ../../.venv/bin/python ../apply_dev_to_prod.py
+cd chains/v23 && PYTHONPATH=../.. ../../.venv/bin/python ../apply_dev_to_prod.py
 ```
 
-Replace `v22` with the actual latest version directory — list `chains/` to confirm.
+Replace `v23` with the actual latest version directory — list `chains/` to confirm.
 
 It copies every dev entry whose `chainId` already exists in prod, non-interactively. Chains present only in dev are not added. It rewrites the whole file with `indent=4`, so review the diff for unintended reformatting.
 
@@ -25,7 +25,7 @@ It copies every dev entry whose `chainId` already exists in prod, non-interactiv
 ```bash
 DEV_XCM_JSON_PATH=xcm/v8/transfers_dev.json \
 XCM_JSON_PATH=xcm/v8/transfers.json \
-DEV_CHAINS_JSON_PATH=chains/v22/chains_dev.json \
+DEV_CHAINS_JSON_PATH=chains/v23/chains_dev.json \
 make update-xcm-to-prod
 ```
 

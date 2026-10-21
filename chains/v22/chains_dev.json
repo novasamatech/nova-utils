@@ -7898,10 +7898,7 @@
                 "symbol": "TAO",
                 "precision": 9,
                 "priceId": "bittensor",
-                "icon": "TAO_bittensor.svg",
-                "staking": [
-                    "subtensor"
-                ]
+                "icon": "TAO_bittensor.svg"
             }
         ],
         "nodes": [
@@ -7936,13 +7933,8 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Bittensor.svg",
         "addressPrefix": 42,
         "additional": {
-            "themeColor": "#1F78FF",
-            "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/bittensor-tao-staking",
             "defaultBlockTime": 12000,
-            "supportsGenericLedgerApp": true,
-            "newFeatures": [
-                "staking"
-            ]
+            "supportsGenericLedgerApp": true
         }
     },
     {
