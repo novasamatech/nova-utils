@@ -11,6 +11,7 @@ Static JSON configuration (networks, assets, XCM routes, dApps, banners, icons) 
 `chains/` and `xcm/` keep one directory per config version (`chains/v2`…`chains/v23`, `xcm/v2`…`xcm/v9`). Older versions stay frozen for older client releases.
 
 - Edit only the latest version: **`chains/v23/`** and **`xcm/v9/`**. Do not backport into older `vNN` directories.
+  The one exception is a prod data fix that shipped clients still read (a dead chain, a wrong asset id or existential deposit): it goes into every version those clients read as well, as in #3976 which removed Turing and Calamari from `xcm/v6`…`v8`. New entries and new features are never backported.
 - `chains/chains.json`, `chains/chains_dev.json` and `xcm/transfers*.json` at the top level are legacy leftovers (untouched since 2023) — do not edit them.
 - The latest version is hardcoded in three places that must be updated when a new version directory is added: `scripts/utils/chain_model.py` (`latest_config_version()`, overridable via the `CHAINS_VERSION` env var), `scripts/xcm_transfers/config_setup.py` (`XCM_VERSION`, no env override) and the `XCM_PATH` default in `scripts/print_xcm_changes.py`. The docs in `CLAUDE.md` and `.claude/skills/*/SKILL.md` name the directories too.
 

@@ -38,16 +38,22 @@ class TransferDryRunner:
     _dry_run_amounts = (100, 1)
 
     def dry_run_transfer(self, transfer_direction: XcmTransferDirection) -> DryRunTransferResult:
-        last_error: Exception | None = None
+        errors: list[Exception] = []
 
         for amount in self._dry_run_amounts:
             try:
                 return self._dry_run_transfer(transfer_direction, amount)
             except Exception as error:
                 warn_log(f"Dry run of {transfer_direction} with amount {amount} failed: {error}")
-                last_error = error
+                errors.append(error)
 
-        raise last_error
+        # The first amount is the canonical one, so its error is the one to report: a fallback amount that is too
+        # small fails for its own reasons (e.g. FailedToTransactAsset) and would otherwise hide the real failure.
+        # The fallback's error stays attached as the cause.
+        first_error, *fallback_errors = errors
+        if fallback_errors:
+            raise first_error from fallback_errors[-1]
+        raise first_error
 
     def _dry_run_transfer(self, transfer_direction: XcmTransferDirection, amount: int) -> DryRunTransferResult:
         origin_chain, chain_asset, destination_chain, destination_asset = transfer_direction.origin_chain, transfer_direction.origin_asset, transfer_direction.destination_chain, transfer_direction.destination_asset
