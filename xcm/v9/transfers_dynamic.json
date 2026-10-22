@@ -201,6 +201,38 @@
         "parachainId": 2051,
         "generalKey": "0x414a554e"
       }
+    },
+    "ETH-Snowbridge": {
+      "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+      "multiLocation": {
+        "globalConsensus": {
+          "ethereum": {
+            "chainId": 1
+          }
+        }
+      }
+    },
+    "USDT-Snowbridge": {
+      "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+      "multiLocation": {
+        "globalConsensus": {
+          "ethereum": {
+            "chainId": 1
+          }
+        },
+        "accountKey20": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      }
+    },
+    "USDC-Snowbridge": {
+      "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+      "multiLocation": {
+        "globalConsensus": {
+          "ethereum": {
+            "chainId": 1
+          }
+        },
+        "accountKey20": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+      }
     }
   },
   "reserveIdOverrides": {
@@ -893,6 +925,39 @@
               "supportsXcmExecute": true
             }
           ]
+        },
+        {
+          "assetId": 24,
+          "xcmTransfers": [
+            {
+              "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+              "assetId": 57,
+              "hasDeliveryFee": true,
+              "supportsXcmExecute": true
+            }
+          ]
+        },
+        {
+          "assetId": 18,
+          "xcmTransfers": [
+            {
+              "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+              "assetId": 72,
+              "hasDeliveryFee": true,
+              "supportsXcmExecute": true
+            }
+          ]
+        },
+        {
+          "assetId": 17,
+          "xcmTransfers": [
+            {
+              "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+              "assetId": 73,
+              "hasDeliveryFee": true,
+              "supportsXcmExecute": true
+            }
+          ]
         }
       ]
     },
@@ -1010,6 +1075,36 @@
             {
               "chainId": "f6ee56e9c5277df5b4ce6ae9983ee88f3cbed27d31beeb98f9f84f997a1ab0b9",
               "assetId": 0,
+              "supportsXcmExecute": true
+            }
+          ]
+        },
+        {
+          "assetId": 57,
+          "xcmTransfers": [
+            {
+              "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+              "assetId": 24,
+              "supportsXcmExecute": true
+            }
+          ]
+        },
+        {
+          "assetId": 72,
+          "xcmTransfers": [
+            {
+              "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+              "assetId": 18,
+              "supportsXcmExecute": true
+            }
+          ]
+        },
+        {
+          "assetId": 73,
+          "xcmTransfers": [
+            {
+              "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+              "assetId": 17,
               "supportsXcmExecute": true
             }
           ]
