@@ -13,30 +13,6 @@
             {
                 "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
                 "contractAddress": "0xB44a9B6905aF7c801311e8F4E76932ee959c663C"
-            },
-            {
-                "chainId": "eip155:1",
-                "contractAddress": "0xdac17f958d2ee523a2206206994597c13d831ec7",
-                "buyProviders": {
-                    "transak": {
-                        "network": "ETHEREUM"
-                    },
-                    "mercuryo": {
-                        "network": "ETHEREUM"
-                    },
-                    "banxa": {
-                        "coinType": "USDT",
-                        "blockchain": "ETH"
-                    }
-                },
-                "sellProviders": {
-                    "transak": {
-                        "network": "ETHEREUM"
-                    },
-                    "mercuryo": {
-                        "network": "ETHEREUM"
-                    }
-                }
             }
         ]
     },
@@ -54,30 +30,6 @@
             {
                 "chainId": "401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
                 "contractAddress": "0xE3F5a90F9cb311505cd691a46596599aA1A0AD7D"
-            },
-            {
-                "chainId": "eip155:1",
-                "contractAddress": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-                "buyProviders": {
-                    "transak": {
-                        "network": "ETHEREUM"
-                    },
-                    "mercuryo": {
-                        "network": "ETHEREUM"
-                    },
-                    "banxa": {
-                        "coinType": "USDC",
-                        "blockchain": "ETH"
-                    }
-                },
-                "sellProviders": {
-                    "transak": {
-                        "network": "ETHEREUM"
-                    },
-                    "mercuryo": {
-                        "network": "ETHEREUM"
-                    }
-                }
             }
         ]
     },
