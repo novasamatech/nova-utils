@@ -1201,7 +1201,7 @@
             },
             {
                 "assetId": 17,
-                "symbol": "xcXRT",
+                "symbol": "xcXRT (old)",
                 "precision": 9,
                 "priceId": "robonomics-network",
                 "type": "evm",
@@ -2140,7 +2140,7 @@
             },
             {
                 "assetId": 5,
-                "symbol": "XRT",
+                "symbol": "XRT (old)",
                 "precision": 9,
                 "type": "orml",
                 "priceId": "robonomics-network",
@@ -3844,7 +3844,7 @@
         "assets": [
             {
                 "assetId": 0,
-                "symbol": "XRT",
+                "symbol": "XRT (old)",
                 "precision": 9,
                 "icon": "XRT.svg",
                 "priceId": "robonomics-network"
@@ -3895,6 +3895,28 @@
         "additional": {
             "feeViaRuntimeCall": true
         }
+    },
+    {
+        "chainId": "29f4371dcc41045f5041489dfcd51389bf8ccd2161332e0de1ca803bcc3ee872",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Robonomics Polkadot",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "XRT",
+                "precision": 9,
+                "icon": "XRT.svg",
+                "priceId": "robonomics-network-2"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://polkadot.rpc.robonomics.network/",
+                "name": "Airalab"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Robonomics.svg",
+        "addressPrefix": 32
     },
     {
         "chainId": "7dd99936c1e9e6d1ce7d90eb6f33bea8393b4bf87677d675aa63c9cb3e8c5b5b",
