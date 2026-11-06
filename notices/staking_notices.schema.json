@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/notices/staking_notices.schema.json",
+  "title": "StakingNotices",
+  "description": "Per-chain staking notices displayed in Nova Wallet. v1: shortText/longText are plain strings. v2 will accept locale-map objects.",
+  "type": "array",
+  "items": {
+    "$ref": "#/$defs/StakingNotice"
+  },
+  "$defs": {
+    "LocaleMap": {
+      "type": "object",
+      "description": "Locale-keyed text map (e.g. {\"en\": \"...\", \"zh\": \"...\"}). Reserved for v2.",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "LocalizedText": {
+      "description": "Plain string (v1) or locale-map object (v2).",
+      "oneOf": [
+        { "type": "string", "minLength": 1 },
+        { "$ref": "#/$defs/LocaleMap" }
+      ]
+    },
+    "StakingNotice": {
+      "type": "object",
+      "required": ["chainId", "severity", "shortText", "longText"],
+      "additionalProperties": false,
+      "properties": {
+        "chainId": {
+          "type": "string",
+          "description": "64-character lowercase hex chain identifier.",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "severity": {
+          "type": "string",
+          "description": "Notice severity level.",
+          "enum": ["info", "critical"]
+        },
+        "shortText": {
+          "$ref": "#/$defs/LocalizedText",
+          "description": "Brief notice label shown in list and badge contexts."
+        },
+        "longText": {
+          "$ref": "#/$defs/LocalizedText",
+          "description": "Full notice body shown in expanded detail view."
+        },
+        "endDate": {
+          "type": "string",
+          "description": "ISO 8601 date (YYYY-MM-DD) after which the notice is no longer displayed. Omit if the notice has no expiry.",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+        }
+      }
+    }
+  }
+}
