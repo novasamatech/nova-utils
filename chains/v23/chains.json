@@ -3318,7 +3318,7 @@
     {
         "chainId": "631ccc82a078481584041656af292834e1ae6daab61d2875b4dd0c14bb9b17bc",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Robonomics Kusama (PAUSED)",
+        "name": "Robonomics",
         "assets": [
             {
                 "assetId": 0,
@@ -3356,31 +3356,6 @@
             "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/robonomics.json",
             "overridesCommon": true
         },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Robonomics.svg",
-        "addressPrefix": 32,
-        "additional": {
-            "feeViaRuntimeCall": true
-        }
-    },
-    {
-        "chainId": "29f4371dcc41045f5041489dfcd51389bf8ccd2161332e0de1ca803bcc3ee872",
-        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "Robonomics",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "XRT",
-                "precision": 9,
-                "priceId": "robonomics-network-2",
-                "icon": "XRT.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://polkadot.rpc.robonomics.network/",
-                "name": "Airalab node"
-            }
-        ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Robonomics.svg",
         "addressPrefix": 32,
         "additional": {
