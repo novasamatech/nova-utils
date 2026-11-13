@@ -659,5 +659,18 @@
                 "contractAddress": "0x5D0DD05bB095fdD6Af4865A1AdF97c39C85ad2d8"
             }
         ]
+    },
+    {
+        "symbol": "XRT",
+        "precision": 9,
+        "name": "Robonomics",
+        "priceId": "robonomics-network-2",
+        "icon": "XRT.svg",
+        "instances": [
+            {
+                "chainId": "eip155:1",
+                "contractAddress": "0x1F752250f518e419f2F03804E25728c5C6DfF73f"
+            }
+        ]
     }
 ]
