@@ -3,5 +3,15 @@
   "proxyApiUrl": "https://subquery-accounts-prod.novasama-tech.org",
   "multiStakingApiUrl": "https://subquery-multi-staking-prod.novasama-tech.org",
   "infraUrl": "https://nova-infra-dev.novasama-tech.org/",
-  "changeNowTaoUrl": "https://changenow.io/exchange?from=assethub&to=tao&link_id=59409968ba3831"
+  "changeNowTaoUrl": "https://changenow.io/exchange?from=assethub&to=tao&link_id=59409968ba3831",
+  "defaultSwapPair": {
+    "assetIn": {
+      "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+      "assetId": 0
+    },
+    "assetOut": {
+      "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+      "assetId": 2
+    }
+  }
 }
