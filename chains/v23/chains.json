@@ -58,43 +58,13 @@
                 "event": "https://polkadot.statescan.io/#/events/{event}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Relay.svg",
         "addressPrefix": 0,
         "externalApi": {
-            "staking": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-history-polkadot-prod.novasama-tech.org"
-                }
-            ],
-            "staking-rewards": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-history-polkadot-prod.novasama-tech.org"
-                }
-            ],
             "history": [
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-polkadot-prod.novasama-tech.org"
-                }
-            ],
-            "governance": [
-                {
-                    "type": "subsquare",
-                    "url": "https://polkadot-api.subsquare.io"
-                }
-            ],
-            "governance-delegations": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-governance-polkadot-prod.novasama-tech.org"
-                }
-            ],
-            "referendum-summary": [
-                {
-                    "type": "novasama",
-                    "url": "https://opengov-backend.novasama-tech.org/api/v1/referendum-summaries/list"
                 }
             ]
         },
@@ -168,43 +138,13 @@
                 "event": "https://kusama.statescan.io/#/events/{event}"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_Relay.svg",
         "addressPrefix": 2,
         "externalApi": {
-            "staking": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-history-kusama-prod.novasama-tech.org"
-                }
-            ],
-            "staking-rewards": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-history-kusama-prod.novasama-tech.org"
-                }
-            ],
             "history": [
                 {
                     "type": "subquery",
                     "url": "https://subquery-history-kusama-prod.novasama-tech.org"
-                }
-            ],
-            "governance": [
-                {
-                    "type": "subsquare",
-                    "url": "https://kusama-api.subsquare.io"
-                }
-            ],
-            "governance-delegations": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-governance-kusama-prod.novasama-tech.org"
-                }
-            ],
-            "referendum-summary": [
-                {
-                    "type": "novasama",
-                    "url": "https://opengov-backend.novasama-tech.org/api/v1/referendum-summaries/list"
                 }
             ]
         },
@@ -303,7 +243,7 @@
     {
         "chainId": "48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Kusama Asset Hub",
+        "name": "Kusama",
         "assets": [
             {
                 "assetId": 0,
@@ -476,7 +416,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama_Asset_Hub.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Kusama.svg",
         "addressPrefix": 2,
         "options": [
             "swap-hub",
@@ -2931,7 +2871,7 @@
     {
         "chainId": "68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
         "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "name": "Polkadot Asset Hub",
+        "name": "Polkadot",
         "assets": [
             {
                 "assetId": 0,
@@ -3351,7 +3291,7 @@
                 }
             ]
         },
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot_Asset_Hub.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Polkadot.svg",
         "addressPrefix": 0,
         "options": [
             "swap-hub",
