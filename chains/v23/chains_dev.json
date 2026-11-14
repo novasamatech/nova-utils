@@ -8256,14 +8256,10 @@
         ],
         "explorers": [
             {
-                "name": "Varascan",
-                "account": "https://explorer.vara-network.io/account/{address}",
-                "event": "https://explorer.vara-network.io/event/{event}"
-            },
-            {
-                "name": "Subscan",
-                "extrinsic": "https://vara.subscan.io/extrinsic/{hash}",
-                "account": "https://vara.subscan.io/account/{address}"
+                "name": "Vara Explorer",
+                "account": "https://explorer.vara.network/account/{address}",
+                "extrinsic": "https://explorer.vara.network/extrinsic/{hash}",
+                "event": "https://explorer.vara.network/event/{event}"
             }
         ],
         "externalApi": {
@@ -9108,35 +9104,6 @@
             "themeColor": "#1F78FF",
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/manta-manta-staking",
             "defaultBlockTime": 12000,
-            "supportsGenericLedgerApp": true
-        }
-    },
-    {
-        "chainId": "525639f713f397dcf839bd022cd821f367ebcf179de7b9253531f8adbe5436d6",
-        "name": "Vara Testnet",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "TVARA",
-                "precision": 12,
-                "staking": [
-                    "relaychain"
-                ],
-                "icon": "VARA.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://testnet.vara.network",
-                "name": "Gear Tech test node"
-            }
-        ],
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Vara_Testnet.svg",
-        "addressPrefix": 137,
-        "options": [
-            "testnet"
-        ],
-        "additional": {
             "supportsGenericLedgerApp": true
         }
     },
