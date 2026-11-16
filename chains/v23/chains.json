@@ -448,6 +448,18 @@
                 "precision": 10,
                 "priceId": "polkadot",
                 "icon": "DOT.svg"
+            },
+            {
+                "assetId": 1,
+                "symbol": "dotUSD",
+                "precision": 6,
+                "priceId": "dotusd",
+                "type": "statemine",
+                "icon": "dotUSD.svg",
+                "typeExtras": {
+                    "assetId": "0x010300a10f043205057b",
+                    "isSufficient": true
+                }
             }
         ],
         "nodes": [
@@ -1315,6 +1327,68 @@
                         "network": "ETHEREUM"
                     }
                 }
+            },
+            {
+                "assetId": 1,
+                "symbol": "USDT",
+                "precision": 6,
+                "priceId": "tether",
+                "type": "evm",
+                "icon": "USDT.svg",
+                "typeExtras": {
+                    "contractAddress": "0xdAC17F958D2ee523a2206206994597C13D831ec7"
+                },
+                "buyProviders": {
+                    "transak": {
+                        "network": "ETHEREUM"
+                    },
+                    "mercuryo": {
+                        "network": "ETHEREUM"
+                    },
+                    "banxa": {
+                        "coinType": "USDT",
+                        "blockchain": "ETH"
+                    }
+                },
+                "sellProviders": {
+                    "transak": {
+                        "network": "ETHEREUM"
+                    },
+                    "mercuryo": {
+                        "network": "ETHEREUM"
+                    }
+                }
+            },
+            {
+                "assetId": 2,
+                "symbol": "USDC",
+                "precision": 6,
+                "priceId": "usd-coin",
+                "type": "evm",
+                "icon": "USDC.svg",
+                "typeExtras": {
+                    "contractAddress": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+                },
+                "buyProviders": {
+                    "transak": {
+                        "network": "ETHEREUM"
+                    },
+                    "mercuryo": {
+                        "network": "ETHEREUM"
+                    },
+                    "banxa": {
+                        "coinType": "USDC",
+                        "blockchain": "ETH"
+                    }
+                },
+                "sellProviders": {
+                    "transak": {
+                        "network": "ETHEREUM"
+                    },
+                    "mercuryo": {
+                        "network": "ETHEREUM"
+                    }
+                }
             }
         ],
         "nodeSelectionStrategy": "roundRobin",
@@ -1563,7 +1637,7 @@
             },
             {
                 "assetId": 17,
-                "symbol": "xcXRT",
+                "symbol": "xcXRT (old)",
                 "precision": 9,
                 "priceId": "robonomics-network",
                 "type": "evm",
@@ -2189,7 +2263,7 @@
             },
             {
                 "assetId": 5,
-                "symbol": "XRT",
+                "symbol": "XRT (old)",
                 "precision": 9,
                 "type": "orml",
                 "priceId": "robonomics-network",
@@ -3318,11 +3392,11 @@
     {
         "chainId": "631ccc82a078481584041656af292834e1ae6daab61d2875b4dd0c14bb9b17bc",
         "parentId": "b0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Robonomics",
+        "name": "Robonomics Kusama (PAUSED)",
         "assets": [
             {
                 "assetId": 0,
-                "symbol": "XRT",
+                "symbol": "XRT (old)",
                 "precision": 9,
                 "icon": "XRT.svg",
                 "priceId": "robonomics-network"
@@ -3356,6 +3430,31 @@
             "url": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/v2/types/robonomics.json",
             "overridesCommon": true
         },
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Robonomics.svg",
+        "addressPrefix": 32,
+        "additional": {
+            "feeViaRuntimeCall": true
+        }
+    },
+    {
+        "chainId": "29f4371dcc41045f5041489dfcd51389bf8ccd2161332e0de1ca803bcc3ee872",
+        "parentId": "91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "Robonomics",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "XRT",
+                "precision": 9,
+                "priceId": "robonomics-network-2",
+                "icon": "XRT.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://polkadot.rpc.robonomics.network/",
+                "name": "Airalab node"
+            }
+        ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Robonomics.svg",
         "addressPrefix": 32,
         "additional": {
@@ -7121,14 +7220,10 @@
         ],
         "explorers": [
             {
-                "name": "Varascan",
-                "account": "https://explorer.vara-network.io/account/{address}",
-                "event": "https://explorer.vara-network.io/event/{event}"
-            },
-            {
-                "name": "Subscan",
-                "extrinsic": "https://vara.subscan.io/extrinsic/{hash}",
-                "account": "https://vara.subscan.io/account/{address}"
+                "name": "Vara Explorer",
+                "account": "https://explorer.vara.network/account/{address}",
+                "extrinsic": "https://explorer.vara.network/extrinsic/{hash}",
+                "event": "https://explorer.vara.network/event/{event}"
             }
         ],
         "externalApi": {

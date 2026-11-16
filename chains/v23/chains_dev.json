@@ -1140,7 +1140,7 @@
             },
             {
                 "assetId": 17,
-                "symbol": "xcXRT",
+                "symbol": "xcXRT (old)",
                 "precision": 9,
                 "priceId": "robonomics-network",
                 "type": "evm",
@@ -2079,7 +2079,7 @@
             },
             {
                 "assetId": 5,
-                "symbol": "XRT",
+                "symbol": "XRT (old)",
                 "precision": 9,
                 "type": "orml",
                 "priceId": "robonomics-network",
@@ -2969,6 +2969,68 @@
                         "network": "ETHEREUM"
                     }
                 }
+            },
+            {
+                "assetId": 1,
+                "symbol": "USDT",
+                "precision": 6,
+                "priceId": "tether",
+                "type": "evm",
+                "icon": "USDT.svg",
+                "typeExtras": {
+                    "contractAddress": "0xdAC17F958D2ee523a2206206994597C13D831ec7"
+                },
+                "buyProviders": {
+                    "transak": {
+                        "network": "ETHEREUM"
+                    },
+                    "mercuryo": {
+                        "network": "ETHEREUM"
+                    },
+                    "banxa": {
+                        "coinType": "USDT",
+                        "blockchain": "ETH"
+                    }
+                },
+                "sellProviders": {
+                    "transak": {
+                        "network": "ETHEREUM"
+                    },
+                    "mercuryo": {
+                        "network": "ETHEREUM"
+                    }
+                }
+            },
+            {
+                "assetId": 2,
+                "symbol": "USDC",
+                "precision": 6,
+                "priceId": "usd-coin",
+                "type": "evm",
+                "icon": "USDC.svg",
+                "typeExtras": {
+                    "contractAddress": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+                },
+                "buyProviders": {
+                    "transak": {
+                        "network": "ETHEREUM"
+                    },
+                    "mercuryo": {
+                        "network": "ETHEREUM"
+                    },
+                    "banxa": {
+                        "coinType": "USDC",
+                        "blockchain": "ETH"
+                    }
+                },
+                "sellProviders": {
+                    "transak": {
+                        "network": "ETHEREUM"
+                    },
+                    "mercuryo": {
+                        "network": "ETHEREUM"
+                    }
+                }
             }
         ],
         "nodeSelectionStrategy": "uniform",
@@ -3783,7 +3845,7 @@
         "assets": [
             {
                 "assetId": 0,
-                "symbol": "XRT",
+                "symbol": "XRT (old)",
                 "precision": 9,
                 "icon": "XRT.svg",
                 "priceId": "robonomics-network"
@@ -8256,14 +8318,10 @@
         ],
         "explorers": [
             {
-                "name": "Varascan",
-                "account": "https://explorer.vara-network.io/account/{address}",
-                "event": "https://explorer.vara-network.io/event/{event}"
-            },
-            {
-                "name": "Subscan",
-                "extrinsic": "https://vara.subscan.io/extrinsic/{hash}",
-                "account": "https://vara.subscan.io/account/{address}"
+                "name": "Vara Explorer",
+                "account": "https://explorer.vara.network/account/{address}",
+                "extrinsic": "https://explorer.vara.network/extrinsic/{hash}",
+                "event": "https://explorer.vara.network/event/{event}"
             }
         ],
         "externalApi": {
@@ -8684,6 +8742,18 @@
                 "precision": 10,
                 "priceId": "polkadot",
                 "icon": "DOT.svg"
+            },
+            {
+                "assetId": 1,
+                "symbol": "dotUSD",
+                "precision": 6,
+                "priceId": "dotusd",
+                "type": "statemine",
+                "icon": "dotUSD.svg",
+                "typeExtras": {
+                    "assetId": "0x010300a10f043205057b",
+                    "isSufficient": true
+                }
             }
         ],
         "nodes": [
@@ -9108,35 +9178,6 @@
             "themeColor": "#1F78FF",
             "stakingWiki": "https://docs.novawallet.io/nova-wallet-wiki/staking/manta-manta-staking",
             "defaultBlockTime": 12000,
-            "supportsGenericLedgerApp": true
-        }
-    },
-    {
-        "chainId": "525639f713f397dcf839bd022cd821f367ebcf179de7b9253531f8adbe5436d6",
-        "name": "Vara Testnet",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "TVARA",
-                "precision": 12,
-                "staking": [
-                    "relaychain"
-                ],
-                "icon": "VARA.svg"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://testnet.vara.network",
-                "name": "Gear Tech test node"
-            }
-        ],
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Vara_Testnet.svg",
-        "addressPrefix": 137,
-        "options": [
-            "testnet"
-        ],
-        "additional": {
             "supportsGenericLedgerApp": true
         }
     },
