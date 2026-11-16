@@ -1022,9 +1022,6 @@
                 "precision": 18,
                 "priceId": "moonriver",
                 "icon": "MOVR.svg",
-                "staking": [
-                    "parachain"
-                ],
                 "buyProviders": {
                     "banxa": {
                         "coinType": "MOVR",
@@ -2674,9 +2671,6 @@
                 "precision": 18,
                 "priceId": "moonbeam",
                 "icon": "GLMR.svg",
-                "staking": [
-                    "parachain"
-                ],
                 "buyProviders": {
                     "transak": {
                         "network": "MAINNET"
@@ -3605,7 +3599,8 @@
                 "icon": "USDC-Snowbridge.svg",
                 "typeExtras": {
                     "assetId": "0x02020907040300a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-                    "palletName": "ForeignAssets"
+                    "palletName": "ForeignAssets",
+                    "isSufficient": true
                 }
             },
             {
@@ -3617,7 +3612,8 @@
                 "icon": "USDT-Snowbridge.svg",
                 "typeExtras": {
                     "assetId": "0x02020907040300dac17f958d2ee523a2206206994597c13d831ec7",
-                    "palletName": "ForeignAssets"
+                    "palletName": "ForeignAssets",
+                    "isSufficient": true
                 }
             },
             {
@@ -3671,7 +3667,8 @@
                 "icon": "KSM.svg",
                 "typeExtras": {
                     "assetId": "0x02010903",
-                    "palletName": "ForeignAssets"
+                    "palletName": "ForeignAssets",
+                    "isSufficient": true
                 }
             },
             {
@@ -3683,7 +3680,8 @@
                 "icon": "WETH-Snowbridge.svg",
                 "typeExtras": {
                     "assetId": "0x0201090704",
-                    "palletName": "ForeignAssets"
+                    "palletName": "ForeignAssets",
+                    "isSufficient": true
                 }
             },
             {
@@ -3723,9 +3721,9 @@
                 "assetId": 29,
                 "symbol": "dotUSD",
                 "precision": 6,
-                "priceId": "tether",
+                "priceId": "dotusd",
                 "type": "statemine",
-                "icon": "DOT.svg",
+                "icon": "dotUSD.svg",
                 "typeExtras": {
                     "assetId": "7873",
                     "isSufficient": true
@@ -4024,9 +4022,6 @@
             {
                 "assetId": 0,
                 "symbol": "ZTG",
-                "staking": [
-                    "parachain"
-                ],
                 "precision": 10,
                 "icon": "ZTG.svg"
             },
@@ -4785,9 +4780,9 @@
                 "type": "orml",
                 "icon": "WETH-Snowbridge.svg",
                 "typeExtras": {
-                    "currencyIdScale": "0x06430f00",
+                    "currencyIdScale": "0xfd420f00",
                     "currencyIdType": "u32",
-                    "existentialDeposit": "1",
+                    "existentialDeposit": "6009615384615",
                     "transfersEnabled": true
                 }
             },
@@ -4801,7 +4796,7 @@
                 "typeExtras": {
                     "currencyIdScale": "0xfe420f00",
                     "currencyIdType": "u32",
-                    "existentialDeposit": "1",
+                    "existentialDeposit": "23",
                     "transfersEnabled": true
                 }
             },
@@ -5278,6 +5273,20 @@
                     "currencyIdScale": "0x3e450f00",
                     "currencyIdType": "u32",
                     "existentialDeposit": "10000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "assetId": 74,
+                "symbol": "aETH",
+                "precision": 18,
+                "priceId": "ethereum",
+                "type": "orml-hydration-evm",
+                "icon": "WETH-Snowbridge.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0xef030000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "8202803876747",
                     "transfersEnabled": true
                 }
             }
@@ -8703,18 +8712,6 @@
                 "precision": 10,
                 "priceId": "polkadot",
                 "icon": "DOT.svg"
-            },
-            {
-                "assetId": 1,
-                "symbol": "dotUSD",
-                "precision": 6,
-                "priceId": "tether",
-                "type": "statemine",
-                "icon": "DOT.svg",
-                "typeExtras": {
-                    "assetId": "0x010300a10f043205057b",
-                    "isSufficient": true
-                }
             }
         ],
         "nodes": [
@@ -9085,10 +9082,7 @@
                 "symbol": "MANTA",
                 "precision": 18,
                 "priceId": "manta-network",
-                "icon": "MANTA.svg",
-                "staking": [
-                    "parachain"
-                ]
+                "icon": "MANTA.svg"
             },
             {
                 "assetId": 1,

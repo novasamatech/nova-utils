@@ -1,0 +1,23 @@
+{
+    "chainId": "f938510edee7c23efa6e9db74f227c827a1b518bffe92e2f6c9842dc53d38840",
+    "name": "Westend Coretime (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "WND",
+            "precision": 12,
+            "icon": "WND.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://coretime-westend-rpc.n.dwellir.com",
+            "name": "Dwellir"
+        },
+        {
+            "url": "wss://westend-coretime-rpc.polkadot.io",
+            "name": "Parity"
+        }
+    ],
+    "addressPrefix": 42
+}

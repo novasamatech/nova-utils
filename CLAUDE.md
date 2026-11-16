@@ -8,11 +8,12 @@ Static JSON configuration (networks, assets, XCM routes, dApps, banners, icons) 
 
 ## Versioned config directories
 
-`chains/` and `xcm/` keep one directory per config version (`chains/v2`…`chains/v22`, `xcm/v2`…`xcm/v8`). Older versions stay frozen for older client releases.
+`chains/` and `xcm/` keep one directory per config version (`chains/v2`…`chains/v23`, `xcm/v2`…`xcm/v9`). Older versions stay frozen for older client releases.
 
-- Edit only the latest version: **`chains/v22/`** and **`xcm/v8/`**. Do not backport into older `vNN` directories.
+- Edit only the latest version: **`chains/v23/`** and **`xcm/v9/`**. Do not backport into older `vNN` directories.
+  The one exception is a prod data fix that shipped clients still read (a dead chain, a wrong asset id or existential deposit): it goes into every version those clients read as well, as in #3976 which removed Turing and Calamari from `xcm/v6`…`v8`. New entries and new features are never backported.
 - `chains/chains.json`, `chains/chains_dev.json` and `xcm/transfers*.json` at the top level are legacy leftovers (untouched since 2023) — do not edit them.
-- The latest version is hardcoded in two places that must be updated when a new version directory is added: `scripts/utils/chain_model.py` (`latest_config_version()`, overridable via the `CHAINS_VERSION` env var) and `scripts/xcm_transfers/config_setup.py` (`XCM_VERSION`, no env override).
+- The latest version is hardcoded in three places that must be updated when a new version directory is added: `scripts/utils/chain_model.py` (`latest_config_version()`, overridable via the `CHAINS_VERSION` env var), `scripts/xcm_transfers/config_setup.py` (`XCM_VERSION`, no env override) and the `XCM_PATH` default in `scripts/print_xcm_changes.py`. The docs in `CLAUDE.md` and `.claude/skills/*/SKILL.md` name the directories too.
 
 ## dev → prod flow
 
@@ -32,6 +33,7 @@ Promotion tools:
 - `dapps/README.md` ← `make generate_dapp_list`
 - `chains/types/*.json` ← `make generate_type_files`
 - `tests/data/xcm_data.json` ← `make generate_test_file`
+- `subnets` of `bittensor/v1/config.json` + `icons/bittensor/subnets/*.png` ← `make update-bittensor-subnets` (a daily workflow opens the PR with the run summary in its body; SVG logos need the system cairo library — `brew install cairo` locally). A logo is taken from the first source that works: `bittensor/v1/logo-overrides.json` (hand-picked `{"<netuid>": "https://..."}`, for subnets whose on-chain and CoinGecko logos are wrong or absent), the on-chain subnet identity `logo_url`, then the CoinGecko coin image (taken as is, so a renamed subnet shows its previous owner's logo until `logo-overrides.json` corrects it); a failing source keeps the previous logo rather than falling through to a lower one. A dark mark on a transparent background is lightened (hue kept) because the app draws logos on near-black. The generator keeps the other keys of `config.json` as they are: `swapFee`, the Nova fee on subnet swaps as a fraction (`0.003` = 0.3%), is edited by hand. Offline tests: `make test-bittensor`.
 
 ## Commands
 
@@ -54,5 +56,6 @@ For a single suite, targets like `make test-nodes-availability` exist. `CHAINS_J
 ## Repo etiquette
 
 - PRs target `master`.
+- Do not commit agent working notes — design specs, implementation plans and similar artifacts produced by skills (e.g. superpowers writes them to `docs/superpowers/`). Keep them local; `docs/superpowers/` is gitignored.
 - Branch names use a type prefix: `fix/`, `feat/`, and similar.
 - CI runs pre-commit on every PR and auto-commits its fixes onto your branch, so run pre-commit before pushing to avoid surprise commits.

@@ -7,23 +7,46 @@ from scripts.utils.chain_model import Chain
 from scripts.utils.work_with_data import get_data_from_file
 from scripts.xcm_transfers.utils.dry_run_api_types import dry_run_api_types
 from scripts.xcm_transfers.utils.xcm_config_files import XCMConfigFiles
-from scripts.xcm_transfers.xcm.multi_location import GlobalMultiLocation
+from scripts.xcm_transfers.xcm.multi_location import GlobalMultiLocation, is_global_consensus_junction
 from scripts.xcm_transfers.xcm.registry.TrustedTeleporters import TrustedTeleporters, CustomTeleportsEntry
 from scripts.xcm_transfers.xcm.registry.reserve_location import ReserveLocation, ReserveLocations
 from scripts.xcm_transfers.xcm.registry.xcm_chain import XcmChain
 from scripts.xcm_transfers.xcm.registry.xcm_registry import XcmRegistry
+from scripts.xcm_transfers.xcm.versioned_xcm_builder import parachain_junction, global_consensus_ethereum_junction, \
+    account_key20_junction
 
 
 def _map_junction_from_config(config_key: str, config_value) -> dict:
     match config_key:
         case "parachainId":
-            return {"Parachain": config_value}
+            return parachain_junction(config_value)
         case "generalKey":
             return {"GeneralKey": _general_key_junction(config_value)}
         case "generalIndex":
             return {"GeneralIndex": int(config_value)}
         case "palletInstance":
             return {"PalletInstance": config_value}
+        case "globalConsensus":
+            return global_consensus_ethereum_junction(_ethereum_chain_id(config_value))
+        case "accountKey20":
+            return account_key20_junction(config_value)
+        case _:
+            raise Exception(f"Unknown junction key in assetsLocation: {config_key}")
+
+
+def _ethereum_chain_id(config_value) -> int:
+    # Only Ethereum is supported for now: {"ethereum": {"chainId": 1}}
+    ethereum = config_value.get("ethereum") if isinstance(config_value, dict) else None
+    if ethereum is None or "chainId" not in ethereum:
+        raise Exception(f"Unsupported globalConsensus value: {config_value}")
+
+    return int(ethereum["chainId"])
+
+
+def _junctions_from_config(multi_location_config: dict) -> list[dict]:
+    junctions = [_map_junction_from_config(key, value) for key, value in multi_location_config.items()]
+    # GlobalConsensus must lead the path regardless of key order in JSON
+    return sorted(junctions, key=lambda junction: 0 if is_global_consensus_junction(junction) else 1)
 
 
 def _truncate_or_pad(data: bytes, required_size: int) -> bytes:
@@ -47,8 +70,7 @@ def _build_reserve_locations_map(
     result = {}
 
     for reserve_id, reserve_config in asset_locations_config.items():
-        junctions = [_map_junction_from_config(config_key, config_value) for config_key, config_value in
-                     reserve_config["multiLocation"].items()]
+        junctions = _junctions_from_config(reserve_config["multiLocation"])
 
         chain_id = reserve_config["chainId"]
 

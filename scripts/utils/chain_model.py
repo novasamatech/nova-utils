@@ -47,7 +47,7 @@ class Chain:
 
     @staticmethod
     def latest_config_version():
-        return os.getenv('CHAINS_VERSION', default="v22")
+        return os.getenv('CHAINS_VERSION', default="v23")
 
     def create_connection(self) -> SubstrateInterface:
         def create_node_connection(node_url: str):

@@ -1,0 +1,19 @@
+{
+    "chainId": "da5831fbc8570e3c6336d0d72b8c08f8738beefec812df21ef2afc2982ede09c",
+    "name": "Litmus (SHUTTING DOWN)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "LIT",
+            "precision": 18,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://rpc.litmus-parachain.litentry.io",
+            "name": "Litentry node"
+        }
+    ],
+    "addressPrefix": 128
+}

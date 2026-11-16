@@ -3256,6 +3256,18 @@
                     "palletName": "ForeignAssets",
                     "isSufficient": true
                 }
+            },
+            {
+                "assetId": 29,
+                "symbol": "dotUSD",
+                "precision": 6,
+                "priceId": "dotusd",
+                "type": "statemine",
+                "icon": "dotUSD.svg",
+                "typeExtras": {
+                    "assetId": "7873",
+                    "isSufficient": true
+                }
             }
         ],
         "nodes": [
@@ -6924,6 +6936,7 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Bittensor.svg",
         "addressPrefix": 42,
         "additional": {
+            "defaultBlockTime": 12000,
             "supportsGenericLedgerApp": true
         }
     },
