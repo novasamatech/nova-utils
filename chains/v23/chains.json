@@ -7181,14 +7181,10 @@
         ],
         "explorers": [
             {
-                "name": "Varascan",
-                "account": "https://explorer.vara-network.io/account/{address}",
-                "event": "https://explorer.vara-network.io/event/{event}"
-            },
-            {
-                "name": "Subscan",
-                "extrinsic": "https://vara.subscan.io/extrinsic/{hash}",
-                "account": "https://vara.subscan.io/account/{address}"
+                "name": "Vara Explorer",
+                "account": "https://explorer.vara.network/account/{address}",
+                "extrinsic": "https://explorer.vara.network/extrinsic/{hash}",
+                "event": "https://explorer.vara.network/event/{event}"
             }
         ],
         "externalApi": {
