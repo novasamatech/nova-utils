@@ -1,0 +1,19 @@
+{
+    "chainId": "21994a5dd232f5bbdd9df2b8328c396d0099ec00e04b86585a57c9453519b068",
+    "name": "Melodie Testnet V3 Live (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "MEL",
+            "precision": 12,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://melodie-rpc.allfeat.io",
+            "name": "Allfeat labs"
+        }
+    ],
+    "addressPrefix": 42
+}

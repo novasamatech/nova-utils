@@ -189,9 +189,10 @@ update-ledger-networks:
 update-chains-preconfigured:
 	$(PYTHON_SCRIPT) scripts/polkadotjs_endpoints_to_preconfigured.py
 
-## Update Bittensor subnet metadata (names, symbols, logos) from chain
+## Update Bittensor subnet metadata (names, symbols, logos, priceIds) from chain and CoinGecko.
+## BITTENSOR_REPORT=FILE also writes the printed summary to FILE.
 update-bittensor-subnets:
-	$(PYTHON_SCRIPT) scripts/bittensor/update_subnets.py
+	$(PYTHON_SCRIPT) scripts/bittensor/update_subnets.py $(if $(BITTENSOR_REPORT),--report $(BITTENSOR_REPORT))
 
 ## Run offline Bittensor subnet metadata tests
 test-bittensor:

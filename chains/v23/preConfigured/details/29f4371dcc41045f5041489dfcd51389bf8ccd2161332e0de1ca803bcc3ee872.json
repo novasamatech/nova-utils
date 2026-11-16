@@ -1,0 +1,19 @@
+{
+    "chainId": "29f4371dcc41045f5041489dfcd51389bf8ccd2161332e0de1ca803bcc3ee872",
+    "name": "Robonomics Polkadot",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "XRT",
+            "precision": 9,
+            "icon": "XRT.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://polkadot.rpc.robonomics.network/",
+            "name": "Airalab"
+        }
+    ],
+    "addressPrefix": 32
+}

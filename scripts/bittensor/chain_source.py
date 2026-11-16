@@ -1,4 +1,5 @@
 import json
+import re
 from dataclasses import dataclass
 from typing import Dict, List, Optional
 
@@ -8,6 +9,10 @@ from scripts.utils.chain_model import Chain
 
 BITTENSOR_CHAIN_ID = "2f0555cc76fc2840a25a6ea3b9637146806f1f44b090c175ffde2a7e5ab36c03"
 PALLET = "SubtensorModule"
+
+# Owners often paste the page that shows their logo instead of the file itself.
+_GITHUB_BLOB = re.compile(r"^https://github\.com/([^/]+/[^/]+)/blob/(.+)$")
+_DROPBOX_SHARE = re.compile(r"^(https://www\.dropbox\.com/.*[?&]dl=)0$")
 
 
 @dataclass(frozen=True)
@@ -44,6 +49,14 @@ def _text(value) -> Optional[str]:
     return value.strip() or None
 
 
+def _logo_url(value) -> Optional[str]:
+    url = _text(value)
+    if not url:
+        return None
+    url = _GITHUB_BLOB.sub(r"https://raw.githubusercontent.com/\1/\2", url)
+    return _DROPBOX_SHARE.sub(r"\g<1>1", url)
+
+
 def subnets_from_storage(
     networks_added: Dict[int, bool],
     identities: Dict[int, dict],
@@ -56,7 +69,7 @@ def subnets_from_storage(
             netuid=netuid,
             name=_text(identity.get("subnet_name")),
             symbol=_text(symbols.get(netuid)) or "",
-            logo_url=_text(identity.get("logo_url")),
+            logo_url=_logo_url(identity.get("logo_url")),
         ))
     return subnets
 

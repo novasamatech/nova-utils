@@ -1,0 +1,19 @@
+{
+    "chainId": "f5840f147cae70c939aefd2ed1b0145a879ca49eeb1a1b13d5bf38a720087a90",
+    "name": "AvN Paseo (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "AVT",
+            "precision": 18,
+            "icon": "AVT.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://avn-parachain.testnet.aventus.io",
+            "name": "Aventus"
+        }
+    ],
+    "addressPrefix": 42
+}
