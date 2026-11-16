@@ -25,6 +25,9 @@ web3 = ">=5.31.1,<6.0.0"
 flake8 = "^6.1.0"
 func-timeout = "^4.3.5"
 typing-extensions = "^4.9.0"
+pillow = "^12.3.0"
+cairosvg = "^2.9.1"
+requests = "^2.34.2"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^3.3.3"

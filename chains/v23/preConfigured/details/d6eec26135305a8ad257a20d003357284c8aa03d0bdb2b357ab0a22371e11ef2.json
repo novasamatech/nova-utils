@@ -1,0 +1,27 @@
+{
+    "chainId": "d6eec26135305a8ad257a20d003357284c8aa03d0bdb2b357ab0a22371e11ef2",
+    "name": "Paseo Asset Hub (TESTNET)",
+    "assets": [
+        {
+            "assetId": 0,
+            "symbol": "PAS",
+            "precision": 10,
+            "icon": "Default.svg"
+        }
+    ],
+    "nodes": [
+        {
+            "url": "wss://asset-hub-paseo-rpc.n.dwellir.com",
+            "name": "Dwellir"
+        },
+        {
+            "url": "wss://sys.turboflakes.io/asset-hub-paseo",
+            "name": "TurboFlakes"
+        },
+        {
+            "url": "wss://api2.zondax.ch/pas/assethub/node/rpc",
+            "name": "Zondax"
+        }
+    ],
+    "addressPrefix": 0
+}

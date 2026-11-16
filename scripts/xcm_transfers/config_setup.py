@@ -6,7 +6,7 @@ from scripts.xcm_transfers.utils.xcm_config_files import XCMConfigFiles
 def get_xcm_config_files() -> XCMConfigFiles:
     ENVIRONMENT = os.getenv("ENVIRONMENT", "DEV")
     CHAINS_VERSION = Chain.latest_config_version()
-    XCM_VERSION = "v8"
+    XCM_VERSION = "v9"
 
     if ENVIRONMENT == "PROD":
         print("Running in production mode")
