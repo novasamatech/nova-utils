@@ -1,8 +1,13 @@
+import os
 import pytest
 import time
+from urllib.parse import urlparse
 from web3 import Web3
 
 from tests.data.setting_data import collect_rpc_nodes_for_chains, get_ethereum_chain
+
+# The node the tested ones are compared with. It must be keyless: this repository is public.
+REFERENCE_ETH_WSS_NODE = os.environ.get('REFERENCE_ETH_WSS_NODE', 'wss://ethereum-rpc.publicnode.com')
 
 task_ids = [
     f'Test for {task["name"]}, url: {task["url"]}'
@@ -28,7 +33,10 @@ class TestETHNodesAvailability:
 
     def test_rpc_node_is_synced(self, data):
 
-        wss_w3 = Web3(Web3.WebsocketProvider('wss://ethereum-rpc.publicnode.com'))
+        if urlparse(data['url']).hostname == urlparse(REFERENCE_ETH_WSS_NODE).hostname:
+            pytest.skip('the node belongs to the reference provider, comparing it with itself proves nothing')
+
+        wss_w3 = Web3(Web3.WebsocketProvider(REFERENCE_ETH_WSS_NODE))
         # Check if connected to wss node
         assert wss_w3.is_connected(), "Failed to connect to Ethereum wss node"
 

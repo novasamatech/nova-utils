@@ -11,7 +11,7 @@ Static JSON configuration (networks, assets, XCM routes, dApps, banners, icons) 
 `chains/` and `xcm/` keep one directory per config version (`chains/v2`…`chains/v23`, `xcm/v2`…`xcm/v9`). Older versions stay frozen for older client releases.
 
 - Edit only the latest version: **`chains/v23/`** and **`xcm/v9/`**. Do not backport into older `vNN` directories.
-  The one exception is a prod data fix that shipped clients still read (a dead chain, a wrong asset id or existential deposit): it goes into every version those clients read as well, as in #3976 which removed Turing and Calamari from `xcm/v6`…`v8`. New entries and new features are never backported.
+  The one exception is a prod data fix that shipped clients still read (a dead chain, a wrong asset id or existential deposit, a leaked provider key in a node URL): it goes into every version those clients read as well, as in #3976 which removed Turing and Calamari from `xcm/v6`…`v8`. New entries and new features are never backported.
 - `chains/chains.json`, `chains/chains_dev.json` and `xcm/transfers*.json` at the top level are legacy leftovers (untouched since 2023) — do not edit them.
 - The latest version is hardcoded in three places that must be updated when a new version directory is added: `scripts/utils/chain_model.py` (`latest_config_version()`, overridable via the `CHAINS_VERSION` env var), `scripts/xcm_transfers/config_setup.py` (`XCM_VERSION`, no env override) and the `XCM_PATH` default in `scripts/print_xcm_changes.py`. The docs in `CLAUDE.md` and `.claude/skills/*/SKILL.md` name the directories too.
 
@@ -22,6 +22,12 @@ Configs come in dev/prod pairs: `chains_dev.json`/`chains.json`, `transfers_dev.
 `default_assets*.json` is the curated token list a fresh wallet starts with. Its order is the priority order clients display, so reordering it is a behavioural change, not cosmetics. `chains/apply_dev_to_prod.py` is hardcoded to `chains.json`/`chains_dev.json` and does **not** promote it — copy it across by hand. `pre-commit` checks every `(chainId, assetId)` against the sibling `chains.json` via `scripts/check_default_assets.py`, so a typo fails CI instead of silently shortening the list clients apply.
 
 Changes land in the `*_dev.json` file first, in their own PR, and are promoted to prod separately. Do not edit both halves of a pair in one change unless explicitly asked.
+
+## Node URLs carry no provider keys
+
+The repository is public, so a key written into a node URL is a leaked key. Use a keyless public node. A key the apps own is written as a placeholder that both apps substitute at connection time: `{INFURA_API_KEY}` or `{DWELLIR_API_KEY}`; any other placeholder leaves the node unusable.
+
+`pre-commit` runs `scripts/check_node_url_keys.py` over `chains/**/*.json` and fails on anything in a node URL that looks like a credential (user info, host, path, query, fragment). The keyed URLs that predate the check are listed by hash in `scripts/known_keyed_node_urls.txt` and printed as warnings; that file only shrinks — never add a line to make the check pass. `make test-checks` runs the offline tests of the check.
 
 Promotion tools:
 - chains: `chains/apply_dev_to_prod.py` — opens `chains.json`/`chains_dev.json` by bare filename, so run it from inside the version directory.

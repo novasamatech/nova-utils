@@ -4,47 +4,108 @@ This repository is public and the clients read it as is, so a key written into a
 leaked key: anyone can spend its quota. A key that the apps own is written as a placeholder such
 as {INFURA_API_KEY}; the apps substitute their built-in value when they open the connection.
 
+The check fails closed: every part of a node URL is inspected (user info, host labels, path
+segments, query values and fragment), and anything that looks like a credential is an error
+unless that exact URL is in the baseline of URLs that were in the configs before the check.
+
 Run over one or more chains config paths:
 
     python3 scripts/check_node_url_keys.py chains/v23/chains.json
 """
 
+from __future__ import annotations
+
+import hashlib
 import json
 import re
 import sys
 from pathlib import Path
-from urllib.parse import parse_qsl, urlparse
+from urllib.parse import parse_qsl, unquote, urlsplit
 
-# A path segment that looks like a credential: long, and mixing letters with digits.
-KEY_LIKE_SEGMENT = re.compile(r"^(?=.*\d)(?=.*[A-Za-z])[A-Za-z0-9_-]{20,}$")
-KEY_LIKE_QUERY_NAME = re.compile(r"api[_-]?key|token|secret|^key$", re.IGNORECASE)
-PLACEHOLDER = re.compile(r"^\{[A-Z0-9_]+\}$")
+BASELINE_PATH = Path(__file__).with_name("known_keyed_node_urls.txt")
 
-# Hosts whose keyed URLs were in the configs before this check existed. They are reported as
-# warnings and do not fail the check; do not add a host here, remove one when its key is gone.
-KNOWN_KEYED_HOSTS = (
-    "bsc.getblock.io",
-    "gateway.mainnet.octopus.network",
-    "moonriver.api.onfinality.io",
-    "node-6957502816543653888.lh.onfinality.io",
-    "node-7273232234617282560.nv.onfinality.io",
-    "rpcnodea01.xode.net",
-    "testrpcnodea01.xode.net",
-    "spectrum-03.simplystaking.xyz",
+# The shortest keyed segment found in the configs is 15 characters (Zeeve endpoints); the longest
+# legitimate mixed segment is far shorter ("v3", "public-ws", "ogws").
+MIN_KEY_LENGTH = 12
+# A segment of one character class (all letters, all digits) is a key only when it is long:
+# shorter ones are words and numbers, such as chain names and port-like ids.
+MIN_SINGLE_CLASS_KEY_LENGTH = 24
+# Host names legitimately mix letters and digits ("testrpcnodea01"), so only a long run counts.
+MIN_HOST_KEY_LENGTH = 20
+REDACTED_PREFIX_LENGTH = 4
+
+KEY_CHARACTERS = re.compile(r"^[A-Za-z0-9_\-+=.~]+$")
+# A query parameter with one of these names carries a credential whatever its value looks like.
+KEY_LIKE_QUERY_NAME = re.compile(
+    r"key$|token|secret|auth|jwt|password|passwd|project[_-]?id|^access", re.IGNORECASE
 )
+PLACEHOLDER = re.compile(r"^\{[A-Z0-9_]+\}$")
+# The placeholders both apps can substitute; any other one leaves the node unusable.
+KNOWN_PLACEHOLDERS = frozenset({"{INFURA_API_KEY}", "{DWELLIR_API_KEY}"})
 
 
-def key_in(url: str) -> str | None:
-    """Return the part of the URL that looks like a key, or None."""
-    parsed = urlparse(url)
+def looks_like_key(value: str) -> bool:
+    """A long run of key characters: mixed letters and digits, or very long of one class."""
+    if not KEY_CHARACTERS.match(value):
+        return False
 
-    for segment in parsed.path.split("/"):
-        if KEY_LIKE_SEGMENT.match(segment):
-            return segment
+    compact = re.sub(r"[^A-Za-z0-9]", "", value)
+    is_mixed = bool(re.search(r"\d", compact)) and bool(re.search(r"[A-Za-z]", compact))
 
-    for name, value in parse_qsl(parsed.query):
-        if KEY_LIKE_QUERY_NAME.search(name) and not PLACEHOLDER.match(value):
-            return value
+    if is_mixed:
+        return len(compact) >= MIN_KEY_LENGTH
+
+    return len(compact) >= MIN_SINGLE_CLASS_KEY_LENGTH
+
+
+def host_label_key(label: str) -> str | None:
+    """Host labels are hyphenated words ("xode-polkadot-rpc-01"), so each word is judged alone."""
+    for word in label.split("-"):
+        if len(word) >= MIN_HOST_KEY_LENGTH and looks_like_key(word):
+            return word
+
+    return None
+
+
+def problem_in(url: str) -> tuple[str, str] | None:
+    """Return (what is wrong, the offending part of the URL), or None for a clean URL."""
+    if url != url.strip():
+        return "surrounding whitespace", url
+
+    parts = urlsplit(url)
+
+    if parts.username or parts.password:
+        return "user info", url.split("://", 1)[-1].split("@", 1)[0]
+
+    for label in (parts.hostname or "").split("."):
+        key = host_label_key(label)
+        if key:
+            return "a key in the host", key
+
+    for raw_segment in parts.path.split("/"):
+        segment = unquote(raw_segment)
+
+        if "{" in segment or "}" in segment:
+            if segment not in KNOWN_PLACEHOLDERS:
+                return "an unknown or malformed placeholder", raw_segment
+            continue
+
+        # ";" separates matrix parameters, which carry keys as well as the segment itself
+        for piece in re.split(r"[;,]", segment):
+            if looks_like_key(piece):
+                return "a key in the path", raw_segment if piece == segment else piece
+
+    for name, value in parse_qsl(parts.query, keep_blank_values=True):
+        if PLACEHOLDER.match(value):
+            if value not in KNOWN_PLACEHOLDERS:
+                return "an unknown placeholder", value
+            continue
+
+        if value and (KEY_LIKE_QUERY_NAME.search(name) or looks_like_key(value)):
+            return f"a key in the query parameter '{name}'", value
+
+    if parts.fragment and looks_like_key(parts.fragment):
+        return "a key in the fragment", parts.fragment
 
     return None
 
@@ -66,38 +127,57 @@ def node_urls(config, chain_name="?"):
             yield from node_urls(item, chain_name)
 
 
-def redact(url: str, key: str) -> str:
-    return url.replace(key, f"{key[:4]}...")
+def fingerprint(url: str) -> str:
+    """The baseline stores hashes, so that it does not repeat the keys in one more file."""
+    return hashlib.sha256(url.encode("utf-8")).hexdigest()
 
 
-def check(path: Path) -> tuple[list[str], list[str]]:
-    errors, warnings = [], []
+def load_baseline(path: Path = BASELINE_PATH) -> frozenset[str]:
+    """Fingerprints of the keyed URLs that predate the check; lines starting with # are comments."""
+    lines = path.read_text(encoding="utf-8").splitlines()
+
+    return frozenset(line.split()[0] for line in lines if line.strip() and not line.startswith("#"))
+
+
+def redact(url: str, part: str) -> str:
+    """Show where the key is without printing it: the host and the first characters of the key."""
+    host = urlsplit(url).hostname or "?"
+
+    return f"{host}: {part[:REDACTED_PREFIX_LENGTH]}..."
+
+
+def check(path: Path, baseline: frozenset[str]) -> tuple[list[str], dict[str, str]]:
+    """Return the errors of one file and its baseline URLs as {fingerprint: redacted message}."""
+    errors, known = [], {}
 
     for chain_name, url in node_urls(json.loads(path.read_text(encoding="utf-8"))):
-        key = key_in(url)
-        if key is None:
+        problem = problem_in(url)
+        if problem is None:
             continue
 
-        message = f"{path}: {chain_name}: node URL carries a key: {redact(url, key)}"
+        reason, part = problem
+        message = f"{chain_name}: node URL has {reason} ({redact(url, part)})"
 
-        if urlparse(url).hostname in KNOWN_KEYED_HOSTS:
-            warnings.append(message)
+        if fingerprint(url) in baseline:
+            known.setdefault(fingerprint(url), message)
         else:
-            errors.append(message)
+            errors.append(f"{path}: {message}")
 
-    return errors, warnings
+    return errors, known
 
 
 def main(paths: list[str]) -> int:
-    errors, warnings = [], []
+    """Print every error, and each baseline URL once however many files repeat it."""
+    baseline = load_baseline()
+    errors, known = [], {}
 
     for path in paths:
-        path_errors, path_warnings = check(Path(path))
+        path_errors, path_known = check(Path(path), baseline)
         errors += path_errors
-        warnings += path_warnings
+        known.update(path_known)
 
-    for warning in warnings:
-        print(f"warning: {warning}", file=sys.stderr)
+    for message in sorted(known.values()):
+        print(f"warning: known keyed URL, still to be removed: {message}", file=sys.stderr)
 
     for error in errors:
         print(f"error: {error}", file=sys.stderr)

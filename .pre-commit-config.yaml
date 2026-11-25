@@ -25,3 +25,5 @@ repos:
         entry: python3 scripts/check_node_url_keys.py
         language: system
         files: ^chains/.*\.json$
+        # pre-commit hides the output of a passing hook; the known keyed URLs are printed as warnings
+        verbose: true
