@@ -27,3 +27,13 @@ repos:
         files: ^chains/.*\.json$
         # pre-commit hides the output of a passing hook; the known keyed URLs are printed as warnings
         verbose: true
+        # one process, so that each known keyed URL is printed once
+        require_serial: true
+    -   id: test-node-url-keys-check
+        name: tests of the node URL key check
+        # --confcutdir keeps tests/conftest.py, which needs the full project environment, out of the run
+        entry: python -m pytest tests/checks --confcutdir tests/checks -q -p no:cacheprovider
+        language: python
+        additional_dependencies: [pytest]
+        pass_filenames: false
+        files: ^(scripts/check_node_url_keys\.py|scripts/.*node_url.*\.txt|tests/checks/.*|chains/.*\.json)$

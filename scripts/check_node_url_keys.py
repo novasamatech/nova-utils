@@ -4,9 +4,11 @@ This repository is public and the clients read it as is, so a key written into a
 leaked key: anyone can spend its quota. A key that the apps own is written as a placeholder such
 as {INFURA_API_KEY}; the apps substitute their built-in value when they open the connection.
 
-The check fails closed: every part of a node URL is inspected (user info, host labels, path
-segments, query values and fragment), and anything that looks like a credential is an error
-unless that exact URL is in the baseline of URLs that were in the configs before the check.
+Every part of a node URL is inspected (user info, host labels, path segments, query names and
+values, fragment). Anything that looks like a credential is an error unless that exact URL is in
+the baseline of keyed URLs that were in the configs before the check. The check is a heuristic:
+it is strict on purpose and can reject a harmless URL; such a URL goes into the reviewed list of
+false positives, never into the baseline.
 
 Run over one or more chains config paths:
 
@@ -20,36 +22,41 @@ import json
 import re
 import sys
 from pathlib import Path
-from urllib.parse import parse_qsl, unquote, urlsplit
+from urllib.parse import unquote, urlsplit
 
 BASELINE_PATH = Path(__file__).with_name("known_keyed_node_urls.txt")
+FALSE_POSITIVES_PATH = Path(__file__).with_name("node_url_false_positives.txt")
 
-# The shortest keyed segment found in the configs is 15 characters (Zeeve endpoints); the longest
-# legitimate mixed segment is far shorter ("v3", "public-ws", "ogws").
+# Measured over the configs: the longest harmless run that mixes letters and digits has 10 of
+# them ("zksync2-era"); the shortest keyed one has 15 (Zeeve endpoints). 12 leaves little room on
+# the harmless side, so re-measure before lowering it.
 MIN_KEY_LENGTH = 12
-# A segment of one character class (all letters, all digits) is a key only when it is long:
-# shorter ones are words and numbers, such as chain names and port-like ids.
+# A run of one character class (all letters, all digits) is a key only when it is long: shorter
+# ones are words and numbers, such as chain names and node ids.
 MIN_SINGLE_CLASS_KEY_LENGTH = 24
 # Host names legitimately mix letters and digits ("testrpcnodea01"), so only a long run counts.
 MIN_HOST_KEY_LENGTH = 20
 REDACTED_PREFIX_LENGTH = 4
 
-KEY_CHARACTERS = re.compile(r"^[A-Za-z0-9_\-+=.~]+$")
+KEY_CHARACTER_RUN = re.compile(r"[A-Za-z0-9_\-+=.~]+")
+# A host label that is one long hexadecimal value once its hyphens are dropped, such as a UUID.
+HEX_HOST_LABEL = re.compile(r"^[0-9a-f]{%d,}$" % MIN_SINGLE_CLASS_KEY_LENGTH, re.IGNORECASE)
 # A query parameter with one of these names carries a credential whatever its value looks like.
 KEY_LIKE_QUERY_NAME = re.compile(
     r"key$|token|secret|auth|jwt|password|passwd|project[_-]?id|^access", re.IGNORECASE
 )
-PLACEHOLDER = re.compile(r"^\{[A-Z0-9_]+\}$")
-# The placeholders both apps can substitute; any other one leaves the node unusable.
-KNOWN_PLACEHOLDERS = frozenset({"{INFURA_API_KEY}", "{DWELLIR_API_KEY}"})
+# The placeholders both apps can substitute, and the hosts each may be sent to: the apps put
+# their built-in key into any URL that names it, so a foreign host would simply receive the key.
+PLACEHOLDER_HOST_SUFFIXES = {
+    "{INFURA_API_KEY}": ".infura.io",
+    "{DWELLIR_API_KEY}": ".dwellir.com",
+}
+BRACE = re.compile(r"[{}]|%7b|%7d", re.IGNORECASE)
 
 
-def looks_like_key(value: str) -> bool:
-    """A long run of key characters: mixed letters and digits, or very long of one class."""
-    if not KEY_CHARACTERS.match(value):
-        return False
-
-    compact = re.sub(r"[^A-Za-z0-9]", "", value)
+def looks_like_key(run: str) -> bool:
+    """Judge one run of key characters: mixed letters and digits, or very long of one class."""
+    compact = re.sub(r"[^A-Za-z0-9]", "", run)
     is_mixed = bool(re.search(r"\d", compact)) and bool(re.search(r"[A-Za-z]", compact))
 
     if is_mixed:
@@ -58,13 +65,54 @@ def looks_like_key(value: str) -> bool:
     return len(compact) >= MIN_SINGLE_CLASS_KEY_LENGTH
 
 
-def host_label_key(label: str) -> str | None:
-    """Host labels are hyphenated words ("xode-polkadot-rpc-01"), so each word is judged alone."""
-    for word in label.split("-"):
-        if len(word) >= MIN_HOST_KEY_LENGTH and looks_like_key(word):
-            return word
+def key_in(text: str) -> str | None:
+    """Return the first run of key characters in the text that looks like a key."""
+    for run in KEY_CHARACTER_RUN.findall(unquote(text)):
+        if looks_like_key(run):
+            return run
 
     return None
+
+
+def host_key(hostname: str) -> str | None:
+    """Host labels are hyphenated words ("xode-polkadot-rpc-01"), so each word is judged alone."""
+    for label in hostname.split("."):
+        if HEX_HOST_LABEL.match(label.replace("-", "")):
+            return label
+
+        for word in label.split("-"):
+            if len(word) >= MIN_HOST_KEY_LENGTH and looks_like_key(word):
+                return word
+
+    return None
+
+
+def placeholder_problem(url: str) -> tuple[str, str] | None:
+    """Only known placeholders, written exactly, and only on the host of their provider."""
+    hostname = urlsplit(url).hostname or ""
+    remainder = url
+
+    for placeholder, host_suffix in PLACEHOLDER_HOST_SUFFIXES.items():
+        if placeholder not in url:
+            continue
+
+        if not hostname.endswith(host_suffix):
+            return f"{placeholder} on a host that is not *{host_suffix}", placeholder
+
+        remainder = remainder.replace(placeholder, "")
+
+    brace = BRACE.search(remainder)
+    if brace:
+        return "an unknown or malformed placeholder", remainder[brace.start():brace.start() + 24]
+
+    return None
+
+
+def without_placeholders(url: str) -> str:
+    for placeholder in PLACEHOLDER_HOST_SUFFIXES:
+        url = url.replace(placeholder, "")
+
+    return url
 
 
 def problem_in(url: str) -> tuple[str, str] | None:
@@ -72,40 +120,42 @@ def problem_in(url: str) -> tuple[str, str] | None:
     if url != url.strip():
         return "surrounding whitespace", url
 
-    parts = urlsplit(url)
+    problem = placeholder_problem(url)
+    if problem:
+        return problem
+
+    parts = urlsplit(without_placeholders(url))
 
     if parts.username or parts.password:
-        return "user info", url.split("://", 1)[-1].split("@", 1)[0]
+        return "user info", parts.netloc.rsplit("@", 1)[0]
 
-    for label in (parts.hostname or "").split("."):
-        key = host_label_key(label)
+    key = host_key(parts.hostname or "")
+    if key:
+        return "a key in the host", key
+
+    for segment in parts.path.split("/"):
+        key = key_in(segment)
         if key:
-            return "a key in the host", key
+            return "a key in the path", key
 
-    for raw_segment in parts.path.split("/"):
-        segment = unquote(raw_segment)
+    # Split by hand: parse_qsl turns "+" into a space and drops what has no "=".
+    for pair in re.split(r"[&;]", parts.query):
+        name, _, value = pair.partition("=")
 
-        if "{" in segment or "}" in segment:
-            if segment not in KNOWN_PLACEHOLDERS:
-                return "an unknown or malformed placeholder", raw_segment
-            continue
+        key = key_in(name)
+        if key:
+            return "a key in the query", key
 
-        # ";" separates matrix parameters, which carry keys as well as the segment itself
-        for piece in re.split(r"[;,]", segment):
-            if looks_like_key(piece):
-                return "a key in the path", raw_segment if piece == segment else piece
+        if value and KEY_LIKE_QUERY_NAME.search(unquote(name)):
+            return f"a key in the query parameter '{unquote(name)}'", unquote(value)
 
-    for name, value in parse_qsl(parts.query, keep_blank_values=True):
-        if PLACEHOLDER.match(value):
-            if value not in KNOWN_PLACEHOLDERS:
-                return "an unknown placeholder", value
-            continue
+        key = key_in(value)
+        if key:
+            return f"a key in the query parameter '{unquote(name)}'", key
 
-        if value and (KEY_LIKE_QUERY_NAME.search(name) or looks_like_key(value)):
-            return f"a key in the query parameter '{name}'", value
-
-    if parts.fragment and looks_like_key(parts.fragment):
-        return "a key in the fragment", parts.fragment
+    key = key_in(parts.fragment)
+    if key:
+        return "a key in the fragment", key
 
     return None
 
@@ -132,26 +182,38 @@ def fingerprint(url: str) -> str:
     return hashlib.sha256(url.encode("utf-8")).hexdigest()
 
 
-def load_baseline(path: Path = BASELINE_PATH) -> frozenset[str]:
-    """Fingerprints of the keyed URLs that predate the check; lines starting with # are comments."""
+def first_tokens(path: Path) -> frozenset[str]:
+    """The first word of every line that is not empty or a # comment."""
     lines = path.read_text(encoding="utf-8").splitlines()
 
     return frozenset(line.split()[0] for line in lines if line.strip() and not line.startswith("#"))
 
 
+def load_baseline(path: Path = BASELINE_PATH) -> frozenset[str]:
+    """Fingerprints of the keyed URLs that predate the check."""
+    return first_tokens(path)
+
+
+def load_false_positives(path: Path = FALSE_POSITIVES_PATH) -> frozenset[str]:
+    """Harmless URLs the heuristic rejects, written in full so that a reviewer can read them."""
+    return first_tokens(path)
+
+
 def redact(url: str, part: str) -> str:
     """Show where the key is without printing it: the host and the first characters of the key."""
-    host = urlsplit(url).hostname or "?"
+    host = urlsplit(without_placeholders(url)).hostname or "?"
 
     return f"{host}: {part[:REDACTED_PREFIX_LENGTH]}..."
 
 
-def check(path: Path, baseline: frozenset[str]) -> tuple[list[str], dict[str, str]]:
+def check(
+    path: Path, baseline: frozenset[str], false_positives: frozenset[str] = frozenset()
+) -> tuple[list[str], dict[str, str]]:
     """Return the errors of one file and its baseline URLs as {fingerprint: redacted message}."""
     errors, known = [], {}
 
     for chain_name, url in node_urls(json.loads(path.read_text(encoding="utf-8"))):
-        problem = problem_in(url)
+        problem = None if url in false_positives else problem_in(url)
         if problem is None:
             continue
 
@@ -167,12 +229,12 @@ def check(path: Path, baseline: frozenset[str]) -> tuple[list[str], dict[str, st
 
 
 def main(paths: list[str]) -> int:
-    """Print every error, and each baseline URL once however many files repeat it."""
-    baseline = load_baseline()
+    """Print every error, and each baseline URL once per run however many files repeat it."""
+    baseline, false_positives = load_baseline(), load_false_positives()
     errors, known = [], {}
 
     for path in paths:
-        path_errors, path_known = check(Path(path), baseline)
+        path_errors, path_known = check(Path(path), baseline, false_positives)
         errors += path_errors
         known.update(path_known)
 
@@ -184,7 +246,8 @@ def main(paths: list[str]) -> int:
 
     if errors:
         print(
-            "Use a keyless public node, or a placeholder such as {INFURA_API_KEY} for a key the apps own.",
+            "Use a keyless public node, or a placeholder such as {INFURA_API_KEY} for a key the apps own.\n"
+            "A harmless URL rejected by mistake goes into scripts/node_url_false_positives.txt.",
             file=sys.stderr,
         )
 

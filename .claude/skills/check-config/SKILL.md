@@ -35,7 +35,9 @@ If both `chains_dev.json` and `chains.json` (or the `transfers`/`dapps`/`global/
 
 If `.venv` is missing, tell the user to run `make init` rather than installing anything yourself.
 
-These hooks (`check-chains-json`, `check-dapps-json`, `check-json`, `end-of-file-fixer`, `trailing-whitespace`) rewrite files in place. Two local hooks only check and never rewrite: `check-default-assets` and `check-node-url-keys` (a node URL with a provider key fails; see `CLAUDE.md`). If they modified anything, re-read the file and report what changed — CI runs the same hooks and auto-commits their output onto the branch, so it is better to land those fixes yourself.
+These hooks (`check-chains-json`, `check-dapps-json`, `check-json`, `end-of-file-fixer`, `trailing-whitespace`) rewrite files in place. If they modified anything, re-read the file and report what changed — CI runs the same hooks and auto-commits their output onto the branch, so it is better to land those fixes yourself.
+
+The local hooks only check and never rewrite: `check-default-assets`, `check-node-url-keys` (a node URL with a provider key fails; see `CLAUDE.md`) and `test-node-url-keys-check`.
 
 ## 5. Report
 

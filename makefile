@@ -200,7 +200,7 @@ test-bittensor:
 
 ## Run offline tests of the config checks in scripts/
 test-checks:
-	PYTHONPATH=. $(VENV)/bin/python -m pytest tests/checks -v
+	$(VENV)/bin/python -m pytest tests/checks --confcutdir tests/checks -v
 
 ## Check legacyAddressPrefix
 check-legacy-address-prefix:
