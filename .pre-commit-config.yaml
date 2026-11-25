@@ -20,3 +20,8 @@ repos:
         entry: python3 scripts/check_default_assets.py
         language: system
         files: ^chains/.*/default_assets(_dev)?\.json$
+    -   id: check-node-url-keys
+        name: node URLs carry no provider keys
+        entry: python3 scripts/check_node_url_keys.py
+        language: system
+        files: ^chains/.*\.json$

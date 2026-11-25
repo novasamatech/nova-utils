@@ -1073,16 +1073,16 @@
                 "name": "One rpc node"
             },
             {
-                "url": "wss://mainnet.infura.io/ws/v3/1e69544301064ef19edb194a14fb75f3",
-                "name": "Infura node 3"
-            },
-            {
                 "url": "wss://mainnet.infura.io/ws/v3/{INFURA_API_KEY}",
                 "name": "Infura node"
             },
             {
-                "url": "wss://mainnet.infura.io/ws/v3/9dddd77ac74043dc9a8dc48f82822c7d",
-                "name": "Infura node 2"
+                "url": "wss://ethereum-rpc.publicnode.com",
+                "name": "Allnodes wss node"
+            },
+            {
+                "url": "wss://eth.drpc.org",
+                "name": "dRPC wss node"
             }
         ],
         "explorers": [

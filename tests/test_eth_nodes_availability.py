@@ -28,7 +28,7 @@ class TestETHNodesAvailability:
 
     def test_rpc_node_is_synced(self, data):
 
-        wss_w3 = Web3(Web3.WebsocketProvider('wss://mainnet.infura.io/ws/v3/32a2be59297444c9bcb2b61bb700c6fe'))
+        wss_w3 = Web3(Web3.WebsocketProvider('wss://ethereum-rpc.publicnode.com'))
         # Check if connected to wss node
         assert wss_w3.is_connected(), "Failed to connect to Ethereum wss node"
 
