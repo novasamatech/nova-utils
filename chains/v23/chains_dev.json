@@ -11056,5 +11056,31 @@
         ],
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/Acurast.svg",
         "addressPrefix": 42
+    },
+    {
+        "chainId": "918abd58fb16306b30ef3886514cfaebffecb4de43e82b6f8ec4795c43cfd800",
+        "name": "FLOP Testnet",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "FLOP",
+                "precision": 18,
+                "icon": "FLOP.svg"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://testnet.flop.network",
+                "name": "FLOP Labs node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/gradient/FLOP_Testnet.svg",
+        "addressPrefix": 42,
+        "options": [
+            "testnet"
+        ],
+        "additional": {
+            "themeColor": "#00B4D8"
+        }
     }
 ]
