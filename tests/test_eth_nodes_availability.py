@@ -1,8 +1,22 @@
+import os
 import pytest
 import time
+from urllib.parse import urlparse
 from web3 import Web3
 
 from tests.data.setting_data import collect_rpc_nodes_for_chains, get_ethereum_chain
+
+# The nodes the tested ones are compared with, in order of preference. They must be keyless: this
+# repository is public. A tested node is never compared with a reference of its own provider.
+REFERENCE_ETH_WSS_NODES = os.environ.get(
+    'REFERENCE_ETH_WSS_NODES', 'wss://ethereum-rpc.publicnode.com,wss://0xrpc.io/eth'
+).split(',')
+
+
+def reference_node_for(url):
+    host = urlparse(url).hostname
+    return next(node for node in REFERENCE_ETH_WSS_NODES if urlparse(node).hostname != host)
+
 
 task_ids = [
     f'Test for {task["name"]}, url: {task["url"]}'
@@ -28,7 +42,7 @@ class TestETHNodesAvailability:
 
     def test_rpc_node_is_synced(self, data):
 
-        wss_w3 = Web3(Web3.WebsocketProvider('wss://mainnet.infura.io/ws/v3/32a2be59297444c9bcb2b61bb700c6fe'))
+        wss_w3 = Web3(Web3.WebsocketProvider(reference_node_for(data['url'])))
         # Check if connected to wss node
         assert wss_w3.is_connected(), "Failed to connect to Ethereum wss node"
 

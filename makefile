@@ -198,6 +198,10 @@ update-bittensor-subnets:
 test-bittensor:
 	PYTHONPATH=. $(VENV)/bin/python -m pytest tests/bittensor -v
 
+## Run offline tests of the config checks in scripts/
+test-checks:
+	$(VENV)/bin/python -m pytest tests/checks --confcutdir tests/checks -v
+
 ## Check legacyAddressPrefix
 check-legacy-address-prefix:
 	CHAIN_ADDRESS_PREFIX_FILE_PATH=$(JSON_PATH) $(PYTHON_SCRIPT) scripts/update_chain_address_prefixes.py

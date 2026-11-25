@@ -11,7 +11,7 @@ Static JSON configuration (networks, assets, XCM routes, dApps, banners, icons) 
 `chains/` and `xcm/` keep one directory per config version (`chains/v2`…`chains/v23`, `xcm/v2`…`xcm/v9`). Older versions stay frozen for older client releases.
 
 - Edit only the latest version: **`chains/v23/`** and **`xcm/v9/`**. Do not backport into older `vNN` directories.
-  The one exception is a prod data fix that shipped clients still read (a dead chain, a wrong asset id or existential deposit): it goes into every version those clients read as well, as in #3976 which removed Turing and Calamari from `xcm/v6`…`v8`. New entries and new features are never backported.
+  The one exception is a prod data fix that shipped clients still read (a dead chain, a wrong asset id or existential deposit, a leaked provider key in a node URL — the keyed node is removed, no replacement node is added): it goes into every version those clients read as well, as in #3976 which removed Turing and Calamari from `xcm/v6`…`v8`. New entries and new features are never backported.
 - `chains/chains.json`, `chains/chains_dev.json` and `xcm/transfers*.json` at the top level are legacy leftovers (untouched since 2023) — do not edit them.
 - The latest version is hardcoded in three places that must be updated when a new version directory is added: `scripts/utils/chain_model.py` (`latest_config_version()`, overridable via the `CHAINS_VERSION` env var), `scripts/xcm_transfers/config_setup.py` (`XCM_VERSION`, no env override) and the `XCM_PATH` default in `scripts/print_xcm_changes.py`. The docs in `CLAUDE.md` and `.claude/skills/*/SKILL.md` name the directories too.
 
@@ -26,6 +26,17 @@ Changes land in the `*_dev.json` file first, in their own PR, and are promoted t
 Promotion tools:
 - chains: `chains/apply_dev_to_prod.py` — opens `chains.json`/`chains_dev.json` by bare filename, so run it from inside the version directory.
 - xcm: `make update-xcm-to-prod` — needs `DEV_XCM_JSON_PATH`, `XCM_JSON_PATH`, `DEV_CHAINS_JSON_PATH`; prompts y/n per change.
+
+## Node URLs carry no provider keys
+
+The repository is public, so a key written into a node URL is a leaked key. Use a keyless public node. A key the apps own is written as a placeholder that both apps substitute at connection time: `{INFURA_API_KEY}` on `*.infura.io` or `{DWELLIR_API_KEY}` on `*.dwellir.com`. Any other placeholder leaves the node unusable, and a known one on another host would send the apps' key to that host.
+
+`pre-commit` runs `scripts/check_node_url_keys.py` over `chains/**/*.json` and fails on anything in a node URL that looks like a credential (user info, host, path, query, fragment). It is a strict heuristic, not a proof:
+
+- `scripts/known_keyed_node_urls.txt` lists, by hash, the keyed URLs that predate the check; they are printed as warnings. That file only shrinks — never add a line to make the check pass, and delete a line when its URL leaves the configs (a test enforces it).
+- `scripts/node_url_false_positives.txt` lists, in full, harmless URLs the heuristic rejects by mistake. Adding a line there is a reviewed decision.
+
+The tests of the check (`tests/checks`) run in `pre-commit` too; `make test-checks` runs them locally.
 
 ## Generated files — never edit by hand
 
