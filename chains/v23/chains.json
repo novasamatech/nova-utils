@@ -5401,7 +5401,6 @@
                 "symbol": "AZERO",
                 "priceId": "aleph-zero",
                 "staking": [
-                    "aleph-zero",
                     "nomination-pools"
                 ],
                 "precision": 12,
@@ -5468,9 +5467,6 @@
             {
                 "assetId": 0,
                 "symbol": "PDEX",
-                "staking": [
-                    "relaychain"
-                ],
                 "precision": 12,
                 "icon": "PDEX.svg"
             },
@@ -6300,9 +6296,6 @@
                 "assetId": 0,
                 "symbol": "CAPS",
                 "priceId": "coin-capsule",
-                "staking": [
-                    "relaychain"
-                ],
                 "precision": 18,
                 "icon": "CAPS.svg",
                 "buyProviders": {
@@ -7200,7 +7193,6 @@
                 "precision": 12,
                 "priceId": "vara-network",
                 "staking": [
-                    "relaychain",
                     "nomination-pools"
                 ],
                 "icon": "VARA.svg",
@@ -8077,7 +8069,6 @@
                 "priceId": "avail",
                 "icon": "AVAIL.svg",
                 "staking": [
-                    "relaychain",
                     "nomination-pools"
                 ]
             }
