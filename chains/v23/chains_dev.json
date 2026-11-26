@@ -5750,6 +5750,9 @@
             {
                 "assetId": 0,
                 "symbol": "AZERO",
+                "staking": [
+                    "nomination-pools"
+                ],
                 "priceId": "aleph-zero",
                 "precision": 12,
                 "icon": "AZERO.svg",
@@ -6569,6 +6572,9 @@
             {
                 "assetId": 0,
                 "symbol": "TZERO",
+                "staking": [
+                    "nomination-pools"
+                ],
                 "precision": 12,
                 "icon": "AZERO.svg"
             }
@@ -8276,6 +8282,9 @@
                 "symbol": "VARA",
                 "precision": 12,
                 "priceId": "vara-network",
+                "staking": [
+                    "nomination-pools"
+                ],
                 "icon": "VARA.svg",
                 "buyProviders": {
                     "banxa": {
@@ -9760,7 +9769,10 @@
                 "assetId": 0,
                 "symbol": "AVAIL",
                 "precision": 18,
-                "icon": "AVAIL.svg"
+                "icon": "AVAIL.svg",
+                "staking": [
+                    "nomination-pools"
+                ]
             }
         ],
         "nodes": [
@@ -9986,7 +9998,10 @@
                 "symbol": "AVAIL",
                 "precision": 18,
                 "priceId": "avail",
-                "icon": "AVAIL.svg"
+                "icon": "AVAIL.svg",
+                "staking": [
+                    "nomination-pools"
+                ]
             }
         ],
         "nodes": [
