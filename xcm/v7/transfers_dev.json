@@ -459,6 +459,19 @@
         },
         "instructions": "xtokensReserve"
       }
+    },
+    "UNQ": {
+      "chainId": "84322d9cddbf35088f1e54e9a85c967a41a56a4f43445768125e61af166c7d31",
+      "multiLocation": {
+        "parachainId": 2037
+      },
+      "reserveFee": {
+        "mode": {
+          "type": "proportional",
+          "value": "70000000000000"
+        },
+        "instructions": "xtokensReserve"
+      }
     }
   },
   "instructions": {
@@ -666,7 +679,8 @@
     "c1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f": "1000000000",
     "67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008": "1000000000",
     "97da7ede98d7bad4e36b4d734b6055425a3be036da2a332ea5a7037656427a21": "1000000000",
-    "e358eb1d11b31255a286c12e44fe6780b7edb171d657905a97e39f71d9c6c3ee": "1000000"
+    "e358eb1d11b31255a286c12e44fe6780b7edb171d657905a97e39f71d9c6c3ee": "1000000",
+    "84322d9cddbf35088f1e54e9a85c967a41a56a4f43445768125e61af166c7d31": "1000000"
   },
   "chains": [
     {
@@ -4540,6 +4554,29 @@
               "type": "xtokens"
             }
           ]
+        },
+        {
+          "assetId": 25,
+          "assetLocation": "UNQ",
+          "assetLocationPath": {
+            "type": "absolute"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "84322d9cddbf35088f1e54e9a85c967a41a56a4f43445768125e61af166c7d31",
+                "assetId": 0,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "70000000000000"
+                  },
+                  "instructions": "xtokensDest"
+                }
+              },
+              "type": "xtokens"
+            }
+          ]
         }
       ]
     },
@@ -5934,6 +5971,34 @@
         {
           "assetId": 0,
           "assetLocation": "AJUN",
+          "assetLocationPath": {
+            "type": "absolute"
+          },
+          "xcmTransfers": [
+            {
+              "destination": {
+                "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+                "assetId": 44,
+                "fee": {
+                  "mode": {
+                    "type": "proportional",
+                    "value": "172384599880"
+                  },
+                  "instructions": "xtokensDest"
+                }
+              },
+              "type": "xtokens"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chainId": "84322d9cddbf35088f1e54e9a85c967a41a56a4f43445768125e61af166c7d31",
+      "assets": [
+        {
+          "assetId": 0,
+          "assetLocation": "UNQ",
           "assetLocationPath": {
             "type": "absolute"
           },
